@@ -222,6 +222,66 @@
     "hint": "Leddsetning etter «at»: «ikke» flytter seg til før verbet «er»."
   },
   {
+    "id": "gq-ikke-021",
+    "topic": "ikke-placement",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge (fremflyttet adverbial).",
+    "tokens": ["I", "går", "kom", "hun", "ikke", "på", "jobb"],
+    "answer": "I går kom hun ikke på jobb.",
+    "alternates": ["I går kom hun ikke på jobb"],
+    "hint": "Når et adverbial (i går) står fremst, inverteres subjekt og verb (kom hun), men «ikke» står fortsatt rett etter subjektet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ikke-022",
+    "topic": "ikke-placement",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Skriv om setningen med objektet «den boken» fremst (V2-ordstilling).",
+    "source": "Jeg har ikke lest den boken.",
+    "answer": "Den boken har jeg ikke lest.",
+    "alternates": ["Den boken har jeg ikke lest"],
+    "hint": "Når objektet flyttes fremst, inverteres subjekt og verb, men «ikke» står fortsatt rett etter subjektet (jeg), før partisippet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ikke-023",
+    "topic": "ikke-placement",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Sett de to ordene i riktig rekkefølge.",
+    "sentence": "Hun sa at hun _____ komme i kveld.",
+    "words": ["ikke kunne", "kunne ikke"],
+    "answer": "ikke kunne",
+    "hint": "I en leddsetning med verbkjede (kunne komme) kommer «ikke» foran hele kjeden, altså foran det finitte hjelpeverbet «kunne».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ikke-024",
+    "topic": "ikke-placement",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «Jeg ser at …»",
+    "source": "Han setter seg ikke ned.",
+    "answer": "Jeg ser at han ikke setter seg ned.",
+    "alternates": ["Jeg ser at han ikke setter seg ned"],
+    "hint": "Leddsetning: «ikke» flytter seg til før verbet «setter»; refleksivpronomenet «seg» blir stående etter verbet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-ikke-025",
+    "topic": "ikke-placement",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge (partikkelverb).",
+    "tokens": ["Hun", "slår", "ikke", "av", "lyset"],
+    "answer": "Hun slår ikke av lyset.",
+    "alternates": ["Hun slår ikke av lyset"],
+    "hint": "Ved partikkelverb (slå av) kommer «ikke» rett etter det finitte verbet, før partikkelen.",
+    "plusOnly": true
+  },
+  {
     "id": "gq-det-001",
     "topic": "det-sentence",
     "cefr": "A2",
@@ -12788,6 +12848,67 @@
     "hint": "spise → spis (fjern den siste -e)."
   },
   {
+    "id": "gq-imp-009",
+    "topic": "imperativ",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Gjør om til nektende imperativ.",
+    "source": "Du må ikke gå nå.",
+    "answer": "Ikke gå nå!",
+    "alternates": ["Ikke gå nå"],
+    "hint": "Nektende imperativ: «ikke» + imperativform — «ikke» står alltid FØR verbet, ikke etter som i vanlige helsetninger.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-imp-010",
+    "topic": "imperativ",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Ikke glem nøklene!",
+    "optionB": "Glem ikke nøklene!",
+    "answer": "A",
+    "explanation": "I imperativsetninger står «ikke» alltid FØR verbet, ikke etter som i vanlige helsetninger.",
+    "hint": "Sammenlign med ordstillingen i en vanlig helsetning — imperativ følger en annen regel.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-imp-011",
+    "topic": "imperativ",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig imperativform (refleksivt verb).",
+    "sentence": "_____ deg ned!",
+    "words": ["Sett", "Setter", "Satt"],
+    "answer": "Sett",
+    "hint": "Refleksiv imperativ av «sette seg»: stammen «sett» + refleksivpronomenet som passer til «du», altså «deg», ikke «seg».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-imp-012",
+    "topic": "imperativ",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Gjør om til imperativ.",
+    "source": "Du må slå av lyset.",
+    "answer": "Slå av lyset!",
+    "alternates": ["Slå av lyset"],
+    "hint": "Partikkelverb i imperativ: partikkelen (av) beholder plassen sin rett etter verbet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-imp-013",
+    "topic": "imperativ",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Gjør om til en «la oss»-oppfordring.",
+    "source": "Vi bør dra nå.",
+    "answer": "La oss dra nå!",
+    "alternates": ["La oss dra nå"],
+    "hint": "«La oss» + infinitiv er en vanlig, mildere måte å foreslå en felles handling på enn en direkte imperativ.",
+    "plusOnly": true
+  },
+  {
     "id": "gq-possmindin-001",
     "topic": "possessiver-min-din",
     "cefr": "A1",
@@ -14662,7 +14783,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Hva betyr «for tiden» i denne setningen: «Han jobber hjemmefra for tiden.»?",
-    "options": ["Akkurat nå, i denne perioden", "For alltid, uten unntak", "En gang tidligere, men ikke lenger"],
+    "options": [
+      "Akkurat nå, i denne perioden",
+      "For alltid, uten unntak",
+      "En gang tidligere, men ikke lenger"
+    ],
     "answer": "Akkurat nå, i denne perioden",
     "hint": "«For tiden» er et fast tidsuttrykk som betyr «akkurat nå» eller «i denne perioden», ikke en permanent tilstand."
   },
@@ -17676,7 +17801,11 @@
     "cefr": "B2",
     "type": "multiple-choice",
     "prompt": "Firmaet har store økonomiske problemer: det har ikke penger til lønninger, og det har heller ikke penger til husleie. Velg riktig setning, med «verken» aller først i setningen.",
-    "options": ["Verken har firmaet penger til lønninger, eller det har penger til husleie.", "Verken firmaet har penger til lønninger, eller det har penger til husleie.", "Både har firmaet penger til lønninger, eller det har penger til husleie."],
+    "options": [
+      "Verken har firmaet penger til lønninger, eller det har penger til husleie.",
+      "Verken firmaet har penger til lønninger, eller det har penger til husleie.",
+      "Både har firmaet penger til lønninger, eller det har penger til husleie."
+    ],
     "answer": "Verken har firmaet penger til lønninger, eller det har penger til husleie.",
     "hint": "Fronted «verken» krever V2 i den første helsetningen (verb rett etter), og kobles alltid med «eller», ikke «og».",
     "plusOnly": true
@@ -18026,6 +18155,115 @@
     "words": ["lengre", "lenger"],
     "answer": "lengre",
     "hint": "Her sammenlignes fysisk lengde/størrelse på to hus, så bruk «lengre»."
+  },
+  {
+    "id": "gq-adj-124",
+    "topic": "adj-comparison",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Emma er like _____ som søsteren sin.",
+    "words": ["flink", "flinkere"],
+    "answer": "flink",
+    "hint": "Etter «like» + adjektiv brukes grunnform, ikke komparativ, når to ting sammenlignes som like store/gode."
+  },
+  {
+    "id": "gq-adj-125",
+    "topic": "adj-comparison",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "options": ["Han er like sterk som faren sin.", "Han er like sterk enn faren sin."],
+    "answer": "Han er like sterk som faren sin.",
+    "hint": "Etter «like» + adjektiv skal det stå «som», ikke «enn»."
+  },
+  {
+    "id": "gq-adj-126",
+    "topic": "adj-comparison",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Denne bilen er ikke så _____ som den forrige.",
+    "words": ["dyr", "dyrere"],
+    "answer": "dyr",
+    "hint": "«ikke så» + adjektiv i grunnform + «som» uttrykker at noe ikke har like mye av egenskapen."
+  },
+  {
+    "id": "gq-adj-127",
+    "topic": "adj-comparison",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Slå sammen setningene med «like ... som».",
+    "source": "Anna er 28 år. Broren hennes er også 28 år.",
+    "answer": "Anna er like gammel som broren sin.",
+    "alternates": ["Anna er like gammel som broren sin"],
+    "hint": "Bruk «like gammel som» for å uttrykke at alderen er lik."
+  },
+  {
+    "id": "gq-adj-128",
+    "topic": "adj-comparison",
+    "cefr": "B2",
+    "type": "order",
+    "tokens": ["han", "er", "eldre", "enn", "jeg", "trodde"],
+    "answer": "Han er eldre enn jeg trodde.",
+    "alternates": ["Han er eldre enn jeg trodde"],
+    "hint": "«Enn» kan innlede en hel leddsetning, ikke bare et enkelt ord."
+  },
+  {
+    "id": "gq-adj-129",
+    "topic": "adj-comparison",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Hvilken setning bruker «enn» riktig til å innlede en hel leddsetning?",
+    "options": [
+      "Prøven var vanskeligere enn vi hadde forventet.",
+      "Prøven var vanskeligere som vi hadde forventet.",
+      "Prøven var like vanskelig enn vi hadde forventet."
+    ],
+    "answer": "Prøven var vanskeligere enn vi hadde forventet.",
+    "hint": "Etter komparativ brukes «enn», og det kan følges av en hel setning med subjekt og verb."
+  },
+  {
+    "id": "gq-adj-130",
+    "topic": "adj-comparison",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig ord.",
+    "sentence": "Oppgaven var vanskeligere enn jeg _____.",
+    "words": ["trodde", "tror"],
+    "answer": "trodde",
+    "hint": "Hovedsetningen står i preteritum («var»), så verbet i leddsetningen etter «enn» følger samme tid."
+  },
+  {
+    "id": "gq-adj-131",
+    "topic": "adj-comparison",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "options": ["Hun er ikke like stor som broren sin.", "Hun er ikke like stor enn broren sin."],
+    "answer": "Hun er ikke like stor som broren sin.",
+    "hint": "Selv i en nektende setning skal «like» + adjektiv følges av «som», ikke «enn»."
+  },
+  {
+    "id": "gq-adj-132",
+    "topic": "adj-comparison",
+    "cefr": "B2",
+    "type": "transform",
+    "prompt": "Slå sammen setningene med komparativ og «enn».",
+    "source": "Marte er dyktig. Kollegaen hennes er enda mer dyktig.",
+    "answer": "Kollegaen til Marte er dyktigere enn henne.",
+    "alternates": ["Kollegaen til Marte er dyktigere enn henne"],
+    "hint": "Bruk objektsform av pronomenet («henne», ikke «hun») etter «enn»."
+  },
+  {
+    "id": "gq-adj-133",
+    "topic": "adj-comparison",
+    "cefr": "B2",
+    "type": "order",
+    "tokens": ["prøven", "var", "ikke", "så", "vanskelig", "som", "vi", "fryktet"],
+    "answer": "Prøven var ikke så vanskelig som vi fryktet.",
+    "alternates": ["Prøven var ikke så vanskelig som vi fryktet"],
+    "hint": "«ikke så» + adjektiv + «som» kan også følges av en hel leddsetning."
   },
   {
     "id": "gq-rel-014",
@@ -30921,6 +31159,126 @@
     "words": ["om", "av", "for"],
     "answer": "om",
     "hint": "«Ta hånd om» (å ta seg av/passe på) tar «om».",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-011",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig sammensatt preposisjon.",
+    "sentence": "Han fullførte hele boken _____ en helg.",
+    "words": ["i løpet av", "på grunn av", "i forbindelse med"],
+    "answer": "i løpet av",
+    "hint": "«I løpet av» + tidsrom viser til hvor lang tid noe tar, innenfor den perioden.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-012",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig sammensatt preposisjon.",
+    "sentence": "Det ligger en koselig kaffebar _____ togstasjonen.",
+    "words": ["i nærheten av", "i forbindelse med", "i stedet for"],
+    "answer": "i nærheten av",
+    "hint": "«I nærheten av» = i kort avstand fra.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-013",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig sammensatt preposisjon.",
+    "sentence": "Flyet ble kansellert _____ dårlig vær.",
+    "words": ["på grunn av", "i stedet for", "ved siden av"],
+    "answer": "på grunn av",
+    "hint": "«På grunn av» + årsak forklarer hvorfor noe skjer.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-014",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig sammensatt preposisjon.",
+    "sentence": "Vi tok bussen _____ å kjøre bil.",
+    "words": ["i stedet for", "i forbindelse med", "på grunn av"],
+    "answer": "i stedet for",
+    "hint": "«I stedet for» + infinitiv/substantiv viser til et alternativ man velger bort.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-015",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig sammensatt preposisjon.",
+    "sentence": "Hun parkerte bilen _____ huset.",
+    "words": ["ved siden av", "i løpet av", "på grunn av"],
+    "answer": "ved siden av",
+    "hint": "«Ved siden av» = rett ved siden, i nabolaget til noe.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-016",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "minimal-pair",
+    "prompt": "Familien hadde satt av 5000 kroner til ferien og brukte bare 4500. Hvilken setning er riktig?",
+    "optionA": "Utgiftene holdt seg innenfor budsjettet.",
+    "optionB": "Utgiftene holdt seg utenfor budsjettet.",
+    "answer": "A",
+    "explanation": "«Innenfor budsjettet» betyr at man brukte mindre enn eller like mye som planlagt; «utenfor budsjettet» ville betydd at de brukte mer enn planlagt, som ikke stemmer her.",
+    "hint": "De brukte mindre enn de hadde satt av — hvilken preposisjon passer da?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-017",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge, med det sammensatte uttrykket «i forbindelse med».",
+    "tokens": ["Politiet", "etterforsker", "saken", "i", "forbindelse", "med", "tyveriet"],
+    "answer": "Politiet etterforsker saken i forbindelse med tyveriet.",
+    "alternates": ["Politiet etterforsker saken i forbindelse med tyveriet"],
+    "hint": "«I forbindelse med» = i sammenheng med; hele uttrykket står samlet etter substantivet det viser til.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-018",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Jeg kjøpte en bursdagsgave _____ søsteren min.",
+    "words": ["til", "for", "om"],
+    "answer": "til",
+    "hint": "«Til» + mottaker: man gir noe til noen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-019",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Jeg betalte to hundre kroner _____ billetten.",
+    "words": ["for", "til", "om"],
+    "answer": "for",
+    "hint": "«For» + vare/tjeneste: betale for noe = gi penger i bytte mot noe.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-b2-020",
+    "topic": "preposisjoner-uttrykk-b2",
+    "cefr": "B2",
+    "type": "multiple-choice",
+    "prompt": "Hva betyr uttrykket «være i tvil» i denne setningen: «Hun var lenge i tvil om hun skulle takke ja til jobben.»?",
+    "options": ["Usikker, hadde ikke bestemt seg", "Helt sikker på svaret", "Sint og skuffet"],
+    "answer": "Usikker, hadde ikke bestemt seg",
+    "hint": "«I tvil» er et fast, abstrakt uttrykk med «i» som betyr usikker, ikke et bestemt sted eller tidspunkt.",
     "plusOnly": true
   },
   {

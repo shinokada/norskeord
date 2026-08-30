@@ -106,7 +106,11 @@ const B2_TOPICS = new Set([
   'leddsetning-som-fundament',
   'verbprefiks-be-an-mis',
   'sterke-verb',
-  'preposisjoner-tid'
+  'preposisjoner-tid',
+  'ikke-placement',
+  'imperativ',
+  'adj-comparison',
+  'preposisjoner-sted'
 ]);
 
 // ── Load data ─────────────────────────────────────────────────────────────────

@@ -2,7 +2,7 @@
 title: B2 Grammar På Nivå Arbeidsbok
 reference: draft/b2/pa-niva/arbeidsbok-b2.md
 data-started: 2026-08-26
-data-completed:
+data-completed: 2026-08-30
 ---
 
 # Nivå B2 Grammar — "På Nivå" arbeidsbok — Implementation Plan
@@ -143,124 +143,124 @@ extended to B2. Sections already claimed by the vocab plan's §2 in-scope list a
 🆕 new topic candidate · ⏭️ skip (vocab plan territory or no discrete rule to quiz)
 
 ### SUBSTANTIV
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Petras Paris (noun-spotting, abstrakt/konkret) | ⏭️ pure identification, no B2-level rule beyond A1 `substantiv-bestemt-form` |
-| 2 | Stor/liten bokstav (punctuation) | ⏭️ out of scope per vocab plan's own exclusion list (komma/stor-liten bokstav) |
-| 3 | Hankjønn/hunkjønn/intetkjønn + ubestemt artikkel | 🔁 `noun-articles` (B2) |
-| 4–5 | Uregelrette substantiv (bøying) | 🔁 `noun-plurals` (B2) |
-| 6–7 | Entall↔flertall | 🔁 `noun-plurals` (B2) |
-| 8–9 | Ubestemt artikkel som predikativ (4 regler) | 🆕 candidate — `noun-articles` covers general artikkel use but not the 4-rule predikativ system specifically; worth a closer rules.ts check before deciding new vs. extend |
-| 10 | Ledig stilling (lytt/cloze, job-interview phrases) | ⏭️ listening-cloze with no isolable grammar point beyond §8–9 |
-| 11–12 | Rett form av substantiv (kjønn + artikkel + bøying, big drills) | 🔁 `noun-articles` + `noun-plurals` |
-| 13 | Språkdetektiv (bestemt/ubestemt + begrunnelse) | 🔁 `noun-articles` |
-| 14 | Substantivfrasen (finn frase + kjerne) | 🆕 candidate — no topic currently targets NP-identification/head-finding; low priority, check `setningsledd`-adjacent C topics first |
-| 15 | Kjente nordmenn: Nansen | ⏭️ **skip — vocab plan** |
+| #     | Exercise                                                        | Decision                                                                                                                                                                  |
+| ----- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | Petras Paris (noun-spotting, abstrakt/konkret)                  | ⏭️ pure identification, no B2-level rule beyond A1 `substantiv-bestemt-form`                                                                                               |
+| 2     | Stor/liten bokstav (punctuation)                                | ⏭️ out of scope per vocab plan's own exclusion list (komma/stor-liten bokstav)                                                                                             |
+| 3     | Hankjønn/hunkjønn/intetkjønn + ubestemt artikkel                | 🔁 `noun-articles` (B2)                                                                                                                                                    |
+| 4–5   | Uregelrette substantiv (bøying)                                 | 🔁 `noun-plurals` (B2)                                                                                                                                                     |
+| 6–7   | Entall↔flertall                                                 | 🔁 `noun-plurals` (B2)                                                                                                                                                     |
+| 8–9   | Ubestemt artikkel som predikativ (4 regler)                     | 🆕 candidate — `noun-articles` covers general artikkel use but not the 4-rule predikativ system specifically; worth a closer rules.ts check before deciding new vs. extend |
+| 10    | Ledig stilling (lytt/cloze, job-interview phrases)              | ⏭️ listening-cloze with no isolable grammar point beyond §8–9                                                                                                              |
+| 11–12 | Rett form av substantiv (kjønn + artikkel + bøying, big drills) | 🔁 `noun-articles` + `noun-plurals`                                                                                                                                        |
+| 13    | Språkdetektiv (bestemt/ubestemt + begrunnelse)                  | 🔁 `noun-articles`                                                                                                                                                         |
+| 14    | Substantivfrasen (finn frase + kjerne)                          | 🆕 candidate — no topic currently targets NP-identification/head-finding; low priority, check `setningsledd`-adjacent C topics first                                       |
+| 15    | Kjente nordmenn: Nansen                                         | ⏭️ **skip — vocab plan**                                                                                                                                                   |
 
 ### ADJEKTIV
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1–2 | Adjektiv-spotting + hvilket substantiv | 🔁 `adj-agreement` (B2) |
-| 3–5 | Bøying etter kjønn/tall (liten, mixed adj) | 🔁 `adj-agreement` (B2) |
-| 6 | den/det/de som bestemt artikkel foran adjektiv+substantiv | 🆕 candidate — "dobbel bestemthet" isn't covered by any existing topic; worth its own touch if `adj-agreement`'s rules.ts doesn't already fold it in |
-| 7, 9, 10, 13, 14 | Komparativ/superlativ bøying (regular + irregular) | 🔀 `adj-comparison` (currently A2/B1 only) — extend to B2 |
-| 8 | Superlativ med bestemt artikkel (fjord/fjell) | 🔀 `adj-comparison` → B2 |
-| 11 | Superlativ omskriving (så X du kan tenke deg) | 🔀 `adj-comparison` → B2 |
-| 12 | Kjønn/tall/form/grad — full identification | 🔁 `adj-agreement` (B2) |
-| 15 | enda/aller (intensifiers with superlative) | 🆕 small candidate — could fold into `adj-comparison` B2 extension rather than a standalone topic |
-| 16 | Substantiverte adjektiv | 🔁 `substantivert-adjektiv` (B2) — direct match, confirmed against sample questions |
-| 17 | Substantivfrase-feil (NP agreement errors) | 🔁 `adj-agreement` (B2) |
-| 18 | Utvandringen til Amerika (cloze, mixed grad) | 🔀 `adj-comparison` → B2 |
+| #                | Exercise                                                  | Decision                                                                                                                                            |
+| ---------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1–2              | Adjektiv-spotting + hvilket substantiv                    | 🔁 `adj-agreement` (B2)                                                                                                                              |
+| 3–5              | Bøying etter kjønn/tall (liten, mixed adj)                | 🔁 `adj-agreement` (B2)                                                                                                                              |
+| 6                | den/det/de som bestemt artikkel foran adjektiv+substantiv | 🆕 candidate — "dobbel bestemthet" isn't covered by any existing topic; worth its own touch if `adj-agreement`'s rules.ts doesn't already fold it in |
+| 7, 9, 10, 13, 14 | Komparativ/superlativ bøying (regular + irregular)        | 🔀 `adj-comparison` (currently A2/B1 only) — extend to B2                                                                                            |
+| 8                | Superlativ med bestemt artikkel (fjord/fjell)             | 🔀 `adj-comparison` → B2                                                                                                                             |
+| 11               | Superlativ omskriving (så X du kan tenke deg)             | 🔀 `adj-comparison` → B2                                                                                                                             |
+| 12               | Kjønn/tall/form/grad — full identification                | 🔁 `adj-agreement` (B2)                                                                                                                              |
+| 15               | enda/aller (intensifiers with superlative)                | 🆕 small candidate — could fold into `adj-comparison` B2 extension rather than a standalone topic                                                    |
+| 16               | Substantiverte adjektiv                                   | 🔁 `substantivert-adjektiv` (B2) — direct match, confirmed against sample questions                                                                  |
+| 17               | Substantivfrase-feil (NP agreement errors)                | 🔁 `adj-agreement` (B2)                                                                                                                              |
+| 18               | Utvandringen til Amerika (cloze, mixed grad)              | 🔀 `adj-comparison` → B2                                                                                                                             |
 
 ### DETERMINATIVER
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Determinativ-roller (klassifisering) | ⏭️ pure categorization, low quiz value |
-| 2–4 | Eiendomsord (possessives) + dobbel bestemthet | 🔀 `noun-possessives` (currently A1/A2/B1 only) — extend to B2 |
-| 3 | Personlig pronomen vs. eiendomsord | 🔀 `noun-possessives` → B2 |
-| 5 | Superlativ NP i bestemt form (verdens højeste...) | 🔀 `adj-comparison` → B2 (overlaps Adjektiv §8/§11) |
-| 6 | sånn (demonstrativ) | 🆕 small candidate — no existing topic covers `sånn`; likely fold into a new determinativ-forsterkere topic (see §13–15) rather than standalone |
-| 7–11 | litt/lite, ingen/noen, alle/hver, hele/all, begge deler/begge to | 🔁 `kvantorer` (B2) / `spesial-kvantorer` (B2) |
-| 12 | Språkdetektiv (kvantor/possessiv feil) | 🔁 `kvantorer` / `spesial-kvantorer` |
-| 13–15 | egen, selv (B2+), eneste — forsterkere | 🆕 **new topic candidate**: `determinativ-forsterkere` (egen/selv/eneste, possibly + sånn from §6) — nothing in the current 113-topic list covers these B2-flagged emphasizer determinatives |
-| 16 | Kjente nordmenn: Heyerdahl | ⏭️ **skip — vocab plan** |
+| #     | Exercise                                                         | Decision                                                                                                                                                                                    |
+| ----- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | Determinativ-roller (klassifisering)                             | ⏭️ pure categorization, low quiz value                                                                                                                                                       |
+| 2–4   | Eiendomsord (possessives) + dobbel bestemthet                    | 🔀 `noun-possessives` (currently A1/A2/B1 only) — extend to B2                                                                                                                               |
+| 3     | Personlig pronomen vs. eiendomsord                               | 🔀 `noun-possessives` → B2                                                                                                                                                                   |
+| 5     | Superlativ NP i bestemt form (verdens højeste...)                | 🔀 `adj-comparison` → B2 (overlaps Adjektiv §8/§11)                                                                                                                                          |
+| 6     | sånn (demonstrativ)                                              | 🆕 small candidate — no existing topic covers `sånn`; likely fold into a new determinativ-forsterkere topic (see §13–15) rather than standalone                                              |
+| 7–11  | litt/lite, ingen/noen, alle/hver, hele/all, begge deler/begge to | 🔁 `kvantorer` (B2) / `spesial-kvantorer` (B2)                                                                                                                                               |
+| 12    | Språkdetektiv (kvantor/possessiv feil)                           | 🔁 `kvantorer` / `spesial-kvantorer`                                                                                                                                                         |
+| 13–15 | egen, selv (B2+), eneste — forsterkere                           | 🆕 **new topic candidate**: `determinativ-forsterkere` (egen/selv/eneste, possibly + sånn from §6) — nothing in the current 113-topic list covers these B2-flagged emphasizer determinatives |
+| 16    | Kjente nordmenn: Heyerdahl                                       | ⏭️ **skip — vocab plan**                                                                                                                                                                     |
 
 ### VERB
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Uregelrette verb (bøyingstabell) | 🔀 `sterke-verb` (currently A2/B1 only) — extend to B2, or fold into `partisipp-former` (B2) |
-| 2 | Fabel-cloze (mixed tense) | 🔁 `preteritum-perfektum-og-futurum` (B2) — mixed review, draw individual questions rather than one big cloze |
-| 3 | Presens perfektum vs. preteritum | 🔁 `preteritum-perfektum-og-futurum` (B2) |
-| 4 | være vs. bli | 🆕 **new topic candidate**: `vaere-vs-bli` — distinct from `passiv-bli-s` (bli-passive vs s-passive) and from `bli-presens-partisipp`; no existing topic tests the state-vs-change contrast directly |
-| 5 | Språkdetektiv (verbform etter modal/preteritum) | 🔁 fold into `modalverb-betydning` or `preteritum-perfektum-og-futurum` |
-| 6 | Verbsystemene (presens- vs. preteritumsystem consistency) | 🔁 `preteritum-perfektum-og-futurum` (B2) |
-| 7–10 | Aktiv/passiv (identify, transform both ways, ordstilling) | 🔁 `passiv-bli-s` (B2) for §7–9; §10 ordstilling → 🔀 `v2-word-order` (A2/B1 only) extend to B2, or fold into `passiv-bli-s` |
-| 11 | Imperativ → passiv (oppskrift) | 🔁 `passiv-bli-s` (B2) |
-| 12 | Presens partisipp som adjektiv/adverb | 🔁 `bli-presens-partisipp` (B2) — confirmed direct match against sample questions |
-| 13 | Perfektum partisipp som adjektiv | 🔁 `partisipp-former` (B2) or `fa-perfektum-partisipp` (B2) |
-| 14 | Modalverb i formelle situasjoner | 🔁 `modalverb-betydning` (B2) or `hoflig-preteritum` (B2) |
-| 15 | Parsetninger: modale uttrykksmåter | ⏭️ **skip — vocab plan** |
-| 16 | Tidsadverbial først (modal+perfektum) | 🔁 `adverbial-fronting` (B2) |
-| 17 | Sammensatte verb (verb 1 / verb 2 / tempus identification) | 🆕 **new topic candidate**: `sammensatt-verbtid` — vocab plan explicitly excluded this section (not particle verbs); distinct mechanic from `partikkelverb-los-fast` — identifying the finite/non-finite verb slot and naming the tense of a compound verb form |
-| 18 | Referere andres utsagn (skal visstnok, sies å...) | 🔁 `indirekte-tale-at-om` (B2) |
-| 19 | Skulle ha gjort (counterfactual modal perfect) | 🔁 `hypotetiske-betingelsessetninger` (B2) |
-| 20 | Hva mener du? (opinion sentences) | ⏭️ open-ended writing practice, no discrete rule |
-| 21 | Hypotetisk (B2+) | 🔀 `hypotetiske-betingelsessetninger` (B2) / `kondisjonalis-counterfactual` (C only) — extend down |
-| 22 | få + perfektum partisipp (resultative) | 🔁 `fa-perfektum-partisipp` (B2) — confirmed direct match |
-| 23 | bli sittende og... / holde på å... (extended aspect) | 🔁 `bli-presens-partisipp` (B2), note `holde på å` may need a rules.ts addition |
-| 24–27 | Partikkelverb (identify, avslag/avslå, partikkel+partisipp, løst/fast) | ⏭️ **skip — vocab plan** (explicitly listed in-scope there) |
-| 28 | Kjente nordmenn: Ingrid Espelid Hovig | ⏭️ **skip — vocab plan** |
+| #     | Exercise                                                               | Decision                                                                                                                                                                                                                                                       |
+| ----- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | Uregelrette verb (bøyingstabell)                                       | 🔀 `sterke-verb` (currently A2/B1 only) — extend to B2, or fold into `partisipp-former` (B2)                                                                                                                                                                    |
+| 2     | Fabel-cloze (mixed tense)                                              | 🔁 `preteritum-perfektum-og-futurum` (B2) — mixed review, draw individual questions rather than one big cloze                                                                                                                                                   |
+| 3     | Presens perfektum vs. preteritum                                       | 🔁 `preteritum-perfektum-og-futurum` (B2)                                                                                                                                                                                                                       |
+| 4     | være vs. bli                                                           | 🆕 **new topic candidate**: `vaere-vs-bli` — distinct from `passiv-bli-s` (bli-passive vs s-passive) and from `bli-presens-partisipp`; no existing topic tests the state-vs-change contrast directly                                                            |
+| 5     | Språkdetektiv (verbform etter modal/preteritum)                        | 🔁 fold into `modalverb-betydning` or `preteritum-perfektum-og-futurum`                                                                                                                                                                                         |
+| 6     | Verbsystemene (presens- vs. preteritumsystem consistency)              | 🔁 `preteritum-perfektum-og-futurum` (B2)                                                                                                                                                                                                                       |
+| 7–10  | Aktiv/passiv (identify, transform both ways, ordstilling)              | 🔁 `passiv-bli-s` (B2) for §7–9; §10 ordstilling → 🔀 `v2-word-order` (A2/B1 only) extend to B2, or fold into `passiv-bli-s`                                                                                                                                     |
+| 11    | Imperativ → passiv (oppskrift)                                         | 🔁 `passiv-bli-s` (B2)                                                                                                                                                                                                                                          |
+| 12    | Presens partisipp som adjektiv/adverb                                  | 🔁 `bli-presens-partisipp` (B2) — confirmed direct match against sample questions                                                                                                                                                                               |
+| 13    | Perfektum partisipp som adjektiv                                       | 🔁 `partisipp-former` (B2) or `fa-perfektum-partisipp` (B2)                                                                                                                                                                                                     |
+| 14    | Modalverb i formelle situasjoner                                       | 🔁 `modalverb-betydning` (B2) or `hoflig-preteritum` (B2)                                                                                                                                                                                                       |
+| 15    | Parsetninger: modale uttrykksmåter                                     | ⏭️ **skip — vocab plan**                                                                                                                                                                                                                                        |
+| 16    | Tidsadverbial først (modal+perfektum)                                  | 🔁 `adverbial-fronting` (B2)                                                                                                                                                                                                                                    |
+| 17    | Sammensatte verb (verb 1 / verb 2 / tempus identification)             | 🆕 **new topic candidate**: `sammensatt-verbtid` — vocab plan explicitly excluded this section (not particle verbs); distinct mechanic from `partikkelverb-los-fast` — identifying the finite/non-finite verb slot and naming the tense of a compound verb form |
+| 18    | Referere andres utsagn (skal visstnok, sies å...)                      | 🔁 `indirekte-tale-at-om` (B2)                                                                                                                                                                                                                                  |
+| 19    | Skulle ha gjort (counterfactual modal perfect)                         | 🔁 `hypotetiske-betingelsessetninger` (B2)                                                                                                                                                                                                                      |
+| 20    | Hva mener du? (opinion sentences)                                      | ⏭️ open-ended writing practice, no discrete rule                                                                                                                                                                                                                |
+| 21    | Hypotetisk (B2+)                                                       | 🔀 `hypotetiske-betingelsessetninger` (B2) / `kondisjonalis-counterfactual` (C only) — extend down                                                                                                                                                              |
+| 22    | få + perfektum partisipp (resultative)                                 | 🔁 `fa-perfektum-partisipp` (B2) — confirmed direct match                                                                                                                                                                                                       |
+| 23    | bli sittende og... / holde på å... (extended aspect)                   | 🔁 `bli-presens-partisipp` (B2), note `holde på å` may need a rules.ts addition                                                                                                                                                                                 |
+| 24–27 | Partikkelverb (identify, avslag/avslå, partikkel+partisipp, løst/fast) | ⏭️ **skip — vocab plan** (explicitly listed in-scope there)                                                                                                                                                                                                     |
+| 28    | Kjente nordmenn: Ingrid Espelid Hovig                                  | ⏭️ **skip — vocab plan**                                                                                                                                                                                                                                        |
 
 ### ADVERB
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Adverb vs. adjektiv (fabeltekst) | 🔁 `adjektiv-eller-adverb` (B2) — confirmed direct match |
-| 2 | Ordtak (adverb i ordtak) | ⏭️ **skip — vocab plan** |
-| 3 | Adverb-undergrupper (nektings-, grads-, tids- osv.) | 🔁 `setningsadverbial` (B2) / `modale-adverb` (B2) |
-| 4 | Adverbets funksjon (verb/adj/setning/binding) | 🔁 `setningsadverbial` (B2) |
-| 5–6 | Stedsadverb | 🔁 `stedsadverb-statisk-dynamisk` (B2) — confirmed direct match |
-| 7 | Idiomatiske adverbbetydninger (hoppende glad, visstnok...) | 🔁 `nyanser-uttrykk` (B2) / `sannsynlighet-uttrykk` (B2) |
-| 8 | Adverbplassering i setning | 🔁 `setningsadverbial` (B2) / `adverbial-fronting` (B2) |
-| 9 | Presens partisipp som manerandverb (komme løpende) | 🆕 candidate — distinct from `bli-presens-partisipp` (komme vs. bli); check rules.ts before deciding extend vs. new |
-| 10 | Nektende adverb (aldri, neppe, slett ikke...) | 🔁 `modale-adverb` (B2) / `sannsynlighet-uttrykk` (B2) |
-| 11 | visst/visstnok/trolig (hedging) | 🔁 `sannsynlighet-uttrykk` (B2) — confirmed close match, though this is evidentiality rather than probability; verify rules.ts covers both nuances |
-| 12–13 | kanskje/selvfølgelig/nok paraphrase + matching | 🔁 `modale-adverb` (B2) |
-| 14 | likevel/derfor/dessuten (connectors) | 🔁 `arsak-og-folge-uttrykk` (B2) for derfor; `kontrast-uttrykk`/`motsetning-selv-om-likevel` (B2) for likevel; dessuten (additive) may need a rules.ts note — check coverage |
-| 15 | Gradbøyning av adverb (gjerne→heller→helst, sakte→saktere) | 🆕 **new topic candidate**: `adverb-gradboying` — `adj-comparison` only covers adjectives; no existing topic tests adverb comparison |
+| #     | Exercise                                                   | Decision                                                                                                                                                                    |
+| ----- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | Adverb vs. adjektiv (fabeltekst)                           | 🔁 `adjektiv-eller-adverb` (B2) — confirmed direct match                                                                                                                     |
+| 2     | Ordtak (adverb i ordtak)                                   | ⏭️ **skip — vocab plan**                                                                                                                                                     |
+| 3     | Adverb-undergrupper (nektings-, grads-, tids- osv.)        | 🔁 `setningsadverbial` (B2) / `modale-adverb` (B2)                                                                                                                           |
+| 4     | Adverbets funksjon (verb/adj/setning/binding)              | 🔁 `setningsadverbial` (B2)                                                                                                                                                  |
+| 5–6   | Stedsadverb                                                | 🔁 `stedsadverb-statisk-dynamisk` (B2) — confirmed direct match                                                                                                              |
+| 7     | Idiomatiske adverbbetydninger (hoppende glad, visstnok...) | 🔁 `nyanser-uttrykk` (B2) / `sannsynlighet-uttrykk` (B2)                                                                                                                     |
+| 8     | Adverbplassering i setning                                 | 🔁 `setningsadverbial` (B2) / `adverbial-fronting` (B2)                                                                                                                      |
+| 9     | Presens partisipp som manerandverb (komme løpende)         | 🆕 candidate — distinct from `bli-presens-partisipp` (komme vs. bli); check rules.ts before deciding extend vs. new                                                          |
+| 10    | Nektende adverb (aldri, neppe, slett ikke...)              | 🔁 `modale-adverb` (B2) / `sannsynlighet-uttrykk` (B2)                                                                                                                       |
+| 11    | visst/visstnok/trolig (hedging)                            | 🔁 `sannsynlighet-uttrykk` (B2) — confirmed close match, though this is evidentiality rather than probability; verify rules.ts covers both nuances                           |
+| 12–13 | kanskje/selvfølgelig/nok paraphrase + matching             | 🔁 `modale-adverb` (B2)                                                                                                                                                      |
+| 14    | likevel/derfor/dessuten (connectors)                       | 🔁 `arsak-og-folge-uttrykk` (B2) for derfor; `kontrast-uttrykk`/`motsetning-selv-om-likevel` (B2) for likevel; dessuten (additive) may need a rules.ts note — check coverage |
+| 15    | Gradbøyning av adverb (gjerne→heller→helst, sakte→saktere) | 🆕 **new topic candidate**: `adverb-gradboying` — `adj-comparison` only covers adjectives; no existing topic tests adverb comparison                                         |
 
 ### PREPOSISJONER
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Spørreord for preposisjonsledd | ⏭️ setningsledd-analysis, likely Kapittel 3 territory — revisit there |
-| 2–6 | Preposisjoner for tid/sted (cloze texts) | 🔀 `preposisjoner-tid` / `preposisjoner-sted` (currently A1/A2/B1 only) — extend to B2, or fold into `preposisjoner-uttrykk-b2` |
-| 7 | i eller på (områderegelen/kantstedsregelen) | 🆕 **new topic candidate**: `omraaderegelen-kantstedsregelen` — confirmed `preposisjoner-uttrykk-b2` sample questions are faste-uttrykk multiple-choice, not this specific i/på rule system |
-| 8 | Motsatte preposisjoner (foran/bak, med/uten...) | 🔁 `preposisjoner-uttrykk-b2` (B2) |
-| 9 | Sammensatte preposisjoner (i løpet av, i nærheten av...) | 🔁 `preposisjoner-uttrykk-b2` (B2) — matches its own "KAN DU DET?" checklist item |
-| 10 | for/til | 🔁 `preposisjoner-uttrykk-b2` (B2) / `nyanser-uttrykk` (B2) |
-| 11 | Abstrakt preposisjonsbetydning | 🔁 `preposisjoner-uttrykk-b2` (B2) |
-| 12 | Faste uttrykk (i god stand, på jakt etter...) | ⏭️ **skip — vocab plan** |
-| 13 | Kongeboligen i Bergen (preposisjon-cloze) | 🔁 `preposisjoner-uttrykk-b2` (B2) — not in vocab plan's named reading-text list, treated as another prep drill |
-| 14 | Kjente nordmenn: Brækhus | ⏭️ **skip — vocab plan** |
+| #   | Exercise                                                 | Decision                                                                                                                                                                                   |
+| --- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | Spørreord for preposisjonsledd                           | ⏭️ setningsledd-analysis, likely Kapittel 3 territory — revisit there                                                                                                                       |
+| 2–6 | Preposisjoner for tid/sted (cloze texts)                 | 🔀 `preposisjoner-tid` / `preposisjoner-sted` (currently A1/A2/B1 only) — extend to B2, or fold into `preposisjoner-uttrykk-b2`                                                             |
+| 7   | i eller på (områderegelen/kantstedsregelen)              | 🆕 **new topic candidate**: `omraaderegelen-kantstedsregelen` — confirmed `preposisjoner-uttrykk-b2` sample questions are faste-uttrykk multiple-choice, not this specific i/på rule system |
+| 8   | Motsatte preposisjoner (foran/bak, med/uten...)          | 🔁 `preposisjoner-uttrykk-b2` (B2)                                                                                                                                                          |
+| 9   | Sammensatte preposisjoner (i løpet av, i nærheten av...) | 🔁 `preposisjoner-uttrykk-b2` (B2) — matches its own "KAN DU DET?" checklist item                                                                                                           |
+| 10  | for/til                                                  | 🔁 `preposisjoner-uttrykk-b2` (B2) / `nyanser-uttrykk` (B2)                                                                                                                                 |
+| 11  | Abstrakt preposisjonsbetydning                           | 🔁 `preposisjoner-uttrykk-b2` (B2)                                                                                                                                                          |
+| 12  | Faste uttrykk (i god stand, på jakt etter...)            | ⏭️ **skip — vocab plan**                                                                                                                                                                    |
+| 13  | Kongeboligen i Bergen (preposisjon-cloze)                | 🔁 `preposisjoner-uttrykk-b2` (B2) — not in vocab plan's named reading-text list, treated as another prep drill                                                                             |
+| 14  | Kjente nordmenn: Brækhus                                 | ⏭️ **skip — vocab plan**                                                                                                                                                                    |
 
 ### KONJUNKSJONER
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1, 3 | og/eller/men/for/så (coordinating) | 🔀 `koordinerende-konjunksjoner` (currently C only) — extend down to B2 |
-| 2 | for vs. fordi | 🆕 candidate — no existing topic isolates this specific conjunction/subjunction pair; could fold into the `koordinerende-konjunksjoner` B2 extension instead of a standalone topic |
-| 4–5 | både...og / verken...eller | 🔀 `bade-og-verken-eller` (currently B1 only) — extend to B2 |
+| #    | Exercise                           | Decision                                                                                                                                                                          |
+| ---- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1, 3 | og/eller/men/for/så (coordinating) | 🔀 `koordinerende-konjunksjoner` (currently C only) — extend down to B2                                                                                                            |
+| 2    | for vs. fordi                      | 🆕 candidate — no existing topic isolates this specific conjunction/subjunction pair; could fold into the `koordinerende-konjunksjoner` B2 extension instead of a standalone topic |
+| 4–5  | både...og / verken...eller         | 🔀 `bade-og-verken-eller` (currently B1 only) — extend to B2                                                                                                                       |
 
 ### SUBJUNKSJONER
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | at/om/å | 🔁 `subjunksjon-oversikt` (B2) |
-| 2–3 | Nominal leddsetning fronting | 🔀 `leddsetning-som-fundament` (currently C only) — extend down to B2, or fold into `subjunksjon-oversikt` |
-| 4 | Adverbiale subjunksjonskategorier (tid/årsak/motsetning/hensikt/følge/betingelse/sammenlikning) | 🔁 `subjunksjon-oversikt` (B2) |
-| 5 | hvis/som/at/fordi | 🔁 `subjunksjon-oversikt` (B2) / `relative-som` (B2) |
-| 6 | etter at (kombiner setninger) | 🔁 `tidssekvens-etter-at-etterpaa` (B2) — confirmed direct match |
-| 7 | Sekvens vs. årsak (omskriving) | 🔁 `arsak-og-folge-uttrykk` (B2) / `tidssekvens-etter-at-etterpaa` (B2) |
-| 8 | Kontekst-matching (hvis/selv om/når) | 🔁 `hypotetiske-betingelsessetninger` (B2) / `motsetning-selv-om-likevel` (B2) |
-| 9 | som/enn (sammenlikning) | 🆕 candidate — `relative-som` covers relative "som", not comparative "som...som"/"enn"; check rules.ts, may fold in or need own touch |
-| 10 | Kjente nordmenn: Carlsen | ⏭️ **skip — vocab plan** |
+| #   | Exercise                                                                                        | Decision                                                                                                                             |
+| --- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | at/om/å                                                                                         | 🔁 `subjunksjon-oversikt` (B2)                                                                                                        |
+| 2–3 | Nominal leddsetning fronting                                                                    | 🔀 `leddsetning-som-fundament` (currently C only) — extend down to B2, or fold into `subjunksjon-oversikt`                            |
+| 4   | Adverbiale subjunksjonskategorier (tid/årsak/motsetning/hensikt/følge/betingelse/sammenlikning) | 🔁 `subjunksjon-oversikt` (B2)                                                                                                        |
+| 5   | hvis/som/at/fordi                                                                               | 🔁 `subjunksjon-oversikt` (B2) / `relative-som` (B2)                                                                                  |
+| 6   | etter at (kombiner setninger)                                                                   | 🔁 `tidssekvens-etter-at-etterpaa` (B2) — confirmed direct match                                                                      |
+| 7   | Sekvens vs. årsak (omskriving)                                                                  | 🔁 `arsak-og-folge-uttrykk` (B2) / `tidssekvens-etter-at-etterpaa` (B2)                                                               |
+| 8   | Kontekst-matching (hvis/selv om/når)                                                            | 🔁 `hypotetiske-betingelsessetninger` (B2) / `motsetning-selv-om-likevel` (B2)                                                        |
+| 9   | som/enn (sammenlikning)                                                                         | 🆕 candidate — `relative-som` covers relative "som", not comparative "som...som"/"enn"; check rules.ts, may fold in or need own touch |
+| 10  | Kjente nordmenn: Carlsen                                                                        | ⏭️ **skip — vocab plan**                                                                                                              |
 
 ### Summary — new-topic candidates surfaced in Kapittel 1
 Pending a closer `rules.ts` check before Phase 2 commits to "new" vs. "fold into existing":
@@ -281,40 +281,40 @@ Same method as Kapittel 1: read exercise-by-exercise against `arbeidsbok-b2-fasi
 cross-checked against the B2 `grammar.json` topic list. Vocab-plan-claimed sections excluded.
 
 ### SAMMENSATTE ORD
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1–3 | Forledd/etterledd identifikasjon + orddeling | 🔁 `sammensatte-substantiv-b2` (B2) |
-| 4 | Hva betyr det? (compound meaning) | ⏭️ **skip — vocab plan** |
-| 5 | Overført betydning (metaphoric compounds) | ⏭️ **skip — vocab plan** |
-| 6 | Ett eller to ord? (ananasringer vs. ananas ringer) | 🔁 `sammensatte-substantiv-b2` (B2) — its own "KAN DU DET?" checklist names exactly this skill |
-| 7 | Fugeformativ (s/e/ingenting) | 🔁 `sammensatte-substantiv-b2` (B2) — checklist also names this explicitly |
-| 8 | Går det an? (semantic transparency, ja/nei) | 🔁 `sammensatte-substantiv-b2` (B2), borderline with vocab territory but format (true/false on compound logic) fits the grammar topic |
+| #   | Exercise                                           | Decision                                                                                                                             |
+| --- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| 1–3 | Forledd/etterledd identifikasjon + orddeling       | 🔁 `sammensatte-substantiv-b2` (B2)                                                                                                   |
+| 4   | Hva betyr det? (compound meaning)                  | ⏭️ **skip — vocab plan**                                                                                                              |
+| 5   | Overført betydning (metaphoric compounds)          | ⏭️ **skip — vocab plan**                                                                                                              |
+| 6   | Ett eller to ord? (ananasringer vs. ananas ringer) | 🔁 `sammensatte-substantiv-b2` (B2) — its own "KAN DU DET?" checklist names exactly this skill                                        |
+| 7   | Fugeformativ (s/e/ingenting)                       | 🔁 `sammensatte-substantiv-b2` (B2) — checklist also names this explicitly                                                            |
+| 8   | Går det an? (semantic transparency, ja/nei)        | 🔁 `sammensatte-substantiv-b2` (B2), borderline with vocab territory but format (true/false on compound logic) fits the grammar topic |
 
 ### AVLEDNINGER
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Prefiks eller suffiks? | 🔁 `ordfamilie-avledning` (B2) |
-| 2 | Motsetning med prefiks (u-, mis-...) | 🔁 `motsetning-prefiks` (B2) — direct match |
-| 3 | Suffiks og ordklasse | 🔁 `ordfamilie-avledning` (B2) |
-| 4 | Verbavledninger (be-/an-/med-/for- — finnes ordet?) | 🔀 `verbprefiks-be-an-mis` (currently B1 only) — extend to B2 |
-| 5–7 | Verb↔substantiv↔adjektiv derivasjonstabeller | 🔁 `ordfamilie-avledning` (B2) |
-| 8–9 | Hva betyr det? (meaning of derived nouns/adjectives) | 🔁 `ordfamilie-avledning` (B2) — not on vocab plan's claimed list for this subsection, and the derivational-meaning angle fits the grammar topic better than raw vocab |
-| 10 | Ordfamilier (sortering) | 🔁 `ordfamilie-avledning` (B2) |
-| 11 | Substantiv/verb/adjektiv i dialog (stort blandet drill) | 🔁 `ordfamilie-avledning` (B2) |
-| 12 | Verbalsubstantiv: person vs. sak | 🆕 candidate — no existing topic isolates the person-vs-result/process distinction for verbal nouns; check rules.ts, may fold into `ordfamilie-avledning` instead of standalone |
-| 13 | Ordlaging av partikkelverb | ⏭️ **skip — vocab plan** |
+| #   | Exercise                                                | Decision                                                                                                                                                                       |
+| --- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | Prefiks eller suffiks?                                  | 🔁 `ordfamilie-avledning` (B2)                                                                                                                                                  |
+| 2   | Motsetning med prefiks (u-, mis-...)                    | 🔁 `motsetning-prefiks` (B2) — direct match                                                                                                                                     |
+| 3   | Suffiks og ordklasse                                    | 🔁 `ordfamilie-avledning` (B2)                                                                                                                                                  |
+| 4   | Verbavledninger (be-/an-/med-/for- — finnes ordet?)     | 🔀 `verbprefiks-be-an-mis` (currently B1 only) — extend to B2                                                                                                                   |
+| 5–7 | Verb↔substantiv↔adjektiv derivasjonstabeller            | 🔁 `ordfamilie-avledning` (B2)                                                                                                                                                  |
+| 8–9 | Hva betyr det? (meaning of derived nouns/adjectives)    | 🔁 `ordfamilie-avledning` (B2) — not on vocab plan's claimed list for this subsection, and the derivational-meaning angle fits the grammar topic better than raw vocab          |
+| 10  | Ordfamilier (sortering)                                 | 🔁 `ordfamilie-avledning` (B2)                                                                                                                                                  |
+| 11  | Substantiv/verb/adjektiv i dialog (stort blandet drill) | 🔁 `ordfamilie-avledning` (B2)                                                                                                                                                  |
+| 12  | Verbalsubstantiv: person vs. sak                        | 🆕 candidate — no existing topic isolates the person-vs-result/process distinction for verbal nouns; check rules.ts, may fold into `ordfamilie-avledning` instead of standalone |
+| 13  | Ordlaging av partikkelverb                              | ⏭️ **skip — vocab plan**                                                                                                                                                        |
 
 ### MER OM ORD
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Kvinne, mann eller barn? (dated gendered nouns) | ⏭️ lexical/vocabulary content, not a grammar rule — flag as possible vocab-plan addendum rather than grammar territory |
-| 2 | Kryssord (synonymer) | ⏭️ **skip — vocab plan** |
-| 3 | Hva skal ut? (odd-one-out, semantic categories) | ⏭️ lexical comprehension, not a grammar rule |
-| 4 | Adjektiv og substantiv (fixed collocations) | ⏭️ collocation/vocab content — flag as possible vocab-plan addendum rather than grammar territory |
-| 5–7 | Homonymer (så / stemme / skilt) | ⏭️ **skip — vocab plan** |
-| 8 | I godt humør (predikativ-uttrykk) | ⏭️ **skip — vocab plan** |
-| 9 | Metaforer | ⏭️ **skip — vocab plan** |
-| 10 (80 Parsetninger) | Paraphrase/idiom reconstruction | ⏭️ **skip — vocab plan** |
+| #                    | Exercise                                        | Decision                                                                                                              |
+| -------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| 1                    | Kvinne, mann eller barn? (dated gendered nouns) | ⏭️ lexical/vocabulary content, not a grammar rule — flag as possible vocab-plan addendum rather than grammar territory |
+| 2                    | Kryssord (synonymer)                            | ⏭️ **skip — vocab plan**                                                                                               |
+| 3                    | Hva skal ut? (odd-one-out, semantic categories) | ⏭️ lexical comprehension, not a grammar rule                                                                           |
+| 4                    | Adjektiv og substantiv (fixed collocations)     | ⏭️ collocation/vocab content — flag as possible vocab-plan addendum rather than grammar territory                      |
+| 5–7                  | Homonymer (så / stemme / skilt)                 | ⏭️ **skip — vocab plan**                                                                                               |
+| 8                    | I godt humør (predikativ-uttrykk)               | ⏭️ **skip — vocab plan**                                                                                               |
+| 9                    | Metaforer                                       | ⏭️ **skip — vocab plan**                                                                                               |
+| 10 (80 Parsetninger) | Paraphrase/idiom reconstruction                 | ⏭️ **skip — vocab plan**                                                                                               |
 
 ### Summary — Kapittel 2
 Mostly direct reuse: `sammensatte-substantiv-b2` and `ordfamilie-avledning` absorb almost all of
@@ -339,18 +339,18 @@ more than expected — several rule texts (`det-formelt-subjekt`, `indirekte-tal
 a given exercise drills.
 
 ### SETNINGSLEDD
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Setningsledd (1): name the sentence elements (subjekt/verbal/objekt/adverbial/predikativ/setningsadverbial/indirekte objekt) in L1 | 🆕 **new topic candidate** |
-| 2 | Setningsledd (2): identify the bolded element's function | 🆕 same candidate |
-| 3 | Setningsledd (3): mark the boundaries between elements in whole sentences | 🆕 same candidate |
-| 4 | Å gjøre et verb: subject-verb matching (semantic, not structural) | ⏭️ vocabulary-matching drill, no discrete grammar rule beyond basic verb meaning |
-| 5 | Objekt eller predikativ?: direkte/indirekte objekt vs. predikativ classification | 🆕 same candidate — this specific 3-way distinction has no existing topic |
-| 6 | De to gale kattene til naboen: build out NPs with determinativer + adjektiv | 🆕 same candidate (NP-building sub-skill) |
-| 7 | Objektspredikativ og subjektspredikativ: sort predikativ by what it modifies | 🆕 same candidate |
-| 8 | Er det trygt å fly?: place adverbialer in a cloze text | 🔁 `adverbial-fronting` (B2) / `setningsadverbial` (B2) — placement-in-context, not new |
-| 9 | Hvor gamle blir vi?: unscramble words into correct ordstilling, fronted element given | 🔀 `v2-word-order` (currently A2/B1) — extend to B2 |
-| 10 | Setningsanalyse: full S/V/O/Pt/a/A labeling of whole sentences | 🆕 same candidate (this is the "final exam" version of §1–3, same topic) |
+| #   | Exercise                                                                                                                           | Decision                                                                               |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| 1   | Setningsledd (1): name the sentence elements (subjekt/verbal/objekt/adverbial/predikativ/setningsadverbial/indirekte objekt) in L1 | 🆕 **new topic candidate**                                                              |
+| 2   | Setningsledd (2): identify the bolded element's function                                                                           | 🆕 same candidate                                                                       |
+| 3   | Setningsledd (3): mark the boundaries between elements in whole sentences                                                          | 🆕 same candidate                                                                       |
+| 4   | Å gjøre et verb: subject-verb matching (semantic, not structural)                                                                  | ⏭️ vocabulary-matching drill, no discrete grammar rule beyond basic verb meaning        |
+| 5   | Objekt eller predikativ?: direkte/indirekte objekt vs. predikativ classification                                                   | 🆕 same candidate — this specific 3-way distinction has no existing topic               |
+| 6   | De to gale kattene til naboen: build out NPs with determinativer + adjektiv                                                        | 🆕 same candidate (NP-building sub-skill)                                               |
+| 7   | Objektspredikativ og subjektspredikativ: sort predikativ by what it modifies                                                       | 🆕 same candidate                                                                       |
+| 8   | Er det trygt å fly?: place adverbialer in a cloze text                                                                             | 🔁 `adverbial-fronting` (B2) / `setningsadverbial` (B2) — placement-in-context, not new |
+| 9   | Hvor gamle blir vi?: unscramble words into correct ordstilling, fronted element given                                              | 🔀 `v2-word-order` (currently A2/B1) — extend to B2                                     |
+| 10  | Setningsanalyse: full S/V/O/Pt/a/A labeling of whole sentences                                                                     | 🆕 same candidate (this is the "final exam" version of §1–3, same topic)                |
 
 **Kapittel 3 new-topic candidate confirmed:** nothing in the 39-topic B2 list, nor any cross-level
 topic, targets sentence-element identification/labeling as its own skill (`v2-word-order` and
@@ -363,40 +363,40 @@ elements" mirrors how `setningsadverbial` and `adverbial-fronting` already split
 fronting — this would be the identification counterpart.
 
 ### HELSETNINGER
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Kulturelle uttrykk: word-order unscramble on an Amanda-prisen reading text | ⏭️ skip — reading-text content, not a discrete rule; possible vocab-plan flag (cultural facts) rather than grammar |
-| 2–4 | Utbrytning: cleft subject/object/adverbial ("Det var X som …") | 🔁 `det-formelt-subjekt` (B2) — rule text already explicitly covers this exact cleft construction |
-| 5 | Presentering: existential "det" sentences (Det er to hus …) | 🔁 `det-formelt-subjekt` (B2) — same "det" as formal subject construction |
-| 6–9 | Er det noen hjemme? / Det og passiv / Inversjon / Det-setninger (grammaticality judgment) | 🔁 `det-formelt-subjekt` (B2) — direct match across all four |
-| 10 | Spørreord: choosing the right question word from context | 🆕 **new topic candidate** — no existing topic drills hv-ord selection; small, could be its own touch or folded into `indirekte-tale-at-om`'s sibling content |
-| 11 | Setningsskjema: place whole sentences into the forfelt/midtfelt/sluttfelt schema | 🆕 fold into `setningsledd-identifikasjon` (see Setningsledd above) |
-| 12 | Sluttfeltet: sted/tid/årsak ordering within the sluttfelt | 🔁 `adverbial-fronting` (B2) / `setningsadverbial` (B2) — rule-text gap: neither currently states the sted-før-tid-før-årsak sluttfelt ordering rule explicitly; worth a small addition |
-| 13 | Trykktungt det: "Nei, jeg tror ikke det" pattern | 🆕 small candidate — check whether `det-referanse` already covers this "det" standing in for a whole clause (it likely does, since its rule text gives "Ja, det er hun" as an example); probably 🔁 `det-referanse` on closer look |
-| 14–16 | Trykklett pronomen + ikke: pronoun-object substitution combined with ikke-placement, incl. inverted/error-spotting variants | 🔀 `ikke-placement` (currently A2/B1) — extend to B2, folding in `pronomen-objektsform` (A1) as the supporting skill |
-| 17 | Imperativsetninger: rewrite as imperative, incl. negative imperative (ikke + imperativ) | 🔀 `imperativ` (currently A1 only) — extend to B2 |
+| #     | Exercise                                                                                                                    | Decision                                                                                                                                                                                                                         |
+| ----- | --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | Kulturelle uttrykk: word-order unscramble on an Amanda-prisen reading text                                                  | ⏭️ skip — reading-text content, not a discrete rule; possible vocab-plan flag (cultural facts) rather than grammar                                                                                                                |
+| 2–4   | Utbrytning: cleft subject/object/adverbial ("Det var X som …")                                                              | 🔁 `det-formelt-subjekt` (B2) — rule text already explicitly covers this exact cleft construction                                                                                                                                 |
+| 5     | Presentering: existential "det" sentences (Det er to hus …)                                                                 | 🔁 `det-formelt-subjekt` (B2) — same "det" as formal subject construction                                                                                                                                                         |
+| 6–9   | Er det noen hjemme? / Det og passiv / Inversjon / Det-setninger (grammaticality judgment)                                   | 🔁 `det-formelt-subjekt` (B2) — direct match across all four                                                                                                                                                                      |
+| 10    | Spørreord: choosing the right question word from context                                                                    | 🆕 **new topic candidate** — no existing topic drills hv-ord selection; small, could be its own touch or folded into `indirekte-tale-at-om`'s sibling content                                                                     |
+| 11    | Setningsskjema: place whole sentences into the forfelt/midtfelt/sluttfelt schema                                            | 🆕 fold into `setningsledd-identifikasjon` (see Setningsledd above)                                                                                                                                                               |
+| 12    | Sluttfeltet: sted/tid/årsak ordering within the sluttfelt                                                                   | 🔁 `adverbial-fronting` (B2) / `setningsadverbial` (B2) — rule-text gap: neither currently states the sted-før-tid-før-årsak sluttfelt ordering rule explicitly; worth a small addition                                           |
+| 13    | Trykktungt det: "Nei, jeg tror ikke det" pattern                                                                            | 🆕 small candidate — check whether `det-referanse` already covers this "det" standing in for a whole clause (it likely does, since its rule text gives "Ja, det er hun" as an example); probably 🔁 `det-referanse` on closer look |
+| 14–16 | Trykklett pronomen + ikke: pronoun-object substitution combined with ikke-placement, incl. inverted/error-spotting variants | 🔀 `ikke-placement` (currently A2/B1) — extend to B2, folding in `pronomen-objektsform` (A1) as the supporting skill                                                                                                              |
+| 17    | Imperativsetninger: rewrite as imperative, incl. negative imperative (ikke + imperativ)                                     | 🔀 `imperativ` (currently A1 only) — extend to B2                                                                                                                                                                                 |
 
 ### LEDDSETNINGER
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Leddsetninger (1): classify nominal/adjektivisk/adverbial leddsetning | 🆕 fold into `setningsledd-identifikasjon` |
-| 2 | Nominale leddsetninger: identify the nominal leddsetning + its function (subjekt/objekt/predikativ) | 🆕 fold into `setningsledd-identifikasjon` |
-| 3–4 | Å referere spørsmål: report yes/no questions (om) and hv-questions | 🔁 `indirekte-tale-at-om` (B2) — confirmed direct match, rule text covers both branches |
-| 5 | Hva sier Simon?: reported-speech paragraph rewrite | 🔁 `indirekte-tale-at-om` (B2) |
-| 6 | Som? (1): hva / hva som / hvem / hvem som | 🔁 `indirekte-tale-at-om` (B2) — rule text explicitly covers the "som" insertion when the question word is the embedded subject |
-| 7 | Som? (2): join two sentences with relative «som» | 🔁 `relative-som` (B2) — direct match; note this topic currently has only 2 questions, so this is a substantial expansion opportunity |
-| 8 | Hva vil de?: rewrite "for å" main clause as "fordi" leddsetning | 🔁 `arsak-og-folge-uttrykk` (B2) / `subjunksjon-oversikt` (B2) |
-| 9 | Drar du nå, kan jeg ikke hjelpe deg!: conditional via inversion, no subjunction, **real** (not counterfactual) condition | 🔀 `hypotetiske-betingelsessetninger` (B2) — rule text already notes «hvis» can be dropped with inversion, but only in its counterfactual/hypothetical branches; extending to B2 needs a small rule-text addition covering **real present-tense conditionals** with inversion too (this exercise's examples are all presens, not preteritum) |
-| 10 | Tur over Vidden: place setningsadverbial correctly *inside* leddsetninger | 🔀 `subordinate-order` (currently A2/B1) — extend to B2, direct match (adverb-inside-subordinate-clause placement) |
-| 11 | Språkdetektiv: find and fix 1–3 ordstilling errors per sentence (mixed main/subordinate) | 🔀 `subordinate-order` / `v2-word-order` (B2 extension) — error-correction format drawing on both |
-| 12 | Setningsskjema for leddsetninger: place a subordinate clause into the forbinderfelt/midtfelt/sluttfelt schema | 🆕 fold into `setningsledd-identifikasjon` |
-| 13–14 | Invert helsetning so the leddsetning stands in forfeltet | 🔁 `adverbial-fronting` (B2) — a fronted subordinate clause triggers the same subject/verb inversion as any other fronted adverbial; direct extension of the existing rule's logic to clause-length adverbials |
-| 15 | Komma?: comma placement with subordinate clauses (incl. non-restrictive relative clauses) | 🔁 `kommaregler` (B2) — direct match |
-| 16 | Hva sier hun?: reported speech + invert leddsetning-turned-tidsledd to front | 🔁 `indirekte-tale-at-om` (B2) / `adverbial-fronting` (B2) |
-| 17 | En leddsetning i en helsetning: identify function (subjekt/objekt/adverbial) of leddsetninger in whole sentences | 🆕 fold into `setningsledd-identifikasjon` |
-| 18 | Fordi og derfor: join two sentences both ways | 🔁 `derfor-fordi` (B2) — exact match, topic is literally named for this pair |
-| 19 | Selv om og likevel: join two sentences both ways | 🔁 `motsetning-selv-om-likevel` (B2) — direct match |
-| 20 | Mens og samtidig: join two sentences both ways (simultaneity) | 🆕 small candidate — no existing topic covers this pair; same mechanic pattern as `tidssekvens-etter-at-etterpaa` (subjunction vs. V2-triggering sentence adverb) and `derfor-fordi`/`motsetning-selv-om-likevel`, so likely best as a small addition to `tidssekvens-etter-at-etterpaa` rather than a standalone topic — check rules.ts scope before deciding |
+| #     | Exercise                                                                                                                 | Decision                                                                                                                                                                                                                                                                                                                                                      |
+| ----- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | Leddsetninger (1): classify nominal/adjektivisk/adverbial leddsetning                                                    | 🆕 fold into `setningsledd-identifikasjon`                                                                                                                                                                                                                                                                                                                     |
+| 2     | Nominale leddsetninger: identify the nominal leddsetning + its function (subjekt/objekt/predikativ)                      | 🆕 fold into `setningsledd-identifikasjon`                                                                                                                                                                                                                                                                                                                     |
+| 3–4   | Å referere spørsmål: report yes/no questions (om) and hv-questions                                                       | 🔁 `indirekte-tale-at-om` (B2) — confirmed direct match, rule text covers both branches                                                                                                                                                                                                                                                                        |
+| 5     | Hva sier Simon?: reported-speech paragraph rewrite                                                                       | 🔁 `indirekte-tale-at-om` (B2)                                                                                                                                                                                                                                                                                                                                 |
+| 6     | Som? (1): hva / hva som / hvem / hvem som                                                                                | 🔁 `indirekte-tale-at-om` (B2) — rule text explicitly covers the "som" insertion when the question word is the embedded subject                                                                                                                                                                                                                                |
+| 7     | Som? (2): join two sentences with relative «som»                                                                         | 🔁 `relative-som` (B2) — direct match; note this topic currently has only 2 questions, so this is a substantial expansion opportunity                                                                                                                                                                                                                          |
+| 8     | Hva vil de?: rewrite "for å" main clause as "fordi" leddsetning                                                          | 🔁 `arsak-og-folge-uttrykk` (B2) / `subjunksjon-oversikt` (B2)                                                                                                                                                                                                                                                                                                 |
+| 9     | Drar du nå, kan jeg ikke hjelpe deg!: conditional via inversion, no subjunction, **real** (not counterfactual) condition | 🔀 `hypotetiske-betingelsessetninger` (B2) — rule text already notes «hvis» can be dropped with inversion, but only in its counterfactual/hypothetical branches; extending to B2 needs a small rule-text addition covering **real present-tense conditionals** with inversion too (this exercise's examples are all presens, not preteritum)                   |
+| 10    | Tur over Vidden: place setningsadverbial correctly *inside* leddsetninger                                                | 🔀 `subordinate-order` (currently A2/B1) — extend to B2, direct match (adverb-inside-subordinate-clause placement)                                                                                                                                                                                                                                             |
+| 11    | Språkdetektiv: find and fix 1–3 ordstilling errors per sentence (mixed main/subordinate)                                 | 🔀 `subordinate-order` / `v2-word-order` (B2 extension) — error-correction format drawing on both                                                                                                                                                                                                                                                              |
+| 12    | Setningsskjema for leddsetninger: place a subordinate clause into the forbinderfelt/midtfelt/sluttfelt schema            | 🆕 fold into `setningsledd-identifikasjon`                                                                                                                                                                                                                                                                                                                     |
+| 13–14 | Invert helsetning so the leddsetning stands in forfeltet                                                                 | 🔁 `adverbial-fronting` (B2) — a fronted subordinate clause triggers the same subject/verb inversion as any other fronted adverbial; direct extension of the existing rule's logic to clause-length adverbials                                                                                                                                                 |
+| 15    | Komma?: comma placement with subordinate clauses (incl. non-restrictive relative clauses)                                | 🔁 `kommaregler` (B2) — direct match                                                                                                                                                                                                                                                                                                                           |
+| 16    | Hva sier hun?: reported speech + invert leddsetning-turned-tidsledd to front                                             | 🔁 `indirekte-tale-at-om` (B2) / `adverbial-fronting` (B2)                                                                                                                                                                                                                                                                                                     |
+| 17    | En leddsetning i en helsetning: identify function (subjekt/objekt/adverbial) of leddsetninger in whole sentences         | 🆕 fold into `setningsledd-identifikasjon`                                                                                                                                                                                                                                                                                                                     |
+| 18    | Fordi og derfor: join two sentences both ways                                                                            | 🔁 `derfor-fordi` (B2) — exact match, topic is literally named for this pair                                                                                                                                                                                                                                                                                   |
+| 19    | Selv om og likevel: join two sentences both ways                                                                         | 🔁 `motsetning-selv-om-likevel` (B2) — direct match                                                                                                                                                                                                                                                                                                            |
+| 20    | Mens og samtidig: join two sentences both ways (simultaneity)                                                            | 🆕 small candidate — no existing topic covers this pair; same mechanic pattern as `tidssekvens-etter-at-etterpaa` (subjunction vs. V2-triggering sentence adverb) and `derfor-fordi`/`motsetning-selv-om-likevel`, so likely best as a small addition to `tidssekvens-etter-at-etterpaa` rather than a standalone topic — check rules.ts scope before deciding |
 
 ### Summary — Kapittel 3
 The chapter reuses far more existing B2 topics than Kapittel 1–2 triage might have predicted,
@@ -430,38 +430,38 @@ text-type-recognition / vocabulary content with very little discrete grammar to 
 mirror image of Kapittel 2's Mer om ord.
 
 ### TEKSTBINDING
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Dette er nyhetene: sequence a news broadcast's sentences into order | ⏭️ skip — discourse-sequencing/cohesion exercise, no discrete grammar rule |
-| 2 | Tidsforhold: etter at / etterpå / etter | 🔁 `tidssekvens-etter-at-etterpaa` (B2) — direct match; note this exercise also drills plain preposition «etter» (etter jobb) alongside the subjunksjon/adverb pair, a small rule-text addition worth considering |
-| 3–4 | Hva spurte hun oss om? / Hva sa hun til oss?: reported speech with preteritumssamsvar (tense agreement) | 🔁 `indirekte-tale-at-om` (B2) — direct match, the rule text's tense-shift paragraph already describes exactly this preteritumssamsvar mechanic |
-| 5–6 | Vanskelige budsjettforhandlinger / Hvem skal vi ansette?: reporting with varied verbs (understreke, være usikker på) | 🔁 `indirekte-tale-at-om` (B2) — same topic, wider set of reporting verbs |
-| 7 | Ifølge far vil mor at …: marking second-hand information (ifølge X, visstnok) | 🔀/🆕 `indirekte-tale-at-om` (B2) extension — rule-text gap: current text doesn't cover «ifølge»/«visstnok» as hearsay-marking devices; small addition needed before writing questions |
-| 8–9 | Hvorfor skjer det? / For – så: fordi/derfor/for/ettersom/nemlig/så … at/så | 🔁 `arsak-og-folge-uttrykk` (B2) / `derfor-fordi` (B2) — direct match, rule text explicitly lists this exact connective set |
-| 10 | Hva er hensikten?: for at/slik at/så/hensikten med å/formålet med/på den måten/dermed | 🔁 `arsak-og-folge-uttrykk` (B2) — direct match, rule text's hensikt-clause bullet covers this |
-| 11 | Med mindre du …: negative condition with «med mindre» | 🔁 `subjunksjon-oversikt` (B2) — direct match, rule text already lists «med mindre» under the condition bullet |
-| 12–13 | Årsaksforhold (1)/(2): fuller cause/result/purpose toolkit (på grunn av at, følgen av, å resultere i, grunnen til at, å være skyld i, altså, med det resultat at) | 🔁 `arsak-og-folge-uttrykk` (B2) — direct match, essentially a drill of this topic's own rule-text vocabulary |
-| 14 | Motsetning: likevel/selv om/imidlertid/men … likevel/til tross for at | 🔁 `kontrast-uttrykk` (B2) / `motsetning-selv-om-likevel` (B2) — direct match |
-| 15 | Hvis du vil …: real (not counterfactual) conditionals | 🔀 `hypotetiske-betingelsessetninger` (B2) — same rule-text gap already flagged at Kapittel 3 Leddsetninger §9 (needs a real-condition/presens branch); one more data point for that addition |
-| 16 | Bare det kunne begynne å snø …: wish (bare + preteritum), med mindre, ellers | 🔁 `hypotetiske-betingelsessetninger` (B2) for the «bare»-wish construction (rule text already covers «skulle ønske» / «tenk om» wishes, «bare» is the same family) / `kontrast-uttrykk` (B2) for «ellers» (already named in that topic's rule text) |
-| 17 | Parsetninger: paraphrase reconstruction using the same connective set | ⏭️ **skip — vocab plan** (PARSETNINGER format, same convention as every other PARSETNINGER section across Kapittel 1–2) |
+| #     | Exercise                                                                                                                                                          | Decision                                                                                                                                                                                                                                            |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | Dette er nyhetene: sequence a news broadcast's sentences into order                                                                                               | ⏭️ skip — discourse-sequencing/cohesion exercise, no discrete grammar rule                                                                                                                                                                           |
+| 2     | Tidsforhold: etter at / etterpå / etter                                                                                                                           | 🔁 `tidssekvens-etter-at-etterpaa` (B2) — direct match; note this exercise also drills plain preposition «etter» (etter jobb) alongside the subjunksjon/adverb pair, a small rule-text addition worth considering                                    |
+| 3–4   | Hva spurte hun oss om? / Hva sa hun til oss?: reported speech with preteritumssamsvar (tense agreement)                                                           | 🔁 `indirekte-tale-at-om` (B2) — direct match, the rule text's tense-shift paragraph already describes exactly this preteritumssamsvar mechanic                                                                                                      |
+| 5–6   | Vanskelige budsjettforhandlinger / Hvem skal vi ansette?: reporting with varied verbs (understreke, være usikker på)                                              | 🔁 `indirekte-tale-at-om` (B2) — same topic, wider set of reporting verbs                                                                                                                                                                            |
+| 7     | Ifølge far vil mor at …: marking second-hand information (ifølge X, visstnok)                                                                                     | 🔀/🆕 `indirekte-tale-at-om` (B2) extension — rule-text gap: current text doesn't cover «ifølge»/«visstnok» as hearsay-marking devices; small addition needed before writing questions                                                                |
+| 8–9   | Hvorfor skjer det? / For – så: fordi/derfor/for/ettersom/nemlig/så … at/så                                                                                        | 🔁 `arsak-og-folge-uttrykk` (B2) / `derfor-fordi` (B2) — direct match, rule text explicitly lists this exact connective set                                                                                                                          |
+| 10    | Hva er hensikten?: for at/slik at/så/hensikten med å/formålet med/på den måten/dermed                                                                             | 🔁 `arsak-og-folge-uttrykk` (B2) — direct match, rule text's hensikt-clause bullet covers this                                                                                                                                                       |
+| 11    | Med mindre du …: negative condition with «med mindre»                                                                                                             | 🔁 `subjunksjon-oversikt` (B2) — direct match, rule text already lists «med mindre» under the condition bullet                                                                                                                                       |
+| 12–13 | Årsaksforhold (1)/(2): fuller cause/result/purpose toolkit (på grunn av at, følgen av, å resultere i, grunnen til at, å være skyld i, altså, med det resultat at) | 🔁 `arsak-og-folge-uttrykk` (B2) — direct match, essentially a drill of this topic's own rule-text vocabulary                                                                                                                                        |
+| 14    | Motsetning: likevel/selv om/imidlertid/men … likevel/til tross for at                                                                                             | 🔁 `kontrast-uttrykk` (B2) / `motsetning-selv-om-likevel` (B2) — direct match                                                                                                                                                                        |
+| 15    | Hvis du vil …: real (not counterfactual) conditionals                                                                                                             | 🔀 `hypotetiske-betingelsessetninger` (B2) — same rule-text gap already flagged at Kapittel 3 Leddsetninger §9 (needs a real-condition/presens branch); one more data point for that addition                                                        |
+| 16    | Bare det kunne begynne å snø …: wish (bare + preteritum), med mindre, ellers                                                                                      | 🔁 `hypotetiske-betingelsessetninger` (B2) for the «bare»-wish construction (rule text already covers «skulle ønske» / «tenk om» wishes, «bare» is the same family) / `kontrast-uttrykk` (B2) for «ellers» (already named in that topic's rule text) |
+| 17    | Parsetninger: paraphrase reconstruction using the same connective set                                                                                             | ⏭️ **skip — vocab plan** (PARSETNINGER format, same convention as every other PARSETNINGER section across Kapittel 1–2)                                                                                                                              |
 
 ### TEKSTER
-| # | Exercise | Decision |
-| - | -------- | -------- |
-| 1 | Hvilken type tekst er det?: match text snippets to genre (brosjyre/søknad/klage/rapport/annonse/instruksjon) | ⏭️ skip — genre recognition, no discrete grammar rule |
-| 2 | Faktatekst: Klimasoner — 3-way cloze choosing the right word/expression per gap | ⏭️ skip — vocabulary-in-context/collocation choice, not a grammar rule; flag as a possible vocab-plan reading-cloze candidate |
-| 3 | Veiledning: sequence instructions into the right order | ⏭️ skip — reading comprehension |
-| 4 | Ledig stilling: job-ad reading comprehension Q&A | ⏭️ skip — reading comprehension |
-| 5 | Formelt brev: klage — reading comprehension Q&A | ⏭️ skip — reading comprehension |
-| 6 | Politiske partier: synonym-matching in a factual text | ⏭️ **skip — vocab plan** (synonym-matching format) |
-| 7 | Anmeldelse: bokanmeldelse reading comprehension Q&A | ⏭️ skip — reading comprehension |
-| 8 | Offentlige brev: fill in fixed formal-letter phrases | ⏭️ **skip — vocab plan** (faste uttrykk territory, formal-register collocations rather than a grammar rule) |
-| 9 | Redegjørelse: divide an unparagraphed text into 6 avsnitt | ⏭️ skip — discourse-structuring exercise, no discrete grammar rule |
-| 10 | Innledning eller avslutning?: classify text excerpts as intro/conclusion/neither | ⏭️ skip — genre-structure recognition |
-| 11–12 | 2 + 1: generate for/mot arguments on a given claim | ⏭️ skip — open-ended writing practice |
-| 13–14 | Et argument for/mot en sak: fill in logical connectors (bindeord) to make an argumentative text cohere | 🔁 `arsak-og-folge-uttrykk` / `kontrast-uttrykk` / `subjunksjon-oversikt` (B2) — a genuine connective-selection drill, same topic set as Tekstbinding above, just in a longer argumentative-text context |
-| 15 | Test deg selv: metalinguistic quiz about text types (referat vocabulary, formal-letter conventions, genre terms) | ⏭️ skip — metalinguistic/genre knowledge, not a grammar rule |
+| #     | Exercise                                                                                                         | Decision                                                                                                                                                                                                |
+| ----- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | Hvilken type tekst er det?: match text snippets to genre (brosjyre/søknad/klage/rapport/annonse/instruksjon)     | ⏭️ skip — genre recognition, no discrete grammar rule                                                                                                                                                    |
+| 2     | Faktatekst: Klimasoner — 3-way cloze choosing the right word/expression per gap                                  | ⏭️ skip — vocabulary-in-context/collocation choice, not a grammar rule; flag as a possible vocab-plan reading-cloze candidate                                                                            |
+| 3     | Veiledning: sequence instructions into the right order                                                           | ⏭️ skip — reading comprehension                                                                                                                                                                          |
+| 4     | Ledig stilling: job-ad reading comprehension Q&A                                                                 | ⏭️ skip — reading comprehension                                                                                                                                                                          |
+| 5     | Formelt brev: klage — reading comprehension Q&A                                                                  | ⏭️ skip — reading comprehension                                                                                                                                                                          |
+| 6     | Politiske partier: synonym-matching in a factual text                                                            | ⏭️ **skip — vocab plan** (synonym-matching format)                                                                                                                                                       |
+| 7     | Anmeldelse: bokanmeldelse reading comprehension Q&A                                                              | ⏭️ skip — reading comprehension                                                                                                                                                                          |
+| 8     | Offentlige brev: fill in fixed formal-letter phrases                                                             | ⏭️ **skip — vocab plan** (faste uttrykk territory, formal-register collocations rather than a grammar rule)                                                                                              |
+| 9     | Redegjørelse: divide an unparagraphed text into 6 avsnitt                                                        | ⏭️ skip — discourse-structuring exercise, no discrete grammar rule                                                                                                                                       |
+| 10    | Innledning eller avslutning?: classify text excerpts as intro/conclusion/neither                                 | ⏭️ skip — genre-structure recognition                                                                                                                                                                    |
+| 11–12 | 2 + 1: generate for/mot arguments on a given claim                                                               | ⏭️ skip — open-ended writing practice                                                                                                                                                                    |
+| 13–14 | Et argument for/mot en sak: fill in logical connectors (bindeord) to make an argumentative text cohere           | 🔁 `arsak-og-folge-uttrykk` / `kontrast-uttrykk` / `subjunksjon-oversikt` (B2) — a genuine connective-selection drill, same topic set as Tekstbinding above, just in a longer argumentative-text context |
+| 15    | Test deg selv: metalinguistic quiz about text types (referat vocabulary, formal-letter conventions, genre terms) | ⏭️ skip — metalinguistic/genre knowledge, not a grammar rule                                                                                                                                             |
 
 ### Summary — Kapittel 4
 Tekstbinding contributes no new topics at all — every exercise either extends an existing B2
@@ -1519,28 +1519,122 @@ adj-agreement`) confirmed clean at the start of the next session: 2902/2902 spli
   (`cefr: 'B2'` only) to `check-b2-grammar-vocab.mjs`'s `B2_TOPICS` set, same fix as the previous
   eight topics.
 
-  **`pnpm grammar:split` and validators (`check-b2-grammar-vocab.mjs preposisjoner-tid`,
-  `check-grammar-norwegian.mjs preposisjoner-tid`) not yet run this session** — run these next
-  before starting a new topic.
+  **Validation complete:** confirmed clean by user (`pnpm grammar:split` reconciled;
+  `check-b2-grammar-vocab.mjs preposisjoner-tid` → 0 unmatched;
+  `check-grammar-norwegian.mjs preposisjoner-tid` → 0 flagged).
+
+- ✅ **Done — `preposisjoner-uttrykk-b2`** (Preposisjoner §8–11 + 13 — motsatte preposisjoner,
+  sammensatte preposisjoner, for/til, abstrakt preposisjonsbetydning; §13 Kongeboligen-cloze
+  folded in as general reinforcement rather than its own item). This topic already had 10 B2
+  questions (verb/adjektiv + preposisjon faste uttrykk: ta ansvar for, ha inntrykk av, være
+  forberedt på, komme på, kjempe for, sette pris på, bestemme seg for, stemme på, skeptisk til,
+  ta hånd om) — all fill/order/minimal-pair, all `plusOnly: true`. Confirmed §7 (områderegelen/
+  kantstedsregelen i/på for sted) is NOT part of this topic's existing content and is flagged in
+  the plan as a possible separate standalone topic — left untouched this session, not folded in.
+  Also confirmed `nyanser-uttrykk` (9 questions) is a distinct vocabulary-nuance topic (seriøs vs.
+  alvorlig, skuffet vs. lei seg, etc.), not a for/til preposition topic — no overlap. Added 10 new
+  B2 questions (`gq-prep-b2-011`–`020`) covering: five sammensatte preposisjoner (`i løpet av`,
+  `i nærheten av`, `på grunn av`, `i stedet for`, `ved siden av` — all fill, each with the other
+  four as distractors across items), `innenfor` vs. `utenfor` in a budget context (minimal-pair),
+  `i forbindelse med` (order), `til` vs. `for` in two contrastive fill items (mottaker vs.
+  vare/tjeneste-i-bytte), and the abstract idiom `i tvil` (multiple-choice, meaning check). All
+  `cefr: 'B2'`, `plusOnly: true`, matching this topic's existing convention. Fresh everyday
+  scenarios throughout (bok, kaffebar, fly, buss, parkering, familiebudsjett,
+  politietterforskning, bursdagsgave, billett, jobbeslutning). Topic now has 20 total questions
+  (10 → 20). Applied to the real `grammar.json` via `Filesystem:edit_file`, re-verified: 3002
+  total questions file-wide, no duplicate IDs.
+
+  **Whitelist:** `preposisjoner-uttrykk-b2` was already present in `check-b2-grammar-vocab.mjs`'s
+  `B2_TOPICS` set from an earlier session (it's B2-only, listed among the original 10 new
+  topics) — no whitelist change needed this time.
+
+  **Validation complete:** confirmed clean by user (`pnpm grammar:split` reconciled;
+  `check-b2-grammar-vocab.mjs preposisjoner-uttrykk-b2` → 0 unmatched;
+  `check-grammar-norwegian.mjs preposisjoner-uttrykk-b2` → 0 flagged).
+
+- ✅ **Done — `ikke-placement`/`imperativ`** (Helsetninger §14–17 — negation placement and
+  imperative extensions). `ikke-placement` already had 13 A2 + 7 B1 questions, all testing the
+  core helsetning-vs-leddsetning rule (ikke/aldri/alltid/ofte after the finite verb in main
+  clauses, before it in subordinate clauses) with single-verb sentences — zero B2 content.
+  `imperativ` already had 8 A1 questions, all basic imperative formation (infinitiv minus final
+  -e, no subject) — zero B1/B2/C content anywhere. Confirmed C level has neither topic. Since the
+  plan groups both under one bullet (Helsetninger §14–17), identified negative imperatives as the
+  natural bridge — in imperative sentences «ikke» always precedes the verb, unlike declarative
+  main clauses where it follows — and split 10 new B2 questions five-and-five across the two
+  topics accordingly.
+
+  `ikke-placement` (`gq-ikke-021`–`025`): ikke-placement in a main clause with a fronted adverbial
+  (subject-verb inversion, order), the same with a fronted object (transform, echoing the earlier
+  `v2-word-order` «den boken har jeg lest» pattern but with negation added), ikke before a modal+
+  infinitive verb chain in a leddsetning (fill), ikke with a reflexive verb in a leddsetning
+  (transform), and ikke with a particle verb in a helsetning (order).
+
+  `imperativ` (`gq-imp-009`–`013`): negative imperative formation (transform, «Du må ikke gå nå.»
+  → «Ikke gå nå!»), a minimal-pair contrasting correct «Ikke glem nøklene!» against the common
+  learner error «Glem ikke nøklene!», reflexive imperative (fill, «Sett deg ned!» — deg not seg),
+  particle-verb imperative (transform, «Slå av lyset!»), and the «la oss» hortative construction
+  as a softer alternative to a direct imperative (transform). All `cefr: 'B2'`, `plusOnly: true`,
+  matching both topics' established convention for their existing `plusOnly`-gated B1/B2 content
+  (`ikke-placement`'s B1 items `gq-ikke-009`–`012` already use `plusOnly: true`; `imperativ` had
+  none before, so this sets the convention for its first gated content). Fresh scenarios
+  throughout (jobb, boklesing, kveldsplaner, lys/lyskryter, nøkler, avreise). `ikke-placement` now
+  has 25 total questions (20 → 25; B2 count 0 → 5). `imperativ` now has 13 total questions
+  (8 → 13; B2 count 0 → 5). Applied to the real `grammar.json` via `Filesystem:edit_file` in one
+  combined edit (two separate insertion points), re-verified: 3012 total questions file-wide, no
+  duplicate IDs.
+
+  **Whitelist fix applied while starting this touch:** added both `ikke-placement` and
+  `imperativ` (`cefr: 'B2'` only) to `check-b2-grammar-vocab.mjs`'s `B2_TOPICS` set.
+
+  **Validation complete:** confirmed clean by user (`pnpm grammar:split` reconciled;
+  `check-b2-grammar-vocab.mjs ikke-placement` → 0 unmatched;
+  `check-b2-grammar-vocab.mjs imperativ` → 0 unmatched;
+  `check-grammar-norwegian.mjs ikke-placement` → 0 flagged;
+  `check-grammar-norwegian.mjs imperativ` → 0 flagged).
+
+- ✅ **Done — `omraaderegelen-kantstedsregelen`** (Preposisjoner §7, i/på for enclosed space vs.
+  surface/workplace, folded into the existing `preposisjoner-sted` topic per the earlier
+  rules.ts check rather than opened as a standalone topic). Confirmed this touch was already
+  completed in an earlier session (`preposisjoner-sted` B2 count 0 → 10, see that bullet above) —
+  the only gap found this session was that `preposisjoner-sted` had never been added to
+  `check-b2-grammar-vocab.mjs`'s `B2_TOPICS` whitelist, so its B2 questions were silently never
+  vocab-checked. Added `preposisjoner-sted` (`cefr: 'B2'` only) to the whitelist via
+  `Filesystem:edit_file`. No new content needed — this bullet just closes out the whitelist gap
+  and confirms the touch is fully done.
+
+- ✅ **Done — `adj-comparison`** (Subjunksjoner §9, «som...som»/«enn» comparison — the last
+  remaining rule-text fold noted in the Kapittel 1 summary). Confirmed the fold-in decision from
+  the earlier rules.ts check: extend the existing `adj-comparison` topic rather than open a new
+  one. Found a genuine rule-text gap — the existing explanation covered comparative/superlative
+  formation and the lang/langt/lenge trio but never described equality comparison («like ... som»
+  / «ikke så ... som») or «enn» introducing a full leddsetning (not just a single word) — added
+  both to `explanationEn`/`explanationNb` before drafting questions. Anchor confirmed from last
+  session: `gq-adj-113` was the topic's last existing question (B1), immediately followed by a
+  different topic block (`relative-som`). Added 10 new B2 questions (`gq-adj-124`–`133`: fill/
+  minimal-pair/transform/order/multiple-choice mix) covering «like + adjektiv + som» equality,
+  the negated «ikke så ... som» form, «som»-vs-«enn» minimal pairs (including a negated-polarity
+  pair), «enn» introducing a full clause with tense agreement, and «enn» + pronoun in objektsform.
+  Fresh characters/scenarios throughout (Emma, Anna, Marte), not the book's own sentences. Topic
+  now has 57 total questions (47 → 57; B2 count 0 → 10 — first B2 content for this topic).
+  Applied to the real `grammar.json` (single clean insertion after `gq-adj-113`, dry-run verified
+  first) and `rules.ts` via `Filesystem:edit_file`, re-verified: 3022 total questions file-wide,
+  no duplicate IDs. Added `adj-comparison` (`cefr: 'B2'` only) to `check-b2-grammar-vocab.mjs`'s
+  `B2_TOPICS` whitelist. **`pnpm grammar:split` and validators
+  (`check-b2-grammar-vocab.mjs adj-comparison preposisjoner-sted`,
+  `check-grammar-norwegian.mjs adj-comparison`) not yet run this session** — run these next.
 
 ## Next session starting point (session ending — read this first)
 
 Everything above is applied to the real `grammar.json`/`rules.ts` up to and including
-`preposisjoner-tid`, but validators for `preposisjoner-tid` have not yet been run/confirmed —
-run `pnpm grammar:split`, `check-b2-grammar-vocab.mjs preposisjoner-tid`, and
-`check-grammar-norwegian.mjs preposisjoner-tid` first before starting a new topic.
+`adj-comparison`. **This closes out the last two remaining items from the plan's Kapittel
+summaries** (`omraaderegelen-kantstedsregelen` and «som/enn» → `adj-comparison`) — no known
+remaining candidates from Phase 1 triage are outstanding.
 
-**Remaining candidates** (direct-match/fold-in touches to existing topics, minus everything done
-above through `preposisjoner-tid`): `preposisjoner-uttrykk-b2` (Preposisjoner §7–11, 13 —
-områderegelen/kantstedsregelen i/på, motsatte preposisjoner, sammensatte preposisjoner, for/til,
-abstrakt preposisjonsbetydning, Kongeboligen-cloze), and the `ikke-placement`/`imperativ` B2
-extensions (Helsetninger §14–17) — plus the small remaining rule-text fold noted inline in the
-Kapittel summaries («som/enn» into `adj-comparison`).
-
-**Recommended starting point next session:** finish validating `preposisjoner-tid`, then
-`preposisjoner-uttrykk-b2` — note the plan flags a possible new standalone topic
-(`omraaderegelen-kantstedsregelen`) for the i/på rule system, worth confirming before folding it
-in.
+**Recommended starting point next session:** run `pnpm grammar:split`, then
+`check-b2-grammar-vocab.mjs adj-comparison preposisjoner-sted` and
+`check-grammar-norwegian.mjs adj-comparison` to close out validation debt from this session.
+After that, re-scan the Phase 1 Kapittel summaries and this doc's progress log for any topic
+touch not yet marked ✅ Done — if none remain, this implementation plan may be complete.
 
 **Infra note:** `draft/b2/pa-niva/implementation/grammar-lazy-load-per-level.md` is now done and
 landed (see the "Process note: workflow now uses grammar-b2.json + grammar:split" section above

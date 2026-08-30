@@ -2,13 +2,15 @@
   "ikke-placement": {
     "levels": [
       "A2",
-      "B1"
+      "B1",
+      "B2"
     ],
     "countsByLevel": {
       "A2": 13,
-      "B1": 7
+      "B1": 7,
+      "B2": 5
     },
-    "total": 20
+    "total": 25
   },
   "det-sentence": {
     "levels": [
@@ -193,13 +195,15 @@
   "adj-comparison": {
     "levels": [
       "A2",
-      "B1"
+      "B1",
+      "B2"
     ],
     "countsByLevel": {
       "A2": 14,
-      "B1": 33
+      "B1": 33,
+      "B2": 10
     },
-    "total": 47
+    "total": 57
   },
   "sterke-verb": {
     "levels": [
@@ -583,12 +587,14 @@
   },
   "imperativ": {
     "levels": [
-      "A1"
+      "A1",
+      "B2"
     ],
     "countsByLevel": {
-      "A1": 8
+      "A1": 8,
+      "B2": 5
     },
-    "total": 8
+    "total": 13
   },
   "possessiver-min-din": {
     "levels": [
@@ -1121,9 +1127,9 @@
       "B2"
     ],
     "countsByLevel": {
-      "B2": 10
+      "B2": 20
     },
-    "total": 10
+    "total": 20
   },
   "adj-boying-c": {
     "levels": [
