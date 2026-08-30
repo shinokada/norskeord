@@ -379,7 +379,8 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '«lenge» (adverb, duration/time) has its own comparison, lenge → lenger → lengst ("Jeg vil ikke ' +
       'være her lenger" = I don\'t want to be here any longer). «Lengre» and «lenger» are NOT ' +
       'interchangeable — «lengre» covers physical length/distance (both the adjective and the ' +
-      'distance-adverb), while «lenger» is reserved for TIME/duration.',
+      'distance-adverb), while «lenger» is reserved for TIME/duration. ' +
+      'Equality is expressed with «like» + adjective (base form) + «som» (never «enn»): "Emma er like flink som søsteren sin" (Emma is as good as her sister). The negated form follows the same pattern, «ikke like» or «ikke så» + adjective + «som»: "Denne bilen er ikke så dyr som den forrige" (This car is not as expensive as the previous one). «Enn» belongs with the comparative and can introduce either a single word/phrase or a full clause: "Oppgaven var vanskeligere enn jeg trodde" (The task was harder than I thought) — the verb in the clause after «enn» usually matches the main clause’s tense, and a pronoun after «enn» takes the object form: "Kollegaen hennes er dyktigere enn henne" (Her colleague is more skilled than her).',
     explanationNb:
       'De fleste adjektiver danner komparativ med -ere og superlativ med -est: billig → billigere → billigst.\n\n' +
       'Noen er uregelmessige:\n' +
@@ -396,7 +397,8 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• **lang** (adjektiv, fysisk/romlig lengde) gradbøyes lang → lengre → lengst: «Broren hennes er ti centimeter lengre enn henne.»\n' +
       '• **langt** (adverb, avstand/utstrekning) gradbøyes på samme måte, langt → lengre → lengst: «Kan du stille deg litt lengre bak?»\n' +
       '• **lenge** (adverb, varighet/tid) har sin egen gradbøyning, lenge → lenger → lengst: «Jeg vil ikke være her lenger.»\n\n' +
-      '«Lengre» og «lenger» er IKKE ombyttbare — «lengre» dekker fysisk lengde/avstand (både adjektivet og avstandsadverbet), mens «lenger» er forbeholdt TID/varighet.'
+      '«Lengre» og «lenger» er IKKE ombyttbare — «lengre» dekker fysisk lengde/avstand (både adjektivet og avstandsadverbet), mens «lenger» er forbeholdt TID/varighet.\n\n' +
+      'Likhet uttrykkes med «like» + adjektiv i grunnform + «som» (ikke «enn»): "Emma er like flink som søsteren sin." Den nektende formen bruker samme mønster: «ikke like» eller «ikke så» + adjektiv i grunnform + «som»: "Denne bilen er ikke så dyr som den forrige." «Enn» hører derimot til komparativ og kan innlede enten et enkelt ord/uttrykk eller en hel leddsetning: "Oppgaven var vanskeligere enn jeg trodde" — verbet i leddsetningen etter «enn» følger normalt samme tid som hovedsetningen, og et pronomen etter «enn» står i objektsform: "Kollegaen hennes er dyktigere enn henne."'
   },
 
   'adj-boying-c': {
