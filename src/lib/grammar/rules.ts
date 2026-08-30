@@ -73,11 +73,33 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'In Norwegian main clauses the finite verb must be the SECOND element. ' +
       'When the sentence starts with an adverbial, the subject and verb swap: ' +
       '"I går gikk jeg til butikken." (Yesterday I went to the store.) ' +
-      'Compare English: subject stays first. Norwegian: verb stays second.',
+      'Compare English: subject stays first. Norwegian: verb stays second. ' +
+      'This V2 inversion is NOT limited to adverbials — ANY element fronted for emphasis triggers ' +
+      'the same swap: a fronted OBJECT ("Den boken har jeg lest" = THAT book, I have read), a ' +
+      'fronted PREDICATIVE/COMPLEMENT ("Gladere har jeg aldri vært" = happier I have never been), ' +
+      'or a whole fronted SUBORDINATE CLAUSE acting as a single adverbial ("Når jeg kommer hjem, ' +
+      'spiser jeg middag" — the comma marks the end of the fronted clause, and the main clause ' +
+      'still inverts: "spiser jeg", not "jeg spiser"). ' +
+      'A common learner error is forgetting the inversion after ANY of these frontings and leaving ' +
+      'the subject first (*"I går jeg gikk..."), or after a fronted clause (*"Når jeg kommer hjem, ' +
+      'jeg spiser..."). Sentence adverbs like "aldri"/"alltid"/"ikke" still take their normal ' +
+      'mid-field position AFTER the inverted subject: "Dette har jeg aldri sett før" (not ' +
+      '"Dette har aldri jeg sett før").',
     explanationNb:
       'I norske hovedsetninger må det bøyde verbet alltid stå på ANDRE PLASS.\n\n' +
       'Når setningen begynner med et adverbial, bytter subjektet og verbet plass: "I går gikk jeg til butikken."\n\n' +
-      'Sammenlign med engelsk: subjektet er alltid først. Norsk: verbet er alltid på andreplass.'
+      'Sammenlign med engelsk: subjektet er alltid først. Norsk: verbet er alltid på andreplass.\n\n' +
+      'Denne V2-inversjonen gjelder ikke bare adverbial — ETHVERT ledd som flyttes fremst for å ' +
+      'fremheves, utløser samme ombytting: et fremflyttet **objekt** ("Den boken har jeg lest" = ' +
+      'DEN boken har jeg lest), et fremflyttet **predikativ** ("Gladere har jeg aldri vært"), eller ' +
+      'en hel fremflyttet **leddsetning** som fungerer som ett samlet adverbial ("Når jeg kommer ' +
+      'hjem, spiser jeg middag" — kommaet markerer slutten på den fremflyttede leddsetningen, og ' +
+      'helsetningen inverteres fortsatt: "spiser jeg", ikke "jeg spiser").\n\n' +
+      'En vanlig feil er å glemme inversjonen etter noen av disse fremflyttingene og la subjektet ' +
+      'stå først (*"I går jeg gikk..."), eller etter en fremflyttet leddsetning (*"Når jeg kommer ' +
+      'hjem, jeg spiser..."). Setningsadverb som "aldri"/"alltid"/"ikke" behold sin vanlige ' +
+      'plass midtfeltet ETTER det inverterte subjektet: "Dette har jeg aldri sett før" (ikke ' +
+      '"Dette har aldri jeg sett før").'
   },
 
   'modal-verb-order': {
@@ -116,17 +138,20 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
     explanationEn:
       '"som" introduces a relative clause and stands for the subject or object of the embedded ' +
       'sentence: "Mannen som bor her, er lege." "Boka som jeg leste, var god." When "som" is the ' +
-      'object it can be dropped at a higher level ("Boka jeg leste, var god"), but at this level ' +
-      'we always write "som" out. A relative clause is subordinate, so adverbs like "ikke" come ' +
-      'BEFORE the verb: "en venn som ikke kommer". For a PLACE noun, «der» can replace «som … ' +
-      '[preposition]», avoiding a stranded preposition at the end of the clause — more typical ' +
-      'of formal/written style: "byen der jeg bor" = "byen som jeg bor i". «Der» only works for ' +
-      'places, never for people or things.',
+      'SUBJECT of the embedded clause it is always required ("en venn som ikke kommer" — "som" ' +
+      'stands for "vennen"). When "som" is instead the OBJECT, it becomes optional at this level ' +
+      'and both versions are correct: "Boka som jeg leste, var god" = "Boka jeg leste, var god." ' +
+      'A relative clause is subordinate, so adverbs like "ikke" come BEFORE the verb regardless of ' +
+      'whether "som" is written out: "en venn som ikke kommer", "en bok jeg ikke har lest". For a ' +
+      'PLACE noun, «der» can replace «som … [preposition]», avoiding a stranded preposition at the ' +
+      'end of the clause — more typical of formal/written style: "byen der jeg bor" = "byen som ' +
+      'jeg bor i". «Der» only works for places, never for people or things.',
     explanationNb:
       '«Som» innleder en relativsetning og står for subjektet eller objektet i den innfelte ' +
       'setningen: "Mannen som bor her, er lege." "Boka som jeg leste, var god."\n\n' +
-      '• Når «som» er objekt, kan det på et høyere nivå sløyfes ("Boka jeg leste, var god"), men på dette nivået skriver vi alltid ut «som».\n' +
-      '• En relativsetning er en leddsetning, så adverb som «ikke» kommer FØR verbet: "en venn som ikke kommer".\n' +
+      '• Når «som» er SUBJEKT i leddsetningen, er det alltid obligatorisk: "en venn som ikke kommer" ("som" står for "vennen").\n' +
+      '• Når «som» i stedet er OBJEKT, blir det valgfritt på dette nivået, og begge versjoner er riktige: "Boka som jeg leste, var god" = "Boka jeg leste, var god."\n' +
+      '• En relativsetning er en leddsetning, så adverb som «ikke» kommer FØR verbet uansett om «som» skrives ut eller ikke: "en venn som ikke kommer", "en bok jeg ikke har lest".\n' +
       '• Foran et STEDSSUBSTANTIV kan «der» erstatte «som … [preposisjon]» og unngå en etterhengt preposisjon til slutt i setningen — mer typisk for formelt/skriftlig språk: "byen der jeg bor" = "byen som jeg bor i". «Der» fungerer bare om steder, aldri om personer eller ting.'
   },
 
@@ -160,7 +185,12 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Modal + infinitive: "Det skal være konsert her i mai." → "I mai skal det være konsert her." ' +
       'With a setningsadverbial: the adverbial fronts, subject/verb invert, but the sentential ' +
       'adverb (alltid, aldri, ofte …) stays between subject and verb as always: ' +
-      '"Vi har alltid fri på fredagen." → "På fredagen har vi alltid fri."',
+      '"Vi har alltid fri på fredagen." → "På fredagen har vi alltid fri." ' +
+      'The mirror-image question is what happens at the OTHER end of the sentence, the sluttfelt, ' +
+      'when several adverbials of different types stack up there instead of fronting: the default ' +
+      'order is STED before TID before ÅRSAK: "Historien handler om noe som skjedde langt herfra ' +
+      '(sted) for lenge siden (tid)." "Jeg ble ferdig med søknaden innen fristen (tid) fordi du ' +
+      'hjalp meg (årsak)."',
     explanationNb:
       'Når du flytter et adverbial (tid, sted, måte) til BEGYNNELSEN av en norsk hovedsetning, ' +
       'må subjektet og verbet bytte plass for å holde verbet på andreplass (V2-regelen).\n\n' +
@@ -168,7 +198,11 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• **hjelpeverb + infinitiv**: "Det skal være konsert her i mai." → "I mai skal det være konsert her."\n' +
       '• **med setningsadverbial**: adverbialet flyttes, subjekt/verb inverterer, men setningsadverbialet ' +
       '(alltid, aldri, ofte …) blir alltid stående mellom subjekt og verb: ' +
-      '"Vi har alltid fri på fredagen." → "På fredagen har vi alltid fri."'
+      '"Vi har alltid fri på fredagen." → "På fredagen har vi alltid fri."\n\n' +
+      'Det motsatte spørsmålet er hva som skjer i den ANDRE enden av setningen, sluttfeltet, når flere ' +
+      'ulike adverbial hoper seg opp der i stedet for å fronte: standardrekkefølgen er STED før TID før ' +
+      'ÅRSAK: "Historien handler om noe som skjedde langt herfra (sted) for lenge siden (tid)." ' +
+      '"Jeg ble ferdig med søknaden innen fristen (tid) fordi du hjalp meg (årsak)."'
   },
 
   'svar-ja-jo-nei': {
@@ -244,7 +278,20 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'time-measure word before a noun, meaning "an X-long Y" or "an X-long period of Y": ' +
       '"to ukers ferie" (a two-week vacation), "en times pause" (a one-hour break), "ti ' +
       'måneders permisjon" (ten months of leave). This still follows the same genitive -s rule ' +
-      '— no apostrophe, the following noun stays indefinite.',
+      '— no apostrophe, the following noun stays indefinite. ' +
+      'POSSESSIVE PRONOUNS (eiendomsord) inflect for the gender/number of the noun they mark, ' +
+      'like an adjective: min/mi/mitt/mine (my), din/di/ditt/dine (your, singular), ' +
+      'sin/si/sitt/sine (his/her/its/their own — REFLEXIVE, see below), vår/vårt/våre (our), ' +
+      'deres (your, plural). Third person also has non-reflexive hans (his), hennes (her), ' +
+      "dens/dets (its, matching the noun's gender) and deres (their). " +
+      'Two word orders are both correct: PRENOMINAL with an indefinite noun (min bil, hennes hus) ' +
+      'or POSTPOSED with the noun in DEFINITE form (bilen min, huset hennes) — the postposed ' +
+      'form is more common in everyday speech. ' +
+      'The REFLEXIVE vs. NON-REFLEXIVE distinction is the trickiest part: sin/si/sitt/sine can ' +
+      'ONLY refer back to the SUBJECT of the same clause — "Hun tar bilen sin" = she takes HER ' +
+      'OWN car. If the possessor is someone OTHER than the subject, use hans/hennes/deres instead: ' +
+      '"Hun tar bilen hennes" = she takes ANOTHER WOMAN\'S car. This mirrors the plural pattern ' +
+      "already covered above (sine = the subject's own, deres = belonging to someone else).",
     explanationNb:
       'Norsk genitiv legger -s direkte til substantivet eller navnet UTEN apostrof: Eriks bil, Annes jobb, barnets leker.\n\n' +
       'Apostrof før -s er en engelsk vane — bruk den aldri på norsk: Erik’s → Eriks.\n\n' +
@@ -255,7 +302,20 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'substantiv, og betyr da "en X lang Y" eller "en periode på X med Y": "to ukers ferie" ' +
       '(ferie som varer i to uker), "en times pause" (en pause som varer i en time), "ti ' +
       'måneders permisjon" (permisjon som varer i ti måneder). Dette følger fortsatt samme ' +
-      'genitiv-s-regel — ingen apostrof, og substantivet som følger står i ubestemt form.'
+      'genitiv-s-regel — ingen apostrof, og substantivet som følger står i ubestemt form.\n\n' +
+      '**Eierpronomen (possessivpronomen)** bøyes etter kjønn/tall på substantivet, som et ' +
+      'adjektiv: min/mi/mitt/mine (min), din/di/ditt/dine (din), sin/si/sitt/sine (sin — ' +
+      '**REFLEKSIV**, se under), vår/vårt/våre (vår), deres (deres). Tredje person har ' +
+      'i tillegg ikke-refleksivt hans, hennes, dens/dets (samsvarer med substantivets kjønn) ' +
+      'og deres.\n\n' +
+      'To ordstillinger er begge riktige: **foranstilt** med substantiv i ubestemt form ' +
+      '(min bil, hennes hus), eller **etterstilt** med substantiv i BESTEMT form (bilen min, ' +
+      'huset hennes) — den etterstilte formen er vanligst i dagligtale.\n\n' +
+      'Det vanskeligste er skillet mellom **refleksivt og ikke-refleksivt**: sin/si/sitt/sine ' +
+      'kan BARE vise tilbake til SUBJEKTET i samme setning — "Hun tar bilen sin" = hun tar sin ' +
+      'EGEN bil. Hvis eieren er NOEN ANNEN enn subjektet, brukes hans/hennes/deres i stedet: ' +
+      '"Hun tar bilen hennes" = hun tar EN ANNEN KVINNES bil. Dette er samme mønster som ' +
+      'flertallskontrasten omtalt over (sine = subjektets egne, deres = tilhører noen andre).'
   },
 
   'adj-agreement': {
@@ -319,7 +379,8 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '«lenge» (adverb, duration/time) has its own comparison, lenge → lenger → lengst ("Jeg vil ikke ' +
       'være her lenger" = I don\'t want to be here any longer). «Lengre» and «lenger» are NOT ' +
       'interchangeable — «lengre» covers physical length/distance (both the adjective and the ' +
-      'distance-adverb), while «lenger» is reserved for TIME/duration.',
+      'distance-adverb), while «lenger» is reserved for TIME/duration. ' +
+      'Equality is expressed with «like» + adjective (base form) + «som» (never «enn»): "Emma er like flink som søsteren sin" (Emma is as good as her sister). The negated form follows the same pattern, «ikke like» or «ikke så» + adjective + «som»: "Denne bilen er ikke så dyr som den forrige" (This car is not as expensive as the previous one). «Enn» belongs with the comparative and can introduce either a single word/phrase or a full clause: "Oppgaven var vanskeligere enn jeg trodde" (The task was harder than I thought) — the verb in the clause after «enn» usually matches the main clause’s tense, and a pronoun after «enn» takes the object form: "Kollegaen hennes er dyktigere enn henne" (Her colleague is more skilled than her).',
     explanationNb:
       'De fleste adjektiver danner komparativ med -ere og superlativ med -est: billig → billigere → billigst.\n\n' +
       'Noen er uregelmessige:\n' +
@@ -336,7 +397,8 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• **lang** (adjektiv, fysisk/romlig lengde) gradbøyes lang → lengre → lengst: «Broren hennes er ti centimeter lengre enn henne.»\n' +
       '• **langt** (adverb, avstand/utstrekning) gradbøyes på samme måte, langt → lengre → lengst: «Kan du stille deg litt lengre bak?»\n' +
       '• **lenge** (adverb, varighet/tid) har sin egen gradbøyning, lenge → lenger → lengst: «Jeg vil ikke være her lenger.»\n\n' +
-      '«Lengre» og «lenger» er IKKE ombyttbare — «lengre» dekker fysisk lengde/avstand (både adjektivet og avstandsadverbet), mens «lenger» er forbeholdt TID/varighet.'
+      '«Lengre» og «lenger» er IKKE ombyttbare — «lengre» dekker fysisk lengde/avstand (både adjektivet og avstandsadverbet), mens «lenger» er forbeholdt TID/varighet.\n\n' +
+      'Likhet uttrykkes med «like» + adjektiv i grunnform + «som» (ikke «enn»): "Emma er like flink som søsteren sin." Den nektende formen bruker samme mønster: «ikke like» eller «ikke så» + adjektiv i grunnform + «som»: "Denne bilen er ikke så dyr som den forrige." «Enn» hører derimot til komparativ og kan innlede enten et enkelt ord/uttrykk eller en hel leddsetning: "Oppgaven var vanskeligere enn jeg trodde" — verbet i leddsetningen etter «enn» følger normalt samme tid som hovedsetningen, og et pronomen etter «enn» står i objektsform: "Kollegaen hennes er dyktigere enn henne."'
   },
 
   'adj-boying-c': {
@@ -933,14 +995,21 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '(no shift, presens stays), but "Alt er ok" + "Roger sa" → "Roger sa at alt var ok" ' +
       "(shift, matching the preteritum reporting verb). The reported clause's tense mirrors " +
       'whether the ORIGINAL statement is still true/current (no shift needed) or is being ' +
-      'reported purely as something said in the past (shift to match «sa»/«spurte»).',
+      'reported purely as something said in the past (shift to match «sa»/«spurte»). Besides a full ' +
+      '«at»/«om»-clause, Norwegian also marks that information is SECONDHAND (hearsay, not verified ' +
+      'firsthand) with «ifølge X» (according to X) placed before the clause, or with the modal ' +
+      'adverb «visstnok» inside it: "Ifølge far vil mor at vi skal male hytta" (according to father, ' +
+      'mother wants...), "Mor vil visstnok at vi skal male hytta" (mother apparently wants...). ' +
+      'Both can combine with an ordinary «at»-clause and behave like any other fronted adverbial or ' +
+      'setningsadverbial for word order.',
     explanationNb:
       'Norsk skiller mellom flere typer referert tale, avhengig av hva som refereres:\n\n' +
       '• **påstand** → «at»: "Det er kaldt ute." → "Han sier at det er kaldt ute."\n' +
       '• **ja/nei-spørsmål** → «om»: "Skal du ut?" → "Han spør om hun skal ut."\n' +
       '• **spørreordspørsmål** → beholder sitt eget spørreord i stedet for «om»: "Hvor bor du?" → "Han spør hvor hun bor."\n\n' +
       'Når spørreordet (hvem, hva, hvilken X) selv er SUBJEKTET i den innfelte setningen, setter norsk inn «som» rett etter: "Jeg vet ikke hvem som kommer i dag." "Han lurte på hva som hadde skjedd." Det legges ikke til «som» når spørreordet i stedet er OBJEKTET: "Jeg vet ikke hva han sier."\n\n' +
-      'Hvis SELVE GJENGIVELSESVERBET (sier/sa, spør/spurte) står i preteritum, flyttes vanligvis også tiden i den refererte setningen ett hakk bakover — presens → preteritum: "Alt er ok" + "Roger sier" → "Roger sier at alt er ok" (ingen forskyvning, presens forblir), men "Alt er ok" + "Roger sa" → "Roger sa at alt var ok" (forskyvning, samsvarer med preteritumsverbet). Tiden i den refererte setningen følger av om det opprinnelige utsagnet fortsatt gjelder/er aktuelt (ingen forskyvning nødvendig) eller om det bare refereres som noe som ble sagt i fortiden (forskyvning for å samsvare med «sa»/«spurte»).'
+      'Hvis SELVE GJENGIVELSESVERBET (sier/sa, spør/spurte) står i preteritum, flyttes vanligvis også tiden i den refererte setningen ett hakk bakover — presens → preteritum: "Alt er ok" + "Roger sier" → "Roger sier at alt er ok" (ingen forskyvning, presens forblir), men "Alt er ok" + "Roger sa" → "Roger sa at alt var ok" (forskyvning, samsvarer med preteritumsverbet). Tiden i den refererte setningen følger av om det opprinnelige utsagnet fortsatt gjelder/er aktuelt (ingen forskyvning nødvendig) eller om det bare refereres som noe som ble sagt i fortiden (forskyvning for å samsvare med «sa»/«spurte»).\n\n' +
+      'Utenom en hel «at»/«om»-setning markerer norsk også at informasjonen er ANDREHÅNDS (hørt fra andre, ikke bekreftet selv) med «ifølge X» (ifølge noen) foran setningen, eller med det modale adverbet «visstnok» inne i den: "Ifølge far vil mor at vi skal male hytta" (ifølge det far sier, vil mor ...), "Mor vil visstnok at vi skal male hytta" (mor vil visstnok/antakelig ...). Begge kan kombineres med en vanlig «at»-setning og oppfører seg som ethvert annet fundamentplassert adverbial eller setningsadverbial i ordstillingen.'
   },
 
   'synes-tror': {
@@ -1184,12 +1253,22 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'introducing a subordinate clause (normal subordinate word order): "Etter at jeg hadde spist, ' +
       'gikk jeg en tur." «Etterpå» is a sentence adverb — as its own clause opener it triggers V2 ' +
       'inversion: "Jeg spiste. Etterpå gikk jeg en tur." «Så» is a coordinating conjunction joining ' +
-      'two main clauses with no inversion: "Jeg spiste, så gikk jeg en tur."',
+      'two main clauses with no inversion: "Jeg spiste, så gikk jeg en tur." A related pair for ' +
+      'simultaneity (not sequence) follows the same subjunction-vs-adverb split: «mens» is a ' +
+      'subjunction introducing a subordinate clause ("Mens jeg lagde middag, ringte telefonen"), ' +
+      'while «samtidig» is a sentence adverb that triggers V2 inversion as a clause opener ("Jeg ' +
+      'lagde middag. Samtidig ringte telefonen."). Note also that «etter» alone is a plain ' +
+      'preposition taking a noun phrase ("etter jobben"), distinct from the subjunction «etter at», ' +
+      'which always introduces a full clause with its own verb ("etter at jobben var ferdig").',
     explanationNb:
       'Alle tre rekkefølger to hendelser, men oppfører seg ulikt:\n\n' +
       '• **«etter at»** — er en subjunksjon som innleder en leddsetning (vanlig leddsetningsordstilling): "Etter at jeg hadde spist, gikk jeg en tur."\n' +
       '• **«etterpå»** — er et setningsadverb — som setningsåpner utløser det V2-inversjon: "Jeg spiste. Etterpå gikk jeg en tur."\n' +
-      '• **«så»** — er en sideordningskonjunksjon som binder sammen to helsetninger uten inversjon: "Jeg spiste, så gikk jeg en tur."'
+      '• **«så»** — er en sideordningskonjunksjon som binder sammen to helsetninger uten inversjon: "Jeg spiste, så gikk jeg en tur."\n\n' +
+      'Et beslektet par for samtidighet (ikke rekkefølge) følger samme subjunksjon-mot-adverb-mønster:\n\n' +
+      '• **«mens»** — er en subjunksjon som innleder en leddsetning: "Mens jeg lagde middag, ringte telefonen."\n' +
+      '• **«samtidig»** — er et setningsadverb som utløser V2-inversjon som setningsåpner: "Jeg lagde middag. Samtidig ringte telefonen."\n\n' +
+      'Legg også merke til at «etter» alene er en vanlig preposisjon som tar en substantivfrase ("etter jobben"), til forskjell fra subjunksjonen «etter at», som alltid innleder en hel leddsetning med eget verb ("etter at jobben var ferdig").'
   },
 
   // ── Nivå C topics (Plus only) ──────────────────────────────────────────────────────────────
@@ -1672,7 +1751,16 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'condition = "unless"), «selv om» (concession), «for at» (purpose, distinct from «fordi»), ' +
       '«før»/«etter at» (sequence), «som» (relative). Choosing correctly means reading the whole ' +
       'sentence for meaning first, then picking the subjunction that matches — several of these ' +
-      'can superficially look interchangeable but express a completely different logical relation.',
+      'can superficially look interchangeable but express a completely different logical relation.\n\n' +
+      'Two more categories complete the set: a RESULT clause uses «så + adjective/adverb + at» to ' +
+      'say what consequence followed from a degree: "Hun var så trøtt at hun sovnet på bussen" ' +
+      '(She was so tired that she fell asleep on the bus) — distinct from a pure cause clause with ' +
+      '«fordi», since the leddsetning here states an effect of an intensity, not a reason. A ' +
+      'COMPARISON clause uses «som» after words like «akkurat»/«nøyaktig», or after a verb ' +
+      'describing an expectation/plan, to compare the actual situation to another one: "Det gikk ' +
+      'som planlagt" (It went as planned), "Hun gjorde akkurat som han sa" (She did exactly as he ' +
+      'said) — this «som» is a subjunction introducing a full clause of comparison, not the ' +
+      'relative pronoun «som» that replaces a noun (see the separate `relative-som` topic).',
     explanationNb:
       'Norsk har mange subjunksjoner som hver innleder en leddsetning med en bestemt betydning:\n\n' +
       '• **da / når** = tid\n' +
@@ -1682,7 +1770,10 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• **for at** = hensikt, ulikt «fordi»\n' +
       '• **før / etter at** = rekkefølge\n' +
       '• **som** = relativ\n\n' +
-      'Å velge riktig betyr å lese hele setningen for betydning først, og så velge subjunksjonen som passer — flere av disse kan se like ut ved første blikk, men uttrykker en helt ulik logisk sammenheng.'
+      'Å velge riktig betyr å lese hele setningen for betydning først, og så velge subjunksjonen som passer — flere av disse kan se like ut ved første blikk, men uttrykker en helt ulik logisk sammenheng.\n\n' +
+      'To kategorier til fullfører settet:\n\n' +
+      '• **følge**: «så + adjektiv/adverb + at» uttrykker en konsekvens av en grad: «Hun var så trøtt at hun sovnet på bussen» — ulikt en ren årsakssetning med «fordi», siden leddsetningen her sier hva som fulgte AV graden, ikke hvorfor noe skjedde.\n' +
+      '• **sammenlikning**: «som» etter «akkurat»/«nøyaktig», eller etter et verb som uttrykker en forventning/plan, sammenlikner den faktiske situasjonen med en annen: «Det gikk som planlagt», «Hun gjorde akkurat som han sa». Dette «som» er en subjunksjon som innleder en hel sammenlikningssetning — ikke det relative pronomenet «som» som erstatter et substantiv (se den egne `relative-som`-emnet).'
   },
 
   'partisipp-former': {
@@ -1738,7 +1829,13 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'from someone else, «vil» expresses desire or a prediction, «må» expresses necessity or ' +
       'obligation. In context, several can superficially seem to fit, but only one matches the ' +
       'actual meaning intended — e.g. "Skal vi lage kake?" (proposal) is different from "Vil du ' +
-      'lage kake?" (asking about desire) and "Kan du lage kake?" (asking about ability/willingness).',
+      'lage kake?" (asking about desire) and "Kan du lage kake?" (asking about ability/willingness).\n\n' +
+      'A fifth modal verb, «bør» (past tense «burde»), expresses a RECOMMENDATION or piece of advice ' +
+      '— what would be wise or advisable — and is noticeably weaker than «må»: "Du bør sove mer" ' +
+      '(you should sleep more, a recommendation) is softer than "Du må sove mer" (you have to/must ' +
+      "sleep more, a real necessity, e.g. doctor's orders). «Bør» is also common with «synes» to give " +
+      'a stated opinion about how things should be: "Jeg synes vi bør endre planen" (I think we ' +
+      'should change the plan).',
     explanationNb:
       'Fire modalverb dekker ulike betydninger:\n\n' +
       '• **kan** — uttrykker evne eller tillatelse\n' +
@@ -1747,7 +1844,12 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• **må** — uttrykker nødvendighet eller plikt\n\n' +
       'I sammenheng kan flere se ut til å passe, men bare ett stemmer med den faktiske betydningen ' +
       'som er ment — f.eks. er «Skal vi lage kake?» (forslag) noe annet enn «Vil du lage kake?» ' +
-      '(spør om ønske) og «Kan du lage kake?» (spør om evne/vilje).'
+      '(spør om ønske) og «Kan du lage kake?» (spør om evne/vilje).\n\n' +
+      'Et femte modalverb, **bør** (preteritum **burde**), uttrykker en ANBEFALING — noe som ville vært ' +
+      'lurt eller rådelig — og er merkbart svakere enn **må**: «Du bør sove mer» (en anbefaling) er ' +
+      'mildere enn «Du må sove mer» (en reell nødvendighet, f.eks. legens ordre). «Bør» brukes ofte ' +
+      'sammen med «synes» for å uttrykke en mening om hvordan noe bør være: «Jeg synes vi bør endre ' +
+      'planen».'
   },
 
   'sannsynlighet-uttrykk': {
@@ -1758,15 +1860,20 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'Several expressions cover different degrees of certainty about something happening: «det er ' +
       'mulig at» (possible), «det er sannsynlig at» / «det er lite sannsynlig at» (likely/unlikely), ' +
       '«det kommer til å» (prediction, fairly confident), «det kan hende at» (might), «jeg tror»/«jeg ' +
-      "antar» (I think/assume — speaker's own uncertain belief). Paraphrasing between them means " +
-      'keeping the same degree of certainty, not just swapping in any probability phrase.',
+      "antar» (I think/assume — speaker's own uncertain belief). «Trolig» and «antakelig» are " +
+      'single-adverb paraphrases of «det er sannsynlig at» — same degree of certainty, just ' +
+      'compressed into one sentence adverb: "Det er sannsynlig at hun kommer" = "Hun kommer ' +
+      'trolig/antakelig." Paraphrasing between them means keeping the same degree of certainty, ' +
+      'not just swapping in any probability phrase.',
     explanationNb:
       'Flere uttrykk dekker ulike grader av sikkerhet om at noe skal skje:\n\n' +
       '• **det er mulig at** = mulig\n' +
       '• **det er sannsynlig at / det er lite sannsynlig at** = sannsynlig/usannsynlig\n' +
       '• **det kommer til å** = spådom, ganske sikker\n' +
       '• **det kan hende at** = kan skje\n' +
-      '• **jeg tror / jeg antar** = talerens egen usikre oppfatning\n\n' +
+      '• **jeg tror / jeg antar** = talerens egen usikre oppfatning\n' +
+      '• **trolig / antakelig** = ettordsomskrivning av «det er sannsynlig at», samme grad av ' +
+      'sikkerhet: «Det er sannsynlig at hun kommer» = «Hun kommer trolig/antakelig.»\n\n' +
       'Å skrive om mellom dem betyr å beholde samme grad av sikkerhet, ikke bare bytte inn et hvilket som helst sannsynlighetsuttrykk.'
   },
 
@@ -2054,13 +2161,18 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'perfektum partisipp in the main clause: "Hvis jeg hadde vunnet i Lotto, ville jeg (ha) reist ' +
       'jorda rundt" — «hvis» can also be dropped with inversion: "Hadde jeg vunnet ..., ville jeg ..." ' +
       'The related wish constructions «skulle ønske (at) + preteritum/preteritum perfektum» and ' +
-      '«tenk om + preteritum/preteritum perfektum/presens» use the same tense logic.',
+      '«tenk om + preteritum/preteritum perfektum/presens» use the same tense logic. «Hvis» can be ' +
+      'dropped with subject/verb inversion in a REAL, presens condition too, not just the ' +
+      'counterfactual branches above: "Hvis du drar nå, kan jeg ikke hjelpe deg" → "Drar du nå, kan ' +
+      'jeg ikke hjelpe deg." The main clause stays presens throughout, unlike the ville/skulle main ' +
+      'clause used with the hypothetical and counterfactual branches.',
     explanationNb:
       'Betingelsessetninger gradbøyes etter hvor (u)virkelig betingelsen er:\n\n' +
       '• **reell framtidig mulighet** = presens gjennomgående: "Hvis jeg vinner i Lotto, reiser jeg jorda rundt."\n' +
       '• **usannsynlig nåtidig/framtidig hypotetisk tilfelle** = preteritum i hvis-setningen og ville/skulle + infinitiv i hovedsetningen: "Hvis jeg vant i Lotto, ville jeg reise jorda rundt."\n' +
       '• **uoppfylt fortidig tilfelle** = preteritum perfektum i hvis-setningen og ville (ha)/skulle (ha) + perfektum partisipp i hovedsetningen: "Hvis jeg hadde vunnet i Lotto, ville jeg (ha) reist jorda rundt" — «hvis» kan også sløyfes med inversjon: "Hadde jeg vunnet ..., ville jeg ..."\n\n' +
-      'De beslæktede ønskeuttrykkene «skulle ønske (at) + preteritum/preteritum perfektum» og «tenk om + preteritum/preteritum perfektum/presens» følger samme tempuslogikk.'
+      'De beslæktede ønskeuttrykkene «skulle ønske (at) + preteritum/preteritum perfektum» og «tenk om + preteritum/preteritum perfektum/presens» følger samme tempuslogikk.\n\n' +
+      '«Hvis» kan sløyfes med subjekt/verb-inversjon også i en REELL presens-betingelse, ikke bare i de kontrafaktiske variantene over: "Hvis du drar nå, kan jeg ikke hjelpe deg" → "Drar du nå, kan jeg ikke hjelpe deg." Hovedsetningen forblir presens gjennomgående, ulikt ville/skulle-hovedsetningen som brukes i de hypotetiske og kontrafaktiske variantene.'
   },
 
   'stedsadverb-statisk-dynamisk': {
@@ -2076,7 +2188,16 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'form for movement AWAY from a place: «hjemmefra» ("from home"): "Jeg kjørte hjemmefra klokka ' +
       'åtte," "Han dro hjemmefra som sekstenåring." So the three-way pattern is dynamic-toward ' +
       '(hjem) / static (hjemme) / dynamic-away (hjemmefra) — the same «-fra» pattern also appears ' +
-      'with other adverbs (ovenfra, nedenfra, utenfra, innenfra).',
+      'with other adverbs (ovenfra, nedenfra, utenfra, innenfra).\n\n' +
+      'A related set of adverbs is static-only, marking relative position within a group or space ' +
+      'rather than a place name: fremst/bakerst (front/back), øverst/nederst (top/bottom), ' +
+      'innerst/ytterst (innermost/outermost). Unlike the pairs above, these have no matching ' +
+      'dynamic form built on the same root — movement toward them is expressed with a verb + ' +
+      'directional adverb instead: "Han satte seg bakerst" (static position) vs. "Han gikk bakover" ' +
+      '(movement, different root). Compass-direction adverbs (nordover, sørover, østover, vestover) ' +
+      'work the other way — they are dynamic-only, describing movement in a direction; the static ' +
+      'equivalent uses a prepositional phrase instead of a matching adverb: "i nord," not a word ' +
+      'ending in -over.',
     explanationNb:
       'Flere stedsadverb har to former: en statisk for å være et sted, og en dynamisk for å bevege ' +
       'seg mot det:\n\n' +
@@ -2087,7 +2208,8 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• "Jeg kjørte hjemmefra klokka åtte."\n' +
       '• "Han dro hjemmefra som sekstenåring."\n\n' +
       'Mønsteret blir dermed tredelt: dynamisk-mot (hjem) / statisk (hjemme) / dynamisk-vekk (hjemmefra). ' +
-      'Samme «-fra»-mønster finnes også hos andre adverb (ovenfra, nedenfra, utenfra, innenfra).'
+      'Samme «-fra»-mønster finnes også hos andre adverb (ovenfra, nedenfra, utenfra, innenfra).\n\n' +
+      'En beslektet gruppe adverb er rent statiske og markerer relativ posisjon i en gruppe eller et rom, ikke et stedsnavn: fremst/bakerst, øverst/nederst, innerst/ytterst. I motsetning til parene over har disse ingen tilsvarende dynamisk form med samme rot — bevegelse mot dem uttrykkes heller med verb + retningsadverb: «Han satte seg bakerst» (statisk posisjon) mot «Han gikk bakover» (bevegelse, annen rot). Kompassretningsadverb (nordover, sørover, østover, vestover) fungerer motsatt vei — de er rent dynamiske og beskriver bevegelse i en retning; den statiske motsvarigheten er en preposisjonsfrase, ikke et tilsvarende adverb: «i nord», ikke et ord som ender på -over.'
   },
 
   'man-en-upersonlig-pronomen': {
@@ -2370,6 +2492,160 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• **dessuten** (tillegg) — *Hun følte seg kvalm. Dessuten hadde hun feber.*\n\n' +
       'Legg merke til at verbet kommer før subjektet i den andre setningen, akkurat som ved andre ' +
       'fronterte adverbial.'
+  },
+
+  'determinativ-forsterkere': {
+    id: 'determinativ-forsterkere',
+    titleEn: 'Emphasizer determinatives (egen, selv, eneste)',
+    titleNb: 'Forsterkende determinativer (egen, selv, eneste)',
+    explanationEn:
+      'Three determinatives add emphasis to a noun phrase, each with its own placement and ' +
+      'agreement pattern.\n\n' +
+      "• **egen/eget/egne** (own) — agrees with the noun's gender/number like a normal adjective " +
+      '(en-word → egen, et-word → eget, plural → egne), and normally follows a possessive instead ' +
+      'of an indefinite article: "sin egen leilighet", "sitt eget hus", "sine egne regler".\n' +
+      '• **selv** (invariant) — placed AFTER the word it emphasizes (a subject, object, or pronoun) ' +
+      'to stress that someone did something without help or in person: "Hun gjorde det selv", ' +
+      '"Statsministeren selv kom".\n' +
+      '• **selve** (invariant) — placed BEFORE a definite-form noun to intensify it ("the very X", ' +
+      '"X itself"): "selve huset", "selve kongen" — never "selv huset".\n' +
+      '• **eneste** (invariant) — placed before a noun that must be in definite form with a definite ' +
+      'article (den/det/de + noun-et/-en/-ene): "den eneste løsningen", "det eneste alternativet", ' +
+      '"de eneste vennene" — never a bare indefinite noun after "eneste".',
+    explanationNb:
+      'Tre determinativer legger til forsterkning i en substantivfrase, hver med sitt eget ' +
+      'plasserings- og bøyingsmønster.\n\n' +
+      '• **egen/eget/egne** (eierskap, «min/sin egen») — bøyes etter substantivets kjønn/tall som et ' +
+      'vanlig adjektiv (en-ord → egen, et-ord → eget, flertall → egne), og står vanligvis etter et ' +
+      'possessiv i stedet for en ubestemt artikkel: «sin egen leilighet», «sitt eget hus», «sine ' +
+      'egne regler».\n' +
+      '• **selv** (bøyes ikke) — står ETTER ordet det forsterker (subjekt, objekt eller pronomen) for ' +
+      'å understreke at noen gjorde noe uten hjelp eller personlig: «Hun gjorde det selv», ' +
+      '«Statsministeren selv kom».\n' +
+      '• **selve** (bøyes ikke) — står FORAN et substantiv i bestemt form for å forsterke det («selve ' +
+      'X», «X selv/selveste X»): «selve huset», «selve kongen» — aldri «selv huset».\n' +
+      '• **eneste** (bøyes ikke) — står foran et substantiv som må stå i bestemt form med bestemt ' +
+      'artikkel (den/det/de + substantiv-et/-en/-ene): «den eneste løsningen», «det eneste ' +
+      'alternativet», «de eneste vennene» — aldri et ubestemt substantiv etter «eneste».'
+  },
+
+  'adverb-gradboying': {
+    id: 'adverb-gradboying',
+    titleEn: 'Adverb comparison',
+    titleNb: 'Adverbets gradbøyning',
+    explanationEn:
+      'Just like adjectives, many manner/frequency adverbs can be compared with -ere (comparative) ' +
+      'and -est (superlative), following «enn» after the comparative exactly like adjectives: ' +
+      'sakte → saktere (Han kjørte saktere enn før), fort → fortere → fortest, ofte → oftere → ' +
+      'oftest, tidlig → tidligere → tidligst.\n\n' +
+      'One common trio is irregular (suppletive, i.e. built from different word stems, like ' +
+      'god→bedre→best): **gjerne** (gladly, positive) → **heller** (comparative — preferring one ' +
+      'thing over another, used with «enn»: "Jeg vil heller ha te enn kaffe") → **helst** ' +
+      '(superlative — what is preferred most of all, out of many options, no «enn»: "Jeg vil helst ' +
+      'ha suppe"). Note this is a separate, irregular series — there is no "gjernere" or "gjernest".',
+    explanationNb:
+      'Akkurat som adjektiv kan mange måte-/hyppighetsadverb gradbøyes med -ere (komparativ) og ' +
+      '-est (superlativ), og komparativen følges av «enn» akkurat som ved adjektiv.\n\n' +
+      '• sakte → saktere — *Han kjørte saktere enn før.*\n' +
+      '• fort → fortere → fortest\n' +
+      '• ofte → oftere → oftest\n' +
+      '• tidlig → tidligere → tidligst\n\n' +
+      'Ett vanlig trekløver er uregelmessig (dannet av ulike ordstammer, som god→bedre→best):\n\n' +
+      '• **gjerne** (positiv — gjerne/villig) → **heller** (komparativ — å foretrekke én ting fremfor ' +
+      'en annen, brukes med «enn»: «Jeg vil heller ha te enn kaffe.») → **helst** (superlativ — det ' +
+      'som foretrekkes mest av alt, blant flere alternativer, ingen «enn»: «Jeg vil helst ha ' +
+      'suppe.»)\n\n' +
+      'Legg merke til at dette er en egen, uregelmessig rekke — det finnes ikke «gjernere» eller ' +
+      '«gjernest».'
+  },
+
+  'sammensatt-verbtid': {
+    id: 'sammensatt-verbtid',
+    titleEn: 'Naming tense in compound verb forms',
+    titleNb: 'Sammensatt verbtid',
+    explanationEn:
+      'A compound (sammensatt) verb form has two parts: **verb 1** is the finite (bøyd) auxiliary ' +
+      'verb — it carries the tense marking and is always in 2nd position in a statement — and ' +
+      '**verb 2** is the non-finite main verb, either an infinitive or a perfektum partisipp, and ' +
+      "never changes form regardless of subject. The combination of verb 1's tense and verb 2's " +
+      "form together name the whole verb phrase's **tempus** (tense):\n\n" +
+      '• **presens perfektum**: har/har (presens) + perfektum partisipp — "har spist", "har reist"\n' +
+      '• **preteritum perfektum**: hadde (preteritum) + perfektum partisipp — "hadde spist"\n' +
+      '• **futurum**: skal/vil (presens) + infinitiv — "skal spise", "vil reise"\n' +
+      '• **futurum i fortid**: skulle/ville (preteritum) + infinitiv — "skulle spise"\n\n' +
+      'A quick test: verb 1 is the word that would change if you switched the whole sentence from ' +
+      'presens to preteritum (har→hadde, skal→skulle); verb 2 stays exactly the same either way.',
+    explanationNb:
+      'En sammensatt verbform har to deler: **verb 1** er det bøyde (finitte) hjelpeverbet — det ' +
+      'bærer tidsbøyningen og står alltid på plass 2 i en påstand — og **verb 2** er hovedverbet i ' +
+      'ubøyd form, enten infinitiv eller perfektum partisipp, og forandrer seg aldri uansett ' +
+      'subjekt. Sammen navngir verb 1s tid og verb 2s form hele verbfrasens **tempus**:\n\n' +
+      '• **presens perfektum**: har (presens) + perfektum partisipp — «har spist», «har reist»\n' +
+      '• **preteritum perfektum**: hadde (preteritum) + perfektum partisipp — «hadde spist»\n' +
+      '• **futurum**: skal/vil (presens) + infinitiv — «skal spise», «vil reise»\n' +
+      '• **futurum i fortid**: skulle/ville (preteritum) + infinitiv — «skulle spise»\n\n' +
+      'En rask test: verb 1 er ordet som ville forandret seg om hele setningen ble flyttet fra ' +
+      'presens til preteritum (har→hadde, skal→skulle); verb 2 er helt likt uansett.'
+  },
+
+  'setningsledd-identifikasjon': {
+    id: 'setningsledd-identifikasjon',
+    titleEn: 'Identifying sentence elements',
+    titleNb: 'Setningsledd-identifikasjon',
+    explanationEn:
+      'A Norwegian sentence is built from **setningsledd** (sentence elements), each doing a ' +
+      'distinct job:\n\n' +
+      '• **subjekt** — who/what performs the action or is being described: "**Hun** løp."\n' +
+      '• **verbal** — the verb(s): "Hun **løp**."\n' +
+      '• **direkte objekt** — what/who receives the action directly: "Hun kjøpte **en bok**."\n' +
+      '• **indirekte objekt** — who benefits/receives, alongside a direct object: "Hun ga **broren ' +
+      'sin** en bok." (broren sin = indirekte objekt, en bok = direkte objekt)\n' +
+      '• **predikativ** — describes or renames the subject (subjektspredikativ, after «være/bli/' +
+      'virke»-type verbs: "Hun er **lege**.") or the object (objektspredikativ, after verbs like ' +
+      '«kalle/gjøre/finne»: "De kalte ham **feig**."). Test: a predikativ could replace «være + X» ' +
+      'about the subject/object; an objekt is a separate entity being acted on, not a description ' +
+      'of it.\n' +
+      '• **adverbial** — extra information (time/place/manner/cause): "Hun løp **fort** **i går**."\n' +
+      '• **setningsadverbial** — a special adverbial commenting on the whole sentence (ikke/alltid/' +
+      'nok/jo), placed right after the finite verb in a helsetning but before it in a leddsetning.' +
+      '\n\n' +
+      '**Building noun phrases (NP):** a single ledd (e.g. the subjekt) can itself be a phrase with ' +
+      'a determinativ + adjektiv + substantiv, all agreeing in gender/number/definiteness: "**de ' +
+      'to gamle kattene**" (plural, bestemt form, adjektiv in weak/plural form).\n\n' +
+      '**Clause-function analysis:** a whole leddsetning (subordinate clause) can itself fill a ' +
+      'setningsledd slot in the matrix clause — as subjekt ("**At hun kom for sent** irriterte ' +
+      'ham."), objekt ("Han sa **at han var syk**."), or adverbial ("Han ringte **før han dro**.").' +
+      '\n\n' +
+      '**Field schema (setningsskjema):** a helsetning divides into forfelt (before the finite ' +
+      'verb — usually subjekt or a fronted adverbial), verbal, midtfelt (subjekt if not fronted, ' +
+      'setningsadverbial, objekt), and sluttfelt (longer adverbials, especially sted/tid/årsak in ' +
+      'that order).',
+    explanationNb:
+      'En norsk setning er bygd opp av **setningsledd**, som hver har en bestemt jobb:\n\n' +
+      '• **subjekt** — hvem/hva som utfører handlingen eller blir beskrevet: «**Hun** løp.»\n' +
+      '• **verbal** — verbet/verbene: «Hun **løp**.»\n' +
+      '• **direkte objekt** — hva/hvem som mottar handlingen direkte: «Hun kjøpte **en bok**.»\n' +
+      '• **indirekte objekt** — hvem som mottar/får noe, ved siden av et direkte objekt: «Hun ga ' +
+      '**broren sin** en bok.» (broren sin = indirekte objekt, en bok = direkte objekt)\n' +
+      '• **predikativ** — beskriver eller omtaler subjektet (subjektspredikativ, etter «være/bli/' +
+      'virke»-type verb: «Hun er **lege**.») eller objektet (objektspredikativ, etter verb som ' +
+      '«kalle/gjøre/finne»: «De kalte ham **feig**.»). Test: en predikativ kan erstattes med «være ' +
+      '+ X» om subjektet/objektet; et objekt er en egen størrelse som blir påvirket, ikke en ' +
+      'beskrivelse av noe annet.\n' +
+      '• **adverbial** — tilleggsinformasjon (tid/sted/måte/årsak): «Hun løp **fort** **i går**.»\n' +
+      '• **setningsadverbial** — en særlig type adverbial som kommenterer hele setningen (ikke/' +
+      'alltid/nok/jo), og står rett etter det finitte verbet i en helsetning, men før det i en ' +
+      'leddsetning.\n\n' +
+      '**Å bygge substantivfraser (NP):** ett enkelt ledd (f.eks. subjektet) kan selv være en frase ' +
+      'med determinativ + adjektiv + substantiv, som alle samsvarer i kjønn/tall/bestemthet: «**de ' +
+      'to gamle kattene**» (flertall, bestemt form, adjektivet i svak/flertallsform).\n\n' +
+      '**Setningsleddanalyse av leddsetninger:** en hel leddsetning kan selv fylle en setningsledd-' +
+      'plass i overordnet setning — som subjekt («**At hun kom for sent** irriterte ham.»), objekt ' +
+      '(«Han sa **at han var syk**.»), eller adverbial («Han ringte **før han dro**.»).\n\n' +
+      '**Setningsskjema:** en helsetning deles inn i forfelt (før det finitte verbet — vanligvis ' +
+      'subjekt eller et fronted adverbial), verbal, midtfelt (subjekt hvis ikke fronted, ' +
+      'setningsadverbial, objekt), og sluttfelt (lengre adverbialer, særlig sted/tid/årsak i den ' +
+      'rekkefølgen).'
   }
 };
 
