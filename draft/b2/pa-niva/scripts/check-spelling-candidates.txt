@@ -1,0 +1,47 @@
+Norwegian spelling check — candidates-raw.json (nb Hunspell dictionary)
+Allowlist: 345 word(s) loaded from spelling-allowlist.txt
+151 candidate(s) to check
+────────────────────────────────────────────────────────────
+
+📋  Flagged occurrences (13 total):
+
+  ⚠️   [#28] 10 80 PARSETNINGER (paraphrase) raw_term: "pizzaen" → suggest: pizza
+       den beste pizzaen
+  ⚠️   [#28] 10 80 PARSETNINGER (paraphrase) sentenceB_filled: "pizzaen" → suggest: pizza
+       Dette er den beste pizzaen jeg har smakt noen gang.
+  ⚠️   [#95] 17 PARSETNINGER (paraphrase) sentenceA: "el" → suggest: ell, dl, ul
+       Jeg har kjøpt el-sykkel slik at jeg kan sykle til jobb uten å bli helt utslitt.
+  ⚠️   [#95] 17 PARSETNINGER (paraphrase) sentenceB_filled: "el" → suggest: ell, dl, ul
+       Hensikten med å eller Grunnen til å kjøpe el-sykkel er å kunne sykle til jobb uten å bli helt utslitt.
+  ⚠️   [#125] 25 ET AVSLAG – Å AVSLÅ (particle-verb-table) sentence: "Diderot" → suggest: Siderom, Sideror
+       Diderot var en av **opplysningstidas** store filosofer.
+  ⚠️   [#125] 25 ET AVSLAG – Å AVSLÅ (particle-verb-table) sentence: "opplysningstidas" → suggest: opplysningstida
+       Diderot var en av **opplysningstidas** store filosofer.
+  ⚠️   [#125] 25 ET AVSLAG – Å AVSLÅ (particle-verb-table) marked_word: "opplysningstidas" → suggest: opplysningstida
+       opplysningstidas
+  ⚠️   [#141] 27 LØST ELLER FAST SAMMENSATT PARTIKKELVERB? (particle-verb-correction) original_sentence: "firmaet" → suggest: firkant, formalt, formanet
+       Dette firmaet tilhører i Bergen.
+  ⚠️   [#141] 27 LØST ELLER FAST SAMMENSATT PARTIKKELVERB? (particle-verb-correction) corrected_sentence: "firmaet" → suggest: firkant, formalt, formanet
+       Dette firmaet hører til i Bergen.
+  ⚠️   [#143] 13 ORDLAGING AV PARTIKKELVERB (particle-verb-nominalization) raw_term: "nedkomstdatoen"
+       nedkomstdatoen
+  ⚠️   [#143] 13 ORDLAGING AV PARTIKKELVERB (particle-verb-nominalization) explanation: "datoen" → suggest: datten, datoren
+       = den datoen man skal føde
+  ⚠️   [#144] 13 ORDLAGING AV PARTIKKELVERB (particle-verb-nominalization) raw_term: "utsalgsfinalen"
+       utsalgsfinalen
+  ⚠️   [#145] 13 ORDLAGING AV PARTIKKELVERB (particle-verb-nominalization) raw_term: "innflytningspresangen"
+       innflytningspresangen
+
+════════════════════════════════════════════════════════════
+📊  13 occurrence(s), 9 unique flagged word(s)
+
+Unique words by frequency (add real words to spelling-allowlist.txt):
+    2×  pizzaen
+    2×  el
+    2×  opplysningstidas
+    2×  firmaet
+    1×  diderot
+    1×  nedkomstdatoen
+    1×  datoen
+    1×  utsalgsfinalen
+    1×  innflytningspresangen

@@ -5092,7 +5092,8 @@
     "example_german": "Die Musik wird über den Lautsprecher abgespielt.",
     "level": "A2",
     "category": "technology",
-    "part": "noun"
+    "part": "noun",
+    "definition": "elektrisk apparat hvor det kommer ut lyd (f.eks. musikk)"
   },
   {
     "id": "v-a2-technology-014",
@@ -13781,7 +13782,8 @@
     "example_german": "Leider habe ich heute keine Zeit, dir zu helfen.",
     "level": "A2",
     "category": "time",
-    "part": "noun"
+    "part": "noun",
+    "definition": "Den kontinuerlige strømmen av øyeblikk fra fortid gjennom nåtid og inn i fremtid."
   },
   {
     "id": "v-a2-time-045",

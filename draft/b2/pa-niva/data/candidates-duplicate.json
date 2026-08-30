@@ -1,0 +1,430 @@
+[
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "3",
+    "sentenceA": "Han har forsvunnet helt.",
+    "sentenceB_raw": "Han er ______________________________ vekk.",
+    "fasit_answer": "borte",
+    "sentenceB_filled": "Han er borte vekk.",
+    "raw_term": "borte",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "7",
+    "sentenceA": "Han er ugift.",
+    "sentenceB_raw": "Han er ______________________________ gift.",
+    "fasit_answer": "ikke",
+    "sentenceB_filled": "Han er ikke gift.",
+    "raw_term": "ikke",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "10",
+    "sentenceA": "Denne bedriften produserer veldig mye.",
+    "sentenceB_raw": "Denne bedriften er veldig ______________________________.",
+    "fasit_answer": "produktiv",
+    "sentenceB_filled": "Denne bedriften er veldig produktiv.",
+    "raw_term": "produktiv",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "13",
+    "sentenceA": "Han reiser alltid til London om sommeren.",
+    "sentenceB_raw": "Han reiser til London ______________________________ sommer.",
+    "fasit_answer": "hver (eneste)",
+    "sentenceB_filled": "Han reiser til London hver (eneste) sommer.",
+    "raw_term": "hver (eneste)",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "16",
+    "sentenceA": "Hvor ofte trener du hver uke?",
+    "sentenceB_raw": "Hvor ______________________________ ganger trener du hver uke?",
+    "fasit_answer": "mange",
+    "sentenceB_filled": "Hvor mange ganger trener du hver uke?",
+    "raw_term": "mange",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "23",
+    "sentenceA": "Han arbeider ikke her.",
+    "sentenceB_raw": "Han er ikke ______________________________ her.",
+    "fasit_answer": "ansatt",
+    "sentenceB_filled": "Han er ikke ansatt her.",
+    "raw_term": "ansatt",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "25",
+    "sentenceA": "Kan du ta av deg de våte klærne?",
+    "sentenceB_raw": "Kan du ta på deg ______________________________ klær?",
+    "fasit_answer": "tørre",
+    "sentenceB_filled": "Kan du ta på deg tørre klær?",
+    "raw_term": "tørre",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "26",
+    "sentenceA": "Butikkene er stengt på skjærtorsdag og langfredag.",
+    "sentenceB_raw": "Butikkene er ikke ______________________________ på skjærtorsdag og langfredag.",
+    "fasit_answer": "åpne",
+    "sentenceB_filled": "Butikkene er ikke åpne på skjærtorsdag og langfredag.",
+    "raw_term": "åpne",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "43",
+    "sentenceA": "Jeg tror neppe at jeg har klart eksamen.",
+    "sentenceB_raw": "Det er lite ______________________________ at jeg har klart eksamen.",
+    "fasit_answer": "sannsynlig",
+    "sentenceB_filled": "Det er lite sannsynlig at jeg har klart eksamen.",
+    "raw_term": "sannsynlig",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "46",
+    "sentenceA": "De bor ikke så langt fra Stjørdal.",
+    "sentenceB_raw": "De bor ______________________________ av Stjørdal.",
+    "fasit_answer": "i nærheten",
+    "sentenceB_filled": "De bor i nærheten av Stjørdal.",
+    "raw_term": "i nærheten",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "58",
+    "sentenceA": "Politiet mener det var to ungdommer på 17 og 18 år som begikk innbruddet.",
+    "sentenceB_raw": "Politiet mener at det var to ungdommer på 17 og 18 år som sto ______________________________ innbruddet.",
+    "fasit_answer": "bak",
+    "sentenceB_filled": "Politiet mener at det var to ungdommer på 17 og 18 år som sto bak innbruddet.",
+    "raw_term": "bak",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "64",
+    "sentenceA": "Du må prøve denne osten. Den er fransk.",
+    "sentenceB_raw": "Du må prøve denne osten ______________________________ Frankrike.",
+    "fasit_answer": "fra",
+    "sentenceB_filled": "Du må prøve denne osten fra Frankrike.",
+    "raw_term": "fra",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "69",
+    "sentenceA": "Har du vært våken hele natta?",
+    "sentenceB_raw": "Har du sittet ______________________________ hele natta?",
+    "fasit_answer": "oppe",
+    "sentenceB_filled": "Har du sittet oppe hele natta?",
+    "raw_term": "oppe",
+    "needs_review": false
+  },
+  {
+    "section": "10 80 PARSETNINGER",
+    "type": "paraphrase",
+    "number": "74",
+    "sentenceA": "Dette bordet er opptatt.",
+    "sentenceB_raw": "Dette bordet er ikke ______________________________.",
+    "fasit_answer": "ledig",
+    "sentenceB_filled": "Dette bordet er ikke ledig.",
+    "raw_term": "ledig",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "si nei til",
+    "raw_term": "avslå",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "føde, få barn",
+    "raw_term": "nedkomme",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "lære barn om hva som er rett og galt",
+    "raw_term": "oppdra",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "skje, være i gang",
+    "raw_term": "pågå",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "ignorere, ikke bry seg om",
+    "raw_term": "overse",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "bestemme, fatte en beslutning",
+    "raw_term": "avgjøre",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "tolke fra ett språk til et annet",
+    "raw_term": "oversette",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "innrømme at man har gjort noe",
+    "raw_term": "tilstå",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "leve videre, klare seg",
+    "raw_term": "overleve",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "publisere",
+    "raw_term": "utgi",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "ha innflytelse på",
+    "raw_term": "påvirke",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "fjerne, gjøre noe forbudt",
+    "raw_term": "avskaffe",
+    "needs_review": false
+  },
+  {
+    "section": "24 HVILKET PARTIKKELVERB?",
+    "type": "particle-verb-explain",
+    "explanation": "få noen til å gjøre noe du vil",
+    "raw_term": "overtale",
+    "needs_review": false
+  },
+  {
+    "section": "25 ET AVSLAG – Å AVSLÅ",
+    "type": "particle-verb-table",
+    "letter": "b",
+    "sentence": "Mange selgere er veldig **pågående**.",
+    "marked_word": "pågående",
+    "ordklasse": "adj. (av pres. part.)",
+    "partikkelverb_raw": "å gå på (å pågå = å skje, å gå på = å insistere eller å fortsette med uforminsket styrke)",
+    "raw_term": "gå på",
+    "note": "å pågå = å skje, å gå på = å insistere eller å fortsette med uforminsket styrke",
+    "needs_review": false
+  },
+  {
+    "section": "25 ET AVSLAG – Å AVSLÅ",
+    "type": "particle-verb-table",
+    "letter": "d",
+    "sentence": "**Oppmøtet** er veldig godt i dag.",
+    "marked_word": "Oppmøtet",
+    "ordklasse": "subst.",
+    "partikkelverb_raw": "å møte opp",
+    "raw_term": "møte opp",
+    "note": null,
+    "needs_review": false
+  },
+  {
+    "section": "25 ET AVSLAG – Å AVSLÅ",
+    "type": "particle-verb-table",
+    "letter": "e",
+    "sentence": "Skjønner du **sammenhengen**?",
+    "marked_word": "sammenhengen",
+    "ordklasse": "subst.",
+    "partikkelverb_raw": "å henge sammen",
+    "raw_term": "henge sammen",
+    "note": null,
+    "needs_review": false
+  },
+  {
+    "section": "25 ET AVSLAG – Å AVSLÅ",
+    "type": "particle-verb-table",
+    "letter": "f",
+    "sentence": "Møtet er **utsatt**.",
+    "marked_word": "utsatt",
+    "ordklasse": "adj. (av perf. part.)",
+    "partikkelverb_raw": "å utsette",
+    "raw_term": "utsette",
+    "note": null,
+    "needs_review": false
+  },
+  {
+    "section": "25 ET AVSLAG – Å AVSLÅ",
+    "type": "particle-verb-table",
+    "letter": "g",
+    "sentence": "Diderot var en av **opplysningstidas** store filosofer.",
+    "marked_word": "opplysningstidas",
+    "ordklasse": "subst.",
+    "partikkelverb_raw": "å opplyse (+ tid)",
+    "raw_term": "opplyse",
+    "note": "+ tid",
+    "needs_review": false
+  },
+  {
+    "section": "25 ET AVSLAG – Å AVSLÅ",
+    "type": "particle-verb-table",
+    "letter": "i",
+    "sentence": "**Utgangen** er stengt.",
+    "marked_word": "Utgangen",
+    "ordklasse": "subst.",
+    "partikkelverb_raw": "å gå ut",
+    "raw_term": "gå ut",
+    "note": null,
+    "needs_review": false
+  },
+  {
+    "section": "25 ET AVSLAG – Å AVSLÅ",
+    "type": "particle-verb-table",
+    "letter": "j",
+    "sentence": "Det har vært en stor **overgang** for henne å begynne på ny skole.",
+    "marked_word": "overgang",
+    "ordklasse": "subst.",
+    "partikkelverb_raw": "å gå over (å overgå = å gjøre noe bedre enn andre, å gå over = å krysse eller å ta slutt)",
+    "raw_term": "gå over",
+    "note": "å overgå = å gjøre noe bedre enn andre, å gå over = å krysse eller å ta slutt",
+    "needs_review": false
+  },
+  {
+    "section": "25 ET AVSLAG – Å AVSLÅ",
+    "type": "particle-verb-table",
+    "letter": "m",
+    "sentence": "Dette var ikke **avtalen**!",
+    "marked_word": "avtalen",
+    "ordklasse": "subst.",
+    "partikkelverb_raw": "å avtale",
+    "raw_term": "avtale",
+    "note": null,
+    "needs_review": false
+  },
+  {
+    "section": "25 ET AVSLAG – Å AVSLÅ",
+    "type": "particle-verb-table",
+    "letter": "n",
+    "sentence": "Hva mener du om **påstandene** hans?",
+    "marked_word": "påstandene",
+    "ordklasse": "subst.",
+    "partikkelverb_raw": "å påstå",
+    "raw_term": "påstå",
+    "note": null,
+    "needs_review": false
+  },
+  {
+    "section": "25 ET AVSLAG – Å AVSLÅ",
+    "type": "particle-verb-table",
+    "letter": "o",
+    "sentence": "Har du hilst på hans **tilkommende**?",
+    "marked_word": "tilkommende",
+    "ordklasse": "adj. (substantivert adj. av pres. part.)",
+    "partikkelverb_raw": "å komme til (tilkommende er overført betydning, fast uttrykk)",
+    "raw_term": "komme til",
+    "note": "tilkommende er overført betydning, fast uttrykk",
+    "needs_review": false
+  },
+  {
+    "section": "25 ET AVSLAG – Å AVSLÅ",
+    "type": "particle-verb-table",
+    "letter": "p",
+    "sentence": "Hun skrev under med **påholden** penn.",
+    "marked_word": "påholden",
+    "ordklasse": "adj.",
+    "partikkelverb_raw": "å holde på (påholden penn er fast uttrykk)",
+    "raw_term": "holde på",
+    "note": "påholden penn er fast uttrykk",
+    "needs_review": false
+  },
+  {
+    "section": "26 PARTIKKEL OG PARTISIPP",
+    "type": "particle-verb-partisipp",
+    "verb_raw": "å si opp",
+    "raw_term": "si opp",
+    "partisipp_forms": [
+      "oppsagte",
+      "oppsagt"
+    ],
+    "needs_review": false
+  },
+  {
+    "section": "13 ORDLAGING AV PARTIKKELVERB",
+    "type": "particle-verb-nominalization",
+    "letter": "h",
+    "base_verb_nr": "8",
+    "base_verb": "vaske opp",
+    "raw_term": "oppvaskmaskin",
+    "explanation": "= en maskin som vasker kopper, kar, bestikk, tallerkener osv.",
+    "needs_review": false
+  },
+  {
+    "section": "27 LØST ELLER FAST SAMMENSATT PARTIKKELVERB?",
+    "type": "particle-verb-correction",
+    "original_sentence": "Har du oppsagt leiligheten din?",
+    "corrected_sentence": "Har du sagt opp leiligheten din?",
+    "raw_term": "si opp",
+    "needs_review": false,
+    "matchedExisting": "si opp (v-b1-work-051)",
+    "note": "raw_term manually assigned from corrected_sentence during Step 2 no-term review"
+  },
+  {
+    "section": "27 LØST ELLER FAST SAMMENSATT PARTIKKELVERB?",
+    "type": "particle-verb-correction",
+    "original_sentence": "Dette firmaet tilhører i Bergen.",
+    "corrected_sentence": "Dette firmaet hører til i Bergen.",
+    "raw_term": "høre til",
+    "needs_review": false,
+    "matchedExisting": "høre til (v-b1-society-084)",
+    "note": "raw_term manually assigned from corrected_sentence during Step 2 no-term review"
+  },
+  {
+    "section": "27 LØST ELLER FAST SAMMENSATT PARTIKKELVERB?",
+    "type": "particle-verb-correction",
+    "original_sentence": "Oldemora mi fikk elleve barn, men bare åtte av dem oppvokste.",
+    "corrected_sentence": "Oldemora mi fikk elleve barn, men bare åtte av dem vokste opp.",
+    "raw_term": "vokse opp",
+    "needs_review": false,
+    "matchedExisting": "vokse opp (v-b1-family-026)",
+    "note": "raw_term manually assigned from corrected_sentence during Step 2 no-term review"
+  }
+]

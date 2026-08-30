@@ -33486,6 +33486,26 @@
     "verb_type": "ureg"
   },
   {
+    "id": "v-c-everyday-objects-112",
+    "norsk": "å rekke",
+    "lemma": "rekke",
+    "english": "to hand (something to someone); to pass",
+    "ukrainian": "подавати; простягати",
+    "spanish": "alcanzar; pasar (algo a alguien)",
+    "german": "reichen; hinreichen",
+    "example": "Kan du rekke meg saltet, er du snill?",
+    "example_english": "Could you pass me the salt, please?",
+    "example_ukrainian": "Чи не могли б ви подати мені сіль, будь ласка?",
+    "example_spanish": "¿Puedes alcanzarme la sal, por favor?",
+    "example_german": "Kannst du mir bitte das Salz reichen?",
+    "definition": "her: gi",
+    "level": "C",
+    "category": "everyday-objects",
+    "part": "verb",
+    "note": "rekker – rakte – har rakt",
+    "verb_type": "ureg"
+  },
+  {
     "id": "v-c-interpersonal-conflict-117",
     "norsk": "å stikke til noen noe",
     "lemma": "stikke til noen noe",

@@ -267,7 +267,12 @@ export type GrammarTopic =
   // Nivå B2/C topics — Det går bra! (see ai-docs/implementation/b2-c-grammar.md)
   | 'nyanser-uttrykk' // near-synonym/nuance discrimination across word classes (seriøs/alvorlig, tid/time/gang, ryke, såpass)
   | 'preposisjoner-uttrykk-b2' // idiomatic/collocational B2 preposition choices (ta ansvar for, ha inntrykk av, forberedt på)
-  | 'uttrykk-gjenkjenning-detgaarbra-c'; // idiom recognition — idiomatiske-uttrykk.md ordtak/faste uttrykk
+  | 'uttrykk-gjenkjenning-detgaarbra-c' // idiom recognition — idiomatiske-uttrykk.md ordtak/faste uttrykk
+  // Nivå B2 topic — "På Nivå" arbeidsbok (see ai-docs/implementation/b2-grammar-pa-niva-arbeidsbok.md)
+  | 'determinativ-forsterkere' // emphasizer determinatives: egen/eget/egne, selv/selve, eneste
+  | 'adverb-gradboying' // adverb comparison: regular -ere/-est (sakte/fort/ofte) + irregular gjerne→heller→helst
+  | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
+  | 'setningsledd-identifikasjon'; // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)
 
 export interface GrammarRule {
   id: GrammarTopic;

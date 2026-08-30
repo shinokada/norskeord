@@ -1,0 +1,3608 @@
+[
+  {
+    "id": "gq-ikke-001",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «Jeg tror at …»",
+    "source": "Han kommer ikke i dag.",
+    "answer": "Jeg tror at han ikke kommer i dag.",
+    "alternates": [
+      "Jeg tror at han ikke kommer i dag"
+    ],
+    "hint": "I en leddsetning (etter «at») flytter «ikke» seg til FØR verbet."
+  },
+  {
+    "id": "gq-ikke-002",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «Hun sier at …»",
+    "source": "De har ikke tid.",
+    "answer": "Hun sier at de ikke har tid.",
+    "alternates": [
+      "Hun sier at de ikke har tid"
+    ],
+    "hint": "Leddsetning: «ikke» kommer før «har»."
+  },
+  {
+    "id": "gq-ikke-003",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "Spania",
+      "reiser",
+      "Vi",
+      "til",
+      "ikke",
+      "sommer",
+      "i"
+    ],
+    "answer": "Vi reiser ikke til Spania i sommer.",
+    "alternates": [
+      "Vi reiser ikke til Spania i sommer"
+    ],
+    "hint": "Helsetning: «ikke» kommer rett etter det finitte verbet «reiser»."
+  },
+  {
+    "id": "gq-ikke-004",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett de to ordene i riktig rekkefølge.",
+    "sentence": "Jeg vet at han _____ frisk.",
+    "words": [
+      "er",
+      "ikke"
+    ],
+    "answer": "ikke er",
+    "hint": "Etter «at» er setningen en leddsetning, så «ikke» kommer før «er»."
+  },
+  {
+    "id": "gq-ikke-005",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «Jeg håper at …»",
+    "source": "Det blir ikke regn i morgen.",
+    "answer": "Jeg håper at det ikke blir regn i morgen.",
+    "alternates": [
+      "Jeg håper at det ikke blir regn i morgen"
+    ],
+    "hint": "Flytt «ikke» til før verbet når setningen blir en leddsetning."
+  },
+  {
+    "id": "gq-ikke-013",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «Hun sier at …»",
+    "source": "Jonas spiser aldri kjøtt.",
+    "answer": "Hun sier at Jonas aldri spiser kjøtt.",
+    "alternates": [
+      "Hun sier at Jonas aldri spiser kjøtt"
+    ],
+    "hint": "Leddsetning etter «at»: «aldri» flytter seg til før verbet."
+  },
+  {
+    "id": "gq-ikke-014",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «De spør om …»",
+    "source": "Er læreren ikke fornøyd?",
+    "answer": "De spør om læreren ikke er fornøyd.",
+    "alternates": [
+      "De spør om læreren ikke er fornøyd"
+    ],
+    "hint": "«om»-setningen er en leddsetning: «ikke» flytter seg til før verbet «er»."
+  },
+  {
+    "id": "gq-ikke-015",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "kaffe",
+      "drikker",
+      "Vi",
+      "ikke",
+      "om",
+      "kvelden"
+    ],
+    "answer": "Vi drikker ikke kaffe om kvelden.",
+    "alternates": [
+      "Vi drikker ikke kaffe om kvelden"
+    ],
+    "hint": "Helsetning: «ikke» kommer rett etter det finitte verbet «drikker»."
+  },
+  {
+    "id": "gq-ikke-016",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett de to ordene i riktig rekkefølge.",
+    "sentence": "Jeg tror at hun _____ glad.",
+    "words": [
+      "er",
+      "alltid"
+    ],
+    "answer": "alltid er",
+    "hint": "Leddsetning etter «at»: «alltid» kommer før verbet «er»."
+  },
+  {
+    "id": "gq-ikke-017",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «Hun spør om …»",
+    "source": "Er kunden alltid fornøyd?",
+    "answer": "Hun spør om kunden alltid er fornøyd.",
+    "alternates": [
+      "Hun spør om kunden alltid er fornøyd"
+    ],
+    "hint": "«om»-setningen er en leddsetning: «alltid» flytter seg til før verbet «er»."
+  },
+  {
+    "id": "gq-ikke-018",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "på",
+      "lurer",
+      "Jeg",
+      "om",
+      "de",
+      "aldri",
+      "holder",
+      "avtalen"
+    ],
+    "answer": "Jeg lurer på om de aldri holder avtalen.",
+    "alternates": [
+      "Jeg lurer på om de aldri holder avtalen"
+    ],
+    "hint": "«om»-setningen er en leddsetning: «aldri» kommer før verbet «holder»."
+  },
+  {
+    "id": "gq-ikke-019",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett de to ordene i riktig rekkefølge.",
+    "sentence": "De spør om vi _____ presanger.",
+    "words": [
+      "kjøper",
+      "ofte"
+    ],
+    "answer": "ofte kjøper",
+    "hint": "Leddsetning etter «om»: «ofte» kommer før verbet «kjøper»."
+  },
+  {
+    "id": "gq-ikke-020",
+    "topic": "ikke-placement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett setningen inn i: «De sier at …»",
+    "source": "Frisøren er ikke fornøyd med kunden.",
+    "answer": "De sier at frisøren ikke er fornøyd med kunden.",
+    "alternates": [
+      "De sier at frisøren ikke er fornøyd med kunden"
+    ],
+    "hint": "Leddsetning etter «at»: «ikke» flytter seg til før verbet «er»."
+  },
+  {
+    "id": "gq-det-001",
+    "topic": "det-sentence",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om og start med «Det er …»",
+    "source": "At du kan hjelpe, er flott.",
+    "answer": "Det er flott at du kan hjelpe.",
+    "alternates": [
+      "Det er flott at du kan hjelpe"
+    ],
+    "hint": "«at»-subjektet flytter til slutten: Det er [adjektiv] at …"
+  },
+  {
+    "id": "gq-det-002",
+    "topic": "det-sentence",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om og start med «Det er …»",
+    "source": "Å sove lenge er deilig.",
+    "answer": "Det er deilig å sove lenge.",
+    "alternates": [
+      "Det er deilig å sove lenge"
+    ],
+    "hint": "Infinitivsuttrykk som subjekt → Det er [adjektiv] å …"
+  },
+  {
+    "id": "gq-det-003",
+    "topic": "det-sentence",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "fint",
+      "komme",
+      "Det",
+      "er",
+      "at",
+      "kan",
+      "du"
+    ],
+    "answer": "Det er fint at du kan komme.",
+    "alternates": [
+      "Det er fint at du kan komme"
+    ],
+    "hint": "Det er [adjektiv] at [leddsetning]."
+  },
+  {
+    "id": "gq-det-004",
+    "topic": "det-sentence",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om og start med «at»-setningen som subjekt.",
+    "source": "Det er viktig at du hviler.",
+    "answer": "At du hviler, er viktig.",
+    "alternates": [
+      "At du hviler er viktig"
+    ],
+    "hint": "Flytt «at»-setningen fremst som subjekt."
+  },
+  {
+    "id": "gq-det-005",
+    "topic": "det-sentence",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om og start med «Det er …»",
+    "source": "At han glemte møtet, er merkelig.",
+    "answer": "Det er merkelig at han glemte møtet.",
+    "alternates": [
+      "Det er merkelig at han glemte møtet"
+    ],
+    "hint": "Fremflyttet «at»-setning → Det er [adjektiv] at [leddsetning]."
+  },
+  {
+    "id": "gq-dei-001",
+    "topic": "det-er-ikke",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "det",
+      "sant",
+      "er",
+      "ikke"
+    ],
+    "answer": "Det er ikke sant.",
+    "alternates": [
+      "Det er ikke sant"
+    ],
+    "hint": "Rekkefølge i helsetning: Det — er — ikke — [adjektiv/substantiv]."
+  },
+  {
+    "id": "gq-dei-002",
+    "topic": "det-er-ikke",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett de tre ordene i riktig rekkefølge.",
+    "sentence": "_____ mulig å parkere her.",
+    "words": [
+      "er",
+      "Det",
+      "ikke"
+    ],
+    "answer": "Det er ikke",
+    "hint": "Det — er — ikke — [infinitivsuttrykk]."
+  },
+  {
+    "id": "gq-dei-003",
+    "topic": "det-er-ikke",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "noe",
+      "Det",
+      "er",
+      "problem",
+      "ikke"
+    ],
+    "answer": "Det er ikke noe problem.",
+    "alternates": [
+      "Det er ikke noe problem"
+    ],
+    "hint": "Det — er — ikke — noe — [substantiv]."
+  },
+  {
+    "id": "gq-dei-004",
+    "topic": "det-er-ikke",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Nekt setningen med «det er ikke».",
+    "source": "Det er lett å forstå.",
+    "answer": "Det er ikke lett å forstå.",
+    "alternates": [
+      "Det er ikke lett å forstå"
+    ],
+    "hint": "Sett inn «ikke» etter «er»: Det er ikke [adjektiv] …"
+  },
+  {
+    "id": "gq-dei-005",
+    "topic": "det-er-ikke",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett de tre ordene i riktig rekkefølge.",
+    "sentence": "_____ bra at du var sen.",
+    "words": [
+      "Det",
+      "er",
+      "ikke"
+    ],
+    "answer": "Det er ikke",
+    "hint": "Det — er — ikke — [adjektiv/leddsetning]."
+  },
+  {
+    "id": "gq-v2-001",
+    "topic": "v2-word-order",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om og start med «I morgen».",
+    "source": "Vi skal reise til Bergen.",
+    "answer": "I morgen skal vi reise til Bergen.",
+    "alternates": [
+      "I morgen skal vi reise til Bergen"
+    ],
+    "hint": "Etter et fremflyttet adverbial kommer verbet før subjektet (V2-regelen)."
+  },
+  {
+    "id": "gq-v2-002",
+    "topic": "v2-word-order",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "I",
+      "går",
+      "spiste",
+      "vi",
+      "pizza"
+    ],
+    "answer": "I går spiste vi pizza.",
+    "alternates": [
+      "I går spiste vi pizza"
+    ],
+    "hint": "«I går» flytter fremst i setningen — verbet «spiste» må følge direkte etter."
+  },
+  {
+    "id": "gq-v2-003",
+    "topic": "v2-word-order",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om og start med «Hver dag».",
+    "source": "Han trener på treningssenter.",
+    "answer": "Hver dag trener han på treningssenter.",
+    "alternates": [
+      "Hver dag trener han på treningssenter"
+    ],
+    "hint": "Fremflyttet adverbial → bytt om verb og subjekt."
+  },
+  {
+    "id": "gq-v2-004",
+    "topic": "v2-word-order",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "Nå",
+      "forstår",
+      "jeg",
+      "bedre"
+    ],
+    "answer": "Nå forstår jeg bedre.",
+    "alternates": [
+      "Nå forstår jeg bedre"
+    ],
+    "hint": "Fremflyttet «Nå» → V2: verb før subjekt."
+  },
+  {
+    "id": "gq-mod-001",
+    "topic": "modal-verb-order",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "kan",
+      "Jeg",
+      "hjelpe",
+      "deg"
+    ],
+    "answer": "Jeg kan hjelpe deg.",
+    "alternates": [
+      "Jeg kan hjelpe deg"
+    ],
+    "hint": "Modalverb (kan) + infinitiv (hjelpe) — ingen «å» etter modalverb."
+  },
+  {
+    "id": "gq-mod-002",
+    "topic": "modal-verb-order",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om med «må».",
+    "source": "Du vasker bilen.",
+    "answer": "Du må vaske bilen.",
+    "alternates": [
+      "Du må vaske bilen"
+    ],
+    "hint": "Modalverb + ren infinitiv: må — vaske (uten «å»)."
+  },
+  {
+    "id": "gq-mod-003",
+    "topic": "modal-verb-order",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett de to ordene i riktig rekkefølge.",
+    "sentence": "Vi _____ tidlig i morgen.",
+    "words": [
+      "reise",
+      "skal"
+    ],
+    "answer": "skal reise",
+    "hint": "Modalverbet kommer før den rene infinitiven."
+  },
+  {
+    "id": "gq-mod-004",
+    "topic": "modal-verb-order",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "bør",
+      "Du",
+      "legen",
+      "ringe"
+    ],
+    "answer": "Du bør ringe legen.",
+    "alternates": [
+      "Du bør ringe legen"
+    ],
+    "hint": "Modalverb (bør) rett foran ren infinitiv (ringe)."
+  },
+  {
+    "id": "gq-sub-001",
+    "topic": "subordinate-order",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Slå sammen til én setning med «… fordi …».",
+    "source": "Han er trøtt. Han jobbet mye i går.",
+    "answer": "Han er trøtt fordi han jobbet mye i går.",
+    "alternates": [
+      "Han er trøtt fordi han jobbet mye i går"
+    ],
+    "hint": "«Fordi» starter en leddsetning — vanlig SVO-rekkefølge følger."
+  },
+  {
+    "id": "gq-sub-002",
+    "topic": "subordinate-order",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "Jeg",
+      "vet",
+      "at",
+      "hun",
+      "kommer",
+      "tidlig"
+    ],
+    "answer": "Jeg vet at hun kommer tidlig.",
+    "alternates": [
+      "Jeg vet at hun kommer tidlig"
+    ],
+    "hint": "«At»-setning: konjunksjon — subjekt — verb — resten."
+  },
+  {
+    "id": "gq-sub-003",
+    "topic": "subordinate-order",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Slå sammen til én setning med «… når …».",
+    "source": "Jeg er glad. Solen skinner.",
+    "answer": "Jeg er glad når solen skinner.",
+    "alternates": [
+      "Jeg er glad når solen skinner"
+    ],
+    "hint": "«Når»-setning: konjunksjon — subjekt — verb."
+  },
+  {
+    "id": "gq-rel-001",
+    "topic": "relative-som",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Kombiner til én setning med en relativsetning med «som».",
+    "source": "Jeg kjenner en dame. Hun snakker fire språk.",
+    "answer": "Jeg kjenner en dame som snakker fire språk.",
+    "alternates": [
+      "Jeg kjenner en dame som snakker fire språk"
+    ],
+    "hint": "«Som» erstatter det gjentatte substantivet/pronomenet i relativsetningen.",
+    "plusOnly": false
+  },
+  {
+    "id": "gq-rel-002",
+    "topic": "relative-som",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Kombiner til én setning med en relativsetning med «som».",
+    "source": "Vi så en film. Den var veldig morsom.",
+    "answer": "Vi så en film som var veldig morsom.",
+    "alternates": [
+      "Vi så en film som var veldig morsom"
+    ],
+    "hint": "«Som» erstatter «den» (som viser tilbake til «film»).",
+    "plusOnly": false
+  },
+  {
+    "id": "gq-rel-003",
+    "topic": "relative-som",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "boken",
+      "Har",
+      "du",
+      "lest",
+      "som",
+      "jeg",
+      "anbefalte"
+    ],
+    "answer": "Har du lest boken som jeg anbefalte?",
+    "alternates": [
+      "Har du lest boken som jeg anbefalte"
+    ],
+    "hint": "Relativsetningen «som jeg anbefalte» følger direkte etter substantivet «boken».",
+    "plusOnly": false
+  },
+  {
+    "id": "gq-rel-006",
+    "topic": "relative-som",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Kombiner til én setning med en relativsetning med «som».",
+    "source": "Jeg har en bestefar. Han bor i Bergen.",
+    "answer": "Jeg har en bestefar som bor i Bergen.",
+    "alternates": [
+      "Jeg har en bestefar som bor i Bergen"
+    ],
+    "hint": "«Som» erstatter «han» (som viser tilbake til «bestefar»).",
+    "plusOnly": false
+  },
+  {
+    "id": "gq-rel-007",
+    "topic": "relative-som",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Kombiner til én setning med en relativsetning med «som».",
+    "source": "Hun har en søster. Hun bor i Oslo.",
+    "answer": "Hun har en søster som bor i Oslo.",
+    "alternates": [
+      "Hun har en søster som bor i Oslo"
+    ],
+    "hint": "«Som» erstatter «hun» (som viser tilbake til «søster»).",
+    "plusOnly": false
+  },
+  {
+    "id": "gq-rel-008",
+    "topic": "relative-som",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Kombiner til én setning med en relativsetning med «som».",
+    "source": "Jeg har en kollega. Jeg liker ham godt.",
+    "answer": "Jeg har en kollega som jeg liker godt.",
+    "alternates": [
+      "Jeg har en kollega som jeg liker godt"
+    ],
+    "hint": "«Som» står for objektet i leddsetningen (jeg liker ham → jeg liker som). På dette nivået skriver vi alltid ut «som».",
+    "plusOnly": false
+  },
+  {
+    "id": "gq-rel-009",
+    "topic": "relative-som",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Kombiner til én setning med en relativsetning med «som».",
+    "source": "Jeg har en nabo. Jeg snakker ofte med ham.",
+    "answer": "Jeg har en nabo som jeg snakker ofte med.",
+    "alternates": [
+      "Jeg har en nabo som jeg snakker ofte med"
+    ],
+    "hint": "Når preposisjonen hører til verbet (snakke med), blir den stående til slutt i leddsetningen: som jeg snakker med.",
+    "plusOnly": false
+  },
+  {
+    "id": "gq-rel-010",
+    "topic": "relative-som",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "Jeg",
+      "har",
+      "en",
+      "datter",
+      "som",
+      "elsker",
+      "å",
+      "lese"
+    ],
+    "answer": "Jeg har en datter som elsker å lese.",
+    "alternates": [
+      "Jeg har en datter som elsker å lese"
+    ],
+    "hint": "Relativsetningen «som elsker å lese» følger direkte etter substantivet den beskriver (datter).",
+    "plusOnly": false
+  },
+  {
+    "id": "gq-rel-011",
+    "topic": "relative-som",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "Har",
+      "du",
+      "møtt",
+      "kollegaen",
+      "som",
+      "jeg",
+      "jobber",
+      "med"
+    ],
+    "answer": "Har du møtt kollegaen som jeg jobber med?",
+    "alternates": [
+      "Har du møtt kollegaen som jeg jobber med"
+    ],
+    "hint": "Preposisjonen som hører til verbet (jobbe med) blir stående til slutt: som jeg jobber med.",
+    "plusOnly": false
+  },
+  {
+    "id": "gq-rel-012",
+    "topic": "relative-som",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig relativpronomen.",
+    "sentence": "Jeg har en lærer _____ jeg liker godt.",
+    "words": [
+      "som",
+      "hvem",
+      "hva"
+    ],
+    "answer": "som",
+    "hint": "Vi bruker alltid «som» som relativpronomen på norsk — ikke «hvem» eller «hva» slik som på engelsk.",
+    "plusOnly": false
+  },
+  {
+    "id": "gq-rel-013",
+    "topic": "relative-som",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Jeg har en venninne som bor i Trondheim.",
+    "optionB": "Jeg har en venninne hvem bor i Trondheim.",
+    "answer": "A",
+    "explanation": "På norsk bruker vi «som» som relativpronomen for både personer og ting — aldri «hvem».",
+    "hint": "«Hvem» brukes bare i spørsmål, ikke som relativpronomen i en leddsetning.",
+    "plusOnly": false
+  },
+  {
+    "id": "gq-setadv-001",
+    "topic": "setningsadverbial",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "sikkert",
+      "Hun",
+      "er",
+      "hjemme"
+    ],
+    "answer": "Hun er sikkert hjemme.",
+    "alternates": [
+      "Hun er sikkert hjemme"
+    ],
+    "hint": "Setningsadverbialet «sikkert» følger det finitte verbet i en helsetning."
+  },
+  {
+    "id": "gq-setadv-002",
+    "topic": "setningsadverbial",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett de tre ordene i riktig rekkefølge.",
+    "sentence": "Vi _____ _____ _____ gå hit igjen.",
+    "words": [
+      "vil",
+      "nok",
+      "ikke"
+    ],
+    "answer": "vil nok ikke",
+    "hint": "Modalverb — setningsadverb — nektelse — infinitiv."
+  },
+  {
+    "id": "gq-setadv-003",
+    "topic": "setningsadverbial",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Sett inn «kanskje» på riktig plass.",
+    "source": "Det regner i morgen.",
+    "answer": "Det regner kanskje i morgen.",
+    "alternates": [
+      "Kanskje regner det i morgen.",
+      "Det regner kanskje i morgen"
+    ],
+    "hint": "Setningsadverbial etter det finitte verbet i helsetningen, eller fremflyttet med V2."
+  },
+  {
+    "id": "gq-setadv-004",
+    "topic": "setningsadverbial",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "dessverre",
+      "ikke",
+      "Jeg",
+      "kan",
+      "komme"
+    ],
+    "answer": "Jeg kan dessverre ikke komme.",
+    "alternates": [
+      "Jeg kan dessverre ikke komme"
+    ],
+    "hint": "Modalverb — setningsadverb — nektelse — infinitiv."
+  },
+  {
+    "id": "gq-advfr-001",
+    "topic": "adverbial-fronting",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om og start med «Om sommeren».",
+    "source": "Vi drar på fjellet om sommeren.",
+    "answer": "Om sommeren drar vi på fjellet.",
+    "alternates": [
+      "Om sommeren drar vi på fjellet"
+    ],
+    "hint": "Fremflyttet adverbial → V2: verb før subjekt."
+  },
+  {
+    "id": "gq-advfr-002",
+    "topic": "adverbial-fronting",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "Plutselig",
+      "ringte",
+      "telefonen"
+    ],
+    "answer": "Plutselig ringte telefonen.",
+    "alternates": [
+      "Plutselig ringte telefonen"
+    ],
+    "hint": "Adverb fremflyttet → verb før subjekt."
+  },
+  {
+    "id": "gq-advfr-003",
+    "topic": "adverbial-fronting",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om og start med «Etter middag».",
+    "source": "De gikk en tur etter middag.",
+    "answer": "Etter middag gikk de en tur.",
+    "alternates": [
+      "Etter middag gikk de en tur"
+    ],
+    "hint": "Fremflyttet preposisjonsuttrykk → V2-inversjon."
+  },
+  {
+    "id": "gq-advfr-004",
+    "topic": "adverbial-fronting",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "I",
+      "fjor",
+      "begynte",
+      "han",
+      "på",
+      "universitetet"
+    ],
+    "answer": "I fjor begynte han på universitetet.",
+    "alternates": [
+      "I fjor begynte han på universitetet"
+    ],
+    "hint": "«I fjor» fremflyttet → verb på andre plass."
+  },
+  {
+    "id": "gq-noun-art-001",
+    "topic": "noun-articles",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig form: med eller uten artikkel.",
+    "sentence": "Broren min er _____ snekker.",
+    "words": [
+      "en",
+      "∅"
+    ],
+    "answer": "∅",
+    "hint": "Etter «er» + et yrke bruker norsk ingen artikkel (nullartikkel)."
+  },
+  {
+    "id": "gq-noun-art-002",
+    "topic": "noun-articles",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig form: med eller uten artikkel.",
+    "sentence": "Vil du bli _____ lege?",
+    "words": [
+      "en",
+      "∅"
+    ],
+    "answer": "∅",
+    "hint": "Etter «bli» + et yrke bruker norsk ingen artikkel."
+  },
+  {
+    "id": "gq-noun-art-003",
+    "topic": "noun-articles",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig form: med eller uten artikkel.",
+    "sentence": "Vi trenger _____ ny lærer på skolen.",
+    "words": [
+      "en",
+      "∅"
+    ],
+    "answer": "en",
+    "hint": "«Trenger» introduserer et bestemt individ her, så «en» trengs."
+  },
+  {
+    "id": "gq-noun-art-004",
+    "topic": "noun-articles",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Legg til eller fjern artikkelen for å gjøre setningen riktig.",
+    "source": "Naboen min jobber som en kokk.",
+    "answer": "Naboen min jobber som kokk.",
+    "hint": "Etter «som» + et yrke utelater norsk artikkelen."
+  },
+  {
+    "id": "gq-noun-art-005",
+    "topic": "noun-articles",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Fyll inn: en, et, eller ∅ (ingen artikkel).",
+    "sentence": "Han har _____ problem med bilen.",
+    "words": [
+      "en",
+      "et",
+      "∅"
+    ],
+    "answer": "et",
+    "hint": "«Problem» er intetkjønn (et-ord)."
+  },
+  {
+    "id": "gq-noun-art-006",
+    "topic": "noun-articles",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "er",
+      "Søstera",
+      "mi",
+      "sykepleier"
+    ],
+    "answer": "Søstera mi er sykepleier.",
+    "alternates": [
+      "Søstera mi er sykepleier"
+    ],
+    "hint": "Yrke etter «er»: ingen artikkel."
+  },
+  {
+    "id": "gq-noun-art-007",
+    "topic": "noun-articles",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til substantivets bestemte form.",
+    "source": "en bil",
+    "answer": "bilen",
+    "hint": "Hankjønnsord: legg til -en for å danne bestemt form (en bil → bilen)."
+  },
+  {
+    "id": "gq-noun-art-008",
+    "topic": "noun-articles",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til substantivets bestemte form.",
+    "source": "et hus",
+    "answer": "huset",
+    "hint": "Intetkjønnsord: legg til -et for å danne bestemt form (et hus → huset)."
+  },
+  {
+    "id": "gq-noun-art-009",
+    "topic": "noun-articles",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Fyll inn den bestemte formen.",
+    "sentence": "Kan du lukke _____ (vindu)?",
+    "words": [
+      "vinduet",
+      "vinduen",
+      "vindu"
+    ],
+    "answer": "vinduet",
+    "hint": "«Vindu» er intetkjønn: bestemt form er «vinduet»."
+  },
+  {
+    "id": "gq-noun-art-010",
+    "topic": "noun-articles",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "starter",
+      "ikke",
+      "Bilen"
+    ],
+    "answer": "Bilen starter ikke.",
+    "alternates": [
+      "Bilen starter ikke"
+    ],
+    "hint": "Bestemt substantiv som subjekt — ingen egen artikkel, endelsen -en er artikkelen."
+  },
+  {
+    "id": "gq-noun-pl-001",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv flertallsformen.",
+    "source": "en maskin",
+    "answer": "maskiner",
+    "hint": "De fleste substantiv legger til -er i flertall: maskin → maskiner."
+  },
+  {
+    "id": "gq-noun-pl-002",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv flertallsformen.",
+    "source": "en dør",
+    "answer": "dører",
+    "hint": "Dør → dører (legg til -er)."
+  },
+  {
+    "id": "gq-noun-pl-003",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv flertallsformen.",
+    "source": "en venn",
+    "answer": "venner",
+    "hint": "Venn → venner (legg til -er)."
+  },
+  {
+    "id": "gq-noun-pl-004",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv flertallsformen.",
+    "source": "en klasse",
+    "answer": "klasser",
+    "hint": "Substantiv som ender på -e legger bare til -r: klasse → klasser."
+  },
+  {
+    "id": "gq-noun-pl-005",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv flertallsformen.",
+    "source": "en sykkel",
+    "answer": "sykler",
+    "hint": "Sykkel → sykler (uregelrett: ubetont -el mister -e-en)."
+  },
+  {
+    "id": "gq-noun-pl-006",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv flertallsformen.",
+    "source": "et år",
+    "answer": "år",
+    "hint": "Korte intetkjønnsord har ofte samme form i flertall: ett år → tre år."
+  },
+  {
+    "id": "gq-noun-pl-007",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv flertallsformen.",
+    "source": "et barn",
+    "answer": "barn",
+    "hint": "«Barn» er uregelrett — flertallsformen er lik entallsformen."
+  },
+  {
+    "id": "gq-noun-pl-008",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig flertallsform.",
+    "sentence": "De har tre _____.",
+    "words": [
+      "barn",
+      "barner",
+      "barna"
+    ],
+    "answer": "barn",
+    "hint": "«Barn» har ingen flertallsendelse: ett barn → tre barn."
+  },
+  {
+    "id": "gq-noun-pl-009",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig flertallsform.",
+    "sentence": "Jeg hadde mange _____.",
+    "words": [
+      "feil",
+      "feiler",
+      "feilen"
+    ],
+    "answer": "feil",
+    "hint": "«Feil» er nok et intetkjønnsord med nullflertall: en feil → mange feil."
+  },
+  {
+    "id": "gq-noun-pl-010",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv flertallsformen.",
+    "source": "en kilo",
+    "answer": "kilo",
+    "hint": "Lånord som ender på en vokal, har ofte nullflertall: en kilo → to kilo."
+  },
+  {
+    "id": "gq-noun-pos-001",
+    "topic": "noun-possessives",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om riktig — rett possessivet om nødvendig.",
+    "source": "Jeg kjenner Erik's søster.",
+    "answer": "Jeg kjenner Eriks søster.",
+    "hint": "Norsk bruker aldri apostrof foran genitivs-s: Erik's → Eriks."
+  },
+  {
+    "id": "gq-noun-pos-002",
+    "topic": "noun-possessives",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig possessivform.",
+    "sentence": "Jeg liker _____ venner.",
+    "words": [
+      "Karls",
+      "Karl's",
+      "vennene Karl"
+    ],
+    "answer": "Karls",
+    "hint": "Norsk genitiv: legg til -s direkte på navnet, ingen apostrof."
+  },
+  {
+    "id": "gq-noun-pos-003",
+    "topic": "noun-possessives",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om riktig — rett possessivet om nødvendig.",
+    "source": "Kan jeg låne Anne's sykkel?",
+    "answer": "Kan jeg låne Annes sykkel?",
+    "hint": "Ingen apostrof: Anne's → Annes."
+  },
+  {
+    "id": "gq-noun-pos-004",
+    "topic": "noun-possessives",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig possessivform.",
+    "sentence": "Har du sett _____ jakke?",
+    "words": [
+      "Tors",
+      "Tor's",
+      "jakken Tor"
+    ],
+    "answer": "Tors",
+    "hint": "Genitivs-s uten apostrof: Tor → Tors."
+  },
+  {
+    "id": "gq-adj-001",
+    "topic": "adj-agreement",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Han har en stor hund og et stort hus.",
+    "optionB": "Han har en stort hund og et stor hus.",
+    "answer": "A",
+    "explanation": "Adjektiv samsvarer med substantivets kjønn: en-ord → stor, et-ord → stort.",
+    "hint": "Sjekk kjønnet til hvert substantiv: hund (en) og hus (et)."
+  },
+  {
+    "id": "gq-adj-002",
+    "topic": "adj-agreement",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Vi har ei liten leilighet og et liten bad.",
+    "optionB": "Vi har ei lita leilighet og et lite bad.",
+    "answer": "B",
+    "explanation": "liten → lita (ei-ord), lite (et-ord).",
+    "hint": "liten endrer form for hvert kjønn."
+  },
+  {
+    "id": "gq-adj-003",
+    "topic": "adj-agreement",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn «ny» i riktig form.",
+    "sentence": "De har kjøpt en _____ sofa og et _____ bord.",
+    "words": [
+      "ny",
+      "nytt"
+    ],
+    "answer": "ny / nytt",
+    "hint": "en-ord → ny, et-ord → nytt."
+  },
+  {
+    "id": "gq-adj-004",
+    "topic": "adj-agreement",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn «fin» i riktig form.",
+    "sentence": "Det er ei _____ gate og et _____ torg her i byen.",
+    "words": [
+      "fin",
+      "fint"
+    ],
+    "answer": "fin / fint",
+    "hint": "ei-ord → fin, et-ord → fint."
+  },
+  {
+    "id": "gq-adj-005",
+    "topic": "adj-agreement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til flertall: «to …»",
+    "source": "en gammel stol",
+    "answer": "to gamle stoler",
+    "alternates": [
+      "to gamle stoler."
+    ],
+    "hint": "Alle adjektiv får -e i flertall."
+  },
+  {
+    "id": "gq-adj-006",
+    "topic": "adj-agreement",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til flertall: «tre …»",
+    "source": "et dyrt hotell",
+    "answer": "tre dyre hoteller",
+    "alternates": [
+      "tre dyre hoteller."
+    ],
+    "hint": "dyr → dyre i flertall; hotell → hoteller."
+  },
+  {
+    "id": "gq-adj-007",
+    "topic": "adj-definite",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Den gamle mannen sitter på benken.",
+    "optionB": "Gammel mannen sitter på benken.",
+    "answer": "A",
+    "explanation": "Bestemt form krever den/det/de + svakt adjektiv (-e-endelse): den gamle mannen.",
+    "hint": "Du trenger den bestemte artikkelen den foran adjektivet."
+  },
+  {
+    "id": "gq-adj-008",
+    "topic": "adj-definite",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Norske kysten er veldig vakker.",
+    "optionB": "Den norske kysten er veldig vakker.",
+    "answer": "B",
+    "explanation": "Bestemte substantivfraser trenger den/det/de + adjektiv + bestemt substantiv.",
+    "hint": "Legg til den bestemte artikkelen foran adjektivet."
+  },
+  {
+    "id": "gq-adj-009",
+    "topic": "adj-definite",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn «den/det/de» + riktig form av «kald».",
+    "sentence": "Kan du lukke vinduet? _____ vinden er ubehagelig.",
+    "words": [
+      "Den kalde",
+      "Det kalde",
+      "De kalde"
+    ],
+    "answer": "Den kalde",
+    "hint": "vinden er et en-ord → den kalde."
+  },
+  {
+    "id": "gq-adj-011",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig komparativform av «gammel».",
+    "sentence": "Berit er 52 år og Knut er 47 år. Berit er _____ Knut.",
+    "words": [
+      "eldre enn",
+      "gammelier enn",
+      "mer gammel enn"
+    ],
+    "answer": "eldre enn",
+    "hint": "Noen vanlige adjektiv har uregelrette komparativer som ikke følger -ere-mønsteret."
+  },
+  {
+    "id": "gq-adj-012",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig komparativform av «lang».",
+    "sentence": "Elven er 200 km. Fjorden er 80 km. Elven er _____ fjorden.",
+    "words": [
+      "lengre enn",
+      "langere enn",
+      "mer lang enn"
+    ],
+    "answer": "lengre enn",
+    "hint": "Noen korte adjektiv danner komparativ med en vokalendring i stedet for å legge til -ere."
+  },
+  {
+    "id": "gq-adj-013",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig komparativform av «rask».",
+    "sentence": "Bussen bruker én time. Toget bruker 30 minutter. Toget er _____ bussen.",
+    "words": [
+      "raskere enn",
+      "raskest enn",
+      "mer rask enn"
+    ],
+    "answer": "raskere enn",
+    "hint": "Regelrette enstavelsesadjektiv danner komparativ ved å legge en endelse direkte til grunnformen."
+  },
+  {
+    "id": "gq-adj-014",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Dette rommet er større enn det andre.",
+    "optionB": "Dette rommet er mer stort enn det andre.",
+    "answer": "A",
+    "explanation": "«Stor» danner komparativ uregelrett: stor → større. «Mer stort» brukes ikke.",
+    "hint": "Ikke alle adjektiv bruker «mer» i komparativ — korte, vanlige adjektiv har sine egne former."
+  },
+  {
+    "id": "gq-adj-015",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv en setning som sammenligner de to, med riktig komparativ.",
+    "source": "Leiligheten: 45 m². Huset: 120 m².",
+    "answer": "Huset er større enn leiligheten.",
+    "alternates": [
+      "Huset er større enn leiligheten",
+      "Leiligheten er mindre enn huset."
+    ],
+    "hint": "Tenk på hvilket adjektiv som beskriver størrelsesforskjellen — «stor» endrer form i komparativ."
+  },
+  {
+    "id": "gq-adj-016",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig superlativform av «varm».",
+    "sentence": "Juli er den _____ måneden i Norge.",
+    "words": [
+      "varmeste",
+      "varmst",
+      "mest varm"
+    ],
+    "answer": "varmeste",
+    "hint": "Superlativ i bestemte substantivfraser får den svake (-e-)endelsen etter den/det/de."
+  },
+  {
+    "id": "gq-adj-037",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig komparativform av «kald».",
+    "sentence": "I Bergen er det 6 grader. I Tromsø er det 10 grader. Bergen er _____ Tromsø.",
+    "words": [
+      "kaldere enn",
+      "kaldeere enn",
+      "mer kald enn"
+    ],
+    "answer": "kaldere enn",
+    "hint": "Regelrette enstavelsesadjektiv som «kald» danner komparativ ved å legge -ere til grunnformen."
+  },
+  {
+    "id": "gq-adj-038",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig superlativform av «kald».",
+    "sentence": "Det er 6 grader i Bergen, 10 grader i Tromsø og -2 grader på Finse. Det er _____ på Finse.",
+    "words": [
+      "kaldest",
+      "kaldeste",
+      "mest kald"
+    ],
+    "answer": "kaldest",
+    "hint": "Superlativ i predikativ stilling (etter «er», uten foranstilt artikkel) står i ubestemt form, uten -e-endelse."
+  },
+  {
+    "id": "gq-adj-039",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig komparativform av «høy».",
+    "sentence": "Snøtinden er 1900 meter. Istinden er 2100 meter. Istinden er _____ Snøtinden.",
+    "words": [
+      "høyere enn",
+      "høyeere enn",
+      "mer høy enn"
+    ],
+    "answer": "høyere enn",
+    "hint": "«Høy» danner komparativ regelrett: høy → høyere."
+  },
+  {
+    "id": "gq-adj-040",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig superlativform av «høy».",
+    "sentence": "Istinden er det _____ fjellet av de tre.",
+    "words": [
+      "høyeste",
+      "høyest",
+      "mest høye"
+    ],
+    "answer": "høyeste",
+    "hint": "Superlativ foran et bestemt substantiv (det/den/de + substantiv) får den svake -e-endelsen."
+  },
+  {
+    "id": "gq-adj-041",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Glomma er lengre enn Numedalslågen.",
+    "optionB": "Glomma er langere enn Numedalslågen.",
+    "answer": "A",
+    "explanation": "«Lang» har uregelrett komparativ med vokalendring: lang → lengre, ikke «langere».",
+    "hint": "Noen korte adjektiv bytter vokal i komparativ i stedet for å bare legge til en endelse."
+  },
+  {
+    "id": "gq-adj-042",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv en setning som sammenligner de to fjellene, med riktig komparativ.",
+    "source": "Fannaråken: 2069 meter. Skagastølstind: 2405 meter.",
+    "answer": "Skagastølstind er høyere enn Fannaråken.",
+    "alternates": [
+      "Skagastølstind er høyere enn Fannaråken"
+    ],
+    "hint": "Sammenlign høyden med komparativformen av «høy»: høy → høyere."
+  },
+  {
+    "id": "gq-adj-043",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge for å lage et spørsmål med superlativ.",
+    "tokens": [
+      "Hvilken",
+      "elv",
+      "er",
+      "lengst"
+    ],
+    "answer": "Hvilken elv er lengst?",
+    "alternates": [
+      "Hvilken elv er lengst"
+    ],
+    "hint": "Superlativ i predikativ stilling (etter «er») står i ubestemt form, uten -e-endelse: lengst."
+  },
+  {
+    "id": "gq-adj-044",
+    "topic": "adj-comparison",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig superlativform av «stor».",
+    "sentence": "Oslo har flest folk. Det er den _____ byen i Norge.",
+    "words": [
+      "største",
+      "storeste",
+      "mest store"
+    ],
+    "answer": "største",
+    "hint": "«Stor» har uregelrett superlativ: stor → størst. Foran et bestemt substantiv får den svake -e-endelsen: største."
+  },
+  {
+    "id": "gq-sv-001",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til preteritum.",
+    "source": "Jeg går til skolen.",
+    "answer": "Jeg gikk til skolen.",
+    "alternates": [
+      "Jeg gikk til skolen"
+    ],
+    "hint": "gå er et sterkt verb: gå → gikk (ikke gåte).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-002",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til preteritum.",
+    "source": "Han kommer hjem sent.",
+    "answer": "Han kom hjem sent.",
+    "alternates": [
+      "Han kom hjem sent"
+    ],
+    "hint": "komme er et sterkt verb: komme → kom.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-003",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til preteritum.",
+    "source": "Vi ser en film.",
+    "answer": "Vi så en film.",
+    "alternates": [
+      "Vi så en film"
+    ],
+    "hint": "se er et sterkt verb: se → så.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-004",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til preteritum.",
+    "source": "De tar bussen.",
+    "answer": "De tok bussen.",
+    "alternates": [
+      "De tok bussen"
+    ],
+    "hint": "ta er et sterkt verb: ta → tok.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-005",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til preteritum.",
+    "source": "Hun får en gave.",
+    "answer": "Hun fikk en gave.",
+    "alternates": [
+      "Hun fikk en gave"
+    ],
+    "hint": "få er et sterkt verb: få → fikk.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-006",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til preteritum.",
+    "source": "Jeg gir ham boken.",
+    "answer": "Jeg ga ham boken.",
+    "alternates": [
+      "Jeg ga ham boken"
+    ],
+    "hint": "gi er et sterkt verb: gi → ga.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-007",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Hun sov godt i natt.",
+    "optionB": "Hun sovet godt i natt.",
+    "answer": "A",
+    "explanation": "sove er et sterkt verb: sove → sov (ikke sovet, som er perfektum partisipp).",
+    "hint": "Preteritum av sove er sov, ikke sovet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-008",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "De drakk kaffe hele dagen.",
+    "optionB": "De drikket kaffe hele dagen.",
+    "answer": "A",
+    "explanation": "drikke er et sterkt verb: drikke → drakk (ikke drikket).",
+    "hint": "Preteritum av drikke er drakk.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-009",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Fyll inn preteritumsformen.",
+    "sentence": "Jeg _____ ham på torget i går. (treffe)",
+    "words": [
+      "traff",
+      "treffet",
+      "traf"
+    ],
+    "answer": "traff",
+    "hint": "treffe er et sterkt verb: treffe → traff.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-sv-010",
+    "topic": "sterke-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Fyll inn preteritumsformen.",
+    "sentence": "Vi _____ i tre timer. (sitte)",
+    "words": [
+      "satt",
+      "sitter",
+      "sitet"
+    ],
+    "answer": "satt",
+    "hint": "sitte er et sterkt verb: sitte → satt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-001",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Spørresetning med spørreord: sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "skal",
+      "du",
+      "når",
+      "begynne",
+      "på",
+      "norskkurs"
+    ],
+    "answer": "Når skal du begynne på norskkurs?",
+    "alternates": [
+      "Når skal du begynne på norskkurs"
+    ],
+    "hint": "Spørreordet står på 1. plass, det finitte verbet (skal) på 2. plass, deretter subjektet (du).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-002",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Fortellende setning: sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "I",
+      "Norge",
+      "er",
+      "vintrene",
+      "kalde"
+    ],
+    "answer": "I Norge er vintrene kalde.",
+    "alternates": [
+      "I Norge er vintrene kalde"
+    ],
+    "hint": "Fremflyttet adverbial (I Norge) på 1. plass, det finitte verbet (er) på 2. plass — V2-regelen.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-003",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Fortellende setning: skriv om og start med «I morgen».",
+    "source": "Vi reiser til Bergen.",
+    "answer": "I morgen reiser vi til Bergen.",
+    "alternates": [
+      "I morgen reiser vi til Bergen"
+    ],
+    "hint": "Fremflyttet tidsadverbial → verbet kommer før subjektet (V2).",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-004",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Spørresetning: gjør om til et ja/nei-spørsmål.",
+    "source": "Du snakker norsk.",
+    "answer": "Snakker du norsk?",
+    "alternates": [
+      "Snakker du norsk"
+    ],
+    "hint": "Ja/nei-spørsmål: bytt om subjekt og verb. Du snakker → Snakker du?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-005",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Spørresetning: gjør om til et ja/nei-spørsmål.",
+    "source": "De vil flytte fra byen.",
+    "answer": "Vil de flytte fra byen?",
+    "alternates": [
+      "Vil de flytte fra byen"
+    ],
+    "hint": "Snu om subjekt og finitt verb: De vil → Vil de?",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-006",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Spørresetning: hvilken er riktig?",
+    "optionA": "Kan jeg få time hos legen?",
+    "optionB": "Jeg kan få time hos legen?",
+    "answer": "A",
+    "explanation": "Ja/nei-spørsmål krever inversjon av subjekt og verb. Det finitte verbet (kan) må komme først, deretter subjektet (jeg).",
+    "hint": "Et spørsmål trenger inversjon: verb før subjekt.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-007",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Spørresetning: hvilken er riktig?",
+    "optionA": "Bor du i Oslo?",
+    "optionB": "Du bor i Oslo?",
+    "answer": "A",
+    "explanation": "Ja/nei-spørsmål snur om subjekt og verb. «Du bor» er et utsagn; «Bor du» er spørsmålet.",
+    "hint": "Bytt om subjekt og verb for å lage et ja/nei-spørsmål.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-008",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Spørresetning med spørreord: fyll inn riktig spørreord.",
+    "sentence": "_____ bor dere?",
+    "words": [
+      "Hvor",
+      "Hvem",
+      "Når",
+      "Hvorfor"
+    ],
+    "answer": "Hvor",
+    "hint": "«Hvor» spør om sted. Svaret ville vært et sted."
+  },
+  {
+    "id": "gq-hels-009",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Spørresetning med spørreord: fyll inn riktig spørreord.",
+    "sentence": "_____ begynner kurset?",
+    "words": [
+      "Når",
+      "Hvor",
+      "Hvem",
+      "Hva"
+    ],
+    "answer": "Når",
+    "hint": "«Når» spør om tid. Svaret ville vært et tidsuttrykk."
+  },
+  {
+    "id": "gq-hels-010",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Spørresetning med spørreord: fyll inn riktig spørreord.",
+    "sentence": "_____ bor du sammen med?",
+    "words": [
+      "Hvem",
+      "Hvor",
+      "Hva",
+      "Hvordan"
+    ],
+    "answer": "Hvem",
+    "hint": "«Hvem» spør om en person."
+  },
+  {
+    "id": "gq-hels-012",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Helsetning med ikke: sett inn «ikke» på riktig plass.",
+    "source": "Hun bor i byen.",
+    "answer": "Hun bor ikke i byen.",
+    "alternates": [
+      "Hun bor ikke i byen"
+    ],
+    "hint": "«Ikke» kommer etter det finitte verbet i en helsetning: bor → bor ikke.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-013",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Helsetning med ikke: sett inn «ikke» på riktig plass.",
+    "source": "Jeg kan gå på ski.",
+    "answer": "Jeg kan ikke gå på ski.",
+    "alternates": [
+      "Jeg kan ikke gå på ski"
+    ],
+    "hint": "Med et modalverb kommer «ikke» etter modalverbet: kan → kan ikke.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-014",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Helsetning med ikke: sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "I",
+      "dag",
+      "kan",
+      "vi",
+      "ikke",
+      "gjøre",
+      "mye"
+    ],
+    "answer": "I dag kan vi ikke gjøre mye.",
+    "alternates": [
+      "I dag kan vi ikke gjøre mye"
+    ],
+    "hint": "Fremflyttet adverbial (I dag) → V2-inversjon (kan vi). Deretter følger «ikke» etter modalverbet.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-015",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Setning med det som subjekt: sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "Det",
+      "ligger",
+      "ei",
+      "bok",
+      "på",
+      "bordet"
+    ],
+    "answer": "Det ligger ei bok på bordet.",
+    "alternates": [
+      "Det ligger ei bok på bordet"
+    ],
+    "hint": "Presenterende «det»: Det + verb + ubestemt subjekt + sted.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-016",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Setning med det som subjekt: sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "Det",
+      "kommer",
+      "en",
+      "buss",
+      "klokka",
+      "to"
+    ],
+    "answer": "Det kommer en buss klokka to.",
+    "alternates": [
+      "Det kommer en buss klokka to"
+    ],
+    "hint": "Presenterende «det»: Det + verb + ubestemt subjekt + tid.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-hels-017",
+    "topic": "helsetninger",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Setning med det som subjekt: skriv om med «det» som subjekt.",
+    "source": "En mann bor her.",
+    "answer": "Det bor en mann her.",
+    "alternates": [
+      "Det bor en mann her"
+    ],
+    "hint": "Flytt det ubestemte subjektet til etter verbet og erstatt det med «det»: Det bor en mann her.",
+    "plusOnly": true
+  },
+  {
+    "id": "gq-prep-tid-001",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Hun har bodd i Oslo _____ tre år.",
+    "words": [
+      "i",
+      "om",
+      "for"
+    ],
+    "answer": "i",
+    "hint": "«i» uttrykker varighet: hvor lenge noe varer eller har vart."
+  },
+  {
+    "id": "gq-prep-tid-002",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Toget går _____ fem minutter.",
+    "words": [
+      "om",
+      "i",
+      "for"
+    ],
+    "answer": "om",
+    "hint": "«om» peker mot et fremtidig tidspunkt: toget går om fem minutter."
+  },
+  {
+    "id": "gq-prep-tid-003",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "De kom hit _____ to uker siden.",
+    "words": [
+      "for",
+      "i",
+      "om"
+    ],
+    "answer": "for",
+    "hint": "«for … siden» markerer et referansepunkt i fortiden: de kom hit for to uker siden."
+  },
+  {
+    "id": "gq-prep-tid-004",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Han leste ut boka på to timer.",
+    "optionB": "Han leste ut boka i to timer.",
+    "answer": "A",
+    "explanation": "«På» + tid = hvor lang tid det TOK å fullføre noe. «I» + tid = hvor lenge noe varte uten fullføringsnyansen.",
+    "hint": "Bruk «på» når du uttrykker hvor lang tid en oppgave tok å fullføre."
+  },
+  {
+    "id": "gq-prep-tid-005",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Jeg har ikke sett ham _____ mange måneder.",
+    "words": [
+      "på",
+      "i",
+      "om"
+    ],
+    "answer": "på",
+    "hint": "«Ikke ... på» = tid som har gått uten at noe har skjedd: jeg har ikke sett ham på mange måneder."
+  },
+  {
+    "id": "gq-prep-tid-006",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Hun ble født _____ 1995.",
+    "words": [
+      "i",
+      "på",
+      "om"
+    ],
+    "answer": "i",
+    "hint": "«i» brukes med årstall, måneder, uker og navngitte perioder."
+  },
+  {
+    "id": "gq-prep-tid-007",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Skal du gjøre noe spesielt _____ kveld?",
+    "words": [
+      "i",
+      "om",
+      "til"
+    ],
+    "answer": "i",
+    "hint": "«I kveld» = denne kvelden (den bestemte kvelden vi er i eller går inn i). Substantivet står i ubestemt form etter «i»."
+  },
+  {
+    "id": "gq-prep-tid-008",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning betyr «generelt / vanemessig»?",
+    "optionA": "Kona mi jobber om kvelden.",
+    "optionB": "Kona mi jobber i kveld.",
+    "answer": "A",
+    "explanation": "«Om kvelden» (bestemt substantiv) = generelt, hver kveld. «I kveld» (ubestemt substantiv) = denne bestemte kvelden.",
+    "hint": "«Om» + bestemt substantiv = vanemessig/generelt. «I» + ubestemt substantiv = et bestemt tilfelle."
+  },
+  {
+    "id": "gq-prep-tid-009",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Det er alltid kaldt her _____ vinteren.",
+    "words": [
+      "om",
+      "i",
+      "til"
+    ],
+    "answer": "om",
+    "hint": "«Om vinteren» = om vinteren generelt. «Om» + bestemt årstid = vanemessig/generell sannhet."
+  },
+  {
+    "id": "gq-prep-tid-010",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "De skal flytte _____ sommeren.",
+    "words": [
+      "til",
+      "om",
+      "i"
+    ],
+    "answer": "til",
+    "hint": "«Til sommeren» = kommende sommer (fremtid). «Til» + bestemt årstid = fremtidig tidsreferanse."
+  },
+  {
+    "id": "gq-prep-sted-001",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon: «i» eller «på».",
+    "sentence": "Boka ligger _____ skuffen.",
+    "words": [
+      "i",
+      "på"
+    ],
+    "answer": "i",
+    "hint": "«I» = inni noe lukket. En skuff er et lukket rom."
+  },
+  {
+    "id": "gq-prep-sted-002",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon: «i» eller «på».",
+    "sentence": "Glasset står _____ bordet.",
+    "words": [
+      "på",
+      "i"
+    ],
+    "answer": "på",
+    "hint": "«På» = på overflaten av noe. Et bord er en overflate."
+  },
+  {
+    "id": "gq-prep-sted-003",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Han jobber _____ kontor.",
+    "words": [
+      "på",
+      "i"
+    ],
+    "answer": "på",
+    "hint": "Arbeidsplasser som kontor, skole, bibliotek, kafé tar «på»."
+  },
+  {
+    "id": "gq-prep-sted-004",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Hun jobber _____ en butikk.",
+    "words": [
+      "i",
+      "på"
+    ],
+    "answer": "i",
+    "hint": "Lukkede forretningslokaler (bank, butikk, kantina) tar «i»."
+  },
+  {
+    "id": "gq-prep-sted-005",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hva er riktig for «hun bor på landet»?",
+    "optionA": "Hun bor på landet.",
+    "optionB": "Hun bor i landet.",
+    "answer": "A",
+    "explanation": "«På landet» = på landsbygda. «I landet» ville betydd «i landet (nasjonen)».",
+    "hint": "Landsbygd → «på landet». By → «i byen»."
+  },
+  {
+    "id": "gq-prep-sted-006",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "De bor _____ Japan.",
+    "words": [
+      "i",
+      "på"
+    ],
+    "answer": "i",
+    "hint": "Land tar «i»: i Japan, i England, i Norge."
+  },
+  {
+    "id": "gq-prep-sted-007",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Vi var på ferie _____ Mallorca.",
+    "words": [
+      "på",
+      "i"
+    ],
+    "answer": "på",
+    "hint": "Øyer tar «på»: på Mallorca, på Karmøy, på Island."
+  },
+  {
+    "id": "gq-prep-sted-008",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Jeg var _____ legen i går.",
+    "words": [
+      "hos",
+      "til",
+      "ved"
+    ],
+    "answer": "hos",
+    "hint": "«Hos» = hjemme hos noen / på noens lokale. Brukes når du allerede er der."
+  },
+  {
+    "id": "gq-prep-sted-009",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hva er riktig for «jeg skal til legen»?",
+    "optionA": "Jeg skal til legen.",
+    "optionB": "Jeg skal hos legen.",
+    "answer": "A",
+    "explanation": "«Hos» brukes når du ER på stedet. For bevegelse TIL en persons sted brukes «til».",
+    "hint": "Å være der → «hos». Å dra dit → «til»."
+  },
+  {
+    "id": "gq-prep-sted-010",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Hytta ligger like _____ sjøen.",
+    "words": [
+      "ved",
+      "hos",
+      "til"
+    ],
+    "answer": "ved",
+    "hint": "«Ved» = rett ved siden av noe."
+  },
+  {
+    "id": "gq-prep-sted-029",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Biblioteket ligger til venstre _____ frisøren.",
+    "words": [
+      "for",
+      "til"
+    ],
+    "answer": "for",
+    "hint": "Preposisjonen etter venstre/høyre er alltid «for»: «til venstre for»."
+  },
+  {
+    "id": "gq-prep-sted-030",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Kafeen ligger til høyre _____ butikken.",
+    "words": [
+      "for",
+      "til"
+    ],
+    "answer": "for",
+    "hint": "Preposisjonen etter venstre/høyre er alltid «for»: «til høyre for»."
+  },
+  {
+    "id": "gq-prep-sted-031",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Apoteket ligger _____ kirken og banken.",
+    "words": [
+      "mellom",
+      "blant"
+    ],
+    "answer": "mellom",
+    "hint": "«mellom X og Y» = between X and Y."
+  },
+  {
+    "id": "gq-prep-sted-032",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "for",
+      "Skolen",
+      "venstre",
+      "banken",
+      "ligger",
+      "til"
+    ],
+    "answer": "Skolen ligger til venstre for banken.",
+    "alternates": [
+      "Skolen ligger til venstre for banken"
+    ],
+    "hint": "«ligger til venstre for» beskriver relativ posisjon mellom to bygninger."
+  },
+  {
+    "id": "gq-prep-sted-033",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "til",
+      "Butikken",
+      "apoteket",
+      "høyre",
+      "for",
+      "ligger"
+    ],
+    "answer": "Butikken ligger til høyre for apoteket.",
+    "alternates": [
+      "Butikken ligger til høyre for apoteket"
+    ],
+    "hint": "«ligger til høyre for» beskriver relativ posisjon mellom to bygninger."
+  },
+  {
+    "id": "gq-prep-sted-034",
+    "topic": "preposisjoner-sted",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Apoteket ligger til venstre for banken.",
+    "optionB": "Apoteket ligger til venstre av banken.",
+    "answer": "A",
+    "explanation": "«til venstre for» er det faste uttrykket for relativ posisjon — vi bruker «for», ikke «av».",
+    "hint": "Preposisjonen etter venstre/høyre er alltid «for»."
+  },
+  {
+    "id": "gq-noun-pl-021",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv bestemt form flertall.",
+    "source": "en fot",
+    "answer": "føttene",
+    "hint": "fot → føttene (uregelrett bestemt flertall)."
+  },
+  {
+    "id": "gq-noun-pl-022",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv bestemt form flertall.",
+    "source": "ei tann",
+    "answer": "tennene",
+    "hint": "tann → tennene (uregelrett bestemt flertall)."
+  },
+  {
+    "id": "gq-noun-pl-023",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv bestemt form flertall.",
+    "source": "et øye",
+    "answer": "øynene",
+    "hint": "øye → øynene (uregelrett bestemt flertall)."
+  },
+  {
+    "id": "gq-noun-pl-024",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv bestemt form flertall.",
+    "source": "et kne",
+    "answer": "knærne",
+    "hint": "kne → knærne (uregelrett bestemt flertall)."
+  },
+  {
+    "id": "gq-noun-pl-025",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig bestemt flertallsform.",
+    "sentence": "Han har vondt i _____.",
+    "words": [
+      "skuldrene",
+      "skuldre"
+    ],
+    "answer": "skuldrene",
+    "hint": "skulder → skuldrene i bestemt flertall."
+  },
+  {
+    "id": "gq-noun-pl-026",
+    "topic": "noun-plurals",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Jeg har vondt i føttene.",
+    "optionB": "Jeg har vondt i fotene.",
+    "answer": "A",
+    "explanation": "fot har uregelrett bestemt flertall: føttene, ikke fotene.",
+    "hint": "fot → føttene, ikke den regelrette formen."
+  },
+  {
+    "id": "gq-presperf-001",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Skriv verbet i presens perfektum.",
+    "sentence": "I dag _____ (vaske) jeg bilen.",
+    "words": [
+      "har vasket",
+      "vasket",
+      "vasker"
+    ],
+    "answer": "har vasket",
+    "hint": "Presens perfektum = har + perfektum partisipp. Svake verb som vaske får -et: vaske → vasket."
+  },
+  {
+    "id": "gq-presperf-002",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Skriv verbet i presens perfektum.",
+    "sentence": "Vi _____ (rydde) hele huset i dag.",
+    "words": [
+      "har ryddet",
+      "ryddet",
+      "rydder"
+    ],
+    "answer": "har ryddet",
+    "hint": "Rydde er et svakt verb: rydde → ryddet i perfektum partisipp."
+  },
+  {
+    "id": "gq-presperf-003",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Skriv verbet i presens perfektum.",
+    "sentence": "Han _____ (lese) boka to ganger.",
+    "words": [
+      "har lest",
+      "har lese",
+      "leste"
+    ],
+    "answer": "har lest",
+    "hint": "Lese har uregelrett perfektum partisipp: lese → lest."
+  },
+  {
+    "id": "gq-presperf-004",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Skriv verbet i presens perfektum.",
+    "sentence": "De _____ (spise) middag allerede.",
+    "words": [
+      "har spist",
+      "har spise",
+      "spiste"
+    ],
+    "answer": "har spist",
+    "hint": "Spise har uregelrett perfektum partisipp: spise → spist."
+  },
+  {
+    "id": "gq-presperf-005",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Skriv verbet i presens perfektum.",
+    "sentence": "Vi _____ (gjøre) alt som stod på listen.",
+    "words": [
+      "har gjort",
+      "har gjøre",
+      "gjorde"
+    ],
+    "answer": "har gjort",
+    "hint": "Gjøre har uregelrett perfektum partisipp: gjøre → gjort."
+  },
+  {
+    "id": "gq-presperf-006",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Skriv verbet i presens perfektum.",
+    "sentence": "Barnet _____ (sove) i to timer allerede.",
+    "words": [
+      "har sovet",
+      "har sove",
+      "sov"
+    ],
+    "answer": "har sovet",
+    "hint": "Sove har perfektum partisipp sovet: sove → sovet."
+  },
+  {
+    "id": "gq-presperf-007",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Svar med nei + ikke.",
+    "source": "Har du vasket bilen?",
+    "answer": "Nei, jeg har ikke vasket bilen.",
+    "hint": "Ikke plasseres rett etter har i et nektende svar med presens perfektum."
+  },
+  {
+    "id": "gq-presperf-008",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Svar med nei + ikke.",
+    "source": "Har dere gjort alt?",
+    "answer": "Nei, vi har ikke gjort alt.",
+    "hint": "Dere blir vi i svaret, og ikke kommer rett etter har."
+  },
+  {
+    "id": "gq-presperf-009",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Svar med nei + aldri.",
+    "source": "Har du vært i London?",
+    "answer": "Nei, jeg har aldri vært i London.",
+    "hint": "Aldri erstatter ikke når du snakker om noe som aldri har skjedd."
+  },
+  {
+    "id": "gq-presperf-010",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Svar med nei + aldri.",
+    "source": "Har du gått på ski?",
+    "answer": "Nei, jeg har aldri gått på ski.",
+    "hint": "Gå har uregelrett perfektum partisipp: gå → gått."
+  },
+  {
+    "id": "gq-presperf-011",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "Hvor",
+      "lenge",
+      "har",
+      "du",
+      "bodd",
+      "her"
+    ],
+    "answer": "Hvor lenge har du bodd her?",
+    "alternates": [
+      "Hvor lenge har du bodd her"
+    ],
+    "hint": "Spørreord (hvor lenge) + har + subjekt + perfektum partisipp."
+  },
+  {
+    "id": "gq-presperf-012",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Lag et spørsmål med Hvor lenge har …?",
+    "source": "Hun jobber her.",
+    "answer": "Hvor lenge har hun jobbet her?",
+    "hint": "Bruk presens perfektum av jobbe: jobbe → jobbet."
+  },
+  {
+    "id": "gq-presperf-013",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av snakke.",
+    "sentence": "I går _____ jeg med sjefen.",
+    "words": [
+      "snakket",
+      "har snakket",
+      "snakker"
+    ],
+    "answer": "snakket",
+    "hint": "«I går» viser til et avsluttet tidspunkt i fortiden → bruk preteritum, ikke presens perfektum."
+  },
+  {
+    "id": "gq-presperf-014",
+    "topic": "presens-perfektum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av bo.",
+    "sentence": "Jeg _____ her i tre år, og jeg bor her fortsatt.",
+    "words": [
+      "har bodd",
+      "bodde",
+      "bor"
+    ],
+    "answer": "har bodd",
+    "hint": "Når noe startet i fortiden og fortsatt gjelder nå, bruker vi presens perfektum."
+  },
+  {
+    "id": "gq-prep-tid-023",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "De har vært gift _____ ti år.",
+    "words": [
+      "i",
+      "for",
+      "om"
+    ],
+    "answer": "i",
+    "hint": "«i» + tid uttrykker varighet som fortsatt gjelder: de har vært gift i ti år."
+  },
+  {
+    "id": "gq-prep-tid-024",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Jeg har ikke snakket med henne _____ to måneder.",
+    "words": [
+      "på",
+      "i",
+      "om"
+    ],
+    "answer": "på",
+    "hint": "«Ikke ... på» + tid = tid som har gått uten at noe har skjedd."
+  },
+  {
+    "id": "gq-prep-tid-025",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Vi flyttet hit _____ fem år siden.",
+    "words": [
+      "for",
+      "i",
+      "om"
+    ],
+    "answer": "for",
+    "hint": "«for … siden» markerer et referansepunkt i fortiden, brukt med preteritum."
+  },
+  {
+    "id": "gq-prep-tid-026",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Han har jobbet her i to år.",
+    "optionB": "Han har jobbet her for to år.",
+    "answer": "A",
+    "explanation": "«i» + tid uttrykker varighet fram til nå. «for … siden» krever «siden» på slutten og viser til et avsluttet tidspunkt.",
+    "hint": "Varighet som fortsatt gjelder → «i». Et avsluttet tidspunkt tilbake i tid → «for … siden»."
+  },
+  {
+    "id": "gq-prep-tid-027",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "Toget går _____ ti minutter.",
+    "words": [
+      "om",
+      "i",
+      "for"
+    ],
+    "answer": "om",
+    "hint": "«om» + tid peker mot et fremtidig tidspunkt: toget går om ti minutter."
+  },
+  {
+    "id": "gq-prep-tid-028",
+    "topic": "preposisjoner-tid",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig preposisjon.",
+    "sentence": "De skal flytte til ny leilighet _____ våren.",
+    "words": [
+      "til",
+      "om",
+      "i"
+    ],
+    "answer": "til",
+    "hint": "«til» + bestemt årstid = en kommende, fremtidig årstid: til våren."
+  },
+  {
+    "id": "gq-adj-029",
+    "topic": "adj-definite",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til bestemt form.",
+    "source": "en gammel bil",
+    "answer": "den gamle bilen",
+    "hint": "en-ord i bestemt form: den + svakt adjektiv (-e) + substantiv med -en."
+  },
+  {
+    "id": "gq-adj-030",
+    "topic": "adj-definite",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til bestemt form.",
+    "source": "et gammelt hus",
+    "answer": "det gamle huset",
+    "hint": "et-ord i bestemt form: det + svakt adjektiv (-e) + substantiv med -et."
+  },
+  {
+    "id": "gq-adj-031",
+    "topic": "adj-definite",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv om til bestemt form.",
+    "source": "gamle sko",
+    "answer": "de gamle skoene",
+    "hint": "Flertall i bestemt form: de + svakt adjektiv (-e) + substantiv med -ene."
+  },
+  {
+    "id": "gq-adj-032",
+    "topic": "adj-definite",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn «den/det/de» + riktig form av «liten».",
+    "sentence": "Jeg liker _____ bordet.",
+    "words": [
+      "det lille",
+      "den lille",
+      "de små"
+    ],
+    "answer": "det lille",
+    "hint": "Liten har uregelrett bestemt form: bordet er et et-ord → det lille."
+  },
+  {
+    "id": "gq-adj-033",
+    "topic": "adj-definite",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn «den/det/de» + riktig form av «liten».",
+    "sentence": "Hvem eier _____ skoene?",
+    "words": [
+      "de små",
+      "den lille",
+      "det lille"
+    ],
+    "answer": "de små",
+    "hint": "Liten har uregelrett flertallsform i bestemt form: skoene er flertall → de små."
+  },
+  {
+    "id": "gq-adj-034",
+    "topic": "adj-definite",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Jeg vil kjøpe den store bilen.",
+    "optionB": "Jeg vil kjøpe stor bilen.",
+    "answer": "A",
+    "explanation": "Bestemt form krever den/det/de foran adjektivet: den store bilen, ikke bare stor bilen.",
+    "hint": "Du trenger den bestemte artikkelen den foran adjektivet."
+  },
+  {
+    "id": "gq-adj-035",
+    "topic": "adj-definite",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Svar med nei, og det motsatte.",
+    "source": "Vil du ha den gamle bilen?",
+    "answer": "Nei, den nye.",
+    "hint": "Adjektivet beholder bestemt form (den/det/de + -e) selv i et kort svar."
+  },
+  {
+    "id": "gq-adj-036",
+    "topic": "adj-definite",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn «den/det/de» + riktig form av «grønn».",
+    "sentence": "Hun liker _____ jakka.",
+    "words": [
+      "den grønne",
+      "det grønne",
+      "de grønne"
+    ],
+    "answer": "den grønne",
+    "hint": "jakka er et hunkjønnsord (ei jakke) → den grønne, samme mønster som en-ord i bestemt form."
+  },
+  {
+    "id": "gq-sub-008",
+    "topic": "subordinate-order",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Slå sammen til én setning med «da» først.",
+    "source": "Vi kom hit. Det var kaldt.",
+    "answer": "Da vi kom hit, var det kaldt.",
+    "alternates": [
+      "Da vi kom hit, var det kaldt"
+    ],
+    "hint": "Når leddsetningen («da …») står FØRST, må hovedsetningen ha V2-inversjon: var det, ikke det var."
+  },
+  {
+    "id": "gq-sub-009",
+    "topic": "subordinate-order",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "Han",
+      "var",
+      "glad",
+      "da",
+      "han",
+      "fikk",
+      "hjelp"
+    ],
+    "answer": "Han var glad da han fikk hjelp.",
+    "alternates": [
+      "Han var glad da han fikk hjelp"
+    ],
+    "hint": "Hovedsetning + da + subjekt + verb: ingen inversjon når hovedsetningen står først."
+  },
+  {
+    "id": "gq-sub-010",
+    "topic": "subordinate-order",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Slå sammen til én setning med «når» først.",
+    "source": "Det er kaldt. Jeg vil være inne.",
+    "answer": "Når det er kaldt, vil jeg være inne.",
+    "alternates": [
+      "Når det er kaldt, vil jeg være inne"
+    ],
+    "hint": "«Når» leddsetning FØRST → V2-inversjon i hovedsetningen: vil jeg, ikke jeg vil."
+  },
+  {
+    "id": "gq-sub-011",
+    "topic": "subordinate-order",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge.",
+    "tokens": [
+      "Vi",
+      "kan",
+      "flytte",
+      "når",
+      "barna",
+      "blir",
+      "store"
+    ],
+    "answer": "Vi kan flytte når barna blir store.",
+    "alternates": [
+      "Vi kan flytte når barna blir store"
+    ],
+    "hint": "Hovedsetning + når + subjekt + verb i leddsetningen."
+  },
+  {
+    "id": "gq-sub-012",
+    "topic": "subordinate-order",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Slå sammen til én setning med «hvis» først.",
+    "source": "Du kommer for sent. Det er ikke bra.",
+    "answer": "Hvis du kommer for sent, er det ikke bra.",
+    "alternates": [
+      "Hvis du kommer for sent, er det ikke bra"
+    ],
+    "hint": "«Hvis» leddsetning FØRST → V2-inversjon i hovedsetningen: er det, ikke det er."
+  },
+  {
+    "id": "gq-sub-013",
+    "topic": "subordinate-order",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Slå sammen til én setning med «fordi».",
+    "source": "Han flyttet til Norge. Han ble forelsket.",
+    "answer": "Han flyttet til Norge fordi han ble forelsket.",
+    "alternates": [
+      "Han flyttet til Norge fordi han ble forelsket"
+    ],
+    "hint": "Hovedsetning + fordi + subjekt + verb: ingen inversjon når hovedsetningen står først."
+  },
+  {
+    "id": "gq-sub-014",
+    "topic": "subordinate-order",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Da hun var syk, gikk hun til legen.",
+    "optionB": "Da hun var syk, hun gikk til legen.",
+    "answer": "A",
+    "explanation": "Når leddsetningen står FØRST i hele setningen, må hovedsetningen som følger ha V2-inversjon: gikk hun, ikke hun gikk.",
+    "hint": "Sjekk ordstillingen rett etter kommaet: verbet skal komme før subjektet."
+  },
+  {
+    "id": "gq-sub-015",
+    "topic": "subordinate-order",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig konjunksjon.",
+    "sentence": "_____ hun var liten, bodde hun i Japan.",
+    "words": [
+      "Da",
+      "Når",
+      "Hvis"
+    ],
+    "answer": "Da",
+    "hint": "«Da» brukes om ett bestemt, avsluttet tidspunkt eller periode i fortiden, i motsetning til «når» (gjentakelse/nåtid/fremtid) og «hvis» (betingelse)."
+  },
+  {
+    "id": "gq-indirtale-009",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «spør».",
+    "source": "Hva gjør du?",
+    "answer": "Han spør hva jeg gjør.",
+    "hint": "Med spørreord (hva, hvem, hvor …) beholder den gjengitte setningen spørreordet — vi legger ikke til «om»."
+  },
+  {
+    "id": "gq-indirtale-010",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «spør».",
+    "source": "Hvem snakker du med?",
+    "answer": "Han spør hvem jeg snakker med.",
+    "hint": "Spørreordet hvem flyttes til rett etter spør, med vanlig SVO-rekkefølge i leddsetningen."
+  },
+  {
+    "id": "gq-indirtale-011",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «spør».",
+    "source": "Hvordan går det?",
+    "answer": "Han spør hvordan det går.",
+    "hint": "Spørreordet hvordan flyttes til rett etter spør; subjekt-verb beholder vanlig rekkefølge."
+  },
+  {
+    "id": "gq-indirtale-012",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «spør».",
+    "source": "Hvor har du vondt?",
+    "answer": "Han spør hvor jeg har vondt.",
+    "hint": "Du blir jeg når spørsmålet gjengis fra den spurtes perspektiv."
+  },
+  {
+    "id": "gq-indirtale-013",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «spør».",
+    "source": "Hvorfor smiler du?",
+    "answer": "Han spør hvorfor jeg smiler.",
+    "hint": "Spørreordet hvorfor flyttes til rett etter spør, med vanlig SVO-rekkefølge i leddsetningen."
+  },
+  {
+    "id": "gq-indirtale-014",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Fullfør: Jeg vet ikke …",
+    "source": "Hvor kommer de fra?",
+    "answer": "Jeg vet ikke hvor de kommer fra.",
+    "hint": "Spørreordet hvor beholdes; ingen «om» legges til."
+  },
+  {
+    "id": "gq-indirtale-015",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Fullfør: Jeg vet ikke …",
+    "source": "Hva gjør de?",
+    "answer": "Jeg vet ikke hva de gjør.",
+    "hint": "Spørreordet hva beholdes rett etter vet ikke."
+  },
+  {
+    "id": "gq-indirtale-016",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Han spør hva jeg gjør.",
+    "optionB": "Han spør om hva jeg gjør.",
+    "answer": "A",
+    "explanation": "Når spørsmålet har et spørreord (hva, hvem, hvor, hvordan, hvorfor), erstatter spørreordet «om» — vi bruker ikke begge.",
+    "hint": "«Om» brukes bare for ja/nei-spørsmål uten spørreord."
+  },
+  {
+    "id": "gq-indirtale-017",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «at» eller «om».",
+    "sentence": "Fredrik lurer på _____ det kommer mange gjester i morgen.",
+    "words": [
+      "om",
+      "at"
+    ],
+    "answer": "om",
+    "hint": "«lure på» + gjengitt ja/nei-spørsmål → «om»."
+  },
+  {
+    "id": "gq-indirtale-018",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «at» eller «om».",
+    "sentence": "Hun håper _____ hun finner en fin gave.",
+    "words": [
+      "at",
+      "om"
+    ],
+    "answer": "at",
+    "hint": "«håpe» + gjengitt utsagn (ikke spørsmål) → «at»."
+  },
+  {
+    "id": "gq-indirtale-019",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi utsagnet med «håper».",
+    "source": "Kunden blir fornøyd.",
+    "answer": "Frisøren håper at kunden blir fornøyd.",
+    "alternates": [
+      "Frisøren håper at kunden blir fornøyd"
+    ],
+    "hint": "håper + at + det gjengitte utsagnet."
+  },
+  {
+    "id": "gq-indirtale-020",
+    "topic": "indirekte-tale-at-om",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «er usikker på».",
+    "source": "Kommer det mange gjester i morgen?",
+    "answer": "Han er usikker på om det kommer mange gjester i morgen.",
+    "alternates": [
+      "Han er usikker på om det kommer mange gjester i morgen"
+    ],
+    "hint": "«være usikker på» + gjengitt ja/nei-spørsmål → «om»."
+  },
+  {
+    "id": "gq-derforfordi-001",
+    "topic": "derfor-fordi",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig ord: «derfor» eller «fordi».",
+    "sentence": "Leiligheten er dyr. _____ vil de selge den.",
+    "words": [
+      "Derfor",
+      "Fordi"
+    ],
+    "answer": "Derfor",
+    "hint": "«Derfor» innleder en ny hovedsetning som uttrykker en følge av det som ble sagt før."
+  },
+  {
+    "id": "gq-derforfordi-002",
+    "topic": "derfor-fordi",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig ord: «derfor» eller «fordi».",
+    "sentence": "Hun er trøtt _____ hun jobbet sent i går.",
+    "words": [
+      "fordi",
+      "derfor"
+    ],
+    "answer": "fordi",
+    "hint": "«Fordi» innleder en leddsetning som forklarer årsaken til det som ble sagt før."
+  },
+  {
+    "id": "gq-derforfordi-003",
+    "topic": "derfor-fordi",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Det regnet mye. Derfor tok de bussen.",
+    "optionB": "Det regnet mye. Derfor de tok bussen.",
+    "answer": "A",
+    "explanation": "«Derfor» er et fundamentplassert adverbial og utløser V2-inversjon: det finitte verbet (tok) må stå før subjektet (de).",
+    "hint": "Etter «derfor» kommer verbet på plass 2, foran subjektet — akkurat som etter andre fundamentplasserte adverbial."
+  },
+  {
+    "id": "gq-derforfordi-004",
+    "topic": "derfor-fordi",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Han tok bussen fordi det regnet mye.",
+    "optionB": "Han tok bussen fordi regnet det mye.",
+    "answer": "A",
+    "explanation": "«Fordi» innleder en leddsetning med vanlig subjekt-før-verb-rekkefølge: det regnet, ikke regnet det.",
+    "hint": "I leddsetninger som starter med «fordi» kommer subjektet før det finitte verbet."
+  },
+  {
+    "id": "gq-derforfordi-005",
+    "topic": "derfor-fordi",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge for å lage en setning med «fordi».",
+    "tokens": [
+      "De",
+      "vil",
+      "kjøpe",
+      "leiligheten",
+      "fordi",
+      "den",
+      "er",
+      "billig"
+    ],
+    "answer": "De vil kjøpe leiligheten fordi den er billig.",
+    "alternates": [
+      "De vil kjøpe leiligheten fordi den er billig"
+    ],
+    "hint": "Hovedsetningen kommer først (De vil kjøpe leiligheten), deretter leddsetningen med «fordi» og vanlig subjekt-før-verb-rekkefølge."
+  },
+  {
+    "id": "gq-derforfordi-006",
+    "topic": "derfor-fordi",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge for å lage en hovedsetning som begynner med «derfor».",
+    "tokens": [
+      "Derfor",
+      "flytter",
+      "de",
+      "til",
+      "Bergen"
+    ],
+    "answer": "Derfor flytter de til Bergen.",
+    "alternates": [
+      "Derfor flytter de til Bergen"
+    ],
+    "hint": "«Derfor» står på 1. plass, det finitte verbet (flytter) på 2. plass, deretter subjektet (de) — V2-regelen."
+  },
+  {
+    "id": "gq-derforfordi-007",
+    "topic": "derfor-fordi",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Slå sammen de to setningene til én, med «fordi».",
+    "source": "Hun er glad. Hun fikk ny jobb.",
+    "answer": "Hun er glad fordi hun fikk ny jobb.",
+    "alternates": [
+      "Hun er glad fordi hun fikk ny jobb"
+    ],
+    "hint": "Sett årsaken i en leddsetning innledet av «fordi», med vanlig subjekt-før-verb-rekkefølge."
+  },
+  {
+    "id": "gq-derforfordi-008",
+    "topic": "derfor-fordi",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Slå sammen de to setningene: bruk «derfor» til å starte en ny hovedsetning.",
+    "source": "Han er sulten. Han spiser nå.",
+    "answer": "Han er sulten. Derfor spiser han nå.",
+    "alternates": [
+      "Han er sulten. Derfor spiser han nå"
+    ],
+    "hint": "«Derfor» innleder en ny hovedsetning; det finitte verbet (spiser) må stå rett etter «derfor», foran subjektet."
+  },
+  {
+    "id": "gq-kvantorer-001",
+    "topic": "kvantorer",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig ord: «mye» eller «mange».",
+    "sentence": "Vi har kjøpt _____ mat til festen.",
+    "words": [
+      "mye",
+      "mange"
+    ],
+    "answer": "mye",
+    "hint": "«Mat» er et ikke-tellelig substantiv, så vi bruker «mye», ikke «mange»."
+  },
+  {
+    "id": "gq-kvantorer-002",
+    "topic": "kvantorer",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig ord: «mye» eller «mange».",
+    "sentence": "Vi har kjøpt _____ epler i dag.",
+    "words": [
+      "mange",
+      "mye"
+    ],
+    "answer": "mange",
+    "hint": "«Epler» er et tellelig substantiv i flertall, så vi bruker «mange», ikke «mye»."
+  },
+  {
+    "id": "gq-kvantorer-003",
+    "topic": "kvantorer",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig ord: «mer» eller «flere».",
+    "sentence": "Kan du kjøpe _____ melk?",
+    "words": [
+      "mer",
+      "flere"
+    ],
+    "answer": "mer",
+    "hint": "«Melk» er ikke-tellelig, så vi bruker «mer», ikke «flere»."
+  },
+  {
+    "id": "gq-kvantorer-004",
+    "topic": "kvantorer",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg riktig ord: «mer» eller «flere».",
+    "sentence": "Vi trenger _____ stoler til gjestene.",
+    "words": [
+      "flere",
+      "mer"
+    ],
+    "answer": "flere",
+    "hint": "«Stoler» er tellelig i flertall, så vi bruker «flere», ikke «mer»."
+  },
+  {
+    "id": "gq-kvantorer-005",
+    "topic": "kvantorer",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Vi trenger mye plass i den nye leiligheten.",
+    "optionB": "Vi trenger mange plass i den nye leiligheten.",
+    "answer": "A",
+    "explanation": "«Plass» i betydningen areal er ikke-tellelig her, så vi bruker «mye», ikke «mange».",
+    "hint": "Tenk på om substantivet kan telles i entall/flertall, eller om det beskriver en mengde."
+  },
+  {
+    "id": "gq-kvantorer-006",
+    "topic": "kvantorer",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "optionA": "Han har mange bøker hjemme.",
+    "optionB": "Han har mye bøker hjemme.",
+    "answer": "A",
+    "explanation": "«Bøker» er tellelig flertall av «bok», så vi bruker «mange», ikke «mye».",
+    "hint": "Tellelige substantiv i flertall tar «mange», ikke «mye»."
+  },
+  {
+    "id": "gq-kvantorer-007",
+    "topic": "kvantorer",
+    "cefr": "A2",
+    "type": "order",
+    "prompt": "Sett ordene i riktig rekkefølge for å lage en setning med «flere».",
+    "tokens": [
+      "Vi",
+      "har",
+      "invitert",
+      "flere",
+      "gjester",
+      "i",
+      "år"
+    ],
+    "answer": "Vi har invitert flere gjester i år.",
+    "alternates": [
+      "Vi har invitert flere gjester i år"
+    ],
+    "hint": "«Flere» + tellelig substantiv i flertall (gjester) — kvantoren står rett foran substantivet."
+  },
+  {
+    "id": "gq-kvantorer-008",
+    "topic": "kvantorer",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Skriv en setning som sier at de trenger flere av noe tellelig, med riktig kvantor.",
+    "source": "Familien er stor, men bordet har bare fire stoler.",
+    "answer": "De trenger flere stoler.",
+    "alternates": [
+      "De trenger flere stoler"
+    ],
+    "hint": "«Stoler» er tellelig, så bruk «flere», ikke «mer»."
+  },
+  {
+    "id": "gq-modalpret-001",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av modalverbet.",
+    "sentence": "I går _____ jeg hjelpe naboen med bilen.",
+    "words": [
+      "kan",
+      "kunne"
+    ],
+    "answer": "kunne",
+    "hint": "Preteritum av «kan» er «kunne»."
+  },
+  {
+    "id": "gq-modalpret-002",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av modalverbet.",
+    "sentence": "Marte _____ gjerne reise til Bergen i fjor.",
+    "words": [
+      "vil",
+      "ville"
+    ],
+    "answer": "ville",
+    "hint": "Preteritum av «vil» er «ville»."
+  },
+  {
+    "id": "gq-modalpret-003",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av modalverbet.",
+    "sentence": "De _____ ta bussen klokka sju i morges.",
+    "words": [
+      "skal",
+      "skulle"
+    ],
+    "answer": "skulle",
+    "hint": "Preteritum av «skal» er «skulle»."
+  },
+  {
+    "id": "gq-modalpret-004",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av modalverbet.",
+    "sentence": "Vi _____ vente på bussen i to timer i går.",
+    "words": [
+      "må",
+      "måtte"
+    ],
+    "answer": "måtte",
+    "hint": "Preteritum av «må» er «måtte»."
+  },
+  {
+    "id": "gq-modalpret-005",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig form av modalverbet.",
+    "sentence": "Han _____ ha spørt læreren om hjelp før prøven.",
+    "words": [
+      "bør",
+      "burde"
+    ],
+    "answer": "burde",
+    "hint": "Preteritum av «bør» er «burde»."
+  },
+  {
+    "id": "gq-modalpret-006",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi utsagnet i fortid: «Marte sa at …»",
+    "source": "Jeg må jobbe i helgen.",
+    "answer": "Marte sa at hun måtte jobbe i helgen.",
+    "alternates": [
+      "Marte sa at hun måtte jobbe i helgen"
+    ],
+    "hint": "Presens modalverb «må» blir «måtte» i referert tale i fortid."
+  },
+  {
+    "id": "gq-modalpret-007",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «spørte».",
+    "source": "Skal jeg vente her?",
+    "answer": "Han spørte om han skulle vente her.",
+    "alternates": [
+      "Han spørte om han skulle vente her"
+    ],
+    "hint": "«Skal» blir «skulle» når spørsmålet gjengis i fortid."
+  },
+  {
+    "id": "gq-modalpret-008",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Gjengi spørsmålet med «lurte på».",
+    "source": "Hvor kan jeg parkere?",
+    "answer": "Hun lurte på hvor hun kunne parkere.",
+    "alternates": [
+      "Hun lurte på hvor hun kunne parkere"
+    ],
+    "hint": "«Kan» blir «kunne»; spørreordet hvor beholdes."
+  },
+  {
+    "id": "gq-modalpret-009",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "på",
+      "Hun",
+      "norskkurs",
+      "ville",
+      "gå",
+      "gjerne"
+    ],
+    "answer": "Hun ville gjerne gå på norskkurs.",
+    "alternates": [
+      "Hun ville gjerne gå på norskkurs"
+    ],
+    "hint": "Preteritum modalverb «ville» + «gjerne» + infinitiv."
+  },
+  {
+    "id": "gq-modalpret-010",
+    "topic": "modalverb-preteritum",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "I fjor kunne hun ikke svømme.",
+    "optionB": "I fjor kan hun ikke svømme.",
+    "answer": "A",
+    "explanation": "Tidsuttrykket «i fjor» krever preteritum av modalverbet: «kunne», ikke presens «kan».",
+    "hint": "Se etter tidsuttrykket som viser fortid."
+  },
+  {
+    "id": "gq-plassverb-001",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig verb.",
+    "sentence": "Jeg _____ boka på bordet.",
+    "words": [
+      "legger",
+      "setter"
+    ],
+    "answer": "legger",
+    "hint": "Boka ligger flatt — handlingen med et flatt objekt er «legge», ikke «sette»."
+  },
+  {
+    "id": "gq-plassverb-002",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig verb.",
+    "sentence": "Nøkkelen _____ på bordet.",
+    "words": [
+      "ligger",
+      "legger"
+    ],
+    "answer": "ligger",
+    "hint": "Dette er en tilstand uten objekt → «ligge», ikke «legge»."
+  },
+  {
+    "id": "gq-plassverb-003",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Beskriv resultatet med «stå».",
+    "source": "Hun setter lampen på hylla.",
+    "answer": "Lampen står på hylla.",
+    "alternates": [
+      "Lampen står på hylla"
+    ],
+    "hint": "Etter handlingen «sette» beskriver vi resultatet (tilstanden) med «stå»."
+  },
+  {
+    "id": "gq-plassverb-004",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Beskriv resultatet med «ligge».",
+    "source": "Han legger telefonen på bordet.",
+    "answer": "Telefonen ligger på bordet.",
+    "alternates": [
+      "Telefonen ligger på bordet"
+    ],
+    "hint": "Etter handlingen «legge» beskriver vi resultatet (tilstanden) med «ligge»."
+  },
+  {
+    "id": "gq-plassverb-005",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "glasset",
+      "Jeg",
+      "på",
+      "bordet",
+      "setter"
+    ],
+    "answer": "Jeg setter glasset på bordet.",
+    "alternates": [
+      "Jeg setter glasset på bordet"
+    ],
+    "hint": "Glasset står oppreist — handlingen med et oppreist objekt er «sette»."
+  },
+  {
+    "id": "gq-plassverb-006",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "kniven",
+      "Hun",
+      "på",
+      "bordet",
+      "legger"
+    ],
+    "answer": "Hun legger kniven på bordet.",
+    "alternates": [
+      "Hun legger kniven på bordet"
+    ],
+    "hint": "Kniven ligger flatt — handlingen med et flatt objekt er «legge», ikke «sette»."
+  },
+  {
+    "id": "gq-plassverb-007",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig verb.",
+    "sentence": "Koppen _____ på hylla.",
+    "words": [
+      "står",
+      "setter"
+    ],
+    "answer": "står",
+    "hint": "Dette er en tilstand uten objekt → «stå», ikke «sette»."
+  },
+  {
+    "id": "gq-plassverb-008",
+    "topic": "plassering-verb",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Han legger boka i ryggsekken.",
+    "optionB": "Han ligger boka i ryggsekken.",
+    "answer": "A",
+    "explanation": "«Legge» er handlingsverbet og tar et objekt (boka); «ligge» er tilstandsverbet og tar aldri objekt.",
+    "hint": "Se etter objektet — et objekt krever handlingsverbet."
+  },
+  {
+    "id": "gq-reflverb-001",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig refleksivt pronomen.",
+    "sentence": "Jeg gleder _____ til helgen.",
+    "words": [
+      "meg",
+      "deg"
+    ],
+    "answer": "meg",
+    "hint": "Jeg-formen av det refleksive pronomenet er «meg»."
+  },
+  {
+    "id": "gq-reflverb-002",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig refleksivt pronomen.",
+    "sentence": "Du gleder _____ til helgen.",
+    "words": [
+      "deg",
+      "meg"
+    ],
+    "answer": "deg",
+    "hint": "Du-formen av det refleksive pronomenet er «deg»."
+  },
+  {
+    "id": "gq-reflverb-003",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig refleksivt pronomen.",
+    "sentence": "Hun gruer _____ til vinteren.",
+    "words": [
+      "seg",
+      "dere"
+    ],
+    "answer": "seg",
+    "hint": "3. person entall (hun) tar refleksivt pronomen «seg»."
+  },
+  {
+    "id": "gq-reflverb-004",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig refleksivt pronomen.",
+    "sentence": "Vi gruer _____ til prøven.",
+    "words": [
+      "oss",
+      "seg"
+    ],
+    "answer": "oss",
+    "hint": "Vi-formen av det refleksive pronomenet er «oss»."
+  },
+  {
+    "id": "gq-reflverb-005",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Sett inn riktig refleksivt pronomen.",
+    "sentence": "Dere føler _____ trøtte i dag.",
+    "words": [
+      "dere",
+      "oss"
+    ],
+    "answer": "dere",
+    "hint": "Dere-formen av det refleksive pronomenet er også «dere»."
+  },
+  {
+    "id": "gq-reflverb-006",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Fortell det samme om Fredrik.",
+    "source": "Jeg gleder meg til jobben.",
+    "answer": "Fredrik gleder seg til jobben.",
+    "alternates": [
+      "Fredrik gleder seg til jobben"
+    ],
+    "hint": "3. person entall: det refleksive pronomenet blir «seg»."
+  },
+  {
+    "id": "gq-reflverb-007",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "til",
+      "De",
+      "gruer",
+      "vinteren",
+      "seg"
+    ],
+    "answer": "De gruer seg til vinteren.",
+    "alternates": [
+      "De gruer seg til vinteren"
+    ],
+    "hint": "3. person flertall (de) tar refleksivt pronomen «seg»."
+  },
+  {
+    "id": "gq-reflverb-008",
+    "topic": "refleksive-verb",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Vi føler oss glade i dag.",
+    "optionB": "Vi føler seg glade i dag.",
+    "answer": "A",
+    "explanation": "«Vi» krever det refleksive pronomenet «oss» — «seg» brukes bare med 3. person (han/hun/de).",
+    "hint": "Se på subjektet: «vi» hører aldri sammen med «seg»."
+  },
+  {
+    "id": "gq-havsvaere-001",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «har» eller «er».",
+    "sentence": "Jeg _____ vondt i magen.",
+    "words": [
+      "har",
+      "er"
+    ],
+    "answer": "har",
+    "hint": "«ha vondt i» er et symptom-uttrykk med «ha»."
+  },
+  {
+    "id": "gq-havsvaere-002",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «har» eller «er».",
+    "sentence": "Hun _____ syk i dag.",
+    "words": [
+      "er",
+      "har"
+    ],
+    "answer": "er",
+    "hint": "«være syk» er en adjektiv-tilstand → «være»."
+  },
+  {
+    "id": "gq-havsvaere-003",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «har» eller «er».",
+    "sentence": "Vi _____ lyst på is.",
+    "words": [
+      "har",
+      "er"
+    ],
+    "answer": "har",
+    "hint": "«ha lyst på» tar alltid «ha»."
+  },
+  {
+    "id": "gq-havsvaere-004",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «har» eller «er».",
+    "sentence": "De _____ sultne etter turen.",
+    "words": [
+      "er",
+      "har"
+    ],
+    "answer": "er",
+    "hint": "«være sulten» er en adjektiv-tilstand → «være»."
+  },
+  {
+    "id": "gq-havsvaere-005",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "fill",
+    "prompt": "Velg «har» eller «er».",
+    "sentence": "Han _____ i dårlig humør i dag.",
+    "words": [
+      "er",
+      "har"
+    ],
+    "answer": "er",
+    "hint": "«være i dårlig humør» bruker «være»."
+  },
+  {
+    "id": "gq-havsvaere-006",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "transform",
+    "prompt": "Svar på spørsmålet med «ha det bra».",
+    "source": "Hvordan har du det?",
+    "answer": "Jeg har det bra.",
+    "alternates": [
+      "Jeg har det bra"
+    ],
+    "hint": "«ha det bra/dårlig» bruker «ha», ikke «være»."
+  },
+  {
+    "id": "gq-havsvaere-007",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "order",
+    "tokens": [
+      "vondt",
+      "Hun",
+      "i",
+      "har",
+      "hodet"
+    ],
+    "answer": "Hun har vondt i hodet.",
+    "alternates": [
+      "Hun har vondt i hodet"
+    ],
+    "hint": "«ha vondt i» er et fast symptom-uttrykk med «ha»."
+  },
+  {
+    "id": "gq-havsvaere-008",
+    "topic": "ha-vs-vaere",
+    "cefr": "A2",
+    "type": "minimal-pair",
+    "prompt": "Hvilken setning er riktig?",
+    "optionA": "Jeg er sulten, men jeg har ikke lyst på fisk.",
+    "optionB": "Jeg har sulten, men jeg er ikke lyst på fisk.",
+    "answer": "A",
+    "explanation": "«være sulten» (adjektiv-tilstand) og «ha lyst på» (ønske-uttrykk med «ha») — riktig kombinasjon er «er sulten» + «har lyst på».",
+    "hint": "To ulike uttrykk i samme setning — sjekk hvert av dem for seg."
+  }
+]
