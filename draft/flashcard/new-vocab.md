@@ -1,3 +1,5 @@
+Note: Add word, meaning, example/source
+
 ### B1
 | Norwegian        | Gender | English                          |
 | ---------------- | ------ | -------------------------------- |

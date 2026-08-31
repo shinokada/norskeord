@@ -8846,5 +8846,39 @@
     "level": "A1",
     "category": "household-items",
     "part": "noun"
+  },
+  {
+    "id": "v-a1-actions-028",
+    "norsk": "å banke",
+    "lemma": "banke",
+    "english": "to knock",
+    "ukrainian": "стукати",
+    "spanish": "llamar (a la puerta) / golpear",
+    "german": "klopfen",
+    "example": "Noen banker på døren.",
+    "example_english": "Someone is knocking on the door.",
+    "example_ukrainian": "Хтось стукає у двері.",
+    "example_spanish": "Alguien llama a la puerta.",
+    "example_german": "Jemand klopft an der Tür.",
+    "level": "A1",
+    "category": "actions",
+    "part": "verb"
+  },
+  {
+    "id": "v-a1-actions-029",
+    "norsk": "å gjemme",
+    "lemma": "gjemme",
+    "english": "to hide",
+    "ukrainian": "ховати",
+    "spanish": "esconder",
+    "german": "verstecken",
+    "example": "Barna gjemte seg bak sofaen.",
+    "example_english": "The children hid behind the sofa.",
+    "example_ukrainian": "Діти сховалися за диваном.",
+    "example_spanish": "Los niños se escondieron detrás del sofá.",
+    "example_german": "Die Kinder versteckten sich hinter dem Sofa.",
+    "level": "A1",
+    "category": "actions",
+    "part": "verb"
   }
 ]
