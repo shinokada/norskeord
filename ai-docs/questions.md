@@ -27,55 +27,39 @@ kran and skall are exact duplicates but sitting oddly at level C in production f
 
 ---
 
-Please read ai-docs/implementation/new-vocab-uttrykk-pipeline.md. Please see draft/new-entries/01, 02, 03, or 04 directory for your reference. 
+Please read ai-docs/implementation/new-vocab-uttrykk-pipeline.md. Please see draft/new-entries/01, 02, 03, or 04 directory for your reference.
 
 The following is from a previous session. Please continue where you left.
 
+ME:
 
-ME: I created draft/new-entries/09/source-list.md. Can you start Stage 1?
+CLAUDE:
 
-CLAUDE: Now checking for exact duplicates across all production vocab, and inspecting how thin categories (`actions`, `family`, `occupations`) are used to inform placement.
+ME:
 
-ME:  
+CLAUDE:
 
-CLAUDE: 
+ME:
 
-ME: 
+CLAUDE:
 
-CLAUDE: 
+ME:
 
-ME:  
+CLAUDE:
 
-CLAUDE: 
+ME:
 
-ME: 
+CLAUDE:
 
-CLAUDE: 
+ME:
 
-ME:  
+CLAUDE:
 
-CLAUDE: 
+ME:
 
-ME: 
+CLAUDE:
 
-CLAUDE: 
-
-ME:  
-
-CLAUDE: 
-
-ME: 
-
-
-
-
-
-
-
-
-
-
-
+ME:
 
 ---
 
@@ -144,58 +128,58 @@ Format:
 8. Fill up lemma with a dictionary form of `norsk` field with out `(en)`, `(et)`, `(en/ei)` or `å`, etc. Only one word if it is not a expression (more than one word).
 9. If norsk is an expression, the `norsk` and `lemma` fields are the same without any `(xx)`.
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME:  
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
 CLAUDE:

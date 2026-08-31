@@ -16064,5 +16064,22 @@
     "level": "A2",
     "category": "house-chores",
     "part": "verb"
+  },
+  {
+    "id": "v-a2-communication-102",
+    "norsk": "heller",
+    "lemma": "heller",
+    "english": "rather",
+    "ukrainian": "краще, скоріше",
+    "spanish": "más bien, mejor",
+    "german": "eher, lieber",
+    "example": "Jeg vil heller gå enn å ta bussen.",
+    "example_english": "I would rather walk than take the bus.",
+    "example_ukrainian": "Я краще піду пішки, ніж поїду автобусом.",
+    "example_spanish": "Prefiero caminar antes que tomar el autobús.",
+    "example_german": "Ich gehe lieber zu Fuß, als den Bus zu nehmen.",
+    "level": "A2",
+    "category": "communication",
+    "part": "adverb"
   }
 ]

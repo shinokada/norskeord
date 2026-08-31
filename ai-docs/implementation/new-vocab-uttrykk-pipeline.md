@@ -77,7 +77,8 @@ applying `data-rules/vocab-and-uttrykk.md` by hand. Determines per entry:
 
 - `type`: vocab | uttrykk (decision rule from data-rules)
 - `level`: A1–C (use given level if present in the source line; otherwise
-  infer from frequency/complexity, flag low-confidence guesses for review)
+  infer from frequency/complexity per `data-rules/cefr-levels.md`, flag
+  low-confidence guesses for review)
 - `part` (vocab only)
 - `category` (vocab only — pass current `CATEGORIES_BY_LEVEL` distribution
   from production so it favors under-represented categories, same as
@@ -202,7 +203,7 @@ exactly.
 **Reads straight from the batch's own working directory** —
 `draft/new-entries/{batch}/vocab-{level}-new.json` /
 `uttrykk-{level}-new.json` — never copied to the fixed `draft/{level}/`
-path the script itself expects. That copy was only ever needed so *you*
+path the script itself expects. That copy was only ever needed so _you_
 could run `merge-to-production.mjs` yourself (it hardcodes that path);
 since Claude does the merge in-chat instead, the copy step is skipped
 entirely. Doing it the old way left stray `.bak`/`.merged` files in
