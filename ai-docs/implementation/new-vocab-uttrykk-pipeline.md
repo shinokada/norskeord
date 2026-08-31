@@ -89,11 +89,18 @@ applying `data-rules/vocab-and-uttrykk.md` by hand. Determines per entry:
 Claude writes the results directly (via the Filesystem tool), split by
 level, into the **existing Step-1 extraction format**
 (`extracted-vocab-{level}.json` / `extracted-uttrykk-{level}.json`) so
-Stage 3 can reuse `enrich-vocab.mjs` unchanged.
+Stage 3 can reuse `enrich-vocab.mjs` unchanged — plus one addition to that
+format for this pipeline: each entry also gets an `english` field (a short
+gloss, not the full Stage-3 enrichment) so the level guess can be sanity-
+checked against a plain-English sense at checkpoint 1, before any other
+language or example is written. `enrich-vocab.mjs` ignores/overwrites this
+field at Stage 3, so it's safe for it to be a quick gloss rather than the
+final wording.
 
 **Checkpoint 1:** review `classified.json` (or the extracted-*.json files
 directly) against the source list — same ~1 min/entry eyeball as Step 1.5
-in the existing workflow. Fix `norsk`/`lemma`/type/level/part by hand.
+in the existing workflow. Fix `norsk`/`lemma`/type/level/part by hand; use
+the new `english` field to double-check the level assignment itself.
 
 ### Stage 2 — Duplicate check (new script: `dedupe-new-entries.mjs`)
 

@@ -37208,5 +37208,23 @@
     "level": "B1",
     "category": "fitness",
     "part": "verb"
+  },
+  {
+    "id": "v-b1-travel-049",
+    "norsk": "opphold (et)",
+    "lemma": "opphold",
+    "definition": "Et tidsrom man befinner seg et sted; kan også bety et avbrudd eller en pause.",
+    "english": "a stay",
+    "ukrainian": "перебування",
+    "spanish": "una estancia",
+    "german": "ein Aufenthalt",
+    "example": "De hadde et kort opphold i Bergen før de reiste videre.",
+    "example_english": "They had a short stay in Bergen before continuing their journey.",
+    "example_ukrainian": "У них було коротке перебування в Бергені, перш ніж вони поїхали далі.",
+    "example_spanish": "Tuvieron una breve estancia en Bergen antes de continuar su viaje.",
+    "example_german": "Sie hatten einen kurzen Aufenthalt in Bergen, bevor sie weiterreisten.",
+    "level": "B1",
+    "category": "travel",
+    "part": "noun"
   }
 ]

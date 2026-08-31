@@ -40812,5 +40812,23 @@
     "level": "C",
     "category": "character-temperament",
     "part": "adjective"
+  },
+  {
+    "id": "v-c-intensifiers-degree-062",
+    "norsk": "helvetes",
+    "lemma": "helvetes",
+    "definition": "Vulgært forsterkende ord brukt foran et substantiv for å uttrykke sinne eller frustrasjon, f.eks. 'helvetes idiot'.",
+    "english": "damn / bloody (vulgar intensifier)",
+    "ukrainian": "чортовий, клятий",
+    "spanish": "maldito",
+    "german": "verdammt",
+    "example": "Han ropte «for en helvetes dag!» da han mistet nøklene.",
+    "example_english": "He shouted 'what a damn day!' when he lost his keys.",
+    "example_ukrainian": "Він крикнув: «Який клятий день!», коли загубив ключі.",
+    "example_spanish": "Gritó «¡qué maldito día!» cuando perdió las llaves.",
+    "example_german": "Er rief „Was für ein verdammter Tag!“, als er seine Schlüssel verlor.",
+    "level": "C",
+    "category": "intensifiers-degree",
+    "part": "adjective"
   }
 ]
