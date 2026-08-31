@@ -1,0 +1,102 @@
+[
+  {
+    "source": "en ventetid: a waiting time",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "ventetid (en)",
+    "lemma": "ventetid",
+    "note": "level inferred (administrative/everyday-but-not-basic compound) — please verify"
+  },
+  {
+    "source": "en slekt: a family",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "slekt (en)",
+    "lemma": "slekt",
+    "note": "distinct from 'familie' — 'slekt' means kin/lineage/extended family; level inferred — please verify"
+  },
+  {
+    "source": "å vise: to show",
+    "status": "skipped-duplicate",
+    "note": "recalled from earlier fuzzy-match output this session: exact lemma match already in production, v-b1-communication-skills-055 (B1) \"å vise\" — to show. Will reconfirm in Stage 2."
+  },
+  {
+    "source": "en sysak: a sawing item",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "sysak (en)",
+    "lemma": "sysak",
+    "note": "corrected sense: 'sysak' means a sewing item/notion (needlework supply), not 'sawing' — matches the needlework theme of this batch; level inferred — please verify"
+  },
+  {
+    "source": "en perle: a pearl",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "perle (en)",
+    "lemma": "perle",
+    "note": "level inferred — please verify"
+  },
+  {
+    "source": "en trådsnelle: thread spool",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "trådsnelle (en)",
+    "lemma": "trådsnelle",
+    "note": "level inferred (specific craft compound) — please verify"
+  },
+  {
+    "source": "å se på: to look at",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A1",
+    "part": "verb",
+    "norsk": "å se på",
+    "lemma": "se på",
+    "note": "particle verb, remains vocab/verb per data-rules; very common — flagging as likely duplicate for priority check in Stage 2; level inferred — please verify"
+  },
+  {
+    "source": "et fang: a lap",
+    "status": "skipped-duplicate",
+    "note": "exact lemma match already in production, v-a2-body-021 (A2) \"fang (et)\" — same sense (lap), same level, same category (body)"
+  },
+  {
+    "source": "et broderi: an embroidery",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "broderi (et)",
+    "lemma": "broderi",
+    "note": "level inferred (craft vocabulary) — please verify"
+  },
+  {
+    "source": "et strikketøy: a knitwear",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "strikketøy (et)",
+    "lemma": "strikketøy",
+    "note": "sense adjusted: 'strikketøy' is the knitting-in-progress/knitting project, not a finished 'knitwear' garment (that would be 'strikkevare'); level inferred — please verify"
+  },
+  {
+    "source": "en hekleduk: a crochet cloth",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B2",
+    "part": "noun",
+    "norsk": "hekleduk (en)",
+    "lemma": "hekleduk",
+    "note": "level inferred (specialized craft compound) — please verify"
+  }
+]

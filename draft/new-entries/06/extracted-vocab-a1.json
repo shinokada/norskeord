@@ -1,0 +1,44 @@
+[
+  {
+    "id": "",
+    "norsk": "skuff (en)",
+    "lemma": "skuff",
+    "level": "A1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "fruktskål (en)",
+    "lemma": "fruktskål",
+    "level": "A1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "tekanne (en)",
+    "lemma": "tekanne",
+    "level": "A1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "skål (en)",
+    "lemma": "skål",
+    "level": "A1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "spisebord (et)",
+    "lemma": "spisebord",
+    "level": "A1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "spagetti (en)",
+    "lemma": "spagetti",
+    "level": "A1",
+    "part": "noun"
+  }
+]

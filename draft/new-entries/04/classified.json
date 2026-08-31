@@ -1,0 +1,82 @@
+[
+  {
+    "source": "å skrape: to scratch",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-c-manner-of-motion-023"
+  },
+  {
+    "source": "en stolbein: a chair leg",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "stolbein (et)",
+    "lemma": "stolbein",
+    "definition": "Et av beina som holder oppe en stol.",
+    "note": "gender corrected from 'en' to 'et' (compound gender follows the head noun 'bein', which is neuter). Moved from A2 to B1 accommodation-style furniture vocab — B1 already has krakk/tøffel/yndlingsstol/knagg at this specificity; nothing comparable exists at A2."
+  },
+  {
+    "source": "en kjeks: a biscuit",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "kjeks (en)",
+    "lemma": "kjeks",
+    "note": "moved from A1 to A2 — A1 food is core staples (bread, milk, egg); a biscuit is a snack, better matched to A2"
+  },
+  {
+    "source": "å nikke: to nod",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-b2-communication-043"
+  },
+  {
+    "source": "en rull: a roll",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "rull (en)",
+    "lemma": "rull",
+    "note": "sense is ambiguous (paper roll / bread roll / film roll) — flagging for review; enrichment in Stage 3 will need a specific sense picked"
+  },
+  {
+    "source": "en pengeseddel: a banknote",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "pengeseddel (en)",
+    "lemma": "pengeseddel",
+    "note": "cleaned a stray soft-hyphen character out of the source spelling. Moved from B1 finance to A2 money — A2 money already has 'hundrelapp (en)' (a hundred-krone note) at the same concreteness; B1 finance is reserved for more abstract concepts (gjeld, rente, egenkapital)"
+  },
+  {
+    "source": "et kinn: a chin",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A1",
+    "part": "noun",
+    "norsk": "kinn (et)",
+    "lemma": "kinn",
+    "note": "translation corrected per user: 'kinn' = cheek, not chin (confirmed in prior turn). Kept at A1 — matches the specificity of other A1 body words (legg, tommelfinger, bryst)"
+  },
+  {
+    "source": "en tømrer: a builder",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-a2-occupations-071 (translated there as 'carpenter')"
+  },
+  {
+    "source": "å glo: to stare",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-c-interpersonal-conflict-092"
+  },
+  {
+    "source": "frekk: rude, cheeky",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "adjective",
+    "norsk": "frekk",
+    "lemma": "frekk"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "v-a2-descriptive-adjectives-089",
+    "norsk": "berømt",
+    "lemma": "berømt",
+    "english": "famous",
+    "ukrainian": "відомий",
+    "spanish": "famoso/a",
+    "german": "berühmt",
+    "example": "Hun er en berømt forfatter i Norge.",
+    "example_english": "She is a famous author in Norway.",
+    "example_ukrainian": "Вона відома письменниця в Норвегії.",
+    "example_spanish": "Ella es una autora famosa en Noruega.",
+    "example_german": "Sie ist eine berühmte Autorin in Norwegen.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "id": "v-a2-descriptive-adjectives-090",
+    "norsk": "ålreit",
+    "lemma": "ålreit",
+    "english": "all right, OK, fine (colloquial)",
+    "ukrainian": "нормально, окей (розмовне)",
+    "spanish": "vale, está bien (coloquial)",
+    "german": "in Ordnung, okay (umgangssprachlich)",
+    "example": "Det var helt ålreit, ikke noe problem.",
+    "example_english": "It was totally fine, no problem.",
+    "example_ukrainian": "Було цілком нормально, жодних проблем.",
+    "example_spanish": "Estuvo bastante bien, no hay problema.",
+    "example_german": "Es war völlig in Ordnung, kein Problem.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  }
+]

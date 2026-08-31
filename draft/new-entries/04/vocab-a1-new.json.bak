@@ -1,0 +1,19 @@
+[
+  {
+    "id": "",
+    "norsk": "kinn (et)",
+    "lemma": "kinn",
+    "english": "a cheek",
+    "ukrainian": "щока",
+    "spanish": "una mejilla",
+    "german": "eine Wange",
+    "example": "Barnet hadde røde kinn etter å ha lekt ute i kulden.",
+    "example_english": "The child had red cheeks after playing outside in the cold.",
+    "example_ukrainian": "У дитини були червоні щоки після гри на морозі.",
+    "example_spanish": "El niño tenía las mejillas rojas después de jugar afuera en el frío.",
+    "example_german": "Das Kind hatte rote Wangen, nachdem es draußen in der Kälte gespielt hatte.",
+    "level": "A1",
+    "category": "body",
+    "part": "noun"
+  }
+]

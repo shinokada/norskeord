@@ -1,0 +1,67 @@
+[
+  {
+    "source": "å bråke: to make a fuss",
+    "status": "skipped-duplicate",
+    "note": "exact lemma match already in production: v-c-sensory-sound-025 (C) \"å bråke\""
+  },
+  {
+    "source": "å fnise: to giggle",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "verb",
+    "norsk": "å fnise",
+    "lemma": "fnise",
+    "note": "level inferred — please verify"
+  },
+  {
+    "source": "å hviske: to whisper",
+    "status": "skipped-duplicate",
+    "note": "exact lemma match already in production: v-b1-communication-skills-027 (B1) \"å hviske\""
+  },
+  {
+    "source": "å bevege seg: to move",
+    "status": "skipped-duplicate",
+    "note": "exact lemma match already in production: v-b2-advanced-verbs-073 (B2) \"å bevege seg\""
+  },
+  {
+    "source": "å krype: to crawl",
+    "status": "skipped-duplicate",
+    "note": "exact lemma match already in production: v-c-manner-of-motion-117 (C) \"å krype\""
+  },
+  {
+    "source": "en dyne: a duvet",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "dyne (en)",
+    "lemma": "dyne",
+    "note": "level inferred — please verify"
+  },
+  {
+    "source": "sakte: (adjektiv/adverb) slow/slowly",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "adverb",
+    "norsk": "sakte",
+    "lemma": "sakte",
+    "note": "source flags both adjective and adverb senses; defaulted to adverb (dominant use) — please confirm or split into a separate adjective card"
+  },
+  {
+    "source": "trange: narrow",
+    "status": "skipped-duplicate",
+    "note": "exact lemma match already in production: v-a2-clothing-005 (A2) \"trang\" — same adjective, same tight/narrow sense"
+  },
+  {
+    "source": "en stillhet: a silence",
+    "status": "skipped-duplicate",
+    "note": "exact lemma match already in production: v-a2-nature-035 (A2) \"stillhet (en)\""
+  },
+  {
+    "source": "et asylmottak: a asylum reception",
+    "status": "skipped-duplicate",
+    "note": "exact lemma match already in production: v-b1-society-090 (B1) \"asylmottak (et)\""
+  }
+]

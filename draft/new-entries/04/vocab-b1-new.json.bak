@@ -1,0 +1,20 @@
+[
+  {
+    "id": "",
+    "norsk": "stolbein (et)",
+    "lemma": "stolbein",
+    "definition": "Et av beina som holder oppe en stol.",
+    "english": "a chair leg",
+    "ukrainian": "ніжка стільця",
+    "spanish": "la pata de una silla",
+    "german": "ein Stuhlbein",
+    "example": "Et av stolbeina var løst, så stolen vaklet.",
+    "example_english": "One of the chair legs was loose, so the chair wobbled.",
+    "example_ukrainian": "Одна з ніжок стільця розхиталася, тому стілець хитався.",
+    "example_spanish": "Una de las patas de la silla estaba floja, así que la silla se tambaleaba.",
+    "example_german": "Eines der Stuhlbeine war locker, sodass der Stuhl wackelte.",
+    "level": "B1",
+    "category": "accommodation",
+    "part": "noun"
+  }
+]

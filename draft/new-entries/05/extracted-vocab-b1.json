@@ -1,0 +1,50 @@
+[
+  {
+    "id": "",
+    "norsk": "lur",
+    "lemma": "lur",
+    "level": "B1",
+    "part": "adjective",
+    "definition": "Som er flink til å tenke ut smarte løsninger, ofte med et snev av list eller skøyeraktighet."
+  },
+  {
+    "id": "",
+    "norsk": "rågod",
+    "lemma": "rågod",
+    "level": "B1",
+    "part": "adjective",
+    "definition": "Uttrykk for at noe er veldig bra eller fantastisk (slang, forsterket med forstavelsen \"rå-\")."
+  },
+  {
+    "id": "",
+    "norsk": "lapskaus (en)",
+    "lemma": "lapskaus",
+    "level": "B1",
+    "part": "noun",
+    "definition": "En tradisjonell norsk gryterett med kjøtt, poteter og grønnsaker, kokt sammen til en tykk suppe."
+  },
+  {
+    "id": "",
+    "norsk": "innvendig",
+    "lemma": "innvendig",
+    "level": "B1",
+    "part": "adjective",
+    "definition": "Som befinner seg på innsiden av noe; det motsatte av utvendig."
+  },
+  {
+    "id": "",
+    "norsk": "unntatt",
+    "lemma": "unntatt",
+    "level": "B1",
+    "part": "preposition",
+    "definition": "Med unntak av; brukt for å utelate noe eller noen fra det som ellers gjelder."
+  },
+  {
+    "id": "",
+    "norsk": "stedatter (en/ei)",
+    "lemma": "stedatter",
+    "level": "B1",
+    "part": "noun",
+    "definition": "Datteren til ens ektefelle eller samboer fra et tidligere forhold."
+  }
+]

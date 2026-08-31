@@ -1,0 +1,74 @@
+[
+  {
+    "source": "å gjespe: to yawn",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-a2-body-023"
+  },
+  {
+    "source": "en veske: a bag",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A1",
+    "part": "noun",
+    "norsk": "veske (en)",
+    "lemma": "veske"
+  },
+  {
+    "source": "alt: all",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A1",
+    "part": "pronoun",
+    "norsk": "alt",
+    "lemma": "alt"
+  },
+  {
+    "source": "skrivesaker: stationary",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A1",
+    "part": "noun",
+    "norsk": "skrivesaker (pl.)",
+    "lemma": "skrivesak",
+    "note": "plural card — 'skrivesaker' has no common singular use, so lemma follows the bare-singular-dictionary-form convention for irregular/plural-only nouns"
+  },
+  {
+    "source": "halspastiller: cough drops, throat pastilles",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "halspastill (en)",
+    "lemma": "halspastill"
+  },
+  {
+    "source": "grønt: green (noun)",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "grønt (ubøy.)",
+    "lemma": "grønt",
+    "note": "confirmed sense: greens/vegetables (e.g. 'spise grønt'), indeclinable — not the color-green adjective sense"
+  },
+  {
+    "source": "å smelle: to bang, to slap",
+    "status": "skipped-duplicate",
+    "note": "same lemma 'smelle' already in production at level C: v-c-embodied-emotion-049"
+  },
+  {
+    "source": "et skritt: a step",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-b1-fitness-041"
+  },
+  {
+    "source": "trappa: stairs",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A1",
+    "part": "noun",
+    "norsk": "trapp (en)",
+    "lemma": "trapp",
+    "note": "normalized from definite form 'trappa' to dictionary form 'trapp (en)' per data-rules"
+  }
+]

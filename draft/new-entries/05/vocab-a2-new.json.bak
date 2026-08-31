@@ -1,0 +1,53 @@
+[
+  {
+    "id": "",
+    "norsk": "berømt",
+    "lemma": "berømt",
+    "english": "famous",
+    "ukrainian": "відомий",
+    "spanish": "famoso/a",
+    "german": "berühmt",
+    "example": "Hun er en berømt forfatter i Norge.",
+    "example_english": "She is a famous author in Norway.",
+    "example_ukrainian": "Вона відома письменниця в Норвегії.",
+    "example_spanish": "Ella es una autora famosa en Noruega.",
+    "example_german": "Sie ist eine berühmte Autorin in Norwegen.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  },
+  {
+    "id": "",
+    "norsk": "støvlett (en)",
+    "lemma": "støvlett",
+    "english": "a low boot / bootie",
+    "ukrainian": "черевичок (низький чобіток)",
+    "spanish": "una botina",
+    "german": "eine Stiefelette",
+    "example": "Hun kjøpte et par nye støvletter til høsten.",
+    "example_english": "She bought a new pair of boots for the autumn.",
+    "example_ukrainian": "Вона купила нову пару черевичків на осінь.",
+    "example_spanish": "Ella compró un par de botinas nuevas para el otoño.",
+    "example_german": "Sie kaufte ein neues Paar Stiefeletten für den Herbst.",
+    "level": "A2",
+    "category": "clothing",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "ålreit",
+    "lemma": "ålreit",
+    "english": "all right, OK, fine (colloquial)",
+    "ukrainian": "нормально, окей (розмовне)",
+    "spanish": "vale, está bien (coloquial)",
+    "german": "in Ordnung, okay (umgangssprachlich)",
+    "example": "Det var helt ålreit, ikke noe problem.",
+    "example_english": "It was totally fine, no problem.",
+    "example_ukrainian": "Було цілком нормально, жодних проблем.",
+    "example_spanish": "Estuvo bastante bien, no hay problema.",
+    "example_german": "Es war völlig in Ordnung, kein Problem.",
+    "level": "A2",
+    "category": "descriptive-adjectives",
+    "part": "adjective"
+  }
+]

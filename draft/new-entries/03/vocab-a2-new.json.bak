@@ -1,0 +1,19 @@
+[
+  {
+    "id": "",
+    "norsk": "perle (en)",
+    "lemma": "perle",
+    "english": "a bead / a pearl",
+    "ukrainian": "намистина / перлина",
+    "spanish": "una cuenta / una perla",
+    "german": "eine Perle",
+    "example": "Hun laget et armbånd med fargerike perler.",
+    "example_english": "She made a bracelet with colorful beads.",
+    "example_ukrainian": "Вона зробила браслет із кольорових намистин.",
+    "example_spanish": "Ella hizo una pulsera con cuentas de colores.",
+    "example_german": "Sie machte ein Armband mit bunten Perlen.",
+    "level": "A2",
+    "category": "hobbies",
+    "part": "noun"
+  }
+]

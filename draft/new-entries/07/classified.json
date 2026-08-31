@@ -1,0 +1,174 @@
+[
+  {
+    "source": "en lenestol: an armchair",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "lenestol (en)",
+    "lemma": "lenestol",
+    "note": "moved from A1 to B1 accommodation — specific furniture piece, matches the specificity of existing B1 accommodation items (krakk, yndlingsstol, tøffel), not A1's generic room vocab (bord, stol, sofa)"
+  },
+  {
+    "source": "en krakk: footstool",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-b1-accommodation-028"
+  },
+  {
+    "source": "en peis: a fireplace",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-b2-culture-040 — same word, same sense, same gender. Initially misread in Stage 1 as only a near-synonym of 'kamin' (v-b1-accommodation); Stage 2's exact-match pass caught that 'peis' itself is already there. Dropped per user decision."
+  },
+  {
+    "source": "en pynt: an ornament",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "pynt (en)",
+    "lemma": "pynt",
+    "note": "moved from A1 to B1 accommodation — sits alongside 'innredning' (furnishing/decor) rather than A1's basic room vocab. Stage 2 fuzzy pass noted related word family (pynte v-b1-traditions-029, pynte seg v-a2-clothing-026) — different part of speech, not a duplicate."
+  },
+  {
+    "source": "en fjernkontroll: a remote control",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "fjernkontroll (en)",
+    "lemma": "fjernkontroll"
+  },
+  {
+    "source": "et salongbord: coffee table",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "salongbord (et)",
+    "lemma": "salongbord",
+    "note": "moved from A1 to B1 accommodation — specific furniture piece, same reasoning as lenestol"
+  },
+  {
+    "source": "et bilde: a picture",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-a1-classroom-016"
+  },
+  {
+    "source": "en pute: a cushion",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-a1-household-items-002"
+  },
+  {
+    "source": "en sofa: a sofa",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-a1-home-013"
+  },
+  {
+    "source": "en bøtte: a bucket",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-a1-household-items-009"
+  },
+  {
+    "source": "en gummihanske: a rubber glove",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "gummihanske (en)",
+    "lemma": "gummihanske"
+  },
+  {
+    "source": "et vaskemiddel: a washing liquid",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "vaskemiddel (et)",
+    "lemma": "vaskemiddel"
+  },
+  {
+    "source": "en sokk: a sock",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-a1-clothes-007"
+  },
+  {
+    "source": "en stikk-kontakt: a plug",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "stikkontakt (en)",
+    "lemma": "stikkontakt",
+    "note": "normalized spelling from source's hyphenated 'stikk-kontakt' to the standard compound 'stikkontakt'; sense is the wall electrical outlet, not a plug itself (Norwegian distinguishes stikkontakt/outlet from støpsel/plug) — kept the source's English gloss but flagging the norsk lemma reflects the outlet"
+  },
+  {
+    "source": "et strykejern: an iron",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "strykejern (et)",
+    "lemma": "strykejern"
+  },
+  {
+    "source": "et strykebrett: an ironing board",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "strykebrett (et)",
+    "lemma": "strykebrett"
+  },
+  {
+    "source": "et feiebrett: a dustpan",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "feiebrett (et)",
+    "lemma": "feiebrett"
+  },
+  {
+    "source": "en skurebørste: a scrubbing brush",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "skurebørste (en)",
+    "lemma": "skurebørste"
+  },
+  {
+    "source": "en støvsuger: a vacuum cleaner",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-a2-house-chores-012"
+  },
+  {
+    "source": "en støvkost: a duster",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "støvkost (en)",
+    "lemma": "støvkost",
+    "note": "distinct object from 'kost' below (a soft dusting brush/broom vs. a general broom) — flagged in Stage 2 fuzzy pass, expected relation not a duplicate"
+  },
+  {
+    "source": "en kost: a bloom",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "kost (en)",
+    "lemma": "kost",
+    "note": "translation corrected from source's 'a bloom' (apparent typo) to 'a broom' — 'kost' is the standard Norwegian word for broom. Stage 2 exact-match pass found production already has 'kost (en)' at v-b1-health-024 meaning 'diet/fare' — a genuine homonym (different sense), not a duplicate. Kept per user decision; flagging so the coexistence is intentional, not accidental."
+  },
+  {
+    "source": "en svamp: a sponge",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "svamp (en)",
+    "lemma": "svamp"
+  }
+]

@@ -18,29 +18,33 @@ Ignore any illustrations. But if an image is related to a question and it is wor
 
 ---
 
-ME: 
+Please read ai-docs/implementation/new-vocab-uttrykk-pipeline.md. Please see draft/new-entries/01, 02, 03, or 04 directory for your reference. 
+I added draft/new-entries/05/source-list.md. Can you start Stage 1?
 
-CLAUDE: 
+The following is from a previous session where you started working on Stage 3 but it was ended due to session limit.
+Please continue where you left.
 
-ME: 
-
-CLAUDE: 
-
-ME: 
-
-CLAUDE: 
-
-ME: 
-
-CLAUDE: 
 
 ME:  
 
-CLAUDE: 
+CLAUDE: **Stage 3 done** (in-chat, no script/API). All 6 entries enriched — translations, examples, category:
 
-ME: 
+| lemma       | level | category               | english                |
+| ----------- | ----- | ---------------------- | ---------------------- |
+| kinn        | A1    | body                   | a cheek                |
+| kjeks       | A2    | cooking                | a biscuit / a cracker  |
+| rull        | A2    | house-chores           | a roll (e.g. of paper) |
+| frekk       | A2    | descriptive-adjectives | rude / cheeky          |
+| pengeseddel | A2    | money                  | a banknote             |
+| stolbein    | B1    | accommodation          | a chair leg            |
 
-CLAUDE: 
+Written to `vocab-a1-new.json`, `vocab-a2-new.json`, `vocab-b1-new.json`.
+
+Worth a spot-check at checkpoint 3: **rull** — I picked the generic "roll of paper" sense (household item) since the source didn't specify. If you meant a bread roll or something else, that changes the category/translations, so flag it if I picked wrong.
+
+ME: Continue next stage.
+
+CLAUDE: Now writing the script and config, and the draft files (matching the paths `check-vocab.ts` expects: `draft/{level}/vocab-{level}-new.json`):Now the draft files, at the exact path the script reads (`draft/{level}/vocab-{level}-new.json`):
 
 ME: 
 

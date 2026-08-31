@@ -1,0 +1,153 @@
+[
+  {
+    "source": "annerledes: different",
+    "status": "extracted",
+    "type": "vocab",
+    "status": "skipped-duplicate",
+    "note": "moved from A2 to B1 on review, and turns out to already exist in production: v-b1-expressing-opinions-002"
+  },
+  {
+    "source": "en lapskaus: stew",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "lapskaus (en)",
+    "lemma": "lapskaus",
+    "definition": "En tradisjonell norsk gryterett med kjøtt, poteter og grønnsaker, kokt sammen til en tykk suppe.",
+    "note": "placed at B1 traditions rather than A2 cooking — it's a specific named traditional dish, matching the specificity of other B1 traditional-food vocabulary rather than basic A2 kitchen/cooking terms"
+  },
+  {
+    "source": "forferdelig: terrible",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-b2-emotions-009 (existing entry is at B2, not A2, but same word — no need for a second card)"
+  },
+  {
+    "source": "å snufse: to snuff",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-b1-health-063"
+  },
+  {
+    "source": "å hyle: to howl",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-c-sensory-sound-021"
+  },
+  {
+    "source": "meget: very",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "C",
+    "part": "adverb",
+    "norsk": "meget",
+    "lemma": "meget",
+    "definition": "I stor grad; svært (formelt og noe gammeldags synonym for \"veldig\").",
+    "note": "formal/literary intensifier — fits C's intensifiers-degree category well"
+  },
+  {
+    "source": "berømt: famous",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "adjective",
+    "norsk": "berømt",
+    "lemma": "berømt"
+  },
+  {
+    "source": "å tilgi: to forgive",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-b1-relationships-055"
+  },
+  {
+    "source": "å rekke: to give",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-c-everyday-objects-066 — resolves the sense ambiguity flagged in Stage 1, no new card needed"
+  },
+  {
+    "source": "lurt: slyly",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "adjective",
+    "norsk": "lur",
+    "lemma": "lur",
+    "definition": "Som er flink til å tenke ut smarte løsninger, ofte med et snev av list eller skøyeraktighet.",
+    "note": "form corrected from neuter 'lurt' to the masculine/base dictionary form 'lur', per the adjective norsk-field convention. Translation corrected too — 'lur' means clever/smart/sly (often used predicatively in the neuter, e.g. 'det var lurt' = 'that was smart'), not the adverb 'slyly'. Moved from A2 to B1 on review — a character/personality-trait adjective, typically introduced alongside other B1 personality vocabulary rather than basic A2 descriptors; category (relationships) is a loose fit"
+  },
+  {
+    "source": "innvendig: inside",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "adjective",
+    "norsk": "innvendig",
+    "lemma": "innvendig",
+    "definition": "Som befinner seg på innsiden av noe; det motsatte av utvendig."
+  },
+  {
+    "source": "en støvlett: a boot",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "noun",
+    "norsk": "støvlett (en)",
+    "lemma": "støvlett"
+  },
+  {
+    "source": "matt: powerless, weak",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-c-physical-appearance-046"
+  },
+  {
+    "source": "å deise: to fall",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-c-embodied-emotion-074"
+  },
+  {
+    "source": "ålreit: all right",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "A2",
+    "part": "adjective",
+    "norsk": "ålreit",
+    "lemma": "ålreit",
+    "note": "colloquial, borrowed from English 'all right'; used like OK/fine, informal register"
+  },
+  {
+    "source": "unntatt: except",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "preposition",
+    "norsk": "unntatt",
+    "lemma": "unntatt",
+    "definition": "Med unntak av; brukt for å utelate noe eller noen fra det som ellers gjelder.",
+    "note": "category (reasoning) is a judgment call — no B1 category cleanly fits a general exception-preposition; flagging for review"
+  },
+  {
+    "source": "rågod: awesome",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "adjective",
+    "norsk": "rågod",
+    "lemma": "rågod",
+    "definition": "Uttrykk for at noe er veldig bra eller fantastisk (slang, forsterket med forstavelsen \"rå-\").",
+    "note": "colloquial/slang intensifier compound (rå- + god = 'really good'); informal register. Moved from A2 to B1 on review — the rå- intensifying prefix pattern requires more idiomatic register awareness than plain A2 adjectives; category (expressing-opinions) is a loose fit"
+  },
+  {
+    "source": "sånn: like that, such",
+    "status": "skipped-duplicate",
+    "note": "exact match already in production: v-a2-descriptive-adjectives-074"
+  },
+  {
+    "source": "stedatter: a stepdaughter (use stedøtre for example)",
+    "status": "extracted",
+    "type": "vocab",
+    "level": "B1",
+    "part": "noun",
+    "norsk": "stedatter (en/ei)",
+    "lemma": "stedatter",
+    "definition": "Datteren til ens ektefelle eller samboer fra et tidligere forhold.",
+    "note": "gender marked as variable (en/ei), following 'datter'. Irregular plural 'stedøtre' (per source) — could get its own plural-form card per the data-rules convention, not created here since only the singular was requested"
+  }
+]

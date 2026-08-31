@@ -1,0 +1,30 @@
+[
+  {
+    "id": "",
+    "norsk": "veske (en)",
+    "lemma": "veske",
+    "level": "A1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "alt",
+    "lemma": "alt",
+    "level": "A1",
+    "part": "pronoun"
+  },
+  {
+    "id": "",
+    "norsk": "skrivesaker (pl.)",
+    "lemma": "skrivesak",
+    "level": "A1",
+    "part": "noun"
+  },
+  {
+    "id": "",
+    "norsk": "trapp (en)",
+    "lemma": "trapp",
+    "level": "A1",
+    "part": "noun"
+  }
+]
