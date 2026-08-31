@@ -1,57 +1,3 @@
-en trillebag
-å dunke
-å skrangle
-å kapre
-å riste
-en skall
-å trampe
-en museflette
-en hestehale
-svakt
-et smell
-å slukke
-å verke
-å strekke
-å ule
-en skurk
-å oppdage
-prompøs
-
-idrettshistorie
-landskamp (en): international match
-spiss (en): striker
-å ydmyke
-ydmykende
-avsløring
-
-monument (et)
-billedhugger (en)
-å debutere
-utover (preposisjon)
-lovende
-treskjærer (en)
-atelier (et)
-hittil
-å akte
-å utstede
-høytrykk (et)
-pinnsvin (et)
-lommelykt (en/ei)
-diamant (en)
-skjærebrett (et)
-kjevle (en/ei/et)
-plagg (et)
-festplagg (et)
-hjort (en)
-svin (et)
-due (en)
-å sløse
-å skylde
-å forstå
-fordel (en)
-fortrinn (et)
-
-
 ### A1
 | Norwegian       | Gender | English        |
 | --------------- | ------ | -------------- |
@@ -137,7 +83,4 @@ fortrinn (et)
 | en krydderhylle       | m/f    | spice rack                         |
 | en kjøkkenskuff       | m/f    | kitchen drawer                     |
 | en kjøkkeninnredning  | m/f    | fitted kitchen / kitchen cabinetry |
-
-
-
 

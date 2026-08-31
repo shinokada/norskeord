@@ -18,45 +18,49 @@ Ignore any illustrations. But if an image is related to a question and it is wor
 
 ---
 
-Please read ai-docs/implementation/new-vocab-uttrykk-pipeline.md. Please see draft/new-entries/01, 02, 03, or 04 directory for your reference. 
-I added draft/new-entries/05/source-list.md. Can you start Stage 1?
+kran and skall are exact duplicates but sitting oddly at level C in production for what are pretty basic words (tap, shell)
 
-The following is from a previous session where you started working on Stage 3 but it was ended due to session limit.
-Please continue where you left.
+---
+
+Please read ai-docs/implementation/new-vocab-uttrykk-pipeline.md. Please see draft/new-entries/01, 02, 03, or 04 directory for your reference. 
+
+The following is from a previous session. Please continue where you left.
 
 
 ME:  
 
-CLAUDE: **Stage 3 done** (in-chat, no script/API). All 6 entries enriched — translations, examples, category:
-
-| lemma       | level | category               | english                |
-| ----------- | ----- | ---------------------- | ---------------------- |
-| kinn        | A1    | body                   | a cheek                |
-| kjeks       | A2    | cooking                | a biscuit / a cracker  |
-| rull        | A2    | house-chores           | a roll (e.g. of paper) |
-| frekk       | A2    | descriptive-adjectives | rude / cheeky          |
-| pengeseddel | A2    | money                  | a banknote             |
-| stolbein    | B1    | accommodation          | a chair leg            |
-
-Written to `vocab-a1-new.json`, `vocab-a2-new.json`, `vocab-b1-new.json`.
-
-Worth a spot-check at checkpoint 3: **rull** — I picked the generic "roll of paper" sense (household item) since the source didn't specify. If you meant a bread roll or something else, that changes the category/translations, so flag it if I picked wrong.
-
-ME: Continue next stage.
-
-CLAUDE: Now writing the script and config, and the draft files (matching the paths `check-vocab.ts` expects: `draft/{level}/vocab-{level}-new.json`):Now the draft files, at the exact path the script reads (`draft/{level}/vocab-{level}-new.json`):
-
-ME: 
-
 CLAUDE: 
 
-ME: 
+ME: I created draft/new-entries/08/source-list.md. Can you start Stage 1?
 
-CLAUDE: 
+CLAUDE: These are stale (from before batch 07 merged). Let me re-copy the vocab files that changed.Now the extracted files, split by level, for the 13 unambiguous entries only:Stage 1 done for batch 08 — and it turned up more ambiguity than usual, so I held some things back rather than guess.
 
-ME: 
+**Extracted: 13** (10 A1 household-items, 3 A2 hobbies) · **Skipped as exact duplicates: 6** — `bok`, `bro`, `pult`, `dunke`, `kran`, `skall` · **Needs your input: 5**
 
-CLAUDE: 
+The 5 that need clarification before I classify them:
+
+| Source            | Issue                                                                                                                                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `farger: crayons` | `farge` already exists meaning "a colour" — that's the abstract concept, not the physical crayon. "Crayons" needs a different word (`fargestift`? `vokskritt`?). Didn't want to guess.                        |
+| `splisj`          | Not a word I can confidently identify, no translation given. Typo? Onomatopoeia?                                                                                                                              |
+| `en trillebag`    | No translation given. Guessing "wheelie/trolley bag" from the compound, but that's a guess.                                                                                                                   |
+| `å kapre`         | No translation given. Standard sense is "to hijack/capture" — odd fit for a toy list. Could be a looser "snag/grab" sense instead.                                                                            |
+| `å riste`         | No translation given, and it's genuinely 3-way ambiguous: "to shake/tremble" (already in production at C), "to toast" (bread — would pair with the toaster from batch 06!), or "to carve" (runes). Which one? |
+
+Two more worth a glance even though I classified them: `kran` and `skall` are exact duplicates but sitting oddly at **level C** in production for what are pretty basic words (tap, shell) — not something for me to fix here, just flagging.
+
+Also: `leke` and `boble` are homonyms of existing verbs (`å leke`, `å boble`) but different parts of speech — kept as new noun entries, not duplicates.
+
+Files written to `draft/new-entries/08/`: `classified.json` (full record of all 24), `extracted-vocab-a1.json`, `extracted-vocab-a2.json`.
+
+**Checkpoint 1:** can you clarify the 5 flagged items, and confirm the household-items/hobbies category placements?
+
+ME: Remove `farger`, and `splisj`.
+en trillebag is a trillebag.
+å kapre is "to hijack/capture".
+å riste is to toast.
+
+CLAUDE: Now updating the extracted files — adding `trillebag` to A1, `riste` to A2, and creating a new B2 file for `kapre`:
 
 ME:  
 
