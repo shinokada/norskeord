@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-08-30T19:24:00.606Z",
-  "grandTotal": 9684,
+  "generatedAt": "2026-08-31T04:09:03.296Z",
+  "grandTotal": 9708,
   "byLevel": {
     "A1": {
-      "vocab": 503,
+      "vocab": 509,
       "uttrykk": 119,
-      "total": 622,
+      "total": 628,
       "grammar": 254,
       "grammar_topic": 30,
-      "quiz": 622
+      "quiz": 628
     },
     "A2": {
-      "vocab": 919,
+      "vocab": 934,
       "uttrykk": 249,
-      "total": 1168,
+      "total": 1183,
       "grammar": 256,
       "grammar_topic": 27,
-      "quiz": 1168
+      "quiz": 1183
     },
     "B1": {
-      "vocab": 2056,
+      "vocab": 2059,
       "uttrykk": 305,
-      "total": 2361,
+      "total": 2364,
       "grammar": 912,
       "grammar_topic": 56,
-      "quiz": 2361
+      "quiz": 2364
     },
     "B2": {
       "vocab": 1780,
