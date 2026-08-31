@@ -113,6 +113,25 @@ export function getDistractors(
   return pool.slice(0, n);
 }
 
+// ── Typed-answer normalisation ───────────────────────────────────────────────
+
+/**
+ * Strip a trailing noun-gender article like " (en)", " (et)", " (ei)", or a
+ * dual-gender combination like " (en/ei)", and/or a leading infinitive marker
+ * "å " from `entry.norsk` for grading purposes. `norsk` itself keeps all of
+ * this for display (e.g. "fot (en)", "tann (en/ei)", "å gifte seg") so the
+ * dictionary form is still shown in the UI, but requiring the user to type
+ * the article or the infinitive marker back on fill/type questions is
+ * unnatural — "fot", "tann", and "gifte seg" are the answers a learner would
+ * actually type.
+ */
+export function bareLemma(norsk: string): string {
+  return norsk
+    .replace(/^å\s+/i, '')
+    .replace(/\s*\((en|ei|et)(\s*\/\s*(en|ei|et))*\)\s*$/i, '')
+    .trim();
+}
+
 // ── Question types ────────────────────────────────────────────────────────────
 
 export interface MultipleChoiceQuestion {
@@ -212,7 +231,7 @@ export function buildFillQuestion(
     : monolingual
       ? `Hvilket ord betyr: «${entry.definition ?? getTranslation(entry, language)}»?`
       : `Hva er det norske ordet for "${getTranslation(entry, language)}"?`;
-  return { type: 'fill', entry, sentence, answer: entry.norsk };
+  return { type: 'fill', entry, sentence, answer: bareLemma(entry.norsk) };
 }
 
 /**
@@ -234,7 +253,7 @@ export function buildTypeQuestion(
     prompt: monolingual
       ? (entry.definition ?? getTranslation(entry, language))
       : getTranslation(entry, language),
-    answer: entry.norsk
+    answer: bareLemma(entry.norsk)
   };
 }
 
