@@ -8880,5 +8880,22 @@
     "level": "A1",
     "category": "actions",
     "part": "verb"
+  },
+  {
+    "id": "v-a1-household-items-039",
+    "norsk": "lommelykt (en/ei)",
+    "lemma": "lommelykt",
+    "english": "a flashlight / torch",
+    "ukrainian": "ліхтарик",
+    "spanish": "una linterna",
+    "german": "eine Taschenlampe",
+    "example": "Jeg trenger en lommelykt når strømmen går.",
+    "example_english": "I need a flashlight when the power goes out.",
+    "example_ukrainian": "Мені потрібен ліхтарик, коли вимикають світло.",
+    "example_spanish": "Necesito una linterna cuando se va la luz.",
+    "example_german": "Ich brauche eine Taschenlampe, wenn der Strom ausfällt.",
+    "level": "A1",
+    "category": "household-items",
+    "part": "noun"
   }
 ]

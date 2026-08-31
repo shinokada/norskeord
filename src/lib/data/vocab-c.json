@@ -40830,5 +40830,23 @@
     "level": "C",
     "category": "intensifiers-degree",
     "part": "adjective"
+  },
+  {
+    "id": "v-c-formal-writing-034",
+    "norsk": "å akte",
+    "lemma": "akte",
+    "english": "to intend / plan to (formal); also 'to value, respect' or 'to heed, pay attention to' (literary)",
+    "ukrainian": "мати намір (офіційно); також цінувати, поважати або зважати на (літературно)",
+    "spanish": "tener la intención de (formal); también valorar, respetar o prestar atención a (literario)",
+    "german": "beabsichtigen (formell); auch schätzen, achten oder auf etwas achten (literarisch)",
+    "example": "Regjeringen akter å innføre nye lover innen utgangen av året.",
+    "example_english": "The government intends to introduce new laws by the end of the year.",
+    "example_ukrainian": "Уряд має намір запровадити нові закони до кінця року.",
+    "example_spanish": "El gobierno tiene la intención de introducir nuevas leyes antes de que termine el año.",
+    "example_german": "Die Regierung beabsichtigt, bis Ende des Jahres neue Gesetze einzuführen.",
+    "definition": "Å ha til hensikt å gjøre noe; kan også bety å verdsette, ta hensyn til, eller vokte noe (formelt/litterært).",
+    "level": "C",
+    "category": "formal-writing",
+    "part": "verb"
   }
 ]
