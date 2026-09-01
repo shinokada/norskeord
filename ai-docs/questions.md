@@ -33,8 +33,8 @@ kran and skall are exact duplicates but sitting oddly at level C in production f
 
 Please read ai-docs/implementation/new-vocab-uttrykk-pipeline.md. Please see draft/new-entries/09, 10, or 11 directory for your reference.
 
+I was working on draft/new-entries/17 directory.
 The following is from a previous session. Please continue where you left.
-draft/new-entries/15/source-list.md.
 ME:
 
 CLAUDE:
@@ -43,16 +43,7 @@ ME:
 
 CLAUDE:
 
-ME: Proceed Stage 2.
-
-CLAUDE: I already have vocab-a2, vocab-b1, uttrykk-a2, uttrykk-b1 copied from earlier stages. Let me refresh those (vocab-a2/b1 changed since batch 16 merge) and get uttrykk-a2/b1.Now let's grab the batch 17 extracted files and run the dedupe logic in Python.Now the dedupe pass: exact/normalized, cross-type, and fuzzy.Some production entries lack a `lemma` field — fall back to `norsk`. Fixing.Confirmed distinct (base verb "kick" vs. particle verb "kick off"). Now dropping the 3 exact duplicates and writing the report.Now removing the two exact-duplicate uttrykk entries (`etter hvert`, `i grunnen`):Now writing the `dup-report.md` and updating `classified.json` to reflect the drops.Now updating `classified.json` to mark the 3 dropped entries:**Stage 2 done — not clean, so not auto-continuing.**
-
-Dropped 3 exact duplicates already in production: `å bry seg om` (B1 vocab), `etter hvert` (uttrykk), `i grunnen` (uttrykk, already at B2). Everything else checked out (cross-type + fuzzy passes) except one real judgment call:
-
-**`slippe ut av`** (new B1 vocab, "to let out of") overlaps with production `slippe ut` (B1, "to release/let out/emit" — example is factory emissions). Its gloss already covers "let out," but your batch entry is aimed at the "free a person from confinement" sense, which the existing card doesn't demonstrate.
-
-ME (Q&A): Keep or drop 'slippe ut av'?
-Drop as redundant with existing 'slippe ut'
+ME:
 
 CLAUDE:
 

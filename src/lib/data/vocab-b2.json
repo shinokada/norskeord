@@ -32374,5 +32374,23 @@
     "level": "B2",
     "category": "work-career",
     "part": "verb"
+  },
+  {
+    "id": "v-b2-advanced-verbs-175",
+    "norsk": "å somle bort",
+    "lemma": "somle bort",
+    "english": "to fritter away, to waste (time) by dawdling",
+    "ukrainian": "марнувати час, гаяти час",
+    "spanish": "malgastar (el tiempo) por lentitud, perder el tiempo remoloneando",
+    "german": "vertrödeln",
+    "example": "Han somlet bort hele formiddagen med å lete etter nøklene sine.",
+    "example_english": "He frittered away the entire morning looking for his keys.",
+    "example_ukrainian": "Він змарнував цілий ранок, шукаючи свої ключі.",
+    "example_spanish": "Él malgastó toda la mañana buscando sus llaves.",
+    "example_german": "Er vertrödelte den ganzen Vormittag mit der Suche nach seinen Schlüsseln.",
+    "definition": "Å bruke opp tid uten å få gjort noe fordi man nøler eller er treg.",
+    "level": "B2",
+    "category": "advanced-verbs",
+    "part": "verb"
   }
 ]

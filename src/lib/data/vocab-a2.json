@@ -16710,5 +16710,22 @@
     "level": "A2",
     "category": "social-life",
     "part": "verb"
+  },
+  {
+    "id": "v-a2-house-chores-068",
+    "norsk": "å sette fra seg",
+    "lemma": "sette fra seg",
+    "english": "to put down",
+    "ukrainian": "поставити, покласти (щось із рук)",
+    "spanish": "dejar, soltar (algo que se tenía en la mano)",
+    "german": "abstellen, hinlegen",
+    "example": "Hun satte fra seg vesken på bordet da hun kom hjem.",
+    "example_english": "She put her bag down on the table when she got home.",
+    "example_ukrainian": "Вона поставила сумку на стіл, коли прийшла додому.",
+    "example_spanish": "Ella dejó el bolso sobre la mesa cuando llegó a casa.",
+    "example_german": "Sie stellte die Tasche auf den Tisch, als sie nach Hause kam.",
+    "level": "A2",
+    "category": "house-chores",
+    "part": "verb"
   }
 ]

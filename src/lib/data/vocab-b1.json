@@ -37731,5 +37731,41 @@
     "category": "expressing-opinions",
     "part": "adjective",
     "note": "Ofte brukt i uttrykket 'topp for' ('great for'): 'Trening er topp for sjel og kropp.' Ubøyelig i denne bruken. Homonym med substantivet 'topp (en)' ('fjelltopp') — separat oppslag, ikke samme betydning."
+  },
+  {
+    "id": "v-b1-relationships-087",
+    "norsk": "å bråke med",
+    "lemma": "bråke med",
+    "english": "to quarrel with, to make a row with",
+    "ukrainian": "сваритися, скандалити з кимось",
+    "spanish": "pelearse con, discutir ruidosamente con",
+    "german": "sich lautstark streiten mit",
+    "example": "Han bråker stadig med naboen om parkeringsplassen.",
+    "example_english": "He is constantly quarreling with the neighbor about the parking spot.",
+    "example_ukrainian": "Він постійно свариться із сусідом через паркувальне місце.",
+    "example_spanish": "Él se pelea constantemente con el vecino por la plaza de aparcamiento.",
+    "example_german": "Er streitet sich ständig mit dem Nachbarn wegen des Parkplatzes.",
+    "definition": "Å krangle høylytt eller lage bråk sammen med noen.",
+    "level": "B1",
+    "category": "relationships",
+    "part": "verb"
+  },
+  {
+    "id": "v-b1-personal-growth-147",
+    "norsk": "å ligge unna",
+    "lemma": "ligge unna",
+    "english": "to steer clear of, to stay away from",
+    "ukrainian": "триматися подалі від, уникати",
+    "spanish": "mantenerse alejado de, evitar",
+    "german": "sich fernhalten von, meiden",
+    "example": "Legen sa at han må ligge unna alkohol en stund.",
+    "example_english": "The doctor said he has to stay away from alcohol for a while.",
+    "example_ukrainian": "Лікар сказав, що йому певний час треба триматися подалі від алкоголю.",
+    "example_spanish": "El médico dijo que tiene que mantenerse alejado del alcohol por un tiempo.",
+    "example_german": "Der Arzt sagte, er müsse sich eine Weile von Alkohol fernhalten.",
+    "definition": "Å holde seg borte fra noe eller noen, ofte for å unngå problemer.",
+    "level": "B1",
+    "category": "personal-growth",
+    "part": "verb"
   }
 ]
