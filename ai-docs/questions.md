@@ -18,6 +18,10 @@ Ignore any illustrations. But if an image is related to a question and it is wor
 
 ---
 
+Create new articles/posts from draft/posts directory. Do not avoid repetition and be concise.
+
+---
+
 Classifying CEFR levels:
 Use cefr/assessment.pdf to classify CEFR levels. In this app, I use level C for C1 and C2.
 
@@ -39,11 +43,16 @@ ME:
 
 CLAUDE:
 
-ME:
+ME: Proceed Stage 2.
 
-CLAUDE:
+CLAUDE: I already have vocab-a2, vocab-b1, uttrykk-a2, uttrykk-b1 copied from earlier stages. Let me refresh those (vocab-a2/b1 changed since batch 16 merge) and get uttrykk-a2/b1.Now let's grab the batch 17 extracted files and run the dedupe logic in Python.Now the dedupe pass: exact/normalized, cross-type, and fuzzy.Some production entries lack a `lemma` field — fall back to `norsk`. Fixing.Confirmed distinct (base verb "kick" vs. particle verb "kick off"). Now dropping the 3 exact duplicates and writing the report.Now removing the two exact-duplicate uttrykk entries (`etter hvert`, `i grunnen`):Now writing the `dup-report.md` and updating `classified.json` to reflect the drops.Now updating `classified.json` to mark the 3 dropped entries:**Stage 2 done — not clean, so not auto-continuing.**
 
-ME:
+Dropped 3 exact duplicates already in production: `å bry seg om` (B1 vocab), `etter hvert` (uttrykk), `i grunnen` (uttrykk, already at B2). Everything else checked out (cross-type + fuzzy passes) except one real judgment call:
+
+**`slippe ut av`** (new B1 vocab, "to let out of") overlaps with production `slippe ut` (B1, "to release/let out/emit" — example is factory emissions). Its gloss already covers "let out," but your batch entry is aimed at the "free a person from confinement" sense, which the existing card doesn't demonstrate.
+
+ME (Q&A): Keep or drop 'slippe ut av'?
+Drop as redundant with existing 'slippe ut'
 
 CLAUDE:
 

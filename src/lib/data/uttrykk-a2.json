@@ -4505,5 +4505,23 @@
     "category": "uttrykk",
     "part": "phrase",
     "theme": "occupations"
+  },
+  {
+    "id": "u-a2-285",
+    "norsk": "riste på hodet",
+    "lemma": "riste på hodet",
+    "english": "to shake one's head",
+    "ukrainian": "хитати головою",
+    "spanish": "negar con la cabeza",
+    "german": "den Kopf schütteln",
+    "example": "Hun ristet på hodet da hun hørte nyheten.",
+    "example_english": "She shook her head when she heard the news.",
+    "example_ukrainian": "Вона похитала головою, почувши новину.",
+    "example_spanish": "Ella negó con la cabeza al oír la noticia.",
+    "example_german": "Sie schüttelte den Kopf, als sie die Nachricht hörte.",
+    "level": "A2",
+    "category": "uttrykk",
+    "part": "phrase",
+    "theme": "idioms"
   }
 ]
