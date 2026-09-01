@@ -30,7 +30,7 @@ kran and skall are exact duplicates but sitting oddly at level C in production f
 Please read ai-docs/implementation/new-vocab-uttrykk-pipeline.md. Please see draft/new-entries/09, 10, or 11 directory for your reference.
 
 The following is from a previous session. Please continue where you left.
-
+draft/new-entries/15/source-list.md.
 ME:
 
 CLAUDE:
