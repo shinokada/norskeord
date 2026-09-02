@@ -9719,5 +9719,22 @@
     "level": "A1",
     "category": "clothes",
     "part": "noun"
+  },
+  {
+    "id": "v-a1-home-034",
+    "norsk": "uthus (et)",
+    "lemma": "uthus",
+    "english": "a shed / outhouse",
+    "ukrainian": "сарай",
+    "spanish": "un cobertizo",
+    "german": "ein Schuppen",
+    "example": "Vi oppbevarer hagemøblene i uthuset om vinteren.",
+    "example_english": "We store the garden furniture in the shed during winter.",
+    "example_ukrainian": "Взимку ми зберігаємо садові меблі в сараї.",
+    "example_spanish": "Guardamos los muebles de jardín en el cobertizo durante el invierno.",
+    "example_german": "Wir lagern die Gartenmöbel im Winter im Schuppen.",
+    "level": "A1",
+    "category": "home",
+    "part": "noun"
   }
 ]

@@ -6,11 +6,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «oransje».",
     "sentence": "Hun har kjøpt seg en _____ parkdress til vinteren.",
-    "words": [
-      "oransje",
-      "oransjt",
-      "oransjen"
-    ],
+    "words": ["oransje", "oransjt", "oransjen"],
     "answer": "oransje",
     "hint": "Oransje endrer aldri form, uansett substantivets kjønn.",
     "plusOnly": true
@@ -22,11 +18,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «lilla».",
     "sentence": "Vi malte forhenget _____ i stedet for hvitt.",
-    "words": [
-      "lilla",
-      "lillat",
-      "lillae"
-    ],
+    "words": ["lilla", "lillat", "lillae"],
     "answer": "lilla",
     "hint": "Lilla er ubøyelig — samme form for en-, et- og flertallsord.",
     "plusOnly": true
@@ -38,11 +30,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «rosa».",
     "sentence": "De _____ sjøstøvlene sto igjen ved inngangsdøren.",
-    "words": [
-      "rosa",
-      "rosae",
-      "rosane"
-    ],
+    "words": ["rosa", "rosae", "rosane"],
     "answer": "rosa",
     "hint": "Rosa tar aldri flertalls- eller bestemt form-endelse.",
     "plusOnly": true
@@ -54,11 +42,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «beige».",
     "sentence": "Det _____ dekketøyet passet fint til bordet.",
-    "words": [
-      "beige",
-      "beiget",
-      "beigent"
-    ],
+    "words": ["beige", "beiget", "beigent"],
     "answer": "beige",
     "hint": "Beige tar aldri intetkjønns-endelsen -t, i motsetning til opprinnelige fargeadjektiv.",
     "plusOnly": true
@@ -95,9 +79,7 @@
     "prompt": "Gjør om til flertall: «to …»",
     "source": "en rosa knappenål",
     "answer": "to rosa knappenåler",
-    "alternates": [
-      "to rosa knappenåler."
-    ],
+    "alternates": ["to rosa knappenåler."],
     "hint": "Fargen forblir «rosa» i flertall — bare substantivet endres.",
     "plusOnly": true
   },
@@ -109,9 +91,7 @@
     "prompt": "Gjør om til flertall: «tre …»",
     "source": "en beige sjøstøvel",
     "answer": "tre beige sjøstøvler",
-    "alternates": [
-      "tre beige sjøstøvler."
-    ],
+    "alternates": ["tre beige sjøstøvler."],
     "hint": "Oransje, lilla, rosa og beige tar aldri en flertallsendelse.",
     "plusOnly": true
   },
@@ -120,19 +100,9 @@
     "topic": "adj-farger-uboyelige",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "parkdressen",
-      "er",
-      "Den",
-      "til",
-      "oransje",
-      "sønnen",
-      "min"
-    ],
+    "tokens": ["parkdressen", "er", "Den", "til", "oransje", "sønnen", "min"],
     "answer": "Den oransje parkdressen er til sønnen min.",
-    "alternates": [
-      "Den oransje parkdressen er til sønnen min"
-    ],
+    "alternates": ["Den oransje parkdressen er til sønnen min"],
     "hint": "Bestemt substantivfrase: den + adjektiv (ubøyd) + bestemt substantiv.",
     "plusOnly": true
   },
@@ -143,11 +113,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «lilla» i bestemt flertall.",
     "sentence": "De _____ knappenålene lå spredt utover bordet.",
-    "words": [
-      "lilla",
-      "lillane",
-      "lillaer"
-    ],
+    "words": ["lilla", "lillane", "lillaer"],
     "answer": "lilla",
     "hint": "Selv i bestemt flertall bøyes ikke lilla.",
     "plusOnly": true
@@ -159,11 +125,7 @@
     "type": "fill",
     "prompt": "Velg riktig komparativform av «prekær».",
     "sentence": "Situasjonen i grensebyen ble stadig _____ enn den hadde vært før krigen.",
-    "words": [
-      "mer prekær",
-      "prekærere",
-      "prekærest"
-    ],
+    "words": ["mer prekær", "prekærere", "prekærest"],
     "answer": "mer prekær",
     "hint": "Adjektiv som ender på -ær, tar aldri -ere/-est — bruk mer/mest i stedet.",
     "plusOnly": true
@@ -187,11 +149,7 @@
     "type": "fill",
     "prompt": "Velg riktig superlativform av «miserabel».",
     "sentence": "Dette var det _____ resultatet laget noensinne hadde levert.",
-    "words": [
-      "mest miserable",
-      "miserableste",
-      "miserabelest"
-    ],
+    "words": ["mest miserable", "miserableste", "miserabelest"],
     "answer": "mest miserable",
     "hint": "Lange, importerte adjektiv som «miserabel» tar mest, ikke -este.",
     "plusOnly": true
@@ -204,9 +162,7 @@
     "prompt": "Omskriv som en sammenligning med «mer», og behold adjektivet uendret.",
     "source": "Denne rapporten er konfidensiell.",
     "answer": "Denne rapporten er mer konfidensiell enn den forrige.",
-    "alternates": [
-      "Denne rapporten er mer konfidensiell enn den forrige rapporten."
-    ],
+    "alternates": ["Denne rapporten er mer konfidensiell enn den forrige rapporten."],
     "hint": "Lange, importerte adjektiv som «konfidensiell» bruker mer, aldri -ere.",
     "plusOnly": true
   },
@@ -215,21 +171,9 @@
     "topic": "adj-mer-mest",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "systemet",
-      "Det",
-      "gamle",
-      "var",
-      "mer",
-      "enn",
-      "det",
-      "rigid",
-      "nye"
-    ],
+    "tokens": ["systemet", "Det", "gamle", "var", "mer", "enn", "det", "rigid", "nye"],
     "answer": "Det gamle systemet var mer rigid enn det nye.",
-    "alternates": [
-      "Det gamle systemet var mer rigid enn det nye"
-    ],
+    "alternates": ["Det gamle systemet var mer rigid enn det nye"],
     "hint": "«Rigid» er et langt adjektiv — komparativ bruker mer + rigid, plassert etter «var».",
     "plusOnly": true
   },
@@ -240,11 +184,7 @@
     "type": "fill",
     "prompt": "Velg riktig komparativform av «sær».",
     "sentence": "Etter hvert som årene gikk, ble onkelen hennes bare _____.",
-    "words": [
-      "særere",
-      "mer sær",
-      "særeste"
-    ],
+    "words": ["særere", "mer sær", "særeste"],
     "answer": "mer sær",
     "hint": "Adjektiv som ender på -ær, tar mer/mest, aldri -ere/-est.",
     "plusOnly": true
@@ -268,11 +208,7 @@
     "type": "fill",
     "prompt": "Velg riktig komparativform av «overveldende».",
     "sentence": "Responsen fra publikum var enda _____ enn artisten hadde ventet.",
-    "words": [
-      "mer overveldende",
-      "overveldenere",
-      "overveldendere"
-    ],
+    "words": ["mer overveldende", "overveldenere", "overveldendere"],
     "answer": "mer overveldende",
     "hint": "Presens partisipp brukt som adjektiv (som ender på -ende) tar alltid mer/mest.",
     "plusOnly": true
@@ -285,9 +221,7 @@
     "prompt": "Omskriv sammenligningen med «mer», og behold adjektivet uendret.",
     "source": "Restauranten virker innbydende.",
     "answer": "Restauranten virker mer innbydende enn nabolokalet.",
-    "alternates": [
-      "Restauranten virker mer innbydende enn nabolokalet gjør."
-    ],
+    "alternates": ["Restauranten virker mer innbydende enn nabolokalet gjør."],
     "hint": "«Innbydende» er et presens partisipp — komparativ er mer innbydende, ikke innbydenere.",
     "plusOnly": true
   },
@@ -298,11 +232,7 @@
     "type": "fill",
     "prompt": "Velg riktig superlativform av «bedårende».",
     "sentence": "Den lille kattungen var det _____ synet i hele butikken.",
-    "words": [
-      "mest bedårende",
-      "bedårendeste",
-      "bedårenest"
-    ],
+    "words": ["mest bedårende", "bedårendeste", "bedårenest"],
     "answer": "mest bedårende",
     "hint": "Adjektiv som ender på -ende (partisipp) bruker alltid mest, aldri -este.",
     "plusOnly": true
@@ -314,11 +244,7 @@
     "type": "fill",
     "prompt": "Velg riktig intetkjønnsform av «skvetten».",
     "sentence": "Rådyret sto helt stille et øyeblikk, men det er egentlig et veldig _____ dyr.",
-    "words": [
-      "skvettent",
-      "skvetten",
-      "skvette"
-    ],
+    "words": ["skvettent", "skvetten", "skvette"],
     "answer": "skvettent",
     "hint": "«Skvetten» tar en regelrett -t i intetkjønn: skvettent.",
     "plusOnly": true
@@ -330,11 +256,7 @@
     "type": "fill",
     "prompt": "Velg riktig bestemt/flertallsform av «skvetten».",
     "sentence": "De _____ hjortene forsvant inn i skogen idet en gren knakk.",
-    "words": [
-      "skvetne",
-      "skvettene",
-      "skvettne"
-    ],
+    "words": ["skvetne", "skvettene", "skvettne"],
     "answer": "skvetne",
     "hint": "I bestemt form/flertall reduseres den doble -tt- til en enkelt -t- før -ne legges til: skvetne, ikke skvettene.",
     "plusOnly": true
@@ -358,11 +280,7 @@
     "type": "fill",
     "prompt": "Velg riktig bestemt/flertallsform av «dreven».",
     "sentence": "De _____ håndverkerne reparerte taket på under en time.",
-    "words": [
-      "drevne",
-      "drevene",
-      "dreven"
-    ],
+    "words": ["drevne", "drevene", "dreven"],
     "answer": "drevne",
     "hint": "Bestemt form/flertall: dropp -e- i stammen før -ne legges til: drevne, ikke drevene.",
     "plusOnly": true
@@ -374,11 +292,7 @@
     "type": "fill",
     "prompt": "Velg riktig intetkjønnsform av «utsprungen».",
     "sentence": "Kirsebærtreet i hagen sto helt _____ i slutten av april.",
-    "words": [
-      "utsprunget",
-      "utsprungent",
-      "utsprungen"
-    ],
+    "words": ["utsprunget", "utsprungent", "utsprungen"],
     "answer": "utsprunget",
     "hint": "I motsetning til «dreven» → «drevent» går «utsprungen» tilbake til den rene partisippformen i intetkjønn: utsprunget, ikke utsprungent.",
     "plusOnly": true
@@ -402,11 +316,7 @@
     "type": "fill",
     "prompt": "Velg riktig intetkjønnsform av «løssluppen».",
     "sentence": "Selskapet ble stadig mer _____ etter hvert som kvelden gikk.",
-    "words": [
-      "løssluppent",
-      "løssluppen",
-      "løsslupne"
-    ],
+    "words": ["løssluppent", "løssluppen", "løsslupne"],
     "answer": "løssluppent",
     "hint": "I likhet med «dreven» tar «løssluppen» en regelrett -t i intetkjønn: løssluppent.",
     "plusOnly": true
@@ -419,9 +329,7 @@
     "prompt": "Gjør om til flertall: «to …»",
     "source": "en løssluppen fest",
     "answer": "to løsslupne fester",
-    "alternates": [
-      "to løsslupne fester."
-    ],
+    "alternates": ["to løsslupne fester."],
     "hint": "Bestemt form/flertall: dropp -e- før -ne legges til: løsslupne, ikke løssluppene.",
     "plusOnly": true
   },
@@ -443,9 +351,7 @@
       "noen"
     ],
     "answer": "Presentasjonen hans var strøken og etterlot ikke tvil hos noen.",
-    "alternates": [
-      "Presentasjonen hans var strøken og etterlot ikke tvil hos noen"
-    ],
+    "alternates": ["Presentasjonen hans var strøken og etterlot ikke tvil hos noen"],
     "hint": "«Strøken» samsvarer med et substantiv i felleskjønn (en-ord), som «presentasjonen», uten noen endelsesendring.",
     "plusOnly": true
   },
@@ -456,11 +362,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. futurum-form (referert, ubekreftet fortidig handling).",
     "sentence": "Mannskapet _____ i den kraftige stormen ute på fjorden, ifølge vitnene.",
-    "words": [
-      "skal ha omkommet",
-      "har omkommet",
-      "omkom"
-    ],
+    "words": ["skal ha omkommet", "har omkommet", "omkom"],
     "answer": "skal ha omkommet",
     "hint": "2. futurum (skal + ha + perfektum partisipp) uttrykker en referert, ubekreftet fortidig handling, typisk i nyhetsspråk.",
     "plusOnly": true
@@ -472,11 +374,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. futurum-form (referert, ubekreftet fortidig handling).",
     "sentence": "Tre fiskere _____ utenfor kysten i natt, melder redningsselskapet.",
-    "words": [
-      "skal ha forulykket",
-      "har forulykket",
-      "forulykket"
-    ],
+    "words": ["skal ha forulykket", "har forulykket", "forulykket"],
     "answer": "skal ha forulykket",
     "hint": "Rapportøren har ikke personlig bekreftet hendelsen, så den evidensielle 2. futurum brukes: skal ha forulykket.",
     "plusOnly": true
@@ -500,11 +398,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. futurum-form (referert, ubekreftet fortidig handling).",
     "sentence": "Tankskipet _____ utenfor kysten i natt, ifølge kystvakten.",
-    "words": [
-      "skal ha grunnstøtt",
-      "har grunnstøtt",
-      "grunnstøtte"
-    ],
+    "words": ["skal ha grunnstøtt", "har grunnstøtt", "grunnstøtte"],
     "answer": "skal ha grunnstøtt",
     "hint": "Kystvakten har ikke bekreftet detaljene på førstehand, så meldingen bruker skal ha + perfektum partisipp.",
     "plusOnly": true
@@ -516,11 +410,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. futurum-form (referert, ubekreftet fortidig handling).",
     "sentence": "Selskapet _____ investorene om de reelle tallene, hevder tidligere ansatte.",
-    "words": [
-      "skal ha villedet",
-      "villedet",
-      "har villedet"
-    ],
+    "words": ["skal ha villedet", "villedet", "har villedet"],
     "answer": "skal ha villedet",
     "hint": "Påstanden kommer fra tidligere ansatte, ikke bekreftet fakta, så 2. futurum passer: skal ha villedet.",
     "plusOnly": true
@@ -533,9 +423,7 @@
     "prompt": "Omskriv som en 2. futurum-setning (referert, ubekreftet påstand).",
     "source": "Vitnet unnlot å varsle politiet.",
     "answer": "Vitnet skal ha unnlatt å varsle politiet.",
-    "alternates": [
-      "Vitnet skal ha unnlatt å varsle politiet, ifølge kilder."
-    ],
+    "alternates": ["Vitnet skal ha unnlatt å varsle politiet, ifølge kilder."],
     "hint": "Erstatt det vanlige preteritum med skal ha + perfektum partisipp: skal ha unnlatt.",
     "plusOnly": true
   },
@@ -560,11 +448,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. futurum-form (referert, ubekreftet fortidig handling).",
     "sentence": "De væpnede mennene _____ et gissel i banken, melder politiet.",
-    "words": [
-      "skal ha tatt",
-      "har tatt",
-      "tok"
-    ],
+    "words": ["skal ha tatt", "har tatt", "tok"],
     "answer": "skal ha tatt",
     "hint": "Siden dette er en tidlig, ubekreftet politimelding, brukes den evidensielle skal ha tatt, ikke det vanlige preteritum tok.",
     "plusOnly": true
@@ -574,20 +458,9 @@
     "topic": "futurum-referert",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Kommunen",
-      "skal",
-      "ha",
-      "drevet",
-      "med",
-      "snusk",
-      "i",
-      "årevis"
-    ],
+    "tokens": ["Kommunen", "skal", "ha", "drevet", "med", "snusk", "i", "årevis"],
     "answer": "Kommunen skal ha drevet med snusk i årevis.",
-    "alternates": [
-      "Kommunen skal ha drevet med snusk i årevis"
-    ],
+    "alternates": ["Kommunen skal ha drevet med snusk i årevis"],
     "hint": "2. futurum følger vanlig V2-ordstilling: subjekt, skal, deretter ha + perfektum partisipp.",
     "plusOnly": true
   },
@@ -598,11 +471,7 @@
     "type": "fill",
     "prompt": "Velg riktig komparativ for å fullføre jo … jo-konstruksjonen.",
     "sentence": "Jo mer sol åkeren får, jo _____ blir avlingen.",
-    "words": [
-      "bedre",
-      "best",
-      "mer god"
-    ],
+    "words": ["bedre", "best", "mer god"],
     "answer": "bedre",
     "hint": "«Avling» er et ekte C-nivå-substantiv; «god» har en uregelmessig komparativ: bedre.",
     "plusOnly": true
@@ -612,21 +481,9 @@
     "topic": "jo-desto-komparativ",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Jo",
-      "kjappere",
-      "hun",
-      "jobber",
-      "jo",
-      "mer",
-      "feil",
-      "gjør",
-      "hun"
-    ],
+    "tokens": ["Jo", "kjappere", "hun", "jobber", "jo", "mer", "feil", "gjør", "hun"],
     "answer": "Jo kjappere hun jobber, jo mer feil gjør hun.",
-    "alternates": [
-      "Jo kjappere hun jobber jo mer feil gjør hun"
-    ],
+    "alternates": ["Jo kjappere hun jobber jo mer feil gjør hun"],
     "hint": "Begge setningene inverterer: det finitte verbet (jobber / gjør) kommer rett etter jo-frasen, ikke etter subjektet.",
     "plusOnly": true
   },
@@ -638,9 +495,7 @@
     "prompt": "Omskriv med en jo … jo-konstruksjon («jo mer … jo mer …»).",
     "source": "Når hun trener mer, blir hun stadig stødigere.",
     "answer": "Jo mer hun trener, jo stødigere blir hun.",
-    "alternates": [
-      "Jo mer hun trener jo stødigere blir hun"
-    ],
+    "alternates": ["Jo mer hun trener jo stødigere blir hun"],
     "hint": "«Når X blir mer, blir Y mer» → «Jo mer X, jo mer Y» — begge setningene inverterer ordstillingen.",
     "plusOnly": true
   },
@@ -651,11 +506,7 @@
     "type": "fill",
     "prompt": "Velg riktig komparativform av «prekær».",
     "sentence": "Jo lenger konflikten varer, jo _____ blir situasjonen.",
-    "words": [
-      "mer prekær",
-      "prekærere",
-      "prekærest"
-    ],
+    "words": ["mer prekær", "prekærere", "prekærest"],
     "answer": "mer prekær",
     "hint": "Adjektiv som ender på -ær, som «prekær», tar aldri -ere/-est — alltid mer/mest, også inni en jo … jo-konstruksjon.",
     "plusOnly": true
@@ -679,11 +530,7 @@
     "type": "fill",
     "prompt": "Velg riktig komparativform av «morsk».",
     "sentence": "Jo mer hun blir presset, jo _____ blir hun.",
-    "words": [
-      "morskere",
-      "morskest",
-      "mer morsk"
-    ],
+    "words": ["morskere", "morskest", "mer morsk"],
     "answer": "morskere",
     "hint": "«Morsk» er et kort adjektiv — regelrett komparativ med -ere.",
     "plusOnly": true
@@ -693,20 +540,9 @@
     "topic": "jo-desto-komparativ",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Jo",
-      "varmere",
-      "det",
-      "blir",
-      "jo",
-      "raskere",
-      "krymper",
-      "isbreen"
-    ],
+    "tokens": ["Jo", "varmere", "det", "blir", "jo", "raskere", "krymper", "isbreen"],
     "answer": "Jo varmere det blir, jo raskere krymper isbreen.",
-    "alternates": [
-      "Jo varmere det blir jo raskere krymper isbreen"
-    ],
+    "alternates": ["Jo varmere det blir jo raskere krymper isbreen"],
     "hint": "Begge setningene inverterer: verbet (blir / krymper) kommer rett etter jo-frasen.",
     "plusOnly": true
   },
@@ -718,9 +554,7 @@
     "prompt": "Omskriv med en jo … jo-konstruksjon («jo mer … jo mer …»).",
     "source": "Når hun forklarer mer, blir svaret hennes stadig vagere.",
     "answer": "Jo mer hun forklarer, jo vagere blir svaret hennes.",
-    "alternates": [
-      "Jo mer hun forklarer jo vagere blir svaret hennes"
-    ],
+    "alternates": ["Jo mer hun forklarer jo vagere blir svaret hennes"],
     "hint": "«Vag» tar en regelrett komparativ: vagere. Husk å invertere ordstillingen etter hver jo.",
     "plusOnly": true
   },
@@ -731,11 +565,7 @@
     "type": "fill",
     "prompt": "Velg riktig komparativform av «sirlig».",
     "sentence": "Jo mer tid hun bruker, jo _____ blir håndskriften hennes.",
-    "words": [
-      "sirligere",
-      "sirligst",
-      "mer sirlig"
-    ],
+    "words": ["sirligere", "sirligst", "mer sirlig"],
     "answer": "sirligere",
     "hint": "«Sirlig» tar en regelrett komparativ: sirligere.",
     "plusOnly": true
@@ -747,11 +577,7 @@
     "type": "fill",
     "prompt": "Velg riktig 1. kondisjonalis-form (uoppfylt fortidig plan).",
     "sentence": "Bonden _____ selge hele avlingen på markedet, men uværet ødela planene.",
-    "words": [
-      "skulle",
-      "skal",
-      "ville ha"
-    ],
+    "words": ["skulle", "skal", "ville ha"],
     "answer": "skulle",
     "hint": "1. kondisjonalis (skulle + infinitiv) markerer en plan som ikke ble noe av.",
     "plusOnly": true
@@ -763,11 +589,7 @@
     "type": "fill",
     "prompt": "Velg riktig 1. kondisjonalis-form (uoppfylt fortidig plan).",
     "sentence": "Hun _____ vedgå feilen sin på møtet, men mistet motet i siste liten.",
-    "words": [
-      "skulle",
-      "skal",
-      "har"
-    ],
+    "words": ["skulle", "skal", "har"],
     "answer": "skulle",
     "hint": "«Skulle» + infinitiv («vedgå») uttrykker en plan hun hadde, men ikke gjennomførte.",
     "plusOnly": true
@@ -780,9 +602,7 @@
     "prompt": "Omskriv som en uoppfylt plan med 1. kondisjonalis.",
     "source": "Familien planla en lang biltur, men planen mislyktes.",
     "answer": "Familien skulle dra på en lang biltur, men planen gikk i vasken.",
-    "alternates": [
-      "Familien skulle dra på en lang biltur, men hele planen gikk i vasken."
-    ],
+    "alternates": ["Familien skulle dra på en lang biltur, men hele planen gikk i vasken."],
     "hint": "1. kondisjonalis (skulle + infinitiv) angir planen; «gå i vasken» betyr at en plan mislykkes.",
     "plusOnly": true
   },
@@ -791,21 +611,9 @@
     "topic": "kondisjonalis-counterfactual",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Hun",
-      "skulle",
-      "levere",
-      "årsrapporten",
-      "i",
-      "går",
-      "men",
-      "glemte",
-      "fristen"
-    ],
+    "tokens": ["Hun", "skulle", "levere", "årsrapporten", "i", "går", "men", "glemte", "fristen"],
     "answer": "Hun skulle levere årsrapporten i går, men glemte fristen.",
-    "alternates": [
-      "Hun skulle levere årsrapporten i går men glemte fristen"
-    ],
+    "alternates": ["Hun skulle levere årsrapporten i går men glemte fristen"],
     "hint": "Modalverbet «skulle» + ren infinitiv «levere» — ingen «å» etter modalverb.",
     "plusOnly": true
   },
@@ -816,11 +624,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
     "sentence": "Om piloten hadde fulgt reglene, _____ flyet aldri ha forulykket.",
-    "words": [
-      "ville",
-      "skulle",
-      "har"
-    ],
+    "words": ["ville", "skulle", "har"],
     "answer": "ville",
     "hint": "2. kondisjonalis: ville + ha + perfektum partisipp (ha forulykket) uttrykker det kontrafaktiske utfallet.",
     "plusOnly": true
@@ -833,9 +637,7 @@
     "prompt": "Omskriv som en kontrafaktisk setning: «Hvis … ikke hadde …, ville … ha …», med pluskvamperfektum + 2. kondisjonalis.",
     "source": "Legen unnlot å varsle familien, og de fikk aldri sagt farvel.",
     "answer": "Om legen ikke hadde unnlatt å varsle familien, ville de ha fått sagt farvel.",
-    "alternates": [
-      "Om legen ikke hadde unnlatt å varsle familien, hadde de fått sagt farvel."
-    ],
+    "alternates": ["Om legen ikke hadde unnlatt å varsle familien, hadde de fått sagt farvel."],
     "hint": "Om + pluskvamperfektum (hadde unnlatt) setter opp betingelsen; ville + ha + perfektum partisipp (ha fått) gir resultatet — det klassiske kontrafaktiske mønsteret.",
     "plusOnly": true
   },
@@ -885,11 +687,7 @@
     "type": "fill",
     "prompt": "Velg konstruksjonen som passer: en uoppfylt fortidig PLAN, ikke en hypotetisk situasjon.",
     "sentence": "Hun _____ levere årsrapporten før ferien, men rakk det aldri.",
-    "words": [
-      "skulle",
-      "ville ha levert",
-      "hadde levert"
-    ],
+    "words": ["skulle", "ville ha levert", "hadde levert"],
     "answer": "skulle",
     "hint": "En uoppfylt fortidig plan (ikke en kontrafaktisk situasjon) bruker 1. kondisjonalis: skulle + infinitiv, ikke ville ha + perfektum partisipp.",
     "plusOnly": true
@@ -901,11 +699,7 @@
     "type": "fill",
     "prompt": "Velg riktig sideordnende konjunksjon (årsak, helsetning).",
     "sentence": "Soldaten nektet å adlyde ordren, _____ han mente den var ulovlig.",
-    "words": [
-      "for",
-      "fordi",
-      "og"
-    ],
+    "words": ["for", "fordi", "og"],
     "answer": "for",
     "hint": "«For» innleder en ny helsetning som gir en årsak, alltid med komma. «Fordi» ville krevd leddsetningsrekkefølge i stedet.",
     "plusOnly": true
@@ -941,11 +735,7 @@
     "type": "fill",
     "prompt": "Velg riktig sideordnende konjunksjon (alternativ, spørsmål).",
     "sentence": "Vil du bønnfalle sjefen om unnskyldning, _____ vil du bare la det ligge?",
-    "words": [
-      "eller",
-      "og",
-      "men"
-    ],
+    "words": ["eller", "og", "men"],
     "answer": "eller",
     "hint": "«Eller» presenterer et alternativ — vanlig i enten/eller-spørsmål.",
     "plusOnly": true
@@ -957,11 +747,7 @@
     "type": "fill",
     "prompt": "Velg riktig sideordnende konjunksjon (kontrast).",
     "sentence": "Hun kjente en dyp avsky for løgnen, _____ hun tidde likevel.",
-    "words": [
-      "men",
-      "for",
-      "så"
-    ],
+    "words": ["men", "for", "så"],
     "answer": "men",
     "hint": "«Men» uttrykker kontrast: til tross for avskyen holdt hun likevel tett.",
     "plusOnly": true
@@ -973,11 +759,7 @@
     "type": "fill",
     "prompt": "Velg riktig ord: «så» som tidsadverb («deretter»).",
     "sentence": "Han tok seg et avbrekk fra studiene. _____ reiste han til utlandet for å jobbe et år.",
-    "words": [
-      "Så",
-      "Og",
-      "For"
-    ],
+    "words": ["Så", "Og", "For"],
     "answer": "Så",
     "hint": "«Så» som tidsadverb i starten av en ny helsetning utløser V2-inversjon: «reiste han», ikke «han reiste».",
     "plusOnly": true
@@ -989,11 +771,7 @@
     "type": "fill",
     "prompt": "Velg riktig ord: «så» som subjunksjon (≈ «slik at»).",
     "sentence": "Hun engasjerte seg i saken _____ løsningen skulle bli rettferdig.",
-    "words": [
-      "så",
-      "og",
-      "men"
-    ],
+    "words": ["så", "og", "men"],
     "answer": "så",
     "hint": "Her er «så» en subjunksjon (≈ «slik at») som innleder en hensiktsleddsetning — vanlig leddsetningsrekkefølge, ingen V2-inversjon.",
     "plusOnly": true
@@ -1006,9 +784,7 @@
     "prompt": "Slå sammen til én setning med «for» (årsak i helsetning, ikke «fordi»).",
     "source": "Hun besørget middagen selv. Hun stolte ikke på cateringfirmaet.",
     "answer": "Hun besørget middagen selv, for hun stolte ikke på cateringfirmaet.",
-    "alternates": [
-      "Hun besørget middagen selv for hun stolte ikke på cateringfirmaet."
-    ],
+    "alternates": ["Hun besørget middagen selv for hun stolte ikke på cateringfirmaet."],
     "hint": "«For» binder sammen to fullstendige helsetninger og beholder alltid vanlig SV-rekkefølge, med komma foran.",
     "plusOnly": true
   },
@@ -1017,23 +793,9 @@
     "topic": "koordinerende-konjunksjoner",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Hun",
-      "bønnfalte",
-      "ham",
-      "om",
-      "å",
-      "bli",
-      "og",
-      "han",
-      "lyttet",
-      "til",
-      "slutt"
-    ],
+    "tokens": ["Hun", "bønnfalte", "ham", "om", "å", "bli", "og", "han", "lyttet", "til", "slutt"],
     "answer": "Hun bønnfalte ham om å bli, og han lyttet til slutt.",
-    "alternates": [
-      "Hun bønnfalte ham om å bli og han lyttet til slutt"
-    ],
+    "alternates": ["Hun bønnfalte ham om å bli og han lyttet til slutt"],
     "hint": "To fullstendige helsetninger bundet sammen med «og» (hver har sitt eget subjekt: Hun / han) — komma kreves.",
     "plusOnly": true
   },
@@ -1056,10 +818,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (leddsetningsrekkefølge).",
     "sentence": "Fordi kritikerne _____ strengere regler, endret myndighetene loven raskt.",
-    "words": [
-      "forlanger",
-      "faktisk"
-    ],
+    "words": ["forlanger", "faktisk"],
     "answer": "faktisk forlanger",
     "hint": "I en leddsetning (fordi-setning) kommer setningsadverbialet «faktisk» før det finitte verbet: faktisk forlanger, ikke forlanger faktisk.",
     "plusOnly": true
@@ -1071,10 +830,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (leddsetningsrekkefølge).",
     "sentence": "Ettersom fagfolk _____ uenige om innvendingene, fortsetter diskusjonen.",
-    "words": [
-      "er",
-      "jo"
-    ],
+    "words": ["er", "jo"],
     "answer": "jo er",
     "hint": "Leddsetning: setningsadverbialet «jo» kommer før det finitte verbet «er», ikke etter.",
     "plusOnly": true
@@ -1110,9 +866,7 @@
       "oppslutning"
     ],
     "answer": "Fordi ingen forsvarer forslaget hardnakket, mister det faktisk oppslutning.",
-    "alternates": [
-      "Fordi ingen forsvarer forslaget hardnakket mister det faktisk oppslutning"
-    ],
+    "alternates": ["Fordi ingen forsvarer forslaget hardnakket mister det faktisk oppslutning"],
     "hint": "Fordi-setningen fyller forfeltet; helsetningens verb (mister) kommer fortsatt på andreplass, etterfulgt av subjektet (det) og deretter setningsadverbialet (faktisk).",
     "plusOnly": true
   },
@@ -1135,11 +889,7 @@
     "type": "fill",
     "prompt": "Sett de tre ordene i riktig rekkefølge (helsetning etter en fremskutt leddsetning).",
     "sentence": "Fordi ingen forlanger endring, _____ uendret.",
-    "words": [
-      "forblir",
-      "situasjonen",
-      "jo"
-    ],
+    "words": ["forblir", "situasjonen", "jo"],
     "answer": "forblir situasjonen jo",
     "hint": "Etter den fremskutte fordi-setningen følger helsetningen fortsatt V2: verb (forblir) — subjekt (situasjonen) — setningsadverbial (jo).",
     "plusOnly": true
@@ -1162,9 +912,7 @@
       "hegemoni"
     ],
     "answer": "Det handler om hvorfor de faktisk fremmer et nytt hegemoni.",
-    "alternates": [
-      "Det handler om hvorfor de faktisk fremmer et nytt hegemoni"
-    ],
+    "alternates": ["Det handler om hvorfor de faktisk fremmer et nytt hegemoni"],
     "hint": "Inni den innskutte hvorfor-setningen står setningsadverbialet «faktisk» rett før det finitte verbet «fremmer» — leddsetningsrekkefølge gjelder selv uten å skyve hele setningen fremst.",
     "plusOnly": true
   },
@@ -1175,10 +923,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (innskutt leddsetning).",
     "sentence": "Ingen vet hvorfor hun _____ barna så strengt.",
-    "words": [
-      "formaner",
-      "faktisk"
-    ],
+    "words": ["formaner", "faktisk"],
     "answer": "faktisk formaner",
     "hint": "Selv om denne hvorfor-setningen ikke står fremst, er den likevel en leddsetning: adverbialet «faktisk» står før verbet «formaner».",
     "plusOnly": true
@@ -1271,11 +1016,7 @@
     "type": "fill",
     "prompt": "Velg riktig s-passiv-form (preteritum) for å fullføre setningen.",
     "sentence": "Nyheten _____ til pressen i går kveld.",
-    "words": [
-      "meddeltes",
-      "meddeler",
-      "meddelte"
-    ],
+    "words": ["meddeltes", "meddeler", "meddelte"],
     "answer": "meddeltes",
     "hint": "S-passiv preteritum av et svakt verb legger til «-s» til den aktive preteritumsformen: meddelte → meddeltes.",
     "plusOnly": true
@@ -1287,11 +1028,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for å fullføre passivsetningen.",
     "sentence": "Forbudet blir hjemlet _____ en ny lov.",
-    "words": [
-      "i",
-      "av",
-      "til"
-    ],
+    "words": ["i", "av", "til"],
     "answer": "i",
     "hint": "«Hjemle i» er en fast juridisk kollokasjon som betyr «har sitt rettslige grunnlag i» — den beholder «i», ikke den vanlige agentmarkøren «av», selv i passiv.",
     "plusOnly": true
@@ -1301,16 +1038,7 @@
     "topic": "omskriving-passiv",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Læreren",
-      "blir",
-      "berømmet",
-      "av",
-      "rektor",
-      "for",
-      "innsatsen",
-      "sin"
-    ],
+    "tokens": ["Læreren", "blir", "berømmet", "av", "rektor", "for", "innsatsen", "sin"],
     "answer": "Læreren blir berømmet av rektor for innsatsen sin.",
     "hint": "Bli-passiv-ordstilling: subjekt (Læreren) — «blir» — perfektum partisipp (berømmet) — agentfrase (av rektor) — resten.",
     "plusOnly": true
@@ -1345,10 +1073,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (resultatsetning etter «, så»).",
     "sentence": "Hun formante barna strengt, så _____ reglene.",
-    "words": [
-      "fulgte",
-      "de"
-    ],
+    "words": ["fulgte", "de"],
     "answer": "de fulgte",
     "hint": "Som konjunksjon (« , så …» = «så»/«dermed») beholder setningen vanlig SV-rekkefølge: de (subjekt) fulgte (verb), ikke invertert.",
     "plusOnly": true
@@ -1360,10 +1085,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (ny helsetning som begynner med «Så» = «deretter»).",
     "sentence": "Hun bønnfalte ham om tilgivelse. Så _____ tilbake.",
-    "words": [
-      "vendte",
-      "roen"
-    ],
+    "words": ["vendte", "roen"],
     "answer": "vendte roen",
     "hint": "Som tidsadverb i starten av en ny helsetning («Deretter …») utløser «Så» V2-inversjon: vendte (verb) roen (subjekt), ikke omvendt.",
     "plusOnly": true
@@ -1375,10 +1097,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (hensiktsleddsetning innledet av «så»).",
     "sentence": "Hun fordrev tvilerne fra møtet, så _____ arbeide i fred.",
-    "words": [
-      "kunne",
-      "de"
-    ],
+    "words": ["kunne", "de"],
     "answer": "de kunne",
     "hint": "Som subjunksjon («så» ≈ «slik at») beholder leddsetningen vanlig leddsetningsrekkefølge: de (subjekt) kunne (verb), ikke invertert.",
     "plusOnly": true
@@ -1414,10 +1133,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (hensiktsleddsetning innledet av «så»).",
     "sentence": "Han presiserte tallene nøye, så _____ ingen tvil om resultatet.",
-    "words": [
-      "var",
-      "det"
-    ],
+    "words": ["var", "det"],
     "answer": "det var",
     "hint": "Som subjunksjon (≈ «slik at») beholder «så»-setningen vanlig leddsetningsrekkefølge: det (subjekt) var (verb), ikke invertert.",
     "plusOnly": true
@@ -1464,9 +1180,7 @@
       "arbeidet"
     ],
     "answer": "Kontrakten betinget et forskudd, så leverandøren kunne starte arbeidet.",
-    "alternates": [
-      "Kontrakten betinget et forskudd så leverandøren kunne starte arbeidet"
-    ],
+    "alternates": ["Kontrakten betinget et forskudd så leverandøren kunne starte arbeidet"],
     "hint": "«Så» er her en subjunksjon (≈ «slik at») som innleder en hensiktsleddsetning — vanlig leddsetningsrekkefølge: leverandøren (subjekt) kunne (verb), ingen inversjon.",
     "plusOnly": true
   },
@@ -1500,11 +1214,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform av «bebreide».",
     "sentence": "Hans stadige _____ gjorde henne trist til slutt.",
-    "words": [
-      "bebreidelser",
-      "bebreide",
-      "bebreidende"
-    ],
+    "words": ["bebreidelser", "bebreide", "bebreidende"],
     "answer": "bebreidelser",
     "hint": "Substantivformen av «bebreide» er «bebreidelse»; her står den i ubestemt flertall «bebreidelser» for å samsvare med «stadige».",
     "plusOnly": true
@@ -1516,11 +1226,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform av «presisere».",
     "sentence": "Advokaten kom med en viktig _____ av kontraktsvilkårene.",
-    "words": [
-      "presisering",
-      "presisere",
-      "presisert"
-    ],
+    "words": ["presisering", "presisere", "presisert"],
     "answer": "presisering",
     "hint": "Substantivformen av «presisere» er «presisering».",
     "plusOnly": true
@@ -1532,11 +1238,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform av «nuansere».",
     "sentence": "Hun ga et svært _____ svar på spørsmålet.",
-    "words": [
-      "nuansert",
-      "nuansere",
-      "nuanse"
-    ],
+    "words": ["nuansert", "nuansere", "nuanse"],
     "answer": "nuansert",
     "hint": "Adjektivformen (perfektum partisipp brukt som adjektiv) av «nuansere» er «nuansert».",
     "plusOnly": true
@@ -1548,11 +1250,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform av «engasjere».",
     "sentence": "Hennes _____ i frivillig arbeid imponerte alle.",
-    "words": [
-      "engasjement",
-      "engasjere",
-      "engasjert"
-    ],
+    "words": ["engasjement", "engasjere", "engasjert"],
     "answer": "engasjement",
     "hint": "Substantivformen av «engasjere» er «engasjement».",
     "plusOnly": true
@@ -1564,11 +1262,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform av «restaurere».",
     "sentence": "_____ av det gamle huset tok over to år.",
-    "words": [
-      "Restaureringen",
-      "Restaurere",
-      "Restaurert"
-    ],
+    "words": ["Restaureringen", "Restaurere", "Restaurert"],
     "answer": "Restaureringen",
     "hint": "Substantivformen av «restaurere» er «restaurering»; her i bestemt form «restaureringen» siden det refererer til ett bestemt prosjekt.",
     "plusOnly": true
@@ -1580,11 +1274,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform av «betinge».",
     "sentence": "Kontrakten inneholdt en streng _____ om levering innen fristen.",
-    "words": [
-      "betingelse",
-      "betinge",
-      "betinget"
-    ],
+    "words": ["betingelse", "betinge", "betinget"],
     "answer": "betingelse",
     "hint": "Substantivformen av «betinge» er «betingelse».",
     "plusOnly": true
@@ -1596,11 +1286,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform av «avsky».",
     "sentence": "Lukten fra søppelet var rett og slett _____.",
-    "words": [
-      "avskyelig",
-      "avsky",
-      "avskyr"
-    ],
+    "words": ["avskyelig", "avsky", "avskyr"],
     "answer": "avskyelig",
     "hint": "Adjektivformen av substantivet/verbet «avsky» er «avskyelig».",
     "plusOnly": true
@@ -1612,11 +1298,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform av «meddele».",
     "sentence": "Han fikk en offisiell _____ om at søknaden var innvilget.",
-    "words": [
-      "meddelelse",
-      "meddele",
-      "meddelt"
-    ],
+    "words": ["meddelelse", "meddele", "meddelt"],
     "answer": "meddelelse",
     "hint": "Substantivformen av «meddele» er «meddelelse».",
     "plusOnly": true
@@ -1628,11 +1310,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform av «stadfeste».",
     "sentence": "Rettens _____ av dommen kom etter flere måneders venting.",
-    "words": [
-      "stadfestelse",
-      "stadfeste",
-      "stadfestet"
-    ],
+    "words": ["stadfestelse", "stadfeste", "stadfestet"],
     "answer": "stadfestelse",
     "hint": "Substantivformen av «stadfeste» er «stadfestelse».",
     "plusOnly": true
@@ -1644,11 +1322,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig verbform avledet fra substantivet «hjemmel».",
     "sentence": "Loven _____ dette forbudet klart og tydelig.",
-    "words": [
-      "hjemler",
-      "hjemmel",
-      "hjemlet"
-    ],
+    "words": ["hjemler", "hjemmel", "hjemlet"],
     "answer": "hjemler",
     "hint": "Verbet avledet fra substantivet «hjemmel» er «hjemle»; presensformen er «hjemler».",
     "plusOnly": true
@@ -1660,10 +1334,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (perfektum med setningsadverbial).",
     "sentence": "Regjeringen har _____ avtalen.",
-    "words": [
-      "ratifisert",
-      "allerede"
-    ],
+    "words": ["ratifisert", "allerede"],
     "answer": "allerede ratifisert",
     "hint": "I perfektum står setningsadverbialet (allerede) mellom hjelpeverbet (har) og perfektum partisipp: har allerede ratifisert, ikke har ratifisert allerede.",
     "plusOnly": true
@@ -1675,10 +1346,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (pluskvamperfektum med setningsadverbial).",
     "sentence": "Da hun ringte, hadde han _____ møtet.",
-    "words": [
-      "besørget",
-      "nettopp"
-    ],
+    "words": ["besørget", "nettopp"],
     "answer": "nettopp besørget",
     "hint": "Pluskvamperfektum: setningsadverbialet (nettopp) står mellom «hadde» og partisippet: hadde nettopp besørget, ikke hadde besørget nettopp.",
     "plusOnly": true
@@ -1688,21 +1356,9 @@
     "topic": "perfektum-pluskvamperfektum",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "I",
-      "fjor",
-      "hadde",
-      "byrådet",
-      "allerede",
-      "oppført",
-      "det",
-      "nye",
-      "rådhuset"
-    ],
+    "tokens": ["I", "fjor", "hadde", "byrådet", "allerede", "oppført", "det", "nye", "rådhuset"],
     "answer": "I fjor hadde byrådet allerede oppført det nye rådhuset.",
-    "alternates": [
-      "I fjor hadde byrådet allerede oppført det nye rådhuset"
-    ],
+    "alternates": ["I fjor hadde byrådet allerede oppført det nye rådhuset"],
     "hint": "Et fremskutt tidsuttrykk (I fjor) fyller forfeltet, så hjelpeverbet «hadde» må komme rett etter det, foran subjektet (byrådet) — V2-inversjon — deretter adverbialet (allerede) før partisippet (oppført).",
     "plusOnly": true
   },
@@ -1725,10 +1381,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (pluskvamperfektum med setningsadverbial).",
     "sentence": "Da politiet kom, hadde tyven _____ unna.",
-    "words": [
-      "smettet",
-      "allerede"
-    ],
+    "words": ["smettet", "allerede"],
     "answer": "allerede smettet",
     "hint": "Pluskvamperfektum: hadde + allerede + smettet — adverbialet står mellom hjelpeverbet og partisippet.",
     "plusOnly": true
@@ -1738,20 +1391,9 @@
     "topic": "perfektum-pluskvamperfektum",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Hun",
-      "innrømmet",
-      "at",
-      "hun",
-      "jo",
-      "hadde",
-      "villedet",
-      "juryen"
-    ],
+    "tokens": ["Hun", "innrømmet", "at", "hun", "jo", "hadde", "villedet", "juryen"],
     "answer": "Hun innrømmet at hun jo hadde villedet juryen.",
-    "alternates": [
-      "Hun innrømmet at hun jo hadde villedet juryen"
-    ],
+    "alternates": ["Hun innrømmet at hun jo hadde villedet juryen"],
     "hint": "Inni den underordnede at-setningen kommer setningsadverbialet (jo) før hjelpeverbet (hadde), ikke etter: hun jo hadde villedet, ikke hun hadde jo villedet.",
     "plusOnly": true
   },
@@ -1762,10 +1404,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (perfektum med setningsadverbial).",
     "sentence": "Hun har _____ på barna offentlig.",
-    "words": [
-      "skjent",
-      "aldri"
-    ],
+    "words": ["skjent", "aldri"],
     "answer": "aldri skjent",
     "hint": "I perfektum i hovedsetning står setningsadverbialet (aldri) mellom hjelpeverbet (har) og partisippet: har aldri skjent, ikke har skjent aldri.",
     "plusOnly": true
@@ -1800,10 +1439,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (perfektum med setningsadverbial).",
     "sentence": "Retten har _____ henne erstatning.",
-    "words": [
-      "tilkjent",
-      "nettopp"
-    ],
+    "words": ["tilkjent", "nettopp"],
     "answer": "nettopp tilkjent",
     "hint": "Perfektum med adverbialet «nettopp»: har + nettopp + tilkjent — adverbialet står mellom hjelpeverbet og partisippet, ikke foran «har».",
     "plusOnly": true
@@ -1815,11 +1451,7 @@
     "type": "fill",
     "prompt": "Velg riktig predikativform (ubestemt/generisk subjekt).",
     "sentence": "Nyknyttede vennskap er _____ og trenger tid for å feste seg.",
-    "words": [
-      "skjørt",
-      "skjøre",
-      "skjør"
-    ],
+    "words": ["skjørt", "skjøre", "skjør"],
     "answer": "skjørt",
     "hint": "Med et ubestemt, generisk subjekt (vennskap er …) står predikativet i intetkjønn — skjørt — ikke i flertalls-/bestemt form skjøre.",
     "plusOnly": true
@@ -1831,11 +1463,7 @@
     "type": "fill",
     "prompt": "Velg riktig predikativform (ubestemt/generisk subjekt).",
     "sentence": "Ville dyr i fangenskap er ofte _____ av vane, ikke av natur.",
-    "words": [
-      "spakt",
-      "spake",
-      "spak"
-    ],
+    "words": ["spakt", "spake", "spak"],
     "answer": "spakt",
     "hint": "Med et ubestemt, generelt subjekt står predikativet i standard intetkjønnsform — spakt — ikke i flertalls-/bestemt form spake.",
     "plusOnly": true
@@ -1847,11 +1475,7 @@
     "type": "fill",
     "prompt": "Velg riktig form for å fullføre det faste uttrykket «å være duket for».",
     "sentence": "Disse møtene var alltid _____ for krangel, uansett hvem som deltok.",
-    "words": [
-      "duket",
-      "dukede",
-      "dukete"
-    ],
+    "words": ["duket", "dukede", "dukete"],
     "answer": "duket",
     "hint": "«Duket for» er et fast predikativuttrykk; «duket» bøyes aldri i tall — aldri dukede eller dukete, selv med et bestemt flertallssubjekt som møtene.",
     "plusOnly": true
@@ -1863,11 +1487,7 @@
     "type": "fill",
     "prompt": "Velg riktig form for å fullføre det faste uttrykket «sugen på».",
     "sentence": "Etter en lang uke var kollegene virkelig _____ på litt fri tid.",
-    "words": [
-      "sugen",
-      "sugne",
-      "sugent"
-    ],
+    "words": ["sugen", "sugne", "sugent"],
     "answer": "sugen",
     "hint": "«Sugen på» er et fast idiom; «sugen» forblir ubøyd selv med det bestemte flertallssubjektet kollegene — aldri sugne.",
     "plusOnly": true
@@ -1879,11 +1499,7 @@
     "type": "fill",
     "prompt": "Velg riktig form og preposisjon for det faste uttrykket «å være skikket til».",
     "sentence": "Alle kandidatene var visstnok _____ stillingen, ifølge komiteen.",
-    "words": [
-      "skikket til",
-      "skikkede til",
-      "skikket for"
-    ],
+    "words": ["skikket til", "skikkede til", "skikket for"],
     "answer": "skikket til",
     "hint": "«Skikket til» er en fast adjektiv + preposisjon-frase: «skikket» bøyes aldri i flertall, og preposisjonen er alltid til, ikke for.",
     "plusOnly": true
@@ -1938,19 +1554,9 @@
     "topic": "predikativ-agreement",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Planene",
-      "deres",
-      "var",
-      "raknet",
-      "lenge",
-      "før",
-      "avstemningen"
-    ],
+    "tokens": ["Planene", "deres", "var", "raknet", "lenge", "før", "avstemningen"],
     "answer": "Planene deres var raknet lenge før avstemningen.",
-    "alternates": [
-      "Planene deres var raknet lenge før avstemningen"
-    ],
+    "alternates": ["Planene deres var raknet lenge før avstemningen"],
     "hint": "«Raknet» er et partisipp som fungerer som predikativ, og forblir ubøyd uansett flertallssubjektet planene — aldri raknede.",
     "plusOnly": true
   },
@@ -1961,11 +1567,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «anmode om».",
     "sentence": "Fagforeningen anmodet _____ et møte med ledelsen så snart som mulig.",
-    "words": [
-      "om",
-      "for",
-      "til"
-    ],
+    "words": ["om", "for", "til"],
     "answer": "om",
     "hint": "«Anmode om» (å formelt be om) tar alltid «om», aldri «for» eller «til».",
     "plusOnly": true
@@ -1977,11 +1579,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «argumentere for at».",
     "sentence": "Advokaten argumenterte _____ at dommen burde omgjøres.",
-    "words": [
-      "for",
-      "om",
-      "med"
-    ],
+    "words": ["for", "om", "med"],
     "answer": "for",
     "hint": "«Argumentere for at» (å argumentere for at) er fast med «for», ikke «om» eller «med».",
     "plusOnly": true
@@ -1993,11 +1591,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «feste tro til».",
     "sentence": "Ingen ville feste tro _____ ryktene som gikk i bygda.",
-    "words": [
-      "til",
-      "på",
-      "om"
-    ],
+    "words": ["til", "på", "om"],
     "answer": "til",
     "hint": "«Feste tro til» (å feste lit til) er fast med «til», en noe gammelmodig klingende kollokasjon.",
     "plusOnly": true
@@ -2009,11 +1603,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «holde styr på».",
     "sentence": "Med fem barn i huset er det ikke lett å holde styr _____ alle skoene.",
-    "words": [
-      "på",
-      "med",
-      "av"
-    ],
+    "words": ["på", "med", "av"],
     "answer": "på",
     "hint": "«Holde styr på» (å holde oversikt over) tar alltid «på».",
     "plusOnly": true
@@ -2025,11 +1615,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «hinte om».",
     "sentence": "Sjefen hintet _____ at det kom omorganiseringer i avdelingen.",
-    "words": [
-      "om",
-      "til",
-      "for"
-    ],
+    "words": ["om", "til", "for"],
     "answer": "om",
     "hint": "«Hinte om» (å antyde noe) tar «om», ikke «til» eller «for».",
     "plusOnly": true
@@ -2052,20 +1638,9 @@
     "cefr": "C",
     "type": "order",
     "prompt": "Sett ordene i riktig rekkefølge, med det faste uttrykket «å fare opp for» (V2-ordstilling).",
-    "tokens": [
-      "Hun",
-      "fór",
-      "opp",
-      "for",
-      "søsteren",
-      "sin",
-      "under",
-      "krangelen"
-    ],
+    "tokens": ["Hun", "fór", "opp", "for", "søsteren", "sin", "under", "krangelen"],
     "answer": "Hun fór opp for søsteren sin under krangelen.",
-    "alternates": [
-      "Hun fór opp for søsteren sin under krangelen"
-    ],
+    "alternates": ["Hun fór opp for søsteren sin under krangelen"],
     "hint": "«Fare opp for» (å ta noens parti) følger vanlig V2-ordstilling: subjekt, verb, deretter resten.",
     "plusOnly": true
   },
@@ -2096,19 +1671,9 @@
     "topic": "preposisjoner-generelt-c",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Jeg",
-      "dro",
-      "straks",
-      "kjensel",
-      "på",
-      "håndskriften",
-      "hans"
-    ],
+    "tokens": ["Jeg", "dro", "straks", "kjensel", "på", "håndskriften", "hans"],
     "answer": "Jeg dro straks kjensel på håndskriften hans.",
-    "alternates": [
-      "Jeg dro straks kjensel på håndskriften hans"
-    ],
+    "alternates": ["Jeg dro straks kjensel på håndskriften hans"],
     "hint": "«Dra kjensel på» (å kjenne igjen) tar alltid «på» foran det som gjenkjennes.",
     "plusOnly": true
   },
@@ -2119,11 +1684,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «ta beina på nakken».",
     "sentence": "Da politiet dukket opp, tok de mistenkte beina _____ nakken og forsvant.",
-    "words": [
-      "på",
-      "i",
-      "til"
-    ],
+    "words": ["på", "i", "til"],
     "answer": "på",
     "hint": "«Ta beina på nakken» (å stikke av i full fart) tar alltid «på», aldri «i» eller «til».",
     "plusOnly": true
@@ -2135,11 +1696,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «ha øyne i nakken».",
     "sentence": "En god vakt må ha øyne _____ nakken for å oppdage alt som skjer.",
-    "words": [
-      "i",
-      "på",
-      "til"
-    ],
+    "words": ["i", "på", "til"],
     "answer": "i",
     "hint": "«Ha øyne i nakken» (å legge merke til alt som skjer rundt en) tar alltid «i».",
     "plusOnly": true
@@ -2151,11 +1708,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «gå på med krum hals».",
     "sentence": "Laget gikk _____ med krum hals i andre omgang og snudde kampen.",
-    "words": [
-      "på",
-      "til",
-      "av"
-    ],
+    "words": ["på", "til", "av"],
     "answer": "på",
     "hint": "«Gå på med krum hals» (å ta fatt på noe med stor iver) tar alltid «på».",
     "plusOnly": true
@@ -2167,11 +1720,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «synge av full hals».",
     "sentence": "Barna sang _____ full hals rundt bålet hele kvelden.",
-    "words": [
-      "av",
-      "med",
-      "på"
-    ],
+    "words": ["av", "med", "på"],
     "answer": "av",
     "hint": "«Synge av full hals» (å synge av full styrke) tar alltid «av».",
     "plusOnly": true
@@ -2183,11 +1732,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «stå på god fot med noen».",
     "sentence": "Vi står _____ god fot med naboene våre, så vi låner ting av hverandre ofte.",
-    "words": [
-      "på",
-      "i",
-      "til"
-    ],
+    "words": ["på", "i", "til"],
     "answer": "på",
     "hint": "«Stå på god fot med noen» (å ha et godt forhold til noen) tar alltid «på».",
     "plusOnly": true
@@ -2211,11 +1756,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «få hjertet i halsen».",
     "sentence": "Hun fikk hjertet _____ halsen da bilen nesten kolliderte.",
-    "words": [
-      "i",
-      "på",
-      "til"
-    ],
+    "words": ["i", "på", "til"],
     "answer": "i",
     "hint": "«Få hjertet i halsen» (å få hjertet opp i halsen av skrekk) tar alltid «i».",
     "plusOnly": true
@@ -2239,9 +1780,7 @@
       "igjen"
     ],
     "answer": "Han måtte ta seg i nakken og begynne å studere igjen.",
-    "alternates": [
-      "Han måtte ta seg i nakken og begynne å studere igjen"
-    ],
+    "alternates": ["Han måtte ta seg i nakken og begynne å studere igjen"],
     "hint": "«Ta seg i nakken» (å ta seg sammen) tar alltid «i».",
     "plusOnly": true
   },
@@ -2275,9 +1814,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "en prosess der eksperter innenfor samme fagfelt vurderer kvaliteten på en forskningsartikkel",
     "answer": "en fagfellevurdering",
-    "alternates": [
-      "fagfellevurdering"
-    ],
+    "alternates": ["fagfellevurdering"],
     "hint": "Fagfelle + vurdering: ingen bindes- er nødvendig, siden «fagfelle» allerede ender på en vokal.",
     "plusOnly": true
   },
@@ -2289,9 +1826,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "en plan som beskriver hvilke metoder og hvilken fremgangsmåte en studie skal følge",
     "answer": "et forskningsdesign",
-    "alternates": [
-      "forskningsdesign"
-    ],
+    "alternates": ["forskningsdesign"],
     "hint": "Forskning + s + design: substantiv som ender på -ing tar som regel en bindes- foran neste ledd.",
     "plusOnly": true
   },
@@ -2303,9 +1838,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "et ubesvart spørsmål innenfor et fagfelt som ingen har undersøkt ennå",
     "answer": "et forskningsgap",
-    "alternates": [
-      "forskningsgap"
-    ],
+    "alternates": ["forskningsgap"],
     "hint": "Forskning + s + gap: samme bindes-mønster som i «forskningsdesign».",
     "plusOnly": true
   },
@@ -2317,9 +1850,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "en offisiell tillatelse som gir en bedrift lov til å slippe ut en bestemt mengde klimagasser",
     "answer": "en utslippskvote",
-    "alternates": [
-      "utslippskvote"
-    ],
+    "alternates": ["utslippskvote"],
     "hint": "Utslipp + s + kvote: bindes- etter «utslipp».",
     "plusOnly": true
   },
@@ -2331,9 +1862,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "en fordel som gjør at ett selskap presterer bedre enn konkurrentene sine",
     "answer": "et konkurransefortrinn",
-    "alternates": [
-      "konkurransefortrinn"
-    ],
+    "alternates": ["konkurransefortrinn"],
     "hint": "Konkurranse + fortrinn: ingen bindes- er nødvendig, siden «konkurranse» allerede ender på en vokal.",
     "plusOnly": true
   },
@@ -2344,11 +1873,7 @@
     "type": "fill",
     "prompt": "Velg det riktig stavede sammensatte substantivet.",
     "sentence": "_____ skjuler den tekniske kompleksiteten for sluttbrukeren.",
-    "words": [
-      "Abstraksjonslaget",
-      "Abstraksjonlaget",
-      "Abstraksjons laget"
-    ],
+    "words": ["Abstraksjonslaget", "Abstraksjonlaget", "Abstraksjons laget"],
     "answer": "Abstraksjonslaget",
     "hint": "Abstraksjon + s + lag: en bindes- kobler sammen de to substantivene, og sammensetningen skrives alltid som ett ord.",
     "plusOnly": true
@@ -2360,11 +1885,7 @@
     "type": "fill",
     "prompt": "Velg det riktig stavede sammensatte substantivet.",
     "sentence": "Bedriften utarbeidet en femårig _____.",
-    "words": [
-      "strategiplan",
-      "strategisplan",
-      "strategiensplan"
-    ],
+    "words": ["strategiplan", "strategisplan", "strategiensplan"],
     "answer": "strategiplan",
     "hint": "Strategi + plan: ingen bindes- brukes etter et substantiv som ender på vokalen -i.",
     "plusOnly": true
@@ -2376,11 +1897,7 @@
     "type": "fill",
     "prompt": "Velg det riktig stavede sammensatte substantivet.",
     "sentence": "Hvert _____ ble tildelt egne oppgaver om bord.",
-    "words": [
-      "besetningsmedlem",
-      "besetningmedlem",
-      "besetningsmedlemet"
-    ],
+    "words": ["besetningsmedlem", "besetningmedlem", "besetningsmedlemet"],
     "answer": "besetningsmedlem",
     "hint": "Besetning + s + medlem: bindes- etter et substantiv som ender på -ing.",
     "plusOnly": true
@@ -2392,11 +1909,7 @@
     "type": "fill",
     "prompt": "Velg det riktig stavede sammensatte substantivet.",
     "sentence": "Selskapet økte _____ betydelig i fjor.",
-    "words": [
-      "markedsandelen",
-      "marked andelen",
-      "markedandelen"
-    ],
+    "words": ["markedsandelen", "marked andelen", "markedandelen"],
     "answer": "markedsandelen",
     "hint": "Marked + s + andel: bindes-, og sammensetningen skrives alltid som ett ord, aldri delt opp slik som på engelsk.",
     "plusOnly": true
@@ -2418,19 +1931,9 @@
     "topic": "sammensatte-substantiv",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Aksjemarkedet",
-      "falt",
-      "kraftig",
-      "etter",
-      "de",
-      "dårlige",
-      "nyhetene"
-    ],
+    "tokens": ["Aksjemarkedet", "falt", "kraftig", "etter", "de", "dårlige", "nyhetene"],
     "answer": "Aksjemarkedet falt kraftig etter de dårlige nyhetene.",
-    "alternates": [
-      "Aksjemarkedet falt kraftig etter de dårlige nyhetene"
-    ],
+    "alternates": ["Aksjemarkedet falt kraftig etter de dårlige nyhetene"],
     "hint": "Aksje + marked: ingen bindes- er nødvendig siden «aksje» allerede ender på en vokal.",
     "plusOnly": true
   },
@@ -2441,15 +1944,9 @@
     "type": "fill",
     "prompt": "Velg riktig preteritum av «gale» (om en hane som galer).",
     "sentence": "Hanen _____ høyt hver morgen på den øde gården.",
-    "words": [
-      "gol",
-      "galer",
-      "galet"
-    ],
+    "words": ["gol", "galer", "galet"],
     "answer": "gol",
-    "alternates": [
-      "galte"
-    ],
+    "alternates": ["galte"],
     "hint": "Gale er et sjeldent sterkt verb: gale → gol (også galte) → har galt. «Øde» beskriver den forlatte gården.",
     "plusOnly": true
   },
@@ -2461,9 +1958,7 @@
     "prompt": "Endre til perfektum ved å bruke «har».",
     "source": "Hanen galer allerede før soloppgang på den øde gården.",
     "answer": "Hanen har galt allerede før soloppgang på den øde gården.",
-    "alternates": [
-      "Hanen har galt allerede før soloppgang på den øde gården"
-    ],
+    "alternates": ["Hanen har galt allerede før soloppgang på den øde gården"],
     "hint": "Perfektum partisipp av «gale» er det uregelmessige «galt», ikke «galet».",
     "plusOnly": true
   },
@@ -2486,11 +1981,7 @@
     "type": "fill",
     "prompt": "Velg riktig preteritum av «bry seg».",
     "sentence": "Hun _____ ikke om at situasjonen var farefull.",
-    "words": [
-      "brydde seg",
-      "brøt seg",
-      "bryddet seg"
-    ],
+    "words": ["brydde seg", "brøt seg", "bryddet seg"],
     "answer": "brydde seg",
     "hint": "«Bry seg» er et svakt verb, ikke et sterkt, selv om det ser ut til å være beslektet med «bryte»: bryr seg → brydde seg → har brydd seg. «Farefull» betyr farlig.",
     "plusOnly": true
@@ -2502,11 +1993,7 @@
     "type": "fill",
     "prompt": "Velg riktig preteritum av «briste».",
     "sentence": "Hjertet hans _____ av sorg da han innså hvor prekær situasjonen egentlig var.",
-    "words": [
-      "brast",
-      "briste",
-      "brister"
-    ],
+    "words": ["brast", "briste", "brister"],
     "answer": "brast",
     "hint": "Briste → brast → har bristet. «Prekær» betyr vanskelig og usikker.",
     "plusOnly": true
@@ -2519,9 +2006,7 @@
     "prompt": "Endre til perfektum ved å bruke «har».",
     "source": "Tålmodigheten hennes brister til slutt, selv om hun er en traust person.",
     "answer": "Tålmodigheten hennes har bristet til slutt, selv om hun er en traust person.",
-    "alternates": [
-      "Tålmodigheten hennes har bristet til slutt, selv om hun er en traust person"
-    ],
+    "alternates": ["Tålmodigheten hennes har bristet til slutt, selv om hun er en traust person"],
     "hint": "Perfektum partisipp av «briste» er det svakt utseende «bristet», selv om preteritum «brast» er sterkt. «Traust» betyr stø/pålitelig.",
     "plusOnly": true
   },
@@ -2532,11 +2017,7 @@
     "type": "fill",
     "prompt": "Velg riktig preteritum av «by imot» (å virke ubehagelig for noen).",
     "sentence": "Det _____ ham imot å godta et så udugelig forslag.",
-    "words": [
-      "bød",
-      "by",
-      "byr"
-    ],
+    "words": ["bød", "by", "byr"],
     "answer": "bød",
     "hint": "By → bød → har budt. «Udugelig» betyr inkompetent eller ubrukelig.",
     "plusOnly": true
@@ -2549,9 +2030,7 @@
     "prompt": "Endre til perfektum ved å bruke «har».",
     "source": "Det byr ham imot å be om et så malplassert stykke hjelp.",
     "answer": "Det har budt ham imot å be om et så malplassert stykke hjelp.",
-    "alternates": [
-      "Det har budt ham imot å be om et så malplassert stykke hjelp"
-    ],
+    "alternates": ["Det har budt ham imot å be om et så malplassert stykke hjelp"],
     "hint": "Perfektum partisipp av «by» er «budt», ikke «byd» eller «byet». «Malplassert» betyr upassende, ikke tilpasset situasjonen.",
     "plusOnly": true
   },
@@ -2562,11 +2041,7 @@
     "type": "fill",
     "prompt": "Velg riktig preteritum av «sige sammen» (å synke sammen, kollapse).",
     "sentence": "Han var så utmattet at han bare _____ sammen i stolen.",
-    "words": [
-      "seg",
-      "sa",
-      "siget"
-    ],
+    "words": ["seg", "sa", "siget"],
     "answer": "seg",
     "hint": "Sige → seg → har seget. Ikke forveksle preteritumsformen «seg» med refleksivpronomenet «seg».",
     "plusOnly": true
@@ -2576,19 +2051,9 @@
     "topic": "sterke-verb-c",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Tåken",
-      "seg",
-      "sakte",
-      "nedover",
-      "den",
-      "øde",
-      "fjellsiden"
-    ],
+    "tokens": ["Tåken", "seg", "sakte", "nedover", "den", "øde", "fjellsiden"],
     "answer": "Tåken seg sakte nedover den øde fjellsiden.",
-    "alternates": [
-      "Tåken seg sakte nedover den øde fjellsiden"
-    ],
+    "alternates": ["Tåken seg sakte nedover den øde fjellsiden"],
     "hint": "Sige nedover → seg nedover: tåken siger sakte nedover den øde fjellsiden.",
     "plusOnly": true
   },
@@ -2599,11 +2064,7 @@
     "type": "fill",
     "prompt": "Velg riktig preteritum av «fyke».",
     "sentence": "Snøen _____ over den øde marka i den kraftige vinden.",
-    "words": [
-      "føk",
-      "fyket",
-      "fyk"
-    ],
+    "words": ["føk", "fyket", "fyk"],
     "answer": "føk",
     "hint": "Fyke → føk (også føyk) → har føket. «Fyke» betyr å suse eller virvle omkring.",
     "plusOnly": true
@@ -2615,11 +2076,7 @@
     "type": "fill",
     "prompt": "Velg riktig preteritum av «kvekke til» (å rykke til av overraskelse).",
     "sentence": "Hun _____ til da smellingen kom helt uventet.",
-    "words": [
-      "kvakk",
-      "kvekket",
-      "kvekker"
-    ],
+    "words": ["kvakk", "kvekket", "kvekker"],
     "answer": "kvakk",
     "hint": "Kvekke → kvakk → har kvekket. «Smelling» betyr en skarp reprimande.",
     "plusOnly": true
@@ -2631,11 +2088,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantivform for det faste uttrykket «ta hånd om».",
     "sentence": "Vi må ta _____ om de eldre naboene våre.",
-    "words": [
-      "hånd",
-      "hånden",
-      "hendene"
-    ],
+    "words": ["hånd", "hånden", "hendene"],
     "answer": "hånd",
     "hint": "«Ta hånd om» (å ta seg av noen) bruker alltid den bare formen «hånd» — aldri den bestemte formen «hånden» eller flertallsformen «hendene».",
     "plusOnly": true
@@ -2647,11 +2100,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantivform for det faste uttrykket «slå hånden av».",
     "sentence": "Han slo _____ av hele prosjektet da det begynte å gå galt.",
-    "words": [
-      "hånden",
-      "hånd",
-      "hendene"
-    ],
+    "words": ["hånden", "hånd", "hendene"],
     "answer": "hånden",
     "hint": "«Slå hånden av» (å vaske sine hender av noe) tar den bestemte formen «hånden» — i motsetning til «ta hånd om», som forblir bar.",
     "plusOnly": true
@@ -2663,11 +2112,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantivform for det faste uttrykket «holde hodet over vann».",
     "sentence": "Etter oppsigelsen slet familien med å holde _____ over vann.",
-    "words": [
-      "hodet",
-      "hode",
-      "hoder"
-    ],
+    "words": ["hodet", "hode", "hoder"],
     "answer": "hodet",
     "hint": "«Holde hodet over vann» (å klare seg såvidt økonomisk) tar den bestemte entallsformen «hodet».",
     "plusOnly": true
@@ -2679,11 +2124,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantivform for det faste uttrykket «få kalde føtter».",
     "sentence": "Bruden fikk kalde _____ rett før bryllupet.",
-    "words": [
-      "føtter",
-      "foten",
-      "fot"
-    ],
+    "words": ["føtter", "foten", "fot"],
     "answer": "føtter",
     "hint": "«Få kalde føtter» (å bli engstelig og nøle) bruker alltid den ubestemte flertallsformen «føtter», aldri entallsformen «fot»/«foten».",
     "plusOnly": true
@@ -2695,11 +2136,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantivform for det faste uttrykket «stå til liv».",
     "sentence": "Legen sa at han sto til _____ hvis pasienten hadde spørsmål.",
-    "words": [
-      "liv",
-      "livet",
-      "livs"
-    ],
+    "words": ["liv", "livet", "livs"],
     "answer": "liv",
     "hint": "«Stå til liv» (å være tilgjengelig, til disposisjon) bruker den bare formen «liv» — aldri den bestemte formen «livet».",
     "plusOnly": true
@@ -2711,11 +2148,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantivform for det faste uttrykket «gå som fot i hose».",
     "sentence": "De to kollegene samarbeidet som _____ i hose fra første dag.",
-    "words": [
-      "fot",
-      "foten",
-      "føtter"
-    ],
+    "words": ["fot", "foten", "føtter"],
     "answer": "fot",
     "hint": "«Som fot i hose» (et perfekt samspill) bruker alltid den bare entallsformen «fot», aldri «foten» eller flertallsformen «føtter».",
     "plusOnly": true
@@ -2727,11 +2160,7 @@
     "type": "fill",
     "prompt": "Velg riktig substantivform for det faste uttrykket «sette noe til livs».",
     "sentence": "Gutta satte hele kalkunen til _____ på under en time.",
-    "words": [
-      "livs",
-      "liv",
-      "livet"
-    ],
+    "words": ["livs", "liv", "livet"],
     "answer": "livs",
     "hint": "«Sette noe til livs» (å spise opp noe helt) fastholder substantivet i den spesielle formen «livs», forskjellig fra «stå til liv».",
     "plusOnly": true
@@ -2794,10 +2223,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: med eller uten artikkel.",
     "sentence": "Etter tjue år i skolevesenet ble hun til slutt _____ forstander ved den nye folkehøyskolen.",
-    "words": [
-      "∅",
-      "en"
-    ],
+    "words": ["∅", "en"],
     "answer": "∅",
     "hint": "Et yrkessubstantiv etter «bli» mister artikkelen: «bli forstander», ikke «bli en forstander».",
     "plusOnly": true
@@ -2809,10 +2235,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: med eller uten artikkel.",
     "sentence": "Hun er _____ svært dyktig forstander, kjent for sitt gode omdømme.",
-    "words": [
-      "en",
-      "∅"
-    ],
+    "words": ["en", "∅"],
     "answer": "en",
     "hint": "Et adjektiv («dyktig») foran yrkessubstantivet gjenoppretter artikkelen som «forstander» alene ville mistet.",
     "plusOnly": true
@@ -2824,10 +2247,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: med eller uten artikkel.",
     "sentence": "Til jul serverte familien _____ stuing med ribbe, akkurat som i fjor.",
-    "words": [
-      "∅",
-      "en"
-    ],
+    "words": ["∅", "en"],
     "answer": "∅",
     "hint": "«Stuing» som et utellelig massesubstantiv (retten som mat) tar ingen artikkel, akkurat som «mat» eller «drikke».",
     "plusOnly": true
@@ -2839,10 +2259,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: med eller uten artikkel.",
     "sentence": "Kokken presenterte _____ helt ny stuing på menyen i år.",
-    "words": [
-      "en",
-      "∅"
-    ],
+    "words": ["en", "∅"],
     "answer": "en",
     "hint": "Med et adjektiv går «stuing» fra å være et utellelig massesubstantiv til en tellelig enhet (en bestemt rett/variant), og tar dermed «en».",
     "plusOnly": true
@@ -2854,10 +2271,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: med eller uten artikkel.",
     "sentence": "Turen til Svalbard foregikk med _____ fly, og et erfarent besetningsmedlem viste oss rundt om bord.",
-    "words": [
-      "∅",
-      "et"
-    ],
+    "words": ["∅", "et"],
     "answer": "∅",
     "hint": "Et transportmiddel etter «med» mister artikkelen: «med fly», ikke «med et fly».",
     "plusOnly": true
@@ -2869,10 +2283,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: med eller uten artikkel.",
     "sentence": "De reiste med _____ gammelt fly, mens et nervøst besetningsmedlem sjekket alt om bord.",
-    "words": [
-      "et",
-      "∅"
-    ],
+    "words": ["et", "∅"],
     "answer": "et",
     "hint": "Et adjektiv («gammelt») foran transportmiddelet gjenoppretter artikkelen som «med fly» alene mister.",
     "plusOnly": true
@@ -2884,10 +2295,7 @@
     "type": "fill",
     "prompt": "Velg riktig form: med eller uten artikkel.",
     "sentence": "Den unge håndverkeren gikk i _____ lære hos en erfaren mester.",
-    "words": [
-      "∅",
-      "en"
-    ],
+    "words": ["∅", "en"],
     "answer": "∅",
     "hint": "Det faste uttrykket «gå i lære» (å være i lære hos en mester) tar aldri artikkel foran «lære».",
     "plusOnly": true
@@ -2935,9 +2343,7 @@
       "folkehøyskole"
     ],
     "answer": "Han hadde alltid drømt om å bli forstander ved en kjent folkehøyskole.",
-    "alternates": [
-      "Han hadde alltid drømt om å bli forstander ved en kjent folkehøyskole"
-    ],
+    "alternates": ["Han hadde alltid drømt om å bli forstander ved en kjent folkehøyskole"],
     "hint": "«Bli forstander» (et yrke) tar ingen artikkel, men det påfølgende substantivet «folkehøyskole» er et vanlig tellelig substantiv og trenger sin egen «en».",
     "plusOnly": true
   },
@@ -3007,11 +2413,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Hun later som om hun ikke bryr seg, men «dypest sett» er hun veldig glad i familien sin.",
-    "options": [
-      "bare av og til",
-      "innerst inne",
-      "i det minste"
-    ],
+    "options": ["bare av og til", "innerst inne", "i det minste"],
     "answer": "innerst inne",
     "hint": "«Dypest sett» betyr innerst inne / grunnleggende sett.",
     "plusOnly": true
@@ -3022,11 +2424,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Vinduet stod «på gløtt» hele natten, så det ble kaldt i rommet.",
-    "options": [
-      "vidåpent",
-      "litt åpent, på klem",
-      "helt lukket, men ikke låst"
-    ],
+    "options": ["vidåpent", "litt åpent, på klem", "helt lukket, men ikke låst"],
     "answer": "litt åpent, på klem",
     "hint": "«På gløtt» betyr litt åpen / på klem.",
     "plusOnly": true
@@ -3052,11 +2450,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Etter fyrverkeriet og opptoget lå det konfetti «i stier» nedover hele gaten.",
-    "options": [
-      "samlet i én stor haug",
-      "spredt i tynne rekker og striper",
-      "knust i små biter"
-    ],
+    "options": ["samlet i én stor haug", "spredt i tynne rekker og striper", "knust i små biter"],
     "answer": "spredt i tynne rekker og striper",
     "hint": "«I stier» betyr i tynne rekker eller striper.",
     "plusOnly": true
@@ -3067,11 +2461,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Den siste oppgaven på eksamen var «riktig vanskelig», selv for de flinkeste elevene.",
-    "options": [
-      "ganske vanskelig, men ikke spesielt",
-      "helt umulig å løse",
-      "veldig vanskelig"
-    ],
+    "options": ["ganske vanskelig, men ikke spesielt", "helt umulig å løse", "veldig vanskelig"],
     "answer": "veldig vanskelig",
     "hint": "«Riktig» er her et forsterkende ord som betyr virkelig/temmelig, ikke adjektivet «korrekt».",
     "plusOnly": true
@@ -3097,11 +2487,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Til slutt «kom hele svindelen for en dag», og han mistet jobben.",
-    "options": [
-      "ble avslørt",
-      "ble glemt av alle",
-      "ble løst i retten"
-    ],
+    "options": ["ble avslørt", "ble glemt av alle", "ble løst i retten"],
     "answer": "ble avslørt",
     "hint": "«Komme for en dag» betyr å bli avslørt / komme frem i lyset.",
     "plusOnly": true
@@ -3187,11 +2573,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Selv med lav lønn klarer familien å «komme ut av det» hver måned.",
-    "options": [
-      "å klare seg økonomisk",
-      "å tjene mye ekstra penger",
-      "å spare opp til ferie"
-    ],
+    "options": ["å klare seg økonomisk", "å tjene mye ekstra penger", "å spare opp til ferie"],
     "answer": "å klare seg økonomisk",
     "hint": "«Komme ut av det» betyr å klare seg / greie seg økonomisk.",
     "plusOnly": true
@@ -3247,11 +2629,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Etter at vi fikk ny sjef, har alt på kontoret «gått på skinner».",
-    "options": [
-      "fungert helt problemfritt",
-      "blitt mer stressende",
-      "endret seg stadig"
-    ],
+    "options": ["fungert helt problemfritt", "blitt mer stressende", "endret seg stadig"],
     "answer": "fungert helt problemfritt",
     "hint": "«Gå på skinner» betyr å fungere helt problemfritt.",
     "plusOnly": true
@@ -3262,11 +2640,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Til slutt klarte alt å «gå som smurt» under bryllupet, uten en eneste hindring.",
-    "options": [
-      "gikk sakte og tungt",
-      "gikk helt problemfritt og lett",
-      "gikk i stå flere ganger"
-    ],
+    "options": ["gikk sakte og tungt", "gikk helt problemfritt og lett", "gikk i stå flere ganger"],
     "answer": "gikk helt problemfritt og lett",
     "hint": "«Gå som smurt» betyr å gå helt problemfritt og lett.",
     "plusOnly": true
@@ -3292,11 +2666,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Den årlige julemessen pleier å «gå av stabelen» første helgen i desember.",
-    "options": [
-      "blir avlyst",
-      "finner sted",
-      "blir flyttet til et annet sted"
-    ],
+    "options": ["blir avlyst", "finner sted", "blir flyttet til et annet sted"],
     "answer": "finner sted",
     "hint": "«Gå av stabelen» betyr å finne sted (om et arrangement).",
     "plusOnly": true
@@ -3307,11 +2677,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Reklamekampanjen fikk salget til å «gå så det suser».",
-    "options": [
-      "gikk svært raskt og bra",
-      "gikk sakte, men jevnt",
-      "stoppet helt opp"
-    ],
+    "options": ["gikk svært raskt og bra", "gikk sakte, men jevnt", "stoppet helt opp"],
     "answer": "gikk svært raskt og bra",
     "hint": "«Gå så det suser» betyr å gå svært raskt og bra.",
     "plusOnly": true
@@ -3337,11 +2703,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Da alle forberedelsene var ferdige, «gikk håndverkerne endelig til verket».",
-    "options": [
-      "begynte selve arbeidet",
-      "tok en lang pause",
-      "forlot byggeplassen"
-    ],
+    "options": ["begynte selve arbeidet", "tok en lang pause", "forlot byggeplassen"],
     "answer": "begynte selve arbeidet",
     "hint": "«Gå til verket» betyr å sette i gang med selve arbeidet.",
     "plusOnly": true
@@ -3457,11 +2819,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Barna «gjorde store øyne» da de så den enorme kaken.",
-    "options": [
-      "ble skremt og gråt",
-      "ble tydelig overrasket",
-      "lukket øynene av glede"
-    ],
+    "options": ["ble skremt og gråt", "ble tydelig overrasket", "lukket øynene av glede"],
     "answer": "ble tydelig overrasket",
     "hint": "«Gjøre store øyne» betyr å bli tydelig overrasket.",
     "plusOnly": true
@@ -3577,11 +2935,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Etter ulykken ble de skadde straks «tatt hånd om» av ambulansepersonellet.",
-    "options": [
-      "passet på og hjulpet av noen",
-      "overlatt til seg selv",
-      "arrestert av politiet"
-    ],
+    "options": ["passet på og hjulpet av noen", "overlatt til seg selv", "arrestert av politiet"],
     "answer": "passet på og hjulpet av noen",
     "hint": "«Bli tatt hånd om» betyr å bli tatt vare på.",
     "plusOnly": true
@@ -3937,11 +3291,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Journalisten var den som «slapp katta ut av sekken» om skandalen.",
-    "options": [
-      "avslørte en hemmelighet",
-      "dysset ned en sak",
-      "løy om det som hadde skjedd"
-    ],
+    "options": ["avslørte en hemmelighet", "dysset ned en sak", "løy om det som hadde skjedd"],
     "answer": "avslørte en hemmelighet",
     "hint": "«Slippe katta ut av sekken» betyr å avsløre en hemmelighet.",
     "plusOnly": true
@@ -4012,11 +3362,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Hele arrangementet «gikk i vasken» da hovedtaleren ble syk.",
-    "options": [
-      "ble fullstendig mislykket",
-      "ble en stor suksess",
-      "ble utsatt til neste uke"
-    ],
+    "options": ["ble fullstendig mislykket", "ble en stor suksess", "ble utsatt til neste uke"],
     "answer": "ble fullstendig mislykket",
     "hint": "«Gå i vasken» betyr å mislykkes / falle i grus.",
     "plusOnly": true
@@ -4162,11 +3508,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Etter en lang pause «tok de opp tråden» og fortsatte samtalen fra sist.",
-    "options": [
-      "fortsatte der de slapp",
-      "byttet fullstendig tema",
-      "avsluttet samtalen for godt"
-    ],
+    "options": ["fortsatte der de slapp", "byttet fullstendig tema", "avsluttet samtalen for godt"],
     "answer": "fortsatte der de slapp",
     "hint": "«Ta opp tråden» betyr å gjenoppta en samtale eller et tema.",
     "plusOnly": true
@@ -4432,11 +3774,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Sjefen er kjent for å «ha kort lunte» når ting går galt.",
-    "options": [
-      "bli fort sint",
-      "være svært tålmodig",
-      "aldri vise følelser"
-    ],
+    "options": ["bli fort sint", "være svært tålmodig", "aldri vise følelser"],
     "answer": "bli fort sint",
     "hint": "«Ha kort lunte» betyr å bli fort sint.",
     "plusOnly": true
@@ -4447,11 +3785,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Etter jobb pleier de å «rive i en drink» sammen på baren.",
-    "options": [
-      "ta seg en drink raskt",
-      "lage en cocktail selv",
-      "unngå alkohol helt"
-    ],
+    "options": ["ta seg en drink raskt", "lage en cocktail selv", "unngå alkohol helt"],
     "answer": "ta seg en drink raskt",
     "hint": "«Rive i en drink» betyr å drikke raskt unna en drink.",
     "plusOnly": true
@@ -4492,11 +3826,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Sannheten om svindelen «kom for en dag» flere år senere.",
-    "options": [
-      "ble til slutt avslørt",
-      "ble aldri oppdaget",
-      "ble glemt av alle"
-    ],
+    "options": ["ble til slutt avslørt", "ble aldri oppdaget", "ble glemt av alle"],
     "answer": "ble til slutt avslørt",
     "hint": "«Komme for en dag» betyr å bli avslørt / komme frem i lyset.",
     "plusOnly": true
@@ -4672,11 +4002,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Læreren «le eleven teksten» etter at han hadde jukset på prøven.",
-    "options": [
-      "kjeftet strengt på noen",
-      "ga noen skryt og ros",
-      "hjalp noen med leksene"
-    ],
+    "options": ["kjeftet strengt på noen", "ga noen skryt og ros", "hjalp noen med leksene"],
     "answer": "kjeftet strengt på noen",
     "hint": "«Lese noen teksten» betyr å irettesette noen strengt.",
     "plusOnly": true
@@ -4687,11 +4013,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Han «tråkket i salaten» da han nevnte skilsmissen foran hele familien.",
-    "options": [
-      "gjorde en pinlig tabbe",
-      "sa noe svært klokt",
-      "reddet en vanskelig situasjon"
-    ],
+    "options": ["gjorde en pinlig tabbe", "sa noe svært klokt", "reddet en vanskelig situasjon"],
     "answer": "gjorde en pinlig tabbe",
     "hint": "«Tråkke i salaten» betyr å begå en pinlig tabbe.",
     "plusOnly": true
@@ -4732,11 +4054,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Etter noen glass vin var han litt «på en snei».",
-    "options": [
-      "lett beruset",
-      "helt edru og fokusert",
-      "sint og aggressiv"
-    ],
+    "options": ["lett beruset", "helt edru og fokusert", "sint og aggressiv"],
     "answer": "lett beruset",
     "hint": "«Være på en snei» betyr å være lett beruset.",
     "plusOnly": true
@@ -4792,11 +4110,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "«Kors på halsen, jeg skal ikke si det videre,» hvisket hun.",
-    "options": [
-      "Jeg lover helt sikkert",
-      "Jeg tviler sterkt på det",
-      "Jeg orker ikke å love noe"
-    ],
+    "options": ["Jeg lover helt sikkert", "Jeg tviler sterkt på det", "Jeg orker ikke å love noe"],
     "answer": "Jeg lover helt sikkert",
     "hint": "«Kors på halsen» betyr jeg lover / kryss på hjertet.",
     "plusOnly": true
@@ -4882,11 +4196,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Han «så rødt» da han oppdaget at noen hadde ripet opp bilen hans.",
-    "options": [
-      "ble øyeblikkelig rasende",
-      "ble helt likegyldig",
-      "begynte å le av situasjonen"
-    ],
+    "options": ["ble øyeblikkelig rasende", "ble helt likegyldig", "begynte å le av situasjonen"],
     "answer": "ble øyeblikkelig rasende",
     "hint": "«Se rødt» betyr å bli rasende.",
     "plusOnly": true
@@ -5302,11 +4612,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Treneren «ga spillerne inn» skikkelig i pausen etter den dårlige første omgangen.",
-    "options": [
-      "kjeftet kraftig på dem",
-      "roste dem varmt for innsatsen",
-      "ba dem ta det med ro"
-    ],
+    "options": ["kjeftet kraftig på dem", "roste dem varmt for innsatsen", "ba dem ta det med ro"],
     "answer": "kjeftet kraftig på dem",
     "hint": "«Gi noen inn» betyr å gi noen en skikkelig reprimande.",
     "plusOnly": true
@@ -5542,11 +4848,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Har de to endelig «kommet i lag» etter alle disse månedene med flørting?",
-    "options": [
-      "blitt kjærester",
-      "sluttet å snakke med hverandre",
-      "begynt å jobbe sammen"
-    ],
+    "options": ["blitt kjærester", "sluttet å snakke med hverandre", "begynt å jobbe sammen"],
     "answer": "blitt kjærester",
     "hint": "«Komme i lag» betyr å begynne å være kjæreste med noen.",
     "plusOnly": true
@@ -5722,11 +5024,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Etter det tredje varselet «fikk han fyken» fra jobben.",
-    "options": [
-      "ble han sparket",
-      "ble han forfremmet",
-      "fikk han lønnsøkning"
-    ],
+    "options": ["ble han sparket", "ble han forfremmet", "fikk han lønnsøkning"],
     "answer": "ble han sparket",
     "hint": "«Få fyken» betyr å bli sparket fra jobben.",
     "plusOnly": true
@@ -5947,11 +5245,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Forslaget hans om kortere møter «falt i god jord» hos hele ledelsen.",
-    "options": [
-      "ble tatt svært godt imot",
-      "ble avvist umiddelbart",
-      "skapte sterk motstand"
-    ],
+    "options": ["ble tatt svært godt imot", "ble avvist umiddelbart", "skapte sterk motstand"],
     "answer": "ble tatt svært godt imot",
     "hint": "«Falle i god jord» betyr å bli godt mottatt.",
     "plusOnly": true
@@ -6052,11 +5346,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Han ble så rasende at han nesten «dro til» kollegaen sin i møtet.",
-    "options": [
-      "slo eller traff noen",
-      "roste noen varmt",
-      "ga noen en klem"
-    ],
+    "options": ["slo eller traff noen", "roste noen varmt", "ga noen en klem"],
     "answer": "slo eller traff noen",
     "hint": "«Dra til noen» betyr å slå noen.",
     "plusOnly": true
@@ -6083,11 +5373,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «få + infinitiv» som uttrykker resignasjon/plikt («bare må»).",
     "sentence": "Etter så mange klager _____ du bare innse at strategiplanen ikke fungerer.",
-    "words": [
-      "får",
-      "skal",
-      "har fått"
-    ],
+    "words": ["får", "skal", "har fått"],
     "answer": "får",
     "hint": "«Få + infinitiv» (får innse) uttrykker her resignasjon – man er tvunget til å akseptere det, ikke bare en fremtidig plan.",
     "plusOnly": true
@@ -6099,11 +5385,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «få + infinitiv» som uttrykker tillatelse.",
     "sentence": "Etter tre uker i kuvøsen _____ det premature barnet endelig reise hjem.",
-    "words": [
-      "fikk",
-      "skulle",
-      "hadde fått"
-    ],
+    "words": ["fikk", "skulle", "hadde fått"],
     "answer": "fikk",
     "hint": "«Få + infinitiv» i preteritum (fikk reise) markerer at tillatelse ble gitt – barnet fikk lov til å reise hjem.",
     "plusOnly": true
@@ -6115,11 +5397,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av det faste uttrykket «få se».",
     "sentence": "Om det nye produktet gir god nok gjennomførbarhet i markedet, det _____ vi se etter lanseringen.",
-    "words": [
-      "får",
-      "skal",
-      "fikk"
-    ],
+    "words": ["får", "skal", "fikk"],
     "answer": "får",
     "hint": "«Få + infinitiv» i «vi får se» er en fast måte å si «vi får bare vente og se» på – ikke en plan (skal) eller en fortidig hendelse (fikk).",
     "plusOnly": true
@@ -6131,11 +5409,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «få + perfektum partisipp» som uttrykker en fremtidig fullført handling.",
     "sentence": "Når hun _____ levert årsrapporten til styret, kan hun endelig slappe av.",
-    "words": [
-      "får",
-      "har",
-      "fikk"
-    ],
+    "words": ["får", "har", "fikk"],
     "answer": "får",
     "hint": "«Få + perfektum partisipp» i presens (får levert) markerer en fremtidig fullført handling – når hun først har fått den levert.",
     "plusOnly": true
@@ -6147,11 +5421,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «få + perfektum partisipp» som uttrykker at noe ble utført med hell.",
     "sentence": "Til tross for stormen _____ besetningsmedlemmene reddet hele lasten før skipet sank.",
-    "words": [
-      "fikk",
-      "får",
-      "hadde"
-    ],
+    "words": ["fikk", "får", "hadde"],
     "answer": "fikk",
     "hint": "«Få + perfektum partisipp» i preteritum (fikk reddet) markerer at noe ble utført til tross for vanskelighetene.",
     "plusOnly": true
@@ -6163,11 +5433,7 @@
     "type": "fill",
     "prompt": "Velg riktig form for å fullføre uttrykket «få hjertet i halsen» (å bli plutselig skremt).",
     "sentence": "Da bilen bråbremset rett foran henne, _____ hun hjertet i halsen.",
-    "words": [
-      "fikk",
-      "har fått",
-      "fikk fått"
-    ],
+    "words": ["fikk", "har fått", "fikk fått"],
     "answer": "fikk",
     "hint": "Uttrykket «få hjertet i halsen» bruker «få» i enkel preteritum for en plutselig skrekk – hjelpeverbet «ha» trengs ikke her.",
     "plusOnly": true
@@ -6179,11 +5445,7 @@
     "type": "fill",
     "prompt": "Velg riktig form for å fullføre uttrykket «få rede på» (å finne ut av noe).",
     "sentence": "Journalisten _____ rede på hemmeligheten gjennom en anonym kilde.",
-    "words": [
-      "fikk",
-      "har",
-      "fikk fått"
-    ],
+    "words": ["fikk", "har", "fikk fått"],
     "answer": "fikk",
     "hint": "«Få rede på», som betyr å finne ut av noe, er fortalt i enkel preteritum her: fikk rede på.",
     "plusOnly": true
@@ -6196,9 +5458,7 @@
     "prompt": "Omskriv med «få + perfektum partisipp» for å understreke at handlingen ble utført med hell.",
     "source": "Politiet befridde alle gisslene før forhandlingene brøt sammen.",
     "answer": "Politiet fikk befridd alle gisslene før forhandlingene brøt sammen.",
-    "alternates": [
-      "Politiet fikk befridd alle gisslene før forhandlingene brøt sammen"
-    ],
+    "alternates": ["Politiet fikk befridd alle gisslene før forhandlingene brøt sammen"],
     "hint": "«Få + perfektum partisipp» (fikk befridd) fremhever at redningen lyktes, ikke bare at den skjedde.",
     "plusOnly": true
   },
@@ -6210,9 +5470,7 @@
     "prompt": "Omskriv med «få + perfektum partisipp» for å uttrykke en fremtidig fullført handling.",
     "source": "Så snart hun sender inn beskyldningen skriftlig, kan saken behandles videre.",
     "answer": "Så snart hun får sendt inn beskyldningen skriftlig, kan saken behandles videre.",
-    "alternates": [
-      "Så snart hun får sendt inn beskyldningen skriftlig kan saken behandles videre"
-    ],
+    "alternates": ["Så snart hun får sendt inn beskyldningen skriftlig kan saken behandles videre"],
     "hint": "«Få + perfektum partisipp» i presens (får sendt) uttrykker at når hun først har fått den sendt inn, kan saken gå videre.",
     "plusOnly": true
   },
@@ -6234,9 +5492,7 @@
       "møtet"
     ],
     "answer": "Han fikk virkelig gjennomgå etter den pinlige flausen på møtet.",
-    "alternates": [
-      "Han fikk virkelig gjennomgå etter den pinlige flausen på møtet"
-    ],
+    "alternates": ["Han fikk virkelig gjennomgå etter den pinlige flausen på møtet"],
     "hint": "Uttrykket «få gjennomgå» (å få en skikkelig overhaling) beholder «virkelig» rett etter det finitte verbet «fikk».",
     "plusOnly": true
   },
@@ -6259,11 +5515,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «få» som betyr å motta / bli tildelt noe.",
     "sentence": "Etter mange års innsats _____ hun endelig opprykk til avdelingsleder.",
-    "words": [
-      "fikk",
-      "ga",
-      "tok"
-    ],
+    "words": ["fikk", "ga", "tok"],
     "answer": "fikk",
     "hint": "«Få» betyr her å motta eller bli tildelt noe (en forfremmelse) – ikke å gi det (ga) eller ta det selv (tok).",
     "plusOnly": true
@@ -6275,11 +5527,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «få» som betyr å oppnå / komme til å ha.",
     "sentence": "Da hun nedkom med tvillinger på sykehuset, _____ hun to friske barn samme dag.",
-    "words": [
-      "fikk",
-      "har fått",
-      "skal få"
-    ],
+    "words": ["fikk", "har fått", "skal få"],
     "answer": "fikk",
     "hint": "«Få», som betyr å oppnå/komme til å ha (barn), forteller her om en avsluttet fortidig hendelse, så enkel preteritum «fikk» trengs.",
     "plusOnly": true
@@ -6291,11 +5539,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «få» som betyr å bli utsatt for / utvikle en sykdom.",
     "sentence": "Etter den lange løpeturen i regnet _____ han en verkende betennelse i kneet.",
-    "words": [
-      "fikk",
-      "ble",
-      "har"
-    ],
+    "words": ["fikk", "ble", "har"],
     "answer": "fikk",
     "hint": "«Få» + substantivfrase (fikk en betennelse) markerer å pådra seg / utvikle en lidelse – «ble» krever et adjektiv, ikke en substantivfrase, og «har» ville bare beskrive en allerede eksisterende tilstand.",
     "plusOnly": true
@@ -6307,11 +5551,7 @@
     "type": "fill",
     "prompt": "Velg riktig form for å fullføre uttrykket «få svi for» (å få svi / bli straffet for noe).",
     "sentence": "Han trodde han hadde straffrihet for løgnene sine, men til slutt _____ han svi for det.",
-    "words": [
-      "fikk",
-      "fikk fått",
-      "får"
-    ],
+    "words": ["fikk", "fikk fått", "får"],
     "answer": "fikk",
     "hint": "«Få svi for», som betyr å bli straffet/få svi, er fortalt i enkel preteritum her: fikk svi for.",
     "plusOnly": true
@@ -6323,11 +5563,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av «få» som betyr å være tilgjengelig for salg/kjøp.",
     "sentence": "Etter den lange tørken ble ferske grønnsaker en ren mangelvare, og de var knapt _____ i butikkene.",
-    "words": [
-      "å få",
-      "å ta",
-      "å gi"
-    ],
+    "words": ["å få", "å ta", "å gi"],
     "answer": "å få",
     "hint": "Den faste konstruksjonen «(ikke/knapt) å få» betyr «ikke/knapt tilgjengelig (for kjøp)» – «å ta» og «å gi» fungerer ikke i denne idiomatiske betydningen.",
     "plusOnly": true
@@ -6339,11 +5575,7 @@
     "type": "fill",
     "prompt": "Velg riktig bar infinitivform for å fullføre kjeden etter «pleier å».",
     "sentence": "Om sommeren pleier hun å _____ frivillig på et krisesenter for å hjelpe andre.",
-    "words": [
-      "engasjere seg",
-      "engasjerer seg",
-      "engasjert seg"
-    ],
+    "words": ["engasjere seg", "engasjerer seg", "engasjert seg"],
     "answer": "engasjere seg",
     "hint": "Etter «pleier å» forblir det følgende verbet i bar infinitiv – «engasjere seg» beholder denne formen selv når en hensiktssetning føyes til etterpå.",
     "plusOnly": true
@@ -6355,11 +5587,7 @@
     "type": "fill",
     "prompt": "Velg riktig form for å fullføre kjeden «begynner å» + infinitiv, inne i en lengre setning med en andre infinitiv.",
     "sentence": "Når presset blir for stort, begynner mange å _____ virkeligheten i stedet for å ta tak i problemene.",
-    "words": [
-      "fortrenge",
-      "fortrenger",
-      "fortrengt"
-    ],
+    "words": ["fortrenge", "fortrenger", "fortrengt"],
     "answer": "fortrenge",
     "hint": "«Begynner å» etterfølges av den bare infinitiven «fortrenge» – presensformen «fortrenger» ville bare passet som setningens eget finitte verb, og det er ikke denne plassen.",
     "plusOnly": true
@@ -6371,11 +5599,7 @@
     "type": "fill",
     "prompt": "Velg riktig presensform for setningens eget finitte verb, selv om en infinitiv følger like etter.",
     "sentence": "Hun _____ ikke å utrette noe som helst når hun er så stresset.",
-    "words": [
-      "orker",
-      "orke",
-      "orket"
-    ],
+    "words": ["orker", "orke", "orket"],
     "answer": "orker",
     "hint": "«Orker» er setningens finitte verb og trenger presens; det følgende «å utrette» forblir korrekt i bar infinitiv.",
     "plusOnly": true
@@ -6387,11 +5611,7 @@
     "type": "fill",
     "prompt": "Velg riktig form for å fullføre en tre-verbskjede: modalverb + «prøve å» + hovedinfinitiv.",
     "sentence": "Han vil gjerne prøve å _____ konflikten før den vokser seg for stor.",
-    "words": [
-      "bilegge",
-      "bilegger",
-      "bilagt"
-    ],
+    "words": ["bilegge", "bilegger", "bilagt"],
     "answer": "bilegge",
     "hint": "Etter «vil … prøve å» forblir det tredje verbet i kjeden fortsatt i bar infinitiv: «bilegge».",
     "plusOnly": true
@@ -6403,11 +5623,7 @@
     "type": "fill",
     "prompt": "Velg riktig presensform for modalverbet som åpner denne flerverbssetningen.",
     "sentence": "Hun _____ verken å adlyde ordren eller å nekte åpent.",
-    "words": [
-      "tør",
-      "torde",
-      "tore"
-    ],
+    "words": ["tør", "torde", "tore"],
     "answer": "tør",
     "hint": "«Tør» er det finitte modalverbet i presens; begge handlingene som følger («å adlyde», «å nekte»), forbundet med «verken … eller», forblir i infinitiv etter det.",
     "plusOnly": true
@@ -6420,9 +5636,7 @@
     "prompt": "Omskriv slik at det opprinnelige verbet blir en bar infinitiv i en ny kjede med «orker ikke å» som det finitte verbet.",
     "source": "Han vedgår ikke tapet sitt offentlig.",
     "answer": "Han orker ikke å vedgå tapet sitt offentlig.",
-    "alternates": [
-      "Han orker ikke å vedgå tapet sitt offentlig"
-    ],
+    "alternates": ["Han orker ikke å vedgå tapet sitt offentlig"],
     "hint": "«Orker» blir det nye finitte verbet i presens, nektet som vanlig, mens det opprinnelige verbet «vedgå» går over i bar infinitiv etter «å».",
     "plusOnly": true
   },
@@ -6434,9 +5648,7 @@
     "prompt": "Omskriv med en kjede der «tør ikke å» er det finitte verbet.",
     "source": "Han motstår ikke fristelsen.",
     "answer": "Han tør ikke å motstå fristelsen.",
-    "alternates": [
-      "Han tør ikke å motstå fristelsen"
-    ],
+    "alternates": ["Han tør ikke å motstå fristelsen"],
     "hint": "Det opprinnelige finitte verbet «motstår» blir den bare infinitiven «motstå» når «tør ikke å» overtar som setningens finitte verb.",
     "plusOnly": true
   },
@@ -6459,9 +5671,7 @@
       "mestring"
     ],
     "answer": "Ungdommene kan begynne å avsky skolearbeid hvis de aldri opplever mestring.",
-    "alternates": [
-      "Ungdommene kan begynne å avsky skolearbeid hvis de aldri opplever mestring"
-    ],
+    "alternates": ["Ungdommene kan begynne å avsky skolearbeid hvis de aldri opplever mestring"],
     "hint": "Det finitte modalverbet «kan» kommer rett etter subjektet, deretter fullfører «begynne å» pluss den bare infinitiven «avsky» kjeden før «hvis»-setningen.",
     "plusOnly": true
   },
@@ -6483,9 +5693,7 @@
       "konflikter"
     ],
     "answer": "Hun pleier å besinne seg for å unngå unødvendige konflikter.",
-    "alternates": [
-      "Hun pleier å besinne seg for å unngå unødvendige konflikter"
-    ],
+    "alternates": ["Hun pleier å besinne seg for å unngå unødvendige konflikter"],
     "hint": "«Pleier å» tar den bare infinitiven «besinne seg»; hensiktssetningen «for å unngå» legger deretter til en andre, selvstendig infinitiv.",
     "plusOnly": true
   },
@@ -6496,11 +5704,7 @@
     "type": "fill",
     "prompt": "Velg riktig form for å fullføre en fire-verbskjede: modalverb + «greie å» + «unngå å» + hovedinfinitiv.",
     "sentence": "Hun greier sjelden å unngå å _____ til gamle vaner når presset øker.",
-    "words": [
-      "klamre seg",
-      "klamrer seg",
-      "klamret seg"
-    ],
+    "words": ["klamre seg", "klamrer seg", "klamret seg"],
     "answer": "klamre seg",
     "hint": "Selv som det fjerde verbet i kjeden forblir «klamre seg» i bar infinitiv etter «å» – en infinitivkjede bytter ikke til presens underveis.",
     "plusOnly": true
@@ -6733,11 +5937,7 @@
     "cefr": "C",
     "type": "punctuation",
     "prompt": "Velg setningen med riktig tegnsetting.",
-    "options": [
-      "«Se opp!» ropte hun.",
-      "«Se opp,» ropte hun.",
-      "«Se opp!,» ropte hun."
-    ],
+    "options": ["«Se opp!» ropte hun.", "«Se opp,» ropte hun.", "«Se opp!,» ropte hun."],
     "answer": "«Se opp!» ropte hun.",
     "hint": "Utropstegnet avslutter sitatet på samme måte som spørsmålstegnet — ikke legg til komma i tillegg.",
     "plusOnly": true
@@ -7063,11 +6263,7 @@
     "cefr": "C",
     "type": "multiple-choice",
     "prompt": "Han strakk seg for langt etter ballen, og senen i skulderen «røk».",
-    "options": [
-      "senen sprakk / gikk i stykker",
-      "senen begynte å brenne",
-      "senen ble sterkere"
-    ],
+    "options": ["senen sprakk / gikk i stykker", "senen begynte å brenne", "senen ble sterkere"],
     "answer": "senen sprakk / gikk i stykker",
     "hint": "«Ryke» kan også bety at noe fysisk (en snor, en sene) ryker/går i stykker.",
     "plusOnly": true
@@ -7079,10 +6275,7 @@
     "type": "fill",
     "prompt": "Velg riktig verb.",
     "sentence": "Sola var så sterk at hun måtte _____ for å se stien.",
-    "words": [
-      "myse",
-      "glane"
-    ],
+    "words": ["myse", "glane"],
     "answer": "myse",
     "hint": "«Myse» betyr å se med halvlukkede øyne, ofte pga. sterkt lys, mens «glane» betyr å stirre nysgjerrig eller uhøflig på noen.",
     "plusOnly": true
@@ -7094,10 +6287,7 @@
     "type": "fill",
     "prompt": "Velg riktig verb.",
     "sentence": "Han _____ noe uforståelig i skjegget da han gikk forbi.",
-    "words": [
-      "mumlet",
-      "hvisket"
-    ],
+    "words": ["mumlet", "hvisket"],
     "answer": "mumlet",
     "hint": "«Mumle» betyr å snakke utydelig og lavt, ofte usammenhengende, mens «hviske» betyr å snakke bevisst lavt for ikke å bli hørt av andre.",
     "plusOnly": true
@@ -7109,10 +6299,7 @@
     "type": "fill",
     "prompt": "Velg riktig verb.",
     "sentence": "Den gamle mannen _____ sakte bortover gangen med tøflene sine.",
-    "words": [
-      "subbet",
-      "spankulerte"
-    ],
+    "words": ["subbet", "spankulerte"],
     "answer": "subbet",
     "hint": "«Subbe» betyr å gå sakte og slepende, mens «spankulere» betyr å gå stolt og selvsikkert.",
     "plusOnly": true
@@ -7124,10 +6311,7 @@
     "type": "fill",
     "prompt": "Velg riktig verb.",
     "sentence": "Barnet _____ av redsel da det så edderkoppen.",
-    "words": [
-      "hylte",
-      "brølte"
-    ],
+    "words": ["hylte", "brølte"],
     "answer": "hylte",
     "hint": "«Hyle» brukes ofte om et skarpt, høyt skrik av frykt eller smerte, mens «brøle» ofte brukes om en dyp, kraftig lyd.",
     "plusOnly": true
@@ -7154,10 +6338,7 @@
     "type": "fill",
     "prompt": "Velg riktig verb.",
     "sentence": "Han _____ seg før han begynte talen, for å rydde stemmen.",
-    "words": [
-      "harket",
-      "hostet"
-    ],
+    "words": ["harket", "hostet"],
     "answer": "harket",
     "hint": "«Harke» betyr å rydde halsen med en grov lyd før man snakker, mens «hoste» er en ufrivillig reaksjon, ofte ved forkjølelse.",
     "plusOnly": true
@@ -7184,11 +6365,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «ha bein i nesen».",
     "sentence": "For å lykkes som gründer må du ha bein _____ nesen.",
-    "words": [
-      "i",
-      "på",
-      "til"
-    ],
+    "words": ["i", "på", "til"],
     "answer": "i",
     "hint": "«Ha bein i nesen» (være tøff og bestemt) tar alltid «i», aldri «på» eller «til».",
     "plusOnly": true
@@ -7200,11 +6377,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «gå til hodet på noen».",
     "sentence": "Vær forsiktig - all rosen kan fort gå _____ hodet på deg.",
-    "words": [
-      "til",
-      "i",
-      "over"
-    ],
+    "words": ["til", "i", "over"],
     "answer": "til",
     "hint": "«Gå til hodet på noen» (tåle suksess dårlig) tar alltid «til», aldri «i» eller «over».",
     "plusOnly": true
@@ -7216,11 +6389,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «henge med hodet».",
     "sentence": "Ikke heng _____ hodet, dette ordner seg nok!",
-    "words": [
-      "med",
-      "i",
-      "på"
-    ],
+    "words": ["med", "i", "på"],
     "answer": "med",
     "hint": "«Henge med hodet» (være trist eller motløs) tar alltid «med», aldri «i» eller «på».",
     "plusOnly": true
@@ -7230,20 +6399,9 @@
     "topic": "preposisjoner-kroppsdel-uttrykk",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Hun",
-      "har",
-      "satt",
-      "seg",
-      "denne",
-      "ideen",
-      "i",
-      "hodet"
-    ],
+    "tokens": ["Hun", "har", "satt", "seg", "denne", "ideen", "i", "hodet"],
     "answer": "Hun har satt seg denne ideen i hodet.",
-    "alternates": [
-      "Hun har satt seg denne ideen i hodet"
-    ],
+    "alternates": ["Hun har satt seg denne ideen i hodet"],
     "hint": "«Sette seg noe i hodet» (få en fiks idé) tar alltid «i» foran «hodet».",
     "plusOnly": true
   },
@@ -7277,11 +6435,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «få et stramt drag om munnen».",
     "sentence": "Hun fikk et stramt drag _____ munnen da hun leste den frekke meldingen.",
-    "words": [
-      "om",
-      "i",
-      "på"
-    ],
+    "words": ["om", "i", "på"],
     "answer": "om",
     "hint": "«Få et stramt drag om munnen» (vise at man er fornærmet) tar alltid «om», aldri «i» eller «på».",
     "plusOnly": true
@@ -7293,11 +6447,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «det stikker noe under».",
     "sentence": "Hun ble mistenksom - det stakk tydeligvis noe _____.",
-    "words": [
-      "under",
-      "over",
-      "bak"
-    ],
+    "words": ["under", "over", "bak"],
     "answer": "under",
     "hint": "«Det stikker noe under» (noe er ikke som det skal være) tar alltid «under», aldri «over» eller «bak».",
     "plusOnly": true
@@ -7309,11 +6459,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «handle i ørska».",
     "sentence": "Etter nattevakten handlet han helt _____ ørska og glemte alt.",
-    "words": [
-      "i",
-      "på",
-      "av"
-    ],
+    "words": ["i", "på", "av"],
     "answer": "i",
     "hint": "«Handle i ørska» (være fjern og forvirret) tar alltid «i», aldri «på» eller «av».",
     "plusOnly": true
@@ -7325,11 +6471,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «rase gjennom taket».",
     "sentence": "Den råtne bjelken ga etter, og gutten raste _____ taket.",
-    "words": [
-      "gjennom",
-      "over",
-      "ned"
-    ],
+    "words": ["gjennom", "over", "ned"],
     "answer": "gjennom",
     "hint": "«Rase gjennom taket» (falle plutselig gjennom) tar alltid «gjennom», aldri «over» eller «ned».",
     "plusOnly": true
@@ -7341,11 +6483,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «stille opp for noen».",
     "sentence": "Naboene stilte opp _____ familien da huset brant ned.",
-    "words": [
-      "for",
-      "med",
-      "til"
-    ],
+    "words": ["for", "med", "til"],
     "answer": "for",
     "hint": "«Stille opp for noen» (støtte noen) tar alltid «for», aldri «med» eller «til».",
     "plusOnly": true
@@ -7357,11 +6495,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «være i stemning til».",
     "sentence": "Jeg er rett og slett ikke _____ stemning til å feire i kveld.",
-    "words": [
-      "i",
-      "på",
-      "til"
-    ],
+    "words": ["i", "på", "til"],
     "answer": "i",
     "hint": "«Være i stemning til» (være i humør til) tar alltid «i», aldri «på» eller «til».",
     "plusOnly": true
@@ -7373,11 +6507,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «ha ingenting til overs for noe».",
     "sentence": "Direktøren har ingenting til overs _____ dårlig oppførsel blant de ansatte.",
-    "words": [
-      "for",
-      "med",
-      "av"
-    ],
+    "words": ["for", "med", "av"],
     "answer": "for",
     "hint": "«Ha ingenting til overs for noe» (mislike noe sterkt) tar alltid «for», aldri «med» eller «av».",
     "plusOnly": true
@@ -7389,11 +6519,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «føle seg tappet for krefter».",
     "sentence": "Etter nattevakten følte hun seg helt tappet _____ krefter.",
-    "words": [
-      "for",
-      "av",
-      "med"
-    ],
+    "words": ["for", "av", "med"],
     "answer": "for",
     "hint": "«Føle seg tappet for krefter» (være utmattet) tar alltid «for», aldri «av» eller «med».",
     "plusOnly": true
@@ -7405,11 +6531,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «sveve på en rosa sky».",
     "sentence": "De nyforelskede svevde _____ en rosa sky de første ukene.",
-    "words": [
-      "på",
-      "i",
-      "over"
-    ],
+    "words": ["på", "i", "over"],
     "answer": "på",
     "hint": "«Sveve på en rosa sky» (bare fokusere på det fine i livet) tar alltid «på», aldri «i» eller «over».",
     "plusOnly": true
@@ -7444,11 +6566,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «være besatt av en tanke».",
     "sentence": "Etter drømmen var han fullstendig besatt _____ tanken på å flytte til utlandet.",
-    "words": [
-      "av",
-      "i",
-      "med"
-    ],
+    "words": ["av", "i", "med"],
     "answer": "av",
     "hint": "«Være besatt av en tanke» (være svært opptatt av en idé) tar alltid «av», aldri «i» eller «med».",
     "plusOnly": true
@@ -7460,11 +6578,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «sitte med armene i kors».",
     "sentence": "Hvorfor sitter du der med armene _____ kors og ser sur ut?",
-    "words": [
-      "i",
-      "på",
-      "over"
-    ],
+    "words": ["i", "på", "over"],
     "answer": "i",
     "hint": "«Sitte med armene i kors» (sitte passivt/avvisende med krysset armer) tar alltid «i», aldri «på» eller «over».",
     "plusOnly": true
@@ -7499,11 +6613,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «det kom noe på».",
     "sentence": "Det kom noe _____ i går, så jeg kunne ikke komme likevel.",
-    "words": [
-      "på",
-      "i",
-      "over"
-    ],
+    "words": ["på", "i", "over"],
     "answer": "på",
     "hint": "«Det kom noe på» (noe uforutsett skjedde) tar alltid «på», aldri «i» eller «over».",
     "plusOnly": true
@@ -7515,11 +6625,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «la noe gå på omgang».",
     "sentence": "De lot boken gå _____ omgang mellom seg i klassen.",
-    "words": [
-      "på",
-      "i",
-      "til"
-    ],
+    "words": ["på", "i", "til"],
     "answer": "på",
     "hint": "«Gå på omgang» (bli byttet på å bruke) tar alltid «på», aldri «i» eller «til».",
     "plusOnly": true
@@ -7531,11 +6637,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «komme på avveie».",
     "sentence": "Nøkkelen kom _____ avveie under flyttingen.",
-    "words": [
-      "på",
-      "i",
-      "av"
-    ],
+    "words": ["på", "i", "av"],
     "answer": "på",
     "hint": "«Komme på avveie» (forsvinne/gå tapt) tar alltid «på», aldri «i» eller «av».",
     "plusOnly": true
@@ -7547,11 +6649,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «være på gyngende grunn».",
     "sentence": "Etter det han sa i møtet, følte han seg _____ gyngende grunn.",
-    "words": [
-      "på",
-      "i",
-      "over"
-    ],
+    "words": ["på", "i", "over"],
     "answer": "på",
     "hint": "«Være på gyngende grunn» (være usikker) tar alltid «på», aldri «i» eller «over».",
     "plusOnly": true
@@ -7563,11 +6661,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «satse på feil hest».",
     "sentence": "Investorene satset _____ feil hest og tapte alle pengene.",
-    "words": [
-      "på",
-      "i",
-      "med"
-    ],
+    "words": ["på", "i", "med"],
     "answer": "på",
     "hint": "«Satse på feil hest» (ta et feil valg) tar alltid «på», aldri «i» eller «med».",
     "plusOnly": true
@@ -7579,11 +6673,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «kjefte på noen».",
     "sentence": "Hun er ikke sen om å kjefte _____ naboer hvis det er på sin plass.",
-    "words": [
-      "på",
-      "til",
-      "mot"
-    ],
+    "words": ["på", "til", "mot"],
     "answer": "på",
     "hint": "«Kjefte på noen» (skjenne/kritisere hardt) tar alltid «på», aldri «til» eller «mot».",
     "plusOnly": true
@@ -7595,11 +6685,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «det er på sin plass».",
     "sentence": "En takketale er _____ sin plass etter en slik prestasjon.",
-    "words": [
-      "på",
-      "i",
-      "til"
-    ],
+    "words": ["på", "i", "til"],
     "answer": "på",
     "hint": "«Det er på sin plass» (det er passende) tar alltid «på», aldri «i» eller «til».",
     "plusOnly": true
@@ -7611,11 +6697,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «ligge fint til».",
     "sentence": "Huset ligger fint _____, like ved skogen.",
-    "words": [
-      "til",
-      "på",
-      "ved"
-    ],
+    "words": ["til", "på", "ved"],
     "answer": "til",
     "hint": "«Ligge fint til» (ha bra beliggenhet) tar alltid «til», aldri «på» eller «ved».",
     "plusOnly": true
@@ -7627,11 +6709,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «være delaktig i».",
     "sentence": "Han vil ikke innrømme at han var delaktig _____ planen.",
-    "words": [
-      "i",
-      "på",
-      "med"
-    ],
+    "words": ["i", "på", "med"],
     "answer": "i",
     "hint": "«Være delaktig i» (være en del av noe) tar alltid «i», aldri «på» eller «med».",
     "plusOnly": true
@@ -7643,11 +6721,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «tre støttende til».",
     "sentence": "Naboene trådte støttende _____ da familien mistet huset sitt.",
-    "words": [
-      "til",
-      "i",
-      "på"
-    ],
+    "words": ["til", "i", "på"],
     "answer": "til",
     "hint": "«Tre støttende til» (komme og hjelpe) tar alltid «til», aldri «i» eller «på».",
     "plusOnly": true
@@ -7659,11 +6733,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «tre ut av kraft».",
     "sentence": "Fra og med i morgen trer den gamle loven ut _____ kraft.",
-    "words": [
-      "av",
-      "i",
-      "på"
-    ],
+    "words": ["av", "i", "på"],
     "answer": "av",
     "hint": "«Tre ut av kraft» (slutte å gjelde) tar alltid «av», aldri «i» eller «på».",
     "plusOnly": true
@@ -7675,11 +6745,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «gå opp i røyk».",
     "sentence": "Alt arbeidet de hadde lagt ned, gikk opp _____ røyk da prosjektet ble kansellert.",
-    "words": [
-      "i",
-      "på",
-      "med"
-    ],
+    "words": ["i", "på", "med"],
     "answer": "i",
     "hint": "«Gå opp i røyk» (forsvinne/bli borte) tar alltid «i», aldri «på» eller «med».",
     "plusOnly": true
@@ -7691,11 +6757,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «bomme på oppgaven».",
     "sentence": "Han bommet fullstendig _____ oppgaven under eksamen.",
-    "words": [
-      "på",
-      "i",
-      "med"
-    ],
+    "words": ["på", "i", "med"],
     "answer": "på",
     "hint": "«Bomme på oppgaven» (svare helt feil) tar alltid «på», aldri «i» eller «med».",
     "plusOnly": true
@@ -7718,11 +6780,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «gå god for noen».",
     "sentence": "Kan du gå god _____ meg overfor sjefen?",
-    "words": [
-      "for",
-      "på",
-      "med"
-    ],
+    "words": ["for", "på", "med"],
     "answer": "for",
     "hint": "«Gå god for noen» (garantere for noen) tar alltid «for», aldri «på» eller «med».",
     "plusOnly": true
@@ -7746,11 +6804,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «ha rykte på seg».",
     "sentence": "Han har rykte _____ seg for å alltid komme for sent.",
-    "words": [
-      "på",
-      "i",
-      "til"
-    ],
+    "words": ["på", "i", "til"],
     "answer": "på",
     "hint": "«Ha rykte på seg» (ha et bestemt omdømme) tar alltid «på», aldri «i» eller «til».",
     "plusOnly": true
@@ -7762,11 +6816,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «gå under et navn».",
     "sentence": "Hun går _____ navnet «Zita», selv om fødselsattesten sier noe annet.",
-    "words": [
-      "under",
-      "med",
-      "på"
-    ],
+    "words": ["under", "med", "på"],
     "answer": "under",
     "hint": "«Gå under et navn» (bruke et annet navn) tar alltid «under», aldri «med» eller «på».",
     "plusOnly": true
@@ -7777,23 +6827,9 @@
     "cefr": "C",
     "type": "order",
     "prompt": "Sett ordene i riktig rekkefølge, med det faste uttrykket «ha retten på sin side» (V2-ordstilling).",
-    "tokens": [
-      "Hun",
-      "visste",
-      "at",
-      "hun",
-      "hadde",
-      "retten",
-      "på",
-      "sin",
-      "side",
-      "i",
-      "saken"
-    ],
+    "tokens": ["Hun", "visste", "at", "hun", "hadde", "retten", "på", "sin", "side", "i", "saken"],
     "answer": "Hun visste at hun hadde retten på sin side i saken.",
-    "alternates": [
-      "Hun visste at hun hadde retten på sin side i saken"
-    ],
+    "alternates": ["Hun visste at hun hadde retten på sin side i saken"],
     "hint": "«Ha retten på sin side» (være den som har rett juridisk sett) tar alltid «på».",
     "plusOnly": true
   },
@@ -7804,11 +6840,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «ty til flaska».",
     "sentence": "Etter skilsmissen tydde han _____ flaska.",
-    "words": [
-      "til",
-      "i",
-      "på"
-    ],
+    "words": ["til", "i", "på"],
     "answer": "til",
     "hint": "«Ty til flaska» (begynne å drikke for mye) tar alltid «til», aldri «i» eller «på».",
     "plusOnly": true
@@ -7831,11 +6863,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «sette noe i vrangstrupen».",
     "sentence": "Kritikken fra sjefen satte seg virkelig _____ vrangstrupen hans.",
-    "words": [
-      "i",
-      "på",
-      "til"
-    ],
+    "words": ["i", "på", "til"],
     "answer": "i",
     "hint": "«Sette seg i vrangstrupen» (være vanskelig å akseptere eller svelge) tar alltid «i», aldri «på» eller «til».",
     "plusOnly": true
@@ -7858,11 +6886,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «stå i ledtog med».",
     "sentence": "Politiet mistenkte at vaktmesteren sto _____ ledtog med tyvene.",
-    "words": [
-      "i",
-      "på",
-      "til"
-    ],
+    "words": ["i", "på", "til"],
     "answer": "i",
     "hint": "«Stå i ledtog med» (samarbeide hemmelig med, ofte om noe ulovlig) tar alltid «i», aldri «på» eller «til».",
     "plusOnly": true
@@ -7874,11 +6898,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «holde med noen».",
     "sentence": "I diskusjonen holdt de fleste _____ ham, ikke med motparten.",
-    "words": [
-      "med",
-      "på",
-      "for"
-    ],
+    "words": ["med", "på", "for"],
     "answer": "med",
     "hint": "«Holde med noen» (støtte noens side i en uenighet) tar alltid «med», aldri «på» eller «for».",
     "plusOnly": true
@@ -7890,11 +6910,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «holde av noen».",
     "sentence": "Til tross for alt som har skjedd, holder hun fortsatt _____ ham.",
-    "words": [
-      "av",
-      "på",
-      "til"
-    ],
+    "words": ["av", "på", "til"],
     "answer": "av",
     "hint": "«Holde av noen» (være glad i noen) tar alltid «av», aldri «på» eller «til».",
     "plusOnly": true
@@ -7918,9 +6934,7 @@
       "teknologiutviklingen"
     ],
     "answer": "Bedriften klarte ikke å holde tritt med den raske teknologiutviklingen.",
-    "alternates": [
-      "Bedriften klarte ikke å holde tritt med den raske teknologiutviklingen"
-    ],
+    "alternates": ["Bedriften klarte ikke å holde tritt med den raske teknologiutviklingen"],
     "hint": "«Holde tritt med» (følge samme tempo som) tar alltid «med», aldri «på» eller «til».",
     "plusOnly": true
   },
@@ -7931,11 +6945,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «rå over noe».",
     "sentence": "Kongen rådde _____ enorme landområder på den tiden.",
-    "words": [
-      "over",
-      "på",
-      "til"
-    ],
+    "words": ["over", "på", "til"],
     "answer": "over",
     "hint": "«Rå over noe» (ha kontroll eller herredømme over noe) tar alltid «over», aldri «på» eller «til».",
     "plusOnly": true
@@ -7958,11 +6968,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «være fortrolig med noe».",
     "sentence": "Etter mange år i faget er hun svært fortrolig _____ regelverket.",
-    "words": [
-      "med",
-      "på",
-      "i"
-    ],
+    "words": ["med", "på", "i"],
     "answer": "med",
     "hint": "«Være fortrolig med noe» (kjenne noe godt) tar alltid «med», aldri «på» eller «i».",
     "plusOnly": true
@@ -7974,11 +6980,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «slippe fra en ulykke».",
     "sentence": "Han slapp _____ ulykken med bare noen skrammer.",
-    "words": [
-      "fra",
-      "av",
-      "til"
-    ],
+    "words": ["fra", "av", "til"],
     "answer": "fra",
     "hint": "«Slippe fra en ulykke» (overleve eller unnslippe uten store skader) tar alltid «fra», aldri «av» eller «til».",
     "plusOnly": true
@@ -7990,11 +6992,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «slippe opp for noe».",
     "sentence": "Vi slapp opp _____ bensin midt på motorveien.",
-    "words": [
-      "for",
-      "av",
-      "med"
-    ],
+    "words": ["for", "av", "med"],
     "answer": "for",
     "hint": "«Slippe opp for noe» (gå tom for noe) tar alltid «for», aldri «av» eller «med».",
     "plusOnly": true
@@ -8006,11 +7004,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «se opp for noe».",
     "sentence": "Se opp _____ glatt fortau når det er kaldt ute!",
-    "words": [
-      "for",
-      "med",
-      "til"
-    ],
+    "words": ["for", "med", "til"],
     "answer": "for",
     "hint": "«Se opp for noe» (være forsiktig med noe) tar alltid «for», aldri «med» eller «til».",
     "plusOnly": true
@@ -8022,11 +7016,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «ta høyde for».",
     "sentence": "Budsjettet må ta høyde _____ uforutsette utgifter.",
-    "words": [
-      "for",
-      "til",
-      "med"
-    ],
+    "words": ["for", "til", "med"],
     "answer": "for",
     "hint": "«Ta høyde for noe» (regne med eller ta hensyn til noe) tar alltid «for», aldri «til» eller «med».",
     "plusOnly": true
@@ -8049,11 +7039,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «støte på noen».",
     "sentence": "Jeg støtte helt tilfeldig _____ en gammel skolekamerat på flyplassen.",
-    "words": [
-      "på",
-      "til",
-      "i"
-    ],
+    "words": ["på", "til", "i"],
     "answer": "på",
     "hint": "«Støte på noen» (møte noen tilfeldig) tar alltid «på», aldri «til» eller «i».",
     "plusOnly": true
@@ -8078,9 +7064,7 @@
       "gangen"
     ],
     "answer": "Hun visste at hun hadde alle odds mot seg denne gangen.",
-    "alternates": [
-      "Hun visste at hun hadde alle odds mot seg denne gangen"
-    ],
+    "alternates": ["Hun visste at hun hadde alle odds mot seg denne gangen"],
     "hint": "«Ha alle odds mot seg» (ha svært liten sjanse til å lykkes) tar alltid «mot».",
     "plusOnly": true
   },
@@ -8103,11 +7087,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «holde på en hemmelighet».",
     "sentence": "Hun klarte ikke å holde _____ hemmeligheten lenger.",
-    "words": [
-      "på",
-      "med",
-      "i"
-    ],
+    "words": ["på", "med", "i"],
     "answer": "på",
     "hint": "«Holde på en hemmelighet» (bevare en hemmelighet) tar alltid «på», aldri «med» eller «i».",
     "plusOnly": true
@@ -8119,11 +7099,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «gjøre tjeneste til sjøs».",
     "sentence": "Bestefaren hans gjorde tjeneste _____ sjøs i mange år.",
-    "words": [
-      "til",
-      "på",
-      "i"
-    ],
+    "words": ["til", "på", "i"],
     "answer": "til",
     "hint": "«Gjøre tjeneste til sjøs» (tjenestegjøre om bord på et skip) tar alltid «til», aldri «på» eller «i».",
     "plusOnly": true
@@ -8146,11 +7122,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «pille noen på nesen».",
     "sentence": "Jeg lar meg ikke overkjøre - ingen skal få pille meg _____ nesen!",
-    "words": [
-      "på",
-      "i",
-      "til"
-    ],
+    "words": ["på", "i", "til"],
     "answer": "på",
     "hint": "«Pille noen på nesen» (kritisere eller irettesette noen) tar alltid «på», aldri «i» eller «til».",
     "plusOnly": true
@@ -8162,11 +7134,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «være en klamp om foten på noen».",
     "sentence": "Den gamle bilen var blitt en klamp _____ foten for hele familien.",
-    "words": [
-      "om",
-      "på",
-      "i"
-    ],
+    "words": ["om", "på", "i"],
     "answer": "om",
     "hint": "«Være en klamp om foten» (være en belastning eller hindring) tar alltid «om», aldri «på» eller «i».",
     "plusOnly": true
@@ -8178,11 +7146,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «få fingeren ut».",
     "sentence": "Nå må du få fingeren _____, ellers rekker vi ikke fristen.",
-    "words": [
-      "ut",
-      "av",
-      "fra"
-    ],
+    "words": ["ut", "av", "fra"],
     "answer": "ut",
     "hint": "«Få fingeren ut» (slutte å nøle og komme i gang) tar alltid «ut», aldri «av» eller «fra».",
     "plusOnly": true
@@ -8194,11 +7158,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «rette ut beinet».",
     "sentence": "Han rettet _____ beinet forsiktig etter den lange flyturen.",
-    "words": [
-      "ut",
-      "opp",
-      "fra"
-    ],
+    "words": ["ut", "opp", "fra"],
     "answer": "ut",
     "hint": "«Rette ut beinet» (strekke beinet rett) tar alltid «ut», aldri «opp» eller «fra».",
     "plusOnly": true
@@ -8221,11 +7181,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «spile opp øynene».",
     "sentence": "Barna spilte _____ øynene av forbauselse da tryllekunstneren viste trikset.",
-    "words": [
-      "opp",
-      "ut",
-      "fra"
-    ],
+    "words": ["opp", "ut", "fra"],
     "answer": "opp",
     "hint": "«Spile opp øynene» (åpne øynene vidt av overraskelse) tar alltid «opp», aldri «ut» eller «fra».",
     "plusOnly": true
@@ -8237,11 +7193,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «gå for lut og kaldt vann».",
     "sentence": "Etter skilsmissen følte hun at hun måtte gå _____ lut og kaldt vann.",
-    "words": [
-      "for",
-      "i",
-      "til"
-    ],
+    "words": ["for", "i", "til"],
     "answer": "for",
     "hint": "«Gå for lut og kaldt vann» (bli neglisjert eller overlatt til seg selv) tar alltid «for», aldri «i» eller «til».",
     "plusOnly": true
@@ -8253,11 +7205,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «forstå rekkevidden av noe».",
     "sentence": "Ingen forsto rekkevidden _____ avgjørelsen før flere år senere.",
-    "words": [
-      "av",
-      "til",
-      "i"
-    ],
+    "words": ["av", "til", "i"],
     "answer": "av",
     "hint": "«Forstå rekkevidden av noe» (forstå de fulle konsekvensene) tar alltid «av», aldri «til» eller «i».",
     "plusOnly": true
@@ -8269,11 +7217,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «avstå fra noe».",
     "sentence": "Han valgte å avstå _____ å kommentere saken offentlig.",
-    "words": [
-      "fra",
-      "av",
-      "til"
-    ],
+    "words": ["fra", "av", "til"],
     "answer": "fra",
     "hint": "«Avstå fra noe» (la være å gjøre noe) tar alltid «fra», aldri «av» eller «til».",
     "plusOnly": true
@@ -8285,11 +7229,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «være en hemsko for noen».",
     "sentence": "Den gamle datamaskinen var blitt en hemsko _____ hele avdelingen.",
-    "words": [
-      "for",
-      "til",
-      "på"
-    ],
+    "words": ["for", "til", "på"],
     "answer": "for",
     "hint": "«Være en hemsko for noen» (være en hindring eller belastning) tar alltid «for», aldri «til» eller «på».",
     "plusOnly": true
@@ -8312,11 +7252,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «slå ned på noe».",
     "sentence": "Politiet lovet å slå ned _____ narkotikasalg i sentrum.",
-    "words": [
-      "på",
-      "til",
-      "i"
-    ],
+    "words": ["på", "til", "i"],
     "answer": "på",
     "hint": "«Slå ned på noe» (reagere strengt mot noe) tar alltid «på», aldri «til» eller «i».",
     "plusOnly": true
@@ -8328,11 +7264,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «leve opp til noe».",
     "sentence": "Han følte at han aldri klarte å leve opp _____ farens forventninger.",
-    "words": [
-      "til",
-      "mot",
-      "for"
-    ],
+    "words": ["til", "mot", "for"],
     "answer": "til",
     "hint": "«Leve opp til noe» (oppfylle forventninger) tar alltid «til», aldri «mot» eller «for».",
     "plusOnly": true
@@ -8355,9 +7287,7 @@
       "saken"
     ],
     "answer": "Journalisten rettet krass kritikk mot kommunens håndtering av saken.",
-    "alternates": [
-      "Journalisten rettet krass kritikk mot kommunens håndtering av saken"
-    ],
+    "alternates": ["Journalisten rettet krass kritikk mot kommunens håndtering av saken"],
     "hint": "«Rette krass kritikk mot noen» (kritisere noen skarpt) tar alltid «mot».",
     "plusOnly": true
   },
@@ -8368,11 +7298,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «føle seg støtt av noe».",
     "sentence": "Hun følte seg dypt støtt _____ kommentaren hans.",
-    "words": [
-      "av",
-      "fra",
-      "i"
-    ],
+    "words": ["av", "fra", "i"],
     "answer": "av",
     "hint": "«Føle seg støtt av noe» (bli fornærmet) tar alltid «av», aldri «fra» eller «i».",
     "plusOnly": true
@@ -8396,11 +7322,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «bestride riktigheten av noe».",
     "sentence": "Advokaten bestred riktigheten _____ vitneforklaringen.",
-    "words": [
-      "av",
-      "til",
-      "i"
-    ],
+    "words": ["av", "til", "i"],
     "answer": "av",
     "hint": "«Bestride riktigheten av noe» (sette spørsmålstegn ved om noe stemmer) tar alltid «av», aldri «til» eller «i».",
     "plusOnly": true
@@ -8412,11 +7334,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «være hevet over tvil».",
     "sentence": "Bevisene var hevet _____ enhver tvil.",
-    "words": [
-      "over",
-      "fra",
-      "i"
-    ],
+    "words": ["over", "fra", "i"],
     "answer": "over",
     "hint": "«Være hevet over tvil» (være helt sikkert) tar alltid «over», aldri «fra» eller «i».",
     "plusOnly": true
@@ -8439,11 +7357,7 @@
     "type": "fill",
     "prompt": "Velg riktig preposisjon for det faste uttrykket «kjempe mot gråten».",
     "sentence": "Hun kjempet _____ gråten da hun holdt talen.",
-    "words": [
-      "mot",
-      "med",
-      "over"
-    ],
+    "words": ["mot", "med", "over"],
     "answer": "mot",
     "hint": "«Kjempe mot gråten» (prøve å ikke gråte) tar alltid «mot», aldri «med» eller «over».",
     "plusOnly": true
@@ -8469,11 +7383,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
     "sentence": "Hvis han hadde forstått rekkevidden av avgjørelsen, _____ han aldri ha signert kontrakten.",
-    "words": [
-      "ville",
-      "skulle",
-      "har"
-    ],
+    "words": ["ville", "skulle", "har"],
     "answer": "ville",
     "hint": "2. kondisjonalis: ville + ha + perfektum partisipp (ha signert) uttrykker det kontrafaktiske utfallet.",
     "plusOnly": true
@@ -8528,11 +7438,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
     "sentence": "Om han hadde vist en mer upålitelig forteller respekt, _____ historien hans blitt trodd.",
-    "words": [
-      "ville",
-      "skulle",
-      "hadde"
-    ],
+    "words": ["ville", "skulle", "hadde"],
     "answer": "ville",
     "hint": "2. kondisjonalis: ville + ha/bli + perfektum partisipp uttrykker det kontrafaktiske utfallet.",
     "plusOnly": true
@@ -8545,9 +7451,7 @@
     "prompt": "Omskriv som en kontrafaktisk setning med «Om … hadde …, ville … ha …».",
     "source": "De forstod ikke rekkevidden av krisen, og de tok ingen forholdsregler.",
     "answer": "Om de hadde forstått rekkevidden av krisen, ville de ha tatt forholdsregler.",
-    "alternates": [
-      "Om de hadde forstått rekkevidden av krisen, hadde de tatt forholdsregler."
-    ],
+    "alternates": ["Om de hadde forstått rekkevidden av krisen, hadde de tatt forholdsregler."],
     "hint": "Om + hadde forstått (pluskvamperfektum) angir den uvirkelige betingelsen; ville + ha + tatt gir det kontrafaktiske resultatet.",
     "plusOnly": true
   },
@@ -8571,9 +7475,7 @@
     "prompt": "Omskriv som en kontrafaktisk setning med pluskvamperfektum og 2. kondisjonalis.",
     "source": "Vi våget ikke å ta sjansen, og vi vant ingenting den kvelden.",
     "answer": "Hvis vi hadde våget å ta sjansen, ville vi ha vunnet noe den kvelden.",
-    "alternates": [
-      "Hvis vi hadde våget å ta sjansen, hadde vi vunnet noe den kvelden."
-    ],
+    "alternates": ["Hvis vi hadde våget å ta sjansen, hadde vi vunnet noe den kvelden."],
     "hint": "Hvis + hadde våget (pluskvamperfektum) setter opp betingelsen; ville + ha + vunnet gir det kontrafaktiske resultatet. «Den som intet våger, intet vinner» er ordtaket bak setningen.",
     "plusOnly": true
   },
@@ -8584,11 +7486,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
     "sentence": "Hvis hun hadde vært sjeleglad for barnebarnas besøk, _____ hun ha smilt gjennom hele middagen.",
-    "words": [
-      "ville",
-      "skulle",
-      "er"
-    ],
+    "words": ["ville", "skulle", "er"],
     "answer": "ville",
     "hint": "2. kondisjonalis: ville + ha + perfektum partisipp (ha smilt) uttrykker det kontrafaktiske utfallet.",
     "plusOnly": true
@@ -8627,9 +7525,7 @@
       "annerledes"
     ],
     "answer": "Om de hadde forstått bæret av situasjonen, ville de ha reagert annerledes.",
-    "alternates": [
-      "Om de hadde forstått bæret av situasjonen ville de ha reagert annerledes"
-    ],
+    "alternates": ["Om de hadde forstått bæret av situasjonen ville de ha reagert annerledes"],
     "hint": "Om + pluskvamperfektum (hadde forstått) angir betingelsen; ville + ha + reagert gir det kontrafaktiske resultatet.",
     "plusOnly": true
   },
@@ -8654,11 +7550,7 @@
     "type": "fill",
     "prompt": "Velg riktig 2. kondisjonalis-form (kontrafaktisk resultat).",
     "sentence": "Hvis de hadde vært glad til sinns hele reisen, _____ de aldri ha klaget over været.",
-    "words": [
-      "ville",
-      "skulle",
-      "kan"
-    ],
+    "words": ["ville", "skulle", "kan"],
     "answer": "ville",
     "hint": "2. kondisjonalis: ville + ha + perfektum partisipp (ha klaget) uttrykker det kontrafaktiske utfallet.",
     "plusOnly": true
@@ -8710,11 +7602,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform av «skjære» (i betydningen: gi et visst preg/lys over noe).",
     "sentence": "Et nostalgisk _____ lå over hele barndomshjemmet da hun kom tilbake.",
-    "words": [
-      "skjær",
-      "skjæring",
-      "skåret"
-    ],
+    "words": ["skjær", "skjæring", "skåret"],
     "answer": "skjær",
     "hint": "Substantivet «et skjær» betyr her et bestemt lys eller preg som legger seg over noe — minnene ligger badet i et nostalgisk skjær.",
     "plusOnly": true
@@ -8726,11 +7614,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig ord fra samme ordfamilie som «skjær» (denne gangen i betydningen: en skår/demper i gleden).",
     "sentence": "Nyheten var en _____ i gleden — nå ble alle likevel litt bekymret.",
-    "words": [
-      "skjær",
-      "skjæring",
-      "skjærende"
-    ],
+    "words": ["skjær", "skjæring", "skjærende"],
     "answer": "skjær",
     "hint": "«Et skjær i gleden» er et fast uttrykk for noe som demper en ellers god stemning.",
     "plusOnly": true
@@ -8757,11 +7641,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig superlativform av «grufull».",
     "sentence": "Synet som møtte dem, var det aller _____ de hadde opplevd.",
-    "words": [
-      "grufulleste",
-      "grufullere",
-      "gru"
-    ],
+    "words": ["grufulleste", "grufullere", "gru"],
     "answer": "grufulleste",
     "hint": "Adjektivet «grufull» bøyes regelrett: grufull – grufullere – grufulleste.",
     "plusOnly": true
@@ -8773,11 +7653,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «grufull» (skrekk og …).",
     "sentence": "Skrekk og _____! Katastrofen var et faktum.",
-    "words": [
-      "gru",
-      "grusomhet",
-      "grufullhet"
-    ],
+    "words": ["gru", "grusomhet", "grufullhet"],
     "answer": "gru",
     "hint": "«Skrekk og gru» er et fast uttrykk der substantivet «gru» (redsel) er roten til adjektivet «grufull».",
     "plusOnly": true
@@ -8789,11 +7665,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig verbform av «fnisende» (partisippformen av verbet).",
     "sentence": "Jentene _____ hele veien til skolen og klarte ikke å stoppe.",
-    "words": [
-      "fniste",
-      "fnisende",
-      "fnis"
-    ],
+    "words": ["fniste", "fnisende", "fnis"],
     "answer": "fniste",
     "hint": "Preteritum av verbet «å fnise» er «fniste»; «fnisende» er presens partisipp brukt som adjektiv.",
     "plusOnly": true
@@ -8805,11 +7677,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «gynge».",
     "sentence": "Han kjente en _____ følelse i kroppen lenge etter turen på det gyngende dekket.",
-    "words": [
-      "gyngende",
-      "gynging",
-      "gynge"
-    ],
+    "words": ["gyngende", "gynging", "gynge"],
     "answer": "gyngende",
     "hint": "Presens partisipp «gyngende» brukes her som adjektiv foran substantivet «følelse».",
     "plusOnly": true
@@ -8832,11 +7700,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «spikret» (verbet «å slå spiker»).",
     "sentence": "Etter all _____ satt hun igjen med bare en blå tommel.",
-    "words": [
-      "spikringen",
-      "spikret",
-      "spikre"
-    ],
+    "words": ["spikringen", "spikret", "spikre"],
     "answer": "spikringen",
     "hint": "Substantivet av verbet «å spikre» dannes med «-ing»: spikre → spikring.",
     "plusOnly": true
@@ -8848,11 +7712,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «har gnagd» (om dårlig samvittighet).",
     "sentence": "All den _____ gikk til slutt utover nattesøvnen hans.",
-    "words": [
-      "gnagingen",
-      "gnaget",
-      "gnage"
-    ],
+    "words": ["gnagingen", "gnaget", "gnage"],
     "answer": "gnagingen",
     "hint": "Verbet «å gnage» danner substantivet «gnaging» med «-ing»; her i bestemt form «gnagingen».",
     "plusOnly": true
@@ -8864,11 +7724,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig verbform (infinitiv) i ordfamilien til «forsonende».",
     "sentence": "Han ønsket å _____ med sin gamle venn før det var for sent.",
-    "words": [
-      "forsone seg",
-      "forsoning",
-      "forsonlig"
-    ],
+    "words": ["forsone seg", "forsoning", "forsonlig"],
     "answer": "forsone seg",
     "hint": "Verbet «å forsone seg» (med noen) er roten til adjektivet «forsonende» og substantivet «forsoning».",
     "plusOnly": true
@@ -8880,11 +7736,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «forsonende».",
     "sentence": "Etter mange års konflikt vokste det sjelden fram noen ekte _____ mellom familiene.",
-    "words": [
-      "forsoning",
-      "forsonelse",
-      "forsonende"
-    ],
+    "words": ["forsoning", "forsonelse", "forsonende"],
     "answer": "forsoning",
     "hint": "Substantivet dannes med «-ing»: forsone seg → forsoning.",
     "plusOnly": true
@@ -8907,11 +7759,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform i ordfamilien til «gjørmen» (substantivet «gjørme»).",
     "sentence": "Etter regnet ble stien helt _____, og støvlene sank ned i søla.",
-    "words": [
-      "gjørmete",
-      "gjørmen",
-      "gjørming"
-    ],
+    "words": ["gjørmete", "gjørmen", "gjørming"],
     "answer": "gjørmete",
     "hint": "Substantivet «gjørme» danner adjektivet med «-ete»: gjørme → gjørmete.",
     "plusOnly": true
@@ -8923,11 +7771,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «puffer» (verbet «å puffe»).",
     "sentence": "Han trengte bare en liten _____ i riktig retning for å komme videre.",
-    "words": [
-      "puff",
-      "puffing",
-      "puffer"
-    ],
+    "words": ["puff", "puffing", "puffer"],
     "answer": "puff",
     "hint": "Verbet «å puffe» danner substantivet «et puff».",
     "plusOnly": true
@@ -8954,11 +7798,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig ord fra ordfamilien varte opp – oppvartning.",
     "sentence": "Hun elsket å _____ gjestene sine med hjemmelaget mat hver helg.",
-    "words": [
-      "varte opp",
-      "oppvartning",
-      "oppvartet"
-    ],
+    "words": ["varte opp", "oppvartning", "oppvartet"],
     "answer": "varte opp",
     "hint": "Verbet «å varte opp» (å yte service/stelle med noen) danner substantivet «oppvartning».",
     "plusOnly": true
@@ -8981,11 +7821,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform i ordfamilien til «skjemme bort».",
     "sentence": "Barnebarna hennes var svært _____ etter alle besøkene hos bestemor.",
-    "words": [
-      "bortskjemte",
-      "skjemmende",
-      "bortskjemming"
-    ],
+    "words": ["bortskjemte", "skjemmende", "bortskjemming"],
     "answer": "bortskjemte",
     "hint": "Perfektum partisipp av «å skjemme bort» brukt som adjektiv: bortskjemt (flertall: bortskjemte).",
     "plusOnly": true
@@ -8997,11 +7833,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «gå opp» (i betydningen: bli klart, forstått).",
     "sentence": "Til slutt fikk hun en _____ opplevelse da alt gikk opp for henne på én gang.",
-    "words": [
-      "gikk opp for henne",
-      "oppgang",
-      "oppgåing"
-    ],
+    "words": ["gikk opp for henne", "oppgang", "oppgåing"],
     "answer": "gikk opp for henne",
     "hint": "Uttrykket «å gå opp for noen» (bli forstått) brukes ofte direkte, uten et eget substantiv i vanlig bruk.",
     "plusOnly": true
@@ -9024,11 +7856,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform av verbet «bite» (i betydningen: skarp, kald).",
     "sentence": "En _____ kulde møtte dem da de gikk ut av flyet.",
-    "words": [
-      "bitende",
-      "bitt",
-      "bitsk"
-    ],
+    "words": ["bitende", "bitt", "bitsk"],
     "answer": "bitende",
     "hint": "Presens partisipp «bitende» brukes som adjektiv om noe skarpt eller ekstremt kaldt/kritisk.",
     "plusOnly": true
@@ -9040,11 +7868,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «gripe».",
     "sentence": "_____ etter makten kom overraskende på alle i partiet.",
-    "words": [
-      "Grepet",
-      "Gripingen",
-      "Gripen"
-    ],
+    "words": ["Grepet", "Gripingen", "Gripen"],
     "answer": "Grepet",
     "hint": "Substantivet av «å gripe» er «et grep», ofte brukt i uttrykket «gripe etter/gripe makten».",
     "plusOnly": true
@@ -9071,11 +7895,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «smuldre opp».",
     "sentence": "Kjærligheten deres endte i en langsom _____ over flere år.",
-    "words": [
-      "oppsmuldring",
-      "smuldringen",
-      "smulder"
-    ],
+    "words": ["oppsmuldring", "smuldringen", "smulder"],
     "answer": "oppsmuldring",
     "hint": "Verbet «å smuldre opp» danner substantivet med «-ing»: smuldre opp → oppsmuldring.",
     "plusOnly": true
@@ -9087,11 +7907,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform i ordfamilien til «smuldre opp».",
     "sentence": "Kittet på det gamle vinduet var helt _____ og falt av i biter.",
-    "words": [
-      "oppsmuldret",
-      "smuldrende",
-      "smuldret"
-    ],
+    "words": ["oppsmuldret", "smuldrende", "smuldret"],
     "answer": "smuldret",
     "hint": "Perfektum partisipp av «å smuldre» brukt som adjektiv: smuldret.",
     "plusOnly": true
@@ -9103,11 +7919,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «forkle».",
     "sentence": "Bak den vennlige _____ skjulte det seg en helt annen agenda.",
-    "words": [
-      "forkledningen",
-      "forklet",
-      "forkledd"
-    ],
+    "words": ["forkledningen", "forklet", "forkledd"],
     "answer": "forkledningen",
     "hint": "Verbet «å forkle seg» danner substantivet «forkledning».",
     "plusOnly": true
@@ -9134,11 +7946,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «ransake».",
     "sentence": "Politiet gjennomførte en grundig _____ av leiligheten etter innbruddet.",
-    "words": [
-      "ransakelse",
-      "ransaking",
-      "ransaker"
-    ],
+    "words": ["ransakelse", "ransaking", "ransaker"],
     "answer": "ransakelse",
     "hint": "Verbet «å ransake» danner substantivet «ransakelse».",
     "plusOnly": true
@@ -9161,11 +7969,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «flomme».",
     "sentence": "Etter det kraftige regnet var det stor fare for _____ i dalen.",
-    "words": [
-      "flom",
-      "flomming",
-      "flommende"
-    ],
+    "words": ["flom", "flomming", "flommende"],
     "answer": "flom",
     "hint": "Verbet «å flomme» har substantivformen «en flom».",
     "plusOnly": true
@@ -9192,11 +7996,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig substantivform i ordfamilien til «trenge» (i betydningen: presse seg fram).",
     "sentence": "Han måtte gjøre en real _____ for å komme seg fram gjennom folkemengden.",
-    "words": [
-      "trengsel",
-      "trenging",
-      "trengt"
-    ],
+    "words": ["trengsel", "trenging", "trengt"],
     "answer": "trengsel",
     "hint": "Verbet «å trenge (seg)» danner substantivet «trengsel» (om det å trenge seg fram i en mengde).",
     "plusOnly": true
@@ -9208,11 +8008,7 @@
     "type": "fill",
     "prompt": "Fyll inn riktig adjektivform i ordfamilien til «trenge» (om et blikk som gransker inngående).",
     "sentence": "Faren så på henne med et _____ blikk som fikk henne til å tilstå alt.",
-    "words": [
-      "gjennomtrengende",
-      "trengende",
-      "trengt"
-    ],
+    "words": ["gjennomtrengende", "trengende", "trengt"],
     "answer": "gjennomtrengende",
     "hint": "Adjektivet «gjennomtrengende» (om blikk, lyd) er avledet av verbet «å trenge gjennom».",
     "plusOnly": true
@@ -9225,9 +8021,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "personer som tilhører samme familie",
     "answer": "familiemedlemmer",
-    "alternates": [
-      "familiemedlemmene"
-    ],
+    "alternates": ["familiemedlemmene"],
     "hint": "Familie + medlem: ingen bindes- er nødvendig, siden «familie» allerede ender på en vokal.",
     "plusOnly": true
   },
@@ -9238,11 +8032,7 @@
     "type": "fill",
     "prompt": "Velg det riktig stavede sammensatte substantivet.",
     "sentence": "Solen skinte gjennom det tunge _____ i stuen.",
-    "words": [
-      "fløyelsforhenget",
-      "fløyelforhenget",
-      "fløyels forhenget"
-    ],
+    "words": ["fløyelsforhenget", "fløyelforhenget", "fløyels forhenget"],
     "answer": "fløyelsforhenget",
     "hint": "Fløyel + s + forheng: bindes- kobler de to substantivene, og sammensetningen skrives alltid som ett ord.",
     "plusOnly": true
@@ -9255,9 +8045,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "en bolig der flere generasjoner av samme familie bor sammen",
     "answer": "en generasjonsbolig",
-    "alternates": [
-      "generasjonsbolig"
-    ],
+    "alternates": ["generasjonsbolig"],
     "hint": "Generasjon + s + bolig: bindes- etter «generasjon».",
     "plusOnly": true
   },
@@ -9268,11 +8056,7 @@
     "type": "fill",
     "prompt": "Velg det riktig stavede sammensatte substantivet.",
     "sentence": "Legene startet _____ så snart svulsten var oppdaget.",
-    "words": [
-      "cellegiftbehandlingen",
-      "cellegifts behandlingen",
-      "cellegiftsbehandlingen"
-    ],
+    "words": ["cellegiftbehandlingen", "cellegifts behandlingen", "cellegiftsbehandlingen"],
     "answer": "cellegiftbehandlingen",
     "hint": "Cellegift + behandling: ingen bindes- brukes etter «cellegift».",
     "plusOnly": true
@@ -9285,9 +8069,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "en sønn som er født som den første av søsknene i familien",
     "answer": "en førstefødt sønn",
-    "alternates": [
-      "førstefødtsønn"
-    ],
+    "alternates": ["førstefødtsønn"],
     "hint": "Førstefødt beskriver sønnen — her skrives det som to ord, siden «førstefødt» er et adjektiv foran substantivet «sønn», ikke en sammensetning.",
     "plusOnly": true
   },
@@ -9310,11 +8092,7 @@
     "type": "fill",
     "prompt": "Velg det riktig stavede sammensatte substantivet.",
     "sentence": "Pasienten måtte signere en _____ før operasjonen kunne starte.",
-    "words": [
-      "samtykkeerklæring",
-      "samtykkeserklæring",
-      "samtykke erklæring"
-    ],
+    "words": ["samtykkeerklæring", "samtykkeserklæring", "samtykke erklæring"],
     "answer": "samtykkeerklæring",
     "hint": "Samtykke + erklæring: ingen bindes- er nødvendig, siden «samtykke» allerede ender på en vokal.",
     "plusOnly": true
@@ -9327,9 +8105,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv.",
     "source": "en stor beholder som brukes til å lagre gass",
     "answer": "en gassbeholder",
-    "alternates": [
-      "gassbeholder"
-    ],
+    "alternates": ["gassbeholder"],
     "hint": "Gass + beholder: ingen bindes- er nødvendig i denne sammensetningen.",
     "plusOnly": true
   },
@@ -9338,18 +8114,9 @@
     "topic": "sammensatte-substantiv",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Prioriteringslisten",
-      "ble",
-      "diskutert",
-      "grundig",
-      "på",
-      "møtet"
-    ],
+    "tokens": ["Prioriteringslisten", "ble", "diskutert", "grundig", "på", "møtet"],
     "answer": "Prioriteringslisten ble diskutert grundig på møtet.",
-    "alternates": [
-      "Prioriteringslisten ble diskutert grundig på møtet"
-    ],
+    "alternates": ["Prioriteringslisten ble diskutert grundig på møtet"],
     "hint": "Prioritering + s + liste: bindes- etter et substantiv som ender på -ing.",
     "plusOnly": true
   },
@@ -9361,9 +8128,7 @@
     "prompt": "Skriv om beskrivelsen som ett sammensatt substantiv/adjektivuttrykk.",
     "source": "et land som er sterkt preget og ødelagt av krig",
     "answer": "et krigsherjet land",
-    "alternates": [
-      "krigsherjet land"
-    ],
+    "alternates": ["krigsherjet land"],
     "hint": "Krig + s + herjet: bindes- etter «krig», og partisippet «herjet» brukes som adjektiv foran substantivet «land».",
     "plusOnly": true
   },
@@ -9374,10 +8139,7 @@
     "type": "fill",
     "prompt": "Velg riktig form av adjektivet.",
     "sentence": "Den _____ oppdagelsen forandret hele forskningsfeltet.",
-    "words": [
-      "gedigne",
-      "gedigen"
-    ],
+    "words": ["gedigne", "gedigen"],
     "answer": "gedigne",
     "hint": "«Gedigen» mister -en foran endelsen i bestemt form: gedigen → gedigne (som åpen → åpne).",
     "plusOnly": true
@@ -9389,10 +8151,7 @@
     "type": "fill",
     "prompt": "Velg riktig komparativform av adjektivet.",
     "sentence": "Etter løpeturen var ankelen enda _____ enn dagen før.",
-    "words": [
-      "hovnere",
-      "hovenere"
-    ],
+    "words": ["hovnere", "hovenere"],
     "answer": "hovnere",
     "hint": "«Hoven» mister -en foran komparativendelsen: hoven → hovnere, ikke hovenere.",
     "plusOnly": true
@@ -9404,10 +8163,7 @@
     "type": "fill",
     "prompt": "Velg riktig superlativform av adjektivet.",
     "sentence": "Han var den _____ av alle etter nattevakten.",
-    "words": [
-      "døsigste",
-      "døsigeste"
-    ],
+    "words": ["døsigste", "døsigeste"],
     "answer": "døsigste",
     "hint": "Adjektiv på -ig tar -st, ikke -est, i superlativ: døsig → døsigst → (bestemt) døsigste.",
     "plusOnly": true
@@ -9419,10 +8175,7 @@
     "type": "fill",
     "prompt": "Velg riktig superlativform av adjektivet.",
     "sentence": "Det var det _____ smilet jeg noen gang hadde sett.",
-    "words": [
-      "hånligste",
-      "hånligeste"
-    ],
+    "words": ["hånligste", "hånligeste"],
     "answer": "hånligste",
     "hint": "Adjektiv på -lig følger samme mønster som -ig: hånlig → hånligst → (bestemt) hånligste, ikke hånligeste.",
     "plusOnly": true
@@ -9434,10 +8187,7 @@
     "type": "fill",
     "prompt": "Velg riktig gradbøyningsform.",
     "sentence": "Etter tre netter uten søvn var hun _____ enn noensinne.",
-    "words": [
-      "mer utkjørt",
-      "utkjørtere"
-    ],
+    "words": ["mer utkjørt", "utkjørtere"],
     "answer": "mer utkjørt",
     "hint": "Perfektum partisipp brukt som adjektiv gradbøyes periferistisk med mer/mest, ikke med -ere/-est: mer utkjørt, ikke utkjørtere.",
     "plusOnly": true
@@ -9449,10 +8199,7 @@
     "type": "fill",
     "prompt": "Velg riktig gradbøyningsform.",
     "sentence": "Av alle de sørgende var hun _____ .",
-    "words": [
-      "mest sønderknust",
-      "sønderknustest"
-    ],
+    "words": ["mest sønderknust", "sønderknustest"],
     "answer": "mest sønderknust",
     "hint": "Samme mønster som «mer utkjørt»: perfektum partisipp som adjektiv gradbøyes med mer/mest, ikke -ere/-est.",
     "plusOnly": true
@@ -9464,11 +8211,7 @@
     "type": "fill",
     "prompt": "Velg riktig predikativ form av adjektivet.",
     "sentence": "Sjefen var _____ etter møtet.",
-    "words": [
-      "olm",
-      "olmt",
-      "olme"
-    ],
+    "words": ["olm", "olmt", "olme"],
     "answer": "olm",
     "hint": "Et predikativt adjektiv uten substantiv etter seg får ingen endelse her: Sjefen var olm, ikke olmt/olme.",
     "plusOnly": true
@@ -9480,10 +8223,7 @@
     "type": "fill",
     "prompt": "Velg riktig predikativ form av adjektivet.",
     "sentence": "Barnet var _____ etter smågodtet.",
-    "words": [
-      "grådig",
-      "grådigt"
-    ],
+    "words": ["grådig", "grådigt"],
     "answer": "grådig",
     "hint": "Adjektiv på -ig/-lig får ikke ekstra -t i intetkjønn: grådig, ikke grådigt.",
     "plusOnly": true
@@ -9495,10 +8235,7 @@
     "type": "fill",
     "prompt": "Velg riktig bestemt flertallsform av adjektivet.",
     "sentence": "De _____ gjestene danset til langt på natt.",
-    "words": [
-      "opprømte",
-      "opprømt"
-    ],
+    "words": ["opprømte", "opprømt"],
     "answer": "opprømte",
     "hint": "Bestemt/flertallsform av adjektiv får svak -e-ending: opprømt → de opprømte gjestene.",
     "plusOnly": true
@@ -9510,10 +8247,7 @@
     "type": "fill",
     "prompt": "Velg riktig bestemt flertallsform av adjektivet.",
     "sentence": "De _____ barna gjemte seg bak sofaen.",
-    "words": [
-      "skrekkslagne",
-      "skrekkslagene"
-    ],
+    "words": ["skrekkslagne", "skrekkslagene"],
     "answer": "skrekkslagne",
     "hint": "«Skrekkslagen» mister -en foran flertallsendelsen, samme mønster som gedigen → gedigne: skrekkslagen → skrekkslagne.",
     "plusOnly": true
@@ -9537,10 +8271,7 @@
     "type": "fill",
     "prompt": "Velg riktig gradbøyningsform av «møkkete».",
     "sentence": "Etter regnværet var stien enda _____ enn dagen før.",
-    "words": [
-      "mer møkkete",
-      "møkketere"
-    ],
+    "words": ["mer møkkete", "møkketere"],
     "answer": "mer møkkete",
     "hint": "Adjektiv på -ete tar alltid mer/mest, aldri -ere/-est.",
     "plusOnly": true
@@ -9552,10 +8283,7 @@
     "type": "fill",
     "prompt": "Sett de to ordene i riktig rekkefølge (perfektum med setningsadverbial).",
     "sentence": "Fargen på veggen har _____ i sollyset.",
-    "words": [
-      "bleknet",
-      "allerede"
-    ],
+    "words": ["bleknet", "allerede"],
     "answer": "allerede bleknet",
     "hint": "Perfektum med adverbialet «allerede»: har + allerede + bleknet — adverbialet står mellom hjelpeverbet og partisippet.",
     "plusOnly": true
@@ -9568,9 +8296,7 @@
     "prompt": "Omskriv til én setning: sett innrømmelsesleddsetningen med «selv om» fremst, og behold setningsadverbialene i riktig posisjon.",
     "source": "Fristen er faktisk presserende. Teamet jobber jo overtid hver kveld.",
     "answer": "Selv om fristen faktisk er presserende, jobber teamet jo overtid hver kveld.",
-    "alternates": [
-      "Selv om fristen faktisk er presserende jobber teamet jo overtid hver kveld"
-    ],
+    "alternates": ["Selv om fristen faktisk er presserende jobber teamet jo overtid hver kveld"],
     "hint": "Leddsetning: adverbial (faktisk) før verbet (er). Helsetningen inverterer: verb (jobber) — subjekt (teamet) — adverbial (jo) — resten.",
     "plusOnly": true
   },
@@ -9590,19 +8316,9 @@
     "topic": "predikativ-agreement",
     "cefr": "C",
     "type": "order",
-    "tokens": [
-      "Løftene",
-      "hans",
-      "var",
-      "avslørt",
-      "allerede",
-      "i",
-      "forkant"
-    ],
+    "tokens": ["Løftene", "hans", "var", "avslørt", "allerede", "i", "forkant"],
     "answer": "Løftene hans var avslørt allerede i forkant.",
-    "alternates": [
-      "Løftene hans var avslørt allerede i forkant"
-    ],
+    "alternates": ["Løftene hans var avslørt allerede i forkant"],
     "hint": "«Avslørt» er et partisipp som fungerer som predikativ, og forblir ubøyd uansett flertallssubjektet løftene — aldri avslørte.",
     "plusOnly": true
   }
