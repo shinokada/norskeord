@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-09-01T20:04:31.395Z",
-  "grandTotal": 9858,
+  "generatedAt": "2026-09-02T08:19:51.209Z",
+  "grandTotal": 9936,
   "byLevel": {
     "A1": {
-      "vocab": 529,
+      "vocab": 572,
       "uttrykk": 119,
-      "total": 648,
+      "total": 691,
       "grammar": 254,
       "grammar_topic": 30,
-      "quiz": 648
+      "quiz": 691
     },
     "A2": {
-      "vocab": 982,
-      "uttrykk": 250,
-      "total": 1232,
+      "vocab": 1015,
+      "uttrykk": 252,
+      "total": 1267,
       "grammar": 256,
       "grammar_topic": 27,
-      "quiz": 1232
+      "quiz": 1267
     },
     "B1": {
       "vocab": 2103,
