@@ -18,59 +18,44 @@ Ignore any illustrations. But if an image is related to a question and it is wor
 
 ---
 
-ME: 
+Create new articles/posts from draft/posts directory. Do not avoid repetition and be concise.
 
-CLAUDE: 
+---
 
-ME: 
+Classifying CEFR levels:
+Use cefr/assessment.pdf to classify CEFR levels. In this app, I use level C for C1 and C2.
 
-CLAUDE: 
+---
 
-ME: 
+kran and skall are exact duplicates but sitting oddly at level C in production for what are pretty basic words (tap, shell)
 
-CLAUDE: 
+---
 
-ME: 
+Please read ai-docs/implementation/new-vocab-uttrykk-pipeline.md. Please see draft/new-entries/09, 10, or 11 directory for your reference.
 
-CLAUDE: 
+I was working on draft/new-entries/17 directory.
+The following is from a previous session. Please continue where you left.
+ME:
 
-ME:  
+CLAUDE:
 
-CLAUDE: 
+ME:
 
-ME: 
+CLAUDE:
 
-CLAUDE: 
+ME:
 
-ME: 
+CLAUDE:
 
-CLAUDE: 
+ME:
 
-ME: 
+CLAUDE:
 
-CLAUDE: 
+ME:
 
-ME: 
+CLAUDE:
 
-CLAUDE: 
-
-ME:  
-
-CLAUDE: 
-
-ME: 
-
-
-
-
-
-
-
-
-
-
-
-
+ME:
 
 ---
 
@@ -139,58 +124,58 @@ Format:
 8. Fill up lemma with a dictionary form of `norsk` field with out `(en)`, `(et)`, `(en/ei)` or `å`, etc. Only one word if it is not a expression (more than one word).
 9. If norsk is an expression, the `norsk` and `lemma` fields are the same without any `(xx)`.
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME:  
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
-CLAUDE: 
+CLAUDE:
 
-ME: 
+ME:
 
 CLAUDE:

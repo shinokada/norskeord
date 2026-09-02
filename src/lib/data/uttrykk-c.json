@@ -16488,5 +16488,23 @@
     "level": "C",
     "category": "psychology-advanced",
     "part": "phrase"
+  },
+  {
+    "id": "u-c-931",
+    "norsk": "uten sidestykke",
+    "lemma": "uten sidestykke",
+    "english": "unparalleled, unmatched",
+    "ukrainian": "неперевершений, безпрецедентний",
+    "spanish": "sin parangón, inigualable",
+    "german": "unübertroffen, ohnegleichen",
+    "example": "Utsikten fra fjelltoppen var uten sidestykke.",
+    "example_english": "The view from the mountaintop was unparalleled.",
+    "example_ukrainian": "Краєвид з вершини гори був неперевершеним.",
+    "example_spanish": "La vista desde la cima de la montaña era inigualable.",
+    "example_german": "Die Aussicht vom Gipfel war unübertroffen.",
+    "definition": "Så uvanlig eller enestående at ingenting kan sammenlignes med det.",
+    "level": "C",
+    "category": "intensifiers-degree",
+    "part": "phrase"
   }
 ]

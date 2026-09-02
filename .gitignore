@@ -44,3 +44,6 @@ supabase/.temp
 src/lib/paraglide
 src/paraglide
 project.inlang/cache/
+
+# drafts/new vocab and uttrykk entries
+draft/new-entries

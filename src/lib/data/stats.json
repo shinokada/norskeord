@@ -1,46 +1,46 @@
 {
-  "generatedAt": "2026-08-30T05:39:37.189Z",
-  "grandTotal": 9651,
+  "generatedAt": "2026-09-01T20:04:31.395Z",
+  "grandTotal": 9858,
   "byLevel": {
     "A1": {
-      "vocab": 497,
+      "vocab": 529,
       "uttrykk": 119,
-      "total": 616,
+      "total": 648,
       "grammar": 254,
       "grammar_topic": 30,
-      "quiz": 616
+      "quiz": 648
     },
     "A2": {
-      "vocab": 908,
-      "uttrykk": 249,
-      "total": 1157,
+      "vocab": 982,
+      "uttrykk": 250,
+      "total": 1232,
       "grammar": 256,
       "grammar_topic": 27,
-      "quiz": 1157
+      "quiz": 1232
     },
     "B1": {
-      "vocab": 2042,
-      "uttrykk": 305,
-      "total": 2347,
+      "vocab": 2103,
+      "uttrykk": 312,
+      "total": 2415,
       "grammar": 912,
       "grammar_topic": 56,
-      "quiz": 2347
+      "quiz": 2415
     },
     "B2": {
-      "vocab": 1779,
-      "uttrykk": 618,
-      "total": 2397,
+      "vocab": 1800,
+      "uttrykk": 621,
+      "total": 2421,
       "grammar": 973,
       "grammar_topic": 57,
-      "quiz": 2397
+      "quiz": 2421
     },
     "C": {
-      "vocab": 2219,
-      "uttrykk": 915,
-      "total": 3134,
+      "vocab": 2226,
+      "uttrykk": 916,
+      "total": 3142,
       "grammar": 627,
       "grammar_topic": 28,
-      "quiz": 3134
+      "quiz": 3142
     }
   }
 }
