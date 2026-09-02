@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.71.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added hundreds of Norwegian vocabulary entries across A1–C levels, with multilingual translations, examples, and metadata.
+    - Added new expressions across A2–C levels.
+    - Added the “home” category to A2 learning content.
+    - Quiz answers now accept common dictionary forms without infinitive markers or noun gender articles.
+  - **Documentation**
+    - Added guides for CEFR vocabulary classification, vocabulary processing, and Norwegian grammar distinctions.
+  - **Improvements**
+    - Updated learning-content statistics to reflect the expanded collection.
+
 ## 2.70.0
 
 ### Minor Changes
