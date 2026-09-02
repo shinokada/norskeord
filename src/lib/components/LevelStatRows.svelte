@@ -8,15 +8,55 @@
   // given, for whichever single level the caller is currently showing.
   // Level selection lives in the level-tabs UI (Phase 3), not here.
   import type { StatRow } from '$lib/stats';
+  import type { CEFRLevel } from '$lib/types';
+  import { UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages.js';
 
   interface Props {
     rows: StatRow[];
     levelColor: string; // e.g. 'bg-green-500' — this level's "review" bar color
     emptyMessage?: string;
+    /**
+     * CEFR level these rows belong to. Required to build the due-badge's
+     * `/review` link (Step 4c, ai-docs/implementation/due-only.md) — omit
+     * `reviewType` below to skip the link entirely (e.g. Grammar rows,
+     * out of scope for v1).
+     */
+    level?: CEFRLevel;
+    /**
+     * When set, each row's due badge becomes its own link into a due-only
+     * review session for that row (Step 4c). Omitted for Grammar rows,
+     * which keep today's plain (unclickable) badge.
+     */
+    reviewType?: 'vocab' | 'uttrykk';
   }
 
-  let { rows, levelColor, emptyMessage }: Props = $props();
+  let { rows, levelColor, emptyMessage, level, reviewType }: Props = $props();
+
+  /**
+   * Builds the due-badge's `/review` href for one row, or null when this
+   * row shouldn't link anywhere (no reviewType, or a scope getDueItems()
+   * can't express precisely — see the note below).
+   *
+   * `row.key` lines up exactly with `CardProgress.category` for vocab rows
+   * (real category slugs) and for C's uttrykk rows (real category slugs
+   * too, per uttrykkThemeStatsForLevel's C branch in stats.ts) — so those
+   * get a precise `&category=` scope. A1–B2 uttrykk rows are keyed by
+   * *theme*, which isn't stored on CardProgress at all (every A1–B2 uttrykk
+   * card's `category` is the literal 'uttrykk' sentinel) — getDueItems()
+   * has no way to filter by theme, so those rows fall back to a
+   * level+type-wide review instead of the exact theme. Same fallback for
+   * any "Others" row (a synthetic bucket, never a real category/theme).
+   */
+  function reviewHref(row: StatRow): string | null {
+    if (!reviewType || !level) return null;
+    const params = new URLSearchParams({ level: level.toLowerCase(), type: reviewType });
+    const canScopeByCategory = reviewType === 'vocab' || level === 'C';
+    if (canScopeByCategory && row.key !== UTTRYKK_OTHERS_THEME) {
+      params.set('category', row.key);
+    }
+    return `/review?${params.toString()}`;
+  }
 </script>
 
 {#if rows.length === 0}
@@ -32,20 +72,20 @@
         {@const learningW = row.seen > 0 ? (row.learning / row.seen) * seenPct : 0}
         {@const relearningW = row.seen > 0 ? (row.relearning / row.seen) * seenPct : 0}
 
-        <a
-          href={row.href}
-          class="group flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50"
+        <div
+          class="group relative flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50"
         >
+          <a href={row.href} class="absolute inset-0 z-0" aria-label={row.label}></a>
           <!-- Row label (already display-formatted by the stats.ts builder) -->
           <span
-            class="w-36 shrink-0 truncate text-xs font-medium text-gray-700 group-hover:text-blue-600 sm:w-44 dark:text-gray-300 dark:group-hover:text-blue-400"
+            class="pointer-events-none relative z-[1] w-36 shrink-0 truncate text-xs font-medium text-gray-700 group-hover:text-blue-600 sm:w-44 dark:text-gray-300 dark:group-hover:text-blue-400"
             title={row.label}
           >
             {row.label}
           </span>
 
           <!-- Progress bar: full width = 100% of this row's total -->
-          <div class="relative min-w-0 flex-1">
+          <div class="pointer-events-none relative z-[1] min-w-0 flex-1">
             <div
               class="h-4 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40"
               title="{row.seen}/{row.total} cards seen"
@@ -78,22 +118,34 @@
 
           <!-- Seen / total count -->
           <span
-            class="w-14 shrink-0 text-right text-xs text-gray-700 tabular-nums dark:text-gray-300"
+            class="pointer-events-none relative z-[1] w-14 shrink-0 text-right text-xs text-gray-700 tabular-nums dark:text-gray-300"
           >
             {row.seen}/{row.total}
           </span>
 
-          <!-- Due badge -->
-          <span class="w-14 shrink-0 text-right">
+          <!-- Due badge — its own link into a due-only review session when
+               reviewType is set (Step 4c); otherwise a plain badge like today. -->
+          <span class="relative z-[1] w-14 shrink-0 text-right">
             {#if row.due > 0}
-              <span
-                class="inline-block rounded-full bg-red-100 px-1.5 py-0.5 text-xs font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
-              >
-                {row.due} due
-              </span>
+              {@const href = reviewHref(row)}
+              {#if href}
+                <a
+                  {href}
+                  class="relative z-10 inline-block rounded-full bg-red-100 px-1.5 py-0.5 text-xs font-semibold text-red-600 hover:bg-red-200 dark:bg-red-900/40 dark:text-red-400 dark:hover:bg-red-900/60"
+                  title="Review {row.due} due now"
+                >
+                  {row.due} due
+                </a>
+              {:else}
+                <span
+                  class="inline-block rounded-full bg-red-100 px-1.5 py-0.5 text-xs font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
+                >
+                  {row.due} due
+                </span>
+              {/if}
             {/if}
           </span>
-        </a>
+        </div>
       {/each}
     </div>
 
