@@ -31,9 +31,19 @@ kran and skall are exact duplicates but sitting oddly at level C in production f
 
 ---
 
+I'd like to discuss about the following.
+Wondering add a button or link to a page where you can work on due vocab and uttrykk. How about by level? Or all levels. Or both.
+Otherwise i have to go through item i alredy know. And do know what i need to reviw. 
+Are there better ways to do it?
+Or adding due buttons in progress category rows?
+
+---
+
 Please read ai-docs/implementation/new-vocab-uttrykk-pipeline.md. Please see draft/new-entries/09, 10, or 11 directory for your reference.
 
-I was working on draft/new-entries/17 directory.
+I added draft/new-entries/22/source-list.md. Can you start Stage 1?
+
+I was working on draft/new-entries/22 directory.
 The following is from a previous session. Please continue where you left.
 ME:
 
