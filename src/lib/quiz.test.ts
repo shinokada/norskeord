@@ -5,7 +5,8 @@ import {
   buildFillQuestion,
   buildTypeQuestion,
   buildQuizSession,
-  levenshtein
+  levenshtein,
+  bareLemma
 } from './quiz';
 import type { VocabEntry, CardProgress } from '$lib/types';
 import { createEmptyCard } from 'ts-fsrs';
@@ -232,6 +233,50 @@ describe('buildMCQuestion', () => {
   });
 });
 
+// ── bareLemma ─────────────────────────────────────────────────────────────────
+
+describe('bareLemma', () => {
+  it('strips a trailing (en) article', () => {
+    expect(bareLemma('fot (en)')).toBe('fot');
+  });
+
+  it('strips a trailing (et) article', () => {
+    expect(bareLemma('hus (et)')).toBe('hus');
+  });
+
+  it('strips a trailing (ei) article', () => {
+    expect(bareLemma('ku (ei)')).toBe('ku');
+  });
+
+  it('leaves a word with no article unchanged', () => {
+    expect(bareLemma('jobbe')).toBe('jobbe');
+  });
+
+  it('does not strip a parenthetical that is not a gender article', () => {
+    expect(bareLemma('bank (finansinstitusjon)')).toBe('bank (finansinstitusjon)');
+  });
+
+  it('strips a leading å infinitive marker', () => {
+    expect(bareLemma('å gifte seg')).toBe('gifte seg');
+  });
+
+  it('strips a dual-gender article combo', () => {
+    expect(bareLemma('tann (en/ei)')).toBe('tann');
+  });
+
+  it('strips a three-way gender article combo', () => {
+    expect(bareLemma('eple (en/ei/et)')).toBe('eple');
+  });
+
+  it('strips both a leading å and a trailing gender article', () => {
+    expect(bareLemma('å håpe (et)')).toBe('håpe');
+  });
+
+  it('does not strip "å" when it is not a leading infinitive marker', () => {
+    expect(bareLemma('gå')).toBe('gå');
+  });
+});
+
 // ── buildFillQuestion ─────────────────────────────────────────────────────────
 
 describe('buildFillQuestion', () => {
@@ -243,6 +288,17 @@ describe('buildFillQuestion', () => {
   it('answer is the Norwegian word', () => {
     const q = buildFillQuestion(TARGET);
     expect(q.answer).toBe(TARGET.norsk);
+  });
+
+  it('answer strips a gender article so the bare lemma is graded', () => {
+    const withArticle = makeEntry({
+      norsk: 'fot (en)',
+      english: 'foot',
+      example: 'Jeg har vondt i foten.',
+      example_english: 'My foot hurts.'
+    });
+    const q = buildFillQuestion(withArticle);
+    expect(q.answer).toBe('fot');
   });
 
   it('sentence contains "________" when the word appears verbatim in example', () => {
@@ -286,6 +342,12 @@ describe('buildTypeQuestion', () => {
   it('answer is the Norwegian word', () => {
     const q = buildTypeQuestion(TARGET);
     expect(q.answer).toBe(TARGET.norsk);
+  });
+
+  it('answer strips a gender article so the bare lemma is graded', () => {
+    const withArticle = makeEntry({ norsk: 'hus (et)', english: 'house' });
+    const q = buildTypeQuestion(withArticle);
+    expect(q.answer).toBe('hus');
   });
 
   it('entry reference is the original entry', () => {
