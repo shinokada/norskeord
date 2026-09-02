@@ -51,6 +51,7 @@ export const CATEGORIES_BY_LEVEL = {
     'technology',
     'environment',
     'money',
+    'home',
     'uttrykk'
   ],
   B1: [

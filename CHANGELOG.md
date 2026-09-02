@@ -4,16 +4,16 @@
 
 ### Minor Changes
 
-- - **New Features**
-    - Added comprehensive Norwegian grammar practice for levels A1 through C, including exercises, explanations, hints, and answer alternatives.
-    - Added a complete B2 “På Nivå” workbook and answer key.
-    - Added new B2 vocabulary, expressions, and grammar topics.
-    - Added Norwegian learning articles covering common vocabulary and grammar distinctions.
-  - **Improvements**
-    - Grammar content now loads by level and topic, improving page efficiency.
-    - Expanded grammar statistics and topic coverage.
-  - **Bug Fixes**
-    - Corrected Norwegian vocabulary definitions, spelling, examples, and duplicate entries.
+- **New Features**
+  - Added comprehensive Norwegian grammar practice for levels A1 through C, including exercises, explanations, hints, and answer alternatives.
+  - Added a complete B2 “På Nivå” workbook and answer key.
+  - Added new B2 vocabulary, expressions, and grammar topics.
+  - Added Norwegian learning articles covering common vocabulary and grammar distinctions.
+- **Improvements**
+  - Grammar content now loads by level and topic, improving page efficiency.
+  - Expanded grammar statistics and topic coverage.
+- **Bug Fixes**
+  - Corrected Norwegian vocabulary definitions, spelling, examples, and duplicate entries.
 
 ## 2.69.0
 

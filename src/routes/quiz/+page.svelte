@@ -6,6 +6,7 @@
   import {
     buildQuizSession,
     levenshtein,
+    bareLemma,
     isQuizable,
     isMonolingualLevel,
     isB1MonolingualEligible,
@@ -199,7 +200,10 @@
     } else {
       const q = current as FillBlankQuestion | TypeAnswerQuestion;
       answerStr = (userAnswer as string).trim();
-      const normalised = answerStr.toLowerCase();
+      // Normalise the same way the expected answer was built (bareLemma
+      // strips a leading "å " and a trailing gender article like "(en)") so
+      // a user typing either the dictionary form or the bare word matches.
+      const normalised = bareLemma(answerStr).toLowerCase();
       const expected = q.answer.toLowerCase();
       const dist = levenshtein(normalised, expected);
       if (dist === 0) {
