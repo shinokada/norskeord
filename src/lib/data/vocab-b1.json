@@ -37785,5 +37785,41 @@
     "level": "B1",
     "category": "cooking",
     "part": "noun"
+  },
+  {
+    "id": "v-b1-cooking-063",
+    "norsk": "curry-gryte (en)",
+    "lemma": "curry-gryte",
+    "definition": "En gryterett laget med currykrydder, ofte med kjøtt eller grønnsaker i saus.",
+    "english": "a curry stew / curry casserole",
+    "ukrainian": "каррі-рагу",
+    "spanish": "un guiso de curry",
+    "german": "ein Curry-Eintopf",
+    "example": "Vi lagde en kraftig curry-gryte med kylling til middag.",
+    "example_english": "We made a hearty chicken curry stew for dinner.",
+    "example_ukrainian": "Ми приготували наваристе каррі-рагу з куркою на вечерю.",
+    "example_spanish": "Preparamos un guiso de curry con pollo para la cena.",
+    "example_german": "Wir machten zum Abendessen einen herzhaften Hähnchen-Curry-Eintopf.",
+    "level": "B1",
+    "category": "cooking",
+    "part": "noun"
+  },
+  {
+    "id": "v-b1-cooking-064",
+    "norsk": "makron (en)",
+    "lemma": "makron",
+    "definition": "Et lite, søtt bakverk laget av mandelmasse eller marengs, ofte med fyll mellom to halvdeler.",
+    "english": "a macaron",
+    "ukrainian": "макарун",
+    "spanish": "un macaron",
+    "german": "eine Makrone",
+    "example": "Konditoriet solgte makroner i mange farger.",
+    "example_english": "The pastry shop sold macarons in many colors.",
+    "example_ukrainian": "Кондитерська продавала макаруни багатьох кольорів.",
+    "example_spanish": "La pastelería vendía macarons de muchos colores.",
+    "example_german": "Die Konditorei verkaufte Makronen in vielen Farben.",
+    "level": "B1",
+    "category": "cooking",
+    "part": "noun"
   }
 ]
