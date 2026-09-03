@@ -46,7 +46,6 @@
   // picker for it, defaulting to 'both' if the link somehow omitted ?type=.
   const needsPicker = $derived(!categoryParam && !typeParam);
 
-  let selectedType = $state<ReviewType | null>(null);
   let phase = $state<'picker' | 'loading' | 'empty' | 'ready'>('loading');
   let entries = $state<VocabEntry[]>([]);
 
@@ -82,7 +81,6 @@
   }
 
   function pick(type: ReviewType) {
-    selectedType = type;
     void loadSession(type);
   }
 
@@ -92,7 +90,6 @@
       return;
     }
     const type = typeParam ?? 'both';
-    selectedType = type;
     void loadSession(type);
   });
 
