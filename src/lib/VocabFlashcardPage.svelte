@@ -866,6 +866,17 @@
           {m.flashcard_all_done({ count: String(deck.length) })}
         </p>
 
+        <!-- More due beyond this session's cap: restart pulls the next batch
+             automatically (buildDueDeck re-filters progressMap, and these
+             cards are no longer due after being just rated), but nothing
+             said so on screen — without this, finishing a capped session
+             looks identical to being fully caught up. -->
+        {#if deckMode === 'due' && dueCount > 0}
+          <p class="-mt-2 text-sm text-white/80">
+            {dueCount} more due — tap restart to keep going.
+          </p>
+        {/if}
+
         <!-- Guest post-session login nudge -->
         {#if isGuest}
           <div
