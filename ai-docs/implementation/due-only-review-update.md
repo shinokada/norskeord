@@ -269,8 +269,19 @@ vocab — no Fix 2 workaround needed here).
 
 ## Progress log
 
-- [ ] Fix 1 — shuffle-and-loop restart + practice-only repeat ratings in
-      `VocabFlashcardPage.svelte`
+_After each work session, update this log with a concise note of what changed and mark the item ✅ Done._
+
+- [x] Fix 1 ✅ Done — `VocabFlashcardPage.svelte`: replaced `buildDueDeck`
+      with `computeDuePool` (fixed due+new pool, computed once per fresh
+      session) + `dealDueChunk` (deals `sessionLimit`-sized chunks,
+      reshuffles & wraps on exhaustion). `restart()` now passes `isRestart`
+      so it deals the next chunk instead of recomputing the pool. `rate()`
+      skips `saveProgress()`/undo for cards already in `ratedThisVisit`
+      (practice-only repeats), and adds the key after a real save.
+      Completion message now uses `sessionUnseenRemaining` (pool minus
+      rated-this-visit) instead of the app-wide `dueCount`, with a
+      "keep practicing" message once the pool has looped. Verified with
+      `svelte-autofixer` (no issues). Not yet manually tested in the app.
 - [ ] Fix 2 — `LevelStatRows.reviewHref()` always includes `&category=`;
       `/review` post-resolve filter by `category` or `theme`
 - [ ] Fix 3 — pending answers to the open questions above

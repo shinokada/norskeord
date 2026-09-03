@@ -116,6 +116,17 @@
   // 2-B: track new-card count for this session
   let sessionNewCardCount = $state(0);
 
+  // Fix 1 (due-only-review-update.md): the fixed due batch for this visit —
+  // computed once when a genuinely new session starts (entries/mode/deckMode
+  // change), then dealt out in sessionLimit-sized chunks and reshuffled once
+  // exhausted, so Restart loops the same batch instead of shrinking to empty.
+  let dueSessionPool = $state<VocabEntry[]>([]);
+  let dueDealIndex = $state(0);
+  // vocabKeys already saved via saveProgress() this visit — later encounters
+  // of the same card (after the pool loops) are practice-only: same UI, but
+  // the rating isn't persisted, so FSRS scheduling isn't touched twice.
+  let ratedThisVisit = $state<Set<string>>(new Set());
+
   // 2-D: undo state
   let undoSnapshot = $state<UndoSnapshot | null>(null);
   let undoCountdown = $state(0);
@@ -259,25 +270,19 @@
     };
   }
 
-  /**
-   * 2-B: Build due deck.
-   *
-   * Priority order: overdue → new (capped at NEW_CARD_SESSION_LIMIT) → requeue
-   * "Again" cards get pushed to the back with a requeue flag rather than
-   * dropped, so the session doesn't end prematurely.
-   */
-  function buildDueDeck(
+  /** Fix 1 (replaces the old 2-B `buildDueDeck`): the fixed pool of
+   * due+new cards for this visit (unfiltered by
+   * session limit, computed once per fresh session — not re-derived on
+   * restart, so already-rated cards stay in the loop). */
+  function computeDuePool(
     es: VocabEntry[],
     mo: Mode,
-    ct: CardType,
-    pm: Record<string, CardProgress>,
-    limit: number | null
-  ): DeckItem[] {
+    pm: Record<string, CardProgress>
+  ): VocabEntry[] {
     const now = new Date();
     const overdue: VocabEntry[] = [];
     const newCards: VocabEntry[] = [];
     const filtered = mo === 'defnor' ? es.filter((e) => !!e.definition) : es;
-
     for (const e of filtered) {
       const p = pm[vocabKey(e)];
       if (!p) {
@@ -286,14 +291,23 @@
         overdue.push(e);
       }
     }
+    const newCapped = shuffle(newCards).slice(0, NEW_CARD_SESSION_LIMIT);
+    return [...overdue, ...newCapped];
+  }
 
-    const newCap = limit ?? NEW_CARD_SESSION_LIMIT;
-    const shuffledOverdue = shuffle(overdue);
-    const newCapped = shuffle(newCards).slice(0, newCap);
-    const combined = [...shuffledOverdue, ...newCapped];
-    // Apply overall session limit after combining overdue + new
-    const limited = limit != null ? combined.slice(0, limit) : combined;
-    return limited.map((e) => makeDeckItem(e, mo, ct));
+  /** Fix 1: deal the next sessionLimit-sized chunk from dueSessionPool,
+   * reshuffling and wrapping to the start once the pool is exhausted — so
+   * Restart always has something to show instead of trending to empty. */
+  function dealDueChunk(limit: number | null): VocabEntry[] {
+    if (dueSessionPool.length === 0) return [];
+    if (dueDealIndex >= dueSessionPool.length) {
+      dueSessionPool = shuffle(dueSessionPool);
+      dueDealIndex = 0;
+    }
+    const chunkSize = limit ?? dueSessionPool.length;
+    const chunk = dueSessionPool.slice(dueDealIndex, dueDealIndex + chunkSize);
+    dueDealIndex += chunk.length;
+    return chunk;
   }
 
   function buildDeck(
@@ -302,7 +316,8 @@
     ct: CardType,
     dm: DeckMode,
     limit: number | null,
-    targetNorsk: string | null = null
+    targetNorsk: string | null = null,
+    isRestart = false
   ) {
     const source = mo === 'defnor' ? es.filter((e) => !!e.definition) : es;
     const targetEntry = targetNorsk ? source.find((e) => e.norsk === targetNorsk) : undefined;
@@ -320,13 +335,20 @@
         makeDeckItem(targetEntry, mo, ct),
         ...shuffledRest.slice(0, restLimit).map((e) => makeDeckItem(e, mo, ct))
       ];
+    } else if (dm === 'due') {
+      // Fix 1: fresh session (not a restart) recomputes the fixed pool and
+      // clears this visit's rated-set; a restart just deals the next chunk
+      // (reshuffling on wrap) from the pool already established this visit.
+      if (!isRestart) {
+        dueSessionPool = shuffle(computeDuePool(es, mo, progressMap));
+        dueDealIndex = 0;
+        ratedThisVisit = new Set();
+      }
+      items = dealDueChunk(limit).map((e) => makeDeckItem(e, mo, ct));
     } else {
-      items =
-        dm === 'due'
-          ? buildDueDeck(es, mo, ct, progressMap, limit)
-          : shuffle(source)
-              .slice(0, limit ?? source.length)
-              .map((e) => makeDeckItem(e, mo, ct));
+      items = shuffle(source)
+        .slice(0, limit ?? source.length)
+        .map((e) => makeDeckItem(e, mo, ct));
     }
 
     deck = items;
@@ -344,8 +366,17 @@
   }
 
   function restart() {
-    buildDeck(entries, mode, cardType, deckMode, sessionLimit);
+    buildDeck(entries, mode, cardType, deckMode, sessionLimit, null, true);
   }
+
+  // Fix 1: cards left in this visit's due pool that haven't been rated yet —
+  // drives the completion-screen message instead of the app-wide dueCount,
+  // since the pool now loops rather than ever truly emptying.
+  let sessionUnseenRemaining = $derived(
+    deckMode === 'due'
+      ? dueSessionPool.filter((e) => !ratedThisVisit.has(vocabKey(e))).length
+      : 0
+  );
 
   function setMode(mo: Mode) {
     if (mo === mode) return;
@@ -598,7 +629,18 @@
     if (!current) return;
 
     const entry = current.entry;
-    const previousProgress = progressMap[vocabKey(entry)] ?? null;
+    const key = vocabKey(entry);
+
+    // Fix 1: repeat encounter of a card already rated this visit (deck looped
+    // after Restart) — practice-only. Same interaction, but skip saveProgress
+    // so FSRS scheduling/undo aren't touched by a non-genuine second rating.
+    if (deckMode === 'due' && ratedThisVisit.has(key)) {
+      if (rating === 'again') requeueCard(current);
+      next();
+      return;
+    }
+
+    const previousProgress = progressMap[key] ?? null;
     const previousMap = { ...progressMap };
     const previousIndex = currentIndex;
 
@@ -621,6 +663,9 @@
 
     progressMap = await saveProgress(entry, rating, progressMap, userId, fsrsRetention);
     dueCount = countDueToday(progressMap);
+    if (deckMode === 'due') {
+      ratedThisVisit = new Set(ratedThisVisit).add(key);
+    }
   }
 
   // ── Interval label helpers ──────────────────────────────────────────────────
@@ -866,14 +911,18 @@
           {m.flashcard_all_done({ count: String(deck.length) })}
         </p>
 
-        <!-- More due beyond this session's cap: restart pulls the next batch
-             automatically (buildDueDeck re-filters progressMap, and these
-             cards are no longer due after being just rated), but nothing
-             said so on screen — without this, finishing a capped session
-             looks identical to being fully caught up. -->
-        {#if deckMode === 'due' && dueCount > 0}
+        <!-- Fix 1: restart deals the next sessionLimit-sized chunk from this
+             visit's fixed due pool, reshuffling and looping once every card
+             has been dealt — so "more due" reflects unseen-this-visit cards,
+             not the app-wide due count, and the message flips to a practice
+             prompt once the whole pool has been seen at least once. -->
+        {#if deckMode === 'due' && sessionUnseenRemaining > 0}
           <p class="-mt-2 text-sm text-white/80">
-            {dueCount} more due — tap restart to keep going.
+            {sessionUnseenRemaining} more due — tap restart to keep going.
+          </p>
+        {:else if deckMode === 'due' && dueSessionPool.length > 0}
+          <p class="-mt-2 text-sm text-white/80">
+            All caught up — Shuffle &amp; Restart to keep practicing.
           </p>
         {/if}
 
