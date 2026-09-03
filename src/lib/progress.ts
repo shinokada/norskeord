@@ -401,6 +401,15 @@ export interface GetDueItemsOptions {
    * `type: 'uttrykk'` — C reuses its vocab category slugs for uttrykk rows
    * too (see uttrykkThemeStatsForLevel's C branch in stats.ts), so `category`
    * alone can't tell the two apart there.
+   *
+   * Does NOT support A1–B2 uttrykk *theme* scoping (Fix 2,
+   * ai-docs/implementation/due-only-review-update.md) — every A1–B2 uttrykk
+   * card's `CardProgress.category` is the literal 'uttrykk' sentinel, not
+   * its theme, so this option has nothing to filter on for that case.
+   * `/review/+page.svelte` handles it downstream instead: it omits
+   * `category` here for that case (fetching the whole level+type), then
+   * filters the *resolved* `VocabEntry[]` by `theme` afterward, since
+   * `theme` only exists on the resolved entry, not on `CardProgress`.
    */
   category?: string;
   /**
