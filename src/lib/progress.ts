@@ -1,8 +1,9 @@
 import { FSRS, createEmptyCard, Rating, generatorParameters } from 'ts-fsrs';
 import type { Grade, FSRSParameters } from 'ts-fsrs';
-import type { FSRSRating, CardProgress } from '$lib/types';
+import type { FSRSRating, CardProgress, CEFRLevel } from '$lib/types';
 import type { VocabEntry, GrammarQuestion } from '$lib/types';
 import { supabase } from '$lib/supabase';
+import { UTTRYKK_C_KEYS } from '$lib/uttrykk-c-stats';
 
 // enable_short_term: false disables ts-fsrs's sub-day (re)learning steps for every
 // instance below. Without it, a first-time "Hard"/"Good" rating on a brand-new card
@@ -381,6 +382,70 @@ export async function saveProgress(
 export function countDueToday(progressMap: Record<string, CardProgress>): number {
   const now = new Date();
   return Object.values(progressMap).filter((p) => new Date(p.fsrs.due) <= now).length;
+}
+
+// ── Due-only review (ai-docs/implementation/due-only.md) ───────────────────
+
+export interface DueItem {
+  id: string;
+  level: CEFRLevel;
+}
+
+export interface GetDueItemsOptions {
+  /** Restrict to one CEFR level. Omit for a global (all-levels) session. */
+  level?: CEFRLevel;
+  /**
+   * Restrict to one vocab category or A1–B2 uttrykk sentinel category
+   * ('uttrykk'). Used by the per-category due badge deep link
+   * (LevelStatRows.svelte). For a C-level uttrykk row, also pass
+   * `type: 'uttrykk'` — C reuses its vocab category slugs for uttrykk rows
+   * too (see uttrykkThemeStatsForLevel's C branch in stats.ts), so `category`
+   * alone can't tell the two apart there.
+   */
+  category?: string;
+  /**
+   * vocab / uttrykk / both (default). Mirrors the split `/stats` already
+   * computes per level (vocabCategoryStatsForLevel vs
+   * uttrykkThemeStatsForLevel in stats.ts): category === 'uttrykk' for
+   * A1–B2, UTTRYKK_C_KEYS membership for C.
+   */
+  type?: 'vocab' | 'uttrykk' | 'both';
+}
+
+/**
+ * Returns every due card in `progressMap` as the minimal `{ id, level }`
+ * shape `/api/review-entries` (Step 1) expects, optionally narrowed to one
+ * level, one category, and/or vocab-vs-uttrykk. Works unchanged for both
+ * Plus (progressMap already loaded via loadProgressMapFromSupabase) and
+ * free/guest (loadProgressMap) — the map shape is identical either way.
+ *
+ * New/never-studied cards (no progress row) are never included — "due"
+ * here specifically means an existing FSRS schedule whose due date has
+ * passed, not "not yet seen". See due-only.md's Decisions section.
+ */
+export function getDueItems(
+  progressMap: Record<string, CardProgress>,
+  opts: GetDueItemsOptions = {}
+): DueItem[] {
+  const { level, category, type = 'both' } = opts;
+  const now = new Date();
+
+  return Object.entries(progressMap)
+    .filter(([key, card]) => {
+      if (new Date(card.fsrs.due) > now) return false;
+      if (level && card.level !== level) return false;
+      if (category && card.category !== category) return false;
+
+      if (type !== 'both') {
+        const isUttrykk =
+          card.category === 'uttrykk' || (card.level === 'C' && UTTRYKK_C_KEYS.has(key));
+        if (type === 'vocab' && isUttrykk) return false;
+        if (type === 'uttrykk' && !isUttrykk) return false;
+      }
+
+      return true;
+    })
+    .map(([id, card]) => ({ id, level: card.level }));
 }
 
 // ── Grammar progress ─────────────────────────────────────────────────────────
