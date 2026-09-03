@@ -1,5 +1,23 @@
 # norske-flashcard
 
+## 2.72.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added due-card review sessions with global, level, category, and Vocabulary/Uttrykk filters.
+    - Added “Study due” links and counts throughout progress statistics.
+    - Added clearer end-of-session guidance when more cards remain.
+    - Added new Norwegian vocabulary across A1–C levels.
+    - Added Norwegian learning articles covering grammar, vocabulary, and common language distinctions.
+    - Updated mobile navigation to include Progress.
+
+  - **Bug Fixes**
+    - Improved due-review links and empty-state handling for scoped sessions.
+
+  - **Tests**
+    - Expanded end-to-end coverage for review and statistics workflows.
+
 ## 2.71.0
 
 ### Minor Changes
