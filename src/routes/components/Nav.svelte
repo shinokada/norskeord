@@ -384,13 +384,6 @@
     <!-- Account (top) -->
     <SidebarGroup>
       {#if effectiveUser}
-        <SidebarItem label={m.nav_my_stats()} href="/stats">
-          {#snippet icon()}
-            <ChartOutline
-              class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-            />
-          {/snippet}
-        </SidebarItem>
         <SidebarItem
           label={showOnboardingNudge ? m.onboarding_nudge_profile_label() : m.nav_my_profile()}
           href="/my-profile"
@@ -404,6 +397,13 @@
                 <span class="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-red-500"></span>
               {/if}
             </div>
+          {/snippet}
+        </SidebarItem>
+        <SidebarItem label={m.nav_my_progress()} href="/stats">
+          {#snippet icon()}
+            <ChartOutline
+              class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            />
           {/snippet}
         </SidebarItem>
         <SidebarItem label={m.nav_contact()} href="/contact">
