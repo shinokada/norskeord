@@ -35,18 +35,20 @@
 
   /**
    * Builds the due-badge's `/review` href for one row, or null when this
-   * row shouldn't link anywhere (no reviewType, or a scope getDueItems()
-   * can't express precisely — see the note below).
+   * row shouldn't link anywhere (no reviewType, or a synthetic "Others"
+   * bucket that isn't a real category/theme).
    *
-   * `row.key` lines up exactly with `CardProgress.category` for vocab rows
-   * (real category slugs) and for C's uttrykk rows (real category slugs
-   * too, per uttrykkThemeStatsForLevel's C branch in stats.ts) — so those
-   * get a precise `&category=` scope. A1–B2 uttrykk rows are keyed by
-   * *theme*, which isn't stored on CardProgress at all (every A1–B2 uttrykk
-   * card's `category` is the literal 'uttrykk' sentinel) — getDueItems()
-   * has no way to filter by theme, so those rows fall back to a
-   * level+type-wide review instead of the exact theme. Same fallback for
-   * any "Others" row (a synthetic bucket, never a real category/theme).
+   * Always includes `&category={row.key}` when reviewType is set (Fix 2,
+   * ai-docs/implementation/due-only-review-update.md) — `/review` handles
+   * scoping it correctly downstream regardless of which kind of row this
+   * is: `row.key` lines up with `CardProgress.category` for vocab rows and
+   * C's uttrykk rows (real category slugs), so `getDueItems()` can scope
+   * by it directly there. A1–B2 uttrykk rows are keyed by *theme*, which
+   * isn't stored on `CardProgress` at all (every A1–B2 uttrykk card's
+   * `category` is the literal 'uttrykk' sentinel) — for those, `/review`
+   * fetches the whole level+type and filters the *resolved* entries by
+   * `theme` afterward, since `theme` only exists on the resolved
+   * `VocabEntry`, not on `CardProgress`.
    */
   function reviewHref(row: StatRow): string | null {
     if (!reviewType || !level) return null;
@@ -54,8 +56,7 @@
       `level=${encodeURIComponent(level.toLowerCase())}`,
       `type=${encodeURIComponent(reviewType)}`
     ];
-    const canScopeByCategory = reviewType === 'vocab' || level === 'C';
-    if (canScopeByCategory && row.key !== UTTRYKK_OTHERS_THEME) {
+    if (row.key !== UTTRYKK_OTHERS_THEME) {
       params.push(`category=${encodeURIComponent(row.key)}`);
     }
     return `/review?${params.join('&')}`;

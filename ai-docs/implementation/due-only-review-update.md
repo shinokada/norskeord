@@ -282,6 +282,17 @@ _After each work session, update this log with a concise note of what changed an
       rated-this-visit) instead of the app-wide `dueCount`, with a
       "keep practicing" message once the pool has looped. Verified with
       `svelte-autofixer` (no issues). Not yet manually tested in the app.
-- [ ] Fix 2 — `LevelStatRows.reviewHref()` always includes `&category=`;
-      `/review` post-resolve filter by `category` or `theme`
+- [x] Fix 2 ✅ Done — `LevelStatRows.reviewHref()` now always includes
+      `&category={row.key}` when `reviewType` is set (dropped the
+      `canScopeByCategory` special-case; "Others" rows still excluded).
+      `/review/+page.svelte`'s `loadSession()`: for A1–B2 uttrykk rows,
+      omits `category` from the `getDueItems()` call (fetches the whole
+      level+type instead, since `CardProgress.category` can't express a
+      theme) and instead filters the *resolved* entries afterward by
+      `e.category === categoryParam || e.theme === categoryParam` — a
+      no-op refinement for vocab/C-uttrykk rows, the actual fix for A1–B2
+      uttrykk. `getDueItems()`'s own logic is unchanged, only its doc
+      comment (in `progress.ts`) now notes the theme case is handled
+      downstream. Verified both changed files with `svelte-autofixer` (no
+      issues). Not yet manually tested in the app.
 - [ ] Fix 3 — pending answers to the open questions above
