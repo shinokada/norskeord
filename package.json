@@ -25,7 +25,7 @@
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint .",
     "test:unit": "vitest --run",
-    "test": "npm run test:e2e && npm run test:unit",
+    "test": "pnpm run test:unit && pnpm run test:e2e",
     "test:e2e": "playwright test",
     "ch": "npx tsx scripts/build-search-index.ts && npx changeset && pnpm stats",
     "cv": "npx changeset version",
