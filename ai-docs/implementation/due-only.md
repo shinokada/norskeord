@@ -54,7 +54,7 @@ New `src/routes/api/review-entries/+server.ts` (POST, JSON body).
   `src/routes/[level]/[category]/+page.server.ts` — reuse, don't
   reimplement), and for each id picks the right source file using the same
   classification the `/stats` page already relies on: `category ===
-  'uttrykk'` for A1–B2, `UTTRYKK_C_KEYS.has(id)` for C (from
+'uttrykk'` for A1–B2, `UTTRYKK_C_KEYS.has(id)` for C (from
   `$lib/uttrykk-c-stats`), vocab file otherwise.
 - **Output**: a flat `VocabEntry[]`, order not guaranteed (the client
   shuffles/orders as needed).
@@ -111,7 +111,7 @@ needed is client-side: progress map, the Step 1/2 helpers).
 ## Step 4 — Wire up the three entry points
 
 - **4a. Global** — `/stats`: a "Study due" button near the existing `Due
-  today` summary-strip card → `/review` (no params). Only shown when
+today` summary-strip card → `/review` (no params). Only shown when
   `totalDueToday > 0`.
 - **4b. Per-level** — `/stats`: near each level tab's summary card(s)
   (`activeVocabLevelStat.due` / `activeUttrykkLevelStat.due`), a "Study
@@ -120,7 +120,7 @@ needed is client-side: progress map, the Step 1/2 helpers).
   doesn't currently load progress data at all.)
 - **4c. Per-category** — `LevelStatRows.svelte`: the existing due badge
   (`{row.due} due`) becomes its own link — `/review?level={level}&category=
-  {row.key}&type=...` — instead of only the whole row linking to the plain
+{row.key}&type=...` — instead of only the whole row linking to the plain
   category page. Needs `stopPropagation`/a nested `<a>` (or restructure the
   row so the due badge isn't inside the outer anchor) so clicking the badge
   doesn't also navigate via the row's own link.

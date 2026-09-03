@@ -37767,5 +37767,23 @@
     "level": "B1",
     "category": "personal-growth",
     "part": "verb"
+  },
+  {
+    "id": "v-b1-cooking-062",
+    "norsk": "ertebelg (en)",
+    "lemma": "ertebelg",
+    "definition": "Den lange, grønne kapselen som ertene vokser inni.",
+    "english": "a pea pod",
+    "ukrainian": "стручок гороху",
+    "spanish": "una vaina de guisantes",
+    "german": "eine Erbsenschote",
+    "example": "Hun åpner ertebelgen og tar ut ertene.",
+    "example_english": "She opens the pea pod and takes out the peas.",
+    "example_ukrainian": "Вона відкриває стручок і виймає горошини.",
+    "example_spanish": "Ella abre la vaina y saca los guisantes.",
+    "example_german": "Sie öffnet die Erbsenschote und nimmt die Erbsen heraus.",
+    "level": "B1",
+    "category": "cooking",
+    "part": "noun"
   }
 ]

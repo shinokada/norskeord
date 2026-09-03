@@ -108,9 +108,12 @@
 
 {#if phase === 'picker'}
   <div class="mx-auto mt-16 max-w-md px-4 text-center">
-    <h1 class="text-2xl font-semibold text-gray-800 dark:text-gray-100">What do you want to review?</h1>
+    <h1 class="text-2xl font-semibold text-gray-800 dark:text-gray-100">
+      What do you want to review?
+    </h1>
     <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
-      {#if levelParam}Only cards due at {levelParam} right now.{:else}Every card due right now, across all levels.{/if}
+      {#if levelParam}Only cards due at {levelParam} right now.{:else}Every card due right now,
+        across all levels.{/if}
     </p>
     <div class="mt-6 flex flex-col gap-3">
       <button
@@ -145,7 +148,8 @@
     <p class="text-2xl">🎉</p>
     <p class="mt-3 text-lg font-medium text-gray-800 dark:text-gray-100">Nothing due right now</p>
     <p class="mt-1 text-gray-500 dark:text-gray-300">
-      {#if levelParam}No {levelParam} cards are due{categoryParam ? ' in this category' : ''} at the moment — check back later.{:else}You're all caught up — check back later.{/if}
+      {#if levelParam}No {levelParam} cards are due{categoryParam ? ' in this category' : ''} at the moment
+        — check back later.{:else}You're all caught up — check back later.{/if}
     </p>
     <div class="mt-5 flex justify-center gap-4 text-sm">
       <a href="/stats" class="font-medium text-indigo-600 hover:underline dark:text-indigo-400">

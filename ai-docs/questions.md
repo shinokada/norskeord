@@ -35,7 +35,23 @@ When you have Spanish or other languages other than English, search results show
 
 ---
 
-ME: I'd like to discuss about the following. Currently I have to go through item i already know. And do know what i need to review.  I am wondering to add a button or link to a flashcard page where you can work on due vocab and uttrykk. How about by level? Or all levels. Or both. Or adding due buttons in progress category rows? Do you have better ideas/ways to do it?
+Ceci:
+Fix the following lint errors:
+
+```
+
+/Users/shinichiokada/Svelte/svelte-languages/norskeord/src/lib/components/LevelStatRows.svelte
+  53:20  error  Found a mutable instance of the built-in URLSearchParams class. Use SvelteURLSearchParams instead  svelte/prefer-svelte-reactivity
+
+/Users/shinichiokada/Svelte/svelte-languages/norskeord/src/routes/review/+page.svelte
+  49:7  error  'selectedType' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+✖ 2 problems (2 errors, 0 warnings)
+```
+
+---
+
+ME: I'd like to discuss about the following. Currently I have to go through item i already know. And do know what i need to review. I am wondering to add a button or link to a flashcard page where you can work on due vocab and uttrykk. How about by level? Or all levels. Or both. Or adding due buttons in progress category rows? Do you have better ideas/ways to do it?
 
 CLAUDE: Good — there's already `card_progress` with FSRS `due`, `level`, `category`. Let me look at the existing progress page and any flashcard/study routes.Good context. Here's what's actually there already: `/stats` already shows a **due badge per category row** (`LevelStatRows.svelte`), but it just links to the normal category page — which studies everything in original order, known words included. So the missing piece isn't visibility, it's a **due-only study mode**.
 
@@ -63,7 +79,8 @@ CLAUDE:
 
 Please read ai-docs/implementation/new-vocab-uttrykk-pipeline.md. Please see draft/new-entries/09, 10, or 11 directory for your reference.
 
-I added draft/new-entries/22/source-list.md. Can you start Stage 1?
+I added draft/new-entries/23/source-list.md. Can you start Stage 1?
+Ignore titles/headings.
 
 I was working on draft/new-entries/22 directory.
 The following is from a previous session. Please continue where you left.
