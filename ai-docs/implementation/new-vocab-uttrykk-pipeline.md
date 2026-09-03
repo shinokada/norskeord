@@ -49,6 +49,7 @@ yourself.
 ```
 draft/new-entries/{batch}/
   source-list.md              ← you type/paste this
+  progress-log.md             ← updated by Claude after every stage (see below)
   classified.json             ← Stage 1 output (checkpoint 1)
   dup-report.md                ← Stage 2 output (checkpoint 2 only if flagged, no file changes)
   extracted-vocab-{level}.json     ← Stage 1 output, existing Step-1 format
@@ -56,6 +57,33 @@ draft/new-entries/{batch}/
   vocab-{level}-new.json           ← Stage 3 output (checkpoint 3)
   uttrykk-{level}-new.json         ← Stage 3 output (checkpoint 3)
 ```
+
+### Progress log (every stage)
+
+Alongside whatever file a stage produces, Claude also creates/updates
+`draft/new-entries/{batch}/progress-log.md` — one line per stage, appended
+(never rewritten from scratch) the moment that stage finishes, before
+moving on to the next one. Keep it terse: a checklist, not a changelog.
+
+```markdown
+# Batch {batch} — progress
+
+- [x] Stage 0 — source list (24 entries)
+- [x] Stage 1 — classified (11 A1, 11 A2, 2 B1)
+- [x] Stage 2 — dedupe: 4 duplicates dropped (see dup-report.md)
+- [x] Stage 3 — enriched (20 entries)
+- [x] Stage 4 — validated: 0 errors, 0 warnings
+- [x] Stage 5 — IDs assigned
+- [x] Stage 6 — merged: vocab-a1 (+8), vocab-a2 (+10), vocab-b1 (+2)
+```
+
+The point is that a new session (or a new context window) can open this
+one file and immediately see where the batch stands, without re-reading
+every other file in the directory. If a stage produced something worth
+flagging (checkpoint 2's report was non-clean, Stage 4 caught something,
+etc.), say so in a few words on that line rather than leaving it to be
+rediscovered — but keep detail in the stage's own report file
+(`dup-report.md`, `validation-report.md`) and only put a pointer here.
 
 ### Stage 0 — Source list (you)
 
@@ -244,11 +272,16 @@ a batch under its own `draft/new-entries/{batch}/` folder.
    than reading and rewriting the whole file through `write_file` — this
    is the only workable approach for files too large to fit in context
    either direction, and it's cheaper even when `.bak` was possible.
-4. Rename the draft file, in place inside
-   `draft/new-entries/{batch}/`, to `{kind}-{level}-new.json.merged`
-   (Filesystem `move_file`) so a re-run is a no-op instead of
-   double-merging, same as the script. No cross-batch collision risk here
-   since each batch has its own directory.
+4. **Immediately after writing each production file** (not batched at the
+   end, once all files for the batch are merged) — rename that file's
+   draft, in place inside `draft/new-entries/{batch}/`, to
+   `{kind}-{level}-new.json.merged` (Filesystem `move_file`) so a re-run
+   is a no-op instead of double-merging, same as the script. No
+   cross-batch collision risk here since each batch has its own
+   directory. Doing this per-file, right after that file's production
+   write, rather than as a cleanup pass at the very end, is what keeps it
+   from getting skipped (it was, for batch 24) once attention has already
+   moved to the next level's file or the next stage.
 
 Production files are written directly in this stage (unlike Stage 5,
 which only reads them) — the `.bak` step above is what makes that safe.

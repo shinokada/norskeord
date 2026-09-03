@@ -13,3 +13,5 @@ gravferd (ei/en) - Kong Haralds gravferd finner sted i Oslo domkirke onsdag 9. s
 avholdt - Forrige fengslingsmøte for Høiby ble avholdt for rundt tre uker siden.
 regelbrudd - Har avdekket 900 regelbrudd
 ankomme
+kulissene - I kulissene jobbes det på spreng med å kvitte seg med Gianni Infantino. 
+å kvitte: to get rid of - See above example

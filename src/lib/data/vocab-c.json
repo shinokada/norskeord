@@ -40848,5 +40848,23 @@
     "level": "C",
     "category": "formal-writing",
     "part": "verb"
+  },
+  {
+    "id": "v-c-technical-041",
+    "norsk": "halerotor (en)",
+    "lemma": "halerotor",
+    "definition": "Den lille rotoren bak på et helikopter som motvirker dreiemomentet fra hovedrotoren og styrer retningen.",
+    "english": "a tail rotor (helicopter part)",
+    "ukrainian": "хвостовий гвинт",
+    "spanish": "un rotor de cola",
+    "german": "ein Heckrotor",
+    "example": "Piloten mistet kontrollen da halerotoren sluttet å virke.",
+    "example_english": "The pilot lost control when the tail rotor stopped working.",
+    "example_ukrainian": "Пілот втратив контроль, коли хвостовий гвинт перестав працювати.",
+    "example_spanish": "El piloto perdió el control cuando el rotor de cola dejó de funcionar.",
+    "example_german": "Der Pilot verlor die Kontrolle, als der Heckrotor ausfiel.",
+    "level": "C",
+    "category": "technical",
+    "part": "noun"
   }
 ]
