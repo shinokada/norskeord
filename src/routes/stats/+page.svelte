@@ -528,6 +528,19 @@
       {/each}
     </div>
 
+    <!-- ── Study due (Step 4a, ai-docs/implementation/due-only.md) ────────────── -->
+    {#if totalDueToday > 0}
+      <a
+        href="/review"
+        class="mb-6 flex items-center justify-between rounded-xl border border-red-200 bg-red-50 px-5 py-4 text-red-700 transition hover:bg-red-100 dark:border-red-800 dark:bg-red-900/20 dark:text-red-300 dark:hover:bg-red-900/30"
+      >
+        <span class="font-semibold">📌 Study due now</span>
+        <span class="rounded-full bg-red-600 px-2.5 py-1 text-sm font-bold text-white"
+          >{totalDueToday}</span
+        >
+      </a>
+    {/if}
+
     <!-- ── Level tabs ─────────────────────────────────────────────────────────── -->
     <div
       class="mb-6 flex gap-1 rounded-xl border border-gray-200 bg-gray-50 p-1 dark:border-white/10 dark:bg-indigo-900/30"
@@ -549,6 +562,24 @@
         </button>
       {/each}
     </div>
+
+    <!-- ── Study due at this level (Step 4b) ────────────────────────────── -->
+    <!-- Vocab+uttrykk only — matches /review's scope; grammar isn't included
+         in that count so this badge stays accurate for what clicking it
+         actually opens (see due-only.md's Open questions). -->
+    {#if activeVocabLevelStat.due + activeUttrykkLevelStat.due > 0}
+      <a
+        href="/review?level={activeLevel.toLowerCase()}"
+        class="-mt-3 mb-6 flex items-center justify-between rounded-lg border border-red-200 bg-white px-4 py-2.5 text-sm text-red-700 transition hover:bg-red-50 dark:border-red-800 dark:bg-indigo-950/60 dark:text-red-300 dark:hover:bg-red-900/20"
+      >
+        <span class="font-medium">Study due at {activeLevel}</span>
+        <span
+          class="rounded-full bg-red-100 px-2 py-0.5 text-xs font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
+        >
+          {activeVocabLevelStat.due + activeUttrykkLevelStat.due} due
+        </span>
+      </a>
+    {/if}
 
     <!-- ── Vocabulary — active level ──────────────────────────────────────────── -->
     <!-- Phase 3: only Plus users get the collapsible wrapper — free users'
@@ -632,7 +663,12 @@
           </div>
         {/snippet}
         <div class="mb-8">
-          <LevelStatRows rows={vocabRowsForActiveLevel} levelColor={levelColors[activeLevel]} />
+          <LevelStatRows
+            rows={vocabRowsForActiveLevel}
+            levelColor={levelColors[activeLevel]}
+            level={activeLevel}
+            reviewType="vocab"
+          />
         </div>
       </CollapsibleSection>
     {:else}
@@ -800,7 +836,12 @@
           </div>
         {/snippet}
         <div class="mb-8">
-          <LevelStatRows rows={uttrykkRowsForActiveLevel} levelColor={levelColors[activeLevel]} />
+          <LevelStatRows
+            rows={uttrykkRowsForActiveLevel}
+            levelColor={levelColors[activeLevel]}
+            level={activeLevel}
+            reviewType="uttrykk"
+          />
         </div>
       </CollapsibleSection>
     {:else}

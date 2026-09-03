@@ -50,12 +50,15 @@
    */
   function reviewHref(row: StatRow): string | null {
     if (!reviewType || !level) return null;
-    const params = new URLSearchParams({ level: level.toLowerCase(), type: reviewType });
+    const params: string[] = [
+      `level=${encodeURIComponent(level.toLowerCase())}`,
+      `type=${encodeURIComponent(reviewType)}`
+    ];
     const canScopeByCategory = reviewType === 'vocab' || level === 'C';
     if (canScopeByCategory && row.key !== UTTRYKK_OTHERS_THEME) {
-      params.set('category', row.key);
+      params.push(`category=${encodeURIComponent(row.key)}`);
     }
-    return `/review?${params.toString()}`;
+    return `/review?${params.join('&')}`;
   }
 </script>
 
