@@ -245,32 +245,122 @@ Add `reviewType="grammar"` there once G1–G3 exist; `reviewHref()` can
 scope by `category={row.key}` immediately (real topic slug, same as
 vocab — no Fix 2 workaround needed here).
 
-### Open questions — need your input before writing a real plan for this one
+### Decisions (confirmed in discussion)
 
-- **One combined session type, or grammar kept separate?** Could a
-  due-only session ever mix vocab/uttrykk _and_ grammar in one sitting
-  (a true "everything due right now" button), or should grammar stay its
-  own separate review flow, entered only from grammar-specific due
-  badges/buttons? This affects whether Step G3 extends `/review` or
-  becomes its own route.
-- **Reuse `GrammarSession.svelte` or build a lighter renderer?**
-  `GrammarSession` currently owns its own due/new deck-building
-  internally (`buildGrammarSession`, capped/prioritized itself) — similar
-  to how `VocabFlashcardPage` used to gate Plus into `'due'` mode
-  internally before due-only review needed it to accept a pre-filtered
-  `entries` list from outside. Does `GrammarSession` need a similar
-  "accept a pre-resolved, already-due question list" mode, or is a
-  simpler bypass enough here?
-- Given this is explicitly the lowest-priority of the three and was
-  called out as deferred in the original doc, do you want a fully fleshed
-  step-by-step plan (mirroring Steps 1–4 of `due-only-review.md`) written
-  now, or should this section stay at the current outline level until
-  Fixes 1–2 are done and shipped?
+- **Grammar stays its own separate review flow.** Not folded into
+  `/review` — no combined "everything due" button across content types.
+  Entered only from grammar-specific due badges (`LevelStatRows`,
+  `reviewType="grammar"`), which link to a dedicated `/review/grammar`
+  route.
+- **Lighter renderer, not an extended `GrammarSession.svelte`.**
+  `/review/grammar` renders the resolved due-only question list directly
+  through the existing question-type components (`FillQuestion`,
+  `OrderQuestion`, etc.) plus `AnswerReveal`/`GrammarSummary`, instead of
+  teaching `GrammarSession` a second "accept a pre-resolved list" mode.
+  `GrammarSession.svelte` itself is untouched — `/grammar/[topic]` keeps
+  its existing prioritized-practice behavior via `buildGrammarSession()`.
+- Given the above, a full step-by-step plan follows below (superseding
+  the "Proposed steps" outline, which is kept for context).
 
 ## Progress log
 
-- [ ] Fix 1 — shuffle-and-loop restart + practice-only repeat ratings in
-      `VocabFlashcardPage.svelte`
-- [ ] Fix 2 — `LevelStatRows.reviewHref()` always includes `&category=`;
-      `/review` post-resolve filter by `category` or `theme`
-- [ ] Fix 3 — pending answers to the open questions above
+_After each work session, update this log with a concise note of what changed and mark the item ✅ Done._
+
+- [x] Fix 1 ✅ Done — `VocabFlashcardPage.svelte`: replaced `buildDueDeck`
+      with `computeDuePool` (fixed due+new pool, computed once per fresh
+      session) + `dealDueChunk` (deals `sessionLimit`-sized chunks,
+      reshuffles & wraps on exhaustion). `restart()` now passes `isRestart`
+      so it deals the next chunk instead of recomputing the pool. `rate()`
+      skips `saveProgress()`/undo for cards already in `ratedThisVisit`
+      (practice-only repeats), and adds the key after a real save.
+      Completion message now uses `sessionUnseenRemaining` (pool minus
+      rated-this-visit) instead of the app-wide `dueCount`, with a
+      "keep practicing" message once the pool has looped. Verified with
+      `svelte-autofixer` (no issues). Not yet manually tested in the app.
+- [x] Fix 2 ✅ Done — `LevelStatRows.reviewHref()` now always includes
+      `&category={row.key}` when `reviewType` is set (dropped the
+      `canScopeByCategory` special-case; "Others" rows still excluded).
+      `/review/+page.svelte`'s `loadSession()`: for A1–B2 uttrykk rows,
+      omits `category` from the `getDueItems()` call (fetches the whole
+      level+type instead, since `CardProgress.category` can't express a
+      theme) and instead filters the *resolved* entries afterward by
+      `e.category === categoryParam || e.theme === categoryParam` — a
+      no-op refinement for vocab/C-uttrykk rows, the actual fix for A1–B2
+      uttrykk. `getDueItems()`'s own logic is unchanged, only its doc
+      comment (in `progress.ts`) now notes the theme case is handled
+      downstream. Verified both changed files with `svelte-autofixer` (no
+      issues). Not yet manually tested in the app.
+- [x] Fix 3 ✅ Done — Grammar due-only review, kept fully separate from
+      `/review` (per the confirmed decisions above):
+      - `POST /api/review-grammar-entries/+server.ts` (new): resolves
+        `{ id, level }[]` → `GrammarQuestion[]`, loading each requested
+        level's `grammar-{level}.json` at most once via
+        `grammarLevelLoaders`. Mirrors `/api/review-entries`.
+      - `getDueGrammarItems()` (new, `progress.ts`): due-only filter over
+        a grammar `progressMap`, optionally scoped by `level`/`topic` —
+        filters directly (no post-resolve workaround needed; grammar's
+        `CardProgress.category` is always the real topic, unlike A1–B2
+        uttrykk's sentinel).
+      - `/review/grammar/+page.svelte` (new): a lighter renderer, not an
+        extended `GrammarSession` — reads `?level=`/`?topic=`, loads the
+        grammar progress map (Plus via Supabase / free via localStorage),
+        calls `getDueGrammarItems()` + the new resolver, then renders the
+        due-only list directly through the existing question-type
+        components (`FillQuestion`/`OrderQuestion`/etc.) plus
+        `AnswerReveal`/`GrammarSummary`. Restart reshuffles the same fixed
+        due list fetched on load (no re-fetch, no Fix-1-style loop or
+        practice-only rating — intentionally simpler, scoped to grammar).
+      - `LevelStatRows.svelte`: `reviewType` now accepts `'grammar'`;
+        `reviewHref()` sends grammar rows to `/review/grammar?level=&topic=`
+        instead of the vocab/uttrykk `/review?level=&type=&category=` shape.
+      - `/stats/+page.svelte`: Grammar's `LevelStatRows` call now passes
+        `level={activeLevel}` and `reviewType="grammar"`, so its due
+        badges are clickable for the first time.
+      - `GrammarSession.svelte` and `/grammar/[topic]` are untouched.
+      Verified all four changed/created `.svelte` files with
+      `svelte-autofixer` (no issues). Not yet manually tested in the app.
+- [x] Tests ✅ Done — unit tests for the new/extracted logic (existing
+      `getDueItems()` had no unit tests either, confirmed by inspection;
+      an e2e `/review` suite already existed at `e2e/review.test.ts`):
+      - `getDueGrammarItems()`: new `describe` block in
+        `src/lib/grammar/session.test.ts` (grouped there rather than
+        `progress.test.ts`, matching where the file already tests the
+        other grammar-progress functions) — empty map, not-yet-due,
+        overdue, level filter, topic filter, combined level+topic filter,
+        unrelated ids never leaking in.
+      - Fix 1's `computeDuePool`/`dealDueChunk` were private closures
+        inside `VocabFlashcardPage.svelte` and not unit-testable as
+        written, so extracted them into pure functions in a new
+        `src/lib/due-deck.ts` (`computeDuePool`, `dealChunk`, `shuffle`,
+        `NEW_CARD_SESSION_LIMIT`) with `due-deck.test.ts` covering: due
+        vs. not-yet-due vs. new-card inclusion, the new-card session cap
+        (never caps overdue), chunk dealing/continuation, and — the core
+        Fix 1 guarantee — reshuffle-and-wrap-instead-of-empty over many
+        repeated deals. `VocabFlashcardPage.svelte` now imports these
+        instead of duplicating them (`buildDeck()`'s due branch calls
+        `computeDuePool(source, progressMap)` then `dealChunk(...)`,
+        assigning the result back into its own `$state`); behavior is
+        unchanged, this is extraction only.
+      - `LevelStatRows.svelte`'s private `reviewHref()` was similarly
+        extracted to an exported `buildReviewHref()` in `stats.ts`
+        (alongside `StatRow`/a new `ReviewType` type), with tests added
+        to `stats.test.ts`: no reviewType, no level, "Others" row, vocab
+        href shape, uttrykk href shape (category param, not theme),
+        grammar href shape (`/review/grammar`, `topic` param), level
+        lowercasing, URL-encoding a row key. `LevelStatRows.svelte` now
+        calls the imported function instead of a local one; markup/props
+        unchanged. Re-verified both changed `.svelte` files with
+        `svelte-autofixer` (no issues).
+      - Not run against the real suite — I don't have a way to execute
+        `pnpm test`/`vitest` on this machine (only file read/write access
+        via the Filesystem connector, no shell). Please run the suite
+        locally to confirm these pass; happy to fix anything that fails.
+      - Still not covered by a unit test: `VocabFlashcardPage.svelte`'s
+        `rate()` practice-only branch and the `sessionUnseenRemaining`
+        derived value — both are `$state`-driven component logic, not
+        pure functions, so they'd need a component-mount test (e.g.
+        `@testing-library/svelte`) rather than a plain `vitest` unit test.
+        Not attempted here; flagging as a gap. The e2e suite also doesn't
+        yet cover the new loop-restart behavior or `/review/grammar` —
+        only `getDueGrammarItems()`/`due-deck.ts`/`buildReviewHref()` got
+        unit coverage this round.
