@@ -1,5 +1,6 @@
 <script lang="ts">
   import { getSessionLimit } from '$lib/session-limit';
+  import { computeDuePool, dealChunk, NEW_CARD_SESSION_LIMIT } from '$lib/due-deck';
   import { onMount, untrack } from 'svelte';
   import { browser } from '$app/environment';
   import { page } from '$app/state';
@@ -72,7 +73,6 @@
   const LS_CARD_TYPE = 'vocab-flashcard-card-type';
   const LS_SHOW_EXAMPLE = 'vocab-flashcard-show-example';
   const LS_DECK_MODE = 'vocab-flashcard-deck-mode';
-  const NEW_CARD_SESSION_LIMIT = 20;
 
   function getInitialMode(): Mode {
     if (!browser) return 'noreng';
@@ -271,44 +271,11 @@
   }
 
   /** Fix 1 (replaces the old 2-B `buildDueDeck`): the fixed pool of
-   * due+new cards for this visit (unfiltered by
-   * session limit, computed once per fresh session — not re-derived on
-   * restart, so already-rated cards stay in the loop). */
-  function computeDuePool(
-    es: VocabEntry[],
-    mo: Mode,
-    pm: Record<string, CardProgress>
-  ): VocabEntry[] {
-    const now = new Date();
-    const overdue: VocabEntry[] = [];
-    const newCards: VocabEntry[] = [];
-    const filtered = mo === 'defnor' ? es.filter((e) => !!e.definition) : es;
-    for (const e of filtered) {
-      const p = pm[vocabKey(e)];
-      if (!p) {
-        newCards.push(e);
-      } else if (new Date(p.fsrs.due) <= now) {
-        overdue.push(e);
-      }
-    }
-    const newCapped = shuffle(newCards).slice(0, NEW_CARD_SESSION_LIMIT);
-    return [...overdue, ...newCapped];
-  }
-
-  /** Fix 1: deal the next sessionLimit-sized chunk from dueSessionPool,
-   * reshuffling and wrapping to the start once the pool is exhausted — so
-   * Restart always has something to show instead of trending to empty. */
-  function dealDueChunk(limit: number | null): VocabEntry[] {
-    if (dueSessionPool.length === 0) return [];
-    if (dueDealIndex >= dueSessionPool.length) {
-      dueSessionPool = shuffle(dueSessionPool);
-      dueDealIndex = 0;
-    }
-    const chunkSize = limit ?? dueSessionPool.length;
-    const chunk = dueSessionPool.slice(dueDealIndex, dueDealIndex + chunkSize);
-    dueDealIndex += chunk.length;
-    return chunk;
-  }
+   * due+new cards for this visit, plus the chunk-dealing that lets
+   * `restart()` loop the same batch instead of shrinking toward empty.
+   * Extracted to `$lib/due-deck.ts` (pure functions, unit tested in
+   * `due-deck.test.ts`) — this component only owns the `$state` (the pool
+   * and deal index) and calls them as plain functions on that state. */
 
   function buildDeck(
     es: VocabEntry[],
@@ -339,12 +306,17 @@
       // Fix 1: fresh session (not a restart) recomputes the fixed pool and
       // clears this visit's rated-set; a restart just deals the next chunk
       // (reshuffling on wrap) from the pool already established this visit.
+      // `source` is already mode-filtered (defnor excludes entries with no
+      // `definition`), so computeDuePool needs no filtering of its own.
       if (!isRestart) {
-        dueSessionPool = shuffle(computeDuePool(es, mo, progressMap));
+        dueSessionPool = shuffle(computeDuePool(source, progressMap));
         dueDealIndex = 0;
         ratedThisVisit = new Set();
       }
-      items = dealDueChunk(limit).map((e) => makeDeckItem(e, mo, ct));
+      const dealt = dealChunk(dueSessionPool, dueDealIndex, limit);
+      dueSessionPool = dealt.pool;
+      dueDealIndex = dealt.dealIndex;
+      items = dealt.chunk.map((e) => makeDeckItem(e, mo, ct));
     } else {
       items = shuffle(source)
         .slice(0, limit ?? source.length)

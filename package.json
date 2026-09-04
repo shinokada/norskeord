@@ -27,7 +27,7 @@
     "test:unit": "vitest --run",
     "test": "pnpm run test:unit && pnpm run test:e2e",
     "test:e2e": "playwright test",
-    "ch": "npx tsx scripts/build-search-index.ts && npx changeset && pnpm stats",
+    "ch": "pnpm search:index && npx changeset && pnpm stats",
     "cv": "npx changeset version",
     "generate:lessons": "npx tsx --env-file=.env scripts/generate-lessons.ts",
     "cleanup:e2e-users": "npx tsx --env-file=.env scripts/cleanup-e2e-users.ts",
