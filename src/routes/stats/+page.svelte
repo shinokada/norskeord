@@ -956,7 +956,12 @@
           </div>
         {/snippet}
         <div class="mb-8">
-          <LevelStatRows rows={grammarRowsForActiveLevel} levelColor={levelColors[activeLevel]} />
+          <LevelStatRows
+            rows={grammarRowsForActiveLevel}
+            levelColor={levelColors[activeLevel]}
+            level={activeLevel}
+            reviewType="grammar"
+          />
         </div>
       </CollapsibleSection>
     {/if}
