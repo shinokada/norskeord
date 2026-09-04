@@ -92,9 +92,7 @@
     // by category); for A1–B2 uttrykk rows this is what actually narrows
     // the level-wide fetch above down to the one theme that was clicked.
     if (categoryParam) {
-      resolved = resolved.filter(
-        (e) => e.category === categoryParam || e.theme === categoryParam
-      );
+      resolved = resolved.filter((e) => e.category === categoryParam || e.theme === categoryParam);
     }
 
     entries = resolved;
