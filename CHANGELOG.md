@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.74.0
+
+### Minor Changes
+
+- - **New Content**
+    - Added new Norwegian vocabulary for transportation, travel, aviation, vehicles, and water sports across A1, A2, and B1 levels.
+    - Expanded vocabulary statistics to reflect the new entries.
+
+  - **Documentation**
+    - Updated implementation and question documentation, including data protection planning and grammar-answer clarifications.
+
+  - **Maintenance**
+    - Improved internal tracking for vocabulary review sessions while preserving existing review behavior.
+
 ## 2.73.0
 
 ### Minor Changes
