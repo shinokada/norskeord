@@ -155,10 +155,10 @@ function grammarSeedValue(due: Date) {
 const GRAMMAR_DUE_YESTERDAY = grammarSeedValue(new Date(Date.now() - 86_400_000));
 
 async function seedGrammar(page: Page, value: string) {
-  await page.addInitScript(
-    ({ key, value }) => localStorage.setItem(key, value),
-    { key: GRAMMAR_SEED_KEY, value }
-  );
+  await page.addInitScript(({ key, value }) => localStorage.setItem(key, value), {
+    key: GRAMMAR_SEED_KEY,
+    value
+  });
 }
 
 test.describe('/review/grammar', () => {

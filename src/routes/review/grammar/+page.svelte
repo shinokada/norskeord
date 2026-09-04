@@ -193,22 +193,13 @@
         <a href="/stats" class="font-medium text-indigo-600 hover:underline dark:text-indigo-400">
           {m.stats_title()}
         </a>
-        <a
-          href="/grammar"
-          class="font-medium text-indigo-600 hover:underline dark:text-indigo-400"
-        >
+        <a href="/grammar" class="font-medium text-indigo-600 hover:underline dark:text-indigo-400">
           {m.grammar_back_to_topics()}
         </a>
       </div>
     </div>
   {:else if phase === 'summary'}
-    <GrammarSummary
-      {results}
-      total={questions.length}
-      {correctCount}
-      {dueSoon}
-      onrestart={start}
-    />
+    <GrammarSummary {results} total={questions.length} {correctCount} {dueSoon} onrestart={start} />
   {:else if current}
     <!-- Progress bar -->
     <div class="mb-6">
