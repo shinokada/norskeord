@@ -117,7 +117,10 @@ describe('computeDuePool', () => {
     const fixedNow = new Date('2025-06-01T12:00:00Z');
     const e = makeEntry({ id: 'v-1' });
     const progressMap = {
-      'v-1': { ...progressDue(0), fsrs: { ...progressDue(0).fsrs, due: new Date('2025-06-01T11:59:59Z') } }
+      'v-1': {
+        ...progressDue(0),
+        fsrs: { ...progressDue(0).fsrs, due: new Date('2025-06-01T11:59:59Z') }
+      }
     };
     expect(computeDuePool([e], progressMap, fixedNow).map((x) => x.id)).toEqual(['v-1']);
   });

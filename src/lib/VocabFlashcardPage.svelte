@@ -21,6 +21,7 @@
     getFsrs
   } from '$lib/progress';
   import { State, type FSRS } from 'ts-fsrs';
+  import { SvelteSet } from 'svelte/reactivity';
   import * as m from '$lib/paraglide/messages.js';
 
   interface CategoryNav {
@@ -125,7 +126,7 @@
   // vocabKeys already saved via saveProgress() this visit — later encounters
   // of the same card (after the pool loops) are practice-only: same UI, but
   // the rating isn't persisted, so FSRS scheduling isn't touched twice.
-  let ratedThisVisit = $state<Set<string>>(new Set());
+  let ratedThisVisit = new SvelteSet<string>();
 
   // 2-D: undo state
   let undoSnapshot = $state<UndoSnapshot | null>(null);
@@ -311,7 +312,7 @@
       if (!isRestart) {
         dueSessionPool = shuffle(computeDuePool(source, progressMap));
         dueDealIndex = 0;
-        ratedThisVisit = new Set();
+        ratedThisVisit = new SvelteSet();
       }
       const dealt = dealChunk(dueSessionPool, dueDealIndex, limit);
       dueSessionPool = dealt.pool;
@@ -345,9 +346,7 @@
   // drives the completion-screen message instead of the app-wide dueCount,
   // since the pool now loops rather than ever truly emptying.
   let sessionUnseenRemaining = $derived(
-    deckMode === 'due'
-      ? dueSessionPool.filter((e) => !ratedThisVisit.has(vocabKey(e))).length
-      : 0
+    deckMode === 'due' ? dueSessionPool.filter((e) => !ratedThisVisit.has(vocabKey(e))).length : 0
   );
 
   function setMode(mo: Mode) {
@@ -636,7 +635,7 @@
     progressMap = await saveProgress(entry, rating, progressMap, userId, fsrsRetention);
     dueCount = countDueToday(progressMap);
     if (deckMode === 'due') {
-      ratedThisVisit = new Set(ratedThisVisit).add(key);
+      ratedThisVisit.add(key);
     }
   }
 
