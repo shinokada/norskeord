@@ -110,6 +110,22 @@ match. That's step 2 below.
    **Confirmed for this repo (2026-09-04): no collaborators, no forks, no
    other clones exist.** Step 0 is a non-issue — go straight to step 1
    whenever you're ready to run the scrub.
+
+   **This is not a branch-and-merge operation.** `git filter-repo` rewrites
+   *every* commit on *every* branch it's pointed at — including `main`'s
+   full history back to commit #1, since that's the whole point (every
+   commit that ever touched `src/lib/data` needs rewriting). There's no way
+   to do this on a feature branch and merge the result back: the rewritten
+   branch has an entirely different set of commit SHAs than `main`, so a
+   normal merge would either conflict badly or quietly reintroduce the old
+   blobs from `main`'s side. It isn't something you merge — it's something
+   you *replace* history with. The safety you actually want comes from
+   doing the rewrite in a **disposable mirror clone** (step 1) that's
+   completely separate from your real working copy and from `origin`,
+   verifying the result there, and only force-pushing over `origin main`
+   once you're satisfied — optionally pushing to a throwaway repo first
+   (e.g. `git push git@github.com:shinokada/norskeord-scrub-test.git --all`)
+   to let Vercel test-build from it before touching the real repo at all.
 1. Make a fresh mirror clone to work on (don't do this in your working copy):
    ```bash
    git clone --mirror git@github.com:shinokada/norskeord.git norskeord-scrub

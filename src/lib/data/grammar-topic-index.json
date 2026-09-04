@@ -1,6 +1,10 @@
 {
   "ikke-placement": {
-    "levels": ["A2", "B1", "B2"],
+    "levels": [
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 13,
       "B1": 7,
@@ -9,7 +13,10 @@
     "total": 25
   },
   "det-sentence": {
-    "levels": ["A2", "B1"],
+    "levels": [
+      "A2",
+      "B1"
+    ],
     "countsByLevel": {
       "A2": 5,
       "B1": 13
@@ -17,7 +24,10 @@
     "total": 18
   },
   "det-er-ikke": {
-    "levels": ["A2", "B1"],
+    "levels": [
+      "A2",
+      "B1"
+    ],
     "countsByLevel": {
       "A2": 5,
       "B1": 3
@@ -25,7 +35,11 @@
     "total": 8
   },
   "v2-word-order": {
-    "levels": ["A2", "B1", "B2"],
+    "levels": [
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 4,
       "B1": 5,
@@ -34,7 +48,11 @@
     "total": 19
   },
   "modal-verb-order": {
-    "levels": ["A1", "A2", "B1"],
+    "levels": [
+      "A1",
+      "A2",
+      "B1"
+    ],
     "countsByLevel": {
       "A2": 4,
       "B1": 3,
@@ -43,7 +61,11 @@
     "total": 15
   },
   "subordinate-order": {
-    "levels": ["A2", "B1", "B2"],
+    "levels": [
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 11,
       "B1": 14,
@@ -52,7 +74,11 @@
     "total": 35
   },
   "relative-som": {
-    "levels": ["A2", "B1", "B2"],
+    "levels": [
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 11,
       "B2": 11,
@@ -61,14 +87,20 @@
     "total": 42
   },
   "svar-ja-jo-nei": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 5
     },
     "total": 5
   },
   "setningsadverbial": {
-    "levels": ["A2", "B1", "B2"],
+    "levels": [
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 4,
       "B1": 14,
@@ -77,7 +109,11 @@
     "total": 29
   },
   "adverbial-fronting": {
-    "levels": ["A2", "B1", "B2"],
+    "levels": [
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 4,
       "B1": 8,
@@ -86,7 +122,12 @@
     "total": 22
   },
   "noun-articles": {
-    "levels": ["A1", "A2", "B1", "B2"],
+    "levels": [
+      "A1",
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 10,
       "A1": 8,
@@ -96,7 +137,12 @@
     "total": 58
   },
   "noun-plurals": {
-    "levels": ["A1", "A2", "B1", "B2"],
+    "levels": [
+      "A1",
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 16,
       "B1": 24,
@@ -106,7 +152,12 @@
     "total": 59
   },
   "noun-possessives": {
-    "levels": ["A1", "A2", "B1", "B2"],
+    "levels": [
+      "A1",
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 4,
       "B1": 43,
@@ -116,7 +167,12 @@
     "total": 63
   },
   "adj-agreement": {
-    "levels": ["A1", "A2", "B1", "B2"],
+    "levels": [
+      "A1",
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 6,
       "A1": 8,
@@ -126,7 +182,10 @@
     "total": 54
   },
   "adj-definite": {
-    "levels": ["A2", "B1"],
+    "levels": [
+      "A2",
+      "B1"
+    ],
     "countsByLevel": {
       "A2": 11,
       "B1": 1
@@ -134,7 +193,11 @@
     "total": 12
   },
   "adj-comparison": {
-    "levels": ["A2", "B1", "B2"],
+    "levels": [
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 14,
       "B1": 33,
@@ -143,7 +206,11 @@
     "total": 57
   },
   "sterke-verb": {
-    "levels": ["A2", "B1", "B2"],
+    "levels": [
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 10,
       "B1": 16,
@@ -152,7 +219,11 @@
     "total": 36
   },
   "helsetninger": {
-    "levels": ["A1", "A2", "B1"],
+    "levels": [
+      "A1",
+      "A2",
+      "B1"
+    ],
     "countsByLevel": {
       "A2": 16,
       "B1": 18,
@@ -161,7 +232,12 @@
     "total": 42
   },
   "preposisjoner-tid": {
-    "levels": ["A1", "A2", "B1", "B2"],
+    "levels": [
+      "A1",
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 16,
       "B1": 16,
@@ -171,7 +247,12 @@
     "total": 48
   },
   "preposisjoner-sted": {
-    "levels": ["A1", "A2", "B1", "B2"],
+    "levels": [
+      "A1",
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 16,
       "B1": 30,
@@ -181,49 +262,64 @@
     "total": 64
   },
   "adj-farger-uboyelige": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 10
     },
     "total": 10
   },
   "adj-mer-mest": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 11
     },
     "total": 11
   },
   "adj-partisipp-som-adjektiv": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 9
     },
     "total": 9
   },
   "futurum-referert": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 9
     },
     "total": 9
   },
   "jo-desto-komparativ": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 9
     },
     "total": 9
   },
   "kondisjonalis-counterfactual": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 25
     },
     "total": 25
   },
   "koordinerende-konjunksjoner": {
-    "levels": ["B2", "C"],
+    "levels": [
+      "B2",
+      "C"
+    ],
     "countsByLevel": {
       "C": 10,
       "B2": 10
@@ -231,7 +327,10 @@
     "total": 20
   },
   "leddsetning-som-fundament": {
-    "levels": ["B2", "C"],
+    "levels": [
+      "B2",
+      "C"
+    ],
     "countsByLevel": {
       "C": 11,
       "B2": 10
@@ -239,21 +338,29 @@
     "total": 21
   },
   "omskriving-passiv": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 11
     },
     "total": 11
   },
   "ordet-sa": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 10
     },
     "total": 10
   },
   "ordfamilie-avledning": {
-    "levels": ["B1", "B2", "C"],
+    "levels": [
+      "B1",
+      "B2",
+      "C"
+    ],
     "countsByLevel": {
       "C": 44,
       "B1": 36,
@@ -262,35 +369,46 @@
     "total": 122
   },
   "perfektum-pluskvamperfektum": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 11
     },
     "total": 11
   },
   "predikativ-agreement": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 11
     },
     "total": 11
   },
   "preposisjoner-generelt-c": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 74
     },
     "total": 74
   },
   "preposisjoner-kroppsdel-uttrykk": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 28
     },
     "total": 28
   },
   "sammensatte-substantiv": {
-    "levels": ["B1", "C"],
+    "levels": [
+      "B1",
+      "C"
+    ],
     "countsByLevel": {
       "C": 21,
       "B1": 19
@@ -298,49 +416,64 @@
     "total": 40
   },
   "sterke-verb-c": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 12
     },
     "total": 12
   },
   "substantiv-uttrykk-c": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 10
     },
     "total": 10
   },
   "ubestemt-artikkel-c": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 10
     },
     "total": 10
   },
   "uttrykk-gjenkjenning-c-1": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 37
     },
     "total": 37
   },
   "uttrykk-gjenkjenning-c-2": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 83
     },
     "total": 83
   },
   "uttrykk-gjenkjenning-c-3": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 89
     },
     "total": 89
   },
   "verbet-a-fa": {
-    "levels": ["B1", "C"],
+    "levels": [
+      "B1",
+      "C"
+    ],
     "countsByLevel": {
       "C": 16,
       "B1": 10
@@ -348,35 +481,46 @@
     "total": 26
   },
   "verbform-i-kontekst": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 12
     },
     "total": 12
   },
   "personlige-pronomen": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 10
     },
     "total": 10
   },
   "presens-verb": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 10
     },
     "total": 10
   },
   "pronomen-objektsform": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 10
     },
     "total": 10
   },
   "og-men": {
-    "levels": ["A1", "B1"],
+    "levels": [
+      "A1",
+      "B1"
+    ],
     "countsByLevel": {
       "A1": 8,
       "B1": 10
@@ -384,7 +528,10 @@
     "total": 18
   },
   "adverb-sted-hjem": {
-    "levels": ["A1", "B1"],
+    "levels": [
+      "A1",
+      "B1"
+    ],
     "countsByLevel": {
       "A1": 8,
       "B1": 8
@@ -392,14 +539,19 @@
     "total": 16
   },
   "refleksive-uttrykk": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 8
     },
     "total": 8
   },
   "infinitiv-a1": {
-    "levels": ["A1", "B1"],
+    "levels": [
+      "A1",
+      "B1"
+    ],
     "countsByLevel": {
       "A1": 10,
       "B1": 20
@@ -407,28 +559,37 @@
     "total": 30
   },
   "substantiv-bestemt-form": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 10
     },
     "total": 10
   },
   "pronomen-den-det-de": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 8
     },
     "total": 8
   },
   "denne-dette-disse": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 10
     },
     "total": 10
   },
   "imperativ": {
-    "levels": ["A1", "B2"],
+    "levels": [
+      "A1",
+      "B2"
+    ],
     "countsByLevel": {
       "A1": 8,
       "B2": 5
@@ -436,14 +597,19 @@
     "total": 13
   },
   "possessiver-min-din": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 10
     },
     "total": 10
   },
   "refleksivt-possessiv-sin": {
-    "levels": ["A1", "B1"],
+    "levels": [
+      "A1",
+      "B1"
+    ],
     "countsByLevel": {
       "A1": 10,
       "B1": 10
@@ -451,28 +617,37 @@
     "total": 20
   },
   "ja-jo": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 6
     },
     "total": 6
   },
   "preteritum-a1": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 12
     },
     "total": 12
   },
   "for-a-fordi": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 8
     },
     "total": 8
   },
   "vaer-det-subjekt": {
-    "levels": ["A1", "B1"],
+    "levels": [
+      "A1",
+      "B1"
+    ],
     "countsByLevel": {
       "A1": 8,
       "B1": 8
@@ -480,7 +655,12 @@
     "total": 16
   },
   "indirekte-tale-at-om": {
-    "levels": ["A1", "A2", "B1", "B2"],
+    "levels": [
+      "A1",
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A1": 8,
       "A2": 12,
@@ -490,7 +670,10 @@
     "total": 76
   },
   "synes-tror": {
-    "levels": ["A1", "B1"],
+    "levels": [
+      "A1",
+      "B1"
+    ],
     "countsByLevel": {
       "A1": 8,
       "B1": 10
@@ -498,28 +681,37 @@
     "total": 18
   },
   "klokka-tid": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 10
     },
     "total": 10
   },
   "ordenstall-dato": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 8
     },
     "total": 8
   },
   "for-siden": {
-    "levels": ["A1"],
+    "levels": [
+      "A1"
+    ],
     "countsByLevel": {
       "A1": 6
     },
     "total": 6
   },
   "presens-perfektum": {
-    "levels": ["A2", "B1"],
+    "levels": [
+      "A2",
+      "B1"
+    ],
     "countsByLevel": {
       "A2": 14,
       "B1": 10
@@ -527,7 +719,11 @@
     "total": 24
   },
   "derfor-fordi": {
-    "levels": ["A2", "B1", "B2"],
+    "levels": [
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 8,
       "B1": 6,
@@ -536,7 +732,11 @@
     "total": 34
   },
   "kvantorer": {
-    "levels": ["A2", "B1", "B2"],
+    "levels": [
+      "A2",
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "A2": 8,
       "B1": 20,
@@ -545,7 +745,10 @@
     "total": 48
   },
   "modalverb-preteritum": {
-    "levels": ["A2", "B1"],
+    "levels": [
+      "A2",
+      "B1"
+    ],
     "countsByLevel": {
       "A2": 10,
       "B1": 18
@@ -553,14 +756,19 @@
     "total": 28
   },
   "plassering-verb": {
-    "levels": ["A2"],
+    "levels": [
+      "A2"
+    ],
     "countsByLevel": {
       "A2": 8
     },
     "total": 8
   },
   "refleksive-verb": {
-    "levels": ["A2", "B1"],
+    "levels": [
+      "A2",
+      "B1"
+    ],
     "countsByLevel": {
       "A2": 8,
       "B1": 10
@@ -568,42 +776,55 @@
     "total": 18
   },
   "ha-vs-vaere": {
-    "levels": ["A2"],
+    "levels": [
+      "A2"
+    ],
     "countsByLevel": {
       "A2": 8
     },
     "total": 8
   },
   "framtid-uttrykk": {
-    "levels": ["B1"],
+    "levels": [
+      "B1"
+    ],
     "countsByLevel": {
       "B1": 22
     },
     "total": 22
   },
   "for-sa-arsak-folge": {
-    "levels": ["B1"],
+    "levels": [
+      "B1"
+    ],
     "countsByLevel": {
       "B1": 10
     },
     "total": 10
   },
   "da-naar": {
-    "levels": ["B1"],
+    "levels": [
+      "B1"
+    ],
     "countsByLevel": {
       "B1": 20
     },
     "total": 20
   },
   "hvis-om-betingelse": {
-    "levels": ["B1"],
+    "levels": [
+      "B1"
+    ],
     "countsByLevel": {
       "B1": 10
     },
     "total": 10
   },
   "passiv-bli-s": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B1": 32,
       "B2": 21
@@ -611,7 +832,10 @@
     "total": 53
   },
   "bade-og-verken-eller": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B1": 32,
       "B2": 10
@@ -619,7 +843,10 @@
     "total": 42
   },
   "adjektiv-eller-adverb": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B1": 21,
       "B2": 21
@@ -627,7 +854,10 @@
     "total": 42
   },
   "motsetning-selv-om-likevel": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B1": 10,
       "B2": 20
@@ -635,7 +865,10 @@
     "total": 30
   },
   "tidssekvens-etter-at-etterpaa": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B1": 10,
       "B2": 20
@@ -643,35 +876,46 @@
     "total": 30
   },
   "substantivert-adjektiv": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 22
     },
     "total": 22
   },
   "motsetning-prefiks": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 21
     },
     "total": 21
   },
   "hoflig-preteritum": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 20
     },
     "total": 20
   },
   "subjunksjon-oversikt": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 21
     },
     "total": 21
   },
   "partisipp-former": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 31,
       "B1": 11
@@ -679,49 +923,64 @@
     "total": 42
   },
   "partikkelverb-los-fast": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 32
     },
     "total": 32
   },
   "modalverb-betydning": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 22
     },
     "total": 22
   },
   "sannsynlighet-uttrykk": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 20
     },
     "total": 20
   },
   "bli-presens-partisipp": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 20
     },
     "total": 20
   },
   "fa-perfektum-partisipp": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 20
     },
     "total": 20
   },
   "mene-synes-tro-tenke": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 22
     },
     "total": 22
   },
   "modale-adverb": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 23,
       "B1": 10
@@ -729,14 +988,19 @@
     "total": 33
   },
   "sammensatte-substantiv-b2": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 22
     },
     "total": 22
   },
   "preteritum-perfektum-og-futurum": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 22,
       "B1": 10
@@ -744,21 +1008,28 @@
     "total": 32
   },
   "det-formelt-subjekt": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 21
     },
     "total": 21
   },
   "det-referanse": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 12
     },
     "total": 12
   },
   "spesial-kvantorer": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 24,
       "B1": 10
@@ -766,7 +1037,10 @@
     "total": 34
   },
   "arsak-og-folge-uttrykk": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 24,
       "B1": 10
@@ -774,7 +1048,10 @@
     "total": 34
   },
   "kontrast-uttrykk": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 22,
       "B1": 10
@@ -782,14 +1059,19 @@
     "total": 32
   },
   "hypotetiske-betingelsessetninger": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 12
     },
     "total": 12
   },
   "stedsadverb-statisk-dynamisk": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 20,
       "B1": 10
@@ -797,7 +1079,10 @@
     "total": 30
   },
   "man-en-upersonlig-pronomen": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 18,
       "B1": 10
@@ -805,7 +1090,10 @@
     "total": 28
   },
   "kommaregler": {
-    "levels": ["B2", "C"],
+    "levels": [
+      "B2",
+      "C"
+    ],
     "countsByLevel": {
       "B2": 33,
       "C": 20
@@ -813,14 +1101,20 @@
     "total": 53
   },
   "uttrykk-gjenkjenning-detgaarbra-c": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 15
     },
     "total": 15
   },
   "nyanser-uttrykk": {
-    "levels": ["B1", "B2", "C"],
+    "levels": [
+      "B1",
+      "B2",
+      "C"
+    ],
     "countsByLevel": {
       "B2": 9,
       "C": 9,
@@ -829,35 +1123,46 @@
     "total": 101
   },
   "preposisjoner-uttrykk-b2": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 20
     },
     "total": 20
   },
   "adj-boying-c": {
-    "levels": ["C"],
+    "levels": [
+      "C"
+    ],
     "countsByLevel": {
       "C": 10
     },
     "total": 10
   },
   "transitiv-intransitiv-verb": {
-    "levels": ["B1"],
+    "levels": [
+      "B1"
+    ],
     "countsByLevel": {
       "B1": 12
     },
     "total": 12
   },
   "s-verb": {
-    "levels": ["B1"],
+    "levels": [
+      "B1"
+    ],
     "countsByLevel": {
       "B1": 12
     },
     "total": 12
   },
   "verbprefiks-be-an-mis": {
-    "levels": ["B1", "B2"],
+    "levels": [
+      "B1",
+      "B2"
+    ],
     "countsByLevel": {
       "B1": 12,
       "B2": 10
@@ -865,35 +1170,45 @@
     "total": 22
   },
   "adverb-setningsbinding": {
-    "levels": ["B1"],
+    "levels": [
+      "B1"
+    ],
     "countsByLevel": {
       "B1": 12
     },
     "total": 12
   },
   "determinativ-forsterkere": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 10
     },
     "total": 10
   },
   "adverb-gradboying": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 10
     },
     "total": 10
   },
   "sammensatt-verbtid": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 10
     },
     "total": 10
   },
   "setningsledd-identifikasjon": {
-    "levels": ["B2"],
+    "levels": [
+      "B2"
+    ],
     "countsByLevel": {
       "B2": 12
     },
