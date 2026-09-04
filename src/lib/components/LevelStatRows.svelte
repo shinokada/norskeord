@@ -7,9 +7,8 @@
   // accordion wrapper and no level loop — it renders exactly the rows it's
   // given, for whichever single level the caller is currently showing.
   // Level selection lives in the level-tabs UI (Phase 3), not here.
-  import type { StatRow } from '$lib/stats';
+  import { type StatRow, buildReviewHref, type ReviewType } from '$lib/stats';
   import type { CEFRLevel } from '$lib/types';
-  import { UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages.js';
 
   interface Props {
@@ -18,49 +17,20 @@
     emptyMessage?: string;
     /**
      * CEFR level these rows belong to. Required to build the due-badge's
-     * `/review` link (Step 4c, ai-docs/implementation/due-only.md) — omit
-     * `reviewType` below to skip the link entirely (e.g. Grammar rows,
-     * out of scope for v1).
+     * review link (Step 4c, ai-docs/implementation/due-only.md) — omit
+     * `reviewType` below to skip the link entirely.
      */
     level?: CEFRLevel;
     /**
      * When set, each row's due badge becomes its own link into a due-only
-     * review session for that row (Step 4c). Omitted for Grammar rows,
-     * which keep today's plain (unclickable) badge.
+     * review session for that row (Step 4c; grammar added in Fix 3,
+     * ai-docs/implementation/due-only-review-update.md). Omit to keep
+     * today's plain (unclickable) badge.
      */
-    reviewType?: 'vocab' | 'uttrykk';
+    reviewType?: ReviewType;
   }
 
   let { rows, levelColor, emptyMessage, level, reviewType }: Props = $props();
-
-  /**
-   * Builds the due-badge's `/review` href for one row, or null when this
-   * row shouldn't link anywhere (no reviewType, or a synthetic "Others"
-   * bucket that isn't a real category/theme).
-   *
-   * Always includes `&category={row.key}` when reviewType is set (Fix 2,
-   * ai-docs/implementation/due-only-review-update.md) — `/review` handles
-   * scoping it correctly downstream regardless of which kind of row this
-   * is: `row.key` lines up with `CardProgress.category` for vocab rows and
-   * C's uttrykk rows (real category slugs), so `getDueItems()` can scope
-   * by it directly there. A1–B2 uttrykk rows are keyed by *theme*, which
-   * isn't stored on `CardProgress` at all (every A1–B2 uttrykk card's
-   * `category` is the literal 'uttrykk' sentinel) — for those, `/review`
-   * fetches the whole level+type and filters the *resolved* entries by
-   * `theme` afterward, since `theme` only exists on the resolved
-   * `VocabEntry`, not on `CardProgress`.
-   */
-  function reviewHref(row: StatRow): string | null {
-    if (!reviewType || !level) return null;
-    const params: string[] = [
-      `level=${encodeURIComponent(level.toLowerCase())}`,
-      `type=${encodeURIComponent(reviewType)}`
-    ];
-    if (row.key !== UTTRYKK_OTHERS_THEME) {
-      params.push(`category=${encodeURIComponent(row.key)}`);
-    }
-    return `/review?${params.join('&')}`;
-  }
 </script>
 
 {#if rows.length === 0}
@@ -131,7 +101,7 @@
                reviewType is set (Step 4c); otherwise a plain badge like today. -->
           <span class="relative z-[1] w-14 shrink-0 text-right">
             {#if row.due > 0}
-              {@const href = reviewHref(row)}
+              {@const href = buildReviewHref(row, level, reviewType)}
               {#if href}
                 <a
                   {href}

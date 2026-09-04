@@ -4,11 +4,15 @@
  * Search algorithm for the pre-built SearchEntry index.
  * Three-pass scoring — no external library needed at ~10,000 entries.
  *
- * Pass 1 — exact match on lemma or english            score: 10
- * Pass 2 — prefix match on lemma or english           score: 8
+ * Pass 1 — exact match on lemma or translation            score: 10
+ * Pass 2 — prefix match on lemma or translation           score: 8
  * Pass 3 — substring match across all text fields     score: 5
  * Pass 4 — all query tokens appear somewhere          score: 1
  *           (handles inflected forms like "boken" → lemma "bok")
+ *
+ * "Translation" defaults to English but callers can pass a locale-aware
+ * getter (see Search.svelte's `translationFor`) so a Spanish/Ukrainian/German
+ * query matches too, not just Norwegian or English text.
  *
  * Results are sorted by score descending, capped at MAX_RESULTS.
  */
@@ -25,7 +29,9 @@ export interface SearchFilter {
 export function search(
   query: string,
   index: SearchEntry[],
-  filter: SearchFilter = {}
+  filter: SearchFilter = {},
+  getTranslation: (entry: SearchEntry) => string = (e) => e.english,
+  getExampleTranslation: (entry: SearchEntry) => string = (e) => e.example_english
 ): SearchEntry[] {
   const q = normalize(query);
   if (q.length < 2) return [];
@@ -39,21 +45,21 @@ export function search(
 
     let score = 0;
     const ln = normalize(entry.lemma);
-    const en = normalize(entry.english);
+    const tr = normalize(getTranslation(entry));
 
-    if (ln === q || en === q) {
+    if (ln === q || tr === q) {
       score = 10;
-    } else if (ln.startsWith(q) || en.startsWith(q)) {
+    } else if (ln.startsWith(q) || tr.startsWith(q)) {
       score = 8;
     } else if (
-      [entry.norsk, entry.lemma, entry.english, entry.example, entry.example_english].some((f) =>
+      [entry.norsk, entry.lemma, tr, entry.example, getExampleTranslation(entry)].some((f) =>
         normalize(f).includes(q)
       )
     ) {
       score = 5;
     } else {
       const tokens = q.split(/\s+/);
-      const blob = normalize([entry.norsk, entry.lemma, entry.english].join(' '));
+      const blob = normalize([entry.norsk, entry.lemma, tr].join(' '));
       if (tokens.every((t) => blob.includes(t))) score = 1;
     }
 
