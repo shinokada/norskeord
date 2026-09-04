@@ -61,7 +61,7 @@ CLAUDE:
 
 Please read ai-docs/implementation/new-vocab-uttrykk-pipeline.md. Please see draft/new-entries/24 directory for your reference.
 
-I added draft/new-entries/24/source-list.md. Can you start Stage 1?
+I added draft/new-entries/archived/24/source-list.md. Can you start Stage 1?
 Ignore titles/headings.
 
 I was working on draft/new-entries/24 directory.
@@ -80,6 +80,38 @@ ME:
 CLAUDE:
 
 ME:
+
+---
+
+I typed sonner and I got it right. It should be wrong.
+
+✓ Riktig!
+Riktig svar
+sønner
+
+Hvorfor · Substantivets flertall
+
+Flertallsbøyning av substantiv følger flere mønstre:
+
+-er — de fleste substantiver: en bil → biler
+-r — substantiver som ender på -e: en klasse → klasser
+uendret — mange korte intetkjønnsord har samme form i entall og flertall: et år → tre år, et barn → tre barn
+uregelmessig — en mann → menn, et barn → barn, en fot → føtter
+
+I also typed de går hjemm and I got it right but it should not.
+
+✓
+Riktig!
+Riktig svar
+
+De går hjem.
+
+Hvorfor · Stedsadverb: inne/ute, inn/ut, hjem/hjemme
+
+Norsk bruker ulik adverbform for Å VÆRE et sted og Å BEVEGE SEG dit:
+
+statisk — inne, ute, hjemme: "Jeg er ute." "Vi er hjemme."
+dynamisk — inn, ut, hjem: "Jeg går ut." "Vi går hjem."
 
 ---
 

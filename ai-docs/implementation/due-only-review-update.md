@@ -1,6 +1,7 @@
 ---
 title: Due-only review — fixes and grammar extension
 date: 2026-09-03
+completed: 2026-09-04
 ---
 
 # Due-only review — fixes and grammar extension
