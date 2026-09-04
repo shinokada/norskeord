@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.73.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added due-only grammar reviews with CEFR-level and topic filtering, grading, progress saving, keyboard navigation, and restart support.
+    - Added grammar review links from statistics.
+    - Search now matches and displays translations and examples in the selected language, with English fallback.
+    - Added improved vocabulary review sessions with fixed due-card pools and practice repeats.
+    - Added more accurate filtering for themed expression reviews.
+
+  - **Bug Fixes**
+    - Improved handling of empty, future, overdue, and exhausted review pools.
+    - Corrected scoped review links for vocabulary, expressions, and grammar.
+
 ## 2.72.0
 
 ### Minor Changes
