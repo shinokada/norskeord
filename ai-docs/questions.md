@@ -36,26 +36,21 @@ kran and skall are exact duplicates but sitting oddly at level C in production f
 Should I change /stats url to /progress or /my-progress? What do you think?
 ---
 
+---
 
 ---
 
+ME:
 
+CLAUDE:
 
+ME:
 
+CLAUDE:
 
----
+ME:
 
-ME: 
-
-CLAUDE: 
-
-ME: 
-
-CLAUDE: 
-
-ME: 
-
-CLAUDE: 
+CLAUDE:
 
 ---
 

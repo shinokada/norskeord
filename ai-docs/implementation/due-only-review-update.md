@@ -50,7 +50,7 @@ cards mid-visit. Concretely, for the three examples discussed:
 **Ratings still save real FSRS progress — but only the first time a card
 is rated this visit.** A repeat encounter (the card comes back around
 after the deck loops) is **practice-only**: same flip/rate/advance UI,
-same rating buttons, but the rating is *not* persisted via
+same rating buttons, but the rating is _not_ persisted via
 `saveProgress()`. This was a deliberate choice over letting every repeat
 count as a real review — a second "Good" seen 90 seconds after the first
 doesn't reflect genuine retention at a real spaced interval, and letting
@@ -284,7 +284,7 @@ _After each work session, update this log with a concise note of what changed an
       `/review/+page.svelte`'s `loadSession()`: for A1–B2 uttrykk rows,
       omits `category` from the `getDueItems()` call (fetches the whole
       level+type instead, since `CardProgress.category` can't express a
-      theme) and instead filters the *resolved* entries afterward by
+      theme) and instead filters the _resolved_ entries afterward by
       `e.category === categoryParam || e.theme === categoryParam` — a
       no-op refinement for vocab/C-uttrykk rows, the actual fix for A1–B2
       uttrykk. `getDueItems()`'s own logic is unchanged, only its doc
@@ -292,76 +292,65 @@ _After each work session, update this log with a concise note of what changed an
       downstream. Verified both changed files with `svelte-autofixer` (no
       issues). Not yet manually tested in the app.
 - [x] Fix 3 ✅ Done — Grammar due-only review, kept fully separate from
-      `/review` (per the confirmed decisions above):
-      - `POST /api/review-grammar-entries/+server.ts` (new): resolves
-        `{ id, level }[]` → `GrammarQuestion[]`, loading each requested
-        level's `grammar-{level}.json` at most once via
-        `grammarLevelLoaders`. Mirrors `/api/review-entries`.
-      - `getDueGrammarItems()` (new, `progress.ts`): due-only filter over
-        a grammar `progressMap`, optionally scoped by `level`/`topic` —
-        filters directly (no post-resolve workaround needed; grammar's
-        `CardProgress.category` is always the real topic, unlike A1–B2
-        uttrykk's sentinel).
-      - `/review/grammar/+page.svelte` (new): a lighter renderer, not an
-        extended `GrammarSession` — reads `?level=`/`?topic=`, loads the
-        grammar progress map (Plus via Supabase / free via localStorage),
-        calls `getDueGrammarItems()` + the new resolver, then renders the
-        due-only list directly through the existing question-type
-        components (`FillQuestion`/`OrderQuestion`/etc.) plus
-        `AnswerReveal`/`GrammarSummary`. Restart reshuffles the same fixed
-        due list fetched on load (no re-fetch, no Fix-1-style loop or
-        practice-only rating — intentionally simpler, scoped to grammar).
-      - `LevelStatRows.svelte`: `reviewType` now accepts `'grammar'`;
-        `reviewHref()` sends grammar rows to `/review/grammar?level=&topic=`
-        instead of the vocab/uttrykk `/review?level=&type=&category=` shape.
-      - `/stats/+page.svelte`: Grammar's `LevelStatRows` call now passes
-        `level={activeLevel}` and `reviewType="grammar"`, so its due
-        badges are clickable for the first time.
-      - `GrammarSession.svelte` and `/grammar/[topic]` are untouched.
+      `/review` (per the confirmed decisions above): - `POST /api/review-grammar-entries/+server.ts` (new): resolves
+      `{ id, level }[]` → `GrammarQuestion[]`, loading each requested
+      level's `grammar-{level}.json` at most once via
+      `grammarLevelLoaders`. Mirrors `/api/review-entries`. - `getDueGrammarItems()` (new, `progress.ts`): due-only filter over
+      a grammar `progressMap`, optionally scoped by `level`/`topic` —
+      filters directly (no post-resolve workaround needed; grammar's
+      `CardProgress.category` is always the real topic, unlike A1–B2
+      uttrykk's sentinel). - `/review/grammar/+page.svelte` (new): a lighter renderer, not an
+      extended `GrammarSession` — reads `?level=`/`?topic=`, loads the
+      grammar progress map (Plus via Supabase / free via localStorage),
+      calls `getDueGrammarItems()` + the new resolver, then renders the
+      due-only list directly through the existing question-type
+      components (`FillQuestion`/`OrderQuestion`/etc.) plus
+      `AnswerReveal`/`GrammarSummary`. Restart reshuffles the same fixed
+      due list fetched on load (no re-fetch, no Fix-1-style loop or
+      practice-only rating — intentionally simpler, scoped to grammar). - `LevelStatRows.svelte`: `reviewType` now accepts `'grammar'`;
+      `reviewHref()` sends grammar rows to `/review/grammar?level=&topic=`
+      instead of the vocab/uttrykk `/review?level=&type=&category=` shape. - `/stats/+page.svelte`: Grammar's `LevelStatRows` call now passes
+      `level={activeLevel}` and `reviewType="grammar"`, so its due
+      badges are clickable for the first time. - `GrammarSession.svelte` and `/grammar/[topic]` are untouched.
       Verified all four changed/created `.svelte` files with
       `svelte-autofixer` (no issues). Not yet manually tested in the app.
 - [x] Tests ✅ Done — unit tests for the new/extracted logic (existing
       `getDueItems()` had no unit tests either, confirmed by inspection;
-      an e2e `/review` suite already existed at `e2e/review.test.ts`):
-      - `getDueGrammarItems()`: new `describe` block in
-        `src/lib/grammar/session.test.ts` (grouped there rather than
-        `progress.test.ts`, matching where the file already tests the
-        other grammar-progress functions) — empty map, not-yet-due,
-        overdue, level filter, topic filter, combined level+topic filter,
-        unrelated ids never leaking in.
-      - Fix 1's `computeDuePool`/`dealDueChunk` were private closures
-        inside `VocabFlashcardPage.svelte` and not unit-testable as
-        written, so extracted them into pure functions in a new
-        `src/lib/due-deck.ts` (`computeDuePool`, `dealChunk`, `shuffle`,
-        `NEW_CARD_SESSION_LIMIT`) with `due-deck.test.ts` covering: due
-        vs. not-yet-due vs. new-card inclusion, the new-card session cap
-        (never caps overdue), chunk dealing/continuation, and — the core
-        Fix 1 guarantee — reshuffle-and-wrap-instead-of-empty over many
-        repeated deals. `VocabFlashcardPage.svelte` now imports these
-        instead of duplicating them (`buildDeck()`'s due branch calls
-        `computeDuePool(source, progressMap)` then `dealChunk(...)`,
-        assigning the result back into its own `$state`); behavior is
-        unchanged, this is extraction only.
-      - `LevelStatRows.svelte`'s private `reviewHref()` was similarly
-        extracted to an exported `buildReviewHref()` in `stats.ts`
-        (alongside `StatRow`/a new `ReviewType` type), with tests added
-        to `stats.test.ts`: no reviewType, no level, "Others" row, vocab
-        href shape, uttrykk href shape (category param, not theme),
-        grammar href shape (`/review/grammar`, `topic` param), level
-        lowercasing, URL-encoding a row key. `LevelStatRows.svelte` now
-        calls the imported function instead of a local one; markup/props
-        unchanged. Re-verified both changed `.svelte` files with
-        `svelte-autofixer` (no issues).
-      - Not run against the real suite — I don't have a way to execute
-        `pnpm test`/`vitest` on this machine (only file read/write access
-        via the Filesystem connector, no shell). Please run the suite
-        locally to confirm these pass; happy to fix anything that fails.
-      - Still not covered by a unit test: `VocabFlashcardPage.svelte`'s
-        `rate()` practice-only branch and the `sessionUnseenRemaining`
-        derived value — both are `$state`-driven component logic, not
-        pure functions, so they'd need a component-mount test (e.g.
-        `@testing-library/svelte`) rather than a plain `vitest` unit test.
-        Not attempted here; flagging as a gap. The e2e suite also doesn't
-        yet cover the new loop-restart behavior or `/review/grammar` —
-        only `getDueGrammarItems()`/`due-deck.ts`/`buildReviewHref()` got
-        unit coverage this round.
+      an e2e `/review` suite already existed at `e2e/review.test.ts`): - `getDueGrammarItems()`: new `describe` block in
+      `src/lib/grammar/session.test.ts` (grouped there rather than
+      `progress.test.ts`, matching where the file already tests the
+      other grammar-progress functions) — empty map, not-yet-due,
+      overdue, level filter, topic filter, combined level+topic filter,
+      unrelated ids never leaking in. - Fix 1's `computeDuePool`/`dealDueChunk` were private closures
+      inside `VocabFlashcardPage.svelte` and not unit-testable as
+      written, so extracted them into pure functions in a new
+      `src/lib/due-deck.ts` (`computeDuePool`, `dealChunk`, `shuffle`,
+      `NEW_CARD_SESSION_LIMIT`) with `due-deck.test.ts` covering: due
+      vs. not-yet-due vs. new-card inclusion, the new-card session cap
+      (never caps overdue), chunk dealing/continuation, and — the core
+      Fix 1 guarantee — reshuffle-and-wrap-instead-of-empty over many
+      repeated deals. `VocabFlashcardPage.svelte` now imports these
+      instead of duplicating them (`buildDeck()`'s due branch calls
+      `computeDuePool(source, progressMap)` then `dealChunk(...)`,
+      assigning the result back into its own `$state`); behavior is
+      unchanged, this is extraction only. - `LevelStatRows.svelte`'s private `reviewHref()` was similarly
+      extracted to an exported `buildReviewHref()` in `stats.ts`
+      (alongside `StatRow`/a new `ReviewType` type), with tests added
+      to `stats.test.ts`: no reviewType, no level, "Others" row, vocab
+      href shape, uttrykk href shape (category param, not theme),
+      grammar href shape (`/review/grammar`, `topic` param), level
+      lowercasing, URL-encoding a row key. `LevelStatRows.svelte` now
+      calls the imported function instead of a local one; markup/props
+      unchanged. Re-verified both changed `.svelte` files with
+      `svelte-autofixer` (no issues). - Not run against the real suite — I don't have a way to execute
+      `pnpm test`/`vitest` on this machine (only file read/write access
+      via the Filesystem connector, no shell). Please run the suite
+      locally to confirm these pass; happy to fix anything that fails. - Still not covered by a unit test: `VocabFlashcardPage.svelte`'s
+      `rate()` practice-only branch and the `sessionUnseenRemaining`
+      derived value — both are `$state`-driven component logic, not
+      pure functions, so they'd need a component-mount test (e.g.
+      `@testing-library/svelte`) rather than a plain `vitest` unit test.
+      Not attempted here; flagging as a gap. The e2e suite also doesn't
+      yet cover the new loop-restart behavior or `/review/grammar` —
+      only `getDueGrammarItems()`/`due-deck.ts`/`buildReviewHref()` got
+      unit coverage this round.
