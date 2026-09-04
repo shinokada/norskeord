@@ -55,6 +55,53 @@ export interface StatRow {
   due: number;
 }
 
+/**
+ * Which content type LevelStatRows' due-badge link should scope a review
+ * session to (Step 4c, ai-docs/implementation/due-only.md, extended for
+ * grammar in Fix 3 of due-only-review-update.md).
+ */
+export type ReviewType = 'vocab' | 'uttrykk' | 'grammar';
+
+/**
+ * Builds the due-badge's review href for one row (LevelStatRows.svelte),
+ * or null when this row shouldn't link anywhere — no `reviewType`/`level`
+ * given, or a synthetic "Others" bucket that isn't a real category/theme.
+ * Pure/extracted so it's unit-testable without mounting the component (see
+ * stats.test.ts) — LevelStatRows.svelte just calls this per row.
+ *
+ * Grammar rows (Fix 3) go to the separate `/review/grammar` route (grammar
+ * was deliberately kept out of the combined vocab+uttrykk `/review` flow —
+ * see the Open Questions resolution in due-only-review-update.md) with a
+ * `topic` param, since `row.key` for a grammar row is a real `GrammarTopic`
+ * that lines up exactly with `CardProgress.category` there — no theme
+ * workaround needed.
+ *
+ * For vocab/uttrykk, always includes `&category={row.key}` when reviewType
+ * is set (Fix 2) — `/review` handles scoping it correctly downstream
+ * regardless of which kind of row this is: `row.key` lines up with
+ * `CardProgress.category` for vocab rows and C's uttrykk rows (real
+ * category slugs), so `getDueItems()` can scope by it directly there.
+ * A1–B2 uttrykk rows are keyed by *theme*, which isn't stored on
+ * `CardProgress` at all (every A1–B2 uttrykk card's `category` is the
+ * literal 'uttrykk' sentinel) — for those, `/review` fetches the whole
+ * level+type and filters the *resolved* entries by `theme` afterward,
+ * since `theme` only exists on the resolved `VocabEntry`, not on
+ * `CardProgress`.
+ */
+export function buildReviewHref(
+  row: StatRow,
+  level: CEFRLevel | undefined,
+  reviewType: ReviewType | undefined
+): string | null {
+  if (!reviewType || !level) return null;
+  if (row.key === UTTRYKK_OTHERS_THEME) return null;
+  const lvl = encodeURIComponent(level.toLowerCase());
+  if (reviewType === 'grammar') {
+    return `/review/grammar?level=${lvl}&topic=${encodeURIComponent(row.key)}`;
+  }
+  return `/review?level=${lvl}&type=${encodeURIComponent(reviewType)}&category=${encodeURIComponent(row.key)}`;
+}
+
 function buildStatRow(
   key: string,
   label: string,

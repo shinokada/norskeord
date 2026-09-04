@@ -17,6 +17,7 @@
   import { tick } from 'svelte';
   import { categoryLabel } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages.js';
+  import { localeStore } from '$lib/localeStore.svelte';
 
   interface Props {
     open: boolean;
@@ -47,6 +48,13 @@
     error = '';
     try {
       index = await loadSearchIndex();
+      // The user may have already typed (and had a debounced runSearch()
+      // bail out via `if (!index) return;` above) while this fetch was
+      // still in flight — nothing else re-triggers a search once `index`
+      // is set, since it's a plain variable, not reactive `$state`. Re-run
+      // now so a query typed during the ~4MB fetch doesn't get stuck on
+      // an empty result set forever.
+      if (query.trim().length >= 2) runSearch();
     } catch {
       error = m.search_load_error();
     } finally {
@@ -70,17 +78,20 @@
       source: sourceFilter === 'all' ? undefined : sourceFilter,
       level: levelFilter === 'all' ? undefined : levelFilter
     };
-    results = search(query, index, filter);
+    results = search(query, index, filter, translationFor, exampleTranslationFor);
     activeIndex = -1;
   }
 
-  // Re-run search when filters change
+  // Re-run search when filters or the active locale change (locale changes
+  // which language field matching/display use — see translationFor below)
   $effect(() => {
     // Explicitly read reactive values so the effect re-runs on change
     const _s = sourceFilter;
     const _l = levelFilter;
+    const _loc = localeStore.current;
     void _s;
     void _l;
+    void _loc;
     if (index) runSearch();
   });
 
@@ -180,6 +191,33 @@
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
+  }
+
+  // ── Translation for the currently selected locale ─────────────────────────
+  // 'nb' (Norsk) prefers the monolingual Norwegian definition (B1+ only);
+  // falls back to English when no definition exists (A1/A2) or none was found.
+  // Other locales show that language's translation, falling back to English
+  // when the entry hasn't been translated yet.
+  function translationFor(entry: SearchEntry): string {
+    const locale = localeStore.current;
+    if (locale === 'nb') return entry.definition ?? entry.english;
+    if (locale === 'es') return entry.spanish ?? entry.english;
+    if (locale === 'uk') return entry.ukrainian ?? entry.english;
+    if (locale === 'de') return entry.german ?? entry.english;
+    return entry.english;
+  }
+
+  // Example-sentence counterpart of translationFor, used so a query typed in
+  // the selected language can also match against the example translation
+  // (mirrors getExampleTranslation in vocab-helpers.ts, but for SearchEntry).
+  // No definition equivalent exists for examples, so 'nb' just falls back to
+  // English like every other locale with a missing translation.
+  function exampleTranslationFor(entry: SearchEntry): string {
+    const locale = localeStore.current;
+    if (locale === 'es') return entry.example_spanish ?? entry.example_english;
+    if (locale === 'uk') return entry.example_ukrainian ?? entry.example_english;
+    if (locale === 'de') return entry.example_german ?? entry.example_english;
+    return entry.example_english;
   }
 </script>
 
@@ -333,7 +371,7 @@
               </div>
               <div class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
                 <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-                {@html highlight(entry.english, query)}
+                {@html highlight(translationFor(entry), query)}
               </div>
               {#if entry.example}
                 <div class="mt-0.5 line-clamp-1 text-xs text-gray-600 italic dark:text-gray-300">

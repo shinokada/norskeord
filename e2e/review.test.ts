@@ -117,3 +117,111 @@ test.describe('/stats — Study due entry points (Step 4a/4b)', () => {
     await expect(levelBanner).toHaveAttribute('href', '/review?level=a1');
   });
 });
+
+// ── /review/grammar (Fix 3, due-only-review-update.md) ───────────────────
+
+/**
+ * Real production A1 grammar question (topic personlige-pronomen, free per
+ * FREE_GRAMMAR_TOPICS in config.ts) so /api/review-grammar-entries resolves
+ * it against actual grammar-a1.json data — same reasoning as the vocab seed
+ * above (DUE_ID / v-a1-home-034). "transform" type: TransformQuestion.svelte
+ * quotes `question.source` verbatim, which the tests below assert on.
+ */
+const GRAMMAR_DUE_ID = 'gq-perspron-001';
+const GRAMMAR_SOURCE_TEXT = 'Petter bor i Bergen.';
+const GRAMMAR_ANSWER_TEXT = 'Han bor i Bergen.';
+const GRAMMAR_SEED_KEY = `grammar-${GRAMMAR_DUE_ID}`;
+
+function grammarSeedValue(due: Date) {
+  return JSON.stringify({
+    fsrs: {
+      due: due.toISOString(),
+      stability: 1,
+      difficulty: 5,
+      elapsed_days: 0,
+      scheduled_days: 1,
+      learning_steps: 0,
+      reps: 1,
+      lapses: 0,
+      state: 2 // Review
+    },
+    seenCount: 1,
+    lastSeen: new Date().toISOString(),
+    level: 'A1',
+    category: 'personlige-pronomen'
+  });
+}
+
+const GRAMMAR_DUE_YESTERDAY = grammarSeedValue(new Date(Date.now() - 86_400_000));
+
+async function seedGrammar(page: Page, value: string) {
+  await page.addInitScript(
+    ({ key, value }) => localStorage.setItem(key, value),
+    { key: GRAMMAR_SEED_KEY, value }
+  );
+}
+
+test.describe('/review/grammar', () => {
+  test('shows the empty state when nothing is due', async ({ page }) => {
+    // No seed at all — a fresh guest has no grammar progress rows, so
+    // getDueGrammarItems() returns []. Unlike /review, there's no picker
+    // step here (grammar is entered only from topic-specific due badges —
+    // see the Decisions section in due-only-review-update.md), so this
+    // goes straight to the empty state.
+    await page.goto('/review/grammar');
+    await expect(page.getByText('No questions available for this topic yet.')).toBeVisible();
+  });
+
+  test('resolves and renders a due grammar question end to end', async ({ page }) => {
+    await seedGrammar(page, GRAMMAR_DUE_YESTERDAY);
+    await page.goto('/review/grammar');
+
+    // Exercises getDueGrammarItems() -> POST /api/review-grammar-entries ->
+    // the due-only renderer for real — a 1-question deck built entirely
+    // from the seeded progress row.
+    await expect(page.getByText('Question 1 of 1')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText(GRAMMAR_SOURCE_TEXT)).toBeVisible();
+
+    const input = page.getByPlaceholder('Skriv svaret ditt…');
+    await input.fill(GRAMMAR_ANSWER_TEXT);
+    await page.getByRole('button', { name: 'Sjekk' }).click();
+
+    // AnswerReveal shows a correct/incorrect verdict after grading — an
+    // exact-match answer (modulo case/punctuation) grades correct.
+    await expect(page.getByText('Riktig!')).toBeVisible();
+  });
+
+  test('scopes to one CEFR level via ?level=', async ({ page }) => {
+    await seedGrammar(page, GRAMMAR_DUE_YESTERDAY);
+    // The seeded question is A1 — an A2-scoped session should find nothing
+    // due, proving getDueGrammarItems()'s level filter is actually applied.
+    await page.goto('/review/grammar?level=a2');
+    await expect(page.getByText('No questions available for this topic yet.')).toBeVisible();
+  });
+
+  test('scopes to one topic via ?topic=', async ({ page }) => {
+    await seedGrammar(page, GRAMMAR_DUE_YESTERDAY);
+    // Right level, wrong topic — the seeded question belongs to
+    // personlige-pronomen, not sterke-verb.
+    await page.goto('/review/grammar?level=a1&topic=sterke-verb');
+    await expect(page.getByText('No questions available for this topic yet.')).toBeVisible();
+  });
+});
+
+test.describe('/stats — Grammar due badge (Fix 3)', () => {
+  test('shows a clickable grammar due badge linking to /review/grammar', async ({ page }) => {
+    await seedGrammar(page, GRAMMAR_DUE_YESTERDAY);
+    await page.goto('/stats');
+    // Grammar topic-level progress is free for every plan (not gated by
+    // isPlus — see the comment above the Grammar section in
+    // stats/+page.svelte), so this works for the default guest session,
+    // same as the rest of this file.
+    await page.getByRole('tab', { name: 'A1', exact: true }).click();
+    const badge = page.getByRole('link', { name: /1 due/i });
+    await expect(badge).toBeVisible();
+    await expect(badge).toHaveAttribute(
+      'href',
+      '/review/grammar?level=a1&topic=personlige-pronomen'
+    );
+  });
+});

@@ -28,8 +28,14 @@ export interface SearchEntry {
   norsk: string;
   lemma: string;
   english: string;
+  spanish?: string;
+  ukrainian?: string;
+  german?: string;
   example: string;
   example_english: string;
+  example_spanish?: string;
+  example_ukrainian?: string;
+  example_german?: string;
   definition?: string;
   level: string;
   category: string;
@@ -69,8 +75,14 @@ for (const { file, source } of FILES) {
         norsk: (e.norsk as string) ?? '',
         lemma: (e.lemma as string) ?? (e.norsk as string) ?? '',
         english: (e.english as string) ?? '',
+        spanish: e.spanish as string | undefined,
+        ukrainian: e.ukrainian as string | undefined,
+        german: e.german as string | undefined,
         example: (e.example as string) ?? '',
         example_english: (e.example_english as string) ?? '',
+        example_spanish: e.example_spanish as string | undefined,
+        example_ukrainian: e.example_ukrainian as string | undefined,
+        example_german: e.example_german as string | undefined,
         definition: e.definition as string | undefined,
         level,
         category,
