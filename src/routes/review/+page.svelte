@@ -58,9 +58,18 @@
     const progressMap: Record<string, CardProgress> =
       isPlus && userId ? await loadProgressMapFromSupabase(userId) : loadProgressMap();
 
+    // Fix 2 (ai-docs/implementation/due-only-review-update.md): A1–B2
+    // uttrykk rows are keyed by theme, which CardProgress.category can't
+    // express (every A1–B2 uttrykk card's category is the 'uttrykk'
+    // sentinel) — getDueItems() can only scope by category, so skip that
+    // option here and fetch the whole level+type instead; the theme filter
+    // happens below, after resolving, against the real `theme` field that
+    // only exists on the resolved VocabEntry.
+    const isA1B2UttrykkTheme = !!categoryParam && type === 'uttrykk' && levelParam !== 'C';
+
     const dueItems = getDueItems(progressMap, {
       level: levelParam,
-      category: categoryParam,
+      category: isA1B2UttrykkTheme ? undefined : categoryParam,
       type
     });
 
@@ -76,7 +85,19 @@
       body: JSON.stringify({ items: dueItems.map((d) => ({ id: d.id, level: d.level })) })
     });
     const json = await res.json().catch(() => ({ entries: [] }));
-    entries = (json.entries as VocabEntry[] | undefined) ?? [];
+    let resolved = (json.entries as VocabEntry[] | undefined) ?? [];
+
+    // Fix 2: narrow to the exact row that was clicked. For vocab and
+    // C-uttrykk rows this is a no-op refinement (getDueItems already scoped
+    // by category); for A1–B2 uttrykk rows this is what actually narrows
+    // the level-wide fetch above down to the one theme that was clicked.
+    if (categoryParam) {
+      resolved = resolved.filter(
+        (e) => e.category === categoryParam || e.theme === categoryParam
+      );
+    }
+
+    entries = resolved;
     phase = entries.length === 0 ? 'empty' : 'ready';
   }
 

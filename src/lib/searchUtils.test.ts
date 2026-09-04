@@ -404,3 +404,54 @@ describe('search — result cap', () => {
     expect(results.length).toBeLessThanOrEqual(MAX_RESULTS);
   });
 });
+
+// ── locale-aware matching (getTranslation / getExampleTranslation) ─────────────────
+
+describe('search — locale-aware translation matching', () => {
+  const SPANISH_FIXTURE: SearchEntry[] = [
+    makeEntry({
+      id: 'sp1',
+      norsk: 'mat',
+      lemma: 'mat',
+      english: 'food',
+      spanish: 'comida',
+      example: 'Maten lukter godt.',
+      example_english: 'The food smells good.',
+      example_spanish: 'La comida huele bien.'
+    })
+  ];
+
+  it('does not match a Spanish query without a translation getter (default is English-only)', () => {
+    const results = search('comida', SPANISH_FIXTURE);
+    expect(results).toHaveLength(0);
+  });
+
+  it('matches a Spanish query when a Spanish translation getter is supplied', () => {
+    const results = search('comida', SPANISH_FIXTURE, {}, (e) => e.spanish ?? e.english);
+    expect(results.some((r) => r.norsk === 'mat')).toBe(true);
+  });
+
+  it('still matches Norwegian regardless of the translation getter', () => {
+    const results = search('mat', SPANISH_FIXTURE, {}, (e) => e.spanish ?? e.english);
+    expect(results.some((r) => r.norsk === 'mat')).toBe(true);
+  });
+
+  it('matches a Spanish query via the example translation getter', () => {
+    const results = search(
+      'huele',
+      SPANISH_FIXTURE,
+      {},
+      (e) => e.spanish ?? e.english,
+      (e) => e.example_spanish ?? e.example_english
+    );
+    expect(results.some((r) => r.norsk === 'mat')).toBe(true);
+  });
+
+  it('falls back to English when the entry has no Spanish translation', () => {
+    const noSpanish: SearchEntry[] = [
+      makeEntry({ id: 'ns1', norsk: 'takk', lemma: 'takk', english: 'thanks' })
+    ];
+    const results = search('thanks', noSpanish, {}, (e) => e.spanish ?? e.english);
+    expect(results.some((r) => r.norsk === 'takk')).toBe(true);
+  });
+});

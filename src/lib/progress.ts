@@ -1,6 +1,6 @@
 import { FSRS, createEmptyCard, Rating, generatorParameters } from 'ts-fsrs';
 import type { Grade, FSRSParameters } from 'ts-fsrs';
-import type { FSRSRating, CardProgress, CEFRLevel } from '$lib/types';
+import type { FSRSRating, CardProgress, CEFRLevel, GrammarTopic } from '$lib/types';
 import type { VocabEntry, GrammarQuestion } from '$lib/types';
 import { supabase } from '$lib/supabase';
 import { UTTRYKK_C_KEYS } from '$lib/uttrykk-c-stats';
@@ -401,6 +401,15 @@ export interface GetDueItemsOptions {
    * `type: 'uttrykk'` — C reuses its vocab category slugs for uttrykk rows
    * too (see uttrykkThemeStatsForLevel's C branch in stats.ts), so `category`
    * alone can't tell the two apart there.
+   *
+   * Does NOT support A1–B2 uttrykk *theme* scoping (Fix 2,
+   * ai-docs/implementation/due-only-review-update.md) — every A1–B2 uttrykk
+   * card's `CardProgress.category` is the literal 'uttrykk' sentinel, not
+   * its theme, so this option has nothing to filter on for that case.
+   * `/review/+page.svelte` handles it downstream instead: it omits
+   * `category` here for that case (fetching the whole level+type), then
+   * filters the *resolved* `VocabEntry[]` by `theme` afterward, since
+   * `theme` only exists on the resolved entry, not on `CardProgress`.
    */
   category?: string;
   /**
@@ -563,6 +572,50 @@ export async function loadGrammarProgressFromSupabase(
     map[row.question_id] = fromGrammarRow(row);
   }
   return map;
+}
+
+// ── Due-only grammar review (Fix 3, due-only-review-update.md) ─────────────
+
+export interface GetDueGrammarItemsOptions {
+  /** Restrict to one CEFR level. Omit for a global (all-levels) session. */
+  level?: CEFRLevel;
+  /**
+   * Restrict to one grammar topic. Used by the per-topic due badge deep
+   * link (LevelStatRows.svelte, reviewType="grammar"). Unlike vocab's A1–B2
+   * uttrykk rows (see getDueItems' `category` doc above), grammar rows never
+   * hit the sentinel-category problem — `saveGrammarProgress` always stores
+   * the real `question.topic` on `CardProgress.category`, so this can filter
+   * directly here rather than needing a post-resolve workaround.
+   */
+  topic?: GrammarTopic;
+}
+
+/**
+ * Returns every due grammar card in `progressMap` as the minimal
+ * `{ id, level }` shape `/api/review-grammar-entries` expects, optionally
+ * narrowed to one level and/or one topic. Mirrors getDueItems() above but
+ * for the grammar progress map (keyed by GrammarQuestion.id, with `level`
+ * carrying the CEFR level and `category` carrying the topic).
+ *
+ * New/never-studied questions (no progress row) are never included —
+ * "due" here means an existing FSRS schedule whose due date has passed,
+ * same as getDueItems().
+ */
+export function getDueGrammarItems(
+  progressMap: Record<string, CardProgress>,
+  opts: GetDueGrammarItemsOptions = {}
+): DueItem[] {
+  const { level, topic } = opts;
+  const now = new Date();
+
+  return Object.entries(progressMap)
+    .filter(([, card]) => {
+      if (new Date(card.fsrs.due) > now) return false;
+      if (level && card.level !== level) return false;
+      if (topic && (card.category as unknown as string) !== topic) return false;
+      return true;
+    })
+    .map(([id, card]) => ({ id, level: card.level }));
 }
 
 /**

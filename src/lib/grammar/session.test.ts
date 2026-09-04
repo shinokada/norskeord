@@ -3,6 +3,7 @@ import { normalizeAnswer, gradeGrammarAnswer, buildGrammarSession, shuffleTokens
 import {
   loadGrammarProgressMap,
   saveGrammarProgress,
+  getDueGrammarItems,
   GRAMMAR_LS_PREFIX,
   clearUserProgress
 } from '$lib/progress';
@@ -351,7 +352,90 @@ describe('saveGrammarProgress + loadGrammarProgressMap', () => {
   });
 });
 
-// ── buildGrammarSession: level distribution ───────────────────────────────────
+// ── getDueGrammarItems ────────────────────────────────────────────────────────
+
+describe('getDueGrammarItems', () => {
+  // Local helper (distinct from the file's makeProgress, which fixes
+  // level/category to A2/ikke-placement) — these tests need to vary both.
+  function progressRow(daysUntilDue: number, level: CardProgress['level'], topic: string) {
+    const due = new Date();
+    due.setDate(due.getDate() + daysUntilDue);
+    return {
+      fsrs: { ...createEmptyCard(), due },
+      seenCount: 1,
+      lastSeen: new Date().toISOString(),
+      level,
+      category: topic as CardProgress['category']
+    };
+  }
+
+  it('returns [] for an empty progress map', () => {
+    expect(getDueGrammarItems({})).toEqual([]);
+  });
+
+  it('excludes a question not yet due', () => {
+    const map = { 'gq-1': progressRow(1, 'A2', 'ikke-placement') };
+    expect(getDueGrammarItems(map)).toEqual([]);
+  });
+
+  it('includes a question whose due date has passed', () => {
+    const map = { 'gq-1': progressRow(-1, 'A2', 'ikke-placement') };
+    expect(getDueGrammarItems(map)).toEqual([{ id: 'gq-1', level: 'A2' }]);
+  });
+
+  it('a question with no progress row is never included, regardless of options', () => {
+    // getDueGrammarItems only ever iterates the map it's given — there's no
+    // separate "is this a known question id" check, so an id absent from
+    // the map simply can't appear in the result.
+    const map = { 'gq-1': progressRow(-1, 'A2', 'ikke-placement') };
+    const result = getDueGrammarItems(map, { level: 'A2', topic: 'ikke-placement' });
+    expect(result.map((r) => r.id)).not.toContain('gq-unseen');
+  });
+
+  it('filters by level when provided', () => {
+    const map = {
+      'gq-a2': progressRow(-1, 'A2', 'ikke-placement'),
+      'gq-b1': progressRow(-1, 'B1', 'ikke-placement')
+    };
+    const result = getDueGrammarItems(map, { level: 'A2' });
+    expect(result).toEqual([{ id: 'gq-a2', level: 'A2' }]);
+  });
+
+  it('filters by topic when provided', () => {
+    const map = {
+      'gq-ikke': progressRow(-1, 'A2', 'ikke-placement'),
+      'gq-sterke': progressRow(-1, 'A2', 'sterke-verb')
+    };
+    const result = getDueGrammarItems(map, { topic: 'ikke-placement' });
+    expect(result).toEqual([{ id: 'gq-ikke', level: 'A2' }]);
+  });
+
+  it('combines level and topic filters (both must match)', () => {
+    const map = {
+      // Right topic, wrong level — must be excluded.
+      'gq-b1-ikke': progressRow(-1, 'B1', 'ikke-placement'),
+      // Right level, wrong topic — must be excluded.
+      'gq-a2-sterke': progressRow(-1, 'A2', 'sterke-verb'),
+      // Matches both — the only one that should come back.
+      'gq-a2-ikke': progressRow(-1, 'A2', 'ikke-placement')
+    };
+    const result = getDueGrammarItems(map, { level: 'A2', topic: 'ikke-placement' });
+    expect(result).toEqual([{ id: 'gq-a2-ikke', level: 'A2' }]);
+  });
+
+  it('never mixes up a vocab progress map with the grammar shape it expects', () => {
+    // Sanity check: the function trusts card.level/card.category verbatim —
+    // any CardProgress-shaped map works, since grammar and vocab progress
+    // rows share the same CardProgress type. Two due rows, no filter → both.
+    const map = {
+      'gq-1': progressRow(-1, 'A1', 'a'),
+      'gq-2': progressRow(-2, 'C', 'b')
+    };
+    const result = getDueGrammarItems(map);
+    expect(result).toHaveLength(2);
+    expect(result.map((r) => r.id).sort()).toEqual(['gq-1', 'gq-2']);
+  });
+});
 
 describe('buildGrammarSession — mixed-level tie-breaking', () => {
   // Mirrors the real noun-plurals topic: 10 A2 questions followed by 2 B1

@@ -1,6 +1,14 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
+  // A single `vite preview` server backs every worker (see webServer below).
+  // Running the full suite with the default worker count (≈ half the CPU
+  // cores) overwhelms that one Node process under load, producing timing
+  // flakes unrelated to the app itself (slow SSR responses, POST round-trips
+  // exceeding their timeout, reactive UI updates landing after a poll already
+  // read). Capping workers trades some wall-clock time for determinism.
+  // workers: process.env.CI ? 2 : 4,
+  workers: 2,
   webServer: {
     command: 'npm run search:index && npm run build && npm run preview',
     port: 4173,

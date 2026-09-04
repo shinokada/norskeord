@@ -12,8 +12,14 @@ export interface SearchEntry {
   norsk: string;
   lemma: string;
   english: string;
+  spanish?: string;
+  ukrainian?: string;
+  german?: string;
   example: string;
   example_english: string;
+  example_spanish?: string;
+  example_ukrainian?: string;
+  example_german?: string;
   definition?: string;
   level: string;
   category: string;
