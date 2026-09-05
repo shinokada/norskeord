@@ -1,6 +1,6 @@
 {
   "installCommand": "pnpm install",
-  "buildCommand": "pnpm search:index && pnpm build",
+  "buildCommand": "bash scripts/setup-submodule.sh && pnpm search:index && pnpm build",
   "redirects": [
     { "source": "/nb", "destination": "/", "permanent": true },
     { "source": "/nb/:path*", "destination": "/:path*", "permanent": true }
