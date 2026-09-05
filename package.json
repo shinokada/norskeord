@@ -14,8 +14,9 @@
   },
   "packageManager": "pnpm@11.25.0",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "pnpm stats && vite dev",
     "build": "pnpm stats && pnpm grammar:split && vite build",
+    "vercel-build": "bash scripts/setup-submodule.sh && pnpm build",
     "grammar:split": "node scripts/build-grammar-level-index.mjs",
     "preview": "vite preview",
     "prepare": "svelte-kit sync || echo ''",
