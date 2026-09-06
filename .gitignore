@@ -45,5 +45,5 @@ src/lib/paraglide
 src/paraglide
 project.inlang/cache/
 
-# drafts/new vocab and uttrykk entries
-draft/new-entries
+# drafts — working files only, never tracked (see ai-docs/implementation/data-protection.md)
+draft/
