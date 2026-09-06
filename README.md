@@ -1,8 +1,6 @@
 # Norskeord
 
-Norwegian vocabulary learning app — [norskeord.no](https://norskeord.no)
-
-Vocabulary flashcards, quiz, grammar practice, and Norskprøven exam prep covering A1–C2. Freemium SaaS with a Plus subscription via Lemon Squeezy.
+Personal project.
 
 ---
 
@@ -46,49 +44,6 @@ Vocabulary flashcards, quiz, grammar practice, and Norskprøven exam prep coveri
 | `/my-profile`                                 | Profile, preferences, notifications, subscription |
 | `/auth/...`                                   | Sign-in / OTP flow                                |
 | `/admin`                                      | Admin dashboard (review-gated)                    |
-
----
-
-## Data files
-
-Vocabulary and content live in `src/lib/data/` as static JSON — read at build time, never queried from the database.
-Files are divided by Common European Framework of Reference for Languages (CEFR) level.
-
-```
-vocab-a1.json          uttrykk-a1.json
-vocab-a2.json          uttrykk-a2.json
-vocab-b1.json          uttrykk-b1.json
-vocab-b2.json          uttrykk-b2.json
-vocab-c.json           uttrykk-c.json
-grammar.json           rules.ts
-norskproven-*.json
-```
-
-**Vocabulary entry shape:**
-
-```json
-{
-  "id": "abc123",
-  "norsk": "å reise",
-  "lemma": "reise",
-  "english": "to travel",
-  "example": "Vi reiser til utlandet hvert år.",
-  "example_english": "We travel abroad every year.",
-  "spanish": "viajar",
-  "ukrainian": "подорожувати",
-  "german": "reisen",
-  "example_spanish": "Viajamos al extranjero cada año.",
-  "example_ukrainian": "Ми подорожуємо за кордон щороку.",
-  "example_german": "Wir reisen jedes Jahr ins Ausland.",
-  "level": "B1",
-  "category": "travel",
-  "part": "verb"
-}
-```
-
-`spanish`, `ukrainian`, and `german` (plus their `example_*` counterparts) are optional and populated by `scripts/add-language-translations.mjs` — see [Adding a new language](#adding-a-new-language) below.
-
-> **Critical:** `norsk` is the FSRS progress key in localStorage and Supabase. Never rename or change it for existing entries — it would break all user progress.
 
 ---
 
@@ -154,27 +109,17 @@ Vocabulary/expression data (`spanish`, `ukrainian`, `german`, …) is a separate
 
 ---
 
-## Free vs Plus
-
-| Feature                    | Free                   | Plus   |
-| -------------------------- | ---------------------- | ------ |
-| A1 + A2 vocabulary         | ✅ All                 | ✅ All |
-| B1–C2 vocabulary           | Preview only           | ✅ All |
-| Due today smart deck       | —                      | ✅     |
-| Cross-device sync          | —                      | ✅     |
-| Quiz mode                  | Top 3 categories/level | ✅ All |
-| Grammar topics             | 4 topics               | ✅ All |
-| Norskprøven practice tests | Test 1 only            | ✅ All |
-| Full-text search           | —                      | ✅     |
-| Per-category stats         | —                      | ✅     |
-| Daily email reminder       | —                      | ✅     |
-| Download progress report   | —                      | ✅     |
-
-Plus is 49 NOK/month or 490 NOK/year via Lemon Squeezy.
-
----
-
 ## Development
+
+`src/lib/data` (vocab, uttrykk, grammar, norskproven JSON) is a private git
+submodule (`norskeord-data`) — clone with submodules included, or init it
+afterward:
+
+```bash
+git clone --recurse-submodules git@github.com:shinokada/norskeord.git
+# existing clone:
+git submodule update --init
+```
 
 ```bash
 pnpm install
