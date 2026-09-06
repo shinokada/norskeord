@@ -1,0 +1,3 @@
+[submodule "src/lib/data"]
+	path = src/lib/data
+	url = git@github.com:shinokada/norskeord-data.git
