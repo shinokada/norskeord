@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Pre-commit secret scan (gitleaks). Blocks the commit if a likely secret is
+# found in staged changes. See .gitleaks.toml for the ruleset/allowlist.
+#
+# This file is versioned under scripts/git-hooks/ and wired in via
+# `git config core.hooksPath scripts/git-hooks` (see README setup step),
+# so it survives fresh clones — unlike files placed directly in .git/hooks.
+#
+# Bypass (use sparingly, only for confirmed false positives):
+#   git commit --no-verify
+
+set -euo pipefail
+
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "⚠️  gitleaks not installed — skipping secret scan."
+  echo "   Install with: brew install gitleaks"
+  exit 0
+fi
+
+gitleaks protect --staged --config .gitleaks.toml --redact -v
+
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "🚫 Commit blocked: gitleaks detected a possible secret in your staged changes."
+  echo "   Remove the secret, or if this is a false positive, add an allowlist rule"
+  echo "   in .gitleaks.toml. To bypass in an emergency: git commit --no-verify"
+  exit 1
+fi

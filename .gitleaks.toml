@@ -1,0 +1,19 @@
+title = "norskeord gitleaks config"
+
+# Extend the default, well-maintained ruleset (covers Supabase JWTs, generic
+# API keys, AWS keys, etc.) rather than reinventing detection rules.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Known-safe placeholders and test fixtures"
+regexes = [
+  '''test-service-key''',                          # contact.test.ts fixture
+  '''1x0000000000000000000000000000000AA''',       # Cloudflare Turnstile always-pass test secret
+  '''1x00000000000000000000AA''',                  # Cloudflare Turnstile test site key
+  '''sb_publishable_[A-Za-z0-9_-]*$''',             # publishable keys are meant to be public
+]
+paths = [
+  '''\.env\.example$''',
+  '''\.env\.local\.example$''',
+]
