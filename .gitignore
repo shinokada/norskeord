@@ -47,3 +47,5 @@ project.inlang/cache/
 
 # drafts — working files only, never tracked (see ai-docs/implementation/data-protection.md)
 draft/
+
+ai-docs/

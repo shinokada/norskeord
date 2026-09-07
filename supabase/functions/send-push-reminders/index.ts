@@ -21,13 +21,14 @@
  *   APP_URL              e.g. "https://norskeord.no"
  *   UNSUBSCRIBE_SECRET   same value as in .env
  *
- * SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are injected automatically.
+ * SUPABASE_URL and SUPABASE_SECRET_KEYS are injected automatically.
  *
  * Logic:
  *   1. Find all Plus users with daily_reminder=true and a push_subscription stored.
  *   2. Find all Plus users with email_reminder=true.
  *   3. Merge the two sets, exclude users who already have a study_days row for
- *      today (UTC).
+ *      today (UTC). Also skip emailing anyone already logged in email_log for
+ *      'daily_reminder' today (idempotency guard against repeat invocations).
  *   4. For each user in the merged set, count their cards due today from
  *      card_progress (due <= now()) and send whichever notifications are enabled.
  *   5. Clean up stale push subscriptions (410/404 responses).
@@ -145,7 +146,8 @@ Deno.serve(async (req: Request) => {
 
   // ── Env vars ────────────────────────────────────────────────────────────────
   const supabaseUrl = Deno.env.get('SUPABASE_URL');
-  const serviceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
+  const secretKeys = JSON.parse(Deno.env.get('SUPABASE_SECRET_KEYS') ?? '{}');
+  const serviceKey = secretKeys['default'];
   const vapidSubject = Deno.env.get('VAPID_SUBJECT');
   const vapidPublicKey = Deno.env.get('VAPID_PUBLIC_KEY');
   const vapidPrivateKey = Deno.env.get('VAPID_PRIVATE_KEY');
@@ -238,8 +240,30 @@ Deno.serve(async (req: Request) => {
   const studiedSet = new Set((studiedToday ?? []).map((r: { user_id: string }) => r.user_id));
   const toNotify = (profiles as ProfileRow[]).filter((p) => !studiedSet.has(p.id));
 
+  // ── 3b. Idempotency guard: skip emails already sent today ────────────────────
+  // Prevents duplicate reminder emails if this function is invoked more than
+  // once on the same UTC day (manual test runs, cron retries, etc). Push
+  // notifications are cheap/harmless to resend, so only email is guarded here.
+  const todayStart = `${todayUtc}T00:00:00.000Z`;
+  const { data: alreadyEmailedRows, error: emailLogError } = await supabase
+    .from('email_log')
+    .select('user_id')
+    .eq('email_type', 'daily_reminder')
+    .gte('sent_at', todayStart)
+    .in('user_id', eligibleIds);
+
+  if (emailLogError) {
+    // Non-fatal — log and proceed without the guard rather than blocking all
+    // reminders for the day.
+    console.warn('[send-reminders] Failed to fetch email_log:', emailLogError.message);
+  }
+
+  const alreadyEmailedSet = new Set(
+    (alreadyEmailedRows ?? []).map((r: { user_id: string }) => r.user_id)
+  );
+
   console.log(
-    `[send-reminders] eligible=${eligibleIds.length} already_studied=${studiedSet.size} to_notify=${toNotify.length}`
+    `[send-reminders] eligible=${eligibleIds.length} already_studied=${studiedSet.size} already_emailed_today=${alreadyEmailedSet.size} to_notify=${toNotify.length}`
   );
 
   if (toNotify.length === 0) {
@@ -275,31 +299,50 @@ Deno.serve(async (req: Request) => {
 
     // ── Email ─────────────────────────────────────────────────────────────────
     if (profile.email_reminder) {
-      const toEmail = emailByUserId.get(profile.id);
-      if (!toEmail) {
-        console.warn(`[send-reminders] no email found for user=${profile.id} — skipping email`);
-        emailFailed++;
+      if (alreadyEmailedSet.has(profile.id)) {
+        // Idempotency guard: already emailed today, skip silently.
+        console.log(`[send-reminders] email already sent today for user=${profile.id} — skipping`);
       } else {
-        const unsubUrl = buildUnsubscribeUrl(profile.id, unsubSecret, appUrl);
-        const html = buildReminderEmail(dueCount, appUrl, unsubUrl);
-
-        const { error: sendErr } = await resend.emails.send({
-          from: emailFrom,
-          to: toEmail,
-          subject: 'Your Norwegian cards are waiting 🇳🇴',
-          html
-        });
-
-        if (sendErr) {
-          console.error(`[send-reminders] email failed for user=${profile.id}:`, sendErr.message);
+        const toEmail = emailByUserId.get(profile.id);
+        if (!toEmail) {
+          console.warn(`[send-reminders] no email found for user=${profile.id} — skipping email`);
           emailFailed++;
         } else {
-          emailSent++;
-          console.log(`[send-reminders] email sent to user=${profile.id} due=${dueCount}`);
-        }
+          const unsubUrl = buildUnsubscribeUrl(profile.id, unsubSecret, appUrl);
+          const html = buildReminderEmail(dueCount, appUrl, unsubUrl);
 
-        // 50 ms pause — stay within Resend's rate limits (same as send-lesson-email).
-        await new Promise((r) => setTimeout(r, 50));
+          const { error: sendErr } = await resend.emails.send({
+            from: emailFrom,
+            to: toEmail,
+            subject: 'Your Norwegian cards are waiting 🇳🇴',
+            html
+          });
+
+          if (sendErr) {
+            console.error(
+              `[send-reminders] email failed for user=${profile.id}:`,
+              sendErr.message
+            );
+            emailFailed++;
+          } else {
+            emailSent++;
+            console.log(`[send-reminders] email sent to user=${profile.id} due=${dueCount}`);
+
+            // Record the send so a repeat invocation today won't re-send.
+            const { error: logErr } = await supabase
+              .from('email_log')
+              .insert({ user_id: profile.id, email_type: 'daily_reminder' });
+            if (logErr) {
+              console.warn(
+                `[send-reminders] Failed to record email_log for user=${profile.id}:`,
+                logErr.message
+              );
+            }
+          }
+
+          // 50 ms pause — stay within Resend's rate limits (same as send-lesson-email).
+          await new Promise((r) => setTimeout(r, 50));
+        }
       }
     }
   }

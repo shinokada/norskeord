@@ -137,11 +137,12 @@ Deno.serve(async (req: Request) => {
     });
   }
 
-  // Use the service-role key so we can read any user's data server-side.
-  // SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are injected automatically
+  // Use the secret key so we can read any user's data server-side.
+  // SUPABASE_URL and SUPABASE_SECRET_KEYS are injected automatically
   // by Supabase for all Edge Functions — no manual env setup needed.
   const supabaseUrl = Deno.env.get('SUPABASE_URL');
-  const serviceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
+  const secretKeys = JSON.parse(Deno.env.get('SUPABASE_SECRET_KEYS') ?? '{}');
+  const serviceKey = secretKeys['default'];
 
   if (!supabaseUrl || !serviceKey) {
     return new Response(JSON.stringify({ error: 'Missing Supabase env vars' }), {

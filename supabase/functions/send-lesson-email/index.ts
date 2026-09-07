@@ -22,7 +22,7 @@
  *   APP_URL            e.g. "https://norskeord.no"
  *   UNSUBSCRIBE_SECRET (same value as in .env)
  *
- * SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are injected automatically.
+ * SUPABASE_URL and SUPABASE_SECRET_KEYS are injected automatically.
  */
 
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
@@ -170,7 +170,8 @@ Deno.serve(async (req: Request) => {
   }
 
   const supabaseUrl = Deno.env.get('SUPABASE_URL')!;
-  const serviceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
+  const secretKeys = JSON.parse(Deno.env.get('SUPABASE_SECRET_KEYS') ?? '{}');
+  const serviceKey = secretKeys['default'];
   const resendKey = Deno.env.get('RESEND_API_KEY')!;
   const emailFrom = Deno.env.get('EMAIL_FROM')!;
   const appUrl = Deno.env.get('APP_URL')!;
