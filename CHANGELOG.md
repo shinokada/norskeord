@@ -1,5 +1,14 @@
 # norske-flashcard
 
+## 2.77.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added animal vocabulary categories for A2 and B1 learning levels.
+    - Added localized category labels in English, German, Spanish, Norwegian, and Ukrainian.
+    - The B1 animal category is available as a Plus feature.
+
 ## 2.76.0
 
 ### Minor Changes
