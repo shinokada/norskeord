@@ -52,6 +52,7 @@ export const CATEGORIES_BY_LEVEL = {
     'environment',
     'money',
     'home',
+    'animals',
     'uttrykk'
   ],
   B1: [
@@ -87,6 +88,7 @@ export const CATEGORIES_BY_LEVEL = {
     'politics',
     'language-learning',
     'healthcare',
+    'animals',
     'uttrykk'
   ],
   B2: [
@@ -272,6 +274,7 @@ export const PLUS_CATEGORIES = new Set<string>([
   'b1/politics',
   'b1/language-learning',
   'b1/healthcare',
+  'b1/animals',
   // B2 — plus-only (28 vocab; uttrykk gated per-theme, see below)
   'b2/arts',
   'b2/emotions',
