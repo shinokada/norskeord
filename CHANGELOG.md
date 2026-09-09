@@ -1,5 +1,13 @@
 # norske-flashcard
 
+## 2.75.0
+
+### Minor Changes
+
+- **New Content**
+  - Added new Norwegian vocabulary for farm/animals theme across A1, A2, and B1 levels.
+  - Expanded vocabulary statistics to reflect the new entries.
+
 ## 2.74.0
 
 ### Minor Changes
