@@ -190,15 +190,18 @@
     isTouch = window.matchMedia('(pointer: coarse)').matches;
 
     // Plus users: load progress from Supabase (single source of truth).
-    // Guest/free users: load from localStorage.
+    // Guest/free users: load from localStorage (async — may fetch the
+    // id-migration-map.json fallback for stale pre-migration vocab ids).
     if (isPlus && page.data.user?.id) {
       loadProgressMapFromSupabase(page.data.user.id).then((map) => {
         progressMap = map;
         dueCount = countDueToday(map);
       });
     } else {
-      progressMap = loadProgressMap();
-      dueCount = countDueToday(progressMap);
+      loadProgressMap().then((map) => {
+        progressMap = map;
+        dueCount = countDueToday(map);
+      });
     }
 
     // Resolve the per-user FSRS instance (personal weights for Plus users, module default

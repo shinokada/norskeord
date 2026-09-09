@@ -83,9 +83,9 @@ Use `phrase` only when the entry has **no single grammatical head** — greeting
 
 ### ID format
 
-`v-{level}-{category}-{NNN}` where level is `a1|a2|b1|b2|c`, category matches `CATEGORIES_BY_LEVEL` in `config.ts`, and NNN is a zero-padded 3-digit number.
+`v-{level}-{NNNN}` where level is `a1|a2|b1|b2|c` and NNNN is a zero-padded 4-digit number, sequential per level. The category is not part of the id — it lives only in the `category` field, so recategorizing an entry is a pure data edit with no id implication.
 
-Example: `v-a1-classroom-001`
+Example: `v-a1-0001`
 
 ### `note` field (optional)
 

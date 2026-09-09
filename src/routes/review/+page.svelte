@@ -56,7 +56,7 @@
 
     const userId = page.data.user?.id as string | undefined;
     const progressMap: Record<string, CardProgress> =
-      isPlus && userId ? await loadProgressMapFromSupabase(userId) : loadProgressMap();
+      isPlus && userId ? await loadProgressMapFromSupabase(userId) : await loadProgressMap();
 
     // Fix 2 (ai-docs/implementation/due-only-review-update.md): A1–B2
     // uttrykk rows are keyed by theme, which CardProgress.category can't

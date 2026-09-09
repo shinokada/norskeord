@@ -10,14 +10,14 @@
  * Neither Step 1 nor Step 2 of the pipeline assigns real `id` values — every
  * new entry is left with `id: ""`. This script fills them in:
  *
- *   vocab:   v-{level}-{category}-{NNN}   (NNN is per-category, per data-rules/vocab-and-uttrykk.md)
- *   uttrykk: u-{level}-{NNN}              (NNN is per-level, no category segment)
+ *   vocab:   v-{level}-{NNNN}   (NNNN is per-level, 4-digit, no category segment — see ai-docs/implementation/id-new-format.md)
+ *   uttrykk: u-{level}-{NNN}    (NNN is per-level, 3-digit, no category segment)
  *
  * It reads the current production file (src/lib/data/vocab-{level}.json /
- * uttrykk-{level}.json) to find the highest NNN already in use (per category
- * for vocab, per level for uttrykk), then assigns the next sequential NNN to
- * each draft entry whose id is still "". Entries that already have an id are
- * left untouched. Production files are never modified.
+ * uttrykk-{level}.json) to find the highest NNNN/NNN already in use per
+ * level, then assigns the next sequential number to each draft entry whose
+ * id is still "". Entries that already have an id are left untouched.
+ * Production files are never modified.
  *
  * Before writing, the draft file is backed up to draft/{level}/{file}.bak
  * (matches the project's existing .bak convention), unless --dry-run is set.
@@ -72,6 +72,10 @@ function pad3(n) {
   return String(n).padStart(3, '0');
 }
 
+function pad4(n) {
+  return String(n).padStart(4, '0');
+}
+
 function readJson(path) {
   return JSON.parse(readFileSync(path, 'utf8'));
 }
@@ -80,9 +84,9 @@ function writeJson(path, data) {
   writeFileSync(path, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 
-// ── Vocab: v-{level}-{category}-{NNN} ────────────────────────────────────────
+// ── Vocab: v-{level}-{NNNN} ──────────────────────────────────────────────────
 
-const VOCAB_ID_PATTERN = /^v-([a-z0-9]+)-(.+)-(\d{3})$/;
+const VOCAB_ID_PATTERN = /^v-([a-z0-9]+)-(\d{4,})$/;
 
 function assignVocabIds(level) {
   const prodPath = join(DATA_DIR, `vocab-${level}.json`);
@@ -97,20 +101,17 @@ function assignVocabIds(level) {
   const prodEntries = existsSync(prodPath) ? readJson(prodPath) : [];
   const draftEntries = readJson(draftPath);
 
-  // Max NNN per category, from production, and the full set of production IDs
-  // (used to catch a draft entry accidentally reusing a production ID).
-  const maxByCategory = new Map();
+  // Max NNNN for this level, from production, and the full set of production
+  // IDs (used to catch a draft entry accidentally reusing a production ID).
+  let maxNum = 0;
   const prodIds = new Set();
   for (const entry of prodEntries) {
     if (!entry.id) continue;
     prodIds.add(entry.id);
     const m = entry.id.match(VOCAB_ID_PATTERN);
     if (!m || m[1] !== level) continue;
-    const [, , category, nnn] = m;
-    const num = parseInt(nnn, 10);
-    if (!maxByCategory.has(category) || num > maxByCategory.get(category)) {
-      maxByCategory.set(category, num);
-    }
+    const num = parseInt(m[2], 10);
+    if (num > maxNum) maxNum = num;
   }
 
   let assigned = 0;
@@ -130,9 +131,8 @@ function assignVocabIds(level) {
       skippedNoCategory++;
       continue;
     }
-    const category = entry.category;
-    const nextNum = (maxByCategory.get(category) ?? 0) + 1;
-    const newId = `v-${level}-${category}-${pad3(nextNum)}`;
+    const nextNum = maxNum + 1;
+    const newId = `v-${level}-${pad4(nextNum)}`;
     if (prodIds.has(newId)) {
       console.log(
         `  ❌  Computed ID "${newId}" already exists in production — skipping this entry, check for a data problem`
@@ -140,7 +140,7 @@ function assignVocabIds(level) {
       skippedNoCategory++;
       continue;
     }
-    maxByCategory.set(category, nextNum);
+    maxNum = nextNum;
     entry.id = newId;
     assignments.push(`${newId}  norsk="${entry.norsk}"`);
     assigned++;

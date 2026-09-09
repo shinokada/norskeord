@@ -4,7 +4,8 @@ import {
   saveProgress,
   countDueToday,
   previewIntervals,
-  getFsrs
+  getFsrs,
+  LS_PREFIX
 } from './progress';
 import type { VocabEntry } from '$lib/types';
 
@@ -35,7 +36,14 @@ beforeEach(() => {
 // ── Fixtures ──────────────────────────────────────────────────────────────────
 
 const entry: VocabEntry = {
-  id: 'v-a1-greetings-001',
+  // Old-format shape (v-{level}-{category}-{NNN}) is deliberate — several
+  // tests below (loadProgressMap's stale-key handling) rely on this id
+  // looking pre-migration. 'testfixture' as the category segment is
+  // deliberately not a real category, so this id can never collide with an
+  // actual entry in id-migration-map.json (unlike an earlier version of
+  // this fixture, 'v-a1-greetings-001', which turned out to be a real
+  // migrated id and got silently renamed by remapStaleKeys() mid-test).
+  id: 'v-a1-testfixture-001',
   norsk: 'hei',
   english: 'hello',
   spanish: 'hola',
@@ -55,18 +63,18 @@ const KEY = entry.id;
 // ── loadProgressMap ───────────────────────────────────────────────────────────
 
 describe('loadProgressMap', () => {
-  it('returns empty map when localStorage is empty', () => {
-    expect(loadProgressMap()).toEqual({});
+  it('returns empty map when localStorage is empty', async () => {
+    expect(await loadProgressMap()).toEqual({});
   });
 
-  it('ignores keys without the progress- prefix', () => {
+  it('ignores keys without the progress- prefix', async () => {
     store['other-key'] = JSON.stringify({ fsrs: {}, seenCount: 1 });
-    expect(loadProgressMap()).toEqual({});
+    expect(await loadProgressMap()).toEqual({});
   });
 
   it('loads and rehydrates a stored progress entry', async () => {
     const map = await saveProgress(entry, 'good', {});
-    const loaded = loadProgressMap();
+    const loaded = await loadProgressMap();
     expect(loaded[KEY]).toBeDefined();
     expect(loaded[KEY].seenCount).toBe(1);
     expect(loaded[KEY].fsrs.due).toBeInstanceOf(Date);
@@ -74,10 +82,49 @@ describe('loadProgressMap', () => {
     expect(map[KEY].category).toBe('greetings');
   });
 
-  it('skips malformed JSON entries without throwing', () => {
+  it('skips malformed JSON entries without throwing', async () => {
     store['progress-bad'] = 'not-json{{{';
-    expect(() => loadProgressMap()).not.toThrow();
-    expect(loadProgressMap()).toEqual({});
+    await expect(loadProgressMap()).resolves.not.toThrow();
+    expect(await loadProgressMap()).toEqual({});
+  });
+
+  it('leaves new-format ids untouched (no stale-key gate triggered)', async () => {
+    // entry.id is already 'v-a1-testfixture-001' in the old format on
+    // purpose for other tests in this file — but a *new*-format id (no
+    // category segment) must not trip STALE_VOCAB_ID_RE or trigger a
+    // mapping fetch.
+    await saveProgress({ ...entry, id: 'v-a1-0001' }, 'good', {});
+    const loaded = await loadProgressMap();
+    expect(loaded['v-a1-0001']).toBeDefined();
+  });
+
+  it('remaps a stale pre-migration id to its new id via id-migration-map.json (Phase 3)', async () => {
+    // v-a1-home-034 ('uthus') was migrated to v-a1-0572 — a real pair from
+    // src/lib/data/id-migration-map.json (see also e2e/review.test.ts,
+    // which exercises the same id end to end through /api/review-entries).
+    const OLD_ID = 'v-a1-home-034';
+    const NEW_ID = 'v-a1-0572';
+    store[LS_PREFIX + OLD_ID] = JSON.stringify({
+      fsrs: {
+        due: new Date().toISOString(),
+        stability: 1,
+        difficulty: 5,
+        elapsed_days: 0,
+        scheduled_days: 1,
+        learning_steps: 0,
+        reps: 1,
+        lapses: 0,
+        state: 2
+      },
+      seenCount: 1,
+      lastSeen: new Date().toISOString(),
+      level: 'A1',
+      category: 'home'
+    });
+
+    const loaded = await loadProgressMap();
+    expect(loaded[NEW_ID]).toBeDefined();
+    expect(loaded[OLD_ID]).toBeUndefined();
   });
 });
 

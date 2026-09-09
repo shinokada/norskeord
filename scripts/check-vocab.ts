@@ -6,7 +6,7 @@
  * canonical rules for VocabEntry IDs and norsk/lemma field formatting.
  *
  * Rules checked:
- *   1. ID format    — must be v-{level}-{category}-{NNN} (3-digit zero-padded)
+ *   1. ID format    — must be v-{level}-{NNNN} (4-digit zero-padded, no category segment)
  *   2. ID uniqueness — no duplicates within or across files
  *   3. level field  — must match file's CEFR level (case-insensitive)
  *   4. category     — must be in CATEGORIES_BY_LEVEL for that level
@@ -113,20 +113,17 @@ const targetLevels = args.length > 0 ? args.map((a) => a.toLowerCase()) : LEVELS
 
 // ── Validators ────────────────────────────────────────────────────────────────
 
-const ID_PATTERN = /^v-([a-z0-9]+)-(.+)-(\d{3})$/;
+const ID_PATTERN = /^v-([a-z0-9]+)-(\d{4,})$/;
 
-function checkIdFormat(id, level, category) {
+function checkIdFormat(id, level) {
   const errors = [];
   const m = id.match(ID_PATTERN);
   if (!m) {
-    errors.push(`ID "${id}" does not match v-{level}-{category}-{NNN} format`);
+    errors.push(`ID "${id}" does not match v-{level}-{NNNN} format`);
     return errors;
   }
   if (m[1] !== level) {
     errors.push(`ID level segment "${m[1]}" does not match file level "${level}"`);
-  }
-  if (m[2] !== category) {
-    errors.push(`ID category segment "${m[2]}" does not match entry category "${category}"`);
   }
   return errors;
 }
@@ -275,7 +272,7 @@ for (const level of LEVELS) {
 
     // ID format
     if (entry.id) {
-      errs.push(...checkIdFormat(entry.id, level, entry.category));
+      errs.push(...checkIdFormat(entry.id, level));
       // Global uniqueness
       if (globalIds.has(entry.id)) {
         errs.push(`duplicate ID — also in ${globalIds.get(entry.id)}`);

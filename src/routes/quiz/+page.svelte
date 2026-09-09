@@ -155,7 +155,9 @@
           progressMap = map;
         });
       } else {
-        progressMap = loadProgressMap();
+        loadProgressMap().then((map) => {
+          progressMap = map;
+        });
       }
     }
     window.addEventListener('quiz:reset', handleQuizReset);

@@ -114,13 +114,59 @@ export function vocabKey(entry: VocabEntry): string {
   return entry.id ?? entry.norsk;
 }
 
+// ── Stale-id migration (Phase 3, id-new-format.md) ───────────────────────────
+
+/**
+ * Matches the old vocab id shape (`v-{level}-{category}-{NNN}`), which has an
+ * extra category segment the new `v-{level}-{NNNN}` format doesn't. Used as a
+ * cheap in-memory gate so `id-migration-map.json` (~300KB) is only fetched
+ * when a progress map actually contains a stale key.
+ */
+const STALE_VOCAB_ID_RE = /^v-[a-z0-9]+-.+-\d{3}$/;
+
+function hasStaleKeys(map: Record<string, CardProgress>): boolean {
+  return Object.keys(map).some((k) => STALE_VOCAB_ID_RE.test(k));
+}
+
+/**
+ * Remaps any old-format key in `map` to its new id via id-migration-map.json,
+ * dynamically imported only when `hasStaleKeys` finds a candidate — never
+ * bundled into every route, never fetched for a map with no stale keys.
+ * Last-write-wins if both the old and new key happen to already exist
+ * (shouldn't occur in practice).
+ */
+async function remapStaleKeys(
+  map: Record<string, CardProgress>
+): Promise<Record<string, CardProgress>> {
+  if (!hasStaleKeys(map)) return map;
+
+  const { default: idMigrationMap } = (await import('$lib/data/id-migration-map.json')) as {
+    default: Record<string, string>;
+  };
+
+  const remapped: Record<string, CardProgress> = { ...map };
+  for (const [oldId, progress] of Object.entries(map)) {
+    const newId = idMigrationMap[oldId];
+    if (newId) {
+      remapped[newId] = progress;
+      delete remapped[oldId];
+    }
+  }
+  return remapped;
+}
+
 // ── Local storage (guest / free users only) ──────────────────────────────────
 
 /**
  * Loads the progress map from localStorage.
  * Only used for guest and free users. Plus users call loadProgressMapFromSupabase.
+ *
+ * Remaps any stale (pre-migration) vocab ids found in the map to their new
+ * `v-{level}-{NNNN}` ids via id-migration-map.json (Phase 3). Not persisted
+ * back to localStorage immediately — the next saveProgress() call naturally
+ * writes under the new key.
  */
-export function loadProgressMap(): Record<string, CardProgress> {
+export async function loadProgressMap(): Promise<Record<string, CardProgress>> {
   const map: Record<string, CardProgress> = {};
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
@@ -140,7 +186,7 @@ export function loadProgressMap(): Record<string, CardProgress> {
       }
     }
   }
-  return map;
+  return remapStaleKeys(map);
 }
 
 // ── Supabase row shape ───────────────────────────────────────────────────────
@@ -826,7 +872,7 @@ export async function migrateLocalProgressToSupabase(
   userId: string,
   allEntries: VocabEntry[] = []
 ): Promise<void> {
-  const localMap = loadProgressMap();
+  const localMap = await loadProgressMap();
   if (Object.keys(localMap).length === 0) return;
 
   // Build a lookup from vocabKey → VocabEntry so we can pass the full entry
