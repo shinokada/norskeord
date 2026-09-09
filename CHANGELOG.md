@@ -4,10 +4,9 @@
 
 ### Minor Changes
 
-- ### Minor Changes
-  - **New Content**
-    - Added new Norwegian vocabulary for [farm/animals theme] across A1, A2, and B1 levels.
-    - Expanded vocabulary statistics to reflect the new entries.
+- **New Content**
+  - Added new Norwegian vocabulary for farm/animals theme across A1, A2, and B1 levels.
+  - Expanded vocabulary statistics to reflect the new entries.
 
 ## 2.74.0
 
