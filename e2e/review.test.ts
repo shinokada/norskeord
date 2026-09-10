@@ -12,15 +12,18 @@ import { expect, test, type Page } from '@playwright/test';
  * card_progress rows to query.
  *
  * The seeded entry below is a real production vocab-a1.json entry
- * ("uthus", category "home") — DUE_ID intentionally uses its *old*
+ * ("uthus", category "home") — DUE_ID intentionally uses its *original*
  * pre-migration id (v-a1-home-034, format v-{level}-{category}-{NNN}) as
  * the seeded localStorage key. Since ai-docs/implementation/id-new-format.md's
- * migration, this id no longer exists in production data (it's now
- * v-a1-0572, per src/lib/data/id-migration-map.json) — so this test
- * doubles as an end-to-end regression check for the Phase 3 runtime
- * fallback in progress.ts: loadProgressMap() must remap this stale key to
- * the new id before /api/review-entries can resolve it, or the seeded
- * card silently fails to appear and this test fails.
+ * migrations (Rounds 1–3), this id no longer exists in production data —
+ * it's now w-000572, per src/lib/data/id-migration-map.json (a single-hop
+ * mapping straight from this original shape to the final shared
+ * w-{NNNNNN} format, flattened through the intermediate Round 1/2 shapes
+ * during the Round 3 migration) — so this test doubles as an end-to-end
+ * regression check for the runtime fallback in progress.ts: loadProgressMap()
+ * must remap this stale key to the current id before /api/review-entries
+ * can resolve it, or the seeded card silently fails to appear and this
+ * test fails.
  */
 const DUE_ID = 'v-a1-home-034';
 const SEED_KEY = `progress-${DUE_ID}`;

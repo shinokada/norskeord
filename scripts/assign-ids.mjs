@@ -158,7 +158,9 @@ function assignVocabIds(level) {
     }
     const newId = nextId();
     if (!newId) {
-      console.log(`  ❌  Computed ID already exists in production — skipping this entry, check for a data problem`);
+      console.log(
+        `  ❌  Computed ID already exists in production — skipping this entry, check for a data problem`
+      );
       skipped++;
       continue;
     }
@@ -215,7 +217,9 @@ function assignUttrykkIds(level) {
     }
     const newId = nextId();
     if (!newId) {
-      console.log(`  ❌  Computed ID already exists in production — skipping this entry, check for a data problem`);
+      console.log(
+        `  ❌  Computed ID already exists in production — skipping this entry, check for a data problem`
+      );
       skipped++;
       continue;
     }

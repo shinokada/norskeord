@@ -88,22 +88,27 @@ describe('loadProgressMap', () => {
     expect(await loadProgressMap()).toEqual({});
   });
 
-  it('leaves new-format ids untouched (no stale-key gate triggered)', async () => {
+  it('leaves current-format ids untouched (no stale-key gate triggered)', async () => {
     // entry.id is already 'v-a1-testfixture-001' in the old format on
-    // purpose for other tests in this file — but a *new*-format id (no
-    // category segment) must not trip STALE_VOCAB_ID_RE or trigger a
-    // mapping fetch.
-    await saveProgress({ ...entry, id: 'v-a1-0001' }, 'good', {});
+    // purpose for other tests in this file — but a genuinely *current*-
+    // format id (w-{NNNNNN}, shared vocab/uttrykk shape) must not trip
+    // STALE_ID_RE or trigger a mapping fetch. Note 'v-a1-0001' (Round 1's
+    // intermediate shape) is NOT a valid stand-in here anymore — it's one
+    // of STALE_ID_RE's own whitelisted branches now, so it would (correctly)
+    // trigger the gate rather than test the "leave alone" path.
+    await saveProgress({ ...entry, id: 'w-000001' }, 'good', {});
     const loaded = await loadProgressMap();
-    expect(loaded['v-a1-0001']).toBeDefined();
+    expect(loaded['w-000001']).toBeDefined();
   });
 
-  it('remaps a stale pre-migration id to its new id via id-migration-map.json (Phase 3)', async () => {
-    // v-a1-home-034 ('uthus') was migrated to v-a1-0572 — a real pair from
-    // src/lib/data/id-migration-map.json (see also e2e/review.test.ts,
-    // which exercises the same id end to end through /api/review-entries).
+  it('remaps a stale pre-migration id to its new id via id-migration-map.json (Phase 3/7/11)', async () => {
+    // v-a1-home-034 ('uthus') flattens straight through to w-000572 — a real
+    // pair from src/lib/data/id-migration-map.json (single-hop mapping,
+    // Round 3: original pre-Round-1 shape → final shared w-{NNNNNN} id; see
+    // also e2e/review.test.ts, which exercises the same id end to end
+    // through /api/review-entries).
     const OLD_ID = 'v-a1-home-034';
-    const NEW_ID = 'v-a1-0572';
+    const NEW_ID = 'w-000572';
     store[LS_PREFIX + OLD_ID] = JSON.stringify({
       fsrs: {
         due: new Date().toISOString(),

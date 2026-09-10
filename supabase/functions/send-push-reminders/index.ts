@@ -319,10 +319,7 @@ Deno.serve(async (req: Request) => {
           });
 
           if (sendErr) {
-            console.error(
-              `[send-reminders] email failed for user=${profile.id}:`,
-              sendErr.message
-            );
+            console.error(`[send-reminders] email failed for user=${profile.id}:`, sendErr.message);
             emailFailed++;
           } else {
             emailSent++;
