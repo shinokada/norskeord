@@ -1,4 +1,3 @@
-import { levenshtein } from '$lib/quiz';
 import type { CardProgress, FSRSRating, GrammarQuestion } from '$lib/types';
 
 /**
@@ -14,11 +13,6 @@ export function normalizeAnswer(s: string): string {
     .trim();
 }
 
-// Minimum answer length for the 1-edit typo tolerance to apply. Short answers
-// (e.g. "ja" vs "jo", "er" vs "var") differ by a single edit from a WRONG option,
-// so leniency there would accept the wrong word — require an exact match instead.
-const TYPO_MIN_LEN = 4;
-
 /**
  * Same as normalizeAnswer but keeps punctuation — used for 'punctuation' questions,
  * where the punctuation is the thing being tested and must not be erased before
@@ -29,46 +23,39 @@ export function normalizeAnswerKeepPunctuation(s: string): string {
 }
 
 /**
- * Grades a typed answer against a grammar question.
- * - exact (normalised) match against answer/alternates → correct, 'good'
- * - within 1 edit of a candidate that is at least TYPO_MIN_LEN chars → correct, 'hard'
- * - otherwise → incorrect, 'again'
+ * Grades a typed answer against a grammar question by exact (normalised)
+ * match against `answer`/`alternates` only — no typo tolerance.
+ *
+ * Norwegian grammar topics are unusually dense with minimal pairs that
+ * differ by exactly one character (hjem/hjemme, sønner/sonner, one comma,
+ * etc.) — for these, a 1-edit "typo" allowance ends up accepting the wrong
+ * grammatical form about as often as it forgives a genuine slip, which
+ * defeats the point of the question. Exact match avoids that, at the cost
+ * of occasionally dinging a real typo on a long word.
  *
  * multiple-choice questions need no special handling here: the UI passes the
  * full text of the tapped option (see MultipleChoiceQuestion.svelte), which is
  * matched against `answer` the same way as every other type — `answer` must be
  * one of the option strings verbatim.
  *
- * 'punctuation' questions are graded separately, preserving punctuation and
- * disabling the typo-tolerance fallback entirely — a missing/misplaced comma is
- * exactly a 1-character edit, so leniency here would defeat the question.
+ * 'punctuation' questions keep punctuation in the comparison (see
+ * normalizeAnswerKeepPunctuation) since punctuation is the thing being
+ * tested there.
  */
 export function gradeGrammarAnswer(
   input: string,
   question: GrammarQuestion
 ): { correct: boolean; rating: FSRSRating } {
-  if (question.type === 'punctuation') {
-    const norm = normalizeAnswerKeepPunctuation(input);
-    if (!norm) return { correct: false, rating: 'again' };
-    const candidates = [question.answer, ...(question.alternates ?? [])].map(
-      normalizeAnswerKeepPunctuation
-    );
-    return candidates.includes(norm)
-      ? { correct: true, rating: 'good' }
-      : { correct: false, rating: 'again' };
-  }
+  const normalize =
+    question.type === 'punctuation' ? normalizeAnswerKeepPunctuation : normalizeAnswer;
 
-  const norm = normalizeAnswer(input);
+  const norm = normalize(input);
   if (!norm) return { correct: false, rating: 'again' };
 
-  const candidates = [question.answer, ...(question.alternates ?? [])].map(normalizeAnswer);
-  if (candidates.includes(norm)) return { correct: true, rating: 'good' };
-
-  // Allow a single-character typo only against a sufficiently long target, so
-  // short distractors (ja/jo, er/var) aren't accepted as "typos".
-  const typoHit = candidates.some((c) => c.length >= TYPO_MIN_LEN && levenshtein(norm, c) <= 1);
-  if (typoHit) return { correct: true, rating: 'hard' };
-  return { correct: false, rating: 'again' };
+  const candidates = [question.answer, ...(question.alternates ?? [])].map(normalize);
+  return candidates.includes(norm)
+    ? { correct: true, rating: 'good' }
+    : { correct: false, rating: 'again' };
 }
 
 /** Fisher–Yates shuffle (returns a new array). */
