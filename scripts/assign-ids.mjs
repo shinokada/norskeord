@@ -10,14 +10,25 @@
  * Neither Step 1 nor Step 2 of the pipeline assigns real `id` values — every
  * new entry is left with `id: ""`. This script fills them in:
  *
- *   vocab:   v-{level}-{NNNN}   (NNNN is per-level, 4-digit, no category segment — see ai-docs/implementation/id-new-format.md)
- *   uttrykk: u-{level}-{NNN}    (NNN is per-level, 3-digit, no category segment)
+ *   vocab & uttrykk:   w-{NNNNNN}   (NNNNNN is global, 6-digit, ONE shared
+ *                                    sequence across all levels AND across
+ *                                    both vocab and uttrykk — no level or
+ *                                    category segment, and no separate
+ *                                    per-type counter either; see
+ *                                    ai-docs/implementation/id-new-format.md,
+ *                                    Round 3)
  *
- * It reads the current production file (src/lib/data/vocab-{level}.json /
- * uttrykk-{level}.json) to find the highest NNNN/NNN already in use per
- * level, then assigns the next sequential number to each draft entry whose
- * id is still "". Entries that already have an id are left untouched.
- * Production files are never modified.
+ * `level` and `category` (and, for type itself, `category`/`part`) live only
+ * in their own entry fields now — the id carries none of them. Moving an
+ * entry between vocab and uttrykk no longer implies an id change either.
+ *
+ * It scans every production file, vocab AND uttrykk, across all 5 levels
+ * (src/lib/data/vocab-{level}.json, src/lib/data/uttrykk-{level}.json) to
+ * find the highest NNNNNN already in use in that single shared space, then
+ * assigns the next sequential number to each draft entry whose id is still
+ * "" — regardless of level or type, since one counter covers both. Entries
+ * that already have an id are left untouched. Production files are never
+ * modified.
  *
  * Before writing, the draft file is backed up to draft/{level}/{file}.bak
  * (matches the project's existing .bak convention), unless --dry-run is set.
@@ -68,12 +79,8 @@ for (const lvl of targetLevels) {
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
-function pad3(n) {
-  return String(n).padStart(3, '0');
-}
-
-function pad4(n) {
-  return String(n).padStart(4, '0');
+function pad6(n) {
+  return String(n).padStart(6, '0');
 }
 
 function readJson(path) {
@@ -84,12 +91,44 @@ function writeJson(path, data) {
   writeFileSync(path, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 
-// ── Vocab: v-{level}-{NNNN} ──────────────────────────────────────────────────
+// ── Shared id state: w-{NNNNNN}, ONE global counter across vocab AND uttrykk,
+// across all 5 levels of each ─────────────────────────────────────────────────
 
-const VOCAB_ID_PATTERN = /^v-([a-z0-9]+)-(\d{4,})$/;
+const ID_PATTERN = /^w-(\d{6,})$/;
+
+// Scanned once per script run (not per level, not per type) since the
+// counter is shared across everything.
+function computeIdState() {
+  let maxNum = 0;
+  const prodIds = new Set();
+  for (const lvl of ALL_LEVELS) {
+    for (const prefix of ['vocab', 'uttrykk']) {
+      const prodPath = join(DATA_DIR, `${prefix}-${lvl}.json`);
+      if (!existsSync(prodPath)) continue;
+      for (const entry of readJson(prodPath)) {
+        if (!entry.id) continue;
+        prodIds.add(entry.id);
+        const m = entry.id.match(ID_PATTERN);
+        if (!m) continue;
+        const num = parseInt(m[1], 10);
+        if (num > maxNum) maxNum = num;
+      }
+    }
+  }
+  return { maxNum, prodIds };
+}
+
+const idState = computeIdState();
+
+function nextId() {
+  const nextNum = idState.maxNum + 1;
+  const newId = `w-${pad6(nextNum)}`;
+  if (idState.prodIds.has(newId)) return null; // caller reports + skips
+  idState.maxNum = nextNum;
+  return newId;
+}
 
 function assignVocabIds(level) {
-  const prodPath = join(DATA_DIR, `vocab-${level}.json`);
   const draftFilename = `vocab-${level}-new.json`;
   const draftPath = join(DRAFT_DIR, level, draftFilename);
 
@@ -98,25 +137,11 @@ function assignVocabIds(level) {
     return;
   }
 
-  const prodEntries = existsSync(prodPath) ? readJson(prodPath) : [];
   const draftEntries = readJson(draftPath);
-
-  // Max NNNN for this level, from production, and the full set of production
-  // IDs (used to catch a draft entry accidentally reusing a production ID).
-  let maxNum = 0;
-  const prodIds = new Set();
-  for (const entry of prodEntries) {
-    if (!entry.id) continue;
-    prodIds.add(entry.id);
-    const m = entry.id.match(VOCAB_ID_PATTERN);
-    if (!m || m[1] !== level) continue;
-    const num = parseInt(m[2], 10);
-    if (num > maxNum) maxNum = num;
-  }
 
   let assigned = 0;
   let alreadyHadId = 0;
-  let skippedNoCategory = 0;
+  let skipped = 0;
   const assignments = [];
 
   for (const entry of draftEntries) {
@@ -128,19 +153,15 @@ function assignVocabIds(level) {
       console.log(
         `  ❌  Skipping entry with norsk="${entry.norsk ?? '(unknown)'}" — no category set, run Step 3B validation first`
       );
-      skippedNoCategory++;
+      skipped++;
       continue;
     }
-    const nextNum = maxNum + 1;
-    const newId = `v-${level}-${pad4(nextNum)}`;
-    if (prodIds.has(newId)) {
-      console.log(
-        `  ❌  Computed ID "${newId}" already exists in production — skipping this entry, check for a data problem`
-      );
-      skippedNoCategory++;
+    const newId = nextId();
+    if (!newId) {
+      console.log(`  ❌  Computed ID already exists in production — skipping this entry, check for a data problem`);
+      skipped++;
       continue;
     }
-    maxNum = nextNum;
     entry.id = newId;
     assignments.push(`${newId}  norsk="${entry.norsk}"`);
     assigned++;
@@ -148,9 +169,7 @@ function assignVocabIds(level) {
 
   console.log(`\n📄  ${draftFilename}  (${draftEntries.length} entries)`);
   for (const line of assignments) console.log(`  ✅  ${line}`);
-  console.log(
-    `  \u2192 ${assigned} assigned, ${alreadyHadId} already had an id, ${skippedNoCategory} skipped`
-  );
+  console.log(`  → ${assigned} assigned, ${alreadyHadId} already had an id, ${skipped} skipped`);
 
   if (assigned === 0) {
     console.log(`  (nothing to write)`);
@@ -170,12 +189,10 @@ function assignVocabIds(level) {
   );
 }
 
-// ── Uttrykk: u-{level}-{NNN} ──────────────────────────────────────────────────
-
-const UTTRYKK_ID_PATTERN = /^u-([a-z0-9]+)-(\d{3})$/;
-
+// Preview files (uttrykk-{level}-preview.json, up-{level}-{NNN} ids) are a
+// separate, dead format — confirmed out of scope in id-new-format.md Round 2.
+// Not touched here.
 function assignUttrykkIds(level) {
-  const prodPath = join(DATA_DIR, `uttrykk-${level}.json`);
   const draftFilename = `uttrykk-${level}-new.json`;
   const draftPath = join(DRAFT_DIR, level, draftFilename);
 
@@ -184,19 +201,7 @@ function assignUttrykkIds(level) {
     return;
   }
 
-  const prodEntries = existsSync(prodPath) ? readJson(prodPath) : [];
   const draftEntries = readJson(draftPath);
-
-  let maxNum = 0;
-  const prodIds = new Set();
-  for (const entry of prodEntries) {
-    if (!entry.id) continue;
-    prodIds.add(entry.id);
-    const m = entry.id.match(UTTRYKK_ID_PATTERN);
-    if (!m || m[1] !== level) continue;
-    const num = parseInt(m[2], 10);
-    if (num > maxNum) maxNum = num;
-  }
 
   let assigned = 0;
   let alreadyHadId = 0;
@@ -208,16 +213,12 @@ function assignUttrykkIds(level) {
       alreadyHadId++;
       continue;
     }
-    const nextNum = maxNum + 1;
-    const newId = `u-${level}-${pad3(nextNum)}`;
-    if (prodIds.has(newId)) {
-      console.log(
-        `  ❌  Computed ID "${newId}" already exists in production — skipping this entry, check for a data problem`
-      );
+    const newId = nextId();
+    if (!newId) {
+      console.log(`  ❌  Computed ID already exists in production — skipping this entry, check for a data problem`);
       skipped++;
       continue;
     }
-    maxNum = nextNum;
     entry.id = newId;
     assignments.push(`${newId}  norsk="${entry.norsk}"`);
     assigned++;
@@ -225,9 +226,7 @@ function assignUttrykkIds(level) {
 
   console.log(`\n📄  ${draftFilename}  (${draftEntries.length} entries)`);
   for (const line of assignments) console.log(`  ✅  ${line}`);
-  console.log(
-    `  \u2192 ${assigned} assigned, ${alreadyHadId} already had an id, ${skipped} skipped`
-  );
+  console.log(`  → ${assigned} assigned, ${alreadyHadId} already had an id, ${skipped} skipped`);
 
   if (assigned === 0) {
     console.log(`  (nothing to write)`);

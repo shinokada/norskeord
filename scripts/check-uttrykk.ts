@@ -6,8 +6,10 @@
  * in src/lib/data against canonical rules.
  *
  * Rules checked:
- *   1. ID format    — full files:    u-{level}-{NNN}
- *                     preview files: up-{level}-{NNN}  (3-digit zero-padded)
+ *   1. ID format    — full files:    w-{NNNNNN}  (6-digit zero-padded, global — shared with vocab,
+ *                     no level or type segment; see ai-docs/implementation/id-new-format.md Round 3)
+ *                     preview files: up-{level}-{NNN}  (3-digit zero-padded — unchanged; preview is a
+ *                     dead, out-of-scope format, see ai-docs/implementation/id-new-format.md Round 2)
  *   2. ID uniqueness — no duplicates within or across files
  *   3. level field  — must match file's CEFR level (case-insensitive)
  *   4. category     — must be "uttrykk" or "uttrykk-preview"
@@ -89,28 +91,33 @@ const KNOWN_LANGUAGES = [
 
 // ── Validators ────────────────────────────────────────────────────────────────
 
-/** Full file:    u-{level}-{NNN} */
-const ID_PATTERN_FULL = /^u-([a-z0-9]+)-(\d{3})$/;
-/** Preview file: up-{level}-{NNN} */
+/** Full file:    w-{NNNNNN}  (global — shared with vocab, no level or type segment) */
+const ID_PATTERN_FULL = /^w-(\d{6,})$/;
+/** Preview file: up-{level}-{NNN}  (unchanged, dead/out-of-scope format) */
 const ID_PATTERN_PREVIEW = /^up-([a-z0-9]+)-(\d{3})$/;
 
 function checkIdFormat(id, level, isPreview) {
   const errors = [];
-  const pattern = isPreview ? ID_PATTERN_PREVIEW : ID_PATTERN_FULL;
-  const expected = isPreview ? 'up-{level}-{NNN}' : 'u-{level}-{NNN}';
 
-  const m = id.match(pattern);
-  if (!m) {
-    // Give a helpful hint if the prefixes are swapped
-    const swapped = isPreview ? ID_PATTERN_FULL.test(id) : ID_PATTERN_PREVIEW.test(id);
-    const hint = swapped
-      ? ` (looks like ${isPreview ? 'full' : 'preview'} prefix — should be "${isPreview ? 'up' : 'u'}-")`
-      : '';
-    errors.push(`ID "${id}" does not match ${expected} format${hint}`);
+  if (isPreview) {
+    const m = id.match(ID_PATTERN_PREVIEW);
+    if (!m) {
+      const swapped = ID_PATTERN_FULL.test(id);
+      const hint = swapped ? ` (looks like full prefix — should be "up-")` : '';
+      errors.push(`ID "${id}" does not match up-{level}-{NNN} format${hint}`);
+      return errors;
+    }
+    if (m[1] !== level) {
+      errors.push(`ID level segment "${m[1]}" does not match file level "${level}"`);
+    }
     return errors;
   }
-  if (m[1] !== level) {
-    errors.push(`ID level segment "${m[1]}" does not match file level "${level}"`);
+
+  const m = id.match(ID_PATTERN_FULL);
+  if (!m) {
+    const swapped = ID_PATTERN_PREVIEW.test(id);
+    const hint = swapped ? ` (looks like preview prefix — should be "w-")` : '';
+    errors.push(`ID "${id}" does not match w-{NNNNNN} format${hint}`);
   }
   return errors;
 }

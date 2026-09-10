@@ -83,9 +83,11 @@ Use `phrase` only when the entry has **no single grammatical head** — greeting
 
 ### ID format
 
-`v-{level}-{NNNN}` where level is `a1|a2|b1|b2|c` and NNNN is a zero-padded 4-digit number, sequential per level. The category is not part of the id — it lives only in the `category` field, so recategorizing an entry is a pure data edit with no id implication.
+`w-{NNNNNN}` where NNNNNN is a zero-padded 6-digit number, **one shared sequence global across both vocab and uttrykk, and across all levels of each.** Neither `category`, `level`, nor type (vocab vs. uttrykk) is part of the id — all three live only in their own fields (`category`/`part` distinguish vocab from uttrykk), so recategorizing, reclassifying (CEFR level), or moving an entry between vocab and uttrykk is a pure data edit with no id implication.
 
-Example: `v-a1-0001`
+Example: `w-000001`
+
+Vocab and uttrykk ids are drawn from the same counter and are otherwise indistinguishable by shape — which file an entry lives in, and its `category`/`part` fields, are the only source of truth for its type.
 
 ### `note` field (optional)
 
