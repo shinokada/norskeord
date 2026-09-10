@@ -84,7 +84,6 @@ describe('loadProgressMap', () => {
 
   it('skips malformed JSON entries without throwing', async () => {
     store['progress-bad'] = 'not-json{{{';
-    await expect(loadProgressMap()).resolves.not.toThrow();
     expect(await loadProgressMap()).toEqual({});
   });
 

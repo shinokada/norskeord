@@ -98,24 +98,41 @@ const ID_PATTERN = /^w-(\d{6,})$/;
 
 // Scanned once per script run (not per level, not per type) since the
 // counter is shared across everything.
+//
+// Reserves ids from TWO sources: production files (the obvious case), AND
+// every draft file across all levels/types that already has entries with a
+// real id assigned (e.g. a prior partial run of this same script, or a
+// still-open draft from an earlier session). Without the draft-file pass,
+// an id already sitting in an unmerged draft file wouldn't be in prodIds,
+// so a later run could hand out that same id again — a real duplicate,
+// since the draft's existing id is never re-derived, only newly-"" entries
+// get assigned.
 function computeIdState() {
   let maxNum = 0;
-  const prodIds = new Set();
+  const reservedIds = new Set();
+
+  function scan(entries) {
+    for (const entry of entries) {
+      if (!entry.id) continue;
+      reservedIds.add(entry.id);
+      const m = entry.id.match(ID_PATTERN);
+      if (!m) continue;
+      const num = parseInt(m[1], 10);
+      if (num > maxNum) maxNum = num;
+    }
+  }
+
   for (const lvl of ALL_LEVELS) {
     for (const prefix of ['vocab', 'uttrykk']) {
       const prodPath = join(DATA_DIR, `${prefix}-${lvl}.json`);
-      if (!existsSync(prodPath)) continue;
-      for (const entry of readJson(prodPath)) {
-        if (!entry.id) continue;
-        prodIds.add(entry.id);
-        const m = entry.id.match(ID_PATTERN);
-        if (!m) continue;
-        const num = parseInt(m[1], 10);
-        if (num > maxNum) maxNum = num;
-      }
+      if (existsSync(prodPath)) scan(readJson(prodPath));
+
+      const draftPath = join(DRAFT_DIR, lvl, `${prefix}-${lvl}-new.json`);
+      if (existsSync(draftPath)) scan(readJson(draftPath));
     }
   }
-  return { maxNum, prodIds };
+
+  return { maxNum, reservedIds };
 }
 
 const idState = computeIdState();
@@ -123,7 +140,7 @@ const idState = computeIdState();
 function nextId() {
   const nextNum = idState.maxNum + 1;
   const newId = `w-${pad6(nextNum)}`;
-  if (idState.prodIds.has(newId)) return null; // caller reports + skips
+  if (idState.reservedIds.has(newId)) return null; // caller reports + skips
   idState.maxNum = nextNum;
   return newId;
 }

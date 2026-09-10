@@ -87,6 +87,7 @@ async function main() {
 
   console.log('\nUpdating…');
   let updated = 0;
+  let failed = 0;
   for (const u of toUpdate) {
     const { error: updateError } = await supabase
       .from('card_progress')
@@ -94,10 +95,17 @@ async function main() {
       .eq('id', u.rowId);
 
     if (updateError) {
+      failed++;
       console.error(`[err] row ${u.rowId} (${u.oldId} → ${u.newId}): ${updateError.message}`);
     } else {
       updated++;
     }
+  }
+
+  if (failed > 0) {
+    throw new Error(
+      `Updated ${updated} of ${toUpdate.length} row(s) — ${failed} failed, see [err] lines above`
+    );
   }
 
   console.log(`\nDone. Updated ${updated} of ${toUpdate.length} row(s).`);
