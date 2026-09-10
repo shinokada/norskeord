@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.78.0
+
+### Minor Changes
+
+- - **New Features**
+    - Vocabulary and expression entries now use a shared, sequential ID format across all levels and categories.
+    - Existing local progress is automatically remapped from older ID formats.
+
+  - **Bug Fixes**
+    - Guest and free-user progress loading now completes reliably before quiz, review, flashcard, and statistics views display progress.
+    - Progress remains available after the ID format migration, including older saved entries.
+
+  - **Documentation**
+    - Updated guidance and migration documentation for the new shared ID format.
+
 ## 2.77.0
 
 ### Minor Changes
