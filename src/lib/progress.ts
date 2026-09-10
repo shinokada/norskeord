@@ -114,13 +114,89 @@ export function vocabKey(entry: VocabEntry): string {
   return entry.id ?? entry.norsk;
 }
 
+// ── Stale-id migration (Phase 3/7/11, id-new-format.md) ───────────────────────
+
+/**
+ * Whitelist of every superseded vocab/uttrykk id shape, from oldest to newest.
+ * The *current* shape (`w-{NNNNNN}`, shared across vocab and uttrykk since
+ * Round 3) is deliberately NOT in this list — only shapes that used to be
+ * valid and have since been replaced belong here.
+ *
+ * Deliberately a whitelist of known-past shapes, not "anything that doesn't
+ * match the current shape" — the latter would also flag legacy norsk-
+ * fallback keys (vocabKey() falls back to entry.norsk for pre-id entries) as
+ * "possibly stale", paying the id-migration-map.json fetch cost for guests
+ * who have no stale id at all, just an older storage convention with
+ * nothing in the mapping file to find.
+ *
+ *   1. v-{level}-{category}-{NNN}  — the original, pre-Round-1 shape. The
+ *      only shape any real guest actually has today, since neither Round 1
+ *      nor Round 2 ever shipped to production before Round 3 folded
+ *      straight through to the final shared format.
+ *   2. v-{level}-{NNNN}            — Round 1's intermediate shape. Never
+ *      deployed to a real guest, but kept matching defensively in case of
+ *      local test data.
+ *   3. v-{NNNNNN}                  — Round 2's intermediate (vocab-only,
+ *      global) shape. Same defensive reasoning as #2.
+ *   4. u-{level}-{NNN}             — uttrykk's original, pre-Round-2 shape.
+ *      Round 1 never touched uttrykk, so this was still "current" right up
+ *      until Round 3's migration.
+ *   5. u-{NNNNN}                   — Round 2's intermediate (uttrykk-only,
+ *      global) shape. Same defensive reasoning as #2/#3.
+ */
+const STALE_ID_RE = new RegExp(
+  [
+    String.raw`^v-[a-z0-9]+-.+-\d{3}$`, // 1: pre-Round-1 vocab
+    String.raw`^v-[a-z0-9]+-\d{4}$`, // 2: Round 1 intermediate vocab
+    String.raw`^v-\d{6}$`, // 3: Round 2 intermediate vocab (global)
+    String.raw`^u-[a-z0-9]+-\d{3}$`, // 4: pre-Round-2 uttrykk
+    String.raw`^u-\d{5}$` // 5: Round 2 intermediate uttrykk (global)
+  ].join('|')
+);
+
+function hasStaleKeys(map: Record<string, CardProgress>): boolean {
+  return Object.keys(map).some((k) => STALE_ID_RE.test(k));
+}
+
+/**
+ * Remaps any old-format key in `map` to its new id via id-migration-map.json,
+ * dynamically imported only when `hasStaleKeys` finds a candidate — never
+ * bundled into every route, never fetched for a map with no stale keys.
+ * Last-write-wins if both the old and new key happen to already exist
+ * (shouldn't occur in practice).
+ */
+async function remapStaleKeys(
+  map: Record<string, CardProgress>
+): Promise<Record<string, CardProgress>> {
+  if (!hasStaleKeys(map)) return map;
+
+  const { default: idMigrationMap } = (await import('$lib/data/id-migration-map.json')) as {
+    default: Record<string, string>;
+  };
+
+  const remapped: Record<string, CardProgress> = { ...map };
+  for (const [oldId, progress] of Object.entries(map)) {
+    const newId = idMigrationMap[oldId];
+    if (newId) {
+      remapped[newId] = progress;
+      delete remapped[oldId];
+    }
+  }
+  return remapped;
+}
+
 // ── Local storage (guest / free users only) ──────────────────────────────────
 
 /**
  * Loads the progress map from localStorage.
  * Only used for guest and free users. Plus users call loadProgressMapFromSupabase.
+ *
+ * Remaps any stale (pre-migration) vocab/uttrykk ids found in the map to
+ * their current `w-{NNNNNN}` id via id-migration-map.json (Phase 3/7/11).
+ * Not persisted back to localStorage immediately — the next saveProgress()
+ * call naturally writes under the new key.
  */
-export function loadProgressMap(): Record<string, CardProgress> {
+export async function loadProgressMap(): Promise<Record<string, CardProgress>> {
   const map: Record<string, CardProgress> = {};
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
@@ -140,7 +216,7 @@ export function loadProgressMap(): Record<string, CardProgress> {
       }
     }
   }
-  return map;
+  return remapStaleKeys(map);
 }
 
 // ── Supabase row shape ───────────────────────────────────────────────────────
@@ -826,7 +902,7 @@ export async function migrateLocalProgressToSupabase(
   userId: string,
   allEntries: VocabEntry[] = []
 ): Promise<void> {
-  const localMap = loadProgressMap();
+  const localMap = await loadProgressMap();
   if (Object.keys(localMap).length === 0) return;
 
   // Build a lookup from vocabKey → VocabEntry so we can pass the full entry

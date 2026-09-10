@@ -340,7 +340,7 @@
       grammarMap = await loadGrammarProgressFromSupabase(userId);
     } else {
       // Guest / free: localStorage
-      progressMap = loadProgressMap();
+      progressMap = await loadProgressMap();
       grammarMap = loadGrammarProgressMap();
     }
     mounted = true;
