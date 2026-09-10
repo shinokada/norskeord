@@ -85,6 +85,22 @@ console.log(
   DRY_RUN ? '\n=== DRY RUN — no files will be written ===\n' : '\n=== Renumbering IDs ===\n'
 );
 
+// One shared counter across everything below — vocab and uttrykk, all levels.
+let sharedCounter = 0;
+let totalChanged = 0;
+const idMap = {}; // oldId -> newId (flattened, single generation), only populated when --emit-mapping is set
+
+// ── Vocab files ───────────────────────────────────────────────────────────────
+// Processed first, in level order, feeding the shared counter.
+
+const VOCAB_FILES = [
+  'vocab-a1.json',
+  'vocab-a2.json',
+  'vocab-b1.json',
+  'vocab-b2.json',
+  'vocab-c.json'
+];
+
 // The true pre-Round-1 original shape: v-{level}-{category}-{NNN}. Used as a
 // pre-flight guard below — a .bak file that EXISTS but holds a different
 // (already-migrated, intermediate) shape is just as dangerous as a missing
@@ -106,11 +122,12 @@ if (EMIT_MAPPING) {
       continue;
     }
     const bakEntries = readJson(bakPath);
-    const sample = bakEntries.slice(0, 20);
-    const wrongShape = sample.some((e) => e.id && !ORIGINAL_VOCAB_ID_RE.test(e.id));
+    // Check every entry, not a sample — a bad or missing id further into the
+    // file must not slip past a check that only looked at the first few.
+    const wrongShape = bakEntries.some((e) => !e.id || !ORIGINAL_VOCAB_ID_RE.test(e.id));
     if (wrongShape) {
       problems.push(
-        `${file}.bak exists but doesn't look like the original v-{level}-{category}-{NNN} shape — likely clobbered by an earlier renumber-ids.mjs run`
+        `${file}.bak exists but at least one entry's id is missing or doesn't match the original v-{level}-{category}-{NNN} shape — likely clobbered by an earlier renumber-ids.mjs run`
       );
     }
   }
@@ -128,22 +145,6 @@ if (EMIT_MAPPING) {
     process.exit(1);
   }
 }
-
-// One shared counter across everything below — vocab and uttrykk, all levels.
-let sharedCounter = 0;
-let totalChanged = 0;
-const idMap = {}; // oldId -> newId (flattened, single generation), only populated when --emit-mapping is set
-
-// ── Vocab files ───────────────────────────────────────────────────────────────
-// Processed first, in level order, feeding the shared counter.
-
-const VOCAB_FILES = [
-  'vocab-a1.json',
-  'vocab-a2.json',
-  'vocab-b1.json',
-  'vocab-b2.json',
-  'vocab-c.json'
-];
 
 for (const file of VOCAB_FILES) {
   const path = join(dataDir, file);
