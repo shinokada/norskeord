@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.78.1
+
+### Patch Changes
+
+- - **Bug Fixes**
+    - Grammar answers now require exact matching for spelling, accents, punctuation, and word count. Minor typos and extra words are no longer accepted.
+
+  - **Statistics**
+    - Progress summaries now more accurately distinguish learning, relearning, and review cards.
+    - “Others” expression categories now include stale categories and link correctly to due review items.
+
+  - **Review**
+    - C-level “Others” expression sessions are now supported on the review page.
+
 ## 2.78.0
 
 ### Minor Changes
