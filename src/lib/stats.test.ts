@@ -9,6 +9,7 @@ import {
   type StatRow
 } from './stats';
 import { CATEGORIES_BY_LEVEL } from '$lib/config';
+import { UTTRYKK_C_KEYS } from '$lib/uttrykk-c-stats';
 import { GRAMMAR_RULES } from '$lib/grammar/rules';
 import type { CardProgress, GrammarQuestion, GrammarTopic } from '$lib/types';
 import grammarData from '$lib/data/grammar.json';
@@ -204,6 +205,29 @@ describe('uttrykkOthersKeysForLevel', () => {
     } else {
       expect(keys.size).toBeGreaterThan(0);
     }
+  });
+
+  it('includes a renamed/stale C category from progressMap, matching the Others row it counts as due', () => {
+    // Simulates uttrykk-c.json content being re-categorised without
+    // migrating existing progress: a real uttrykk-c.json id, but stamped
+    // with a category slug that no longer exists in uttrykkCCategoryCounts().
+    // Before the fix, uttrykkOthersKeysForLevel('C') only looked at current
+    // categories, so this key would never come back — even though
+    // uttrykkThemeStatsForLevel('C', progressMap) counts the same card as due
+    // under the synthetic "Others" row (0 current entries always clears
+    // UTTRYKK_OTHERS_THRESHOLD as minor).
+    const staleCategory = '__renamed-category-no-longer-current__';
+    const staleKey = [...UTTRYKK_C_KEYS][0];
+    const progressMap: Record<string, CardProgress> = {
+      [staleKey]: fakeCard({ level: 'C', category: staleCategory })
+    };
+
+    const rows = uttrykkThemeStatsForLevel('C', progressMap);
+    const othersRow = rows.find((r) => r.key === 'others')!;
+    expect(othersRow.due).toBeGreaterThan(0);
+
+    const keys = uttrykkOthersKeysForLevel('C', progressMap);
+    expect(keys.has(staleCategory)).toBe(true);
   });
 });
 

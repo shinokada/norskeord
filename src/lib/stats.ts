@@ -147,13 +147,38 @@ export function progressBucket(card: CardProgress): 'review' | 'learning' | 'rel
  * it represents: `UTTRYKK_OTHERS_THEME` isn't a real `theme`/`category`
  * value stored on any card, so `getDueItems`/the resolved-entry filter
  * there can't match it directly — they need this concrete key set instead.
+ *
+ * `progressMap` is optional and defaults to `{}` for callers (tests, mostly)
+ * that don't have one handy, but real callers (`/review`) should always pass
+ * the live map: for C, this must partition over the exact same category set
+ * `uttrykkThemeStatsForLevel` used to decide which row a due card landed in,
+ * or the two can disagree. Unlike A1–B2 (whose only fallback for a persisted
+ * card is the fixed, already-counted `UTTRYKK_CATCHALL_THEME`), a C card
+ * keeps its raw `CardProgress.category` verbatim — if uttrykk-c.json content
+ * is ever re-categorised without migrating existing progress, a card can end
+ * up under a category slug that no longer exists in `uttrykkCCategoryCounts()`.
+ * `uttrykkThemeStatsForLevel` already unions that stale slug in (via
+ * `cardsByCategory`) and, at 0 current entries, it always falls under the
+ * `UTTRYKK_OTHERS_THRESHOLD` and lands in "Others" — so this function must
+ * union it in too, or a due card counted in the Others stat row would
+ * silently fail to resolve when `/review` scopes by `?category=others`.
  */
-export function uttrykkOthersKeysForLevel(level: CEFRLevel): Set<string> {
+export function uttrykkOthersKeysForLevel(
+  level: CEFRLevel,
+  progressMap: Record<string, CardProgress> = {}
+): Set<string> {
   if (level === 'C') {
     const categoryCounts = uttrykkCCategoryCounts();
-    const categoryList: ThemeCount[] = [...categoryCounts.entries()].map(([theme, count]) => ({
+    const persistedCategories = new Set<string>();
+    for (const [key, card] of Object.entries(progressMap)) {
+      if (card.level === 'C' && UTTRYKK_C_KEYS.has(key)) {
+        persistedCategories.add(card.category);
+      }
+    }
+    const keys = new Set<string>([...categoryCounts.keys(), ...persistedCategories]);
+    const categoryList: ThemeCount[] = [...keys].map((theme) => ({
       theme,
-      count
+      count: categoryCounts.get(theme) ?? 0
     }));
     return new Set(partitionUttrykkThemes(categoryList).minor.map((t) => t.theme));
   }

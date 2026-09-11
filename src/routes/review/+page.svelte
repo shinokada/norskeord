@@ -103,7 +103,7 @@
     // against uttrykkOthersKeysForLevel() instead, since 'others' itself
     // never appears as a real theme/category on any entry.
     if (categoryParam === UTTRYKK_OTHERS_THEME && levelParam) {
-      const othersKeys = uttrykkOthersKeysForLevel(levelParam);
+      const othersKeys = uttrykkOthersKeysForLevel(levelParam, progressMap);
       resolved = resolved.filter(
         (e) => (e.theme && othersKeys.has(e.theme)) || othersKeys.has(e.category)
       );
