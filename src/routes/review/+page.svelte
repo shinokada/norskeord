@@ -23,6 +23,8 @@
   import { VocabFlashcardPage } from '$lib';
   import { languageStore } from '$lib/stores/language.svelte';
   import { loadProgressMap, loadProgressMapFromSupabase, getDueItems } from '$lib/progress';
+  import { uttrykkOthersKeysForLevel } from '$lib/stats';
+  import { UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
   import type { CardProgress, CEFRLevel, VocabEntry } from '$lib/types';
 
   type ReviewType = 'vocab' | 'uttrykk' | 'both';
@@ -64,12 +66,18 @@
     // sentinel) — getDueItems() can only scope by category, so skip that
     // option here and fetch the whole level+type instead; the theme filter
     // happens below, after resolving, against the real `theme` field that
-    // only exists on the resolved VocabEntry.
+    // only exists on the resolved VocabEntry. The synthetic "Others" bucket
+    // needs the same treatment for C too — its category param ('others')
+    // isn't a real CardProgress.category value there either (C's real
+    // per-card categories are its actual slugs), so it can't be scoped by
+    // getDueItems() any more than an A1–B2 theme can.
     const isA1B2UttrykkTheme = !!categoryParam && type === 'uttrykk' && levelParam !== 'C';
+    const isCOthers =
+      categoryParam === UTTRYKK_OTHERS_THEME && type === 'uttrykk' && levelParam === 'C';
 
     const dueItems = getDueItems(progressMap, {
       level: levelParam,
-      category: isA1B2UttrykkTheme ? undefined : categoryParam,
+      category: isA1B2UttrykkTheme || isCOthers ? undefined : categoryParam,
       type
     });
 
@@ -91,7 +99,15 @@
     // C-uttrykk rows this is a no-op refinement (getDueItems already scoped
     // by category); for A1–B2 uttrykk rows this is what actually narrows
     // the level-wide fetch above down to the one theme that was clicked.
-    if (categoryParam) {
+    // The synthetic "Others" bucket (A1–B2 theme or C category) resolves
+    // against uttrykkOthersKeysForLevel() instead, since 'others' itself
+    // never appears as a real theme/category on any entry.
+    if (categoryParam === UTTRYKK_OTHERS_THEME && levelParam) {
+      const othersKeys = uttrykkOthersKeysForLevel(levelParam, progressMap);
+      resolved = resolved.filter(
+        (e) => (e.theme && othersKeys.has(e.theme)) || othersKeys.has(e.category)
+      );
+    } else if (categoryParam) {
       resolved = resolved.filter((e) => e.category === categoryParam || e.theme === categoryParam);
     }
 

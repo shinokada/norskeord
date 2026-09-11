@@ -106,9 +106,45 @@ describe('gradeGrammarAnswer', () => {
     expect(gradeGrammarAnswer('det er ikke sant', q).correct).toBe(true);
   });
 
-  it('accepts a 1-character typo as correct with "hard"', () => {
+  it('rejects a 1-character typo on a long word — exact match only, no leniency', () => {
     const q = makeQuestion({ answer: 'vinteren' });
-    expect(gradeGrammarAnswer('vintren', q)).toEqual({ correct: true, rating: 'hard' });
+    expect(gradeGrammarAnswer('vintren', q)).toEqual({ correct: false, rating: 'again' });
+  });
+
+  it('rejects a diacritic swap (ø/o) as a typo — a real Norwegian spelling mistake', () => {
+    const q = makeQuestion({ answer: 'sønner' });
+    expect(gradeGrammarAnswer('sonner', q)).toEqual({ correct: false, rating: 'again' });
+  });
+
+  it('rejects an extra letter on a short word within a longer sentence', () => {
+    // "hjemm" isn't a 1-word typo of "hjem" that should be forgiven here —
+    // hjem/hjemme is exactly the contrast this topic tests, and applying
+    // whole-string edit distance to a full sentence was forgiving any single
+    // stray letter anywhere in it, not just genuine typos on long words.
+    const q = makeQuestion({
+      topic: 'adverb-sted-hjem',
+      answer: 'De går hjem.'
+    });
+    expect(gradeGrammarAnswer('de går hjemm', q)).toEqual({ correct: false, rating: 'again' });
+    expect(gradeGrammarAnswer('de går hjem', q).correct).toBe(true);
+  });
+
+  it('rejects a 1-character typo on one word within a longer sentence', () => {
+    const q = makeQuestion({
+      type: 'order',
+      answer: 'Jeg forstår ikke dette.'
+    });
+    // "forstr" is missing the å from "forstår" — with typo tolerance removed,
+    // every word must match exactly, so this is rejected.
+    expect(gradeGrammarAnswer('jeg forstr ikke dette', q)).toEqual({
+      correct: false,
+      rating: 'again'
+    });
+  });
+
+  it('rejects an answer with an extra word not in the target', () => {
+    const q = makeQuestion({ type: 'transform', answer: 'Jeg liker det.' });
+    expect(gradeGrammarAnswer('jeg liker det veldig', q).correct).toBe(false);
   });
 
   it('rejects a far-off answer with "again"', () => {

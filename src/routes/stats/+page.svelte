@@ -16,14 +16,14 @@
   import type { ActivityCell } from '$lib/progress';
   import { CATEGORIES_BY_LEVEL } from '$lib/config';
   import { UTTRYKK_C_KEYS } from '$lib/uttrykk-c-stats';
-  import { State } from 'ts-fsrs';
   import type { CardProgress, CEFRLevel } from '$lib/types';
   import { localeStore } from '$lib/localeStore.svelte';
   import * as m from '$lib/paraglide/messages.js';
   import {
     vocabCategoryStatsForLevel,
     uttrykkThemeStatsForLevel,
-    grammarTopicStatsForLevel
+    grammarTopicStatsForLevel,
+    progressBucket
   } from '$lib/stats';
   import LevelStatRows from '$lib/components/LevelStatRows.svelte';
   import ActivityChart from '$lib/components/ActivityChart.svelte';
@@ -54,9 +54,9 @@
   const totalSeen = $derived(allCards.length);
 
   const byState = $derived({
-    learning: allCards.filter((c) => c.fsrs.state === State.Learning).length,
-    review: allCards.filter((c) => c.fsrs.state === State.Review).length,
-    relearning: allCards.filter((c) => c.fsrs.state === State.Relearning).length
+    learning: allCards.filter((c) => progressBucket(c) === 'learning').length,
+    review: allCards.filter((c) => progressBucket(c) === 'review').length,
+    relearning: allCards.filter((c) => progressBucket(c) === 'relearning').length
   });
 
   // ── Grammar totals ─────────────────────────────────────────────────────────
@@ -109,9 +109,9 @@
       return {
         level,
         seen: lvlCards.length,
-        learning: lvlCards.filter((c) => c.fsrs.state === State.Learning).length,
-        review: lvlCards.filter((c) => c.fsrs.state === State.Review).length,
-        relearning: lvlCards.filter((c) => c.fsrs.state === State.Relearning).length,
+        learning: lvlCards.filter((c) => progressBucket(c) === 'learning').length,
+        review: lvlCards.filter((c) => progressBucket(c) === 'review').length,
+        relearning: lvlCards.filter((c) => progressBucket(c) === 'relearning').length,
         due: lvlCards.filter((c) => new Date(c.fsrs.due) <= now).length
       };
     });
@@ -235,7 +235,7 @@
     computeDueToday(grammarCards.filter((c) => c.level === activeLevel))
   );
   const grammarMasteredForActiveLevel = $derived(
-    grammarCards.filter((c) => c.level === activeLevel && c.fsrs.state === State.Review).length
+    grammarCards.filter((c) => c.level === activeLevel && progressBucket(c) === 'review').length
   );
 
   // ── CEFR estimate ─────────────────────────────────────────────────────────────

@@ -65,9 +65,9 @@ export type ReviewType = 'vocab' | 'uttrykk' | 'grammar';
 /**
  * Builds the due-badge's review href for one row (LevelStatRows.svelte),
  * or null when this row shouldn't link anywhere — no `reviewType`/`level`
- * given, or a synthetic "Others" bucket that isn't a real category/theme.
- * Pure/extracted so it's unit-testable without mounting the component (see
- * stats.test.ts) — LevelStatRows.svelte just calls this per row.
+ * given. Pure/extracted so it's unit-testable without mounting the
+ * component (see stats.test.ts) — LevelStatRows.svelte just calls this per
+ * row.
  *
  * Grammar rows (Fix 3) go to the separate `/review/grammar` route (grammar
  * was deliberately kept out of the combined vocab+uttrykk `/review` flow —
@@ -86,7 +86,11 @@ export type ReviewType = 'vocab' | 'uttrykk' | 'grammar';
  * literal 'uttrykk' sentinel) — for those, `/review` fetches the whole
  * level+type and filters the *resolved* entries by `theme` afterward,
  * since `theme` only exists on the resolved `VocabEntry`, not on
- * `CardProgress`.
+ * `CardProgress`. The synthetic "Others" row (`row.key ===
+ * UTTRYKK_OTHERS_THEME`) gets the same `&category=others` shape —
+ * `/review` resolves it via `uttrykkOthersKeysForLevel()` below instead of
+ * a direct field match, since 'others' isn't a real theme/category value
+ * on any card either.
  */
 export function buildReviewHref(
   row: StatRow,
@@ -94,12 +98,100 @@ export function buildReviewHref(
   reviewType: ReviewType | undefined
 ): string | null {
   if (!reviewType || !level) return null;
-  if (row.key === UTTRYKK_OTHERS_THEME) return null;
   const lvl = encodeURIComponent(level.toLowerCase());
   if (reviewType === 'grammar') {
     return `/review/grammar?level=${lvl}&topic=${encodeURIComponent(row.key)}`;
   }
   return `/review?level=${lvl}&type=${encodeURIComponent(reviewType)}&category=${encodeURIComponent(row.key)}`;
+}
+
+/**
+ * Below this many reps, a card is still shown as "Learning" even though
+ * saveProgress()'s FSRS instances all use enable_short_term:false
+ * (progress.ts), which makes ts-fsrs skip its sub-day Learning/Relearning
+ * steps entirely — a brand-new card jumps straight to State.Review after
+ * its very first rating, of any grade. Left at raw FSRS state, that makes
+ * "Learning" an almost-dead bucket: a card rated "Hard" once already reads
+ * as fully "Memorized" in the stats bars. See progressBucket() below.
+ */
+const LEARNING_REPS_THRESHOLD = 3;
+
+/**
+ * Buckets a card into review/learning/relearning for the stats bars
+ * (StatRow.review/learning/relearning, rendered by LevelStatRows.svelte as
+ * "Memorized"/"Learning"/"Forgotten").
+ *
+ * Real Learning/Relearning FSRS states are trusted first (in case
+ * enable_short_term is ever re-enabled), then approximated from reps/
+ * lastRating so the buckets stay meaningful under the current
+ * enable_short_term:false scheduling:
+ *   - a card just rated "Again" reads as Relearning/"Forgotten", even
+ *     though ts-fsrs itself sends it straight back to State.Review
+ *   - a card with fewer than LEARNING_REPS_THRESHOLD reps reads as
+ *     Learning/"Learning", even though it's technically in State.Review
+ */
+export function progressBucket(card: CardProgress): 'review' | 'learning' | 'relearning' {
+  if (card.fsrs.state === State.Learning) return 'learning';
+  if (card.fsrs.state === State.Relearning) return 'relearning';
+  if (card.lastRating === 'again') return 'relearning';
+  if (card.fsrs.reps < LEARNING_REPS_THRESHOLD) return 'learning';
+  return 'review';
+}
+
+/**
+ * The set of real theme names (A1–B2) or category slugs (C) that a level's
+ * synthetic "Others" uttrykk row rolls up — i.e. `minor` from
+ * partitionUttrykkThemes(), same threshold `uttrykkThemeStatsForLevel` used
+ * to build that row in the first place. Needed by `/review` (Fix for the
+ * Others due-badge) to resolve `?category=others` into the actual entries
+ * it represents: `UTTRYKK_OTHERS_THEME` isn't a real `theme`/`category`
+ * value stored on any card, so `getDueItems`/the resolved-entry filter
+ * there can't match it directly — they need this concrete key set instead.
+ *
+ * `progressMap` is optional and defaults to `{}` for callers (tests, mostly)
+ * that don't have one handy, but real callers (`/review`) should always pass
+ * the live map: for C, this must partition over the exact same category set
+ * `uttrykkThemeStatsForLevel` used to decide which row a due card landed in,
+ * or the two can disagree. Unlike A1–B2 (whose only fallback for a persisted
+ * card is the fixed, already-counted `UTTRYKK_CATCHALL_THEME`), a C card
+ * keeps its raw `CardProgress.category` verbatim — if uttrykk-c.json content
+ * is ever re-categorised without migrating existing progress, a card can end
+ * up under a category slug that no longer exists in `uttrykkCCategoryCounts()`.
+ * `uttrykkThemeStatsForLevel` already unions that stale slug in (via
+ * `cardsByCategory`) and, at 0 current entries, it always falls under the
+ * `UTTRYKK_OTHERS_THRESHOLD` and lands in "Others" — so this function must
+ * union it in too, or a due card counted in the Others stat row would
+ * silently fail to resolve when `/review` scopes by `?category=others`.
+ */
+export function uttrykkOthersKeysForLevel(
+  level: CEFRLevel,
+  progressMap: Record<string, CardProgress> = {}
+): Set<string> {
+  if (level === 'C') {
+    const categoryCounts = uttrykkCCategoryCounts();
+    const persistedCategories = new Set<string>();
+    for (const [key, card] of Object.entries(progressMap)) {
+      if (card.level === 'C' && UTTRYKK_C_KEYS.has(key)) {
+        persistedCategories.add(card.category);
+      }
+    }
+    const keys = new Set<string>([...categoryCounts.keys(), ...persistedCategories]);
+    const categoryList: ThemeCount[] = [...keys].map((theme) => ({
+      theme,
+      count: categoryCounts.get(theme) ?? 0
+    }));
+    return new Set(partitionUttrykkThemes(categoryList).minor.map((t) => t.theme));
+  }
+  const entries = uttrykkByLevel[level] ?? [];
+  const themeCounts = new Map<string, number>();
+  for (const e of entries) {
+    if (e.theme) themeCounts.set(e.theme, (themeCounts.get(e.theme) ?? 0) + 1);
+  }
+  const themeList: ThemeCount[] = [...themeCounts.entries()].map(([theme, count]) => ({
+    theme,
+    count
+  }));
+  return new Set(partitionUttrykkThemes(themeList).minor.map((t) => t.theme));
 }
 
 function buildStatRow(
@@ -116,9 +208,9 @@ function buildStatRow(
     href,
     total,
     seen: cards.length,
-    review: cards.filter((c) => c.fsrs.state === State.Review).length,
-    learning: cards.filter((c) => c.fsrs.state === State.Learning).length,
-    relearning: cards.filter((c) => c.fsrs.state === State.Relearning).length,
+    review: cards.filter((c) => progressBucket(c) === 'review').length,
+    learning: cards.filter((c) => progressBucket(c) === 'learning').length,
+    relearning: cards.filter((c) => progressBucket(c) === 'relearning').length,
     due: cards.filter((c) => new Date(c.fsrs.due) <= now).length
   };
 }

@@ -1,13 +1,15 @@
 import { describe, it, expect } from 'vitest';
-import { createEmptyCard, State } from 'ts-fsrs';
+import { createEmptyCard, State, type Card } from 'ts-fsrs';
 import {
   vocabCategoryStatsForLevel,
   uttrykkThemeStatsForLevel,
   grammarTopicStatsForLevel,
   buildReviewHref,
+  uttrykkOthersKeysForLevel,
   type StatRow
 } from './stats';
 import { CATEGORIES_BY_LEVEL } from '$lib/config';
+import { UTTRYKK_C_KEYS } from '$lib/uttrykk-c-stats';
 import { GRAMMAR_RULES } from '$lib/grammar/rules';
 import type { CardProgress, GrammarQuestion, GrammarTopic } from '$lib/types';
 import grammarData from '$lib/data/grammar.json';
@@ -17,7 +19,11 @@ function fakeCard(
 ): CardProgress {
   const fsrs = createEmptyCard();
   return {
-    fsrs: { ...fsrs, state: State.Review, due: new Date(Date.now() - 86_400_000) },
+    // reps: 3 clears LEARNING_REPS_THRESHOLD in stats.ts's progressBucket(),
+    // so a plain fakeCard() reads as a genuinely "reviewed" (not "learning")
+    // card by default — individual tests below override reps/lastRating to
+    // exercise the other buckets.
+    fsrs: { ...fsrs, state: State.Review, reps: 3, due: new Date(Date.now() - 86_400_000) },
     seenCount: 1,
     lastSeen: new Date().toISOString(),
     level: 'A1',
@@ -52,6 +58,53 @@ describe('vocabCategoryStatsForLevel', () => {
     };
     const rows = vocabCategoryStatsForLevel('A1', progressMap);
     expect(rows.every((r) => r.seen === 0)).toBe(true);
+  });
+});
+
+describe('progressBucket via vocabCategoryStatsForLevel (learning/review/relearning)', () => {
+  // enable_short_term:false (progress.ts) means saveProgress sends nearly
+  // every card straight to State.Review, so these buckets are approximated
+  // from reps/lastRating rather than trusted from raw FSRS state alone —
+  // see progressBucket() in stats.ts.
+  it('buckets a low-rep card as learning even though its FSRS state is Review', () => {
+    const progressMap = {
+      'v-a1-greetings-001': fakeCard({
+        fsrs: { ...createEmptyCard(), state: State.Review, reps: 1 } as Card
+      })
+    };
+    const rows = vocabCategoryStatsForLevel('A1', progressMap);
+    const greetings = rows.find((r) => r.key === 'greetings')!;
+    expect(greetings.learning).toBe(1);
+    expect(greetings.review).toBe(0);
+    expect(greetings.relearning).toBe(0);
+  });
+
+  it('buckets a card just rated "again" as relearning even though its FSRS state is Review', () => {
+    const progressMap = {
+      'v-a1-greetings-001': fakeCard({
+        fsrs: { ...createEmptyCard(), state: State.Review, reps: 5 } as Card,
+        lastRating: 'again'
+      })
+    };
+    const rows = vocabCategoryStatsForLevel('A1', progressMap);
+    const greetings = rows.find((r) => r.key === 'greetings')!;
+    expect(greetings.relearning).toBe(1);
+    expect(greetings.review).toBe(0);
+    expect(greetings.learning).toBe(0);
+  });
+
+  it('buckets a card past the reps threshold with a non-"again" last rating as review', () => {
+    const progressMap = {
+      'v-a1-greetings-001': fakeCard({
+        fsrs: { ...createEmptyCard(), state: State.Review, reps: 3 } as Card,
+        lastRating: 'hard'
+      })
+    };
+    const rows = vocabCategoryStatsForLevel('A1', progressMap);
+    const greetings = rows.find((r) => r.key === 'greetings')!;
+    expect(greetings.review).toBe(1);
+    expect(greetings.learning).toBe(0);
+    expect(greetings.relearning).toBe(0);
   });
 });
 
@@ -124,6 +177,60 @@ describe('grammarTopicStatsForLevel', () => {
   });
 });
 
+describe('uttrykkOthersKeysForLevel', () => {
+  it('returns theme names that also appear as an "others" row in uttrykkThemeStatsForLevel', () => {
+    // Any theme this returns for A1 should be one of the minor themes rolled
+    // into uttrykkThemeStatsForLevel's Others row (or the level has no
+    // Others row at all, if every theme clears the threshold) — cross-check
+    // against that function instead of hardcoding a specific theme name,
+    // since the fixture data can change.
+    const rows = uttrykkThemeStatsForLevel('A1', {});
+    const othersRow = rows.find((r) => r.key === 'others');
+    const keys = uttrykkOthersKeysForLevel('A1');
+    if (!othersRow) {
+      expect(keys.size).toBe(0);
+    } else {
+      expect(keys.size).toBeGreaterThan(0);
+    }
+  });
+
+  it('returns category slugs (not theme names) for C', () => {
+    const keys = uttrykkOthersKeysForLevel('C');
+    // C has no `theme` field at all — whatever comes back must line up with
+    // uttrykkThemeStatsForLevel('C', {})'s own Others row, same as above.
+    const rows = uttrykkThemeStatsForLevel('C', {});
+    const othersRow = rows.find((r) => r.key === 'others');
+    if (!othersRow) {
+      expect(keys.size).toBe(0);
+    } else {
+      expect(keys.size).toBeGreaterThan(0);
+    }
+  });
+
+  it('includes a renamed/stale C category from progressMap, matching the Others row it counts as due', () => {
+    // Simulates uttrykk-c.json content being re-categorised without
+    // migrating existing progress: a real uttrykk-c.json id, but stamped
+    // with a category slug that no longer exists in uttrykkCCategoryCounts().
+    // Before the fix, uttrykkOthersKeysForLevel('C') only looked at current
+    // categories, so this key would never come back — even though
+    // uttrykkThemeStatsForLevel('C', progressMap) counts the same card as due
+    // under the synthetic "Others" row (0 current entries always clears
+    // UTTRYKK_OTHERS_THRESHOLD as minor).
+    const staleCategory = '__renamed-category-no-longer-current__';
+    const staleKey = [...UTTRYKK_C_KEYS][0];
+    const progressMap: Record<string, CardProgress> = {
+      [staleKey]: fakeCard({ level: 'C', category: staleCategory })
+    };
+
+    const rows = uttrykkThemeStatsForLevel('C', progressMap);
+    const othersRow = rows.find((r) => r.key === 'others')!;
+    expect(othersRow.due).toBeGreaterThan(0);
+
+    const keys = uttrykkOthersKeysForLevel('C', progressMap);
+    expect(keys.has(staleCategory)).toBe(true);
+  });
+});
+
 describe('buildReviewHref', () => {
   function makeRow(overrides: Partial<StatRow> = {}): StatRow {
     return {
@@ -148,9 +255,11 @@ describe('buildReviewHref', () => {
     expect(buildReviewHref(makeRow(), undefined, 'vocab')).toBeNull();
   });
 
-  it('returns null for a synthetic "Others" row regardless of reviewType', () => {
+  it('builds a category=others href for the synthetic "Others" row, same as any other row', () => {
     const row = makeRow({ key: 'others' });
-    expect(buildReviewHref(row, 'A1', 'uttrykk')).toBeNull();
+    expect(buildReviewHref(row, 'A1', 'uttrykk')).toBe(
+      '/review?level=a1&type=uttrykk&category=others'
+    );
   });
 
   it('builds a vocab href with level, type, and category', () => {
