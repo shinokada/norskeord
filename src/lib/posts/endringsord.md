@@ -119,15 +119,15 @@ Erstatte ligger nær **bytte**, men legger mer vekt på at det gamle **ikke leng
 
 _Planen blir ikke erstattet med en helt annen plan — den blir bare justert. Bruk endre._
 
-❌ Vi må endre den gamle bilen.
-⭕ Vi må **erstatte** den gamle bilen.
+✅ Vi må endre den gamle bilen. _(vi endrer noe ved den — den er fortsatt den samme bilen)_
+✅ Vi må erstatte den gamle bilen med en ny. _(den gamle bilen forsvinner helt)_
 
-_Her forsvinner den gamle bilen helt — bruk erstatte, ikke endre._
+_Begge er riktige, men betyr ikke det samme: endre = gjøre noe med bilen, erstatte = bytte den helt ut._
 
-❌ Denne opplevelsen endret livet mitt.
-⭕ Denne opplevelsen **forandret** livet mitt.
+✅ Denne opplevelsen endret livet mitt.
+✅ Denne opplevelsen forandret livet mitt.
 
-_En stor, personlig endring krever forandre, ikke endre._
+_Begge er grammatisk riktige. Forandret er likevel vanligere her, siden det er en stor, personlig endring — men endret er ikke feil._
 
 ---
 

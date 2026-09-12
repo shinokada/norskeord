@@ -15,7 +15,7 @@ decks:
     label: A2 Social Life
 ---
 
-> **Kort sagt:** **På** brukes om arrangementer og aktiviteter — på festen, på skolen, på møtet. **I** brukes om et fysisk område eller rom — i rommet, i huset, i parken. Noen steder, som museet, kan ta begge deler, avhengig av hva du snakker om.
+> **Kort sagt:** **På** brukes om arrangementer og aktiviteter — på festen, på skolen, på møtet — og også om konkrete institusjoner eller steder man besøker, som på museet eller på biblioteket. **I** brukes om et fysisk område eller rom — i rommet, i huset, i parken. Noen steder, som museet, kan ta begge deler, avhengig av om du snakker om besøket/stedet eller selve bygningen.
 
 ## Kort forklaring
 
@@ -87,13 +87,16 @@ Noen steder, som institusjoner, kan ta begge preposisjonene, avhengig av hva du 
 **2. Det finnes en kafé i museet.**
 → Kafeen er en del av selve bygningen.
 
+**3. Det finnes en kafé på museet.**
+→ Også helt naturlig — her tenker man på museet som sted/institusjon, ikke på bygningen spesifikt.
+
 **Sammenlign:**
 
 > Jeg møtte henne **på museet**.
 → Hun var der på besøk.
 
-> Det finnes en kafé **i museet**.
-→ Kafeen er fysisk inne i bygningen.
+> Det finnes en kafé **i museet** / **på museet**.
+→ Begge er riktige. I understreker at kafeen er fysisk inne i bygningen, mens på fokuserer på museet som sted.
 
 ---
 
@@ -118,11 +121,6 @@ _Fest er en aktivitet, ikke et fysisk rom — bruk på._
 
 _Konsert er et arrangement — bruk på._
 
-❌ Det finnes en kafé på museet.
-⭕ Det finnes en kafé **i** museet.
-
-_Her beskrives noe som fysisk befinner seg inne i bygningen — bruk i._
-
 ---
 
 ## Norskprøven — eksempelspørsmål
@@ -143,7 +141,7 @@ b) på
 a) i
 b) på
 
-**Svar:** a) i — kafeen befinner seg fysisk inne i bygningen.
+**Svar:** a) og b) er begge riktige. I museet legger vekt på at kafeen fysisk befinner seg inne i bygningen; på museet fokuserer på museet som sted/institusjon.
 
 ---
 

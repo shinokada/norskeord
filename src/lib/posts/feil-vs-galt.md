@@ -100,7 +100,7 @@ b) galt
 a) feil
 b) galt
 
-**Svar:** b) galt — «hva er galt» er det faste uttrykket.
+**Svar:** a) og b) er begge riktige — «hva er galt med bilen» og «hva er feil med bilen» brukes begge. Galt er litt mer generelt (noe fungerer ikke), mens feil peker mer mot en konkret, identifiserbar feil.
 
 **3. Velg riktig setning:**
 a) Jeg gjorde en galt.

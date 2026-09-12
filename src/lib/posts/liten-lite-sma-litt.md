@@ -25,6 +25,8 @@ decks:
 - **lite** → entall, et-ord
 - **små** → flertall, uansett kjønn
 
+_Denne artikkelen bruker **liten** også for ei-ord (moderat bokmål). Bokmålsordboka godtar også **lita** som hunkjønnsform (f.eks. «ei lita bok») — begge former er korrekte i bokmål._
+
 **Litt** ser lignende ut, men er et helt annet ord. Det beskriver **en mengde** eller **en grad** — ikke størrelsen på en ting.
 
 ---
@@ -124,10 +126,10 @@ _En-ord krever liten, ikke lite._
 
 _Flertall bruker alltid små, uansett kjønn._
 
-❌ Jeg vil ha liten kaffe.
-⭕ Jeg vil ha **litt** kaffe.
+✅ Jeg vil ha **en liten** kaffe. _(en liten servering — kaffe brukt som telleord/porsjon, med ubestemt artikkel)_
+✅ Jeg vil ha **litt** kaffe. _(en mengde kaffe, uten artikkel)_
 
-_Her er det mengden av kaffe som menes, ikke størrelsen på en gjenstand — bruk litt._
+_Begge er riktige, men betyr ikke helt det samme: en liten kaffe bestiller en bestemt, liten servering, mens litt kaffe handler om mengden — f.eks. «bare litt, takk»._
 
 ---
 
