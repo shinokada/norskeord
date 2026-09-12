@@ -96,11 +96,11 @@ b) galt
 
 **Svar:** a) feil — beskriver at svaret selv er ukorrekt.
 
-**2. Velg riktig ord: «______ er det med bilen?»**
-a) Hva feil
-b) Hva galt
+**2. Velg riktig ord: «Hva er ______ med bilen?»**
+a) feil
+b) galt
 
-**Svar:** b) Hva galt — «hva er galt» er det faste uttrykket.
+**Svar:** b) galt — «hva er galt» er det faste uttrykket.
 
 **3. Velg riktig setning:**
 a) Jeg gjorde en galt.

@@ -128,5 +128,3 @@ ankomme · komme fram · nå fram · arrive · reise · destinasjon
 ---
 
 _→ Vil du lære forskjellen mellom bevegelse og sted, som hjem/hjemme og ut/ute? Les: [Retning vs. sted](/blog/retning-vs-sted)_
-
-_→ Vil du lære hvorfor vi sier «bussen går» og ikke «bussen forlater»? Les: [Forlate vs. Gå](/blog/forlate-vs-ga)_

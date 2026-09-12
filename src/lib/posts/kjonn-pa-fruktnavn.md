@@ -85,7 +85,7 @@ Kjønnet bestemmer også hvordan ordet bøyes:
 
 Legg merke til at **jordbær** ikke får endelsen **-er** i ubestemt flertall — det er vanlig for mange sammensatte ord med **-bær**:
 
-> ett jordbær → flere jordbær
+> et jordbær → flere jordbær
 
 ---
 

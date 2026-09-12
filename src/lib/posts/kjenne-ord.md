@@ -82,7 +82,7 @@ Det er også nyttig å skille **kjenne** fra **vite**:
 
 | Ord | Betydning | Prefiks |
 | --- | --- | --- |
-| **kjenne** | være kjent med, vite, føle | grunnverbet |
+| **kjenne** | være kjent med, vite hvem/hva noe er, føle | grunnverbet |
 | **gjenkjenne** | kjenne igjen, identifisere | gjen- |
 | **erkjenne** | innrømme, godta, innse | er- |
 | **anerkjenne** | godta, verdsette | aner- |

@@ -192,5 +192,3 @@ kommunisere · diskutere · forklare · beskrive · rapportere · melde
 ---
 
 _→ Vil du lære flere norske uttrykk som starter med **det**? Les: [10 det-uttrykk du trenger å kunne](/blog/det-uttrykk)_
-
-_→ Vil du lære hvordan **kjenne** ligger i bunnen av erkjenne, anerkjenne og gjenkjenne? Les: [Kjenne-familien](/blog/kjenne-ord)_

@@ -181,5 +181,3 @@ adjektivbøying · adverb · predikativ vs attributiv · ordstilling
 ---
 
 _→ Vil du lære mer om norsk setningsstruktur? Les: [Leddsetninger](/blog/leddsetninger)_
-
-_→ Vil du lære hvorfor man sier «hvor flink» og ikke «hvordan flink»? Les: [Hvor + adjektiv](/blog/hvor-adjektiv)_

@@ -131,5 +131,3 @@ ond · fæl · grusom · ubehagelig · svak · utilstrekkelig
 ---
 
 _→ Vil du lære forskjellen mellom **lei seg** og **trist**? Les: [Lei seg vs trist](/blog/lei-seg-vs-trist)_
-
-_→ Vil du lære forskjellen mellom **feil** og **galt** — to andre ord som ofte blandes sammen, selv om betydningen er beslektet? Les: [Feil vs Galt](/blog/feil-vs-galt)_
