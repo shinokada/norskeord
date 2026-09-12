@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.79.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added new Norwegian-language lessons comparing **begynne** and **starte**, and **ta med seg** and **bringe**.
+    - Added Norskprøven-style multiple-choice practice questions with answer explanations across numerous grammar and vocabulary lessons.
+    - Added related-article links to help learners explore connected topics.
+
+  - **Documentation**
+    - Updated lesson metadata and publication information across the Norwegian learning content.
+    - Clarified usage distinctions, corrected examples, and improved guidance throughout several lessons.
+    - Improved navigation between related lessons.
+
 ## 2.78.1
 
 ### Patch Changes
