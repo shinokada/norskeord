@@ -4,6 +4,7 @@ description: '"En time" kan bety enten en skoletime eller en time på klokken. P
 slug: time
 cefr: A2
 publishedAt: 2026-07-24
+updatedAt: 2026-09-12
 tags: [nouns, vocabulary]
 decks:
   - level: a2
@@ -81,6 +82,28 @@ _**I en time** betyr «i én time» — for å si at du har norsktime, skal du s
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig tolkning: «Jeg har en time i norsk.»**
+a) leksjon
+b) 60 minutter
+
+**Svar:** a) leksjon — faget bekrefter skolekonteksten.
+
+**2. Velg riktig tolkning: «Jeg ventet i en time.»**
+a) leksjon
+b) 60 minutter
+
+**Svar:** b) 60 minutter — **i** foran **time** betyr alltid varighet.
+
+**3. Velg riktig setning for å si at læreren har tre leksjoner i dag:**
+a) Læreren har tre timer i dag.
+b) Læreren har i tre timer i dag.
+
+**Svar:** a) — uten **i** er det leksjoner, ikke varighet.
+
+---
+
 ## Husk dette
 
 - **en time** = leksjon ELLER time — sammenhengen avgjør
@@ -99,3 +122,7 @@ ha en time · ta en time · i en time · i to timer · en halv time · en hel ti
 ## Relaterte ord
 
 leksjon · klasse · minutt · halvtime · dag · uke
+
+---
+
+_→ Vil du lære mer om tidspreposisjoner som **i**, **for** og **på**? Les: [I, For og På — tidsuttrykk på norsk](/blog/i-for-pa-tid)_

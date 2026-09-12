@@ -4,6 +4,7 @@ description: '"Bli av" er et fast norsk uttrykk. Det betyr ikke "bli av" bokstav
 slug: hvor-ble-det-av
 cefr: B1
 publishedAt: 2026-06-17
+updatedAt: 2026-09-12
 tags: [expressions, idioms, grammar]
 ---
 
@@ -70,6 +71,28 @@ _Pronomenet **det** er påkrevd i denne konstruksjonen — det fungerer som et f
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning:**
+a) Hva ble av ham?
+b) Hva ble det av ham?
+
+**Svar:** b) — **det** er påkrevd som formelt subjekt.
+
+**2. Velg riktig setning: «\______ nøklene mine?»**
+a) Hvor ble det av
+b) Hvor det ble av
+
+**Svar:** a) — rekkefølgen er alltid **ble det av**.
+
+**3. Hvilken setning har mest ekspressiv/undrende tone?**
+a) Hvor er han?
+b) Hvor har det blitt av ham?
+
+**Svar:** b) — **bli av** legger til en undrende eller bekymret nyanse.
+
+---
+
 ## Husk dette
 
 - **bli av** → fast uttrykk som betyr "hvor ble det av X" eller "hva skjedde med X"
@@ -88,3 +111,7 @@ hva ble det av deg? · hvor ble det av pengene? · hva har blitt av drømmene di
 ## Relaterte ord
 
 forsvinne · bli borte · miste · savne · spore opp
+
+---
+
+_→ Vil du lære et annet naturlig norsk uttrykk for overraskelse? Les: [Hvordan kan det ha seg?](/blog/hvordan-kan-det-ha-seg)_

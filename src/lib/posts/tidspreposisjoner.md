@@ -4,7 +4,7 @@ description: 'En grundig gjennomgang av tidspreposisjonene i, på og om på nors
 slug: tidspreposisjoner-2
 cefr: [A2, B1]
 type: guide
-publishedAt: 2026-11-25
+publishedAt: 2026-10-30
 tags: [grammar, prepositions]
 ---
 

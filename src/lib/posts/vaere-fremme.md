@@ -4,6 +4,7 @@ description: '"Være fremme" betyr at du har nådd reisemålet ditt. Uttrykket b
 slug: vaere-fremme
 cefr: A2
 publishedAt: 2026-09-02
+updatedAt: 2026-09-12
 tags: [verbs, vocabulary, phrasal-verbs]
 decks:
   - level: a2
@@ -84,6 +85,28 @@ _Bruk **i** for byer og land. **Til** brukes med **komme**: «vi kom **til** Osl
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning: «Vi ______ i Oslo nå.»**
+a) er fremme
+b) kommer fram
+
+**Svar:** a) er fremme — beskriver resultattilstanden etter reisen.
+
+**2. Velg riktig preposisjon: «Vi er fremme ______ Oslo.»**
+a) i
+b) til
+
+**Svar:** a) i — brukes for byer og land; **til** brukes med **komme**.
+
+**3. Hvilket uttrykk fokuserer på selve ankomstøyeblikket?**
+a) være fremme
+b) komme fram
+
+**Svar:** b) komme fram — fokuserer på handlingen, ikke resultatet.
+
+---
+
 ## Husk dette
 
 - **være fremme** = å ha ankommet / å være der (etter en reise)
@@ -101,3 +124,7 @@ nå er vi fremme · endelig fremme · er du fremme snart? · toget er fremme · 
 ## Relaterte ord
 
 ankomme · komme fram · nå fram · arrive · reise · destinasjon
+
+---
+
+_→ Vil du lære forskjellen mellom bevegelse og sted, som hjem/hjemme og ut/ute? Les: [Retning vs. sted](/blog/retning-vs-sted)_

@@ -4,6 +4,7 @@ description: '«Hen» gir en retningsnyanse til «hvor» og er vanlig i muntlig 
 slug: hvor-hen
 cefr: B1
 publishedAt: 2026-09-23
+updatedAt: 2026-09-12
 tags: [vocabulary, expressions, phrases, adverbs]
 decks:
   - level: b1
@@ -98,10 +99,9 @@ Du vil høre det ofte, men du vil sjelden se det i formelle tekster eller nyhets
 
 ## Vanlige feil
 
-❌ Hvor hen skal du?
-⭕ Hvor skal du **hen**?
+**Hvor hen skal du?** og **Hvor skal du hen?**
 
-_**Hen** kommer etter verbet og resten av setningen — aldri direkte etter **hvor**._
+_Begge er brukt. **Hvor hen** rett etter hverandre er mer formelt/litterært (nær det gamle **hvorhen** = "whither"), mens **hen** til slutt i setningen er den vanligste, mest muntlige plasseringen i dag._
 
 ❌ Jeg vet ikke hen hvor hun er.
 ⭕ Jeg vet ikke hvor hun er **hen**.
@@ -110,12 +110,34 @@ _I indirekte spørsmål kommer **hen** til slutt, etter verbet._
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Hvilken plassering er vanligst i uformell tale?**
+a) Hvor hen skal du?
+b) Hvor skal du hen?
+
+**Svar:** b) — den vanligste plasseringen i muntlig norsk i dag. **Hvor hen skal du?** er også korrekt, men mer formelt/litterært.
+
+**2. Er «hen» obligatorisk i «Hvor skal du (hen)?»?**
+a) Ja, setningen er ugrammatisk uten det
+b) Nei, det er valgfritt
+
+**Svar:** b) — setningen betyr det samme uten **hen**, men høres mer muntlig ut med det.
+
+**3. Velg riktig setning i et indirekte spørsmål:**
+a) Jeg vet ikke hen hvor hun er.
+b) Jeg vet ikke hvor hun er hen.
+
+**Svar:** b) — **hen** kommer til slutt, etter verbet.
+
+---
+
 ## Husk dette
 
 - **hen** etter **hvor** tilføyer en lett retnings- eller plasseringsnuanse
 - Det er valgfritt — setningen betyr det samme uten
 - Typisk for **muntlig og uformelt norsk**
-- Kommer alltid **etter** verbet, aldri rett etter **hvor**
+- Vanligst etter verbet i muntlig norsk i dag; rett etter **hvor** («hvor hen …») forekommer også, men er mer formelt/litterært
 
 ---
 
@@ -128,3 +150,7 @@ Hvor skal du hen? · Hvor er du hen? · Jeg vet ikke hvor de er hen · Hvor skal
 ## Relaterte ord
 
 hvor · dit · hit · herfra · hvorfra · retning
+
+---
+
+_→ Vil du lære om forskjellen mellom retning og sted på norsk? Les: [Retning vs. sted](/blog/retning-vs-sted)_

@@ -4,6 +4,7 @@ description: 'Norsk har flere ord som oversetter «god» — og feil valg høres
 slug: god-bra-fin
 cefr: A2
 publishedAt: 2026-05-27
+updatedAt: 2026-09-12
 tags: [adjectives, vocabulary]
 decks:
   - level: a2
@@ -76,7 +77,7 @@ De fire vanligste ordene er:
 → Hyggelig og god stemning.
 
 **3. Det er fint vær i dag.**
-→ Det vanlige uttrykket for godt vær.
+→ Et vanlig uttrykk for godt vær — man kan også si «Det er godt vær i dag».
 
 **4. Det var fint gjort av deg.**
 → Et høflig og varmt uttrykk — fin brukt som kompliment.
@@ -115,22 +116,42 @@ De fire vanligste ordene er:
 
 ---
 
-## Vanlige feil
+## Nyanser å være obs på
 
-❌ Filmen var god.
-⭕ Filmen var bra.
+Disse ordene overlapper ofte, og det er sjelden direkte feil å bytte dem — men noen valg høres mer naturlig ut enn andre:
 
-_God høres rart ut om generelle inntrykk som filmer, med mindre man mener kunstnerisk eksepsjonell. Bra er det naturlige valget._
+**Filmen var god. / Filmen var bra.**
+_Begge er mulige. **God** antyder gjerne at filmen var kunstnerisk sterk; **bra** er det mer nøytrale, hverdagslige valget for et generelt godt inntrykk._
 
 ❌ Det er god vær i dag.
-⭕ Det er fint vær i dag.
+⭕ Det er **godt** vær i dag. / Det er **fint** vær i dag.
 
-_«Fint vær» er et fast uttrykk. God brukes ikke om vær._
+_**Vær** er et intetkjønnsord (et vær), så adjektivet bøyes til **godt** — ikke **god**. Både **godt vær** og **fint vær** er vanlige og naturlige uttrykk._
 
-❌ Hun er god til å snakke norsk.
-⭕ Hun er flink til å snakke norsk.
+**Hun er god til å snakke norsk. / Hun er flink til å snakke norsk.**
+_Begge er riktige. **Flink** fremhever innsats og ferdighet; **god** legger mer vekt på selve resultatet eller nivået._
 
-_Når man skryter av noens ferdigheter eller innsats, er flink mer naturlig enn god._
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Hvilket ord er mest naturlig i en uformell samtale om en film du så i går?**
+a) god
+b) bra
+
+**Svar:** b) bra — det mest naturlige valget i uformell tale; **god** er også mulig, men antyder gjerne at filmen var kunstnerisk sterk.
+
+**2. Velg riktig ord: «Det er ______ vær i dag.»**
+a) god
+b) godt
+
+**Svar:** b) godt — **vær** er et intetkjønnsord, så adjektivet bøyes til **godt**. (**Fint vær** er også korrekt og like vanlig.)
+
+**3. Hvilket ord fremhever mest at hun har jobbet hardt og gjort fremgang?**
+a) god
+b) flink
+
+**Svar:** b) flink — **flink** peker mot innsats og ferdighet; **god** er også mulig, men legger mer vekt på selve resultatet.
 
 ---
 

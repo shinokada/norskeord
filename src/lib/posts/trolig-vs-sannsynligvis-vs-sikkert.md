@@ -4,6 +4,7 @@ description: '"Trolig", "sannsynligvis" og "sikkert" uttrykker alle sannsynlighe
 slug: trolig-vs-sannsynligvis-vs-sikkert
 cefr: B1
 publishedAt: 2026-09-25
+updatedAt: 2026-09-12
 tags: [adverbs, vocabulary, expressions]
 decks:
   - level: b1
@@ -139,6 +140,28 @@ _**Trolig** fungerer best som et enkelt adverb — ikke i kombinasjon med «kans
 - **sikkert** → personlig og konfidenspregnet — vanligst i tale
 - **sikkert** kan også bety «definitivt» — kontekst avgjør
 - Usikker? **Sannsynligvis** passer alltid
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Hvilket ord passer best i denne sammenhengen: «Det blir ______ regn i kveld.» (værmelding, nøktern og faktabasert)**
+a) trolig
+b) sikkert
+
+**Svar:** a) trolig — passer best i nyhets-/værmeldingsregister. **Sikkert** er ikke feil i seg selv, men høres for personlig/selvsikkert ut i en formell værmelding.
+
+**2. Hvilket ord passer best her: «Han kommer ______ snart.» (personlig, selvsikker gjetning)**
+a) sannsynligvis
+b) sikkert
+
+**Svar:** b) sikkert — fanger best den selvsikre, personlige tonen. **Sannsynligvis** er også mulig, men høres mer nøytralt og mindre personlig ut.
+
+**3. Hvilket ord er det mest nøytrale, standardvalget?**
+a) sannsynligvis
+b) trolig
+
+**Svar:** a) sannsynligvis.
 
 ---
 

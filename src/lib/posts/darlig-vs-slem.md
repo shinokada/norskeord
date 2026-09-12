@@ -4,6 +4,7 @@ description: 'Dårlig handler om kvalitet, ferdigheter eller helse. Slem handler
 slug: darlig-vs-slem
 cefr: A2
 publishedAt: 2026-06-24
+updatedAt: 2026-09-12
 tags: [adjectives, comparison, vocabulary]
 ---
 
@@ -85,6 +86,28 @@ _Ferdighetsnivå er alltid dårlig, aldri slem._
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Denne kaffen smaker \______.»**
+a) dårlig
+b) slem
+
+**Svar:** a) dårlig — handler om kvalitet, ikke oppførsel.
+
+**2. Velg riktig ord: «Ikke vær ______ mot lillebroren din!»**
+a) dårlig
+b) slem
+
+**Svar:** b) slem — handler om oppførsel mot noen.
+
+**3. Velg riktig ord: «Jeg er ______ til å spille piano.»**
+a) dårlig
+b) slem
+
+**Svar:** a) dårlig — ferdighetsnivå er alltid **dårlig**, aldri slem.
+
+---
+
 ## Husk dette
 
 - **dårlig** → kvalitet, tilstand, evne, helse — «not good»
@@ -104,3 +127,7 @@ _Ferdighetsnivå er alltid dårlig, aldri slem._
 ## Relaterte ord
 
 ond · fæl · grusom · ubehagelig · svak · utilstrekkelig
+
+---
+
+_→ Vil du lære forskjellen mellom **lei seg** og **trist**? Les: [Lei seg vs trist](/blog/lei-seg-vs-trist)_

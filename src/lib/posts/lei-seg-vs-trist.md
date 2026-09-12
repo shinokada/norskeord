@@ -4,6 +4,7 @@ description: 'Lei seg er en personlig følelsesmessig reaksjon, ofte utløst av 
 slug: lei-seg-vs-trist
 cefr: A2
 publishedAt: 2026-09-16
+updatedAt: 2026-09-12
 tags: [adjectives, vocabulary, emotions]
 decks:
   - level: a2
@@ -131,6 +132,28 @@ _Dette er to forskjellige uttrykk — ikke bland dem._
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Jeg ble ______ da hunden min døde.»**
+a) lei meg
+b) trist
+
+**Svar:** Begge er riktige her — **lei meg** fremhever den personlige reaksjonen i øyeblikket, mens **trist** beskriver den vedvarende følelsen etterpå.
+
+**2. Velg riktig ord: «Det er en ______ historie.»**
+a) lei seg
+b) trist
+
+**Svar:** b) trist — **lei seg** kan ikke stå til substantiv.
+
+**3. Velg riktig ord: «Været er grått og \______.»**
+a) lei seg
+b) trist
+
+**Svar:** b) trist — bare **trist** kan beskrive vær.
+
+---
+
 ## Husk dette
 
 - **lei seg** → personlig følelsesreaksjon, trigget av noe konkret
@@ -149,3 +172,7 @@ bli lei seg · være lei seg · ikke vær lei deg · så trist · en trist dag �
 ## Relaterte ord
 
 nedfor · deprimert · ulykkelig · bekymret · tung · sorgfull
+
+---
+
+_→ Vil du lære forskjellen mellom **dårlig** og **slem**? Les: [Dårlig vs Slem](/blog/darlig-vs-slem)_

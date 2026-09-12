@@ -3,7 +3,8 @@ title: 'Norsken min — Derfor får norsk bestemt artikkel'
 description: '"Norsken" er bestemt form av "norsk" brukt som substantiv. Når du snakker om ditt eget eller andres norsk, legger man til -en – og det samme mønsteret gjelder for alle språk.'
 slug: norsken
 cefr: A2
-publishedAt: 2026-11-04
+publishedAt: 2026-10-21
+updatedAt: 2026-09-12
 tags: [grammar, vocabulary, nouns]
 decks:
   - level: a2
@@ -18,7 +19,7 @@ decks:
 
 ## Kort forklaring
 
-**Norsk** kan brukes på flere måter — som adjektiv, som språknavn, eller om en person. Når det brukes som substantiv om selve språket og har et eieord (som _min_, _din_, _hennes_), brukes **bestemt form**: **norsken**.
+**Norsk** kan brukes på flere måter — som adjektiv, som språknavn, eller om en person. Når det brukes som substantiv om selve språket og eieordet kommer **etter** substantivet (som _norsken min_, _norsken hennes_), brukes **bestemt form**: **norsken**.
 
 ---
 
@@ -104,7 +105,7 @@ Dette gjelder alle språknavn på norsk. Når du snakker om noen sin ferdighet i
 ❌ Norsk min blir bedre.
 ⭕ **Norsken** min blir bedre.
 
-_Med eieord trenger du bestemt form — **norsken**, ikke **norsk**._
+_Når eieordet kommer **etter** substantivet (norsken min), må substantivet stå i bestemt form. Med eieordet **foran** substantivet (min norsk) er ubestemt form standard — begge rekkefølger finnes, men **norsken min** er den vanligste._
 
 ❌ Min norsken er ikke bra.
 ⭕ **Norsken** min er ikke så god.
@@ -113,10 +114,33 @@ _Eieordet kommer etter substantivet i bestemt form: **norsken min**, ikke **min 
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning:**
+a) Norsk min blir bedre.
+b) Norsken min blir bedre.
+
+**Svar:** b) — når eieordet står etter substantivet (norsken min), kreves bestemt form.
+
+**2. Velg riktig setning: «Jeg lærer \______.» (generelt, uten eieord)**
+a) norsk
+b) norsken
+
+**Svar:** a) norsk — ubestemt form når du ikke knytter det til en bestemt person.
+
+**3. Hvilket ord følger samme mønster som «norsken»?**
+a) engelsken
+b) engelsk mann
+
+**Svar:** a) engelsken — samme bøyingsmønster for alle språknavn.
+
+---
+
 ## Husk dette
 
 - **norsk** (ubestemt) → språket generelt: _Jeg lærer norsk._
 - **norsken** (bestemt) → noen sin norsk: _Norsken min blir bedre._
+- Bestemt form kreves når eieordet står **etter** substantivet (norsken min); med eieordet foran (min norsk) er ubestemt form standard
 - Endelsen **-en** følger vanlig hankjønnsbøying
 - Samme mønster gjelder alle språknavn: _engelsken_, _fransken_, _japansken_
 
@@ -131,3 +155,7 @@ norsken min · norsken din · norsken hennes · jobbe med norsken · forbedre no
 ## Relaterte ord
 
 språk · morsmål · målspråk · flytende · morsmålsnivå · hankjønn · bestemt form
+
+---
+
+_→ Vil du lære om substantiv uten ubestemt artikkel? Les: [Substantiv uten ubestemt artikkel](/blog/substantiv-uten-ubestemt-artikkel)_

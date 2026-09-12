@@ -4,6 +4,7 @@ description: '"Hvordan kan det ha seg?" er et naturlig norsk uttrykk som brukes 
 slug: hvordan-kan-det-ha-seg
 cefr: B1
 publishedAt: 2026-09-11
+updatedAt: 2026-09-12
 tags: [expressions, vocabulary, phrases]
 decks:
   - level: b1
@@ -111,6 +112,28 @@ _**Ha seg** er ikke et perfektum — det er et infinitivsuttrykk. Ikke bland det
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning:**
+a) Hvordan kan det seg ha?
+b) Hvordan kan det ha seg?
+
+**Svar:** b) — rekkefølgen er alltid **ha seg**.
+
+**2. Hvilken tone har uttrykket «Hvordan kan det ha seg?»?**
+a) Aggressiv/anklagende
+b) Nysgjerrig/undrende
+
+**Svar:** b) — uttrykker ren nysgjerrighet, ikke anklage.
+
+**3. Hvilket ord er idiomatisk og ikke kan oversettes bokstavelig?**
+a) hvordan
+b) ha seg
+
+**Svar:** b) ha seg — et fast uttrykk uten direkte engelsk ekvivalent.
+
+---
+
 ## Husk dette
 
 - **Hvordan kan det ha seg?** = hvordan er det mulig? / hvordan kan det være?
@@ -129,3 +152,7 @@ Hvordan kan det ha seg? · Hvordan er det mulig? · Det kan ikke stemme · Er de
 ## Relaterte ord
 
 forundring · nysgjerrighet · undre seg · overraskelse · uventet
+
+---
+
+_→ Vil du lære et beslektet uttrykk om noe som forsvinner? Les: [Hvor ble det av …?](/blog/hvor-ble-det-av)_

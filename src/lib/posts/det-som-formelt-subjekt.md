@@ -4,6 +4,7 @@ description: 'Norsk bruker ofte «det» som et innledende subjekt når man intro
 slug: det-som-formelt-subjekt
 cefr: B1
 publishedAt: 2026-06-25
+updatedAt: 2026-09-12
 tags: [grammar, sentence-structure, word-order]
 ---
 
@@ -123,6 +124,28 @@ _Det er allerede subjekt i væruttrykk — substantivet skal ikke gjentas._
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning:**
+a) Det kom mannen.
+b) Mannen kom.
+
+**Svar:** b) — **det** som formelt subjekt fungerer ikke med bestemt form.
+
+**2. Velg riktig setning:**
+a) Det står en mann utenfor.
+b) En mann det står utenfor.
+
+**Svar:** a) — **det** innleder setningen når subjektet er ny, ubestemt informasjon.
+
+**3. Hva er det egentlige subjektet i «Det kom mange mennesker»?**
+a) det
+b) mange mennesker
+
+**Svar:** b) — **det** er bare et formelt subjekt (plassholder).
+
+---
+
 ## Vanlige konstruksjoner
 
 det er · det var · det finnes · det skjer · det kommer · det ligger · det står · det dukker opp
@@ -132,3 +155,7 @@ det er · det var · det finnes · det skjer · det kommer · det ligger · det 
 ## Relaterte emner
 
 V2-regelen · formelt subjekt · leddsetninger · setningsbygning
+
+---
+
+_→ Vil du lære flere norske uttrykk som starter med **det**? Les: [10 det-uttrykk du trenger å kunne](/blog/det-uttrykk)_

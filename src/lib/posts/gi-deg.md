@@ -4,6 +4,7 @@ description: '"Gi deg" betyr å slutte eller roe seg ned — ikke å gi deg selv
 slug: gi-deg
 cefr: B1
 publishedAt: 2026-07-10
+updatedAt: 2026-09-12
 tags: [expressions, verbs, idioms]
 decks:
   - level: b1
@@ -96,6 +97,28 @@ _Det refleksive pronomenet **deg** er allerede en del av uttrykket — **selv** 
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Slutt å erte søsteren din. Nå må du \______!»**
+a) gi deg
+b) gi opp
+
+**Svar:** a) gi deg — stopp/hold opp, ikke å gi opp noe vanskelig.
+
+**2. Velg riktig ord: «Oppgaven var for vanskelig, så jeg \______.»**
+a) holdt ut
+b) ga opp
+
+**Svar:** b) ga opp — å slutte fordi noe er for vanskelig.
+
+**3. Velg riktig setning:**
+a) Nå må du gi deg selv.
+b) Nå må du gi deg.
+
+**Svar:** b) — **deg** er allerede refleksivt; **selv** legges ikke til.
+
+---
+
 ## Husk dette
 
 - **gi deg** → stopp det / hold opp / slapp av
@@ -114,3 +137,7 @@ nå må du gi deg · gi deg da! · han ga seg ikke · gi opp vs gi seg
 ## Relaterte ord
 
 slutte · holde opp · orke · klare · gi opp · stå på
+
+---
+
+_→ Vil du lære forskjellen mellom å klare, orke og greie noe? Les: [Klare vs Orke vs Greie](/blog/klare-vs-orke-vs-greie)_

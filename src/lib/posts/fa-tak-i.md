@@ -4,6 +4,7 @@ description: 'Verbet få skifter betydning avhengig av hvilken partikel det komb
 slug: fa
 cefr: B1
 publishedAt: 2026-07-17
+updatedAt: 2026-09-12
 tags: [verbs, vocabulary, phrasal-verbs]
 decks:
   - level: b1
@@ -114,6 +115,28 @@ _Preposisjonen **i** er en del av uttrykket — den kan ikke utelates._
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig uttrykk: «Jeg må ______ henne — hun svarer ikke telefonen.»**
+a) få tak i
+b) få til
+
+**Svar:** a) få tak i — å nå eller komme i kontakt med noen.
+
+**2. Velg riktig uttrykk: «Vi må ______ møtet — alle venter.»**
+a) få på
+b) få i gang
+
+**Svar:** b) få i gang — å sette i gang noe som ikke er aktivt ennå.
+
+**3. Velg riktig uttrykk: «Jeg ______ — leksene er for vanskelige.»**
+a) får det ikke til
+b) får det ikke på
+
+**Svar:** a) får det ikke til — å ikke lykkes med en oppgave.
+
+---
+
 ## Husk dette
 
 - **tak i** → å nå eller gripe tak i noen eller noe
@@ -130,3 +153,9 @@ klare · greie · orke · skaffe · starte
 ---
 
 _→ Vil du lære mer om å uttrykke å mestre noe på norsk? Les: [Klare vs Orke vs Greie](/blog/klare-vs-orke-vs-greie)_
+
+_→ Vil du lære forskjellen mellom å bringe og ta med seg noe? Les: [Bringe vs Ta med seg](/blog/bringe-vs-ta-med-seg)_
+
+_→ Vil du lære mer om **få på**? Les: [Få noe på — klare å få noe på seg](/blog/fa-noe-pa)_
+
+_→ Vil du lære uttrykket å nærme seg noen? Les: [Komme bort til](/blog/komme-bort-til)_

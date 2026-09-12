@@ -4,6 +4,7 @@ description: 'god er genuint bra, bra er solid positivt, og grei er rett og slet
 slug: god-bra-grei
 cefr: A2
 publishedAt: 2026-05-30
+updatedAt: 2026-09-12
 tags: [adjectives, vocabulary]
 decks:
   - level: a2
@@ -113,6 +114,28 @@ _For å uttrykke aksept eller enighet er greit det naturlige ordet — ikke god.
 - **grei** → akseptabelt — greit, ok, ikke noe spesielt
 - Om **personer** er grei positivt: avslappet, snill, ukomplisert
 - Om **ting** er grei nøytralt: ok, ikke imponerende
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Middagen var \______, takk for maten.»**
+a) grei
+b) god
+
+**Svar:** b) god — å si grei om maten høres lunket ut.
+
+**2. Velg riktig ord: «Det er ______ for meg.» (jeg samtykker)**
+a) god
+b) greit
+
+**Svar:** b) greit — uttrykker aksept eller enighet.
+
+**3. Hvilket ord står nederst på skalaen fra sterkt til nøytralt positivt?**
+a) grei
+b) god
+
+**Svar:** a) grei — akseptabelt, ikke noe spesielt.
 
 ---
 

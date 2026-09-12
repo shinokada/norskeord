@@ -4,6 +4,7 @@ description: 'Ordentlig skifter betydning avhengig av hvordan det brukes. Som ad
 slug: ordentlig
 cefr: B1
 publishedAt: 2026-07-31
+updatedAt: 2026-09-12
 tags: [adverbs, vocabulary]
 decks:
   - level: b1
@@ -87,6 +88,28 @@ _På norsk plasseres adverbet vanligvis tett inntil verbet — ikke til slutt et
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Han er en ______ mann.»**
+a) ordentlig (adjektiv)
+b) ordentlig (adverb)
+
+**Svar:** a) — her beskriver ordet en person: pålitelig.
+
+**2. Velg riktig ord: «Jeg sov ______ godt i natt.»**
+a) ordentlig
+b) en ordentlig
+
+**Svar:** a) — som adverb forsterker **ordentlig** adjektivet **godt**.
+
+**3. Hvilket ord er nært synonymt med **ordentlig** i begge roller?**
+a) skikkelig
+b) grei
+
+**Svar:** a) skikkelig.
+
+---
+
 ## Husk dette
 
 - **Adverb:** ordentlig = really / properly / thoroughly — forsterker verb og adjektiv
@@ -105,3 +128,7 @@ slappe ordentlig av · sove ordentlig · spise ordentlig · en ordentlig fyr · 
 ## Relaterte ord
 
 skikkelig · virkelig · anstendig · pålitelig · grundig · riktig
+
+---
+
+_→ Vil du lære forskjellen mellom **trett**-ordene trøtt, sliten og utslitt? Les: [Trøtt vs Sliten vs Utslitt](/blog/trott-sliten-utslitt)_

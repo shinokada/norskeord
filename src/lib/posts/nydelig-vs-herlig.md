@@ -4,6 +4,7 @@ description: 'Nydelig handler om hvordan noe ser ut. Herlig handler om hvordan d
 slug: nydelig-vs-herlig
 cefr: A2
 publishedAt: 2026-05-21
+updatedAt: 2026-09-12
 tags: [adjectives, vocabulary]
 decks:
   - level: a2
@@ -59,6 +60,28 @@ _Når man beskriver hvordan noe føles som en opplevelse, er herlig det mest nat
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Hun har en ______ stemme.»**
+a) nydelig
+b) herlig
+
+**Svar:** a) nydelig — fokus på skjønnhet/sanseinntrykk.
+
+**2. Velg riktig ord: «Det føltes ______ å slappe av på stranden.»**
+a) nydelig
+b) herlig
+
+**Svar:** b) herlig — beskriver hvordan opplevelsen føltes.
+
+**3. Velg riktig ord: «Vi hadde en ______ ferie.»**
+a) nydelig
+b) herlig
+
+**Svar:** b) herlig — fremhever gleden ved opplevelsen.
+
+---
+
 ## Husk dette
 
 - **nydelig** → fokus på skjønnhet eller noe sanselig fint
@@ -70,3 +93,7 @@ _Når man beskriver hvordan noe føles som en opplevelse, er herlig det mest nat
 ## Relaterte ord
 
 vakker · flott · deilig · fantastisk · skjønn
+
+---
+
+_→ Vil du lære forskjellen mellom **god**, **bra** og **fin**? Les: [God vs bra vs fin](/blog/god-bra-fin)_

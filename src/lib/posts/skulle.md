@@ -4,6 +4,7 @@ description: '«Skulle» betyr ikke alltid det samme som «burde». I fortid utt
 slug: skulle
 cefr: B1
 publishedAt: 2026-08-14
+updatedAt: 2026-09-12
 tags: [verbs, grammar]
 decks:
   - level: b1
@@ -102,6 +103,28 @@ _Tempus og konteksten i den omkringliggende setningen er det tydeligste signalet
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig tolkning: «I fjor skulle han reise hjem, men flyet ble kansellert.»**
+a) He should travel home
+b) He was going to travel home
+
+**Svar:** b) — «men flyet ble kansellert» viser at dette var en plan sett fra fortiden, ikke en nåværende forpliktelse.
+
+**2. Velg riktig tolkning: «Du skulle ringe moren din — hun venter fortsatt.»**
+a) You should call your mother
+b) You were going to call your mother
+
+**Svar:** a) — «hun venter fortsatt» peker mot en nåværende forpliktelse («should»), ikke en avsluttet plan i fortiden.
+
+**3. Hvilken betydning har **skulle** i «Hvis det skulle regne …»?**
+a) Hypotetisk (if it were to)
+b) Ordre (was told to)
+
+**Svar:** a) Hypotetisk.
+
+---
+
 ## Husk dette
 
 - **Skulle** i fortidskontekst = was going to / was supposed to — en plan sett fra fortiden
@@ -124,3 +147,5 @@ ville · måtte · burde · kunne · få til · ha tenkt å
 ---
 
 _→ Vil du lære mer om V2-regelen og norsk setningsbygning? Les: [V2-regelen](/blog/v2-regelen)_
+
+_→ Vil du lære forskjellen mellom å begynne og å starte? Les: [Begynne vs Starte](/blog/begynne-vs-starte)_

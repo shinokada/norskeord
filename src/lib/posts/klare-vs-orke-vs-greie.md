@@ -4,6 +4,7 @@ description: 'Bruk orke når du er sliten. Bruk klare når noe er for vanskelig.
 slug: klare-vs-orke-vs-greie
 cefr: B1
 publishedAt: 2026-05-21
+updatedAt: 2026-09-12
 tags: [verbs, vocabulary]
 decks:
   - level: b1
@@ -62,6 +63,28 @@ _Orker ikke betyr at du mangler energi eller motivasjon — ikke at noe er fysis
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Jeg kan gå, men jeg ______ ikke i kveld.»**
+a) klarer
+b) orker
+
+**Svar:** b) orker — handler om energi eller lyst, ikke evne.
+
+**2. Velg riktig ord: «Jeg ______ prøven med god margin.»**
+a) orket
+b) klarte
+
+**Svar:** b) klarte — fokus på å oppnå et resultat.
+
+**3. Velg riktig ord: «Jeg ______ å finne huset til slutt.»**
+a) greide
+b) orket
+
+**Svar:** a) greide — ligner klare, med en svak antydning om innsats.
+
+---
+
 ## Husk dette
 
 - **klare** → vanligst og mest nøytralt — evne eller suksess
@@ -74,3 +97,9 @@ _Orker ikke betyr at du mangler energi eller motivasjon — ikke at noe er fysis
 ## Relaterte ord
 
 mestre · håndtere · få til · rekke · evne
+
+---
+
+_→ Vil du lære mer om **få** med ulike partikler? Les: [Få + partikel — tak i, til, på, i gang](/blog/fa)_
+
+_→ Vil du lære uttrykket **gi deg**? Les: [Gi deg — Slutt med det / La det være](/blog/gi-deg)_

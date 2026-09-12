@@ -4,6 +4,7 @@ description: '"Sakte" er det naturlige valget i samtale, mens "langsomt" er vanl
 slug: sakte-vs-langsomt
 cefr: A2
 publishedAt: 2026-05-21
+updatedAt: 2026-09-12
 tags: [adverbs, adjectives, vocabulary]
 decks:
   - level: a2
@@ -114,15 +115,37 @@ Som en tommelfingerregel: **sakte** i samtale, **langsomt** i skrift.
 
 ## Vanlige feil
 
-❌ Kan du snakke mer langsomt?
-⭕ Kan du snakke **saktere**? / Kan du snakke litt **langsommere**?
+➖ Kan du snakke mer langsomt? _(mulig, men mindre naturlig)_
+✅ Kan du snakke **saktere**? / Kan du snakke litt **langsommere**?
 
-_Komparativ av adverb dannes ikke med «mer» på norsk — bruk den bøyde formen i stedet._
+_Adverb som **langsomt** har egne bøyde komparativformer (**langsommere**), og disse er mest naturlige i dagligtale. **Mer langsomt** er ikke ugrammatisk, men høres mindre idiomatisk ut._
 
 ❌ Det er en sakte prosess.
 ⭕ Det er en **langsom** prosess.
 
 _Når et adjektiv beskriver et substantiv, er **langsom** den riktige formen — ikke **sakte**._
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Kan du snakke \______, vær så snill?»**
+a) sakte
+b) langsom
+
+**Svar:** a) sakte — det naturlige hverdagsordet i tale.
+
+**2. Velg riktig ord: «Det er en ______ prosess.»**
+a) sakte
+b) langsom
+
+**Svar:** b) langsom — adjektivformen beskriver substantivet **prosess**.
+
+**3. Hvilket ord er mest naturlig når du ber noen snakke saktere: «Kan du snakke litt \______?»**
+a) mer langsomt
+b) saktere
+
+**Svar:** b) saktere — den bøyde komparativformen er mest naturlig i dagligtale. **Mer langsomt** er også grammatisk mulig, men mindre vanlig.
 
 ---
 
@@ -145,3 +168,7 @@ snakk sakte · gå sakte · saktere · det går sakte · en langsom prosess · t
 ## Relaterte ord
 
 fort · raskt · hurtig · treg · rolig · stille
+
+---
+
+_→ Vil du lære forskjellen mellom **fort** og **raskt**? Les: [Fort vs Raskt](/blog/fort-vs-raskt)_

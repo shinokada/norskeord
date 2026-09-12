@@ -4,6 +4,7 @@ description: '"I tre timer" handler om varighet, "for tre år siden" betyr noe s
 slug: i-for-pa-tid
 cefr: A2
 publishedAt: 2026-08-05
+updatedAt: 2026-09-12
 tags: [grammar, prepositions, vocabulary]
 decks:
   - level: a2
@@ -144,3 +145,5 @@ lenge · for lenge siden · tid · preposisjoner · retning vs sted
 ---
 
 _→ Vil du lære mer om de vanligste preposisjonene? Les: [Preposisjoner — i, på, med, ved, for](/blog/preposisjoner)_
+
+_→ Vil du lære om de to betydningene av **time**? Les: [Time — Skoletime eller klokketime?](/blog/time)_

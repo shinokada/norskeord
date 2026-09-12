@@ -4,6 +4,7 @@ description: '«Lenge» beskriver hvor lenge en handling varer, mens «lang» be
 slug: lenge-vs-lang
 cefr: A2
 publishedAt: 2026-08-07
+updatedAt: 2026-09-12
 tags: [adverbs, adjectives, vocabulary]
 decks:
   - level: a2
@@ -124,6 +125,28 @@ _**Lang** kan ikke modifisere et verb — bruk **lenge** for varighet._
 ⭕ En **lang** vei.
 
 _**Lenge** kan ikke modifisere et substantiv — bruk **lang**._
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Jeg ventet \______.»**
+a) lenge
+b) lang
+
+**Svar:** a) lenge — adverb, beskriver verbet **ventet**.
+
+**2. Velg riktig ord: «Det var en ______ dag.»**
+a) lenge
+b) lang
+
+**Svar:** b) lang — adjektiv, beskriver substantivet **dag**.
+
+**3. Velg riktig ord: «Hun bodde der ______ enn meg.»**
+a) lenger
+b) langere
+
+**Svar:** a) lenger — komparativ av **lenge**.
 
 ---
 

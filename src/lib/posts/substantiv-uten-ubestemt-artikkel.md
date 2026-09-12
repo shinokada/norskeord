@@ -4,7 +4,8 @@ description: 'På norsk utelater man noen ganger den ubestemte artikkelen – ve
 slug: substantiv-uten-ubestemt-artikkel
 cefr: [B1, B2]
 type: guide
-publishedAt: 2026-12-02
+publishedAt: 2026-11-04
+updatedAt: 2026-09-12
 tags: [grammar, nouns, articles]
 ---
 
@@ -260,3 +261,7 @@ spille gitar · spille fotball · spise middag · spise frokost · lage mat · g
 ## Relaterte grammatikktema
 
 bestemt artikkel · genitiv · adjektivbøying · udelelelige substantiver
+
+---
+
+_→ Vil du lære hvorfor «norsk» noen ganger får bestemt form? Les: [Norsken min](/blog/norsken)_
