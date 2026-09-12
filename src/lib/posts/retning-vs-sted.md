@@ -143,3 +143,5 @@ preposisjoner · stedsordbøyning · V2-regelen · adverb
 ---
 
 _→ Vil du lære **hvor hen** brukes på norsk? Les: [Hvor hen — Hvor skal du?](/blog/hvor-hen)_
+
+_→ Vil du lære forskjellen mellom **gå** og **forlate**? Les: [Forlate vs. Gå](/blog/forlate-vs-ga)_

@@ -265,3 +265,5 @@ bestemt artikkel · genitiv · adjektivbøying · udelelelige substantiver
 ---
 
 _→ Vil du lære hvorfor «norsk» noen ganger får bestemt form? Les: [Norsken min](/blog/norsken)_
+
+_→ Vil du lære hvorfor ikke alle frukter er **et-ord**? Les: [Kjønn på fruktnavn](/blog/kjonn-pa-fruktnavn)_
