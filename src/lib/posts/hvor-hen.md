@@ -99,10 +99,9 @@ Du vil høre det ofte, men du vil sjelden se det i formelle tekster eller nyhets
 
 ## Vanlige feil
 
-❌ Hvor hen skal du?
-⭕ Hvor skal du **hen**?
+**Hvor hen skal du?** og **Hvor skal du hen?**
 
-_**Hen** kommer etter verbet og resten av setningen — aldri direkte etter **hvor**._
+_Begge er brukt. **Hvor hen** rett etter hverandre er mer formelt/litterært (nær det gamle **hvorhen** = "whither"), mens **hen** til slutt i setningen er den vanligste, mest muntlige plasseringen i dag._
 
 ❌ Jeg vet ikke hen hvor hun er.
 ⭕ Jeg vet ikke hvor hun er **hen**.
@@ -113,11 +112,11 @@ _I indirekte spørsmål kommer **hen** til slutt, etter verbet._
 
 ## Norskprøven — eksempelspørsmål
 
-**1. Velg riktig setning:**
+**1. Hvilken plassering er vanligst i uformell tale?**
 a) Hvor hen skal du?
 b) Hvor skal du hen?
 
-**Svar:** b) — **hen** kommer alltid etter verbet, aldri rett etter **hvor**.
+**Svar:** b) — den vanligste plasseringen i muntlig norsk i dag. **Hvor hen skal du?** er også korrekt, men mer formelt/litterært.
 
 **2. Er «hen» obligatorisk i «Hvor skal du (hen)?»?**
 a) Ja, setningen er ugrammatisk uten det
@@ -138,7 +137,7 @@ b) Jeg vet ikke hvor hun er hen.
 - **hen** etter **hvor** tilføyer en lett retnings- eller plasseringsnuanse
 - Det er valgfritt — setningen betyr det samme uten
 - Typisk for **muntlig og uformelt norsk**
-- Kommer alltid **etter** verbet, aldri rett etter **hvor**
+- Vanligst etter verbet i muntlig norsk i dag; rett etter **hvor** («hvor hen …») forekommer også, men er mer formelt/litterært
 
 ---
 

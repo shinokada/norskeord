@@ -108,7 +108,7 @@ b) kom bort fra
 
 **Svar:** a) kom bort til — bevegelse mot noen.
 
-**2. Velg riktig ord: «Ga bort ______ døra, det er kaldt.»**
+**2. Velg riktig ord: «Gå bort ______ døra, det er kaldt.»**
 a) til
 b) fra
 

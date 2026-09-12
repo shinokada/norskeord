@@ -115,10 +115,10 @@ Som en tommelfingerregel: **sakte** i samtale, **langsomt** i skrift.
 
 ## Vanlige feil
 
-❌ Kan du snakke mer langsomt?
-⭕ Kan du snakke **saktere**? / Kan du snakke litt **langsommere**?
+➖ Kan du snakke mer langsomt? _(mulig, men mindre naturlig)_
+✅ Kan du snakke **saktere**? / Kan du snakke litt **langsommere**?
 
-_Komparativ av adverb dannes ikke med «mer» på norsk — bruk den bøyde formen i stedet._
+_Adverb som **langsomt** har egne bøyde komparativformer (**langsommere**), og disse er mest naturlige i dagligtale. **Mer langsomt** er ikke ugrammatisk, men høres mindre idiomatisk ut._
 
 ❌ Det er en sakte prosess.
 ⭕ Det er en **langsom** prosess.
@@ -141,11 +141,11 @@ b) langsom
 
 **Svar:** b) langsom — adjektivformen beskriver substantivet **prosess**.
 
-**3. Velg riktig ord: «Kan du snakke litt \______?»**
+**3. Hvilket ord er mest naturlig når du ber noen snakke saktere: «Kan du snakke litt \______?»**
 a) mer langsomt
 b) saktere
 
-**Svar:** b) saktere — komparativ dannes ikke med «mer» på norsk.
+**Svar:** b) saktere — den bøyde komparativformen er mest naturlig i dagligtale. **Mer langsomt** er også grammatisk mulig, men mindre vanlig.
 
 ---
 

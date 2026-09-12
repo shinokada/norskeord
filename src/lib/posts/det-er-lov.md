@@ -118,7 +118,7 @@ b) lover
 
 **Svar:** b) lover — her er **lov** et substantiv i flertall (lovgivning), ikke uttrykket for tillatelse.
 
-**3. Hvilken setning betyr «it is okay to ask»?**
+**3. Hvilken setning betyr «Is it okay to ask?»**
 a) Er det lov å spørre?
 b) Er det en lov å spørre?
 

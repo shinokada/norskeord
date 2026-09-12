@@ -115,11 +115,11 @@ b) nyter
 
 **Svar:** a) koser — stemning og komfort, ikke bevisst kvalitetsvurdering.
 
-**2. Velg riktig ord: «Han ______ maten — den var virkelig god.»**
+**2. Hvilket ord legger mest vekt på matens kvalitet: «Han ______ maten — den var virkelig god.»**
 a) koste seg med
 b) nøt
 
-**Svar:** b) nøt — fokus på matens kvalitet.
+**Svar:** b) nøt — fremhever kvaliteten på maten. «Han koste seg med maten» er også mulig, men fokuserer mer på den koselige stemningen enn selve kvaliteten.
 
 **3. Velg riktig ord: «Hun ______ med katten.»**
 a) koser

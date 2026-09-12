@@ -105,11 +105,11 @@ b) hjemme
 
 **Svar:** b) hjemme — tilstand, ikke bevegelse.
 
-**2. Velg riktig ord: «Barna løper \______.»**
+**2. Velg riktig ord: «Barna løper \______ av huset.»**
 a) ut
 b) ute
 
-**Svar:** a) ut — bevegelse gjennom døren.
+**Svar:** a) ut — bevegelse gjennom døren («ute av huset» gir ikke mening her).
 
 **3. Velg riktig ord: «Vi er ______ på hotellet.»**
 a) frem

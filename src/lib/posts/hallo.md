@@ -67,10 +67,10 @@ Bruk **hei** — ikke hallo — når du møter folk ansikt til ansikt:
 | **hei**     | standard hverdagshilsen — alltid trygt                     |
 | **hei hei** | varmere og litt mer uformelt                               |
 | **halla**   | uformelt, blant venner                                     |
-| **hallo**   | telefon / oppmerksomhet — ikke ved møter ansikt til ansikt |
+| **hallo**   | vanligvis telefon / oppmerksomhet — sjeldnere som vanlig hilsen ansikt til ansikt |
 
-> ❌ Du åpner døra og sier: «Hallo!»
-> ⭕ Du åpner døra og sier: «Hei!»
+> ➖ Du åpner døra og sier: «Hallo!»
+> ✅ Du åpner døra og sier: «Hei!» (mest naturlig — **hallo** høres mer ut som et rop enn en hilsen her)
 
 ---
 
@@ -90,10 +90,10 @@ Bruk **hei** — ikke hallo — når du møter folk ansikt til ansikt:
 
 ## Vanlige feil
 
-❌ Hallo! (sagt ansikt til ansikt som en vanlig hilsen)
-⭕ **Hei!** — bruk hei når du møter folk.
+➖ Hallo! (sagt ansikt til ansikt som en vanlig hilsen)
+✅ **Hei!** — det mest naturlige valget når du møter folk.
 
-_Hallo i ansikt-til-ansikt-situasjoner høres litt unorsk ut — som om du oversetter direkte fra engelsk._
+_**Hallo** som en vanlig hilsen ansikt til ansikt kan høres ut som en direkte oversettelse av engelsk «hello». Det er ikke ugrammatisk, men **hei** er standardvalget — **hallo** passer bedre til å rope eller få noens oppmerksomhet._
 
 ❌ Hei? (sagt i telefonen)
 ⭕ **Hallo?** — hei kan brukes på telefonen, men hallo er mer naturlig som åpning.
@@ -104,11 +104,11 @@ _Mange sier «Hei» på telefon også — særlig til noen de kjenner — men **
 
 ## Norskprøven — eksempelspørsmål
 
-**1. Velg riktig ord: «Du åpner døra og sier: \______!»**
+**1. Hvilket ord er mest naturlig å si når du åpner døra for noen: «Du åpner døra og sier: \______!»**
 a) Hallo
 b) Hei
 
-**Svar:** b) Hei — hallo er ikke naturlig ansikt til ansikt.
+**Svar:** b) Hei — det mest naturlige valget. **Hallo** er også mulig, men høres mer ut som et rop for å få oppmerksomhet enn en vanlig hilsen.
 
 **2. Velg riktig ord: «Du svarer telefonen: \______?»**
 a) Hallo
@@ -126,9 +126,9 @@ b) Hallo
 
 ## Husk dette
 
-- **Hallo** = telefon + oppmerksomhet — ikke som vanlig hilsen
-- **Hei** = den universelle hverdagshilsenen ansikt til ansikt
-- Å si «hallo» til noen du møter høres unaturlig ut på norsk
+- **Hallo** = telefon + oppmerksomhet — sjelden som vanlig hilsen ansikt til ansikt
+- **Hei** = den universelle hverdagshilsenen ansikt til ansikt, og det mest naturlige valget
+- **Hallo** ansikt til ansikt er ikke ugrammatisk, men høres mer ut som et rop enn en hilsen
 - På telefon er begge **hei** og **hallo** mulig, men **hallo** er mest klassisk
 
 ---

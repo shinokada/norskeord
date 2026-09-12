@@ -138,7 +138,7 @@ _Dette er to forskjellige uttrykk — ikke bland dem._
 a) lei meg
 b) trist
 
-**Svar:** a) lei meg — en personlig reaksjon utløst av en konkret hendelse.
+**Svar:** Begge er riktige her — **lei meg** fremhever den personlige reaksjonen i øyeblikket, mens **trist** beskriver den vedvarende følelsen etterpå.
 
 **2. Velg riktig ord: «Det er en ______ historie.»**
 a) lei seg

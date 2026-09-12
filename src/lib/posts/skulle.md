@@ -105,17 +105,17 @@ _Tempus og konteksten i den omkringliggende setningen er det tydeligste signalet
 
 ## Norskprøven — eksempelspørsmål
 
-**1. Velg riktig tolkning: «Han skulle reise hjem.»**
+**1. Velg riktig tolkning: «I fjor skulle han reise hjem, men flyet ble kansellert.»**
 a) He should travel home
 b) He was going to travel home
 
-**Svar:** b) — fortidskontekst gir betydningen «som var planen».
+**Svar:** b) — «men flyet ble kansellert» viser at dette var en plan sett fra fortiden, ikke en nåværende forpliktelse.
 
-**2. Velg riktig tolkning: «Du skulle ringe moren din.»**
+**2. Velg riktig tolkning: «Du skulle ringe moren din — hun venter fortsatt.»**
 a) You should call your mother
 b) You were going to call your mother
 
-**Svar:** a) — nåtidskontekst gir betydningen «burde».
+**Svar:** a) — «hun venter fortsatt» peker mot en nåværende forpliktelse («should»), ikke en avsluttet plan i fortiden.
 
 **3. Hvilken betydning har **skulle** i «Hvis det skulle regne …»?**
 a) Hypotetisk (if it were to)

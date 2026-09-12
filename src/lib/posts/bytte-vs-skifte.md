@@ -71,7 +71,7 @@ _Skifte brukes ikke når man utveksler noe med en annen person — bare bytte fu
 a) bytte
 b) skifte
 
-**Svar:** a) bytte — å erstatte én ting med en annen.
+**Svar:** Begge er riktige — **bytte dekk** og **skifte dekk** brukes om hverandre i dagligtale.
 
 **2. Velg riktig ord: «Bladene ______ farge om høsten.»**
 a) bytter

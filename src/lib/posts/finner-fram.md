@@ -45,8 +45,8 @@ Det er nært synonymt med **ta fram** og **hente fram**.
 
 Begge betyr omtrent det samme i dagligtale, men det er en liten nyanse:
 
-- **finne fram** → antyder at gjenstanden var oppbevart eller ikke lett tilgjengelig
-- **ta fram** → mer nøytralt — bare det å ta noe frem
+- **finne fram** → legger vekt på å lete etter og lokalisere gjenstanden før man tar den frem
+- **ta fram** → legger vekt på selve handlingen å ta noe frem — kan også brukes om ting som var oppbevart (f.eks. **ta fram koppene**)
 
 **Finne fram sykkelen.**
 _Taking the bike out_ — antyder at den sto lagret et sted (et uthus, en garasje).
@@ -62,8 +62,8 @@ I de fleste tilfeller er de utbyttbare.
 
 | Uttrykk        | Betydning            | Nyanse                                            |
 | -------------- | -------------------- | ------------------------------------------------- |
-| **finne fram** | ta frem / hente frem | antyder at gjenstanden var lagret eller lagt bort |
-| **ta fram**    | ta frem / hente frem | nøytralt, ingen antydning om oppbevaring          |
+| **finne fram** | ta frem / hente frem | vekt på å lete etter og finne gjenstanden |
+| **ta fram**    | ta frem / hente frem | vekt på selve handlingen å ta noe frem   |
 | **hente fram** | hente / bringe frem  | lett vekt på det å gå og hente                    |
 
 ---
@@ -96,11 +96,11 @@ b) Etter **fram**: finne fram boka
 
 **Svar:** b) — objektet kommer rett etter **fram**.
 
-**3. Hvilket ord er mest nøytralt, uten antydning om oppbevaring?**
+**3. Hvilket ord legger mest vekt på selve handlingen å ta noe frem, uavhengig av leting?**
 a) finne fram
 b) ta fram
 
-**Svar:** b) ta fram — finne fram antyder at gjenstanden lå gjemt eller lagret.
+**Svar:** b) ta fram — finne fram legger større vekt på å lete etter og lokalisere gjenstanden.
 
 ---
 

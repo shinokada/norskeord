@@ -59,6 +59,8 @@ Når setningen har et **objekt**, kommer **ikke** etter objektet, ikke mellom ve
 
 Objektet skyver **ikke** lenger bak i setningen — men **ikke** er fortsatt etter verbet, bare ikke umiddelbart etter det.
 
+Denne rekkefølgen (verb + pronomen + ikke) gjelder når pronomenet er tryksvakt/nøytralt. Hvis pronomenet i stedet er kontrastivt betont — «ikke MEG, men noen andre» — kan **ikke** også komme rett etter verbet: **Han sviktet ikke meg** (men broren min).
+
 ---
 
 ## Hvorfor ser det rart ut?
@@ -142,13 +144,13 @@ Begge er grammatisk korrekte — men de korte pronomenene trekker **ikke** mot s
 
 ## Vanlige feil
 
-❌ Han sviktet ikke meg.
-⭕ Han sviktet **meg** ikke.
+➖ Han sviktet ikke meg. _(riktig kun med kontrastivt trykk på **meg** — «ikke MEG, men noen andre»)_
+✅ Han sviktet **meg** ikke. _(nøytral, vanligste form)_
 
-_Med pronomenobjekt er rekkefølgen verb + pronomen + ikke — ikke omvendt._
+_Med et nøytralt/trykksvakt pronomenobjekt er rekkefølgen verb + pronomen + ikke. Rekkefølgen verb + ikke + pronomen er også mulig, men da tolkes pronomenet som kontrastivt betont._
 
-❌ Jeg liker ikke deg.
-⭕ Jeg liker **deg** ikke. _(mest naturlig med pronomen)_
+➖ Jeg liker ikke deg. _(riktig kun med kontrastivt trykk på **deg**)_
+✅ Jeg liker **deg** ikke. _(nøytral, mest naturlig med pronomen)_
 
 _Igjen: pronomen kommer før **ikke**._
 
@@ -161,11 +163,11 @@ _I leddsetninger kommer **ikke** alltid foran det finitte verbet._
 
 ## Norskprøven — eksempelspørsmål
 
-**1. Velg riktig setning:**
+**1. Velg riktig, nøytral setning (uten spesiell vekt på noen av ordene):**
 a) Han sviktet ikke meg.
 b) Han sviktet meg ikke.
 
-**Svar:** b) — med pronomenobjekt kommer **ikke** etter objektet.
+**Svar:** b) — nøytral rekkefølge med pronomenobjekt er verb + pronomen + **ikke**. (a) er også mulig, men da med trykk på **meg** — «not me [specifically]».
 
 **2. Velg riktig setning i en leddsetning:**
 a) … fordi han sviktet meg ikke

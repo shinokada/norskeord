@@ -106,7 +106,7 @@ b) gi opp
 **Svar:** a) gi deg — stopp/hold opp, ikke å gi opp noe vanskelig.
 
 **2. Velg riktig ord: «Oppgaven var for vanskelig, så jeg \______.»**
-a) ga meg
+a) holdt ut
 b) ga opp
 
 **Svar:** b) ga opp — å slutte fordi noe er for vanskelig.

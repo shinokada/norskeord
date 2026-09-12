@@ -19,7 +19,7 @@ decks:
 
 ## Kort forklaring
 
-**Norsk** kan brukes på flere måter — som adjektiv, som språknavn, eller om en person. Når det brukes som substantiv om selve språket og har et eieord (som _min_, _din_, _hennes_), brukes **bestemt form**: **norsken**.
+**Norsk** kan brukes på flere måter — som adjektiv, som språknavn, eller om en person. Når det brukes som substantiv om selve språket og eieordet kommer **etter** substantivet (som _norsken min_, _norsken hennes_), brukes **bestemt form**: **norsken**.
 
 ---
 
@@ -105,7 +105,7 @@ Dette gjelder alle språknavn på norsk. Når du snakker om noen sin ferdighet i
 ❌ Norsk min blir bedre.
 ⭕ **Norsken** min blir bedre.
 
-_Med eieord trenger du bestemt form — **norsken**, ikke **norsk**._
+_Når eieordet kommer **etter** substantivet (norsken min), må substantivet stå i bestemt form. Med eieordet **foran** substantivet (min norsk) er ubestemt form standard — begge rekkefølger finnes, men **norsken min** er den vanligste._
 
 ❌ Min norsken er ikke bra.
 ⭕ **Norsken** min er ikke så god.
@@ -120,7 +120,7 @@ _Eieordet kommer etter substantivet i bestemt form: **norsken min**, ikke **min 
 a) Norsk min blir bedre.
 b) Norsken min blir bedre.
 
-**Svar:** b) — med eieord trengs bestemt form.
+**Svar:** b) — når eieordet står etter substantivet (norsken min), kreves bestemt form.
 
 **2. Velg riktig setning: «Jeg lærer \______.» (generelt, uten eieord)**
 a) norsk
@@ -140,6 +140,7 @@ b) engelsk mann
 
 - **norsk** (ubestemt) → språket generelt: _Jeg lærer norsk._
 - **norsken** (bestemt) → noen sin norsk: _Norsken min blir bedre._
+- Bestemt form kreves når eieordet står **etter** substantivet (norsken min); med eieordet foran (min norsk) er ubestemt form standard
 - Endelsen **-en** følger vanlig hankjønnsbøying
 - Samme mønster gjelder alle språknavn: _engelsken_, _fransken_, _japansken_
 

@@ -145,17 +145,17 @@ _**Trolig** fungerer best som et enkelt adverb — ikke i kombinasjon med «kans
 
 ## Norskprøven — eksempelspørsmål
 
-**1. Velg riktig ord: «Det blir ______ regn i kveld.» (værmelding)**
+**1. Hvilket ord passer best i denne sammenhengen: «Det blir ______ regn i kveld.» (værmelding, nøktern og faktabasert)**
 a) trolig
 b) sikkert
 
-**Svar:** a) trolig — nyhets-/værmeldingsregister, faktabasert.
+**Svar:** a) trolig — passer best i nyhets-/værmeldingsregister. **Sikkert** er ikke feil i seg selv, men høres for personlig/selvsikkert ut i en formell værmelding.
 
-**2. Velg riktig ord: «Han kommer ______ snart.» (personlig, selvsikker gjetning)**
+**2. Hvilket ord passer best her: «Han kommer ______ snart.» (personlig, selvsikker gjetning)**
 a) sannsynligvis
 b) sikkert
 
-**Svar:** b) sikkert — konfidenspreget og hverdagslig.
+**Svar:** b) sikkert — fanger best den selvsikre, personlige tonen. **Sannsynligvis** er også mulig, men høres mer nøytralt og mindre personlig ut.
 
 **3. Hvilket ord er det mest nøytrale, standardvalget?**
 a) sannsynligvis

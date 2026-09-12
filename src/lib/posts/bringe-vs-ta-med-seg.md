@@ -100,7 +100,7 @@ _I betydningen «føre til» fungerer bare **bringe**._
 
 ## Norskprøven — eksempelspørsmål
 
-**1. Velg riktig ord: «Kan du ______ meg passet mitt?»**
+**1. Velg riktig ord: «Kan du ______ passet mitt?»**
 a) bringe
 b) ta med deg
 
