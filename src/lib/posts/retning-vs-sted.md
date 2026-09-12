@@ -4,6 +4,7 @@ description: 'Norsk skiller mellom bevegelse og sted med ordpar som hjem/hjemme,
 slug: retning-vs-sted
 cefr: A2
 publishedAt: 2026-07-01
+updatedAt: 2026-09-12
 tags: [adverbs, grammar, word-order]
 ---
 
@@ -96,6 +97,28 @@ _Stedsformen er ute, ikke uten — uten betyr "without."_
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Jeg er ______ nå.»**
+a) hjem
+b) hjemme
+
+**Svar:** b) hjemme — tilstand, ikke bevegelse.
+
+**2. Velg riktig ord: «Barna løper \______.»**
+a) ut
+b) ute
+
+**Svar:** a) ut — bevegelse gjennom døren.
+
+**3. Velg riktig ord: «Vi er ______ på hotellet.»**
+a) frem
+b) fremme
+
+**Svar:** b) fremme — tilstand: har ankommet.
+
+---
+
 ## Husk dette
 
 - **Bevegelse** (på vei et sted) → kortform: _hjem, ut, inn, bort, frem_
@@ -116,3 +139,7 @@ _Stedsformen er ute, ikke uten — uten betyr "without."_
 ## Relaterte emner
 
 preposisjoner · stedsordbøyning · V2-regelen · adverb
+
+---
+
+_→ Vil du lære **hvor hen** brukes på norsk? Les: [Hvor hen — Hvor skal du?](/blog/hvor-hen)_

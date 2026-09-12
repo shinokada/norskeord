@@ -4,6 +4,7 @@ description: 'Finne fram betyr ikke å finne noe fremover — det betyr å ta fr
 slug: finner-fram
 cefr: A2
 publishedAt: 2026-07-03
+updatedAt: 2026-09-12
 tags: [verbs, vocabulary, phrasal-verbs]
 decks:
   - level: a2
@@ -81,6 +82,28 @@ _Objektet kommer vanligvis rett etter **fram**: **finne fram** + objekt._
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Han ______ boka fra hylla.»**
+a) fant fram
+b) fant fremover
+
+**Svar:** a) fant fram — riktig partikkel er **fram**, ikke **fremover**.
+
+**2. Hvor plasseres objektet i uttrykket «finne fram»?**
+a) Før **fram**: finne boka fram
+b) Etter **fram**: finne fram boka
+
+**Svar:** b) — objektet kommer rett etter **fram**.
+
+**3. Hvilket ord er mest nøytralt, uten antydning om oppbevaring?**
+a) finne fram
+b) ta fram
+
+**Svar:** b) ta fram — finne fram antyder at gjenstanden lå gjemt eller lagret.
+
+---
+
 ## Husk dette
 
 - **finne fram** = ta frem / hente frem noe som var oppbevart
@@ -96,3 +119,5 @@ ta fram · hente fram · legge bort · pakke ut · forberede
 ---
 
 _→ Lurer du på forskjellen mellom **fram** og **frem**? Les: [Fram vs Frem](/blog/fram-frem)_
+
+_→ Vil du lære forskjellen mellom å bringe og ta med seg noe? Les: [Bringe vs Ta med seg](/blog/bringe-vs-ta-med-seg)_

@@ -3,7 +3,8 @@ title: 'På gjensyn — å si farvel på norsk'
 description: '«På gjensyn» betyr at man håper å se noen igjen, og er en høflig og litt formell avskjedshilsen. Her ser du hvordan det skiller seg fra «ha det», «vi sees» og andre norske avskjeder.'
 slug: pa-gjensyn
 cefr: A1
-publishedAt: 2026-11-11
+publishedAt: 2026-10-23
+updatedAt: 2026-09-12
 tags: [greetings, vocabulary, speaking, register, phrases]
 decks:
   - level: a1
@@ -97,6 +98,28 @@ _**På gjensyn** er for formelt for tekstmeldinger til venner — bruk noe av de
 ⭕ **Ha det bra!** / **På gjensyn!**
 
 _**God natt** brukes bare når noen faktisk skal legge seg — ikke som en vanlig avskjedshilsen om kvelden._
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig avskjed etter en jobbsamtale:**
+a) Vi sees!
+b) På gjensyn!
+
+**Svar:** b) På gjensyn! — høflig og passer i formelle situasjoner.
+
+**2. Velg riktig avskjed i en SMS til en venn:**
+a) På gjensyn!
+b) Ha det!
+
+**Svar:** b) Ha det! — på gjensyn er for formelt for tekstmeldinger.
+
+**3. Hva sier man vanligvis rett etter en norsktime?**
+a) Takk for i dag. På gjensyn.
+b) Takk for sist.
+
+**Svar:** a) — en vanlig, naturlig avslutning etter en time.
 
 ---
 

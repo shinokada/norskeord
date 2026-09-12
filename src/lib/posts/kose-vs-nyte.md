@@ -4,6 +4,7 @@ description: '«Kose seg» handler om varme, komfort og stemning. «Nyte» handl
 slug: kose-vs-nyte
 cefr: A2
 publishedAt: 2026-08-26
+updatedAt: 2026-09-12
 tags: [verbs, vocabulary]
 decks:
   - level: a2
@@ -106,6 +107,28 @@ _Når fokuset er matens kvalitet, er **nyte** mest naturlig. **Kose seg med** kr
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Jeg ______ meg hjemme med te og en bok.»**
+a) koser
+b) nyter
+
+**Svar:** a) koser — stemning og komfort, ikke bevisst kvalitetsvurdering.
+
+**2. Velg riktig ord: «Han ______ maten — den var virkelig god.»**
+a) koste seg med
+b) nøt
+
+**Svar:** b) nøt — fokus på matens kvalitet.
+
+**3. Velg riktig ord: «Hun ______ med katten.»**
+a) koser
+b) nyter
+
+**Svar:** a) koser — fysisk nærhet og ømhet.
+
+---
+
 ## Husk dette
 
 - **kose seg** → koselig, varm, komfortabel — stemning og velvære
@@ -124,3 +147,7 @@ kose seg hjemme · kose seg med venner · kose seg på hytta · nyte livet · ny
 ## Relaterte ord
 
 hygge · trives · glede seg · sette pris på · like · elske
+
+---
+
+_→ Vil du lære forskjellen mellom å begynne og å starte? Les: [Begynne vs Starte](/blog/begynne-vs-starte)_

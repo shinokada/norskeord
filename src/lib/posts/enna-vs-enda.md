@@ -4,6 +4,7 @@ description: 'Både ennå og enda kan bety «fremdeles» eller «ikke ennå», m
 slug: enna-vs-enda
 cefr: B1
 publishedAt: 2026-06-11
+updatedAt: 2026-09-12
 tags: [adverbs, vocabulary, grammar, b1]
 decks:
   - level: b1
@@ -118,3 +119,7 @@ Hvilken passer best?
 Svar:
 1 → **ennå / enda** (begge)
 2 → **enda** (bare denne) ✅
+
+---
+
+_→ Vil du lære mer om **fort** og andre tidsrelaterte ord? Les: [Fort vs Raskt](/blog/fort-vs-raskt)_

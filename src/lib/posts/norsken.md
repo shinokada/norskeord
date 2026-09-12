@@ -3,7 +3,8 @@ title: 'Norsken min — Derfor får norsk bestemt artikkel'
 description: '"Norsken" er bestemt form av "norsk" brukt som substantiv. Når du snakker om ditt eget eller andres norsk, legger man til -en – og det samme mønsteret gjelder for alle språk.'
 slug: norsken
 cefr: A2
-publishedAt: 2026-11-04
+publishedAt: 2026-10-21
+updatedAt: 2026-09-12
 tags: [grammar, vocabulary, nouns]
 decks:
   - level: a2
@@ -113,6 +114,28 @@ _Eieordet kommer etter substantivet i bestemt form: **norsken min**, ikke **min 
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning:**
+a) Norsk min blir bedre.
+b) Norsken min blir bedre.
+
+**Svar:** b) — med eieord trengs bestemt form.
+
+**2. Velg riktig setning: «Jeg lærer \______.» (generelt, uten eieord)**
+a) norsk
+b) norsken
+
+**Svar:** a) norsk — ubestemt form når du ikke knytter det til en bestemt person.
+
+**3. Hvilket ord følger samme mønster som «norsken»?**
+a) engelsken
+b) engelsk mann
+
+**Svar:** a) engelsken — samme bøyingsmønster for alle språknavn.
+
+---
+
 ## Husk dette
 
 - **norsk** (ubestemt) → språket generelt: _Jeg lærer norsk._
@@ -131,3 +154,7 @@ norsken min · norsken din · norsken hennes · jobbe med norsken · forbedre no
 ## Relaterte ord
 
 språk · morsmål · målspråk · flytende · morsmålsnivå · hankjønn · bestemt form
+
+---
+
+_→ Vil du lære om substantiv uten ubestemt artikkel? Les: [Substantiv uten ubestemt artikkel](/blog/substantiv-uten-ubestemt-artikkel)_

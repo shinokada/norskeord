@@ -4,6 +4,7 @@ description: 'Norsk har flere ord som oversetter «god» — og feil valg høres
 slug: god-bra-fin
 cefr: A2
 publishedAt: 2026-05-27
+updatedAt: 2026-09-12
 tags: [adjectives, vocabulary]
 decks:
   - level: a2
@@ -131,6 +132,28 @@ _«Fint vær» er et fast uttrykk. God brukes ikke om vær._
 ⭕ Hun er flink til å snakke norsk.
 
 _Når man skryter av noens ferdigheter eller innsats, er flink mer naturlig enn god._
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Filmen var \______.»**
+a) god
+b) bra
+
+**Svar:** b) bra — det naturlige valget for generelle inntrykk.
+
+**2. Velg riktig ord: «Det er ______ vær i dag.»**
+a) god
+b) fint
+
+**Svar:** b) fint — fast uttrykk; god brukes ikke om vær.
+
+**3. Velg riktig ord: «Hun er ______ til å snakke norsk.»**
+a) god
+b) flink
+
+**Svar:** b) flink — fremhever ferdighet og innsats.
 
 ---
 

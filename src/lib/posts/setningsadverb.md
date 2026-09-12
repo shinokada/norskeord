@@ -4,6 +4,7 @@ description: 'Setningsadverb som «ikke», «aldri» og «kanskje» står etter 
 slug: setningsadverb
 cefr: B1
 publishedAt: 2026-08-19
+updatedAt: 2026-09-12
 tags: [grammar, word-order, sentence-structure]
 decks:
   - level: b1
@@ -177,6 +178,28 @@ _I en leddsetning må **ikke** stå foran det finitte verbet._
 ⭕ Jeg vet at han **aldri har** vært der.
 
 _**Aldri** flyttes foran **har** i leddsetningen._
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning:**
+a) fordi han er ikke hjemme
+b) fordi han ikke er hjemme
+
+**Svar:** b) — **ikke** kommer før verbet i leddsetninger.
+
+**2. Velg riktig setning:**
+a) Jeg vet at han har aldri vært der.
+b) Jeg vet at han aldri har vært der.
+
+**Svar:** b) — **aldri** flyttes foran **har** i leddsetningen.
+
+**3. Hvor står et setningsadverb i en hovedsetning?**
+a) Før verbet
+b) Etter verbet
+
+**Svar:** b) Etter verbet.
 
 ---
 

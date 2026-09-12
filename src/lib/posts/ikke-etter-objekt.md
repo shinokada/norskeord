@@ -3,7 +3,8 @@ title: 'Ikke etter objekt — hvor «ikke» plasseres på norsk'
 description: 'I norske hovedsetninger kommer «ikke» etter objektet, ikke rett etter verbet. I leddsetninger plasseres det foran verbet – et mønster som er viktig for naturlig ordstilling.'
 slug: ikke-etter-objekt
 cefr: B1
-publishedAt: 2026-10-28
+publishedAt: 2026-10-16
+updatedAt: 2026-09-12
 tags: [grammar, word-order, sentence-structure]
 decks:
   - level: b1
@@ -155,6 +156,28 @@ _Igjen: pronomen kommer før **ikke**._
 ⭕ fordi han **ikke** sviktet meg
 
 _I leddsetninger kommer **ikke** alltid foran det finitte verbet._
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning:**
+a) Han sviktet ikke meg.
+b) Han sviktet meg ikke.
+
+**Svar:** b) — med pronomenobjekt kommer **ikke** etter objektet.
+
+**2. Velg riktig setning i en leddsetning:**
+a) … fordi han sviktet meg ikke
+b) … fordi han ikke sviktet meg
+
+**Svar:** b) — i leddsetninger kommer **ikke** før verbet.
+
+**3. Hvilken objektstype trekker **ikke** lengst mot slutten av setningen?**
+a) Korte pronomen
+b) Lange substantiv
+
+**Svar:** a) Korte pronomen.
 
 ---
 

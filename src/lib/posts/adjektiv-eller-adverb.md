@@ -4,6 +4,7 @@ description: 'Mange norske adjektiver kan også fungere som adverb uten å endre
 slug: adjektiv-eller-adverb
 cefr: B2
 publishedAt: 2026-09-30
+updatedAt: 2026-09-12
 tags: [grammar, adjectives, adverbs, word-order]
 decks:
   - level: b2
@@ -132,6 +133,28 @@ _Adjektiver på **-isk** får ikke **-t** i adverbform — formen er identisk me
 ⭕ Det er **fysisk krevende** å trene hardt. / Det er en **fysisk utfordring** å trene hardt.
 
 _**Fysisk** alene kan ikke stå som substantiv — det beskriver alltid noe annet._
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig funksjon: «bruke kroppen fysisk»**
+a) Adjektiv (beskriver et substantiv)
+b) Adverb (beskriver en handling)
+
+**Svar:** b) — **fysisk** beskriver her verbet **bruke**.
+
+**2. Velg riktig setning:**
+a) Han trente fysiskt.
+b) Han trente fysisk.
+
+**Svar:** b) — adjektiver på **-isk** får ikke **-t** i adverbform.
+
+**3. Hvilket test-uttrykk bekrefter adverbial funksjon?**
+a) «på en … måte»
+b) «som en …»
+
+**Svar:** a) — «trene på en fysisk måte» bekrefter at ordet brukes adverbielt.
 
 ---
 

@@ -3,7 +3,8 @@ title: 'Få noe på — klare å få noe på seg'
 description: '"Få noe på" betyr å klare å få noe på seg — ofte klær eller tilbehør som er vanskelig å få på. Det er forskjellig fra det nøytrale "ta på seg".'
 slug: fa-noe-pa
 cefr: A2
-publishedAt: 2026-10-14
+publishedAt: 2026-10-09
+updatedAt: 2026-09-12
 tags: [verbs, vocabulary, phrasal-verbs]
 decks:
   - level: a2
@@ -130,6 +131,28 @@ _«Får den ikke på» er den naturlige norske formen — ikke «kan ikke få de
 ⭕ Jeg får **den** ikke **på**.
 
 _Pronomenet kommer rett etter **får**, og **på** til slutt._
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning: «Jakken var for liten — jeg \______.»**
+a) fikk den ikke på
+b) tok den ikke på
+
+**Svar:** a) fikk den ikke på — uttrykker at forsøket mislyktes.
+
+**2. Velg riktig setning: «Jeg ______ jakken og gikk.» (ingen vanskelighet)**
+a) fikk på
+b) tok på meg
+
+**Svar:** b) tok på meg — nøytral handling uten anstrengelse.
+
+**3. Hvor plasseres pronomenet i «jeg får den ikke på»?**
+a) Mellom **får** og **ikke**
+b) Etter **ikke**
+
+**Svar:** a) — pronomenet kommer rett etter **får**, før **ikke**.
 
 ---
 

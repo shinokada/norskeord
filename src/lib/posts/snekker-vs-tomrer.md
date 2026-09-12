@@ -4,6 +4,7 @@ description: 'Tømrer bygger huset. Snekker gjør det beboelig – og i daglig t
 slug: snekker-vs-tomrer
 cefr: B1
 publishedAt: 2026-05-21
+updatedAt: 2026-09-12
 tags: [nouns, vocabulary]
 decks:
   - level: a2
@@ -53,6 +54,28 @@ _Snekker er ikke feil, men tømrer er mer presist når man snakker om strukturel
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «\______ satte opp veggene på det nye huset.»**
+a) Tømreren
+b) Snekkeren
+
+**Svar:** a) Tømreren — storskala konstruksjonsarbeid.
+
+**2. Velg riktig ord: «\______ laget et spesialtilpasset kjøkken.»**
+a) Tømreren
+b) Snekkeren
+
+**Svar:** b) Snekkeren — detaljert, presist trearbeid.
+
+**3. Hvilket ord brukes ofte i dagligtale om begge yrkene?**
+a) tømrer
+b) snekker
+
+**Svar:** b) snekker.
+
+---
+
 ## Husk dette
 
 - **tømrer** → konstruksjon og bygging av hus
@@ -64,3 +87,7 @@ _Snekker er ikke feil, men tømrer er mer presist når man snakker om strukturel
 ## Relaterte ord
 
 håndverker · byggherre · murer · elektriker · rørlegger
+
+---
+
+_→ Vil du lære forskjellen mellom å bytte og å skifte? Les: [Bytte vs Skifte](/blog/bytte-vs-skifte)_

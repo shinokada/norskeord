@@ -4,6 +4,7 @@ description: '"Sakte" er det naturlige valget i samtale, mens "langsomt" er vanl
 slug: sakte-vs-langsomt
 cefr: A2
 publishedAt: 2026-05-21
+updatedAt: 2026-09-12
 tags: [adverbs, adjectives, vocabulary]
 decks:
   - level: a2
@@ -126,6 +127,28 @@ _Når et adjektiv beskriver et substantiv, er **langsom** den riktige formen —
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Kan du snakke \______, vær så snill?»**
+a) sakte
+b) langsom
+
+**Svar:** a) sakte — det naturlige hverdagsordet i tale.
+
+**2. Velg riktig ord: «Det er en ______ prosess.»**
+a) sakte
+b) langsom
+
+**Svar:** b) langsom — adjektivformen beskriver substantivet **prosess**.
+
+**3. Velg riktig ord: «Kan du snakke litt \______?»**
+a) mer langsomt
+b) saktere
+
+**Svar:** b) saktere — komparativ dannes ikke med «mer» på norsk.
+
+---
+
 ## Husk dette
 
 - **sakte** → hverdagslig adverb, standard i samtale
@@ -145,3 +168,7 @@ snakk sakte · gå sakte · saktere · det går sakte · en langsom prosess · t
 ## Relaterte ord
 
 fort · raskt · hurtig · treg · rolig · stille
+
+---
+
+_→ Vil du lære forskjellen mellom **fort** og **raskt**? Les: [Fort vs Raskt](/blog/fort-vs-raskt)_

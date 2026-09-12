@@ -4,6 +4,7 @@ description: 'Sikkert kan bety både «helt sikkert» og «sannsynligvis» – o
 slug: sikkert
 cefr: B1
 publishedAt: 2026-07-22
+updatedAt: 2026-09-12
 tags: [adverbs, vocabulary]
 decks:
   - level: b1
@@ -98,6 +99,28 @@ _Bruk enten sikkerhet (**det er sikkert at**) eller sannsynlighet (**sikkert** s
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig tolkning: «Han er sikkert hjemme.»**
+a) 100 % sikkert
+b) sannsynligvis
+
+**Svar:** b) sannsynligvis — den vanligste bruken i dagligtale.
+
+**2. Velg riktig setning for å uttrykke total sikkerhet:**
+a) Det er sikkert at hun kommer.
+b) Hun kommer sikkert.
+
+**Svar:** a) — konstruksjonen **det er sikkert at** uttrykker bekreftet sikkerhet.
+
+**3. Hvilket ord er mer formelt og nøytralt for «sannsynligvis»?**
+a) sikkert
+b) sannsynligvis
+
+**Svar:** b) sannsynligvis — mer presist og saklig enn sikkert.
+
+---
+
 ## Husk dette
 
 - **det er sikkert at …** → sikkerhet — noe er bekreftet
@@ -116,3 +139,7 @@ det er sikkert · én ting er sikkert · sikkert nok · det er sikkert sant · h
 ## Relaterte ord
 
 sannsynligvis · kanskje · trolig · helt sikkert · garantert · muligens
+
+---
+
+_→ Vil du lære forskjellen mellom **trolig**, **sannsynligvis** og **sikkert**? Les: [Trolig vs Sannsynligvis vs Sikkert](/blog/trolig-vs-sannsynligvis-vs-sikkert)_

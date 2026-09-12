@@ -4,6 +4,7 @@ description: 'God dag høres stivt og gammeldags ut i moderne norsk. Her er det 
 slug: god-dag-er-gammeldags
 cefr: A1
 publishedAt: 2026-06-16
+updatedAt: 2026-09-12
 tags: [greetings, vocabulary, speaking, register]
 ---
 
@@ -87,6 +88,28 @@ _På telefon sier nordmenn hei eller hallo — ikke god dag._
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig hilsen ved en tilfeldig samtale med en venn:**
+a) God dag!
+b) Hei!
+
+**Svar:** b) Hei! — god dag høres stivt og gammeldags ut.
+
+**2. Når passer «god morgen» best?**
+a) Bare om morgenen
+b) Når som helst på dagen
+
+**Svar:** a) Bare om morgenen — hilsenen er tidsbegrenset.
+
+**3. Hvilken avskjed passer bare når noen faktisk skal sove?**
+a) Ha det bra
+b) God natt
+
+**Svar:** b) God natt.
+
+---
+
 ## Husk dette
 
 - **Hei** er den universelle norske hilsenen — bruk den alltid
@@ -107,3 +130,7 @@ _På telefon sier nordmenn hei eller hallo — ikke god dag._
 ## Relaterte emner
 
 hilsener · avskjed · register · uformelt norsk · telefon-norsk
+
+---
+
+_→ Vil du lære når nordmenn faktisk bruker **hallo**? Les: [Hallo — når nordmenn faktisk bruker det](/blog/hallo)_

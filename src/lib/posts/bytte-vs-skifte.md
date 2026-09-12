@@ -4,6 +4,7 @@ description: 'Bytte betyr alltid en utveksling mellom to parter. Skifte kan bruk
 slug: bytte-vs-skifte
 cefr: A2
 publishedAt: 2026-05-21
+updatedAt: 2026-09-12
 tags: [verbs, vocabulary]
 decks:
   - level: a2
@@ -64,6 +65,28 @@ _Skifte brukes ikke når man utveksler noe med en annen person — bare bytte fu
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Jeg må ______ dekk før vinteren.»**
+a) bytte
+b) skifte
+
+**Svar:** a) bytte — å erstatte én ting med en annen.
+
+**2. Velg riktig ord: «Bladene ______ farge om høsten.»**
+a) bytter
+b) skifter
+
+**Svar:** b) skifter — en naturlig overgang i tilstand.
+
+**3. Velg riktig ord: «Jeg ______ plass med ham.»**
+a) byttet
+b) skiftet
+
+**Svar:** a) byttet — å utveksle noe med noen krever **bytte**.
+
+---
+
 ## Husk dette
 
 - **bytte** → erstatte noe med noe annet
@@ -83,3 +106,7 @@ _Skifte brukes ikke når man utveksler noe med en annen person — bare bytte fu
 ## Relaterte ord
 
 endre · forandre · erstatte · veksle · overgå
+
+---
+
+_→ Vil du lære forskjellen mellom å begynne og å starte? Les: [Begynne vs Starte](/blog/begynne-vs-starte)_

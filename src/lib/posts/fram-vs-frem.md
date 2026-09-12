@@ -4,6 +4,7 @@ description: 'Fram og frem betyr det samme. Forskjellen handler om stil: fram er
 slug: fram-frem
 cefr: A2
 publishedAt: 2026-07-08
+updatedAt: 2026-09-12
 tags: [vocabulary, spelling, grammar]
 decks:
   - level: a2
@@ -74,6 +75,28 @@ Noen sammensatte former er mye vanligere med **frem** i skriftlig norsk:
 ⭕ _Fremover_ — den standard skriftlige formen.
 
 _Begge formene er teknisk sett korrekte på bokmål, men \**frem-\**formene er tryggere i formelle sammenhenger._
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Hvilken form er tryggest å bruke i en formell eksamensbesvarelse?**
+a) fram
+b) frem
+
+**Svar:** b) frem — standardformen i formell skriving.
+
+**2. Velg riktig ord: «Vi kom ______ til Oslo klokka fem.»**
+a) fram/frem (begge riktige)
+b) bare fram
+
+**Svar:** a) — begge former betyr det samme og er korrekte.
+
+**3. Hvilket ord betyr «ankommet» og brukes oftest i skrift?**
+a) framme
+b) fremme
+
+**Svar:** b) fremme — særlig vanlig i skriftlig norsk.
 
 ---
 

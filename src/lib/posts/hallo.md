@@ -3,7 +3,8 @@ title: 'Hallo — når nordmenn faktisk bruker det'
 description: 'Hallo er ikke det samme som «hei» i norsk dagligtale. Det brukes når man svarer i telefonen eller vil få noens oppmerksomhet – ikke som en vanlig hilsen når man møter folk.'
 slug: hallo
 cefr: A1
-publishedAt: 2026-10-21
+publishedAt: 2026-10-14
+updatedAt: 2026-09-12
 tags: [greetings, vocabulary, speaking, register, phrases]
 decks:
   - level: a1
@@ -98,6 +99,28 @@ _Hallo i ansikt-til-ansikt-situasjoner høres litt unorsk ut — som om du overs
 ⭕ **Hallo?** — hei kan brukes på telefonen, men hallo er mer naturlig som åpning.
 
 _Mange sier «Hei» på telefon også — særlig til noen de kjenner — men **hallo** er den klassiske telefon-åpningen._
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Du åpner døra og sier: \______!»**
+a) Hallo
+b) Hei
+
+**Svar:** b) Hei — hallo er ikke naturlig ansikt til ansikt.
+
+**2. Velg riktig ord: «Du svarer telefonen: \______?»**
+a) Hallo
+b) Hei hei
+
+**Svar:** a) Hallo — den klassiske telefonåpningen.
+
+**3. Velg riktig ord: «\______? Hører du meg?» (noen er uoppmerksom)**
+a) Hei
+b) Hallo
+
+**Svar:** b) Hallo — brukes for å få oppmerksomhet.
 
 ---
 

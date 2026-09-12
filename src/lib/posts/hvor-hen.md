@@ -4,6 +4,7 @@ description: '«Hen» gir en retningsnyanse til «hvor» og er vanlig i muntlig 
 slug: hvor-hen
 cefr: B1
 publishedAt: 2026-09-23
+updatedAt: 2026-09-12
 tags: [vocabulary, expressions, phrases, adverbs]
 decks:
   - level: b1
@@ -110,6 +111,28 @@ _I indirekte spørsmål kommer **hen** til slutt, etter verbet._
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning:**
+a) Hvor hen skal du?
+b) Hvor skal du hen?
+
+**Svar:** b) — **hen** kommer alltid etter verbet, aldri rett etter **hvor**.
+
+**2. Er «hen» obligatorisk i «Hvor skal du (hen)?»?**
+a) Ja, setningen er ugrammatisk uten det
+b) Nei, det er valgfritt
+
+**Svar:** b) — setningen betyr det samme uten **hen**, men høres mer muntlig ut med det.
+
+**3. Velg riktig setning i et indirekte spørsmål:**
+a) Jeg vet ikke hen hvor hun er.
+b) Jeg vet ikke hvor hun er hen.
+
+**Svar:** b) — **hen** kommer til slutt, etter verbet.
+
+---
+
 ## Husk dette
 
 - **hen** etter **hvor** tilføyer en lett retnings- eller plasseringsnuanse
@@ -128,3 +151,7 @@ Hvor skal du hen? · Hvor er du hen? · Jeg vet ikke hvor de er hen · Hvor skal
 ## Relaterte ord
 
 hvor · dit · hit · herfra · hvorfra · retning
+
+---
+
+_→ Vil du lære om forskjellen mellom retning og sted på norsk? Les: [Retning vs. sted](/blog/retning-vs-sted)_

@@ -4,6 +4,7 @@ description: 'I norske helsetninger må verbet alltid være det andre leddet –
 slug: v2-regelen
 cefr: A2
 publishedAt: 2026-06-03
+updatedAt: 2026-09-12
 tags: [grammar]
 decks:
   - level: a1
@@ -108,6 +109,28 @@ _Når tid eller sted kommer først, må subjektet bytte plass med verbet._
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ordstilling: «I går ______ Per brød.»**
+a) kjøpte ikke
+b) ikke kjøpte
+
+**Svar:** a) kjøpte ikke — verbet må stå på andre plass.
+
+**2. Velg riktig setning når tid kommer først:**
+a) Klokka åtte Ida spiser frokost.
+b) Klokka åtte spiser Ida frokost.
+
+**Svar:** b) — subjekt og verb bytter plass (inversjon).
+
+**3. Hvor står **ikke** i en helsetning?**
+a) Før verbet
+b) Etter verbet
+
+**Svar:** b) Etter verbet.
+
+---
+
 ## Husk dette
 
 - Verbet er **alltid** på andre plass i norske hovedsetninger
@@ -130,3 +153,7 @@ _Når tid eller sted kommer først, må subjektet bytte plass med verbet._
 ## Relaterte emner
 
 leddsetninger · setningsadverbial · ikke-plassering · spørsmålsordstilling
+
+---
+
+_→ Vil du forstå leddsetninger og hvordan «ikke» flytter seg der? Les: [Leddsetninger](/blog/leddsetninger)_

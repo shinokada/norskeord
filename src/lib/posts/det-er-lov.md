@@ -4,6 +4,7 @@ description: '«Det er lov» betyr at noe er tillatt eller greit. Det samme orde
 slug: det-er-lov
 cefr: A2
 publishedAt: 2026-09-04
+updatedAt: 2026-09-12
 tags: [vocabulary, expressions, grammar]
 decks:
   - level: a2
@@ -103,6 +104,28 @@ _**Lovlig** er mer formelt. **Det er lov** er det hverdagslige uttrykket for «d
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning:**
+a) Det er lov å røyke ikke her.
+b) Det er ikke lov å røyke her.
+
+**Svar:** b) — **ikke** kommer før **lov** i den faste nektingsformen.
+
+**2. Velg riktig ord: «Stortinget vedtar \______.»**
+a) lov
+b) lover
+
+**Svar:** b) lover — her er **lov** et substantiv i flertall (lovgivning), ikke uttrykket for tillatelse.
+
+**3. Hvilken setning betyr «it is okay to ask»?**
+a) Er det lov å spørre?
+b) Er det en lov å spørre?
+
+**Svar:** a) — uten **en** betyr **lov** her tillatelse, ikke lovgivning.
+
+---
+
 ## Husk dette
 
 - **det er lov å + infinitiv** = det er tillatt / greit å …
@@ -121,3 +144,7 @@ det er lov · det er ikke lov · er det lov? · det er lov å prøve · det er l
 ## Relaterte ord
 
 tillatt · lovlig · forbudt · greit · lov og orden · regel
+
+---
+
+_→ Vil du lære flere norske uttrykk med **det**? Les: [10 det-uttrykk du trenger å kunne](/blog/det-uttrykk)_

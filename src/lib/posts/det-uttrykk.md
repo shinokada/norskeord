@@ -4,7 +4,7 @@ description: 'Mange av de mest nyttige norske uttrykkene starter med «det» —
 slug: det-uttrykk
 cefr: B1
 publishedAt: 2026-06-01
-updatedAt: 2026-06-01
+updatedAt: 2026-09-12
 tags: [expressions, vocabulary, speaking, b1]
 decks:
   - level: a1
@@ -143,6 +143,36 @@ Prøv å bytte ut vage engelskpåvirkede svar med disse uttrykkene:
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig uttrykk: «Kommer han i kveld? — \______, jeg er ikke sikker.»**
+a) Det gir mening
+b) Det spørs
+
+**Svar:** b) Det spørs — brukes for å uttrykke tvil eller nøling.
+
+**2. Velg riktig uttrykk: «— Du jobber her, ikke sant? — Ja, \______.»**
+a) det stemmer
+b) det betyr
+
+**Svar:** a) det stemmer — en enkel bekreftelse.
+
+**3. Velg riktig uttrykk: «Skal vi gå tur? ______ været.»**
+a) Det kommer an på
+b) Det er verdt det
+
+**Svar:** a) Det kommer an på — et universelt forbehold.
+
+---
+
 ## Relaterte emner
 
 norskprøven-uttrykk · muntlig norsk · setningsadverbial · det som formelt subjekt
+
+---
+
+_→ Vil du forstå hvorfor norske setninger ofte begynner med **det**? Les: ["Det" som formelt subjekt](/blog/det-som-formelt-subjekt)_
+
+_→ Vil du lære forskjellen mellom å fortelle, snakke, tale og si? Les: [Fortelle vs Snakke vs Tale vs Si](/blog/fortelle-snakke-tale-si)_
+
+_→ Vil du lære flere norske idiomer? Les: [Norske uttrykk: beina på jorda, lange ører og jernhånd](/blog/norske-uttrykk)_

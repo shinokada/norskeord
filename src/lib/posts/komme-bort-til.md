@@ -4,6 +4,7 @@ description: '«Komme bort til» betyr å gå bort til eller nærme seg noen. Pa
 slug: komme-bort-til
 cefr: B1
 publishedAt: 2026-09-09
+updatedAt: 2026-09-12
 tags: [verbs, vocabulary, phrasal-verbs]
 decks:
   - level: b1
@@ -99,6 +100,28 @@ _Ikke kombiner **nærme seg** og **bort til** — de uttrykker det samme._
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Han ______ henne og sa hei.»**
+a) kom bort til
+b) kom bort fra
+
+**Svar:** a) kom bort til — bevegelse mot noen.
+
+**2. Velg riktig ord: «Ga bort ______ døra, det er kaldt.»**
+a) til
+b) fra
+
+**Svar:** b) fra — bevegelse vekk fra noe.
+
+**3. Hvilket uttrykk betyr det samme som å nærme seg noen?**
+a) komme bort til
+b) falle bort
+
+**Svar:** a) komme bort til — gikk bort til / nærmet seg.
+
+---
+
 ## Husk dette
 
 - **komme bort til** = gå bort til / nærme seg — **ikke** «come away»
@@ -116,3 +139,7 @@ komme bort til · gå bort til · løpe bort til · bevege seg bort til · nærm
 ## Relaterte ord
 
 nærme seg · gå bort fra · tilnærme seg · approach · bevege seg mot
+
+---
+
+_→ Vil du lære om **få** kombinert med ulike partikler? Les: [Få + partikel](/blog/fa)_

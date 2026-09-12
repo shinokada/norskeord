@@ -4,6 +4,7 @@ description: '«Holde på å» brukes når du er midt i noe eller er i ferd med 
 slug: holde-pa-a
 cefr: B1
 publishedAt: 2026-10-02
+updatedAt: 2026-09-12
 tags: [verbs, vocabulary, phrasal-verbs, expressions]
 decks:
   - level: b1
@@ -130,3 +131,7 @@ holder på å sovne · holder på å le seg i hjel · holder på å gå tom for 
 ## Relaterte ord
 
 være i ferd med å · nær ved å · holde på · drive med · være opptatt med
+
+---
+
+_→ Vil du lære forskjellen mellom å begynne og å starte? Les: [Begynne vs Starte](/blog/begynne-vs-starte)_

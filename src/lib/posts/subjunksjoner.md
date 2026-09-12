@@ -4,6 +4,7 @@ description: 'Subjunksjoner innleder leddsetninger og utløser en endring i setn
 slug: subjunksjoner
 cefr: B1
 publishedAt: 2026-09-18
+updatedAt: 2026-09-12
 tags: [grammar, word-order, sentence-structure, conjunctions]
 decks:
   - level: b1
@@ -188,6 +189,28 @@ Brukes for å introdusere en setning som fungerer som objekt eller subjekt.
 | Hensikt    | for at · slik at                                             |
 | Resultat   | så … at                                                      |
 | Innhold    | at · om                                                      |
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning:**
+a) hvis vi kan ikke komme
+b) hvis vi ikke kan komme
+
+**Svar:** b) — **ikke** kommer før verbet i leddsetninger.
+
+**2. Hvilken subjunksjon betyr «since/because», ikke «since (tid)»?**
+a) siden (årsak)
+b) før
+
+**Svar:** a) siden — kan bety både tid og årsak; kontekst avgjør.
+
+**3. Velg riktig ord for nyere hendelser: «\______ vi reiser til Oslo …»**
+a) Da
+b) Når
+
+**Svar:** b) Når — **da** brukes bare om spesifikke fortidshendelser.
 
 ---
 

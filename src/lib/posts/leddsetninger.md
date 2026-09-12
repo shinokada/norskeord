@@ -4,6 +4,7 @@ description: 'En leddsetning kan ikke stå alene – den fyller en rolle inne i 
 slug: leddsetninger
 cefr: B1
 publishedAt: 2026-10-07
+updatedAt: 2026-09-12
 tags: [grammar, word-order, sentence-structure, conjunctions]
 decks:
   - level: b1
@@ -190,6 +191,28 @@ Når du leser norsk og støter på en klausul, spør deg:
 
 3. **Er den innledet av et av ordene i tabellen over?**
    → Sannsynligvis en leddsetning.
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig setning:**
+a) Jeg vet at han er ikke hjemme.
+b) Jeg vet at han ikke er hjemme.
+
+**Svar:** b) — i leddsetninger kommer **ikke** før det finitte verbet.
+
+**2. Hvilken av disse kan stå alene som en fullstendig setning?**
+a) fordi han kommer
+b) han kommer
+
+**Svar:** b) han kommer — dette er en helsetning.
+
+**3. Velg riktig ordstilling i et indirekte spørsmål:**
+a) Jeg vet ikke hvorfor han ikke kommer.
+b) Jeg vet ikke hvorfor kommer han ikke.
+
+**Svar:** a) — leddsetningens ordstilling: subjekt + ikke + verb.
 
 ---
 

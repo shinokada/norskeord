@@ -4,6 +4,7 @@ description: 'fort og raskt betyr begge raskt, men fort er mer muntlig og kan og
 slug: fort-vs-raskt
 cefr: A2
 publishedAt: 2026-08-28
+updatedAt: 2026-09-12
 tags: [adverbs, adjectives, vocabulary]
 decks:
   - level: a2
@@ -111,6 +112,28 @@ _Bare **fort** kan bety "snart" — **raskt** kan ikke det._
 
 ---
 
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig ord: «Vi sees \______!» (betyr «snart»)**
+a) fort
+b) raskt
+
+**Svar:** a) fort — bare **fort** kan bety «snart».
+
+**2. Velg riktig ord: «Det er en ______ løsning.»**
+a) fort
+b) rask
+
+**Svar:** b) rask — adjektivet beskriver substantivet **løsning**.
+
+**3. Velg riktig ord: «Situasjonen utviklet seg \______.» (nyhetsspråk)**
+a) fort
+b) raskt
+
+**Svar:** b) raskt — mer nøytralt og formelt, passer i nyhetsregister.
+
+---
+
 ## Husk dette
 
 - **fort** → raskt (uformelt / muntlig) + snart
@@ -134,3 +157,5 @@ fortere · fortest · raskere · raskest · sakte · langsomt · snart
 ---
 
 _→ Vil du lære forskjellen mellom **sakte** og **langsomt**? Les: [Sakte vs Langsomt](/blog/sakte-vs-langsomt)_
+
+_→ Vil du lære forskjellen mellom **ennå** og **enda**? Les: [Ennå vs enda](/blog/enna-vs-enda)_

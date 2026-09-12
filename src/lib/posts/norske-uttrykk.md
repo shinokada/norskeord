@@ -4,6 +4,7 @@ description: 'Tre vanlige norske uttrykk forklart: å ha begge beina på jorda, 
 slug: norske-uttrykk
 cefr: B1
 publishedAt: 2026-06-11
+updatedAt: 2026-09-12
 tags: [expressions, vocabulary, idioms, b1]
 decks:
   - level: b1
@@ -87,3 +88,29 @@ Eksempler:
 Uttrykket ligner på engelsk:
 
 - "to rule with an iron fist" / "iron hand"
+
+---
+
+## Norskprøven — eksempelspørsmål
+
+**1. Velg riktig uttrykk: «Selv om hun er kjent, har hun \______.»**
+a) lange ører
+b) begge beina på jorda
+
+**Svar:** b) begge beina på jorda — hun er fortsatt realistisk og jordnær.
+
+**2. Velg riktig uttrykk: «Vær forsiktig med hva du sier — hun \______.»**
+a) har lange ører
+b) styrer med jernhånd
+
+**Svar:** a) har lange ører — hun får lett med seg det andre snakker om.
+
+**3. Velg riktig uttrykk: «Diktatoren ______ landet.»**
+a) styrte med jernhånd
+b) hadde lange ører
+
+**Svar:** a) styrte med jernhånd — streng og hard kontroll.
+
+---
+
+_→ Vil du lære flere norske uttrykk som starter med **det**? Les: [10 det-uttrykk du trenger å kunne](/blog/det-uttrykk)_

@@ -4,7 +4,8 @@ description: 'Norsk har fire vanlige verb for å snakke – og velger du feil, h
 slug: fortelle-snakke-tale-si
 cefr: [A2, B1]
 type: guide
-publishedAt: 2026-11-18
+publishedAt: 2026-10-28
+updatedAt: 2026-09-12
 tags: [verbs, vocabulary]
 ---
 
@@ -187,3 +188,7 @@ Velg riktig verb: **snakke / fortelle / tale / si**
 ## Relaterte ord
 
 kommunisere · diskutere · forklare · beskrive · rapportere · melde
+
+---
+
+_→ Vil du lære flere norske uttrykk som starter med **det**? Les: [10 det-uttrykk du trenger å kunne](/blog/det-uttrykk)_
