@@ -144,3 +144,5 @@ hente · frakte · levere · føre til · forårsake · få tak i
 _→ Vil du lære flere uttrykk med **få**? Les: [Få + partikel — tak i, til, på, i gang](/blog/fa)_
 
 _→ Lurer du på uttrykket **finne fram**? Les: [Finne fram — ta fram / hente fram](/blog/finner-fram)_
+
+_→ Vil du lære forskjellen mellom **ta** og **få**? Les: [Ta vs Få](/blog/ta-vs-fa)_

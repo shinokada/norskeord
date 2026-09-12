@@ -159,3 +159,5 @@ _→ Vil du lære forskjellen mellom å bringe og ta med seg noe? Les: [Bringe v
 _→ Vil du lære mer om **få på**? Les: [Få noe på — klare å få noe på seg](/blog/fa-noe-pa)_
 
 _→ Vil du lære uttrykket å nærme seg noen? Les: [Komme bort til](/blog/komme-bort-til)_
+
+_→ Vil du lære forskjellen mellom **ta** og **få**? Les: [Ta vs Få](/blog/ta-vs-fa)_

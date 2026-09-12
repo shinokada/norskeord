@@ -159,3 +159,5 @@ V2-regelen · formelt subjekt · leddsetninger · setningsbygning
 ---
 
 _→ Vil du lære flere norske uttrykk som starter med **det**? Les: [10 det-uttrykk du trenger å kunne](/blog/det-uttrykk)_
+
+_→ Vil du lære forskjellen mellom **seg** og **sin**? Les: [Seg vs Sin](/blog/seg-vs-sin)_

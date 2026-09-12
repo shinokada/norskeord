@@ -114,3 +114,5 @@ Norwegian spelling is highly phonetic, but spoken Norwegian compresses words hea
 ---
 
 _→ Looking for more study tips? Read: [Slik bruker du Norskeord best](/blog/slik-bruker-du-norskeord)_
+
+_→ Skal du opp til muntlig norskprøve? Les: [Å beskrive nordmenn på norskprøven](/blog/om-nordmenn-i-muntlig)_

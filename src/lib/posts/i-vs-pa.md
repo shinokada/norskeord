@@ -166,3 +166,5 @@ sted · arrangement · besøke · institusjon · bygning
 ---
 
 _→ Vil du lære hvordan **i, for** og **på** brukes med tid i stedet for sted? Les: [I, For og På — tidsuttrykk på norsk](/blog/i-for-pa-tid)_
+
+_→ Vil du lære forskjellen mellom **ved** og **på**? Les: [Ved vs På — nær noe eller på en overflate](/blog/ved-vs-pa)_

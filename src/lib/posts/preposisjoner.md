@@ -199,3 +199,5 @@ _→ Vil du lære mer om preposisjoner og tid? Les: [I, For, og På — Time Exp
 _→ Vil du lære mer om retning og sted? Les: [Direction vs Location — Hjem/Hjemme, Ut/Ute, Inn/Inne](/blog/retning-vs-sted)_
 
 _→ Vil du lære forskjellen mellom **for** og **til** når noen er mottaker av noe? Les: [For vs Til](/blog/for-vs-til)_
+
+_→ Vil du lære forskjellen mellom **ved** og **på**? Les: [Ved vs På — nær noe eller på en overflate](/blog/ved-vs-pa)_

@@ -151,3 +151,5 @@ innrømme · godta · innse · verdsette · identifisere
 ---
 
 _→ Vil du lære forskjellen mellom fire norske verb for å snakke? Les: [Fortelle vs Snakke vs Tale vs Si](/blog/fortelle-snakke-tale-si)_
+
+_→ Vil du lære en produktiv sammensetningsmåte for substantiv? Les: [Ord med -vern — sammensetninger for beskyttelse og sikring](/blog/ord-med-vern)_
