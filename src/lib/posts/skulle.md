@@ -149,3 +149,5 @@ ville · måtte · burde · kunne · få til · ha tenkt å
 _→ Vil du lære mer om V2-regelen og norsk setningsbygning? Les: [V2-regelen](/blog/v2-regelen)_
 
 _→ Vil du lære forskjellen mellom å begynne og å starte? Les: [Begynne vs Starte](/blog/begynne-vs-starte)_
+
+_→ Vil du lære forskjellen mellom **vil** og **ønsker**? Les: [Vil vs Ønsker](/blog/onsker-vs-vil)_

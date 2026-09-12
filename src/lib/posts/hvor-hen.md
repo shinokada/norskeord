@@ -154,3 +154,5 @@ hvor · dit · hit · herfra · hvorfra · retning
 ---
 
 _→ Vil du lære om forskjellen mellom retning og sted på norsk? Les: [Retning vs. sted](/blog/retning-vs-sted)_
+
+_→ Vil du lære hvordan **som helst** brukes sammen med hva, hvem og hvor? Les: [Som helst — hva, hvem, hvor, når som helst](/blog/som-helst)_

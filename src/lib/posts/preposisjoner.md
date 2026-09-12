@@ -197,3 +197,5 @@ Den raskeste måten å internalisere preposisjoner på er å lære dem som faste
 _→ Vil du lære mer om preposisjoner og tid? Les: [I, For, og På — Time Expressions](/blog/i-for-pa-tid)_
 
 _→ Vil du lære mer om retning og sted? Les: [Direction vs Location — Hjem/Hjemme, Ut/Ute, Inn/Inne](/blog/retning-vs-sted)_
+
+_→ Vil du lære forskjellen mellom **for** og **til** når noen er mottaker av noe? Les: [For vs Til](/blog/for-vs-til)_

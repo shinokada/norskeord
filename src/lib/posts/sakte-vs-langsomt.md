@@ -172,3 +172,5 @@ fort · raskt · hurtig · treg · rolig · stille
 ---
 
 _→ Vil du lære forskjellen mellom **fort** og **raskt**? Les: [Fort vs Raskt](/blog/fort-vs-raskt)_
+
+_→ Vil du lære forskjellen mellom **annerledes** og **forskjellig**? Les: [Annerledes vs Forskjellig](/blog/annerledes-vs-forskjellig)_

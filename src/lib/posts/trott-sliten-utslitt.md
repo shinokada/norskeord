@@ -185,3 +185,5 @@ søvnig · utmattet · erschöpft · energiløs · avslapning · hvile · sove
 ---
 
 _→ Vil du lære den doble betydningen av **ordentlig**? Les: [Ordentlig — skikkelig, virkelig eller anstendig?](/blog/ordentlig)_
+
+_→ Vil du lære forskjellen mellom **opptatt** og **travel/travelt**? Les: [Opptatt vs Travel/Travelt](/blog/opptatt-vs-travelt)_
