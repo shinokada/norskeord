@@ -4,6 +4,7 @@ description: 'Selv har tre hovedbetydninger: forsterkende pronomen (meg selv), s
 slug: selv
 cefr: B1
 publishedAt: 2027-02-17
+updatedAt: 2026-09-13
 tags: [pronouns, conjunctions, vocabulary]
 decks:
   - level: b1
@@ -18,7 +19,7 @@ decks:
 
 ## Kort forklaring
 
-**Selv** bøyes ikke — samme form brukes uansett kjønn og tall:
+**Selv** har én ubøyd form i de tre bruksmåtene under. Det finnes også en egen attributiv form, **selve** (som i «selve byen»), forklart i eget avsnitt nedenfor:
 
 - **forsterkende pronomen** → meg selv, deg selv, ham selv, henne selv, oss selv, dere selv, seg selv
 - **selv om** → «although / even though», innleder en leddsetning
@@ -85,6 +86,20 @@ Sammenlign:
 
 ---
 
+## 4. Selve — den attributive formen
+
+**Selve** er en bøyd, attributiv form av **selv**. Den står foran et substantiv og understreker at det er nettopp dette — «den rette», «den virkelige».
+
+**1. Selve byen er ikke så stor.**
+→ Byen i seg selv, uavhengig av omgivelsene.
+
+**2. Jeg tror det var selve presten.**
+→ Presten selv — ingen annen.
+
+**Merk:** **Selve** brukes bare foran et substantiv. De tre andre bruksmåtene over (forsterkende pronomen, selv om, selv + preposisjonsuttrykk) bruker alltid den ubøyde formen **selv**.
+
+---
+
 ## Sammenligningstabell
 
 | Bruk                        | Funksjon                       | Eksempel                       |
@@ -92,6 +107,7 @@ Sammenlign:
 | **forsterkende pronomen**    | understreker «uten hjelp» / hvem | Jeg gjorde det **selv**.        |
 | **selv om**                  | subjunksjon, «although»         | **Selv om** det regner, ...     |
 | **selv + preposisjonsuttrykk** | «even», fremhever noe uventet   | **selv i** en travel hverdag    |
+| **selve** (attributiv form)  | «den rette/virkelige», foran substantiv | **selve** byen           |
 
 ---
 
@@ -102,7 +118,7 @@ Både **selv** og **enda** kan oversettes med «even» på engelsk, men de bruke
 - **enda** forsterker en komparativ eller et adjektiv: **enda verre**, **enda flinkere**.
 - **selv** forsterker et substantiv, pronomen eller preposisjonsuttrykk: **selv statsministeren**, **selv i Norge**.
 
-De kan ikke bytte plass: ❌ *enda i Norge*, ❌ *selv verre*.
+De to ordene kan ikke bytte plass i denne betydningen — **selv i Norge** kan ikke erstattes med **enda i Norge** når betydningen er «even in Norway». (**Enda i Norge** er likevel en fullt grammatisk setning når **enda** betyr «fortsatt»: «Er du enda i Norge?» = «Are you still in Norway?».) På samme måte kan ikke **selv** erstatte **enda** foran en komparativ: ❌ *selv verre*.
 
 ---
 
@@ -144,7 +160,7 @@ b) selv om
 
 ## Husk dette
 
-- **selv** bøyes ikke — samme form for alle personer
+- **selv** har én ubøyd form i pronomen-, selv om- og preposisjonsbruken; **selve** er en egen attributiv form foran substantiv (selve byen)
 - **forsterkende pronomen** → uten hjelp / for å fremheve hvem (meg selv, seg selv)
 - **selv om** → subjunksjon, «although», utløser ordstillingsregelen for **ikke**
 - **selv + preposisjonsuttrykk** → «even», fremhever noe uventet

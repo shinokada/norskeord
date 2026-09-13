@@ -4,6 +4,7 @@ description: 'Tettsted er et statistisk begrep SSB bruker for tett bebyggelse, u
 slug: by-vs-tettsted
 cefr: A2
 publishedAt: 2027-02-19
+updatedAt: 2026-09-13
 tags: [nouns, vocabulary, culture]
 ---
 
@@ -26,7 +27,7 @@ Et sted registreres som tettsted når:
 - avstanden mellom husene normalt ikke overstiger **50 meter** (opptil 200 meter for arealkrevende bygg som boligblokker, kontorbygg og sykehus)
 - tilstøtende parker og industriområder regnes med i avgrensningen
 
-Fordi kravet bare handler om tetthet og folketall, kan et tettsted være både svært lite og svært stort. Norge har i overkant av 1000 tettsteder — fra noen få hundre innbyggere til **Oslo**, som alene teller over en million.
+Fordi kravet bare handler om tetthet og folketall, kan et tettsted være både svært lite og svært stort. Norge har i underkant av 1000 tettsteder (997 ifølge SSB i 2024) — fra noen få hundre innbyggere til **Oslo**, som alene teller over en million.
 
 **Eksempel:**
 
@@ -77,7 +78,7 @@ _Tettsted handler om bebyggelsens tetthet, ikke om stedets faktiske størrelse._
 
 ## Norskprøven — eksempelspørsmål
 
-**1. Velg riktig ord: «Ifølge SSB har landet over 1000 \______.»**
+**1. Velg riktig ord: «Ifølge SSB har landet nesten 1000 \______.»**
 a) byer
 b) tettsteder
 
