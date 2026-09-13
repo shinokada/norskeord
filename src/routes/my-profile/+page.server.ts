@@ -47,18 +47,23 @@ export const load: PageServerLoad = async ({ locals }) => {
 
   const isPlus = locals.plan === 'plus';
 
-  // ls_customer_id lives in the subscriptions table (written by the LS webhook),
-  // not in profiles. Look it up there for Plus users.
+  // Subscription lifecycle fields live in the subscriptions table (written by
+  // the LS webhook), not in profiles — the profiles.ls_* columns are legacy
+  // and are never written to. Look everything up here for Plus users.
   let billingPortalUrl: string | null = null;
   let billingInterval: string | null = null;
+  let subscriptionStatus: string | null = null;
+  let validUntil: string | null = null;
   if (isPlus) {
     const { data: sub } = await locals.supabase
       .from('subscriptions')
-      .select('lemon_squeezy_subscription_id, billing_interval')
+      .select('lemon_squeezy_subscription_id, billing_interval, status, valid_until')
       .eq('user_id', locals.user.id)
       .maybeSingle();
     const subscriptionId = sub?.lemon_squeezy_subscription_id ?? null;
     billingInterval = sub?.billing_interval ?? null;
+    subscriptionStatus = sub?.status ?? null;
+    validUntil = sub?.valid_until ?? null;
     if (subscriptionId) {
       billingPortalUrl = await fetchBillingPortalUrl(subscriptionId);
     }
@@ -68,6 +73,8 @@ export const load: PageServerLoad = async ({ locals }) => {
     profile,
     billingPortalUrl,
     billingInterval,
+    subscriptionStatus,
+    validUntil,
     user: locals.user,
     plan: locals.plan
   };

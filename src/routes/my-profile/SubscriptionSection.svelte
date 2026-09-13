@@ -8,19 +8,27 @@
     profile,
     plan,
     billingPortalUrl,
-    billingInterval
+    billingInterval,
+    subscriptionStatus,
+    validUntil
   }: {
     profile: Profile | null;
     plan: 'free' | 'plus';
     billingPortalUrl: string | null;
     billingInterval: string | null;
+    subscriptionStatus: string | null;
+    validUntil: string | null;
   } = $props();
 
   const isPlus = $derived(plan === 'plus');
 
-  // ls_status is only populated after Phase 2-B webhook integration.
-  // Until then it is null for all users — treat null as 'active' for Plus members.
-  const status = $derived(isPlus ? (profile?.ls_status ?? 'active') : (profile?.ls_status ?? null));
+  // subscriptionStatus comes from the subscriptions table (written by the LS
+  // webhook). It's only null for a brand-new Plus row created by an edge case
+  // (e.g. manual backfill without a status) — treat null as 'active' for Plus
+  // members so the UI doesn't show a broken state.
+  const status = $derived(
+    isPlus ? (subscriptionStatus ?? 'active') : subscriptionStatus
+  );
 
   // Format ISO date string to a readable date e.g. "14 June 2025"
   function formatDate(iso: string | null): string {
@@ -32,8 +40,11 @@
     });
   }
 
-  const renewsAt = $derived(formatDate(profile?.ls_renews_at ?? null));
-  const endsAt = $derived(formatDate(profile?.ls_ends_at ?? null));
+  // subscriptions.valid_until is the single end-of-current-period date: for an
+  // active subscription it's the next renewal date, for a cancelled one it's
+  // when access ends. Same value, different label depending on status.
+  const renewsAt = $derived(formatDate(validUntil));
+  const endsAt = $derived(formatDate(validUntil));
 
   // Checkout
   let checkoutLoading = $state(false);

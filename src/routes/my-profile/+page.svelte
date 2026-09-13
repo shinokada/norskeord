@@ -46,6 +46,8 @@
       plan={data.plan}
       billingPortalUrl={data.billingPortalUrl}
       billingInterval={data.billingInterval}
+      subscriptionStatus={data.subscriptionStatus}
+      validUntil={data.validUntil}
     />
     <details class="group">
       <summary class="cursor-pointer list-none py-1">

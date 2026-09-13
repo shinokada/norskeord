@@ -60,10 +60,18 @@ const originalHandle: Handle = async ({ event, resolve }) => {
     if (user) {
       const { data } = await supabase
         .from('subscriptions')
-        .select('plan')
+        .select('plan, valid_until')
         .eq('user_id', user.id)
         .maybeSingle();
-      event.locals.plan = (data?.plan as 'free' | 'plus') ?? 'free';
+
+      // Defensive fallback: don't trust `plan` alone. If valid_until has
+      // passed, treat the user as free even if the row hasn't been flipped
+      // yet — e.g. a missed subscription_expired webhook shouldn't grant
+      // permanent access. (status is intentionally not checked here —
+      // 'cancelled'/'past_due' subscribers correctly keep access until
+      // valid_until per Lemon Squeezy's standard grace-period behavior.)
+      const isExpired = !!data?.valid_until && new Date(data.valid_until) < new Date();
+      event.locals.plan = !isExpired && data?.plan === 'plus' ? 'plus' : 'free';
     } else {
       event.locals.plan = 'free';
     }
