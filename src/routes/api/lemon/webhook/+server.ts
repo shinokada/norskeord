@@ -5,9 +5,11 @@
  * table in Supabase in sync.
  *
  * Register in LS dashboard → Webhooks with events:
- *   subscription_created, subscription_updated, subscription_activated,
- *   subscription_cancelled, subscription_expired,
- *   subscription_paused, subscription_resumed
+ *   subscription_created, subscription_updated, subscription_cancelled,
+ *   subscription_expired, subscription_paused, subscription_resumed,
+ *   subscription_unpaused
+ * (subscription_activated is not a real LS event — that case is unreachable
+ * and kept only as a harmless no-op alias.)
  *
  * Uses the Supabase service role client — no user cookie available here.
  */
@@ -143,7 +145,10 @@ export const POST: RequestHandler = async ({ request }) => {
       break;
     }
 
-    case 'subscription_resumed': {
+    case 'subscription_resumed':
+    case 'subscription_unpaused': {
+      // Both mean billing is active again: 'resumed' = un-cancelled before
+      // expiry, 'unpaused' = came off a dunning/payment pause.
       const { error } = await supabase
         .from('subscriptions')
         .update({
@@ -155,7 +160,7 @@ export const POST: RequestHandler = async ({ request }) => {
         .eq('user_id', userId);
 
       if (error) {
-        console.error('[webhook] resume update failed:', error);
+        console.error('[webhook] resume/unpause update failed:', error);
         return json({ error: 'DB error' }, { status: 500 });
       }
       break;
