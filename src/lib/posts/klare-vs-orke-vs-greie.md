@@ -104,4 +104,4 @@ _→ Vil du lære mer om **få** med ulike partikler? Les: [Få + partikel — t
 
 _→ Vil du lære uttrykket **gi deg**? Les: [Gi deg — Slutt med det / La det være](/blog/gi-deg)_
 
-_→ Vil du se et annet eksempel på tre nære synonymer? Les: [Støy vs Bråk vs Spetakkel](/blog/stoy-brak-spetakkel)_
+<!-- TODO: re-add link to [Støy vs Bråk vs Spetakkel](/blog/stoy-brak-spetakkel) once that post publishes (currently scheduled 2027-02-12) -->

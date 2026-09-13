@@ -67,11 +67,16 @@ export const POST: RequestHandler = async ({ request }) => {
     case 'subscription_activated': {
       const ourStatus: SubscriptionStatus =
         lsStatus === 'active' || lsStatus === 'on_trial' ? 'active' : 'past_due';
+      // 'unpaid' means a renewal payment failed and LS is (or has finished) dunning.
+      // Lemon Squeezy can leave a subscription in this state indefinitely with no
+      // ends_at set, so we must not grant Plus while status is unpaid — otherwise
+      // a null valid_until would let hooks.server.ts treat access as never-expiring.
+      const plan = lsStatus === 'unpaid' ? 'free' : 'plus';
 
       const { error } = await supabase.from('subscriptions').upsert(
         {
           user_id: userId,
-          plan: 'plus',
+          plan,
           status: ourStatus,
           billing_interval: attrs.billing_interval ?? null,
           valid_until: attrs.ends_at ?? null,
