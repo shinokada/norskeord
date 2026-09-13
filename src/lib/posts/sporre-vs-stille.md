@@ -27,7 +27,7 @@ decks:
 1. Jeg **spurte** ham hvor han bor.
 2. Hun **spurte** læreren om hjelp.
 3. Kan jeg **spørre** deg om noe?
-4. Han **spurte** meg et spørsmål.
+4. Han **spurte** meg om noe.
 
 **Spørre** fokuserer på selve handlingen — å be noen om et svar.
 

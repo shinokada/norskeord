@@ -70,6 +70,8 @@ Dette paret viser forskjellen tydelig:
 > **Fisken ligger på disken.**
 → Fisken er fysisk plassert oppå disken — en overflate.
 
+<!-- -->
+
 > **Du kjøper fisk ved ferskvaredisken.**
 → Du befinner deg i nærheten av/ved disken når du handler.
 
@@ -110,7 +112,7 @@ Begge setningene handler om samme disk, men **på** beskriver overflaten, mens *
 ❌ Jeg venter på bussholdeplassen når jeg egentlig mener rett utenfor den.
 ⭕ Jeg venter **ved** bussholdeplassen.
 
-_**På** bussholdeplassen betyr at du står akkurat på selve holdeplassen (f.eks. på perrongen). **Ved** beskriver at du er i nærheten av den._
+_**På** bussholdeplassen betyr at du befinner deg akkurat der selve holdeplassen er. **Ved** beskriver at du er et sted i nærheten av den, ikke nødvendigvis nøyaktig der._
 
 ❌ Fisken ligger ved disken. _(når du mener at den er fysisk plassert oppå den)_
 ⭕ Fisken ligger **på** disken.

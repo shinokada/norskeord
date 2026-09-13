@@ -51,7 +51,7 @@ decks:
 - **naturvern** → bevaring av naturområder, dyr og planter.
   **Naturvern** handler om å ta vare på leveområdene deres.
 - **dyrevern** → beskyttelse av dyr mot mishandling og lidelse.
-  **Dyrevernloven** forbyr dårlig behandling av dyr.
+  **Dyrevelferdsloven** har regler som skal beskytte dyr mot mishandling og lidelse.
 - **jordvern** → bevaring av dyrket mark til matproduksjon.
   **Jordvern** er viktig for å sikre matproduksjonen i fremtiden.
 

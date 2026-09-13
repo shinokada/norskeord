@@ -63,7 +63,7 @@ Mønsteret er det samme uansett kjønn eller tall: **han → seg**, **hun → se
 | en-ord | **sin** | bilen sin |
 | ei-ord | **si** | boka si |
 | et-ord | **sitt** | huset sitt |
-| flertall | **sine** | venner sine |
+| flertall | **sine** | vennene sine |
 
 ---
 
@@ -119,11 +119,11 @@ b) hans
 
 **Svar:** a) sin — jobben tilhører han, som også er subjektet i setningen.
 
-**3. Velg riktig setning:**
-a) Per besøker søsteren hans, som bor i Bergen.
-b) Per besøker søsteren sin, som bor i Bergen.
+**3. Ole er syk. Per besøker søsteren ______, som bor i Bergen.**
+a) hans
+b) sin
 
-**Svar:** b) — hvis søsteren er Pers egen søster, skal sin brukes, siden Per er subjektet.
+**Svar:** a) hans — her viser «hans» tilbake til Ole (ikke subjektet Per), så søsteren er Oles egen søster. Hvis søsteren i stedet var Pers egen, skulle setningen vært «Per besøker søsteren sin».
 
 ---
 

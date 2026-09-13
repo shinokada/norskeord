@@ -1,6 +1,6 @@
 ---
 title: 'Å beskrive nordmenn på norskprøven — nyttige setninger til muntlig'
-description: 'På den muntlige delen av norskprøven kan du bli bedt om å sammenligne nordmenn med folk fra ditt eget land. Her er typiske oppfatninger om nordmenn, gruppert etter tema, og hvordan du kan bruke dem i et muntlig svar.'
+description: 'Å sammenligne nordmenn med folk fra eget land er et nyttig øvingstema til den muntlige norskprøven, der du ofte skal uttrykke og begrunne meninger om et tema. Her er typiske oppfatninger om nordmenn, gruppert etter tema, og hvordan du kan bruke dem i et muntlig svar.'
 slug: om-nordmenn-i-muntlig
 cefr: [B1, B2]
 type: guide
@@ -16,11 +16,11 @@ decks:
     label: B2 Speaking Exam
 ---
 
-> **Kort sagt:** På muntlig norskprøve kan du bli bedt om å sammenligne nordmenn med folk fra ditt eget land. Nedenfor finner du typiske oppfatninger om nordmenn gruppert etter tema, samt setninger du kan bruke direkte i svaret ditt.
+> **Kort sagt:** Å sammenligne nordmenn med folk fra eget land er et nyttig tema å øve på til muntlig norskprøve, der du ofte skal uttrykke og begrunne meninger om et tema. Nedenfor finner du typiske oppfatninger om nordmenn gruppert etter tema, samt setninger du kan bruke direkte i svaret ditt.
 
 ## Kort forklaring
 
-Oppgaven ber deg ofte om å beskrive **typiske trekk eller stereotypier**, ikke fakta om alle nordmenn. Det er derfor lurt å bruke uttrykk som signaliserer at du generaliserer:
+Denne typen oppgave ber deg ofte om å beskrive **typiske trekk eller stereotypier**, ikke fakta om alle nordmenn. Det er derfor lurt å bruke uttrykk som signaliserer at du generaliserer:
 
 - **typiske oppfatninger om nordmenn**
 - **stereotypier om nordmenn**

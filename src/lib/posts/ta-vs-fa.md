@@ -62,6 +62,8 @@ Du kan derfor si begge:
 > **Hun tok førerkortet da hun var 18 år.**
 > = Hun tok førerprøven og fikk førerkort.
 
+<!-- -->
+
 > **Hun fikk førerkortet da hun var 18 år.**
 > = Resultatet var at hun fikk førerkort.
 
