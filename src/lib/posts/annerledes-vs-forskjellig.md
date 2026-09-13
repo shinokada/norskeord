@@ -5,7 +5,7 @@ slug: annerledes-vs-forskjellig
 cefr: A2
 publishedAt: 2026-12-25
 updatedAt: 2026-09-12
-tags: [adjectives, vocabulary, comparison]
+tags: [adjectives, vocabulary]
 decks:
   - level: a2
     category: descriptive-adjectives
