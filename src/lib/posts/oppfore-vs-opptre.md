@@ -103,12 +103,12 @@ I dagligtale er **oppføre seg** likevel det vanligste og mest naturlige valget 
 
 ## Sammenligningstabell
 
-| Uttrykk | Fokus | Typisk bruk |
-| --- | --- | --- |
-| **oppføre seg** | personens oppførsel | Han oppfører seg bra. |
-| **opptre** | handlemåte i en situasjon | Han opptrer profesjonelt. |
-| **opptre** | å vise seg foran et publikum | Hun opptrer på scenen. |
-| **arte seg** | hvordan noe utvikler seg | Situasjonen arter seg annerledes. |
+| Uttrykk         | Fokus                        | Typisk bruk                       |
+| --------------- | ---------------------------- | --------------------------------- |
+| **oppføre seg** | personens oppførsel          | Han oppfører seg bra.             |
+| **opptre**      | handlemåte i en situasjon    | Han opptrer profesjonelt.         |
+| **opptre**      | å vise seg foran et publikum | Hun opptrer på scenen.            |
+| **arte seg**    | hvordan noe utvikler seg     | Situasjonen arter seg annerledes. |
 
 ---
 

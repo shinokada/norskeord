@@ -87,25 +87,25 @@ Noen nærliggende betydninger uttrykkes med andre ord, ikke med som helst:
 Den viktigste forskjellen er **likegyldighet vs universalitet**:
 
 > Du kan sitte **hvor som helst**.
-→ Valget er ditt — alle steder er like gyldige.
+> → Valget er ditt — alle steder er like gyldige.
 
 > Det er snø **overalt**.
-→ Ikke et valg — snøen finnes faktisk alle steder.
+> → Ikke et valg — snøen finnes faktisk alle steder.
 
 ---
 
 ## Sammenligningstabell
 
-| Uttrykk | Betydning | Type |
-| --- | --- | --- |
-| **hva som helst** | uansett hva | likegyldighet |
-| **hvem som helst** | uansett hvem | likegyldighet |
-| **hvor som helst** | uansett hvor | likegyldighet |
-| **når som helst** | uansett når | likegyldighet |
-| **overalt** | alle steder | universalitet |
-| **hver gang** | ved enhver anledning | universalitet |
-| **et sted** | et ubestemt sted | ubestemthet |
-| **en gang** | et ubestemt tidspunkt | ubestemthet |
+| Uttrykk            | Betydning             | Type          |
+| ------------------ | --------------------- | ------------- |
+| **hva som helst**  | uansett hva           | likegyldighet |
+| **hvem som helst** | uansett hvem          | likegyldighet |
+| **hvor som helst** | uansett hvor          | likegyldighet |
+| **når som helst**  | uansett når           | likegyldighet |
+| **overalt**        | alle steder           | universalitet |
+| **hver gang**      | ved enhver anledning  | universalitet |
+| **et sted**        | et ubestemt sted      | ubestemthet   |
+| **en gang**        | et ubestemt tidspunkt | ubestemthet   |
 
 ---
 
@@ -125,7 +125,7 @@ _Hvilken/hvilket/hvilke må bøyes etter substantivet — bøker er flertall, s�
 
 ## Norskprøven — eksempelspørsmål
 
-**1. Velg riktig uttrykk: «Du kan ringe meg ______, jeg svarer alltid.»**
+**1. Velg riktig uttrykk: «Du kan ringe meg \______, jeg svarer alltid.»**
 a) når som helst
 b) hver gang
 

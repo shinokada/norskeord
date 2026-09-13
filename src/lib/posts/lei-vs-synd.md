@@ -75,10 +75,10 @@ To vanlige uttrykk brukes ofte om hverandre av innlærere, men har ulikt fokus:
 
 ## Sammenligningstabell
 
-| Uttrykk                 | Fokus              | Typisk bruk                          |
-| ------------------------ | -------------------- | --------------------------------------- |
-| **synes synd på noen**  | personen             | noen har det vanskelig                  |
-| **være lei for noe**    | situasjonen/handlingen | beklagelse, unnskyldning, trist hendelse |
+| Uttrykk                | Fokus                  | Typisk bruk                              |
+| ---------------------- | ---------------------- | ---------------------------------------- |
+| **synes synd på noen** | personen               | noen har det vanskelig                   |
+| **være lei for noe**   | situasjonen/handlingen | beklagelse, unnskyldning, trist hendelse |
 
 ---
 

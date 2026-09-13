@@ -63,12 +63,12 @@ Legg merke til at **forlate** alltid trenger et objekt. **«Bussen forlater om e
 
 ## Sammenligningstabell
 
-| | gå | forlate |
-| --- | --- | --- |
-| Fokus | bevegelsen / avgangen | stedet eller personen som blir igjen |
-| Krever objekt | nei | ja, alltid |
-| Register | hverdagslig | formelt |
-| Brukes om transportmidler | ja, svært vanlig | ja, men mer formelt |
+|                           | gå                    | forlate                              |
+| ------------------------- | --------------------- | ------------------------------------ |
+| Fokus                     | bevegelsen / avgangen | stedet eller personen som blir igjen |
+| Krever objekt             | nei                   | ja, alltid                           |
+| Register                  | hverdagslig           | formelt                              |
+| Brukes om transportmidler | ja, svært vanlig      | ja, men mer formelt                  |
 
 ---
 

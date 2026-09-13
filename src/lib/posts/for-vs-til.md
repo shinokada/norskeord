@@ -59,10 +59,10 @@ decks:
 Samme setning kan endre betydning helt avhengig av hvilken preposisjon som brukes:
 
 > Jeg bestiller en pizza **til** deg.
-→ Pizzaen er til deg — du skal ha den.
+> → Pizzaen er til deg — du skal ha den.
 
 > Jeg bestiller en pizza **for** deg.
-→ Jeg bestiller den på dine vegne, kanskje fordi du ikke kan gjøre det selv.
+> → Jeg bestiller den på dine vegne, kanskje fordi du ikke kan gjøre det selv.
 
 ---
 
@@ -83,12 +83,12 @@ Samme setning kan endre betydning helt avhengig av hvilken preposisjon som bruke
 
 ## Sammenligningstabell
 
-| Uttrykk | Preposisjon | Betydning |
-| --- | --- | --- |
-| bestille noe **til** deg | til | du er mottakeren |
-| gjøre noe **for** deg | for | på dine vegne / til din fordel |
-| et bord **til** to personer | til | bordet er beregnet for to |
-| bestille et bord **for** deg | for | jeg bestiller på dine vegne |
+| Uttrykk                      | Preposisjon | Betydning                      |
+| ---------------------------- | ----------- | ------------------------------ |
+| bestille noe **til** deg     | til         | du er mottakeren               |
+| gjøre noe **for** deg        | for         | på dine vegne / til din fordel |
+| et bord **til** to personer  | til         | bordet er beregnet for to      |
+| bestille et bord **for** deg | for         | jeg bestiller på dine vegne    |
 
 ---
 

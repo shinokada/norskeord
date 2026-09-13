@@ -529,8 +529,8 @@ describe('blankPost', () => {
 // ── CANONICAL_TAGS ────────────────────────────────────────────────────────────
 
 describe('CANONICAL_TAGS', () => {
-  it('contains exactly 14 tags', () => {
-    expect(CANONICAL_TAGS).toHaveLength(14);
+  it('contains exactly 22 tags', () => {
+    expect(CANONICAL_TAGS).toHaveLength(22);
   });
 
   it('includes the expected entries', () => {

@@ -82,9 +82,9 @@ Husk derfor uttrykket **stille et spørsmål** spesifikt når du mener «å spø
 
 ## Sammenligningstabell
 
-| Norsk                    | Bruk                            | Eksempel                    |
-| ------------------------ | -------------------------------- | ---------------------------- |
-| **å spørre**             | generelt, be om svar             | Jeg spurte ham om hjelp.    |
+| Norsk                    | Bruk                              | Eksempel                    |
+| ------------------------ | --------------------------------- | --------------------------- |
+| **å spørre**             | generelt, be om svar              | Jeg spurte ham om hjelp.    |
 | **å stille et spørsmål** | mer formelt/skriftlig, med objekt | Jeg stilte ham et spørsmål. |
 
 ---

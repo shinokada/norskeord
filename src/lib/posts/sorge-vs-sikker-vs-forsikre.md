@@ -89,11 +89,11 @@ Tre uttrykk brukes ofte om hverandre av innlærere, men har ulikt fokus:
 
 ## Sammenligningstabell
 
-| Uttrykk | Fokus | Typisk bruk |
-| --- | --- | --- |
-| **sørge for** | handling / ansvar | å sørge for at noe skjer |
-| **være sikker på** | visshet / tillit | å vite eller tro noe |
-| **forsikre seg om** | kontroll | å sjekke for å bli sikker |
+| Uttrykk             | Fokus             | Typisk bruk               |
+| ------------------- | ----------------- | ------------------------- |
+| **sørge for**       | handling / ansvar | å sørge for at noe skjer  |
+| **være sikker på**  | visshet / tillit  | å vite eller tro noe      |
+| **forsikre seg om** | kontroll          | å sjekke for å bli sikker |
 
 ---
 

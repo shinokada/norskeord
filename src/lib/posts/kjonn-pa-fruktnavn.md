@@ -58,18 +58,18 @@ Dette skyldes at **bær** i seg selv er et intetkjønnsord: **et bær**. Når vi
 
 ## Sammenligningstabell
 
-| et-ord | en-ord |
-| --- | --- |
-| et eple | en banan |
-| et jordbær | en appelsin |
-| et blåbær | en pære |
-| et bringebær | en fersken |
-| et kirsebær | en plomme |
-| | en drue |
-| | en melon |
-| | en kiwi |
-| | en mango |
-| | en ananas |
+| et-ord       | en-ord      |
+| ------------ | ----------- |
+| et eple      | en banan    |
+| et jordbær   | en appelsin |
+| et blåbær    | en pære     |
+| et bringebær | en fersken  |
+| et kirsebær  | en plomme   |
+|              | en drue     |
+|              | en melon    |
+|              | en kiwi     |
+|              | en mango    |
+|              | en ananas   |
 
 ---
 

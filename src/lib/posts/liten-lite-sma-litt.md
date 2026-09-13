@@ -52,12 +52,12 @@ _Denne artikkelen bruker **liten** også for ei-ord (moderat bokmål). Bokmålso
 
 ## Sammenligningstabell — liten, lite, små
 
-| Entall | Flertall |
-| --- | --- |
+| Entall           | Flertall      |
+| ---------------- | ------------- |
 | en **liten** bil | **små** biler |
 | ei **liten** bok | **små** bøker |
-| et **lite** hus | **små** hus |
-| et **lite** barn | **små** barn |
+| et **lite** hus  | **små** hus   |
+| et **lite** barn | **små** barn  |
 
 **Kort huskeregel:**
 
@@ -90,22 +90,22 @@ _Denne artikkelen bruker **liten** også for ei-ord (moderat bokmål). Bokmålso
 **Liten** beskriver **størrelsen på et substantiv**. **Litt** beskriver **en mengde eller grad**.
 
 > Jeg har en **liten** bil.
-→ Bilen er liten i størrelse.
+> → Bilen er liten i størrelse.
 
 > Jeg har **litt** bensin.
-→ En liten mengde bensin.
+> → En liten mengde bensin.
 
 > Bilen er **litt** liten.
-→ Her står begge ordene sammen: **litt** demper adjektivet **liten** — bilen er noe i overkant liten, ikke enormt liten.
+> → Her står begge ordene sammen: **litt** demper adjektivet **liten** — bilen er noe i overkant liten, ikke enormt liten.
 
 ---
 
 ## Sammenligningstabell — liten vs litt
 
-| Ord | Betydning | Brukes med | Eksempel |
-| --- | --- | --- | --- |
-| **liten / lite / små** | størrelse | substantiv | en liten bil, et lite hus, små biler |
-| **litt** | mengde eller grad | stoff, mengde, adjektiv, adverb | litt vann, litt trøtt, litt sakte |
+| Ord                    | Betydning         | Brukes med                      | Eksempel                             |
+| ---------------------- | ----------------- | ------------------------------- | ------------------------------------ |
+| **liten / lite / små** | størrelse         | substantiv                      | en liten bil, et lite hus, små biler |
+| **litt**               | mengde eller grad | stoff, mengde, adjektiv, adverb | litt vann, litt trøtt, litt sakte    |
 
 ---
 

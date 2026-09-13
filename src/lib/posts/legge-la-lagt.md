@@ -39,17 +39,17 @@ Når **legge** blir andre del av et sammensatt verb, følger bøyningen ofte med
 
 ## Vanlige legge-verb
 
-| Infinitiv         | Betydning                 | Preteritum     | Perfektum          |
-| ------------------ | -------------------------- | --------------- | -------------------- |
-| **planlegge**     | lage en plan               | **planla**     | har **planlagt**     |
-| **anlegge**       | etablere, bygge            | **anla**       | har **anlagt**       |
-| **fastlegge**     | bestemme, fastsette        | **fastla**     | har **fastlagt**     |
-| **tilrettelegge** | gjøre noe lettere, ordne   | **tilrettela** | har **tilrettelagt** |
-| **nedlegge**      | avslutte, legge ned        | **nedla**      | har **nedlagt**      |
-| **pålegge**       | kreve, ilegge              | **påla**       | har **pålagt**       |
-| **ilegge**        | ilegge (f.eks. en bot)     | **ila**        | har **ilagt**        |
-| **overlegge**     | planlegge, rådslå          | **overla**     | har **overlagt**     |
-| **underlegge**    | underordne                 | **underla**    | har **underlagt**    |
+| Infinitiv         | Betydning                | Preteritum     | Perfektum            |
+| ----------------- | ------------------------ | -------------- | -------------------- |
+| **planlegge**     | lage en plan             | **planla**     | har **planlagt**     |
+| **anlegge**       | etablere, bygge          | **anla**       | har **anlagt**       |
+| **fastlegge**     | bestemme, fastsette      | **fastla**     | har **fastlagt**     |
+| **tilrettelegge** | gjøre noe lettere, ordne | **tilrettela** | har **tilrettelagt** |
+| **nedlegge**      | avslutte, legge ned      | **nedla**      | har **nedlagt**      |
+| **pålegge**       | kreve, ilegge            | **påla**       | har **pålagt**       |
+| **ilegge**        | ilegge (f.eks. en bot)   | **ila**        | har **ilagt**        |
+| **overlegge**     | planlegge, rådslå        | **overla**     | har **overlagt**     |
+| **underlegge**    | underordne               | **underla**    | har **underlagt**    |
 
 ---
 
@@ -76,7 +76,7 @@ Når **legge** blir andre del av et sammensatt verb, følger bøyningen ofte med
 
 Når du møter et norsk verb som ender på **-legge**, spør deg selv:
 
-**«Hva skjer med *legge* i preteritum?» → *la*, og i perfektum → *lagt*.**
+**«Hva skjer med _legge_ i preteritum?» → _la_, og i perfektum → _lagt_.**
 
 Det finnes unntak og verb med mer spesialisert betydning, men mønsteret gjelder de aller fleste **-legge**-verbene.
 

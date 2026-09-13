@@ -58,12 +58,12 @@ Mønsteret er det samme uansett kjønn eller tall: **han → seg**, **hun → se
 
 ## Bøyning av sin
 
-| Kjønn/tall på det som eies | Form | Eksempel |
-| --- | --- | --- |
-| en-ord | **sin** | bilen sin |
-| ei-ord | **si** | boka si |
-| et-ord | **sitt** | huset sitt |
-| flertall | **sine** | vennene sine |
+| Kjønn/tall på det som eies | Form     | Eksempel     |
+| -------------------------- | -------- | ------------ |
+| en-ord                     | **sin**  | bilen sin    |
+| ei-ord                     | **si**   | boka si      |
+| et-ord                     | **sitt** | huset sitt   |
+| flertall                   | **sine** | vennene sine |
 
 ---
 
@@ -83,11 +83,11 @@ Regelen er enkel: **sin** kan bare brukes når eieren og subjektet er én og sam
 
 ## Sammenligningstabell
 
-| Uttrykk | Funksjon | Eksempel |
-| --- | --- | --- |
-| **seg** | refleksivt pronomen | Han vasker seg. |
-| **sin/si/sitt/sine** | refleksivt eiendomsord | Han vasker bilen sin. |
-| **hans/hennes/deres** | vanlig eiendomsord | Han besøker moren hans. |
+| Uttrykk               | Funksjon               | Eksempel                |
+| --------------------- | ---------------------- | ----------------------- |
+| **seg**               | refleksivt pronomen    | Han vasker seg.         |
+| **sin/si/sitt/sine**  | refleksivt eiendomsord | Han vasker bilen sin.   |
+| **hans/hennes/deres** | vanlig eiendomsord     | Han besøker moren hans. |
 
 ---
 
@@ -113,13 +113,13 @@ b) sin
 
 **Svar:** a) seg — refleksivt pronomen, hun gjør noe med seg selv.
 
-**2. Velg riktig ord: «Han elsker jobben ______.»**
+**2. Velg riktig ord: «Han elsker jobben \______.»**
 a) sin
 b) hans
 
 **Svar:** a) sin — jobben tilhører han, som også er subjektet i setningen.
 
-**3. Ole er syk. Per besøker søsteren ______, som bor i Bergen.**
+**3. Ole er syk. Per besøker søsteren \______, som bor i Bergen.**
 a) hans
 b) sin
 

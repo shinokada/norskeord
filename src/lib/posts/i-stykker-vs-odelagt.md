@@ -92,13 +92,13 @@ Sammenlign:
 
 ## Sammenligningstabell
 
-|                 | i stykker                              | ødelagt                                     |
-| ---------------- | ----------------------------------------- | ---------------------------------------------- |
-| Ordklasse        | fast uttrykk (ubøyelig)                   | adjektiv (bøyes)                               |
-| Typisk bruk      | apparater, ting som slutter å fungere    | fysisk skade + overført betydning              |
-| Med verb         | være i stykker / gå i stykker             | bli ødelagt / være ødelagt                     |
-| Foran substantiv | kan ikke brukes slik                      | ja: **det ødelagte vinduet**                   |
-| Eksempel         | Bilen er i stykker.                       | Bilen er ødelagt.                              |
+|                  | i stykker                             | ødelagt                           |
+| ---------------- | ------------------------------------- | --------------------------------- |
+| Ordklasse        | fast uttrykk (ubøyelig)               | adjektiv (bøyes)                  |
+| Typisk bruk      | apparater, ting som slutter å fungere | fysisk skade + overført betydning |
+| Med verb         | være i stykker / gå i stykker         | bli ødelagt / være ødelagt        |
+| Foran substantiv | kan ikke brukes slik                  | ja: **det ødelagte vinduet**      |
+| Eksempel         | Bilen er i stykker.                   | Bilen er ødelagt.                 |
 
 ---
 

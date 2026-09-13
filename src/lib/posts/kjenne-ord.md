@@ -56,10 +56,10 @@ Disse to blandes ofte sammen, men betyr ikke helt det samme:
 - **vedkjenne seg en feil** → innrømme at feilen er ens egen
 
 > Hun erkjente problemet.
-→ Hun innrømmet at problemet eksisterte.
+> → Hun innrømmet at problemet eksisterte.
 
 > Hun vil ikke vedkjenne seg feilen.
-→ Hun vil ikke innrømme at feilen er hennes.
+> → Hun vil ikke innrømme at feilen er hennes.
 
 ---
 
@@ -71,24 +71,24 @@ Det er også nyttig å skille **kjenne** fra **vite**:
 - **vite** → fakta og informasjon
 
 > Jeg kjenner Oslo.
-→ Jeg er kjent med Oslo.
+> → Jeg er kjent med Oslo.
 
 > Jeg vet hvor Oslo ligger.
-→ Jeg kjenner til denne faktiske opplysningen.
+> → Jeg kjenner til denne faktiske opplysningen.
 
 ---
 
 ## Sammenligningstabell
 
-| Ord | Betydning | Prefiks |
-| --- | --- | --- |
-| **kjenne** | være kjent med, vite hvem/hva noe er, føle | grunnverbet |
-| **gjenkjenne** | kjenne igjen, identifisere | gjen- |
-| **erkjenne** | innrømme, godta, innse | er- |
-| **anerkjenne** | godta, verdsette | aner- |
-| **vedkjenne seg** | innrømme at noe er ens eget | ved- |
-| **bekjent** | en person man kjenner | beslektet |
-| **ukjent** | ikke kjent | u- |
+| Ord               | Betydning                                  | Prefiks     |
+| ----------------- | ------------------------------------------ | ----------- |
+| **kjenne**        | være kjent med, vite hvem/hva noe er, føle | grunnverbet |
+| **gjenkjenne**    | kjenne igjen, identifisere                 | gjen-       |
+| **erkjenne**      | innrømme, godta, innse                     | er-         |
+| **anerkjenne**    | godta, verdsette                           | aner-       |
+| **vedkjenne seg** | innrømme at noe er ens eget                | ved-        |
+| **bekjent**       | en person man kjenner                      | beslektet   |
+| **ukjent**        | ikke kjent                                 | u-          |
 
 ---
 

@@ -68,19 +68,19 @@ decks:
 **Forskjellig** beskriver at **to eller flere ting** ikke er like — det peker som regel mot en sammenligning.
 
 > Jeg vil gjøre noe **annerledes**.
-→ På en annen måte enn vanlig.
+> → På en annen måte enn vanlig.
 
 > De to metodene er **forskjellige**.
-→ Metode én og metode to er ikke like.
+> → Metode én og metode to er ikke like.
 
 ---
 
 ## Sammenligningstabell
 
-| Ord | Betydning | Typisk bruk |
-| --- | --- | --- |
-| **annerledes** | på en annen måte enn normalt | om én ting, eller en måte å gjøre noe på |
-| **forskjellig** | ikke lik | om to eller flere ting som sammenlignes |
+| Ord             | Betydning                    | Typisk bruk                              |
+| --------------- | ---------------------------- | ---------------------------------------- |
+| **annerledes**  | på en annen måte enn normalt | om én ting, eller en måte å gjøre noe på |
+| **forskjellig** | ikke lik                     | om to eller flere ting som sammenlignes  |
 
 ---
 
@@ -106,7 +106,7 @@ b) forskjellig
 
 **Svar:** a) annerledes — beskriver en annen måte å gjøre noe på.
 
-**2. Velg riktig ord: «De to søstrene er veldig ______.»**
+**2. Velg riktig ord: «De to søstrene er veldig \______.»**
 a) annerledes
 b) forskjellige
 

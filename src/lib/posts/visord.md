@@ -112,11 +112,11 @@ _**Alternativvis** er ikke en naturlig norsk form — bruk **alternativt**._
 
 ## Sammenligningstabell
 
-| Gruppe                          | Mønster              | Eksempler                    |
-| -------------------------------- | ----------------------- | ------------------------------ |
-| Setningsadverb (holdning)        | adjektiv + vis          | heldigvis, tydeligvis          |
-| Fordeling (X etter X)            | substantiv + vis        | parvis, trinnvis               |
-| Grad / forhold                   | substantiv/adjektiv + vis | delvis, forholdsvis            |
+| Gruppe                    | Mønster                   | Eksempler             |
+| ------------------------- | ------------------------- | --------------------- |
+| Setningsadverb (holdning) | adjektiv + vis            | heldigvis, tydeligvis |
+| Fordeling (X etter X)     | substantiv + vis          | parvis, trinnvis      |
+| Grad / forhold            | substantiv/adjektiv + vis | delvis, forholdsvis   |
 
 ---
 

@@ -68,12 +68,12 @@ Både **ved** og **på** kan brukes om steder, men de har ulikt fokus:
 Dette paret viser forskjellen tydelig:
 
 > **Fisken ligger på disken.**
-→ Fisken er fysisk plassert oppå disken — en overflate.
+> → Fisken er fysisk plassert oppå disken — en overflate.
 
 <!-- -->
 
 > **Du kjøper fisk ved ferskvaredisken.**
-→ Du befinner deg i nærheten av/ved disken når du handler.
+> → Du befinner deg i nærheten av/ved disken når du handler.
 
 Begge setningene handler om samme disk, men **på** beskriver overflaten, mens **ved** beskriver hvor du selv står eller venter.
 
@@ -100,10 +100,10 @@ Begge setningene handler om samme disk, men **på** beskriver overflaten, mens *
 
 ## Sammenligningstabell
 
-| Ord     | Fokus                          | Eksempel                     |
-| ------- | -------------------------------- | ------------------------------ |
-| **ved** | nær / ved siden av               | Hun står ved døren.            |
-| **på**  | overflate, eller sted/aktivitet  | Boken ligger på bordet. Jeg er på jobb. |
+| Ord     | Fokus                           | Eksempel                                |
+| ------- | ------------------------------- | --------------------------------------- |
+| **ved** | nær / ved siden av              | Hun står ved døren.                     |
+| **på**  | overflate, eller sted/aktivitet | Boken ligger på bordet. Jeg er på jobb. |
 
 ---
 

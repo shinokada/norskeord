@@ -93,19 +93,19 @@ Noen steder, som institusjoner, kan ta begge preposisjonene, avhengig av hva du 
 **Sammenlign:**
 
 > Jeg møtte henne **på museet**.
-→ Hun var der på besøk.
+> → Hun var der på besøk.
 
 > Det finnes en kafé **i museet** / **på museet**.
-→ Begge er riktige. I understreker at kafeen er fysisk inne i bygningen, mens på fokuserer på museet som sted.
+> → Begge er riktige. I understreker at kafeen er fysisk inne i bygningen, mens på fokuserer på museet som sted.
 
 ---
 
 ## Sammenligningstabell
 
-| Preposisjon | Fokus | Eksempel |
-| --- | --- | --- |
-| **på** | arrangement, besøk, aktivitet | på festen, på skolen, på museet |
-| **i** | fysisk område eller rom | i rommet, i huset, i museet |
+| Preposisjon | Fokus                         | Eksempel                        |
+| ----------- | ----------------------------- | ------------------------------- |
+| **på**      | arrangement, besøk, aktivitet | på festen, på skolen, på museet |
+| **i**       | fysisk område eller rom       | i rommet, i huset, i museet     |
 
 ---
 

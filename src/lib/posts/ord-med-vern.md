@@ -81,9 +81,9 @@ decks:
 
 I sammensetninger foretrekker norsk nesten alltid **-vern**, ikke **-beskyttelse**:
 
-- **miljøvern** — ikke *miljøbeskyttelse*
-- **personvern** — ikke *personbeskyttelse*
-- **barnevern** — ikke *barnebeskyttelse*
+- **miljøvern** — ikke _miljøbeskyttelse_
+- **personvern** — ikke _personbeskyttelse_
+- **barnevern** — ikke _barnebeskyttelse_
 
 Men **vern** og **beskyttelse** er ikke alltid utskiftbare som frittstående ord. **Vern** har ofte en sterkere følelse av **organisert, juridisk eller systematisk** beskyttelse, mens **beskyttelse** er mer generelt og kan brukes om hva som helst, også konkrete, fysiske situasjoner.
 
@@ -94,14 +94,14 @@ Men **vern** og **beskyttelse** er ikke alltid utskiftbare som frittstående ord
 
 ## Sammenligningstabell
 
-| Sammensetning     | Betydning                                |
-| ------------------ | ------------------------------------------ |
-| **miljøvern**      | beskyttelse av naturen og miljøet          |
-| **personvern**     | beskyttelse av personopplysninger           |
-| **barnevern**      | offentlig beskyttelse av barn               |
-| **forbrukervern**  | beskyttelse av forbrukernes rettigheter     |
-| **brannvern**      | forebygging og beskyttelse mot brann        |
-| **smittevern**     | tiltak mot spredning av sykdom              |
+| Sammensetning     | Betydning                               |
+| ----------------- | --------------------------------------- |
+| **miljøvern**     | beskyttelse av naturen og miljøet       |
+| **personvern**    | beskyttelse av personopplysninger       |
+| **barnevern**     | offentlig beskyttelse av barn           |
+| **forbrukervern** | beskyttelse av forbrukernes rettigheter |
+| **brannvern**     | forebygging og beskyttelse mot brann    |
+| **smittevern**    | tiltak mot spredning av sykdom          |
 
 ---
 
@@ -122,7 +122,7 @@ b) personbeskyttelse
 
 **Svar:** a) personvern — den vanlige sammensetningen i lovspråk og dagligtale.
 
-**2. Velg riktig ord: «Skolen har jevnlige ______øvelser.»**
+**2. Velg riktig ord: «Skolen har jevnlige \______øvelser.»**
 a) brannvern
 b) brannbeskyttelse
 

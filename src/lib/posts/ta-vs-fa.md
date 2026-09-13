@@ -35,7 +35,7 @@ decks:
 
 I **«Hun tok førerkortet»** betyr **tok** omtrent «gjennomførte det som var nødvendig for å få førerkortet». Det er et fast og vanlig uttrykk: **ta førerkort**.
 
-**Merk:** På norsk skriver man **førerkort**, ikke *førekort*.
+**Merk:** På norsk skriver man **førerkort**, ikke _førekort_.
 
 ---
 
@@ -52,10 +52,10 @@ I **«Hun tok førerkortet»** betyr **tok** omtrent «gjennomførte det som var
 
 ## Sammenlign: ta førerkortet vs. få førerkortet
 
-| Norsk                      | Fokus                                     |
-| --------------------------- | ------------------------------------------- |
-| Hun **tok** førerkortet.   | Hun gjennomførte prosessen / oppkjøringen. |
-| Hun **fikk** førerkortet.  | Hun fikk førerkortet som resultat.         |
+| Norsk                     | Fokus                                      |
+| ------------------------- | ------------------------------------------ |
+| Hun **tok** førerkortet.  | Hun gjennomførte prosessen / oppkjøringen. |
+| Hun **fikk** førerkortet. | Hun fikk førerkortet som resultat.         |
 
 Du kan derfor si begge:
 
@@ -85,17 +85,17 @@ I mange faste uttrykk betyr **ta** ikke bokstavelig «å ta tak i noe» — det 
 > **få** → resultatet
 
 For eksempel: **Jeg tok eksamen i juni, og jeg fikk gode karakterer.**
-→ *tok* = gjennomførte eksamen
-→ *fikk* = resultatet jeg mottok
+→ _tok_ = gjennomførte eksamen
+→ _fikk_ = resultatet jeg mottok
 
 ---
 
 ## Sammenligningstabell
 
-| Ord    | Fokus                     | Eksempel                |
-| ------ | -------------------------- | ------------------------ |
-| **ta** | handlingen/prosessen       | Jeg tok eksamen i juni. |
-| **få** | resultatet                 | Jeg fikk gode karakterer. |
+| Ord    | Fokus                | Eksempel                  |
+| ------ | -------------------- | ------------------------- |
+| **ta** | handlingen/prosessen | Jeg tok eksamen i juni.   |
+| **få** | resultatet           | Jeg fikk gode karakterer. |
 
 ---
 

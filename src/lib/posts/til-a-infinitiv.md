@@ -43,15 +43,15 @@ Vi bruker **til + å-infinitiv** når infinitiven forklarer **hva noe er ment fo
 
 **Uttrykk som krever «til å»:**
 
-| Uttrykk | Eksempel |
-| --- | --- |
-| **tid til å** | Jeg har tid til å snakke. |
-| **lyst til å** | Jeg har lyst til å spise. |
-| **mulighet til å** | Hun fikk mulighet til å studere. |
-| **rett til å** | Du har rett til å klage. |
+| Uttrykk             | Eksempel                           |
+| ------------------- | ---------------------------------- |
+| **tid til å**       | Jeg har tid til å snakke.          |
+| **lyst til å**      | Jeg har lyst til å spise.          |
+| **mulighet til å**  | Hun fikk mulighet til å studere.   |
+| **rett til å**      | Du har rett til å klage.           |
 | **anledning til å** | Jeg fikk anledning til å møte ham. |
-| **flink til å** | Hun er flink til å synge. |
-| **god til å** | Han er god til å forklare. |
+| **flink til å**     | Hun er flink til å synge.          |
+| **god til å**       | Han er god til å forklare.         |
 
 ---
 
@@ -112,13 +112,13 @@ Ikke alle uttrykk bruker **til**. Noen bruker **for**, og noen bruker ingen prep
 
 ## Sammenligningstabell
 
-| Type uttrykk | Eksempel | Preposisjon |
-| --- | --- | --- |
-| substantiv (tid, lyst, mulighet, rett, anledning) | ha tid **til å** hjelpe | til |
-| adjektiv (flink, god, vant) | være flink **til å** synge | til |
-| verb (prøve, ønske, begynne, glemme) | prøve **å** hjelpe | ingen |
-| adjektiv (vanskelig, viktig, lett) | vanskelig **å** forklare | ingen |
-| substantiv (behov) | behov **for å** hvile | for |
+| Type uttrykk                                      | Eksempel                   | Preposisjon |
+| ------------------------------------------------- | -------------------------- | ----------- |
+| substantiv (tid, lyst, mulighet, rett, anledning) | ha tid **til å** hjelpe    | til         |
+| adjektiv (flink, god, vant)                       | være flink **til å** synge | til         |
+| verb (prøve, ønske, begynne, glemme)              | prøve **å** hjelpe         | ingen       |
+| adjektiv (vanskelig, viktig, lett)                | vanskelig **å** forklare   | ingen       |
+| substantiv (behov)                                | behov **for å** hvile      | for         |
 
 ---
 

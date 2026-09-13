@@ -189,7 +189,15 @@ export const CANONICAL_TAGS = [
   'word-order',
   'sentence-structure',
   'conjunctions',
-  'spelling'
+  'spelling',
+  'comparison',
+  'word-formation',
+  'modal-verbs',
+  'phrases',
+  'questions',
+  'pronouns',
+  'muntlig',
+  'culture'
 ] as const;
 
 export type CanonicalTag = (typeof CANONICAL_TAGS)[number];

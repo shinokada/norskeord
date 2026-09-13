@@ -65,12 +65,12 @@ Samme mønster her:
 
 ## Sammenligningstabell
 
-|             | feil                              | galt                                  |
-| ----------- | ---------------------------------- | -------------------------------------- |
-| Ordklasse   | adjektiv og substantiv (en feil)   | adjektiv/adverb (nøytrumsform av gal)  |
-| Fokus       | ukorrekthet, en konkret feil       | at noe ikke er riktig eller ikke fungerer |
-| Kan være subjekt | ja — «feilen», «en feil»      | nei — galt står alene som predikativ   |
-| Register    | hverdagslig                        | hverdagslig                            |
+|                  | feil                             | galt                                      |
+| ---------------- | -------------------------------- | ----------------------------------------- |
+| Ordklasse        | adjektiv og substantiv (en feil) | adjektiv/adverb (nøytrumsform av gal)     |
+| Fokus            | ukorrekthet, en konkret feil     | at noe ikke er riktig eller ikke fungerer |
+| Kan være subjekt | ja — «feilen», «en feil»         | nei — galt står alene som predikativ      |
+| Register         | hverdagslig                      | hverdagslig                               |
 
 ---
 
@@ -90,7 +90,7 @@ _Galt kan ikke brukes som substantiv — bruk feil eller «noe galt»._
 
 ## Norskprøven — eksempelspørsmål
 
-**1. Velg riktig ord: «Svaret ditt er ______.»**
+**1. Velg riktig ord: «Svaret ditt er \______.»**
 a) feil
 b) galt
 

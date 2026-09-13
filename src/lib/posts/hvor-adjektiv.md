@@ -58,10 +58,10 @@ Sammenlign:
 
 ## Sammenligningstabell
 
-| Uttrykk               | Spør om        | Eksempel                          |
-| ---------------------- | --------------- | ---------------------------------- |
-| **hvor** + adjektiv    | grad             | hvor flink, hvor stor, hvor rask   |
-| **hvordan** + verb     | måte / metode    | hvordan gjorde du det, hvordan fungerer det |
+| Uttrykk             | Spør om       | Eksempel                                    |
+| ------------------- | ------------- | ------------------------------------------- |
+| **hvor** + adjektiv | grad          | hvor flink, hvor stor, hvor rask            |
+| **hvordan** + verb  | måte / metode | hvordan gjorde du det, hvordan fungerer det |
 
 ---
 
@@ -105,7 +105,7 @@ b) hvordan
 
 **Svar:** a) hvor — spør om graden av pris.
 
-**2. Velg riktig ord: «______ gjorde du dette?»**
+**2. Velg riktig ord: «\______ gjorde du dette?»**
 a) Hvor
 b) Hvordan
 

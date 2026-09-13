@@ -102,13 +102,13 @@ Erstatte ligger nær **bytte**, men legger mer vekt på at det gamle **ikke leng
 
 ## Sammenligningstabell
 
-| Ord | Hovedidé | Størrelse på endringen |
-| --- | --- | --- |
-| **endre** | gjøre noe annerledes | liten til middels |
-| **forandre** | en synlig, ofte personlig endring | middels til stor |
-| **erstatte** | gammelt → helt nytt | avhenger av gjenstanden |
-| **justere** | en presis finjustering | liten |
-| **tilpasse** | gjøre noe passende | liten til middels |
+| Ord          | Hovedidé                          | Størrelse på endringen  |
+| ------------ | --------------------------------- | ----------------------- |
+| **endre**    | gjøre noe annerledes              | liten til middels       |
+| **forandre** | en synlig, ofte personlig endring | middels til stor        |
+| **erstatte** | gammelt → helt nytt               | avhenger av gjenstanden |
+| **justere**  | en presis finjustering            | liten                   |
+| **tilpasse** | gjøre noe passende                | liten til middels       |
 
 ---
 

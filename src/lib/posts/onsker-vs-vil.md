@@ -69,21 +69,21 @@ Legg merke til grammatikken:
 **Vil** dekker et bredere felt enn **ønsker**. Avhengig av sammenhengen kan det uttrykke et ønske, en intensjon, eller noe man bestemmer seg for å gjøre.
 
 > Jeg vil hjelpe deg.
-→ Kan bety at du har lyst til å hjelpe, eller at du bestemmer deg for å gjøre det.
+> → Kan bety at du har lyst til å hjelpe, eller at du bestemmer deg for å gjøre det.
 
 > Jeg ønsker å hjelpe deg.
-→ Peker først og fremst mot selve ønsket om å hjelpe.
+> → Peker først og fremst mot selve ønsket om å hjelpe.
 
 ---
 
 ## Sammenligningstabell
 
-| Setning | Register | Grammatikk |
-| --- | --- | --- |
-| **Jeg vil ha kaffe.** | direkte, vanlig | vil + infinitiv |
-| **Jeg ønsker kaffe.** | litt mer høflig | ønsker + substantiv |
-| **Jeg vil kjøpe en bil.** | vanlig | vil + infinitiv |
-| **Jeg ønsker å kjøpe en bil.** | mer formelt | ønsker + å + infinitiv |
+| Setning                        | Register        | Grammatikk             |
+| ------------------------------ | --------------- | ---------------------- |
+| **Jeg vil ha kaffe.**          | direkte, vanlig | vil + infinitiv        |
+| **Jeg ønsker kaffe.**          | litt mer høflig | ønsker + substantiv    |
+| **Jeg vil kjøpe en bil.**      | vanlig          | vil + infinitiv        |
+| **Jeg ønsker å kjøpe en bil.** | mer formelt     | ønsker + å + infinitiv |
 
 ---
 

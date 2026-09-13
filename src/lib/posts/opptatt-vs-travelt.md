@@ -75,10 +75,10 @@ Travel bøyes som et vanlig adjektiv: **en travel dag**, **et travelt liv**, **t
 Disse to blandes ofte sammen, men peker på forskjellige ting:
 
 > Jeg er **opptatt**.
-→ Du er ikke tilgjengelig — fokus på tilgjengelighet.
+> → Du er ikke tilgjengelig — fokus på tilgjengelighet.
 
 > Jeg har **det travelt**.
-→ Du har dårlig tid eller mye å rekke — fokus på tempo og mengde gjøremål.
+> → Du har dårlig tid eller mye å rekke — fokus på tempo og mengde gjøremål.
 
 Du kan være opptatt uten å ha det travelt (rolig, men uten ledig tid), og du kan ha det travelt uten nødvendigvis å være utilgjengelig for andre.
 
@@ -86,10 +86,10 @@ Du kan være opptatt uten å ha det travelt (rolig, men uten ledig tid), og du k
 
 ## Sammenligningstabell
 
-| Ord | Beskriver | Brukes om | Eksempel |
-| --- | --- | --- | --- |
-| **opptatt** | ikke tilgjengelig | personer | Jeg er opptatt. |
-| **travel** | full av gjøremål | personer, dager, perioder | Jeg er travel. / en travel dag |
+| Ord         | Beskriver                   | Brukes om                  | Eksempel                               |
+| ----------- | --------------------------- | -------------------------- | -------------------------------------- |
+| **opptatt** | ikke tilgjengelig           | personer                   | Jeg er opptatt.                        |
+| **travel**  | full av gjøremål            | personer, dager, perioder  | Jeg er travel. / en travel dag         |
 | **travelt** | nøytrumsform / fast uttrykk | forhold, uttrykk med «det» | Det er travelt. / Jeg har det travelt. |
 
 ---
@@ -110,7 +110,7 @@ _«Det» er en fast del av uttrykket ha det travelt — det kan ikke utelates._
 
 ## Norskprøven — eksempelspørsmål
 
-**1. Velg riktig ord: «Beklager, jeg kan ikke snakke nå. Jeg er ______.»**
+**1. Velg riktig ord: «Beklager, jeg kan ikke snakke nå. Jeg er \______.»**
 a) opptatt
 b) travelt
 
