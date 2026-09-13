@@ -4,7 +4,7 @@ description: 'Dårlig handler om kvalitet, ferdigheter eller helse. Slem handler
 slug: darlig-vs-slem
 cefr: A2
 publishedAt: 2026-06-24
-updatedAt: 2026-09-12
+updatedAt: 2026-09-13
 tags: [adjectives, comparison, vocabulary]
 ---
 
@@ -129,5 +129,7 @@ b) slem
 ond · fæl · grusom · ubehagelig · svak · utilstrekkelig
 
 ---
+
+_→ Vil du lære forskjellen mellom **oppføre seg**, **opptre** og **arte seg**? Les: [Oppføre seg vs opptre vs arte seg](/blog/oppfore-vs-opptre)_
 
 _→ Vil du lære forskjellen mellom **lei seg** og **trist**? Les: [Lei seg vs trist](/blog/lei-seg-vs-trist)_
