@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.80.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added extensive Norwegian-learning lessons covering vocabulary, grammar, prepositions, verb distinctions, word formation, noun gender, expressions, and Norskprøven practice.
+    - Added lessons on _feil/galt_, _gå/forlate_, _hvor/hvordan_, _for/til_, _vil/ønsker_, _seg/sin_, _ta/få_, _som helst_, _sørge for_, _-vern_, _-vis_, _-legge_, and more.
+
+  - **Bug Fixes**
+    - Improved subscription validity, billing details, and Plus access handling.
+    - Prevented outdated subscription events from overwriting newer account information.
+
+  - **Documentation**
+    - Updated related links, examples, explanations, metadata, formatting, and accepted alternative answers.
+
 ## 2.79.0
 
 ### Minor Changes
