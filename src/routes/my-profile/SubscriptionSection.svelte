@@ -26,9 +26,7 @@
   // webhook). It's only null for a brand-new Plus row created by an edge case
   // (e.g. manual backfill without a status) — treat null as 'active' for Plus
   // members so the UI doesn't show a broken state.
-  const status = $derived(
-    isPlus ? (subscriptionStatus ?? 'active') : subscriptionStatus
-  );
+  const status = $derived(isPlus ? (subscriptionStatus ?? 'active') : subscriptionStatus);
 
   // Format ISO date string to a readable date e.g. "14 June 2025"
   function formatDate(iso: string | null): string {

@@ -71,10 +71,10 @@ decks:
 ## Sammenligningstabell
 
 | Ord           | Styrke | Register              | Typisk bruk                 |
-| ------------- | ------ | ---------------------- | ---------------------------- |
-| **støy**      | mild   | nøytral/formell        | trafikkstøy, byggestøy       |
-| **bråk**      | medium | muntlig                | naboene lager bråk, krangel  |
-| **spetakkel** | sterk  | dramatisk/humoristisk  | voldsomt spetakkel, kaos     |
+| ------------- | ------ | --------------------- | --------------------------- |
+| **støy**      | mild   | nøytral/formell       | trafikkstøy, byggestøy      |
+| **bråk**      | medium | muntlig               | naboene lager bråk, krangel |
+| **spetakkel** | sterk  | dramatisk/humoristisk | voldsomt spetakkel, kaos    |
 
 ---
 
@@ -95,7 +95,7 @@ b) spetakkel
 
 **Svar:** a) støy — nøytral, teknisk lyd.
 
-**2. Velg riktig ord: «Jeg vil ikke lage ______, jeg vil bare snakke med deg.»**
+**2. Velg riktig ord: «Jeg vil ikke lage \______, jeg vil bare snakke med deg.»**
 a) støy
 b) bråk
 
