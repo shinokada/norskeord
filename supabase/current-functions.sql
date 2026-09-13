@@ -35,8 +35,10 @@ REVOKE EXECUTE ON FUNCTION public.upsert_study_day(uuid, date) FROM anon;
 -- Called from src/routes/api/lemon/webhook/+server.ts via
 -- supabase.rpc('upsert_subscription_if_newer', { ... }).
 -- SET search_path = '' prevents search_path injection (Supabase linter 0011).
--- REVOKE on anon: only the service-role webhook handler calls this.
--- Deployed via: Supabase Dashboard → SQL Editor (024, 025, 026)
+-- Only service_role may call this: it's SECURITY DEFINER and takes p_user_id
+-- as a raw parameter with no ownership check, so PUBLIC/anon/authenticated
+-- are explicitly revoked and only service_role is granted EXECUTE.
+-- Deployed via: Supabase Dashboard → SQL Editor (024, 025, 026, 027)
 
 CREATE OR REPLACE FUNCTION public.upsert_subscription_if_newer(
   p_user_id uuid,
@@ -55,7 +57,7 @@ SECURITY DEFINER
 SET search_path = ''
 AS $$
 DECLARE
-  v_applied boolean := false;
+  v_row_count integer := 0;
 BEGIN
   INSERT INTO public.subscriptions (
     user_id, plan, status, billing_interval, valid_until,
@@ -79,13 +81,18 @@ BEGIN
     public.subscriptions.ls_event_at IS NULL
     OR public.subscriptions.ls_event_at < p_event_at;
 
-  GET DIAGNOSTICS v_applied = ROW_COUNT;
-  RETURN v_applied > 0;
+  GET DIAGNOSTICS v_row_count = ROW_COUNT;
+  RETURN v_row_count > 0;
 END;
 $$;
 
 REVOKE EXECUTE ON FUNCTION public.upsert_subscription_if_newer
-  (uuid, text, text, text, timestamptz, text, text, text, timestamptz) FROM anon;
+  (uuid, text, text, text, timestamptz, text, text, text, timestamptz)
+  FROM PUBLIC, anon, authenticated;
+
+GRANT EXECUTE ON FUNCTION public.upsert_subscription_if_newer
+  (uuid, text, text, text, timestamptz, text, text, text, timestamptz)
+  TO service_role;
 
 -- ── get_welcome_sequence_candidates ──────────────────────────────────────────
 -- Returns users who signed up ~24 hours ago and haven't received a welcome
