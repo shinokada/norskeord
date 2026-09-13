@@ -4,7 +4,7 @@ description: 'Lei seg er en personlig følelsesmessig reaksjon, ofte utløst av 
 slug: lei-seg-vs-trist
 cefr: A2
 publishedAt: 2026-09-16
-updatedAt: 2026-09-12
+updatedAt: 2026-09-13
 tags: [adjectives, vocabulary, emotions]
 decks:
   - level: a2
@@ -174,5 +174,7 @@ bli lei seg · være lei seg · ikke vær lei deg · så trist · en trist dag �
 nedfor · deprimert · ulykkelig · bekymret · tung · sorgfull
 
 ---
+
+_→ Vil du lære forskjellen mellom **synes synd på** og **være lei for**? Les: [Synes synd på vs være lei for](/blog/lei-vs-synd)_
 
 _→ Vil du lære forskjellen mellom **dårlig** og **slem**? Les: [Dårlig vs Slem](/blog/darlig-vs-slem)_

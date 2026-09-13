@@ -103,3 +103,5 @@ mestre · håndtere · få til · rekke · evne
 _→ Vil du lære mer om **få** med ulike partikler? Les: [Få + partikel — tak i, til, på, i gang](/blog/fa)_
 
 _→ Vil du lære uttrykket **gi deg**? Les: [Gi deg — Slutt med det / La det være](/blog/gi-deg)_
+
+<!-- TODO: re-add link to [Støy vs Bråk vs Spetakkel](/blog/stoy-brak-spetakkel) once that post publishes (currently scheduled 2027-02-12) -->

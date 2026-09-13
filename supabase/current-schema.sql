@@ -31,6 +31,7 @@ CREATE TABLE public.subscriptions (
   lemon_squeezy_subscription_id text,
   lemon_squeezy_order_id text,
   status text NOT NULL DEFAULT 'inactive'::text CHECK (status = ANY (ARRAY['active'::text, 'cancelled'::text, 'expired'::text, 'inactive'::text, 'past_due'::text])),
+  ls_event_at timestamp with time zone,
   CONSTRAINT subscriptions_pkey PRIMARY KEY (user_id),
   CONSTRAINT subscriptions_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );

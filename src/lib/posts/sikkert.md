@@ -4,7 +4,7 @@ description: 'Sikkert kan bety både «helt sikkert» og «sannsynligvis» – o
 slug: sikkert
 cefr: B1
 publishedAt: 2026-07-22
-updatedAt: 2026-09-12
+updatedAt: 2026-09-13
 tags: [adverbs, vocabulary]
 decks:
   - level: b1
@@ -141,5 +141,7 @@ det er sikkert · én ting er sikkert · sikkert nok · det er sikkert sant · h
 sannsynligvis · kanskje · trolig · helt sikkert · garantert · muligens
 
 ---
+
+_→ Vil du lære forskjellen mellom **sørge for**, **være sikker på** og **forsikre seg om**? Les: [Sørge for vs være sikker på vs forsikre seg om](/blog/sorge-vs-sikker-vs-forsikre)_
 
 _→ Vil du lære forskjellen mellom **trolig**, **sannsynligvis** og **sikkert**? Les: [Trolig vs Sannsynligvis vs Sikkert](/blog/trolig-vs-sannsynligvis-vs-sikkert)_

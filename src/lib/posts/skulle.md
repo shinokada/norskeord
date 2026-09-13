@@ -4,7 +4,7 @@ description: '«Skulle» betyr ikke alltid det samme som «burde». I fortid utt
 slug: skulle
 cefr: B1
 publishedAt: 2026-08-14
-updatedAt: 2026-09-12
+updatedAt: 2026-09-13
 tags: [verbs, grammar]
 decks:
   - level: b1
@@ -148,4 +148,4 @@ ville · måtte · burde · kunne · få til · ha tenkt å
 
 _→ Vil du lære mer om V2-regelen og norsk setningsbygning? Les: [V2-regelen](/blog/v2-regelen)_
 
-_→ Vil du lære forskjellen mellom å begynne og å starte? Les: [Begynne vs Starte](/blog/begynne-vs-starte)_
+_→ Vil du lære et annet uregelrett bøyningsmønster? Les: [Legge-verb — planlegge, pålegge, nedlegge](/blog/legge-la-lagt)_

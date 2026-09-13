@@ -52,6 +52,8 @@ export interface LemonSqueezyWebhookPayload {
       ends_at: string | null;
       /** Billing interval: 'month' | 'year' */
       billing_interval?: string;
+      /** ISO date string of when Lemon Squeezy last updated this record */
+      updated_at?: string;
     };
   };
 }

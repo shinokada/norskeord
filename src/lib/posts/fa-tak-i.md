@@ -4,7 +4,7 @@ description: 'Verbet få skifter betydning avhengig av hvilken partikel det komb
 slug: fa
 cefr: B1
 publishedAt: 2026-07-17
-updatedAt: 2026-09-12
+updatedAt: 2026-09-13
 tags: [verbs, vocabulary, phrasal-verbs]
 decks:
   - level: b1
@@ -154,8 +154,8 @@ klare · greie · orke · skaffe · starte
 
 _→ Vil du lære mer om å uttrykke å mestre noe på norsk? Les: [Klare vs Orke vs Greie](/blog/klare-vs-orke-vs-greie)_
 
-_→ Vil du lære forskjellen mellom å bringe og ta med seg noe? Les: [Bringe vs Ta med seg](/blog/bringe-vs-ta-med-seg)_
-
 _→ Vil du lære mer om **få på**? Les: [Få noe på — klare å få noe på seg](/blog/fa-noe-pa)_
 
 _→ Vil du lære uttrykket å nærme seg noen? Les: [Komme bort til](/blog/komme-bort-til)_
+
+_→ Vil du lære et annet uregelrett verb-mønster? Les: [Legge-verb — planlegge, pålegge, nedlegge](/blog/legge-la-lagt)_

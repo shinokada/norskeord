@@ -4,7 +4,7 @@ description: 'Begynne brukes om aktiviteter, studier og hendelser. Starte brukes
 slug: begynne-vs-starte
 cefr: A2
 publishedAt: 2026-11-06
-updatedAt: 2026-09-12
+updatedAt: 2026-09-13
 tags: [verbs, comparison, vocabulary]
 ---
 
@@ -140,3 +140,5 @@ _→ Vil du lære om planer sett fra fortiden? Les: [Skulle — skulle til å / 
 _→ Vil du lære forskjellen mellom å bytte og å skifte? Les: [Bytte vs Skifte](/blog/bytte-vs-skifte)_
 
 _→ Vil du lære forskjellen mellom å kose seg og å nyte? Les: [Kose vs Nyte](/blog/kose-vs-nyte)_
+
+_→ Vil du lære når du trenger «til» foran å-infinitiv, som i «ha tid til å»? Les: [Til å + infinitiv](/blog/til-a-infinitiv)_

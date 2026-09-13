@@ -62,11 +62,11 @@ På engelsk er "hello" en generell hilsen du kan si i nesten alle situasjoner. P
 
 Bruk **hei** — ikke hallo — når du møter folk ansikt til ansikt:
 
-| Hilsen      | Bruk                                                       |
-| ----------- | ---------------------------------------------------------- |
-| **hei**     | standard hverdagshilsen — alltid trygt                     |
-| **hei hei** | varmere og litt mer uformelt                               |
-| **halla**   | uformelt, blant venner                                     |
+| Hilsen      | Bruk                                                                              |
+| ----------- | --------------------------------------------------------------------------------- |
+| **hei**     | standard hverdagshilsen — alltid trygt                                            |
+| **hei hei** | varmere og litt mer uformelt                                                      |
+| **halla**   | uformelt, blant venner                                                            |
 | **hallo**   | vanligvis telefon / oppmerksomhet — sjeldnere som vanlig hilsen ansikt til ansikt |
 
 > ➖ Du åpner døra og sier: «Hallo!»

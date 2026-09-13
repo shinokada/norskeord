@@ -60,11 +60,11 @@ I de fleste tilfeller er de utbyttbare.
 
 ## Sammenligningstabell
 
-| Uttrykk        | Betydning            | Nyanse                                            |
-| -------------- | -------------------- | ------------------------------------------------- |
+| Uttrykk        | Betydning            | Nyanse                                    |
+| -------------- | -------------------- | ----------------------------------------- |
 | **finne fram** | ta frem / hente frem | vekt på å lete etter og finne gjenstanden |
-| **ta fram**    | ta frem / hente frem | vekt på selve handlingen å ta noe frem   |
-| **hente fram** | hente / bringe frem  | lett vekt på det å gå og hente                    |
+| **ta fram**    | ta frem / hente frem | vekt på selve handlingen å ta noe frem    |
+| **hente fram** | hente / bringe frem  | lett vekt på det å gå og hente            |
 
 ---
 
