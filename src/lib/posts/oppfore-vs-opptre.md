@@ -75,15 +75,15 @@ Tre uttrykk brukes ofte om hverandre av innlærere, men har ulikt fokus:
 **3. Situasjonen arter seg annerledes enn vi hadde forventet.**
 → Utviklingen tar en annen retning enn ventet.
 
-**Arte seg** kan også brukes om en person, men da med en litt spesiell, nedsettende klang:
+**Arte seg** kan også brukes om en person — dette overlapper med det eldre uttrykket **skikke seg**, og **arte seg vel** kan bety «oppføre/skikke seg bra»:
 
-**4. Han arter seg som en idiot.**
-→ En uformell, kritisk kommentar — ikke det vanlige valget for å si at noen oppfører seg dårlig.
+**4. Barnet arter seg vel.**
+→ Barnet oppfører seg bra — litt gammeldags og skriftlig i tonen.
 
-Når du bare vil si at noen oppfører seg dårlig, er **oppføre seg** det naturlige valget:
+I dagligtale er **oppføre seg** likevel det vanligste og mest naturlige valget når du snakker om en persons oppførsel:
 
-- **Barnet oppfører seg dårlig.** ✅ Naturlig og vanlig.
-- **Barnet arter seg dårlig.** ⚠️ Uvanlig i denne betydningen.
+- **Barnet oppfører seg bra.** ✅ Det vanlige, naturlige valget i dagligtale.
+- **Barnet arter seg vel.** — Korrekt, men mer formelt/skriftlig enn oppføre seg.
 
 ---
 
@@ -114,10 +114,10 @@ Når du bare vil si at noen oppfører seg dårlig, er **oppføre seg** det natur
 
 ## Vanlige feil
 
-❌ Barnet arter seg dårlig.
-⭕ Barnet **oppfører seg** dårlig.
+I dagligtale: Barnet **arter seg vel**.
+Mer vanlig i dagligtale: Barnet **oppfører seg** bra.
 
-_Arte seg om en persons dårlige oppførsel høres uvanlig ut — bruk oppføre seg._
+_Begge er korrekte, men **oppføre seg** er det vanlige, hverdagslige valget — **arte seg vel** høres mer formelt og skriftlig ut._
 
 ❌ Bandet oppfører seg på scenen.
 ⭕ Bandet **opptrer** på scenen.

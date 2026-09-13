@@ -91,23 +91,21 @@ Tre uttrykk brukes ofte om hverandre av innlærere, men har ulikt fokus:
 
 | Uttrykk | Fokus | Typisk bruk |
 | --- | --- | --- |
-| **sørge for** | handling / ansvar | å gjøre noe skje |
+| **sørge for** | handling / ansvar | å sørge for at noe skjer |
 | **være sikker på** | visshet / tillit | å vite eller tro noe |
 | **forsikre seg om** | kontroll | å sjekke for å bli sikker |
 
 ---
 
-## Vanlige feil
+## Visshet vs. ansvar — en presisering
 
-❌ Jeg er sikker på at døren blir låst.
-⭕ Jeg **sørger for** at døren blir låst.
+**Jeg er sikker på at døren blir låst.**
+→ Uttrykker visshet — du tror eller vet at det skjer, uten at du nødvendigvis er den som utfører handlingen.
 
-_Være sikker på beskriver visshet, ikke en handling du selv utfører._
+**Jeg sørger for at døren blir låst.**
+→ Uttrykker ansvar — du tar aktivt ansvar for resultatet.
 
-❌ Jeg sørger for at han kommer.
-⭕ Jeg **er sikker på** at han kommer.
-
-_Sørge for krever at du kan påvirke resultatet — du kan ikke «sørge for» andres frie valg._
+_Begge setninger er grammatisk riktige. Forskjellen ligger i betydningen: **være sikker på** handler om visshet, **sørge for** om å ta ansvar for et utfall — også når utfallet involverer en annen person, som i «jeg sørger for at han kommer»._
 
 ---
 

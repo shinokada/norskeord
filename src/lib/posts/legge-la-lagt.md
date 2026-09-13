@@ -48,7 +48,7 @@ Når **legge** blir andre del av et sammensatt verb, følger bøyningen ofte med
 | **nedlegge**      | avslutte, legge ned        | **nedla**      | har **nedlagt**      |
 | **pålegge**       | kreve, ilegge              | **påla**       | har **pålagt**       |
 | **ilegge**        | ilegge (f.eks. en bot)     | **ila**        | har **ilagt**        |
-| **overlegge**     | drøfte, overlate til noen  | **overla**     | har **overlagt**     |
+| **overlegge**     | planlegge, rådslå          | **overla**     | har **overlagt**     |
 | **underlegge**    | underordne                 | **underla**    | har **underlagt**    |
 
 ---

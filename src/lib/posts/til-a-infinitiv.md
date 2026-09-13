@@ -20,8 +20,8 @@ decks:
 ## Kort forklaring
 
 - **til å** → brukes etter faste uttrykk med substantiv/adjektiv som **tid**, **lyst**, **mulighet**, **flink**
-- **bare å** → brukes direkte etter mange verb (**prøve**, **begynne**, **ønske**) og etter enkelte adjektiver (**vanskelig**, **viktig**)
-- Valget mellom **til å** og **bare å** må ofte læres sammen med hvert enkelt uttrykk
+- **direkte infinitiv med å** → brukes direkte etter mange verb (**prøve**, **begynne**, **ønske**) og etter enkelte adjektiver (**vanskelig**, **viktig**)
+- Valget mellom **til å** og **direkte infinitiv med å** må ofte læres sammen med hvert enkelt uttrykk
 
 ---
 
@@ -55,7 +55,7 @@ Vi bruker **til + å-infinitiv** når infinitiven forklarer **hva noe er ment fo
 
 ---
 
-## Når bruker vi bare «å + verb»?
+## Når bruker vi direkte infinitiv med «å + verb»?
 
 Mange verb tar infinitiv **direkte**, uten noen preposisjon foran.
 
@@ -161,7 +161,7 @@ b) for å
 ## Husk dette
 
 - **til å** → etter faste uttrykk som **ha tid til å**, **ha lyst til å**, **være flink til å**
-- **bare å** → direkte etter mange verb (**prøve**, **begynne**, **ønske**) og adjektiver (**vanskelig**, **viktig**)
+- **direkte infinitiv med å** → direkte etter mange verb (**prøve**, **begynne**, **ønske**) og adjektiver (**vanskelig**, **viktig**)
 - **for å** → brukes i noen uttrykk, som **ha behov for å**
 - Det finnes ingen enkel regel — lær hele konstruksjonen sammen med hvert uttrykk
 
