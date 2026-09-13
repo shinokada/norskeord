@@ -78,7 +78,7 @@ Noen nærliggende betydninger uttrykkes med andre ord, ikke med som helst:
 → Ved enhver anledning, ikke valgfritt som når som helst.
 
 **4. Vi kan møtes en gang neste uke.**
-→ Et ubestemt tidspunkt i framtiden — ikke likegyldig når som som helst antyder.
+→ Et ubestemt tidspunkt i framtiden — ikke likegyldig slik «når som helst» antyder.
 
 ---
 

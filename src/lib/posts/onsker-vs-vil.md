@@ -80,7 +80,7 @@ Legg merke til grammatikken:
 
 | Setning | Register | Grammatikk |
 | --- | --- | --- |
-| **Jeg vil ha kaffe.** | direkte, vanlig | vil + infinitiv/substantiv |
+| **Jeg vil ha kaffe.** | direkte, vanlig | vil + infinitiv |
 | **Jeg ønsker kaffe.** | litt mer høflig | ønsker + substantiv |
 | **Jeg vil kjøpe en bil.** | vanlig | vil + infinitiv |
 | **Jeg ønsker å kjøpe en bil.** | mer formelt | ønsker + å + infinitiv |
@@ -115,11 +115,11 @@ b) ønsker å
 
 **Svar:** b) ønsker å — ønsker krever å foran infinitiv.
 
-**3. Velg riktig ord i en høflig, formell setning: «______ du kaffe eller te?»**
-a) Vil
-b) Ønsker
+**3. Velg riktig setning i en høflig, formell sammenheng:**
+a) Vil du ha kaffe eller te?
+b) Ønsker du kaffe eller te?
 
-**Svar:** b) Ønsker — mer høflig og formelt enn vil i denne sammenhengen, men vil er også akseptabelt i dagligtale.
+**Svar:** b) Ønsker du kaffe eller te? — mer høflig og formelt enn vil i denne sammenhengen, men «Vil du ha kaffe eller te?» er også helt akseptabelt i dagligtale.
 
 ---
 

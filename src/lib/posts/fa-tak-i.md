@@ -154,10 +154,6 @@ klare · greie · orke · skaffe · starte
 
 _→ Vil du lære mer om å uttrykke å mestre noe på norsk? Les: [Klare vs Orke vs Greie](/blog/klare-vs-orke-vs-greie)_
 
-_→ Vil du lære forskjellen mellom å bringe og ta med seg noe? Les: [Bringe vs Ta med seg](/blog/bringe-vs-ta-med-seg)_
-
 _→ Vil du lære mer om **få på**? Les: [Få noe på — klare å få noe på seg](/blog/fa-noe-pa)_
 
 _→ Vil du lære uttrykket å nærme seg noen? Les: [Komme bort til](/blog/komme-bort-til)_
-
-_→ Vil du lære forskjellen mellom **ta** og **få**? Les: [Ta vs Få](/blog/ta-vs-fa)_

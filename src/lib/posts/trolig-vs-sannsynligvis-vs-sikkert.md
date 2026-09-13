@@ -184,5 +184,3 @@ kanskje · muligens · antagelig · garantert · neppe · helt sikkert
 ---
 
 _→ Vil du lære mer om de to betydningene av **sikkert**? Les: [Sikkert — Certain or Probably?](/blog/sikkert)_
-
-_→ Vil du lære flere ord dannet med endelsen **-vis**? Les: [Ord på -vis — vanligvis, gradvis, henholdsvis og flere](/blog/visord)_
