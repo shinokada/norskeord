@@ -157,6 +157,15 @@ ta tak i
 
 Not every verb-initial multi-word entry qualifies, though — if the noun/adjective after the verb doesn't function as a normal grammatical object (e.g. it needs a different verb like `være` to make sense, as in `være skyld i`), the fixed word isn't a verb complement and the entry likely belongs in `uttrykk` instead, or as its own `noun`/`adjective` vocab entry.
 
+The same test applies when the swappable slot is an infinitive rather than a noun phrase: a finite verb + fixed complementizer + infinitive construction is vocab, not uttrykk, as long as the finite verb conjugates normally and the infinitive slot is freely swappable.
+
+```
+komme til å
+ha lyst til å
+ha tid til å
+få lov til å
+```
+
 ### Uttrykk (`uttrykk-xx.json`)
 
 Use **uttrykk** for fixed expressions that learners memorize as complete chunks rather than as ordinary lexical items — the entry doesn't have a single grammatical head, and learners don't productively inflect or recombine its parts.
@@ -215,3 +224,9 @@ When deciding between vocab and uttrykk, ask, in order:
 2. **Is this primarily a fixed chunk** used in communication, with no single grammatical head? → **uttrykk**.
 
 This is easier to apply consistently than asking whether the meaning is compositional, and it resolves the recurring edge cases (reflexive/particle verbs, multi-word prepositions) in favor of `vocab`, while keeping genuine formulas, idioms, and time expressions in `uttrykk`.
+
+### Neither vocab nor uttrykk: productive copula + adjective
+
+`bli`/`være` + a predicative adjective (`bli forelsket`, `bli sulten`, `være glad`) is fully productive Norwegian grammar, not a fixed lexical unit — any adjective can fill the slot. Don't create a standalone card for the combination; make sure the adjective itself has a vocab entry and let `bli`/`være` stand as their own verb entries.
+
+Exception: if the combination has drifted to a non-compositional idiomatic meaning beyond "become/be + adjective," it may warrant its own `uttrykk` entry.

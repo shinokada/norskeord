@@ -180,4 +180,4 @@ egen · seg · enda · skjønt · likevel
 
 ---
 
-_→ Vil du lære forskjellen mellom ennå og enda, som også kan bety «even»? Les: [Ennå vs enda](/blog/enna-vs-enda)_
+_→ Vil du lære forskjellen mellom ennå og enda, der enda også kan bety «even»? Les: [Ennå vs enda](/blog/enna-vs-enda)_
