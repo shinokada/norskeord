@@ -4,7 +4,7 @@ description: 'Setningsadverb som «ikke», «aldri» og «kanskje» står etter 
 slug: setningsadverb
 cefr: B1
 publishedAt: 2026-08-19
-updatedAt: 2026-09-12
+updatedAt: 2026-09-13
 tags: [grammar, word-order, sentence-structure]
 decks:
   - level: b1
@@ -142,6 +142,27 @@ Disse ordene oppfører seg forskjellig i hovedsetninger og leddsetninger.
 
 ---
 
+## Når verbalet består av flere deler
+
+Når verbalet består av flere verb (for eksempel et hjelpeverb og et hovedverb), er det alltid det **finitte verbet** som styrer plasseringen av adverbet — ikke hele verbalet.
+
+**Hovedsetning:**
+
+> Jeg **har ikke sett** filmen.
+
+**Leddsetning:**
+
+> Jeg vet at jeg **ikke har sett** filmen.
+
+→ **Ikke** står foran det finitte verbet **har**, ikke foran hovedverbet **sett**.
+
+Et annet eksempel:
+
+> Hun **skal ikke reise** i morgen.
+> Han sier at hun **ikke skal reise** i morgen.
+
+---
+
 ## Sammenligningstabell
 
 | Adverb        | Hovedsetning                  | Leddsetning                        |
@@ -164,6 +185,22 @@ Hovedsetning: **Subjekt + finitt verb + adverb**
 Leddsetning: **Subjekt + adverb + finitt verb**
 
 Dette kalles **leddsetningsregelen** og gjelder konsekvent for alle setningsadverb.
+
+---
+
+## Leddsetningsregelen er ikke V2-regelen
+
+I en hovedsetning kan et annet ledd enn subjektet stå først. Da får vi **V2-inversjon**, og subjektet havner etter verbet:
+
+> **I dag kommer jeg ikke.**
+> (ledd + verb + subjekt + adverb)
+
+I en leddsetning skjer ikke denne typen inversjon. Subjektet står alltid foran adverbet og det finitte verbet:
+
+> **Jeg vet at jeg ikke kommer i dag.**
+> (subjekt + adverb + verb)
+
+Dette viser at **V2-regelen** (ordstilling i hovedsetninger) og **leddsetningsregelen** (adverbplassering i leddsetninger) er to forskjellige regler som gjelder samtidig.
 
 ---
 
