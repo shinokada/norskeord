@@ -166,6 +166,10 @@ ha tid til å
 få lov til å
 ```
 
+This only applies when the complementizer is more than the bare infinitive marker `å` — i.e. a fixed element like `til å` that carries real idiomatic/grammaticalized weight (future sense, desire, permission, etc.), not ordinary infinitive-complement syntax. Plain verb + `å` + infinitive (`begynne å`, `prøve å`, `ønske å`, `håpe å`) is fully productive grammar — almost any verb can take a bare infinitival complement this way — so it doesn't qualify as a vocab lemma on its own; require evidence the *whole sequence* is lexicalized (a fixed dictionary-citable unit), not just that the pattern is swappable.
+
+See also `ha lyst til` under uttrykk below: without the infinitive it's a fixed conversational fragment (uttrykk), but `ha lyst til å` + infinitive is the grammaticalized "feel like doing" construction (vocab) — same core words, different construction, both classifications correct.
+
 ### Uttrykk (`uttrykk-xx.json`)
 
 Use **uttrykk** for fixed expressions that learners memorize as complete chunks rather than as ordinary lexical items — the entry doesn't have a single grammatical head, and learners don't productively inflect or recombine its parts.
