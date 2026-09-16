@@ -1,0 +1,56 @@
+{"level":"a2","batch":1,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"en stund"},"reason":"dup of vocab-b1 stund"}
+{"level":"a2","batch":1,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"en feil"},"reason":"dup of vocab-a2 own feil"}
+{"level":"a2","batch":1,"type":"move","bucket":"move_to_vocab","source":{"norsk":"ha rett i noe"},"vocab":{"norsk":"ha rett i","lemma":"ha rett i","part":"verb"},"reason":"swappable-object collocation"}
+{"level":"a2","batch":1,"type":"move","bucket":"move_to_vocab","source":{"norsk":"være avhengig av"},"vocab":{"norsk":"avhengig av","lemma":"avhengig av","part":"adjective"},"reason":"adjective+prep, productive"}
+{"level":"a2","batch":1,"type":"move","bucket":"move_to_vocab","source":{"norsk":"bli lei av"},"vocab":{"norsk":"lei av","lemma":"lei av","part":"adjective"},"reason":"adjective+prep, productive"}
+{"level":"a2","batch":1,"type":"move","bucket":"move_to_vocab","source":{"norsk":"være interessert i"},"vocab":{"norsk":"interessert i","lemma":"interessert i","part":"adjective"},"reason":"adjective+prep, productive"}
+{"level":"a2","batch":1,"type":"move","bucket":"move_to_vocab","source":{"norsk":"være enig i"},"vocab":{"norsk":"enig i","lemma":"enig i","part":"adjective"},"reason":"adjective+prep, productive"}
+{"level":"a2","batch":1,"type":"move","bucket":"move_to_vocab","source":{"norsk":"holde seg i form"},"vocab":{"norsk":"holde seg i form","lemma":"holde seg i form","part":"verb"},"reason":"reflexive verb + fixed complement"}
+{"level":"a2","batch":1,"type":"move","bucket":"move_to_vocab","source":{"norsk":"lengte hjem"},"vocab":{"norsk":"lengte hjem","lemma":"lengte hjem","part":"verb"},"reason":"verb+adverb, compositional"}
+{"level":"a2","batch":1,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"for varmt/kaldt"},"reason":"template: for + any adjective"}
+{"level":"a2","batch":1,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"å være forsynt"},"reason":"forsynt already exists as vocab adjective"}
+{"level":"a2","batch":1,"type":"move","bucket":"redundant_grammar","source":{"norsk":"å være født"},"vocab":{"norsk":"født","lemma":"født","part":"adjective"},"reason":"copula+adjective, but født genuinely missing from vocab"}
+{"level":"a2","batch":1,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"å være lei seg"},"reason":"lei seg already exists as vocab-a1 adjective (w-000299)"}
+{"level":"a2","batch":1,"type":"move","bucket":"move_to_vocab","source":{"norsk":"å være i form"},"vocab":{"norsk":"i form","lemma":"i form","part":"adjective"},"reason":"no independent standalone adjective, but kept as vocab per user decision"}
+{"level":"a2","batch":2,"type":"move","bucket":"move_to_vocab","source":{"norsk":"vondt i hodet"},"vocab":{"norsk":"ha vondt i","lemma":"ha vondt i","part":"verb"},"reason":"consolidated body-part collocation"}
+{"level":"a2","batch":2,"type":"move","bucket":"move_to_vocab","source":{"norsk":"vondt i magen"},"vocab":{"norsk":"ha vondt i","lemma":"ha vondt i","part":"verb"},"reason":"consolidated body-part collocation (same entry as vondt i hodet)"}
+{"level":"a2","batch":2,"type":"move","bucket":"move_to_vocab","source":{"norsk":"allergisk mot"},"vocab":{"norsk":"allergisk mot","lemma":"allergisk mot","part":"adjective"},"reason":"adjective+prep, swappable object"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"for ... siden"},"reason":"siden already exists as standalone preposition"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"De ser glade ut"},"reason":"se ut already exists as standalone verb"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"dårlige veier"},"reason":"plain adj+noun"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"ekstra flott"},"reason":"template: ekstra + any adjective"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"for stor"},"reason":"template: for + adjective"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"god mat"},"reason":"plain adj+noun"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"De er gift"},"reason":"copula+adjective"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"det regner"},"reason":"regne already exists as standalone verb"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"det snør"},"reason":"snø already exists as standalone verb/noun"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"det er sol"},"reason":"sol already exists as standalone noun"}
+{"level":"a2","batch":2,"type":"delete","bucket":"stays_uttrykk_merge","source":{"norsk":"med én gang"},"reason":"near-duplicate of existing med en gang, this one dropped"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"hotellet er fullt"},"reason":"full already exists as standalone adjective"}
+{"level":"a2","batch":2,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"en god idé"},"reason":"ide already covered at B1 level per user"}
+{"level":"a2","batch":3,"type":"move","bucket":"move_to_vocab","source":{"norsk":"å gå hjem"},"vocab":{"norsk":"å gå hjem","lemma":"gå hjem","part":"verb"},"reason":"directional particle-verb pattern"}
+{"level":"a2","batch":3,"type":"move","bucket":"move_to_vocab","source":{"norsk":"å ta til høyre"},"vocab":{"norsk":"å ta til høyre","lemma":"ta til høyre","part":"verb"},"reason":"verb+swappable-direction collocation (høyre/venstre)"}
+{"level":"a2","batch":3,"type":"move","bucket":"move_to_vocab","source":{"norsk":"jo"},"vocab":{"norsk":"jo","lemma":"jo","part":"adverb"},"reason":"single-word discourse particle, no standalone vocab entry existed"}
+{"level":"a2","batch":3,"type":"move","bucket":"move_to_vocab","source":{"norsk":"til sammen"},"vocab":{"norsk":"til sammen","lemma":"til sammen","part":"adverb"},"reason":"fixed adverbial (altogether/in total), distinct sense from existing sammen"}
+{"level":"a2","batch":3,"type":"move","bucket":"move_to_vocab","source":{"norsk":"til slutt"},"vocab":{"norsk":"til slutt","lemma":"til slutt","part":"adverb"},"reason":"fixed adverbial (in the end/finally)"}
+{"level":"a2","batch":3,"type":"move","bucket":"move_to_vocab","source":{"norsk":"å klippe hår"},"vocab":{"norsk":"å klippe","lemma":"klippe","part":"verb"},"reason":"verb itself (klippe) had no standalone vocab entry; hår already does, so the whole phrase is now redundant"}
+{"level":"a2","batch":3,"type":"move","bucket":"move_to_vocab","source":{"norsk":"å knekke brød"},"vocab":{"norsk":"knekkebrød (et)","lemma":"knekkebrød","part":"noun"},"reason":"user correction: this is the noun knekkebrød (crispbread), not a verb phrase"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"å være hjemme"},"reason":"hjemme already exists as standalone adverb"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"i dårlig humør"},"reason":"humør already exists as standalone noun"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"i godt humør"},"reason":"humør already exists as standalone noun"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"i to år"},"reason":"template: i + numeral + år"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"hvor langt"},"reason":"template: hvor + adjective/adverb, langt already exists"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"hvor lenge"},"reason":"template: hvor + adjective/adverb, lenge already exists"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"om tre dager"},"reason":"template: om + numeral + dager"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"på nettet"},"reason":"nett already exists as standalone noun"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"god plass"},"reason":"plass already exists as standalone noun, plain adj+noun"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"å pusse tennene"},"reason":"dup of existing vocab å pusse tenner"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"på norsk"},"reason":"template: på + language name"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"på norskkurs"},"reason":"norskkurs already exists as standalone noun, plain PP+noun"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"så rart"},"reason":"template: så + adjective"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"å se rart ut"},"reason":"se ut already exists as standalone verb"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"å skrive rett fram"},"reason":"rett fram already exists as standalone vocab adverb"}
+{"level":"a2","batch":3,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"etter en stund"},"reason":"stund now exists as vocab noun per batch 1"}
+{"level":"a2","batch":4,"type":"move","bucket":"move_to_vocab","source":{"norsk":"holde seg fast","id":"w-008134"},"vocab":{"norsk":"holde seg fast","lemma":"holde seg fast","part":"verb"},"reason":"reflexive verb + fixed adverb complement, same pattern as holde seg i form (batch 1)"}
+{"level":"a2","batch":4,"type":"delete","bucket":"redundant_grammar","source":{"norsk":"så hyggelig","id":"w-008278"},"reason":"template: så + adjective, hyggelig already exists as standalone adjective"}
+{"level":"a2","batch":4,"type":"delete","bucket":"cross_level_duplicate","source":{"norsk":"glad i","id":"w-008294"},"reason":"duplicate of å være glad i already kept in uttrykk-a1.json per user direction; A2 does not need a separate entry"}
