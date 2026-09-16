@@ -53,6 +53,27 @@ no re-deriving "what did I already do" from chat history.
  "fix":{"norsk":"...","lemma":"...","english":"..."},"reason":"..."}
 ```
 
+### `redundant_grammar` bucket — policy (updated 2026-09-16)
+
+`redundant_grammar` entries are fully productive collocations where every
+component word already has its own vocab entry (e.g. `bli`/`være` + a
+predicative adjective, or a basic verb+object pair like `sette grenser`).
+
+**These now stay in `uttrykk-<level>.json` — do not delete them.** The
+bucket is still worth tagging during classification (useful metadata for
+a future dedupe/quality pass), but no `delete` decision should be logged
+for it. The card has real value even when compositional: it lets a
+learner practice a combination of words they already know, with a real
+example sentence.
+
+This reverses the original round-2 policy, under which `redundant_grammar`
+meant delete. Roughly 30 entries across A1, A2, and B1 batch 1 were
+already deleted under the old policy before the reversal — see the
+"Retroactive undo" section of
+`ai-docs/implementation/vocab-uttrykk-reclassification-workflow-2.md` for
+the restoration plan and status. Do not treat those old deletions as
+precedent for new decisions.
+
 ### Resolving a conflict
 
 When `apply-additions.mjs` reports the vocab word already exists in
