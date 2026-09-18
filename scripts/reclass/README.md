@@ -88,7 +88,7 @@ happens to share a lemma:
   line as before.
 - **Different sense/collocation** (e.g. `koke over` as "to boil over /
   lose one's temper" vs. an unrelated existing `koke`; `sperre øynene
-  opp` vs. existing `sperre` "to block") — **do not skip.** Add the
+opp` vs. existing `sperre` "to block") — **do not skip.** Add the
   phrase as its own distinct vocab entry (its own `norsk`/`lemma`, full
   translations and example) even though a same-text or same-root lemma
   exists elsewhere. Deleting the uttrykk source with nothing added loses

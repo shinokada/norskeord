@@ -166,7 +166,7 @@ ha tid til å
 få lov til å
 ```
 
-This only applies when the complementizer is more than the bare infinitive marker `å` — i.e. a fixed element like `til å` that carries real idiomatic/grammaticalized weight (future sense, desire, permission, etc.), not ordinary infinitive-complement syntax. Plain verb + `å` + infinitive (`begynne å`, `prøve å`, `ønske å`, `håpe å`) is fully productive grammar — almost any verb can take a bare infinitival complement this way — so it doesn't qualify as a vocab lemma on its own; require evidence the *whole sequence* is lexicalized (a fixed dictionary-citable unit), not just that the pattern is swappable.
+This only applies when the complementizer is more than the bare infinitive marker `å` — i.e. a fixed element like `til å` that carries real idiomatic/grammaticalized weight (future sense, desire, permission, etc.), not ordinary infinitive-complement syntax. Plain verb + `å` + infinitive (`begynne å`, `prøve å`, `ønske å`, `håpe å`) is fully productive grammar — almost any verb can take a bare infinitival complement this way — so it doesn't qualify as a vocab lemma on its own; require evidence the _whole sequence_ is lexicalized (a fixed dictionary-citable unit), not just that the pattern is swappable.
 
 See also `ha lyst til` under uttrykk below: without the infinitive it's a fixed conversational fragment (uttrykk), but `ha lyst til å` + infinitive is the grammaticalized "feel like doing" construction (vocab) — same core words, different construction, both classifications correct.
 
@@ -262,7 +262,7 @@ the reduced canonical `lemma`; anything multi-word keeps `lemma` = `norsk`
 elsewhere.
 
 **What's still a real duplicate, worth deleting:** two entries with the
-*identical* `norsk`/`lemma` text (a copy-paste accident), not two different
+_identical_ `norsk`/`lemma` text (a copy-paste accident), not two different
 phrasings or a phrase vs. its head word. `find_dupes.py`'s cross-file/
 within-file duplicate sections catch exact-text repeats; its "normalized
 duplicates" section will keep surfacing head-word/collocation pairs like

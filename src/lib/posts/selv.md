@@ -102,12 +102,12 @@ Sammenlign:
 
 ## Sammenligningstabell
 
-| Bruk                        | Funksjon                       | Eksempel                       |
-| ---------------------------- | ------------------------------- | ------------------------------- |
-| **forsterkende pronomen**    | understreker «uten hjelp» / hvem | Jeg gjorde det **selv**.        |
-| **selv om**                  | subjunksjon, «although»         | **Selv om** det regner, ...     |
-| **selv + preposisjonsuttrykk** | «even», fremhever noe uventet   | **selv i** en travel hverdag    |
-| **selve** (attributiv form)  | «den rette/virkelige», foran substantiv | **selve** byen           |
+| Bruk                           | Funksjon                                | Eksempel                     |
+| ------------------------------ | --------------------------------------- | ---------------------------- |
+| **forsterkende pronomen**      | understreker «uten hjelp» / hvem        | Jeg gjorde det **selv**.     |
+| **selv om**                    | subjunksjon, «although»                 | **Selv om** det regner, ...  |
+| **selv + preposisjonsuttrykk** | «even», fremhever noe uventet           | **selv i** en travel hverdag |
+| **selve** (attributiv form)    | «den rette/virkelige», foran substantiv | **selve** byen               |
 
 ---
 
@@ -118,7 +118,7 @@ Både **selv** og **enda** kan oversettes med «even» på engelsk, men de bruke
 - **enda** forsterker en komparativ eller et adjektiv: **enda verre**, **enda flinkere**.
 - **selv** forsterker et substantiv, pronomen eller preposisjonsuttrykk: **selv statsministeren**, **selv i Norge**.
 
-De to ordene kan ikke bytte plass i denne betydningen — **selv i Norge** kan ikke erstattes med **enda i Norge** når betydningen er «even in Norway». (**Enda i Norge** er likevel en fullt grammatisk setning når **enda** betyr «fortsatt»: «Er du enda i Norge?» = «Are you still in Norway?».) På samme måte kan ikke **selv** erstatte **enda** foran en komparativ: ❌ *selv verre*.
+De to ordene kan ikke bytte plass i denne betydningen — **selv i Norge** kan ikke erstattes med **enda i Norge** når betydningen er «even in Norway». (**Enda i Norge** er likevel en fullt grammatisk setning når **enda** betyr «fortsatt»: «Er du enda i Norge?» = «Are you still in Norway?».) På samme måte kan ikke **selv** erstatte **enda** foran en komparativ: ❌ _selv verre_.
 
 ---
 

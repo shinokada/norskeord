@@ -55,10 +55,10 @@ Siden **by** ikke har noen fast geografisk avgrensning, kan SSB ikke oppgi innby
 
 ## Sammenligningstabell
 
-| Begrep       | Type                    | Hvem avgjør       | Krav                          | Brukes i statistikk |
-| ------------ | ------------------------ | ------------------ | ------------------------------ | -------------------- |
-| **tettsted** | statistisk/geografisk    | SSB, etter faste kriterier | minst 200 innbyggere, tett bebyggelse | ja                    |
-| **by**       | uformell status           | kommunestyret       | intet fast innbyggerkrav i dag | nei                   |
+| Begrep       | Type                  | Hvem avgjør                | Krav                                  | Brukes i statistikk |
+| ------------ | --------------------- | -------------------------- | ------------------------------------- | ------------------- |
+| **tettsted** | statistisk/geografisk | SSB, etter faste kriterier | minst 200 innbyggere, tett bebyggelse | ja                  |
+| **by**       | uformell status       | kommunestyret              | intet fast innbyggerkrav i dag        | nei                 |
 
 ---
 

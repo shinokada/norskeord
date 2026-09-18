@@ -9,57 +9,57 @@ export const DATA_DIR = path.resolve(__dirname, '../../src/lib/data');
 export const DECISIONS_DIR = path.resolve(__dirname, 'decisions');
 
 export function levelDataPaths(level) {
-	return {
-		uttrykk: path.join(DATA_DIR, `uttrykk-${level}.json`),
-		vocab: path.join(DATA_DIR, `vocab-${level}.json`),
-		migrationMap: path.join(DATA_DIR, 'id-migration-map.json')
-	};
+  return {
+    uttrykk: path.join(DATA_DIR, `uttrykk-${level}.json`),
+    vocab: path.join(DATA_DIR, `vocab-${level}.json`),
+    migrationMap: path.join(DATA_DIR, 'id-migration-map.json')
+  };
 }
 
 export function loadJSON(filePath) {
-	return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
 // Existing files are pretty-printed with 2-space indent, no trailing
 // newline is standard here so we match that; adjust if a file differs.
 export function saveJSON(filePath, data) {
-	fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf8');
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 
 export function loadDecisions(level) {
-	const file = path.join(DECISIONS_DIR, `${level}.jsonl`);
-	if (!fs.existsSync(file)) return [];
-	return fs
-		.readFileSync(file, 'utf8')
-		.split('\n')
-		.map((l) => l.trim())
-		.filter(Boolean)
-		.map((l) => JSON.parse(l));
+  const file = path.join(DECISIONS_DIR, `${level}.jsonl`);
+  if (!fs.existsSync(file)) return [];
+  return fs
+    .readFileSync(file, 'utf8')
+    .split('\n')
+    .map((l) => l.trim())
+    .filter(Boolean)
+    .map((l) => JSON.parse(l));
 }
 
 export function appendDecision(level, decision) {
-	fs.mkdirSync(DECISIONS_DIR, { recursive: true });
-	const file = path.join(DECISIONS_DIR, `${level}.jsonl`);
-	fs.appendFileSync(file, JSON.stringify(decision) + '\n', 'utf8');
+  fs.mkdirSync(DECISIONS_DIR, { recursive: true });
+  const file = path.join(DECISIONS_DIR, `${level}.jsonl`);
+  fs.appendFileSync(file, JSON.stringify(decision) + '\n', 'utf8');
 }
 
 // Norsk/lemma comparison is case-insensitive and trims trailing
 // punctuation variance ("Vær så god." vs "Vær så god") since that's a
 // real duplicate class seen in this data.
 export function normText(s) {
-	return (s || '')
-		.toLowerCase()
-		.trim()
-		.replace(/[.?!]+$/, '');
+  return (s || '')
+    .toLowerCase()
+    .trim()
+    .replace(/[.?!]+$/, '');
 }
 
 export function findEntry(list, { id, norsk, lemma }) {
-	return list.find((e) => {
-		if (id && e.id === id) return true;
-		if (norsk && normText(e.norsk) === normText(norsk)) return true;
-		if (lemma && normText(e.lemma) === normText(lemma)) return true;
-		return false;
-	});
+  return list.find((e) => {
+    if (id && e.id === id) return true;
+    if (norsk && normText(e.norsk) === normText(norsk)) return true;
+    if (lemma && normText(e.lemma) === normText(lemma)) return true;
+    return false;
+  });
 }
 
 // Scans every non-.bak, non-preview vocab-*.json / uttrykk-*.json in
@@ -67,37 +67,37 @@ export function findEntry(list, { id, norsk, lemma }) {
 // collides across levels/files (the mistake that caused the batch-1
 // vocab duplicates).
 export function collectAllIds() {
-	const ids = new Set();
-	for (const file of fs.readdirSync(DATA_DIR)) {
-		if (!/^(vocab|uttrykk)-(a1|a2|b1|b2|c)\.json$/.test(file)) continue;
-		const list = loadJSON(path.join(DATA_DIR, file));
-		for (const e of list) if (e.id) ids.add(e.id);
-	}
-	return ids;
+  const ids = new Set();
+  for (const file of fs.readdirSync(DATA_DIR)) {
+    if (!/^(vocab|uttrykk)-(a1|a2|b1|b2|c)\.json$/.test(file)) continue;
+    const list = loadJSON(path.join(DATA_DIR, file));
+    for (const e of list) if (e.id) ids.add(e.id);
+  }
+  return ids;
 }
 
 // Same scan but returns a map id -> { file, norsk } for duplicate /
 // migration-map lookups.
 export function collectAllEntries() {
-	const map = new Map();
-	for (const file of fs.readdirSync(DATA_DIR)) {
-		if (!/^(vocab|uttrykk)-(a1|a2|b1|b2|c)\.json$/.test(file)) continue;
-		const list = loadJSON(path.join(DATA_DIR, file));
-		for (const e of list) if (e.id) map.set(e.id, { file, norsk: e.norsk, lemma: e.lemma });
-	}
-	return map;
+  const map = new Map();
+  for (const file of fs.readdirSync(DATA_DIR)) {
+    if (!/^(vocab|uttrykk)-(a1|a2|b1|b2|c)\.json$/.test(file)) continue;
+    const list = loadJSON(path.join(DATA_DIR, file));
+    for (const e of list) if (e.id) map.set(e.id, { file, norsk: e.norsk, lemma: e.lemma });
+  }
+  return map;
 }
 
 export function nextFreeId(existingIds) {
-	let max = 0;
-	for (const id of existingIds) {
-		const m = /^w-(\d+)$/.exec(id);
-		if (m) max = Math.max(max, parseInt(m[1], 10));
-	}
-	return `w-${String(max + 1).padStart(6, '0')}`;
+  let max = 0;
+  for (const id of existingIds) {
+    const m = /^w-(\d+)$/.exec(id);
+    if (m) max = Math.max(max, parseInt(m[1], 10));
+  }
+  return `w-${String(max + 1).padStart(6, '0')}`;
 }
 
 export function findByAnyOfNorsk(list, norskArr) {
-	const set = new Set(norskArr.map(normText));
-	return list.filter((e) => set.has(normText(e.norsk)) || set.has(normText(e.lemma)));
+  const set = new Set(norskArr.map(normText));
+  return list.filter((e) => set.has(normText(e.norsk)) || set.has(normText(e.lemma)));
 }
