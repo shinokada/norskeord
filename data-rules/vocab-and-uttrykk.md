@@ -157,6 +157,19 @@ ta tak i
 
 Not every verb-initial multi-word entry qualifies, though — if the noun/adjective after the verb doesn't function as a normal grammatical object (e.g. it needs a different verb like `være` to make sense, as in `være skyld i`), the fixed word isn't a verb complement and the entry likely belongs in `uttrykk` instead, or as its own `noun`/`adjective` vocab entry.
 
+The same test applies when the swappable slot is an infinitive rather than a noun phrase: a finite verb + fixed complementizer + infinitive construction is vocab, not uttrykk, as long as the finite verb conjugates normally and the infinitive slot is freely swappable.
+
+```
+komme til å
+ha lyst til å
+ha tid til å
+få lov til å
+```
+
+This only applies when the complementizer is more than the bare infinitive marker `å` — i.e. a fixed element like `til å` that carries real idiomatic/grammaticalized weight (future sense, desire, permission, etc.), not ordinary infinitive-complement syntax. Plain verb + `å` + infinitive (`begynne å`, `prøve å`, `ønske å`, `håpe å`) is fully productive grammar — almost any verb can take a bare infinitival complement this way — so it doesn't qualify as a vocab lemma on its own; require evidence the *whole sequence* is lexicalized (a fixed dictionary-citable unit), not just that the pattern is swappable.
+
+See also `ha lyst til` under uttrykk below: without the infinitive it's a fixed conversational fragment (uttrykk), but `ha lyst til å` + infinitive is the grammaticalized "feel like doing" construction (vocab) — same core words, different construction, both classifications correct.
+
 ### Uttrykk (`uttrykk-xx.json`)
 
 Use **uttrykk** for fixed expressions that learners memorize as complete chunks rather than as ordinary lexical items — the entry doesn't have a single grammatical head, and learners don't productively inflect or recombine its parts.
@@ -215,3 +228,43 @@ When deciding between vocab and uttrykk, ask, in order:
 2. **Is this primarily a fixed chunk** used in communication, with no single grammatical head? → **uttrykk**.
 
 This is easier to apply consistently than asking whether the meaning is compositional, and it resolves the recurring edge cases (reflexive/particle verbs, multi-word prepositions) in favor of `vocab`, while keeping genuine formulas, idioms, and time expressions in `uttrykk`.
+
+### Neither vocab nor uttrykk: productive copula + adjective
+
+`bli`/`være` + a predicative adjective (`bli forelsket`, `bli sulten`, `være glad`) is fully productive Norwegian grammar, not a fixed lexical unit — any adjective can fill the slot. Don't create a standalone card for the combination; make sure the adjective itself has a vocab entry and let `bli`/`være` stand as their own verb entries.
+
+Exception: if the combination has drifted to a non-compositional idiomatic meaning beyond "become/be + adjective," it may warrant its own `uttrykk` entry.
+
+### Collocation entries coexist with their head word (not duplicates)
+
+This app is not a dictionary — the goal is to show learners as many useful
+collocation examples as possible, not to minimize the entry count per
+lexical item. A verb (or noun/adjective) having its own bare vocab entry
+does **not** make a separate collocation entry built on that same head word
+a duplicate.
+
+Example: `tåle` (a standalone verb entry, "to tolerate") and `tåle kulde`
+("to handle cold weather well") are both legitimate, separate vocab
+entries. So are `avlegge en visitt` and `avlegge et besøk` — two different
+collocations that happen to mean the same thing ("to pay a visit") — kept
+as synonym variants so learners see the range of phrasing, not merged into
+one.
+
+**`lemma` exception for these entries:** normally `lemma` is the canonical
+dictionary form, shared for dedup/FSRS lookup (see above). A collocation
+entry is the exception — its `lemma` stays the full phrase (same as
+`norsk`, minus the verb's `å` prefix where applicable), **not** reduced to
+the bare head word's canonical form. This keeps the collocation card
+distinct from the head word's own card in FSRS/dedup rather than colliding
+with it. Only single-word lexical items (verb, noun, adjective, etc.) use
+the reduced canonical `lemma`; anything multi-word keeps `lemma` = `norsk`
+(minus `å`), whether or not a bare version of its head word also exists
+elsewhere.
+
+**What's still a real duplicate, worth deleting:** two entries with the
+*identical* `norsk`/`lemma` text (a copy-paste accident), not two different
+phrasings or a phrase vs. its head word. `find_dupes.py`'s cross-file/
+within-file duplicate sections catch exact-text repeats; its "normalized
+duplicates" section will keep surfacing head-word/collocation pairs like
+`tåle` vs `tåle kulde` — that's expected noise under this policy, not
+something to action.
