@@ -234,3 +234,37 @@ This is easier to apply consistently than asking whether the meaning is composit
 `bli`/`være` + a predicative adjective (`bli forelsket`, `bli sulten`, `være glad`) is fully productive Norwegian grammar, not a fixed lexical unit — any adjective can fill the slot. Don't create a standalone card for the combination; make sure the adjective itself has a vocab entry and let `bli`/`være` stand as their own verb entries.
 
 Exception: if the combination has drifted to a non-compositional idiomatic meaning beyond "become/be + adjective," it may warrant its own `uttrykk` entry.
+
+### Collocation entries coexist with their head word (not duplicates)
+
+This app is not a dictionary — the goal is to show learners as many useful
+collocation examples as possible, not to minimize the entry count per
+lexical item. A verb (or noun/adjective) having its own bare vocab entry
+does **not** make a separate collocation entry built on that same head word
+a duplicate.
+
+Example: `tåle` (a standalone verb entry, "to tolerate") and `tåle kulde`
+("to handle cold weather well") are both legitimate, separate vocab
+entries. So are `avlegge en visitt` and `avlegge et besøk` — two different
+collocations that happen to mean the same thing ("to pay a visit") — kept
+as synonym variants so learners see the range of phrasing, not merged into
+one.
+
+**`lemma` exception for these entries:** normally `lemma` is the canonical
+dictionary form, shared for dedup/FSRS lookup (see above). A collocation
+entry is the exception — its `lemma` stays the full phrase (same as
+`norsk`, minus the verb's `å` prefix where applicable), **not** reduced to
+the bare head word's canonical form. This keeps the collocation card
+distinct from the head word's own card in FSRS/dedup rather than colliding
+with it. Only single-word lexical items (verb, noun, adjective, etc.) use
+the reduced canonical `lemma`; anything multi-word keeps `lemma` = `norsk`
+(minus `å`), whether or not a bare version of its head word also exists
+elsewhere.
+
+**What's still a real duplicate, worth deleting:** two entries with the
+*identical* `norsk`/`lemma` text (a copy-paste accident), not two different
+phrasings or a phrase vs. its head word. `find_dupes.py`'s cross-file/
+within-file duplicate sections catch exact-text repeats; its "normalized
+duplicates" section will keep surfacing head-word/collocation pairs like
+`tåle` vs `tåle kulde` — that's expected noise under this policy, not
+something to action.

@@ -74,15 +74,39 @@ already deleted under the old policy before the reversal — see the
 the restoration plan and status. Do not treat those old deletions as
 precedent for new decisions.
 
-### Resolving a conflict
+### Resolving a conflict (policy updated 2026-09-17)
 
-When `apply-additions.mjs` reports the vocab word already exists in
-another level's file, and the decision is to accept that rather than add
-a duplicate, add `"resolution":"skip"` (plus a `"resolution_reason"`) to
-the original decision line. `status.mjs` then counts it as `applied`
-instead of re-reporting it as a `conflict` on every future run. Do not
-delete or rewrite the decision — the line is the audit trail for why the
-uttrykk side was deleted but the vocab side wasn't added.
+When `apply-additions.mjs` reports the target vocab lemma already exists
+elsewhere, first check whether the existing entry is the **same sense**
+as the uttrykk source, or a **different sense/collocation** that just
+happens to share a lemma:
+
+- **Same sense, genuine duplicate** (near-identical meaning and example
+  already captured) — this is the only case where `"resolution":"skip"`
+  applies: delete the uttrykk source, don't add a duplicate vocab entry,
+  and log `"resolution":"skip"` + `"resolution_reason"` on the decision
+  line as before.
+- **Different sense/collocation** (e.g. `koke over` as "to boil over /
+  lose one's temper" vs. an unrelated existing `koke`; `sperre øynene
+  opp` vs. existing `sperre` "to block") — **do not skip.** Add the
+  phrase as its own distinct vocab entry (its own `norsk`/`lemma`, full
+  translations and example) even though a same-text or same-root lemma
+  exists elsewhere. Deleting the uttrykk source with nothing added loses
+  a real, usable collocation example — exactly the content this app is
+  built to show ("not a dictionary, show as many examples as possible").
+  Only delete the uttrykk source once the replacement vocab entry has
+  actually been written and verified on disk.
+
+Before 2026-09-17, `skip` was used for both cases — any target lemma
+that existed anywhere, same sense or not, caused the uttrykk source to
+be deleted with nothing added. That produced real content loss (see the
+B1 "skip" audit in the workflow doc's retroactive-undo section); do not
+treat old `skip` decisions as precedent without checking which bucket
+they actually belong to.
+
+Do not delete or rewrite a decision line after resolving it — the line
+is the audit trail for why the uttrykk side was deleted (and, for a
+same-sense skip, why the vocab side wasn't added).
 
 `source`/`vocab` can also carry an explicit `"id"` for exact matching —
 recommended whenever the decision is a **merge/dedupe** between two
