@@ -40,7 +40,15 @@ let pending = 0,
   partial = 0,
   conflict = 0;
 
-for (const d of decisions) {
+// A later `fix` decision for the same id supersedes earlier ones (the
+// earlier line stays in the file as audit trail, but only the latest fix
+// describes what should be on disk now).
+const latestFixById = new Map();
+decisions.forEach((d, i) => {
+  if (d.type === 'fix' && d.source?.id) latestFixById.set(d.source.id, i);
+});
+
+for (const [i, d] of decisions.entries()) {
   const label = `[batch ${d.batch ?? '?'}] ${d.bucket ?? d.type}: "${d.source?.norsk ?? d.vocab?.norsk}"`;
   const sourceGone = d.type === 'add_vocab' ? true : !findEntry(uttrykkList, d.source || {});
 
@@ -83,7 +91,8 @@ for (const d of decisions) {
     // In-place field correction: the entry stays in uttrykk, so verify by
     // id that the corrected text is what's actually on disk now.
     const target = findEntry(uttrykkList, { id: d.source?.id });
-    if (!target) state = 'MISSING (fix target gone from file)';
+    if (d.source?.id && latestFixById.get(d.source.id) !== i) state = 'applied'; // superseded by a later fix
+    else if (!target) state = 'MISSING (fix target gone from file)';
     else state = normText(target.norsk) === normText(d.fix?.norsk) ? 'applied' : 'pending';
   } else {
     // Never leave state undefined — an unrecognised type used to crash
