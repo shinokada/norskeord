@@ -155,7 +155,19 @@ ha godt av
 ta tak i
 ```
 
-Not every verb-initial multi-word entry qualifies, though — if the noun/adjective after the verb doesn't function as a normal grammatical object (e.g. it needs a different verb like `være` to make sense, as in `være skyld i`), the fixed word isn't a verb complement and the entry likely belongs in `uttrykk` instead, or as its own `noun`/`adjective` vocab entry.
+A fixed complement does not disqualify a verb phrase. Literal, non-figurative verb frames — a copula or light verb (`være`, `bli`, `stå`, `få`, `ta`) plus a fixed adjective or prepositional complement — are vocab verbs when the meaning follows from the words (or is a conventionalized, non-figurative frame) and the verb conjugates normally:
+
+```
+være i stand til
+være i ferd med
+stå i fare for
+bli kvitt
+bli klar over
+```
+
+What keeps a verb-initial entry out of vocab is not the shape of its complement but that the phrase is a **figurative idiom** — see "Figurative idioms and proverbs" under Uttrykk below.
+
+> Amended 2026-09-19: an earlier version sent verb + fixed complement that isn't an "ordinary grammatical object" (e.g. `være skyld i`) to uttrykk. That test could not separate `ta hensyn til` (vocab) from `ta vare på` (uttrykk), so it was dropped in favour of the idiom test. Entries already classified under the old test (e.g. `ta vare på`, `ha lyst til`) are not bulk-reclassified; the amended rule applies to new decisions and to entries reviewed from now on.
 
 The same test applies when the swappable slot is an infinitive rather than a noun phrase: a finite verb + fixed complementizer + infinitive construction is vocab, not uttrykk, as long as the finite verb conjugates normally and the infinitive slot is freely swappable.
 
@@ -206,6 +218,28 @@ med utgangspunkt i
 i lys av
 ```
 
+### Figurative idioms and proverbs (the core of uttrykk)
+
+The clearest uttrykk are **figurative idioms and proverbs**: the meaning cannot be derived from the words even if the learner knows every word, and the expression is used to characterize a particular situation, person or state.
+
+```
+som fisken i vannet
+ha is i magen
+ha et hjerte av gull
+ligge i luften
+sveve i skyene
+ha lopper i blodet
+vise en kald skulder
+holde hodet over vann
+```
+
+Test: does the expression have a figurative meaning tied to a situation, one that a literal paraphrase would not convey (`ha is i magen` = stay calm under pressure)? If yes → uttrykk, even when it starts with a conjugating verb. `være i stand til` or `bli kvitt` fail this test — their meaning is literal or conventional, so they are vocab verbs (see above).
+
+Uttrykk therefore holds two kinds of entry:
+
+1. **Figurative idioms and proverbs** (above) — non-literal, situation-bound.
+2. **Head-less formulas** — greetings, conversational formulas, discourse markers, fixed time expressions and fixed prepositional/adverbial chunks (`god morgen`, `alt i alt`, `i går`). These are not figurative, but they have no single grammatical head, so they are not lemmas either.
+
 ### `norsk` / `lemma` fields
 
 Same as vocab: `norsk` is the display form, `lemma` is the canonical/dictionary form used for dedup. For uttrykk, both fields are normally identical — the whole fixed chunk, in its citation form.
@@ -224,8 +258,9 @@ Same as vocab: `norsk` is the display form, `lemma` is the canonical/dictionary 
 
 When deciding between vocab and uttrykk, ask, in order:
 
-1. **Does this function as a lexical item** (a noun, verb, adjective, preposition, etc.) that learners inflect/conjugate and recombine normally? → **vocab**.
-2. **Is this primarily a fixed chunk** used in communication, with no single grammatical head? → **uttrykk**.
+1. **Is this a figurative idiom or proverb** — non-literal meaning, tied to a situation? → **uttrykk**, even if it starts with a conjugating verb.
+2. **Does this function as a lexical item** (a noun, verb, adjective, preposition, etc., including literal verb + fixed complement frames) that learners inflect/conjugate and recombine normally? → **vocab**.
+3. **Is this primarily a fixed chunk** used in communication, with no single grammatical head (greeting, formula, discourse marker, time expression)? → **uttrykk**.
 
 This is easier to apply consistently than asking whether the meaning is compositional, and it resolves the recurring edge cases (reflexive/particle verbs, multi-word prepositions) in favor of `vocab`, while keeping genuine formulas, idioms, and time expressions in `uttrykk`.
 
