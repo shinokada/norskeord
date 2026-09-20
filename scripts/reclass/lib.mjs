@@ -53,6 +53,18 @@ export function normText(s) {
     .replace(/[.?!]+$/, '');
 }
 
+// Same as normText, but also strips a leading "å " (infinitive marker).
+// Uttrykk `norsk` may or may not carry it (see data-rules/vocab-and-
+// uttrykk.md, amended 2026-09-20); vocab `norsk` always does for verbs.
+// Use this — never normText — for cross-file/cross-type duplicate
+// detection (status.mjs, apply-additions.mjs), so e.g. uttrykk "ta del
+// i" and vocab "å ta del i" are recognised as the same entry. Keep
+// normText as-is for `fix`-decision verification, where the exact
+// stored form matters.
+export function normTextIgnoreA(s) {
+  return normText(s).replace(/^å\s+/, '');
+}
+
 export function findEntry(list, { id, norsk, lemma }) {
   return list.find((e) => {
     if (id && e.id === id) return true;
