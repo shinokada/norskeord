@@ -89,6 +89,8 @@ for (const [i, d] of decisions.entries()) {
     const reversedAt = d.vocab?.id ? latestReverseById.get(d.vocab.id) : undefined;
     if (reversedAt !== undefined && reversedAt > i) state = 'applied'; // superseded by a later reverse_move
     else if (sourceGone && vocabState === 'present') state = 'applied';
+    else if (sourceGone && d.resolution === 'skip' && vocabState === 'missing')
+      state = 'applied'; // same-sense skip: source deleted, nothing added, by design (README "Resolving a conflict")
     else if (sourceGone && vocabState.startsWith('DUPLICATE'))
       state = d.resolution === 'skip' ? 'applied' : 'conflict';
     else if (sourceGone && vocabState === 'missing')
