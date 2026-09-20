@@ -1,5 +1,33 @@
 # norske-flashcard
 
+## 2.82.0
+
+### Minor Changes
+
+- - **Data Quality**
+    - Corrected Norwegian idiom lemmas by removing unnecessary infinitive markers while preserving displayed expressions.
+    - Improved classification of literal verb constructions, figurative idioms, and proverbs.
+    - Updated affected entries with corrections to text, examples, translations, themes, and definitions.
+    - Removed duplicate and near-duplicate entries and restored entries whose classification was revised.
+
+  - **Validation**
+    - Improved duplicate detection across vocabulary and idiom entries, including equivalent forms with or without “å”.
+    - Added clearer validation for missing or incorrectly formatted lemmas.
+    - Improved verification of applied data corrections across all updated fields.
+
+## 2.81.0
+
+### Minor Changes
+
+- **New Content**
+- Added a Norwegian-language lesson explaining the differences between _by_ and _tettsted_, including examples, vocabulary, and Norskprøven practice.
+- Added a Norwegian-language lesson covering the uses of _selv_ and _selve_, common expressions, distinctions from _enda_, examples, and practice exercises.
+
+- **Documentation**
+- Expanded the grammar lesson on sentence adverbs with guidance on multi-verb phrases and subordinate-clause word order.
+- Updated the lesson’s publication date.
+- Clarified how fixed verb-and-infinitive constructions and productive adjective combinations should be classified in vocabulary materials.
+
 ## 2.80.0
 
 ### Minor Changes
