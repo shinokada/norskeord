@@ -47,10 +47,22 @@ no re-deriving "what did I already do" from chat history.
 
 // fix (in-place field correction; entry stays in uttrykk, nothing added
 // or deleted). The apply scripts ignore this type by design — apply it
-// as a direct edit. status.mjs verifies it by id against fix.norsk.
+// as a direct edit. status.mjs verifies it by id against every field
+// named in `fix` (not just norsk).
 {"level":"b1","batch":1,"type":"fix","bucket":"data_quality",
  "source":{"norsk":"...","id":"w-XXXXXX"},
  "fix":{"norsk":"...","lemma":"...","english":"..."},"reason":"..."}
+
+// reverse_move (vocab entry moved back to uttrykk; the apply scripts
+// only support uttrykk->vocab, so this direction is always a manual
+// edit — verify by fresh read-back before logging). The id is reused,
+// not regenerated. status.mjs verifies the id is gone from vocab and
+// present in uttrykk. A later reverse_move also marks any earlier `move`
+// line whose `vocab.id` matches as superseded (reported as applied, old
+// line kept as audit trail).
+{"level":"b1","phase":"1b-reverse","type":"reverse_move","bucket":"stays_uttrykk",
+ "source":{"norsk":"...","id":"w-XXXXXX"},
+ "uttrykk":{"id":"w-XXXXXX","theme":"..."},"reason":"..."}
 ```
 
 ### `redundant_grammar` bucket — policy (updated 2026-09-16)

@@ -242,17 +242,19 @@ Uttrykk therefore holds two kinds of entry:
 
 ### `norsk` / `lemma` fields
 
-Same as vocab: `norsk` is the display form, `lemma` is the canonical/dictionary form used for dedup. For uttrykk, both fields are normally identical — the whole fixed chunk, in its citation form.
+Same as vocab: `norsk` is the display form, `lemma` is the canonical/dictionary form used for dedup. For uttrykk, both fields are normally identical — the whole fixed chunk, in its citation form — except for the optional `å` described below.
 
-**Verb-initial uttrykk use the bare verb form — no `å` prefix.** Unlike vocab verbs (which use `å` in `norsk`), an uttrykk headed by a verb is written the way a dictionary would cite the idiom, not as an infinitive clause.
+**Verb-initial uttrykk: `å` in `norsk` is optional; `lemma` is always bare.** Either display form is accepted:
 
-| lemma                | not                        |
-| -------------------- | -------------------------- |
-| `ta vare på`         | ~~`å ta vare på`~~         |
-| `ha lyst til`        | ~~`å ha lyst til`~~        |
-| `bli oppfordret til` | ~~`å bli oppfordret til`~~ |
+| `norsk` (either form is fine)                 | `lemma` (always bare, no `å`) |
+| --------------------------------------------- | ------------------------------ |
+| `ta vare på` / `å ta vare på`                 | `ta vare på`                  |
+| `ha lyst til` / `å ha lyst til`               | `ha lyst til`                  |
+| `bli oppfordret til` / `å bli oppfordret til` | `bli oppfordret til`           |
 
-...and all proverbs.
+Prefer the bare form for idioms and proverbs cited the way a dictionary would (`ha is i magen`); the `å` form is fine for entries that read naturally as an infinitive phrase (`å ta buss`). Don't normalise existing entries in either direction just for consistency. But never leave `å` in `lemma`: it is used for dedup and FSRS lookup and must match how vocab lemmas are written. When comparing an uttrykk entry against vocab (duplicate checks), ignore a leading `å` on both sides.
+
+> Amended 2026-09-20: an earlier version required the bare form (no `å`) in uttrykk `norsk`. A scan showed `å` in 749 of 1,780 uttrykk entries (`uttrykk-c` 585/916, `-b2` 73/418, `-b1` 63/183, `-a2` 23/156, `-a1` 5/107), so the requirement was dropped in favour of accepting both. `lemma` stays strict. Existing uttrykk entries whose `lemma` still carries `å` (e.g. `w-007966`) are a known cleanup item, see `ai-docs/implementation/reclassification-follow-up.md` §7.
 
 ### Decision rule
 

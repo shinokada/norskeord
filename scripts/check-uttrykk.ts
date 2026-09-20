@@ -211,9 +211,13 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds, file
       }
     }
 
-    // lemma
+    // lemma — must be bare (no leading "å "); unlike norsk, which may
+    // carry it or not (data-rules/vocab-and-uttrykk.md, amended 2026-09-20;
+    // see ai-docs/implementation/reclassification-follow-up.md §7)
     if (!entry.lemma || entry.lemma === '') {
       warns.push(`lemma field is missing or empty`);
+    } else if (/^å\s/i.test(entry.lemma)) {
+      warns.push(`lemma "${entry.lemma}" starts with "å " — lemma must be bare, only norsk may carry it`);
     }
 
     // Language consistency: for each translation language present on this entry,

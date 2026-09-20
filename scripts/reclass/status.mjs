@@ -11,7 +11,8 @@ import {
   loadDecisions,
   findEntry,
   collectAllEntries,
-  normText
+  normText,
+  normTextIgnoreA
 } from './lib.mjs';
 
 const level = process.argv.includes('--level')
@@ -48,6 +49,15 @@ decisions.forEach((d, i) => {
   if (d.type === 'fix' && d.source?.id) latestFixById.set(d.source.id, i);
 });
 
+// A later `reverse_move` for the same id undoes an earlier `move` that
+// put that id in vocab (the old line stays as audit trail). Without this,
+// the old `move` reports a false conflict: its vocab entry is gone, and
+// the same text now sits in uttrykk.
+const latestReverseById = new Map();
+decisions.forEach((d, i) => {
+  if (d.type === 'reverse_move' && d.source?.id) latestReverseById.set(d.source.id, i);
+});
+
 for (const [i, d] of decisions.entries()) {
   const label = `[batch ${d.batch ?? '?'}] ${d.bucket ?? d.type}: "${d.source?.norsk ?? d.vocab?.norsk}"`;
   const sourceGone = d.type === 'add_vocab' ? true : !findEntry(uttrykkList, d.source || {});
@@ -60,11 +70,13 @@ for (const [i, d] of decisions.entries()) {
     } else {
       // Check every other level's vocab file for the same norsk/lemma —
       // this is the "en stund"/"en feil" duplicate class from batch 1.
+      // å-insensitive: uttrykk `norsk` may or may not carry a leading
+      // "å ", so compare ignoring it (see lib.mjs normTextIgnoreA).
       const dupElsewhere = [...allEntries.values()].find(
         (e) =>
           e.file !== `vocab-${level}.json` &&
-          ((d.vocab.norsk && e.norsk === d.vocab.norsk) ||
-            (d.vocab.lemma && e.lemma === d.vocab.lemma))
+          ((d.vocab.norsk && normTextIgnoreA(e.norsk) === normTextIgnoreA(d.vocab.norsk)) ||
+            (d.vocab.lemma && normTextIgnoreA(e.lemma) === normTextIgnoreA(d.vocab.lemma)))
       );
       vocabState = dupElsewhere ? `DUPLICATE in ${dupElsewhere.file}` : 'missing';
     }
@@ -74,7 +86,9 @@ for (const [i, d] of decisions.entries()) {
   if (d.type === 'delete') {
     state = sourceGone ? 'applied' : 'pending';
   } else if (d.type === 'move') {
-    if (sourceGone && vocabState === 'present') state = 'applied';
+    const reversedAt = d.vocab?.id ? latestReverseById.get(d.vocab.id) : undefined;
+    if (reversedAt !== undefined && reversedAt > i) state = 'applied'; // superseded by a later reverse_move
+    else if (sourceGone && vocabState === 'present') state = 'applied';
     else if (sourceGone && vocabState.startsWith('DUPLICATE'))
       state = d.resolution === 'skip' ? 'applied' : 'conflict';
     else if (sourceGone && vocabState === 'missing')
@@ -89,11 +103,30 @@ for (const [i, d] of decisions.entries()) {
     else state = 'pending';
   } else if (d.type === 'fix') {
     // In-place field correction: the entry stays in uttrykk, so verify by
-    // id that the corrected text is what's actually on disk now.
+    // id that every field named in `fix` matches what's actually on disk
+    // now (extended 2026-09-20, follow-up §8 — previously only compared
+    // fix.norsk, so lemma/theme/example_* fixes were never verified).
     const target = findEntry(uttrykkList, { id: d.source?.id });
     if (d.source?.id && latestFixById.get(d.source.id) !== i) state = 'applied'; // superseded by a later fix
     else if (!target) state = 'MISSING (fix target gone from file)';
-    else state = normText(target.norsk) === normText(d.fix?.norsk) ? 'applied' : 'pending';
+    else {
+      const mismatched = Object.keys(d.fix || {}).filter(
+        (key) => normText(target[key]) !== normText(d.fix[key])
+      );
+      state = mismatched.length === 0 ? 'applied' : `pending (${mismatched.join(', ')})`;
+    }
+  } else if (d.type === 'reverse_move') {
+    // Vocab entry moved back to uttrykk manually (the apply scripts only
+    // support the uttrykk->vocab direction, so this was a hand edit — see
+    // ai-docs/implementation/reclassification-follow-up.md §8). The id is
+    // reused, not regenerated: verify it's gone from vocab and present in
+    // uttrykk under the same id.
+    const vocabGone = !findEntry(vocabList, { id: d.source?.id, norsk: d.source?.norsk });
+    const uttrykkTarget = findEntry(uttrykkList, { id: d.uttrykk?.id ?? d.source?.id });
+    if (vocabGone && uttrykkTarget) state = 'applied';
+    else if (!vocabGone && !uttrykkTarget) state = 'pending';
+    else if (!vocabGone && uttrykkTarget) state = 'PARTIAL (added to uttrykk, vocab source never deleted)';
+    else state = 'PARTIAL (vocab deleted, uttrykk entry missing)';
   } else {
     // Never leave state undefined — an unrecognised type used to crash
     // the summary loop instead of reporting itself.

@@ -16,7 +16,8 @@ import {
   findEntry,
   collectAllIds,
   collectAllEntries,
-  nextFreeId
+  nextFreeId,
+  normTextIgnoreA
 } from './lib.mjs';
 
 const args = process.argv.slice(2);
@@ -40,10 +41,13 @@ const conflicts = [];
 for (const d of decisions) {
   if (findEntry(vocabList, d.vocab)) continue; // already applied
 
+  // å-insensitive: uttrykk `norsk` may or may not carry a leading "å ",
+  // so compare ignoring it (see lib.mjs normTextIgnoreA).
   const dupElsewhere = [...allEntries.values()].find(
     (e) =>
       e.file !== `vocab-${level}.json` &&
-      ((d.vocab.norsk && e.norsk === d.vocab.norsk) || (d.vocab.lemma && e.lemma === d.vocab.lemma))
+      ((d.vocab.norsk && normTextIgnoreA(e.norsk) === normTextIgnoreA(d.vocab.norsk)) ||
+        (d.vocab.lemma && normTextIgnoreA(e.lemma) === normTextIgnoreA(d.vocab.lemma)))
   );
   if (dupElsewhere) {
     conflicts.push({ decision: d, dupElsewhere });
