@@ -121,7 +121,7 @@ for (const [i, d] of decisions.entries()) {
     // ai-docs/implementation/reclassification-follow-up.md §8). The id is
     // reused, not regenerated: verify it's gone from vocab and present in
     // uttrykk under the same id.
-    const vocabGone = !findEntry(vocabList, { id: d.source?.id, norsk: d.source?.norsk });
+    const vocabGone = !findEntry(vocabList, { id: d.source?.id });
     const uttrykkTarget = findEntry(uttrykkList, { id: d.uttrykk?.id ?? d.source?.id });
     if (vocabGone && uttrykkTarget) state = 'applied';
     else if (!vocabGone && !uttrykkTarget) state = 'pending';

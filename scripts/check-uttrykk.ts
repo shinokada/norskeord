@@ -15,7 +15,8 @@
  *   4. category     — must be "uttrykk" or "uttrykk-preview"
  *   5. part         — uttrykk entries should be "phrase"
  *   6. norsk field  — must be present and non-empty
- *   7. lemma field  — must be present and non-empty
+ *   7. lemma field  — must be present and non-empty; must be bare (no leading "å "), unlike
+ *                     norsk, which may carry it (data-rules/vocab-and-uttrykk.md)
  *   8. Required fields (norsk, english, example, example_english, level, category, part)
  *   9. Language consistency — for each translation language present (ukrainian, spanish,
  *      german, romanian, …), the matching example_{lang} field must also be present and
@@ -217,7 +218,7 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds, file
     if (!entry.lemma || entry.lemma === '') {
       warns.push(`lemma field is missing or empty`);
     } else if (/^å\s/i.test(entry.lemma)) {
-      warns.push(`lemma "${entry.lemma}" starts with "å " — lemma must be bare, only norsk may carry it`);
+      errs.push(`lemma "${entry.lemma}" starts with "å " — lemma must be bare, only norsk may carry it`);
     }
 
     // Language consistency: for each translation language present on this entry,
