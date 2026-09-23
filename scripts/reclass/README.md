@@ -45,7 +45,8 @@ no re-deriving "what did I already do" from chat history.
 {"level":"a2","batch":1,"type":"add_vocab","bucket":"redundant_grammar",
  "vocab":{"norsk":"...","lemma":"..."},"reason":"..."}
 
-// fix (in-place field correction; entry stays in uttrykk, nothing added
+// fix (in-place field correction; entry stays in place — in uttrykk, or
+// in vocab for an already-moved entry — nothing added
 // or deleted). The apply scripts ignore this type by design — apply it
 // as a direct edit. status.mjs verifies it by id against every field
 // named in `fix` (not just norsk).

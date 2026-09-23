@@ -105,11 +105,15 @@ for (const [i, d] of decisions.entries()) {
       state = d.resolution === 'skip' ? 'applied' : 'conflict';
     else state = 'pending';
   } else if (d.type === 'fix') {
-    // In-place field correction: the entry stays in uttrykk, so verify by
+    // In-place field correction: the entry stays where it is (normally
+    // uttrykk; vocab for a fix to an already-moved entry, looked up there
+    // as a fallback since 2026-09-23), so verify by
     // id that every field named in `fix` matches what's actually on disk
     // now (extended 2026-09-20, follow-up §8 — previously only compared
     // fix.norsk, so lemma/theme/example_* fixes were never verified).
-    const target = findEntry(uttrykkList, { id: d.source?.id });
+    const target =
+      findEntry(uttrykkList, { id: d.source?.id }) ??
+      findEntry(vocabList, { id: d.source?.id });
     if (d.source?.id && latestFixById.get(d.source.id) !== i)
       state = 'applied'; // superseded by a later fix
     else if (!target) state = 'MISSING (fix target gone from file)';
