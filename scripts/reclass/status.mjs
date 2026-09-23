@@ -87,7 +87,8 @@ for (const [i, d] of decisions.entries()) {
     state = sourceGone ? 'applied' : 'pending';
   } else if (d.type === 'move') {
     const reversedAt = d.vocab?.id ? latestReverseById.get(d.vocab.id) : undefined;
-    if (reversedAt !== undefined && reversedAt > i) state = 'applied'; // superseded by a later reverse_move
+    if (reversedAt !== undefined && reversedAt > i)
+      state = 'applied'; // superseded by a later reverse_move
     else if (sourceGone && vocabState === 'present') state = 'applied';
     else if (sourceGone && d.resolution === 'skip' && vocabState === 'missing')
       state = 'applied'; // same-sense skip: source deleted, nothing added, by design (README "Resolving a conflict")
@@ -109,7 +110,8 @@ for (const [i, d] of decisions.entries()) {
     // now (extended 2026-09-20, follow-up §8 — previously only compared
     // fix.norsk, so lemma/theme/example_* fixes were never verified).
     const target = findEntry(uttrykkList, { id: d.source?.id });
-    if (d.source?.id && latestFixById.get(d.source.id) !== i) state = 'applied'; // superseded by a later fix
+    if (d.source?.id && latestFixById.get(d.source.id) !== i)
+      state = 'applied'; // superseded by a later fix
     else if (!target) state = 'MISSING (fix target gone from file)';
     else {
       const mismatched = Object.keys(d.fix || {}).filter(
@@ -127,7 +129,8 @@ for (const [i, d] of decisions.entries()) {
     const uttrykkTarget = findEntry(uttrykkList, { id: d.uttrykk?.id ?? d.source?.id });
     if (vocabGone && uttrykkTarget) state = 'applied';
     else if (!vocabGone && !uttrykkTarget) state = 'pending';
-    else if (!vocabGone && uttrykkTarget) state = 'PARTIAL (added to uttrykk, vocab source never deleted)';
+    else if (!vocabGone && uttrykkTarget)
+      state = 'PARTIAL (added to uttrykk, vocab source never deleted)';
     else state = 'PARTIAL (vocab deleted, uttrykk entry missing)';
   } else {
     // Never leave state undefined — an unrecognised type used to crash
