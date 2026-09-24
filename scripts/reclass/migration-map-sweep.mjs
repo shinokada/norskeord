@@ -4,9 +4,11 @@
 //   node scripts/reclass/migration-map-sweep.mjs --write          (apply logged remaps)
 //
 // Stale-value fixes are decided in scripts/reclass/decisions/migration-remaps.jsonl,
-// one per line:
-//   {"key":"u-a2-224","action":"remap","to":"w-007952","reason":"..."}
-//   {"key":"u-a1-084","action":"delete","reason":"..."}
+// one per line. The field is `legacy_id` (not `key`: gitleaks' generic-api-key
+// rule flags a `"key"` field with an id-like value, and blocks the commit):
+//   {"legacy_id":"u-a2-224","action":"remap","to":"w-007952","reason":"..."}
+//   {"legacy_id":"u-a1-084","action":"delete","reason":"..."}
+// (an older `key` field is still read.)
 // Any stale value with no matching decision is reported but left untouched.
 
 import fs from 'node:fs';
@@ -28,7 +30,7 @@ const remaps = fs.existsSync(remapsFile)
       .filter(Boolean)
       .map((l) => JSON.parse(l))
   : [];
-const remapByKey = new Map(remaps.map((r) => [r.key, r]));
+const remapByKey = new Map(remaps.map((r) => [r.legacy_id ?? r.key, r]));
 
 const stale = Object.entries(map).filter(([, id]) => !validIds.has(id));
 

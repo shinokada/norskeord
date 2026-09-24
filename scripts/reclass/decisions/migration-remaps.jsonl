@@ -1,0 +1,9 @@
+{"legacy_id":"v-a2-cooking-020","action":"remap","to":"w-000524","reason":"vocab-a2 w-000827 (kjele) deleted as a cross-level duplicate of vocab-a1 w-000524; progress carries to the kept card"}
+{"legacy_id":"v-a2-cooking-009","action":"remap","to":"w-000525","reason":"vocab-a2 w-000816 (stekepanne) deleted as a cross-level duplicate of vocab-a1 w-000525"}
+{"legacy_id":"v-a2-house-chores-052","action":"remap","to":"w-000528","reason":"vocab-a2 w-001561 (vannkoker) deleted as a cross-level duplicate of vocab-a1 w-000528"}
+{"legacy_id":"v-a2-hobbies-013","action":"remap","to":"w-010153","reason":"vocab-a2 w-000683 (tur) deleted as a cross-level duplicate of vocab-a1 w-010153"}
+{"legacy_id":"v-a2-clothing-027","action":"remap","to":"w-000418","reason":"vocab-a2 w-001585 (støvel) deleted; same word as vocab-a1 w-000418 (støvler (pl.))"}
+{"legacy_id":"v-a2-clothing-016","action":"remap","to":"w-000419","reason":"vocab-a2 w-001373 (sandal) deleted; same word as vocab-a1 w-000419 (sandaler (pl.))"}
+{"legacy_id":"v-b1-accommodation-025","action":"remap","to":"w-000530","reason":"vocab-b1 w-003097 (tøffel) deleted as a cross-level duplicate of vocab-a1 w-000530"}
+{"legacy_id":"v-b1-work-049","action":"remap","to":"w-008016","reason":"vocab-b1 w-002937 (å leve av) deleted as a cross-level duplicate of vocab-a1 w-008016"}
+{"legacy_id":"v-b1-relationships-038","action":"remap","to":"w-008064","reason":"vocab-b1 w-002959 (å stole på) deleted as a cross-level duplicate of vocab-a2 w-008064"}
