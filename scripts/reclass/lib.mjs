@@ -37,6 +37,16 @@ export function loadDecisions(level) {
     .map((l) => JSON.parse(l));
 }
 
+// Decisions carrying a `superseded_by` field (e.g. the redundant_grammar
+// deletes undone by the 2026-09-16 policy change, whose entries were then
+// restored on purpose) are audit trail only. The apply scripts must never
+// act on them: re-running apply-deletions would delete the restored entries,
+// and apply-additions would re-add vocab for a superseded move. status.mjs
+// counts them separately instead of reporting them pending.
+export function loadActiveDecisions(level) {
+  return loadDecisions(level).filter((d) => !d.superseded_by);
+}
+
 export function appendDecision(level, decision) {
   fs.mkdirSync(DECISIONS_DIR, { recursive: true });
   const file = path.join(DECISIONS_DIR, `${level}.jsonl`);

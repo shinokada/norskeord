@@ -13,6 +13,7 @@ import {
   loadJSON,
   saveJSON,
   loadDecisions,
+  loadActiveDecisions,
   findEntry,
   collectAllIds,
   collectAllEntries,
@@ -30,8 +31,26 @@ if (!level) {
 
 const { vocab: vocabPath } = levelDataPaths(level);
 const vocabList = loadJSON(vocabPath);
-const decisions = loadDecisions(level).filter(
-  (d) => d.vocab && (d.type === 'move' || d.type === 'add_vocab')
+// Never (re-)add vocab that the log says was resolved otherwise:
+//  - `resolution: 'skip'`: the user confirmed no vocab entry should be added
+//    (same-sense twin already exists, or the addition was rejected);
+//  - a `delete` or `reverse_move` names the vocab id as its source: the entry
+//    was deliberately removed (dedupe) or sent back to uttrykk. Ids are
+//    unique across files, so line order does not matter.
+// Without these, re-running this script re-adds entries that status.mjs
+// already counts as resolved (e.g. w-010692 'svunnen tid (en)').
+const removedVocabIds = new Set(
+  loadDecisions(level)
+    .filter((d) => d.type === 'delete' || d.type === 'reverse_move')
+    .map((d) => d.source?.id)
+    .filter(Boolean)
+);
+const decisions = loadActiveDecisions(level).filter(
+  (d) =>
+    d.vocab &&
+    (d.type === 'move' || d.type === 'add_vocab') &&
+    d.resolution !== 'skip' &&
+    !(d.vocab.id && removedVocabIds.has(d.vocab.id))
 );
 
 const allEntries = collectAllEntries();

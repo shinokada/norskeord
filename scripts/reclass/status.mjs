@@ -39,7 +39,8 @@ if (decisions.length === 0) {
 let pending = 0,
   applied = 0,
   partial = 0,
-  conflict = 0;
+  conflict = 0,
+  superseded = 0;
 
 // A later `fix` decision for the same id supersedes earlier ones (the
 // earlier line stays in the file as audit trail, but only the latest fix
@@ -68,6 +69,14 @@ decisions.forEach((d, i) => {
 });
 
 for (const [i, d] of decisions.entries()) {
+  // Superseded lines (e.g. redundant_grammar deletes undone by the
+  // 2026-09-16 policy change) are audit trail: the entry is meant to be on
+  // disk, so they are neither pending nor applied. The apply scripts skip
+  // them too (lib.mjs loadActiveDecisions).
+  if (d.superseded_by) {
+    superseded++;
+    continue;
+  }
   const label = `[batch ${d.batch ?? '?'}] ${d.bucket ?? d.type}: "${d.source?.norsk ?? d.vocab?.norsk}"`;
   const sourceGone = d.type === 'add_vocab' ? true : !findEntry(uttrykkList, d.source || {});
 
@@ -164,7 +173,7 @@ for (const [i, d] of decisions.entries()) {
 
 console.log('---');
 console.log(
-  `${level}: ${decisions.length} decisions — applied ${applied}, pending ${pending}, partial ${partial}, conflict ${conflict}`
+  `${level}: ${decisions.length} decisions — applied ${applied}, pending ${pending}, partial ${partial}, conflict ${conflict}, superseded ${superseded}`
 );
 console.log(`uttrykk-${level}.json: ${uttrykkList.length} entries on disk`);
 console.log(`vocab-${level}.json: ${vocabList.length} entries on disk`);
