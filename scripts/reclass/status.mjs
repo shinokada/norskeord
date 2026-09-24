@@ -112,8 +112,7 @@ for (const [i, d] of decisions.entries()) {
     // now (extended 2026-09-20, follow-up §8 — previously only compared
     // fix.norsk, so lemma/theme/example_* fixes were never verified).
     const target =
-      findEntry(uttrykkList, { id: d.source?.id }) ??
-      findEntry(vocabList, { id: d.source?.id });
+      findEntry(uttrykkList, { id: d.source?.id }) ?? findEntry(vocabList, { id: d.source?.id });
     if (d.source?.id && latestFixById.get(d.source.id) !== i)
       state = 'applied'; // superseded by a later fix
     else if (!target) state = 'MISSING (fix target gone from file)';

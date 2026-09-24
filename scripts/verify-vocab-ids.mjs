@@ -27,7 +27,7 @@ const FILES = [
   'uttrykk-a1.json',
   'uttrykk-a2.json',
   'uttrykk-b1.json',
-  'uttrykk-b2.json',
+  'uttrykk-b2.json'
 ];
 
 let totalEntries = 0;

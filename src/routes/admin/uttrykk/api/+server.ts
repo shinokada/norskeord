@@ -8,7 +8,7 @@ const LEVEL_FILE: Record<string, string> = {
   A1: 'src/lib/data/uttrykk-a1.json',
   A2: 'src/lib/data/uttrykk-a2.json',
   B1: 'src/lib/data/uttrykk-b1.json',
-  B2: 'src/lib/data/uttrykk-b2.json',
+  B2: 'src/lib/data/uttrykk-b2.json'
 };
 
 function assertAdmin(locals: App.Locals) {
@@ -21,10 +21,7 @@ function assertAdmin(locals: App.Locals) {
 function getFilePath(url: URL): string {
   const level = url.searchParams.get('level')?.toUpperCase();
   if (!level || !LEVEL_FILE[level]) {
-    throw error(
-      400,
-      `Missing or invalid ?level= (expected A1, A2, B1, or B2)`
-    );
+    throw error(400, `Missing or invalid ?level= (expected A1, A2, B1, or B2)`);
   }
   return LEVEL_FILE[level];
 }

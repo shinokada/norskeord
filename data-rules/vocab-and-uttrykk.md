@@ -83,13 +83,13 @@ Use `phrase` only when the entry has **no single grammatical head** — greeting
 
 **`part` for collocations** (a fixed multi-word vocab entry kept whole per "Collocation entries coexist with their head word" below): take the `part` of the collocation's own grammatical head, the same rule as any other multi-word entry — not `phrase` by default.
 
-| Collocation type                                | `part`      | Example                |
-| ------------------------------------------------ | ----------- | ----------------------- |
-| verb + object or complement                       | `verb`      | `å gjøre en dårlig figur` |
-| fixed prepositional phrase used adverbially        | `adverb`    | `på gløtt`, `til sjøs`   |
-| noun + adjective / adjective + noun                | `noun`      | `trange kår`            |
+| Collocation type                                      | `part`      | Example                   |
+| ----------------------------------------------------- | ----------- | ------------------------- |
+| verb + object or complement                           | `verb`      | `å gjøre en dårlig figur` |
+| fixed prepositional phrase used adverbially           | `adverb`    | `på gløtt`, `til sjøs`    |
+| noun + adjective / adjective + noun                   | `noun`      | `trange kår`              |
 | copula/light verb + adjective with no adjective entry | `adjective` | `prisgitt`, `skikket til` |
-| impersonal or sentence frame with no head          | `phrase`    | `det er om å gjøre`     |
+| impersonal or sentence frame with no head             | `phrase`    | `det er om å gjøre`       |
 
 ### ID format
 
