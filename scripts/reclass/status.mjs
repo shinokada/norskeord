@@ -58,6 +58,15 @@ decisions.forEach((d, i) => {
   if (d.type === 'reverse_move' && d.source?.id) latestReverseById.set(d.source.id, i);
 });
 
+// A later `delete` for the same id supersedes an earlier `fix` on it (the
+// entry was fixed, then found to be a duplicate and removed). The old fix
+// line stays as audit trail; without this it reports a false
+// "MISSING (fix target gone from file)".
+const latestDeleteById = new Map();
+decisions.forEach((d, i) => {
+  if (d.type === 'delete' && d.source?.id) latestDeleteById.set(d.source.id, i);
+});
+
 for (const [i, d] of decisions.entries()) {
   const label = `[batch ${d.batch ?? '?'}] ${d.bucket ?? d.type}: "${d.source?.norsk ?? d.vocab?.norsk}"`;
   const sourceGone = d.type === 'add_vocab' ? true : !findEntry(uttrykkList, d.source || {});
@@ -115,6 +124,8 @@ for (const [i, d] of decisions.entries()) {
       findEntry(uttrykkList, { id: d.source?.id }) ?? findEntry(vocabList, { id: d.source?.id });
     if (d.source?.id && latestFixById.get(d.source.id) !== i)
       state = 'applied'; // superseded by a later fix
+    else if (!target && latestDeleteById.get(d.source?.id) > i)
+      state = 'applied'; // superseded by a later delete
     else if (!target) state = 'MISSING (fix target gone from file)';
     else {
       const mismatched = Object.keys(d.fix || {}).filter(

@@ -65,9 +65,14 @@ export function normTextIgnoreA(s) {
   return normText(s).replace(/^å\s+/, '');
 }
 
+// An explicit `id` is authoritative: when a decision names one, match by id
+// only and never fall back to text. Otherwise a merge/dedupe decision (delete
+// one of two same-text twins) matches the surviving twin by text, so status.mjs
+// reports it pending forever and apply-deletions.mjs would delete the entry
+// that was meant to be kept. Text matching is only for id-less decisions.
 export function findEntry(list, { id, norsk, lemma }) {
+  if (id) return list.find((e) => e.id === id);
   return list.find((e) => {
-    if (id && e.id === id) return true;
     if (norsk && normText(e.norsk) === normText(norsk)) return true;
     if (lemma && normText(e.lemma) === normText(lemma)) return true;
     return false;

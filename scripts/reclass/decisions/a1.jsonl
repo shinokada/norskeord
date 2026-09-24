@@ -1,0 +1,1 @@
+{"level":"a1","batch":1,"phase":"cross-type-dupes","type":"delete","bucket":"dedupe","source":{"norsk":"god morgen","id":"w-008024"},"reason":"same-sense twin of w-007984 (God morgen!) in the same file, both greetings; kept the older id (preserves any saved learner progress). First a1.jsonl line: earlier A1 work was not logged here (see a1-a-prefix-fixes.jsonl)"}
