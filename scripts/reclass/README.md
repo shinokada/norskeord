@@ -156,3 +156,17 @@ session's transcript, as a real test case — confirmed via
 `status.mjs` to be 30/31 applied on disk, with the one exception being
 the known merge-ambiguity case above (already correctly resolved on
 disk, just not machine-verifiable after the fact).
+
+## `apply-vocab-format-fixes.mjs` and `decisions/vocab-format-fixes.json`
+
+One-off format cleanup for `check-vocab.ts` errors in `vocab-a2/b1/b2.json`
+(invalid `category`, noun gender/plural markers, verb `å ` prefix, verb
+lemma `å `). The map is `{ level: { id: { field: newValue } } }`; the
+previous values are in git history, so there are no per-entry `.jsonl`
+lines for these. Dry run by default, idempotent, and it refuses to write
+unless the file round-trips byte-for-byte:
+
+```sh
+node scripts/reclass/apply-vocab-format-fixes.mjs                # dry run, all levels
+node scripts/reclass/apply-vocab-format-fixes.mjs --level b1 --write
+```
