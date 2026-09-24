@@ -7,3 +7,4 @@
 {"legacy_id":"v-b1-accommodation-025","action":"remap","to":"w-000530","reason":"vocab-b1 w-003097 (tøffel) deleted as a cross-level duplicate of vocab-a1 w-000530"}
 {"legacy_id":"v-b1-work-049","action":"remap","to":"w-008016","reason":"vocab-b1 w-002937 (å leve av) deleted as a cross-level duplicate of vocab-a1 w-008016"}
 {"legacy_id":"v-b1-relationships-038","action":"remap","to":"w-008064","reason":"vocab-b1 w-002959 (å stole på) deleted as a cross-level duplicate of vocab-a2 w-008064"}
+{"legacy_id":"v-b1-personal-growth-086","action":"delete","reason":"vocab-b1 w-002995 (å få noen til å gjøre noe) was deleted in the b1 1b-reverse pass as a productive causative construction, not a lexical item, and moved nowhere; there is no card left to carry progress to"}
