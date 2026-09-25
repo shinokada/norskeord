@@ -78,7 +78,10 @@ for (const [i, d] of decisions.entries()) {
     continue;
   }
   const label = `[batch ${d.batch ?? '?'}] ${d.bucket ?? d.type}: "${d.source?.norsk ?? d.vocab?.norsk}"`;
-  const sourceGone = d.type === 'add_vocab' ? true : !findEntry(uttrykkList, d.source || {});
+  // A `delete` with `"from":"vocab"` removes a vocab entry (fuzzy-dupe pass),
+  // so verify against vocab, not uttrykk. Such a line must carry source.id.
+  const sourceList = d.from === 'vocab' ? vocabList : uttrykkList;
+  const sourceGone = d.type === 'add_vocab' ? true : !findEntry(sourceList, d.source || {});
 
   let vocabState = 'n/a';
   if (d.vocab) {
@@ -107,6 +110,8 @@ for (const [i, d] of decisions.entries()) {
     const reversedAt = d.vocab?.id ? latestReverseById.get(d.vocab.id) : undefined;
     if (reversedAt !== undefined && reversedAt > i)
       state = 'applied'; // superseded by a later reverse_move
+    else if (d.vocab?.id && latestDeleteById.has(d.vocab.id))
+      state = 'applied'; // vocab entry later deleted as a duplicate (mirrors apply-additions.mjs removedVocabIds)
     else if (sourceGone && vocabState === 'present') state = 'applied';
     else if (sourceGone && d.resolution === 'skip' && vocabState === 'missing')
       state = 'applied'; // same-sense skip: source deleted, nothing added, by design (README "Resolving a conflict")

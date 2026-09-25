@@ -18,7 +18,11 @@ if (!level) {
 
 const { uttrykk: uttrykkPath } = levelDataPaths(level);
 const uttrykkList = loadJSON(uttrykkPath);
-const decisions = loadActiveDecisions(level).filter((d) => d.type === 'delete' || d.type === 'move');
+// `from: "vocab"` deletes (fuzzy-dupe pass) are hand-applied vocab removals;
+// this script only edits uttrykk, so it must never act on them.
+const decisions = loadActiveDecisions(level).filter(
+  (d) => (d.type === 'delete' && d.from !== 'vocab') || d.type === 'move'
+);
 
 const toRemove = [];
 for (const d of decisions) {
