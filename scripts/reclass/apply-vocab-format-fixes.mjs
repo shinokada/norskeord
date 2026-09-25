@@ -15,7 +15,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { levelDataPaths, loadJSON, saveJSON, DECISIONS_DIR } from './lib.mjs';
+import { levelDataPaths, saveJSON, DECISIONS_DIR } from './lib.mjs';
 
 const args = process.argv.slice(2);
 const write = args.includes('--write');

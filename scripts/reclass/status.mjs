@@ -65,7 +65,8 @@ decisions.forEach((d, i) => {
 // "MISSING (fix target gone from file)".
 const latestDeleteById = new Map();
 decisions.forEach((d, i) => {
-  if (d.type === 'delete' && d.source?.id) latestDeleteById.set(d.source.id, i);
+  if (d.type === 'delete' && !d.superseded_by && d.source?.id)
+    latestDeleteById.set(d.source.id, i);
 });
 
 for (const [i, d] of decisions.entries()) {
@@ -108,9 +109,10 @@ for (const [i, d] of decisions.entries()) {
     state = sourceGone ? 'applied' : 'pending';
   } else if (d.type === 'move') {
     const reversedAt = d.vocab?.id ? latestReverseById.get(d.vocab.id) : undefined;
+    const deletedAt = d.vocab?.id ? latestDeleteById.get(d.vocab.id) : undefined;
     if (reversedAt !== undefined && reversedAt > i)
       state = 'applied'; // superseded by a later reverse_move
-    else if (d.vocab?.id && latestDeleteById.has(d.vocab.id))
+    else if (deletedAt !== undefined && deletedAt > i)
       state = 'applied'; // vocab entry later deleted as a duplicate (mirrors apply-additions.mjs removedVocabIds)
     else if (sourceGone && vocabState === 'present') state = 'applied';
     else if (sourceGone && d.resolution === 'skip' && vocabState === 'missing')
@@ -160,6 +162,10 @@ for (const [i, d] of decisions.entries()) {
     else if (!vocabGone && uttrykkTarget)
       state = 'PARTIAL (added to uttrykk, vocab source never deleted)';
     else state = 'PARTIAL (vocab deleted, uttrykk entry missing)';
+  } else if (d.type === 'no_action') {
+    // Reviewed and confirmed no change needed (e.g. a dedupe-scan false
+    // positive kept as audit trail). Not pending work.
+    state = 'applied';
   } else {
     // Never leave state undefined — an unrecognised type used to crash
     // the summary loop instead of reporting itself.

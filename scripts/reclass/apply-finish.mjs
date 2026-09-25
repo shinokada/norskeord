@@ -76,7 +76,10 @@ console.log('\n3. Add komme til bunns i to uttrykk-b1.json, then delete vocab-b1
   } else {
     const newEntry = {
       id: src.id,
-      norsk: src.norsk,
+      // Not src.norsk: the vocab-format-fixes correction for this id
+      // (norsk -> 'å komme til bunns i') may not have run yet, and we
+      // must not carry a stale headword into the new uttrykk entry.
+      norsk: 'å komme til bunns i',
       lemma: src.lemma,
       english: src.english,
       ukrainian: src.ukrainian,
@@ -104,6 +107,7 @@ console.log('\n3. Add komme til bunns i to uttrykk-b1.json, then delete vocab-b1
     const closeIdx = b1Raw.lastIndexOf('  }\n]');
     if (closeIdx === -1) {
       console.log('  uttrykk-b1.json: could not find array-closing anchor — SKIPPED add');
+      console.log('  vocab-b1.json w-010196: NOT deleted (insertion did not run)');
     } else {
       console.log('  uttrykk-b1.json: will insert new entry before closing ]');
       console.log(entryText);
@@ -112,9 +116,10 @@ console.log('\n3. Add komme til bunns i to uttrykk-b1.json, then delete vocab-b1
         const updated = b1Raw.slice(0, closeIdx) + '  },\n' + entryText + b1Raw.slice(insertAt);
         fs.writeFileSync(b1Path, updated, 'utf8');
       }
+      // Only delete the vocab source once the uttrykk insertion succeeded
+      // (or would have, in dry run) — never delete on a skipped add.
+      deleteById('vocab-b1.json', 'w-010196');
     }
-
-    deleteById('vocab-b1.json', 'w-010196');
   }
 }
 

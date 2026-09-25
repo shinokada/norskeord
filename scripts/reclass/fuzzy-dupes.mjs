@@ -28,7 +28,7 @@ const SUFFIXES = ['e', 'er', 'r', 'en', 'et', 'ene', 'a'];
 function tokensOf(e) {
   let t = normTextIgnoreA(e.norsk)
     .replace(/\([^)]*\)/g, ' ')
-    .replace(/[\/,;]/g, ' ');
+    .replace(/[/,;]/g, ' ');
   if (e.part === 'noun' || !e.part) t = t.replace(/^\s*(en|et|ei)\s+/, '');
   const all = t.split(/\s+/).filter(Boolean);
   const kept = all.filter((x) => !PLACEHOLDERS.has(x));

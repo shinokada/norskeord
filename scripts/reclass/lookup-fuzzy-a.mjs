@@ -83,7 +83,9 @@ for (const f of fs.readdirSync(DECISIONS_DIR)) {
       try {
         const d = JSON.parse(line);
         batch = `${d.type}${d.batch != null ? ' b' + d.batch : ''}`;
-      } catch {}
+      } catch {
+        // Line is not valid JSON; keep an empty batch label.
+      }
       mentions.get(id).push(`${f}:${batch}`);
     }
   }

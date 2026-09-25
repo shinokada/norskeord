@@ -8,7 +8,6 @@ const targets = new Set([
   'w-009126', 'w-009485', 'w-009547', 'w-009289', 'w-009923',
   'w-009947', 'w-009948', 'w-009734', 'w-009382' // the 9 pending
 ]);
-const entries = Array.isArray(map) ? map : Object.entries(map);
 let hits = 0;
 for (const [key, val] of Object.entries(map)) {
   const to = typeof val === 'string' ? val : val?.id || val?.to || JSON.stringify(val);

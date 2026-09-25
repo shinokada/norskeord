@@ -12,7 +12,6 @@ import {
   levelDataPaths,
   loadJSON,
   saveJSON,
-  loadDecisions,
   loadActiveDecisions,
   findEntry,
   collectAllIds,
@@ -40,7 +39,7 @@ const vocabList = loadJSON(vocabPath);
 // Without these, re-running this script re-adds entries that status.mjs
 // already counts as resolved (e.g. w-010692 'svunnen tid (en)').
 const removedVocabIds = new Set(
-  loadDecisions(level)
+  loadActiveDecisions(level)
     .filter((d) => d.type === 'delete' || d.type === 'reverse_move')
     .map((d) => d.source?.id)
     .filter(Boolean)
