@@ -5,7 +5,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { DATA_DIR } from './lib.mjs';
 
-const files = fs.readdirSync(DATA_DIR).filter((f) => /^(vocab|uttrykk)-(a1|a2|b1|b2|c)\.json$/.test(f));
+const files = fs
+  .readdirSync(DATA_DIR)
+  .filter((f) => /^(vocab|uttrykk)-(a1|a2|b1|b2|c)\.json$/.test(f));
 const all = [];
 for (const f of files) {
   const list = JSON.parse(fs.readFileSync(path.join(DATA_DIR, f), 'utf8'));

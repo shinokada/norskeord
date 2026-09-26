@@ -18,10 +18,14 @@ function blockBounds(raw, id) {
   const idIdx = raw.indexOf(`"id": "${id}"`);
   if (idIdx === -1) return null;
   const start = raw.lastIndexOf('{', idIdx);
-  let depth = 0, end = -1;
+  let depth = 0,
+    end = -1;
   for (let i = start; i < raw.length; i++) {
     if (raw[i] === '{') depth++;
-    else if (raw[i] === '}' && --depth === 0) { end = i + 1; break; }
+    else if (raw[i] === '}' && --depth === 0) {
+      end = i + 1;
+      break;
+    }
   }
   const lineStart = raw.lastIndexOf('\n', start) + 1;
   return { lineStart, end };
@@ -63,7 +67,9 @@ console.log(`--- ${WRITE ? 'WRITE' : 'DRY RUN'} ---`);
 console.log('\n1. Delete uttrykk-c.json w-009382 (stikke noe til noen, cross-type twin)');
 deleteById('uttrykk-c.json', 'w-009382');
 
-console.log('\n2. Delete uttrykk-c.json w-009566 (komme til bunns i noe, twin of vocab-b1 w-010196)');
+console.log(
+  '\n2. Delete uttrykk-c.json w-009566 (komme til bunns i noe, twin of vocab-b1 w-010196)'
+);
 deleteById('uttrykk-c.json', 'w-009566');
 
 console.log('\n3. Add komme til bunns i to uttrykk-b1.json, then delete vocab-b1.json w-010196');

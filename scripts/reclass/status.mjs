@@ -65,8 +65,18 @@ decisions.forEach((d, i) => {
 // "MISSING (fix target gone from file)".
 const latestDeleteById = new Map();
 decisions.forEach((d, i) => {
-  if (d.type === 'delete' && !d.superseded_by && d.source?.id)
-    latestDeleteById.set(d.source.id, i);
+  if (d.type === 'delete' && !d.superseded_by && d.source?.id) latestDeleteById.set(d.source.id, i);
+});
+
+// Same as latestDeleteById but restricted to from:"vocab" deletes, for the
+// move branch's "was the vocab twin later deleted" check below. Kept
+// separate: the fix branch further down still needs latestDeleteById
+// unfiltered by from, since an uttrykk (or unspecified-from) delete can
+// also supersede a fix.
+const latestVocabDeleteById = new Map();
+decisions.forEach((d, i) => {
+  if (d.type === 'delete' && d.from === 'vocab' && !d.superseded_by && d.source?.id)
+    latestVocabDeleteById.set(d.source.id, i);
 });
 
 for (const [i, d] of decisions.entries()) {
@@ -109,7 +119,7 @@ for (const [i, d] of decisions.entries()) {
     state = sourceGone ? 'applied' : 'pending';
   } else if (d.type === 'move') {
     const reversedAt = d.vocab?.id ? latestReverseById.get(d.vocab.id) : undefined;
-    const deletedAt = d.vocab?.id ? latestDeleteById.get(d.vocab.id) : undefined;
+    const deletedAt = d.vocab?.id ? latestVocabDeleteById.get(d.vocab.id) : undefined;
     if (reversedAt !== undefined && reversedAt > i)
       state = 'applied'; // superseded by a later reverse_move
     else if (deletedAt !== undefined && deletedAt > i)

@@ -109,7 +109,9 @@ for (const [label, ...ids] of groups) {
     const e = rec.entry;
     const legacy = legacyByTarget.get(id) || [];
     const ment = mentions.get(id) || [];
-    console.log(`  ${id}  [${rec.file}]  "${e.norsk}"  part=${e.part ?? '-'}  ${e.theme ? 'theme=' + e.theme : ''}`);
+    console.log(
+      `  ${id}  [${rec.file}]  "${e.norsk}"  part=${e.part ?? '-'}  ${e.theme ? 'theme=' + e.theme : ''}`
+    );
     console.log(`      en:  ${clip(e.english)}`);
     console.log(`      ex:  ${clip(e.example)}  =>  ${clip(e.example_english)}`);
     console.log(

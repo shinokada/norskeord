@@ -15,7 +15,7 @@ const ids = [
   'w-009947', // c batch 38 "å holde med noen"
   'w-009948', // c batch 38 "å holde av noen"
   'w-009734', // c batch 38 "å bite seg merke i noe"
-  'w-009382'  // c batch 38 "å stikke noe til noen"
+  'w-009382' // c batch 38 "å stikke noe til noen"
 ];
 
 const all = collectAllEntries();

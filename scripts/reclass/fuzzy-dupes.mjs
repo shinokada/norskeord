@@ -20,8 +20,22 @@ import fs from 'node:fs';
 
 const LEVELS = ['a1', 'a2', 'b1', 'b2', 'c'];
 const PLACEHOLDERS = new Set([
-  'noen', 'noe', 'seg', 'selv', 'hverandre', 'deg', 'meg', 'ham', 'henne',
-  'dem', 'oss', 'man', 'ens', 'sin', 'sitt', 'sine'
+  'noen',
+  'noe',
+  'seg',
+  'selv',
+  'hverandre',
+  'deg',
+  'meg',
+  'ham',
+  'henne',
+  'dem',
+  'oss',
+  'man',
+  'ens',
+  'sin',
+  'sitt',
+  'sine'
 ]);
 const SUFFIXES = ['e', 'er', 'r', 'en', 'et', 'ene', 'a'];
 
@@ -123,9 +137,13 @@ for (const [k, list] of single) {
 }
 
 console.log(`Scanned ${entries.length} entries across ${LEVELS.length} levels (vocab + uttrykk).`);
-console.log('Exact-text twins are excluded (already handled). Every hit is a CANDIDATE; different senses are expected.\n');
+console.log(
+  'Exact-text twins are excluded (already handled). Every hit is a CANDIDATE; different senses are expected.\n'
+);
 
-console.log(`=== TIER 1: same key after normalisation, different text (${tier1.length} groups) ===`);
+console.log(
+  `=== TIER 1: same key after normalisation, different text (${tier1.length} groups) ===`
+);
 for (const g of tier1) {
   console.log(`\n[${g.key}]`);
   g.list.forEach((e) => console.log(fmt(e)));
@@ -145,4 +163,6 @@ for (const [a, b] of tier3) {
   console.log(fmt(b));
 }
 
-console.log(`\n\nSUMMARY: tier1 ${tier1.length} groups, tier2 ${tier2.length} pairs, tier3 ${tier3.length} pairs`);
+console.log(
+  `\n\nSUMMARY: tier1 ${tier1.length} groups, tier2 ${tier2.length} pairs, tier3 ${tier3.length} pairs`
+);

@@ -4,9 +4,17 @@ import { DATA_DIR } from './lib.mjs';
 
 const map = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'id-migration-map.json'), 'utf8'));
 const targets = new Set([
-  'w-010196', 'w-009566', // komme til bunns i pair
-  'w-009126', 'w-009485', 'w-009547', 'w-009289', 'w-009923',
-  'w-009947', 'w-009948', 'w-009734', 'w-009382' // the 9 pending
+  'w-010196',
+  'w-009566', // komme til bunns i pair
+  'w-009126',
+  'w-009485',
+  'w-009547',
+  'w-009289',
+  'w-009923',
+  'w-009947',
+  'w-009948',
+  'w-009734',
+  'w-009382' // the 9 pending
 ]);
 let hits = 0;
 for (const [key, val] of Object.entries(map)) {

@@ -18,6 +18,10 @@ const uttrykk = loadJSON(uttrykkPath);
 
 for (const t of targets) {
   const norm = normTextIgnoreA(t);
-  const match = uttrykk.find((e) => normTextIgnoreA(e.norsk) === norm || normTextIgnoreA(e.lemma) === norm);
-  console.log(`${t}: ${match ? `FOUND existing uttrykk entry ${match.id}` : 'no existing uttrykk entry'}`);
+  const match = uttrykk.find(
+    (e) => normTextIgnoreA(e.norsk) === norm || normTextIgnoreA(e.lemma) === norm
+  );
+  console.log(
+    `${t}: ${match ? `FOUND existing uttrykk entry ${match.id}` : 'no existing uttrykk entry'}`
+  );
 }
