@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.83.1
+
+### Patch Changes
+
+- - **Improvements**
+    - Review sessions and statistics now reflect each card’s current level and category, including after content is reorganized.
+    - Expression categories are grouped consistently across learning pages, category pages, and statistics.
+    - Due-today totals now include vocabulary and expressions only; grammar is excluded.
+  - **Bug Fixes**
+    - Cards that no longer match available content are omitted from resolved review and statistics results.
+
 ## 2.83.0
 
 ### Minor Changes
