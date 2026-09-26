@@ -10,7 +10,7 @@
 // shared row-list component can render any of them identically.
 import { State } from 'ts-fsrs';
 import type { CardProgress, CEFRLevel, GrammarTopic } from '$lib/types';
-import { CATEGORIES_BY_LEVEL, UTTRYKK_CATCHALL_THEME } from '$lib/config';
+import { CATEGORIES_BY_LEVEL } from '$lib/config';
 import { uttrykkCCategoryCounts } from '$lib/uttrykk-c-stats';
 import { resolveEntry } from '$lib/content-lookup';
 import {
@@ -79,19 +79,15 @@ export type ReviewType = 'vocab' | 'uttrykk' | 'grammar';
  *
  * For vocab/uttrykk, always includes `&category={row.key}` when reviewType
  * is set (Fix 2) — `/review` handles scoping it correctly downstream
- * regardless of which kind of row this is: `row.key` lines up with
- * `CardProgress.category` for vocab rows and C's uttrykk rows (real
- * category slugs), so `getDueItems()` can scope by it directly there.
- * A1–B2 uttrykk rows are keyed by *theme*, which isn't stored on
- * `CardProgress` at all (every A1–B2 uttrykk card's `category` is the
- * literal 'uttrykk' sentinel) — for those, `/review` fetches the whole
- * level+type and filters the *resolved* entries by `theme` afterward,
- * since `theme` only exists on the resolved `VocabEntry`, not on
- * `CardProgress`. The synthetic "Others" row (`row.key ===
- * UTTRYKK_OTHERS_THEME`) gets the same `&category=others` shape —
- * `/review` resolves it via `uttrykkOthersKeysForLevel()` below instead of
- * a direct field match, since 'others' isn't a real theme/category value
- * on any card either.
+ * regardless of which kind of row this is: `row.key` lines up with the
+ * resolved entry's `category` for vocab rows and every uttrykk row (A1–B2
+ * and C alike carry a real category directly as of the theme/category
+ * unification — ai-docs/implementation/uttrykk-theme-category-unification.md),
+ * so `/api/review-entries` can scope by it directly server-side. The
+ * synthetic "Others" row (`row.key === UTTRYKK_OTHERS_THEME`) is the one
+ * exception — `/review` resolves it via `uttrykkOthersKeysForLevel()`
+ * below instead of a direct field match, since 'others' isn't a real
+ * category value on any card.
  */
 export function buildReviewHref(
   row: StatRow,
@@ -191,7 +187,7 @@ export function uttrykkOthersKeysForLevel(
   const entries = uttrykkByLevel[level] ?? [];
   const themeCounts = new Map<string, number>();
   for (const e of entries) {
-    if (e.theme) themeCounts.set(e.theme, (themeCounts.get(e.theme) ?? 0) + 1);
+    if (e.category) themeCounts.set(e.category, (themeCounts.get(e.category) ?? 0) + 1);
   }
   const themeList: ThemeCount[] = [...themeCounts.entries()].map(([theme, count]) => ({
     theme,
@@ -281,7 +277,7 @@ export function vocabCategoryStatsForLevel(
 
 // ── Uttrykk — theme rows for one level ──────────────────────────────────────
 
-type UttrykkEntry = { id?: string; norsk: string; theme?: string };
+type UttrykkEntry = { id?: string; norsk: string; category: string };
 
 const uttrykkByLevel: Partial<Record<CEFRLevel, UttrykkEntry[]>> = {
   A1: uttrykkA1 as UttrykkEntry[],
@@ -291,10 +287,12 @@ const uttrykkByLevel: Partial<Record<CEFRLevel, UttrykkEntry[]>> = {
 };
 
 /**
- * Theme breakdown for one CEFR level. A1–B2 use the `theme` field on
- * uttrykk-{level}.json; C has no theme field, so its rows are its own real
- * category slugs (via uttrykk-c-stats.ts), same as the C row in the old
- * UttrykkThemeChart.svelte (removed).
+ * Theme breakdown for one CEFR level. As of the theme/category unification
+ * (ai-docs/implementation/uttrykk-theme-category-unification.md), A1–B2
+ * and C both key off a real `category` field directly — A1–B2 reads
+ * uttrykk-{level}.json's `category`; C has its own loader
+ * (uttrykk-c-stats.ts) for historical reasons but the two are now
+ * conceptually the same shape.
  */
 export function uttrykkThemeStatsForLevel(
   level: CEFRLevel,
@@ -368,23 +366,29 @@ export function uttrykkThemeStatsForLevel(
 
   const themeCounts = new Map<string, number>();
   for (const e of entries) {
-    if (e.theme) themeCounts.set(e.theme, (themeCounts.get(e.theme) ?? 0) + 1);
+    if (e.category) themeCounts.set(e.category, (themeCounts.get(e.category) ?? 0) + 1);
   }
 
   // Resolved live via content-lookup.ts (Phase 2, permanent-structural-fix.md)
   // instead of trusting the stored CardProgress.level/.category — a card
-  // moved to a different theme, level, or vocab↔uttrykk since it was last
-  // reviewed buckets under its *current* theme immediately. This also
+  // moved to a different category, level, or vocab↔uttrykk since it was last
+  // reviewed buckets under its *current* category immediately. This also
   // replaces the old per-level `lookup` map built from `entries` above: that
-  // map could only ever answer "what's this id's theme *at this level's
+  // map could only ever answer "what's this id's category *at this level's
   // current content*", which silently broke the moment a card's real level
   // changed — `resolveEntry()` isn't scoped to one level's file at all, so
   // it always finds the id wherever it currently lives.
+  //
+  // As of the theme/category unification
+  // (ai-docs/implementation/uttrykk-theme-category-unification.md), A1–B2
+  // uttrykk entries carry a real category directly — the old
+  // `resolved.theme ?? UTTRYKK_CATCHALL_THEME` fallback is gone since
+  // `category` is always set now, same as vocab and C uttrykk.
   const cardsByTheme = new Map<string, CardProgress[]>();
   for (const [id, card] of Object.entries(progressMap)) {
     const resolved = resolveEntry(id);
     if (resolved && resolved.level === level && resolved.type === 'uttrykk') {
-      const theme = resolved.theme ?? UTTRYKK_CATCHALL_THEME;
+      const theme = resolved.category;
       const list = cardsByTheme.get(theme) ?? [];
       list.push(card);
       cardsByTheme.set(theme, list);

@@ -49,7 +49,8 @@ export interface VocabEntry {
   level: CEFRLevel;
   category: Category;
   part: PartOfSpeech;
-  theme?: string; // uttrykk-only sub-grouping (see ai-docs/implementation/uttrykk-category.md)
+  // theme removed — A1–B2 uttrykk now uses `category` directly, matching
+  // vocab and C-level uttrykk (ai-docs/implementation/uttrykk-theme-category-unification.md)
   note?: string; // free-text usage note (distinct from `definition` — see data-rules/vocab-and-uttrykk.md)
   verb_type?: string; // conjugation class for verbs: 'v1' | 'v2' | 'v3' | 'ureg' or a comma-separated combination, e.g. 'v1, v2'
 }

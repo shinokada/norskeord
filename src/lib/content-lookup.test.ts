@@ -11,18 +11,17 @@ describe('resolveEntry', () => {
     expect(resolved).toEqual({ level: 'A1', category: entry.category, type: 'vocab' });
   });
 
-  it('resolves an A1–B2 uttrykk entry with its theme and the "uttrykk" category sentinel', () => {
-    const entry = (uttrykkA1 as { id: string; category: string; theme?: string }[])[0];
+  it('resolves an A1–B2 uttrykk entry with its real category', () => {
+    const entry = (uttrykkA1 as { id: string; category: string }[])[0];
     const resolved = resolveEntry(entry.id);
     expect(resolved).toEqual({
       level: 'A1',
-      category: 'uttrykk',
-      theme: entry.theme,
+      category: entry.category,
       type: 'uttrykk'
     });
   });
 
-  it('resolves a C-level uttrykk entry with its real category and no theme', () => {
+  it('resolves a C-level uttrykk entry with its real category', () => {
     const entry = (uttrykkC as { id: string; category: string }[])[0];
     const resolved = resolveEntry(entry.id);
     expect(resolved).toEqual({ level: 'C', category: entry.category, type: 'uttrykk' });

@@ -60,19 +60,15 @@
     const progressMap: Record<string, CardProgress> =
       isPlus && userId ? await loadProgressMapFromSupabase(userId) : await loadProgressMap();
 
-    // Fix 2 (ai-docs/implementation/due-only-review-update.md): A1–B2
-    // uttrykk rows are keyed by theme, which no id-based filter can express
-    // as a plain "category" match on its own — skip that option here and
-    // fetch the whole level+type instead; the theme filter happens below,
-    // after resolving, against the real `theme` field that only exists on
-    // the resolved VocabEntry. The synthetic "Others" bucket needs the same
-    // treatment for C too — its category param ('others') isn't a real
-    // category/theme value anywhere in content (C's real per-card
-    // categories are its actual slugs), so it can't be scoped this way
-    // either.
-    const isA1B2UttrykkTheme = !!categoryParam && type === 'uttrykk' && levelParam !== 'C';
-    const isCOthers =
-      categoryParam === UTTRYKK_OTHERS_THEME && type === 'uttrykk' && levelParam === 'C';
+    // As of the theme/category unification
+    // (ai-docs/implementation/uttrykk-theme-category-unification.md), every
+    // uttrykk entry at every level carries a real `category` directly, so
+    // `/api/review-entries` can filter by it the same way as vocab. The
+    // synthetic "Others" bucket is the one remaining exception — its
+    // category param ('others') isn't a real category value anywhere in
+    // content, so it can't be scoped this way and needs
+    // uttrykkOthersKeysForLevel() below instead.
+    const isOthers = categoryParam === UTTRYKK_OTHERS_THEME && type === 'uttrykk';
 
     // getDueItems() (Phase 3, permanent-structural-fix.md) no longer scopes
     // by level/category/type itself — that would mean trusting the stored
@@ -95,27 +91,21 @@
       body: JSON.stringify({
         ids: dueItems.map((d) => d.id),
         level: levelParam,
-        category: isA1B2UttrykkTheme || isCOthers ? undefined : categoryParam,
+        category: isOthers ? undefined : categoryParam,
         type
       })
     });
     const json = await res.json().catch(() => ({ entries: [] }));
     let resolved = (json.entries as VocabEntry[] | undefined) ?? [];
 
-    // Fix 2: narrow to the exact row that was clicked. For vocab and
-    // C-uttrykk rows this is a no-op refinement (getDueItems already scoped
-    // by category); for A1–B2 uttrykk rows this is what actually narrows
-    // the level-wide fetch above down to the one theme that was clicked.
-    // The synthetic "Others" bucket (A1–B2 theme or C category) resolves
-    // against uttrykkOthersKeysForLevel() instead, since 'others' itself
-    // never appears as a real theme/category on any entry.
-    if (categoryParam === UTTRYKK_OTHERS_THEME && levelParam) {
+    // The synthetic "Others" bucket resolves against
+    // uttrykkOthersKeysForLevel() instead of a direct category match, since
+    // 'others' itself never appears as a real category on any entry. Every
+    // other category (vocab, or any uttrykk category at any level) was
+    // already scoped server-side above, via `category`.
+    if (isOthers && levelParam) {
       const othersKeys = uttrykkOthersKeysForLevel(levelParam, progressMap);
-      resolved = resolved.filter(
-        (e) => (e.theme && othersKeys.has(e.theme)) || othersKeys.has(e.category)
-      );
-    } else if (categoryParam) {
-      resolved = resolved.filter((e) => e.category === categoryParam || e.theme === categoryParam);
+      resolved = resolved.filter((e) => othersKeys.has(e.category));
     }
 
     entries = resolved;

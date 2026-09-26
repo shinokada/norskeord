@@ -96,18 +96,19 @@ export const load: PageServerLoad = async ({ params }) => {
   const allPosts = parsePosts(modules);
   const blogPosts = allPosts.filter((p) => cefrLevels(p.cefr).includes(levelUpper)).slice(0, 3);
 
-  // Phase 3b: group this level's uttrykk deck by theme for the hub card.
-  // Phase 8 (ai-docs/implementation/uttrykk-category.md): for C, there's no
-  // `theme` field to group by, so its real category slugs (from
-  // uttrykk-c.json, via uttrykk-c-stats.ts — the same source stats/+page.svelte
-  // uses) serve as the theme-equivalent instead.
+  // Phase 3b: group this level's uttrykk deck by category for the hub card.
+  // As of the theme/category unification
+  // (ai-docs/implementation/uttrykk-theme-category-unification.md), A1–B2
+  // uttrykk entries carry a real `category` directly, same as C's real
+  // category slugs (from uttrykk-c.json, via uttrykk-c-stats.ts — the same
+  // source stats/+page.svelte uses).
   const uttrykkThemeLoader = uttrykkThemeLoaders[levelUpper];
   let uttrykkThemes: { theme: string; count: number }[] = [];
   if (uttrykkThemeLoader) {
     const uttrykkData = await uttrykkThemeLoader();
     const counts = new Map<string, number>();
     for (const e of uttrykkData.default) {
-      if (e.theme) counts.set(e.theme, (counts.get(e.theme) ?? 0) + 1);
+      if (e.category) counts.set(e.category, (counts.get(e.category) ?? 0) + 1);
     }
     uttrykkThemes = [...counts.entries()]
       .map(([theme, count]) => ({ theme, count }))

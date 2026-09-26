@@ -38,13 +38,10 @@ interface ReviewEntriesRequest {
   /** Restrict to one CEFR level. Omit for a global (all-levels) session. */
   level?: CEFRLevel;
   /**
-   * Restrict to one vocab category, or one C-level uttrykk category (C
-   * reuses real category slugs for uttrykk — see uttrykk-c-stats.ts).
-   * Matched against the resolved entry's `category` OR `theme`, so an
-   * A1–B2 uttrykk theme value works here too (the /review page passes
-   * this through untouched for A1–B2 uttrykk-by-category links; it omits
-   * this field itself for theme-scoped and "Others" links — see that
-   * page's comments).
+   * Restrict to one category. As of the theme/category unification
+   * (ai-docs/implementation/uttrykk-theme-category-unification.md), every
+   * uttrykk entry at every level carries a real `category` directly —
+   * matched against the resolved entry's `category` alone, same as vocab.
    */
   category?: string;
   /** vocab / uttrykk / both (default). */
@@ -115,11 +112,7 @@ export const POST: RequestHandler = async ({ request }) => {
     const resolvedEntry = resolveEntry(id);
     if (!resolvedEntry) continue;
     if (body.level && resolvedEntry.level !== body.level) continue;
-    if (
-      body.category &&
-      resolvedEntry.category !== body.category &&
-      resolvedEntry.theme !== body.category
-    ) {
+    if (body.category && resolvedEntry.category !== body.category) {
       continue;
     }
     if (body.type && body.type !== 'both' && resolvedEntry.type !== body.type) continue;

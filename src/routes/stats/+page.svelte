@@ -6,7 +6,6 @@
     loadProgressMapFromSupabase,
     loadGrammarProgressMap,
     loadGrammarProgressFromSupabase,
-    countDueToday,
     getStreakFromLocalStorage,
     loadStudyDays,
     buildActivityGrid,
@@ -63,7 +62,6 @@
   const isNb = $derived(localeStore.current === 'nb');
   const grammarCards = $derived(Object.values(grammarMap));
   const grammarSeen = $derived(grammarCards.length);
-  const grammarDue = $derived(countDueToday(grammarMap));
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
 
@@ -180,7 +178,14 @@
   // in stats.ts).
   const uttrykkLevelStats = $derived<LevelStat[]>(buildLevelStats(uttrykkResolvedCards, levels));
 
-  const totalDueToday = $derived(vocabDue + uttrykkDue + grammarDue);
+  // Matches /review's "Both" scope exactly (vocab+uttrykk only) — grammar
+  // has its own review flow at /review/grammar and its own due count in the
+  // Grammar section below, so it's deliberately excluded here rather than
+  // counted in a banner that links to a session that can't include it. Same
+  // treatment as the per-level "Study due at {level}" badge just below,
+  // which already did this. See permanent-structural-fix.md's "Known bugs"
+  // section for the bug this fixes.
+  const totalDueToday = $derived(vocabDue + uttrykkDue);
 
   // ── Level tabs (Phase 3) ─────────────────────────────────────────────────────
   const ACTIVE_LEVEL_KEY = 'stats-active-level';

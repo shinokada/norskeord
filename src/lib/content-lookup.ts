@@ -35,19 +35,17 @@ import uttrykkC from '$lib/data/uttrykk-c.json';
  * from a stored `CardProgress` snapshot.
  *
  * `type` is derived from *which file the id was found in* — not from the
- * `category` field, since A1–B2 uttrykk entries carry the literal
- * `'uttrykk'` category sentinel while C's uttrykk entries reuse real vocab
- * category slugs (see uttrykk-c-stats.ts). This is the one place that
- * distinction is made, so every other module (stats.ts, progress.ts) can
- * just trust `type` instead of re-deriving it.
- *
- * `theme` is only ever set for A1–B2 uttrykk entries; C uttrykk and all
- * vocab entries leave it undefined.
+ * `category` field. As of the theme/category unification
+ * (ai-docs/implementation/uttrykk-theme-category-unification.md), every
+ * uttrykk entry at every level (A1–B2 and C) carries a real category slug
+ * directly — there's no more `'uttrykk'` sentinel or separate `theme` field
+ * to reconcile. `type` still comes from *which file the id was found in*,
+ * so every other module (stats.ts, progress.ts) can just trust `type`
+ * instead of re-deriving it.
  */
 export interface ResolvedEntry {
   level: CEFRLevel;
   category: string;
-  theme?: string;
   type: 'vocab' | 'uttrykk';
 }
 
@@ -55,7 +53,6 @@ interface LookupSourceEntry {
   id?: string;
   norsk: string;
   category: string;
-  theme?: string;
 }
 
 /** Stable lookup key for a content entry: id when present, else norsk — same
@@ -73,10 +70,9 @@ const vocabFilesByLevel: Record<CEFRLevel, LookupSourceEntry[]> = {
   C: vocabC as LookupSourceEntry[]
 };
 
-// A1–B2 uttrykk decks are theme-based (real theme, sentinel 'uttrykk'
-// category); C has no separate theme taxonomy and reuses real category
-// slugs directly (see uttrykk-c-stats.ts) — both shapes satisfy
-// LookupSourceEntry as-is.
+// A1–B2 and C uttrykk decks now both carry real category slugs directly
+// (see uttrykk-c-stats.ts for C's) — both shapes satisfy LookupSourceEntry
+// as-is.
 const uttrykkFilesByLevel: Record<CEFRLevel, LookupSourceEntry[]> = {
   A1: uttrykkA1 as LookupSourceEntry[],
   A2: uttrykkA2 as LookupSourceEntry[],
@@ -106,7 +102,7 @@ const CONTENT_LOOKUP: Map<string, ResolvedEntry> = (() => {
 
   for (const level of Object.keys(uttrykkFilesByLevel) as CEFRLevel[]) {
     for (const e of uttrykkFilesByLevel[level]) {
-      map.set(entryKey(e), { level, category: e.category, theme: e.theme, type: 'uttrykk' });
+      map.set(entryKey(e), { level, category: e.category, type: 'uttrykk' });
     }
   }
 
@@ -114,7 +110,7 @@ const CONTENT_LOOKUP: Map<string, ResolvedEntry> = (() => {
 })();
 
 /**
- * Resolves an id's current level/category/theme/type live from content.
+ * Resolves an id's current level/category/type live from content.
  * Returns undefined when the id no longer exists anywhere in content (the
  * entry was deleted outright, not moved) — callers should drop such ids
  * silently rather than error or fall back to a stale stored value.
