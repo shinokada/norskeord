@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.83.0
+
+### Minor Changes
+
+- - **New Content**
+    - Added Norwegian vocabulary entries for collocations, particle verbs, fixed adverbials, and grammatical constructions.
+    - Added dictionary-style Norwegian definitions for applicable vocabulary and expressions.
+  - **Improvements**
+    - Corrected inaccurate translations and example sentences, and refined grammatical classifications and entry wording.
+    - Removed duplicate or superseded vocabulary and expression entries.
+  - **Documentation**
+    - Expanded guidance on writing definitions and classifying multi-word expressions, including grammatical head selection and formatting conventions.
+
 ## 2.82.0
 
 ### Minor Changes
