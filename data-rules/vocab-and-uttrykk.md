@@ -70,7 +70,7 @@ Most multi-word entries keep the `part` of their grammatical head, not `phrase`:
 - Multi-word prepositions remain `preposition` — e.g. `ved siden av`, `i stedet for`.
 - Multi-word noun phrases that name a concept remain `noun` — e.g. `kunstig intelligens`, `biologisk mangfold`.
 
-Use `phrase` only when the entry has **no single grammatical head** — greetings, idioms, discourse markers, and other fixed expressions. In practice, most `phrase`-part entries belong in `uttrykk-xx.json` rather than `vocab-xx.json`; see the decision rule below.
+Use `phrase` only when the entry has **no single grammatical head** — greetings, idioms, discourse markers, and other fixed expressions. In practice, most `phrase`-part entries belong in `uttrykk-xx.json` rather than `vocab-xx.json`; see the decision rule below. Exception: a **collocation** (see below) with a genuinely headless, impersonal frame — e.g. `det er om å gjøre` — may be `phrase` in vocab.
 
 | lemma              | part                 |
 | ------------------ | -------------------- |
@@ -81,6 +81,16 @@ Use `phrase` only when the entry has **no single grammatical head** — greeting
 | i går              | phrase _(→ uttrykk)_ |
 | ha det bra         | phrase _(→ uttrykk)_ |
 
+**`part` for collocations** (a fixed multi-word vocab entry kept whole per "Collocation entries coexist with their head word" below): take the `part` of the collocation's own grammatical head, the same rule as any other multi-word entry — not `phrase` by default.
+
+| Collocation type                                      | `part`      | Example                   |
+| ----------------------------------------------------- | ----------- | ------------------------- |
+| verb + object or complement                           | `verb`      | `å gjøre en dårlig figur` |
+| fixed prepositional phrase used adverbially           | `adverb`    | `på gløtt`, `til sjøs`    |
+| noun + adjective / adjective + noun                   | `noun`      | `trange kår`              |
+| copula/light verb + adjective with no adjective entry | `adjective` | `prisgitt`, `skikket til` |
+| impersonal or sentence frame with no head             | `phrase`    | `det er om å gjøre`       |
+
 ### ID format
 
 `w-{NNNNNN}` where NNNNNN is a zero-padded 6-digit number, **one shared sequence global across both vocab and uttrykk, and across all levels of each.** Neither `category`, `level`, nor type (vocab vs. uttrykk) is part of the id — all three live only in their own fields (`category`/`part` distinguish vocab from uttrykk), so recategorizing, reclassifying (CEFR level), or moving an entry between vocab and uttrykk is a pure data edit with no id implication.
@@ -88,6 +98,20 @@ Use `phrase` only when the entry has **no single grammatical head** — greeting
 Example: `w-000001`
 
 Vocab and uttrykk ids are drawn from the same counter and are otherwise indistinguishable by shape — which file an entry lives in, and its `category`/`part` fields, are the only source of truth for its type.
+
+### `definition` field (vocab-b1/b2/c and uttrykk-c)
+
+A monolingual Norwegian, dictionary-style definition of the sense shown in `english`.
+
+- One sentence or short clause, capitalised, ending with a period; B1+ vocabulary.
+- It explains the meaning; it does not illustrate it. Never an example sentence, quote, question or exclamation, and never first-person or dialogue ("Skal vi begynne?", "Jeg tillater det.").
+- Must match the sense in `english` and `example`.
+- Avoid the headword and its word family where possible.
+- Verbs start with `Å` + infinitive (`Å etterligne noens oppførsel.`); nouns with an article (`En ...`, `Et ...`); adverbs and adjectives with a paraphrase (`Ikke i det hele tatt.`); expressions with when they are used (`Brukes når ...`).
+- **Collocation entries** (a fixed multi-word vocab entry, see below) are defined as a whole, not via their head word alone — e.g. `å gjøre en dårlig figur` gets "Å gjøre et dårlig inntrykk på andre," not a definition of `figur`. Verb collocations still use `Å` + infinitive.
+- Must not share more than half its words with `example`.
+- Moving an entry between files means re-checking its definition — a source `definition` field is often an example sentence pasted in by mistake, not an actual definition; write a real one rather than carrying it over.
+- Supplementary usage information goes in `note`, not here.
 
 ### `note` field (optional)
 
@@ -247,10 +271,10 @@ Same as vocab: `norsk` is the display form, `lemma` is the canonical/dictionary 
 **Verb-initial uttrykk: `å` in `norsk` is optional; `lemma` is always bare.** Either display form is accepted:
 
 | `norsk` (either form is fine)                 | `lemma` (always bare, no `å`) |
-| --------------------------------------------- | ------------------------------ |
+| --------------------------------------------- | ----------------------------- |
 | `ta vare på` / `å ta vare på`                 | `ta vare på`                  |
-| `ha lyst til` / `å ha lyst til`               | `ha lyst til`                  |
-| `bli oppfordret til` / `å bli oppfordret til` | `bli oppfordret til`           |
+| `ha lyst til` / `å ha lyst til`               | `ha lyst til`                 |
+| `bli oppfordret til` / `å bli oppfordret til` | `bli oppfordret til`          |
 
 Prefer the bare form for idioms and proverbs cited the way a dictionary would (`ha is i magen`); the `å` form is fine for entries that read naturally as an infinitive phrase (`å ta buss`). Don't normalise existing entries in either direction just for consistency. But never leave `å` in `lemma`: it is used for dedup and FSRS lookup and must match how vocab lemmas are written. When comparing an uttrykk entry against vocab (duplicate checks), ignore a leading `å` on both sides.
 

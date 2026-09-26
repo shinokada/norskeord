@@ -4,16 +4,11 @@ import { readJsonFile, writeJsonFile } from '$lib/admin/github';
 import type { RequestHandler } from './$types';
 import type { VocabEntry } from '$lib/types';
 
-// Uttrykk has both full decks and preview decks
 const LEVEL_FILE: Record<string, string> = {
   A1: 'src/lib/data/uttrykk-a1.json',
   A2: 'src/lib/data/uttrykk-a2.json',
   B1: 'src/lib/data/uttrykk-b1.json',
-  B2: 'src/lib/data/uttrykk-b2.json',
-  'A1-PREVIEW': 'src/lib/data/uttrykk-a1-preview.json',
-  'A2-PREVIEW': 'src/lib/data/uttrykk-a2-preview.json',
-  'B1-PREVIEW': 'src/lib/data/uttrykk-b1-preview.json',
-  'B2-PREVIEW': 'src/lib/data/uttrykk-b2-preview.json'
+  B2: 'src/lib/data/uttrykk-b2.json'
 };
 
 function assertAdmin(locals: App.Locals) {
@@ -26,10 +21,7 @@ function assertAdmin(locals: App.Locals) {
 function getFilePath(url: URL): string {
   const level = url.searchParams.get('level')?.toUpperCase();
   if (!level || !LEVEL_FILE[level]) {
-    throw error(
-      400,
-      `Missing or invalid ?level= (expected A1, A2, B1, B2, A1-PREVIEW, A2-PREVIEW, B1-PREVIEW, or B2-PREVIEW)`
-    );
+    throw error(400, `Missing or invalid ?level= (expected A1, A2, B1, or B2)`);
   }
   return LEVEL_FILE[level];
 }

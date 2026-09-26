@@ -218,7 +218,9 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds, file
     if (!entry.lemma || entry.lemma === '') {
       warns.push(`lemma field is missing or empty`);
     } else if (/^å\s/i.test(entry.lemma)) {
-      errs.push(`lemma "${entry.lemma}" starts with "å " — lemma must be bare, only norsk may carry it`);
+      errs.push(
+        `lemma "${entry.lemma}" starts with "å " — lemma must be bare, only norsk may carry it`
+      );
     }
 
     // Language consistency: for each translation language present on this entry,

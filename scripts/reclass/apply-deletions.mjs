@@ -3,9 +3,10 @@
 //
 // Idempotent: only acts on decisions whose source entry is still
 // present. Re-running after a partial/interrupted run is always safe —
-// it just does nothing to entries already gone.
+// it just does nothing to entries already gone. Decisions marked
+// `superseded_by` are skipped (audit trail only, see lib.mjs).
 
-import { levelDataPaths, loadJSON, saveJSON, loadDecisions, findEntry } from './lib.mjs';
+import { levelDataPaths, loadJSON, saveJSON, loadActiveDecisions, findEntry } from './lib.mjs';
 
 const args = process.argv.slice(2);
 const level = args.includes('--level') ? args[args.indexOf('--level') + 1] : null;
@@ -17,7 +18,11 @@ if (!level) {
 
 const { uttrykk: uttrykkPath } = levelDataPaths(level);
 const uttrykkList = loadJSON(uttrykkPath);
-const decisions = loadDecisions(level).filter((d) => d.type === 'delete' || d.type === 'move');
+// `from: "vocab"` deletes (fuzzy-dupe pass) are hand-applied vocab removals;
+// this script only edits uttrykk, so it must never act on them.
+const decisions = loadActiveDecisions(level).filter(
+  (d) => (d.type === 'delete' && d.from !== 'vocab') || d.type === 'move'
+);
 
 const toRemove = [];
 for (const d of decisions) {

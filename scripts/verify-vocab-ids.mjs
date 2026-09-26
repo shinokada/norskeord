@@ -25,13 +25,9 @@ const FILES = [
   'vocab-b2.json',
   'vocab-c.json',
   'uttrykk-a1.json',
-  'uttrykk-a1-preview.json',
   'uttrykk-a2.json',
-  'uttrykk-a2-preview.json',
   'uttrykk-b1.json',
-  'uttrykk-b1-preview.json',
-  'uttrykk-b2.json',
-  'uttrykk-b2-preview.json'
+  'uttrykk-b2.json'
 ];
 
 let totalEntries = 0;

@@ -37,6 +37,16 @@ export function loadDecisions(level) {
     .map((l) => JSON.parse(l));
 }
 
+// Decisions carrying a `superseded_by` field (e.g. the redundant_grammar
+// deletes undone by the 2026-09-16 policy change, whose entries were then
+// restored on purpose) are audit trail only. The apply scripts must never
+// act on them: re-running apply-deletions would delete the restored entries,
+// and apply-additions would re-add vocab for a superseded move. status.mjs
+// counts them separately instead of reporting them pending.
+export function loadActiveDecisions(level) {
+  return loadDecisions(level).filter((d) => !d.superseded_by);
+}
+
 export function appendDecision(level, decision) {
   fs.mkdirSync(DECISIONS_DIR, { recursive: true });
   const file = path.join(DECISIONS_DIR, `${level}.jsonl`);
@@ -65,9 +75,14 @@ export function normTextIgnoreA(s) {
   return normText(s).replace(/^å\s+/, '');
 }
 
+// An explicit `id` is authoritative: when a decision names one, match by id
+// only and never fall back to text. Otherwise a merge/dedupe decision (delete
+// one of two same-text twins) matches the surviving twin by text, so status.mjs
+// reports it pending forever and apply-deletions.mjs would delete the entry
+// that was meant to be kept. Text matching is only for id-less decisions.
 export function findEntry(list, { id, norsk, lemma }) {
+  if (id) return list.find((e) => e.id === id);
   return list.find((e) => {
-    if (id && e.id === id) return true;
     if (norsk && normText(e.norsk) === normText(norsk)) return true;
     if (lemma && normText(e.lemma) === normText(lemma)) return true;
     return false;

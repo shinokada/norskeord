@@ -39,7 +39,8 @@ if (decisions.length === 0) {
 let pending = 0,
   applied = 0,
   partial = 0,
-  conflict = 0;
+  conflict = 0,
+  superseded = 0;
 
 // A later `fix` decision for the same id supersedes earlier ones (the
 // earlier line stays in the file as audit trail, but only the latest fix
@@ -58,9 +59,40 @@ decisions.forEach((d, i) => {
   if (d.type === 'reverse_move' && d.source?.id) latestReverseById.set(d.source.id, i);
 });
 
+// A later `delete` for the same id supersedes an earlier `fix` on it (the
+// entry was fixed, then found to be a duplicate and removed). The old fix
+// line stays as audit trail; without this it reports a false
+// "MISSING (fix target gone from file)".
+const latestDeleteById = new Map();
+decisions.forEach((d, i) => {
+  if (d.type === 'delete' && !d.superseded_by && d.source?.id) latestDeleteById.set(d.source.id, i);
+});
+
+// Same as latestDeleteById but restricted to from:"vocab" deletes, for the
+// move branch's "was the vocab twin later deleted" check below. Kept
+// separate: the fix branch further down still needs latestDeleteById
+// unfiltered by from, since an uttrykk (or unspecified-from) delete can
+// also supersede a fix.
+const latestVocabDeleteById = new Map();
+decisions.forEach((d, i) => {
+  if (d.type === 'delete' && d.from === 'vocab' && !d.superseded_by && d.source?.id)
+    latestVocabDeleteById.set(d.source.id, i);
+});
+
 for (const [i, d] of decisions.entries()) {
+  // Superseded lines (e.g. redundant_grammar deletes undone by the
+  // 2026-09-16 policy change) are audit trail: the entry is meant to be on
+  // disk, so they are neither pending nor applied. The apply scripts skip
+  // them too (lib.mjs loadActiveDecisions).
+  if (d.superseded_by) {
+    superseded++;
+    continue;
+  }
   const label = `[batch ${d.batch ?? '?'}] ${d.bucket ?? d.type}: "${d.source?.norsk ?? d.vocab?.norsk}"`;
-  const sourceGone = d.type === 'add_vocab' ? true : !findEntry(uttrykkList, d.source || {});
+  // A `delete` with `"from":"vocab"` removes a vocab entry (fuzzy-dupe pass),
+  // so verify against vocab, not uttrykk. Such a line must carry source.id.
+  const sourceList = d.from === 'vocab' ? vocabList : uttrykkList;
+  const sourceGone = d.type === 'add_vocab' ? true : !findEntry(sourceList, d.source || {});
 
   let vocabState = 'n/a';
   if (d.vocab) {
@@ -87,8 +119,14 @@ for (const [i, d] of decisions.entries()) {
     state = sourceGone ? 'applied' : 'pending';
   } else if (d.type === 'move') {
     const reversedAt = d.vocab?.id ? latestReverseById.get(d.vocab.id) : undefined;
-    if (reversedAt !== undefined && reversedAt > i) state = 'applied'; // superseded by a later reverse_move
+    const deletedAt = d.vocab?.id ? latestVocabDeleteById.get(d.vocab.id) : undefined;
+    if (reversedAt !== undefined && reversedAt > i)
+      state = 'applied'; // superseded by a later reverse_move
+    else if (deletedAt !== undefined && deletedAt > i)
+      state = 'applied'; // vocab entry later deleted as a duplicate (mirrors apply-additions.mjs removedVocabIds)
     else if (sourceGone && vocabState === 'present') state = 'applied';
+    else if (sourceGone && d.resolution === 'skip' && vocabState === 'missing')
+      state = 'applied'; // same-sense skip: source deleted, nothing added, by design (README "Resolving a conflict")
     else if (sourceGone && vocabState.startsWith('DUPLICATE'))
       state = d.resolution === 'skip' ? 'applied' : 'conflict';
     else if (sourceGone && vocabState === 'missing')
@@ -102,12 +140,18 @@ for (const [i, d] of decisions.entries()) {
       state = d.resolution === 'skip' ? 'applied' : 'conflict';
     else state = 'pending';
   } else if (d.type === 'fix') {
-    // In-place field correction: the entry stays in uttrykk, so verify by
+    // In-place field correction: the entry stays where it is (normally
+    // uttrykk; vocab for a fix to an already-moved entry, looked up there
+    // as a fallback since 2026-09-23), so verify by
     // id that every field named in `fix` matches what's actually on disk
     // now (extended 2026-09-20, follow-up §8 — previously only compared
     // fix.norsk, so lemma/theme/example_* fixes were never verified).
-    const target = findEntry(uttrykkList, { id: d.source?.id });
-    if (d.source?.id && latestFixById.get(d.source.id) !== i) state = 'applied'; // superseded by a later fix
+    const target =
+      findEntry(uttrykkList, { id: d.source?.id }) ?? findEntry(vocabList, { id: d.source?.id });
+    if (d.source?.id && latestFixById.get(d.source.id) !== i)
+      state = 'applied'; // superseded by a later fix
+    else if (!target && latestDeleteById.get(d.source?.id) > i)
+      state = 'applied'; // superseded by a later delete
     else if (!target) state = 'MISSING (fix target gone from file)';
     else {
       const mismatched = Object.keys(d.fix || {}).filter(
@@ -125,8 +169,13 @@ for (const [i, d] of decisions.entries()) {
     const uttrykkTarget = findEntry(uttrykkList, { id: d.uttrykk?.id ?? d.source?.id });
     if (vocabGone && uttrykkTarget) state = 'applied';
     else if (!vocabGone && !uttrykkTarget) state = 'pending';
-    else if (!vocabGone && uttrykkTarget) state = 'PARTIAL (added to uttrykk, vocab source never deleted)';
+    else if (!vocabGone && uttrykkTarget)
+      state = 'PARTIAL (added to uttrykk, vocab source never deleted)';
     else state = 'PARTIAL (vocab deleted, uttrykk entry missing)';
+  } else if (d.type === 'no_action') {
+    // Reviewed and confirmed no change needed (e.g. a dedupe-scan false
+    // positive kept as audit trail). Not pending work.
+    state = 'applied';
   } else {
     // Never leave state undefined — an unrecognised type used to crash
     // the summary loop instead of reporting itself.
@@ -145,7 +194,7 @@ for (const [i, d] of decisions.entries()) {
 
 console.log('---');
 console.log(
-  `${level}: ${decisions.length} decisions — applied ${applied}, pending ${pending}, partial ${partial}, conflict ${conflict}`
+  `${level}: ${decisions.length} decisions — applied ${applied}, pending ${pending}, partial ${partial}, conflict ${conflict}, superseded ${superseded}`
 );
 console.log(`uttrykk-${level}.json: ${uttrykkList.length} entries on disk`);
 console.log(`vocab-${level}.json: ${vocabList.length} entries on disk`);
