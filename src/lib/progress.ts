@@ -3,7 +3,6 @@ import type { Grade, FSRSParameters } from 'ts-fsrs';
 import type { FSRSRating, CardProgress, CEFRLevel, GrammarTopic } from '$lib/types';
 import type { VocabEntry, GrammarQuestion } from '$lib/types';
 import { supabase } from '$lib/supabase';
-import { UTTRYKK_C_KEYS } from '$lib/uttrykk-c-stats';
 
 // enable_short_term: false disables ts-fsrs's sub-day (re)learning steps for every
 // instance below. Without it, a first-time "Hard"/"Good" rating on a brand-new card
@@ -244,6 +243,9 @@ interface ProgressRow {
 function toRow(entry: VocabEntry, p: CardProgress): Omit<ProgressRow, never> {
   return {
     vocab_id: entry.id ?? entry.norsk, // stable key; falls back to norsk for old entries
+    // level/category: same Phase 4 backward-compat note as saveProgress()
+    // below — written for Table Editor readability, not read back for
+    // stats/due-filtering (Phase 2/3 resolve those live instead).
     level: p.level,
     category: p.category,
     due: p.fsrs.due instanceof Date ? p.fsrs.due.toISOString() : String(p.fsrs.due),
@@ -434,6 +436,12 @@ export async function saveProgress(
     seenCount: (existing?.seenCount ?? 0) + 1,
     lastSeen: now.toISOString(),
     lastRating: rating,
+    // Kept for backward-compat / readability in Table Editor (Phase 4,
+    // permanent-structural-fix.md) — nothing reads these two fields for
+    // stats or due-filtering anymore as of Phase 2/3 (both resolve live via
+    // content-lookup.ts's resolveEntry() instead). They're just a snapshot
+    // of where this entry was *at review time*, and are allowed to go
+    // stale the moment the entry moves — that's expected now, not a bug.
     level: entry.level,
     category: entry.category
   };
@@ -464,73 +472,36 @@ export function countDueToday(progressMap: Record<string, CardProgress>): number
 
 export interface DueItem {
   id: string;
-  level: CEFRLevel;
-}
-
-export interface GetDueItemsOptions {
-  /** Restrict to one CEFR level. Omit for a global (all-levels) session. */
-  level?: CEFRLevel;
-  /**
-   * Restrict to one vocab category or A1–B2 uttrykk sentinel category
-   * ('uttrykk'). Used by the per-category due badge deep link
-   * (LevelStatRows.svelte). For a C-level uttrykk row, also pass
-   * `type: 'uttrykk'` — C reuses its vocab category slugs for uttrykk rows
-   * too (see uttrykkThemeStatsForLevel's C branch in stats.ts), so `category`
-   * alone can't tell the two apart there.
-   *
-   * Does NOT support A1–B2 uttrykk *theme* scoping (Fix 2,
-   * ai-docs/implementation/due-only-review-update.md) — every A1–B2 uttrykk
-   * card's `CardProgress.category` is the literal 'uttrykk' sentinel, not
-   * its theme, so this option has nothing to filter on for that case.
-   * `/review/+page.svelte` handles it downstream instead: it omits
-   * `category` here for that case (fetching the whole level+type), then
-   * filters the *resolved* `VocabEntry[]` by `theme` afterward, since
-   * `theme` only exists on the resolved entry, not on `CardProgress`.
-   */
-  category?: string;
-  /**
-   * vocab / uttrykk / both (default). Mirrors the split `/stats` already
-   * computes per level (vocabCategoryStatsForLevel vs
-   * uttrykkThemeStatsForLevel in stats.ts): category === 'uttrykk' for
-   * A1–B2, UTTRYKK_C_KEYS membership for C.
-   */
-  type?: 'vocab' | 'uttrykk' | 'both';
 }
 
 /**
- * Returns every due card in `progressMap` as the minimal `{ id, level }`
- * shape `/api/review-entries` (Step 1) expects, optionally narrowed to one
- * level, one category, and/or vocab-vs-uttrykk. Works unchanged for both
- * Plus (progressMap already loaded via loadProgressMapFromSupabase) and
- * free/guest (loadProgressMap) — the map shape is identical either way.
+ * Returns every due card in `progressMap` as the minimal `{ id }` shape
+ * `/api/review-entries` expects — id only, no level/category/type.
+ *
+ * Before Phase 3 (permanent-structural-fix.md) this also scoped by level/
+ * category/vocab-vs-uttrykk, filtered off the *stored* `CardProgress.level`/
+ * `.category` snapshot. That snapshot goes stale the moment an entry moves
+ * level, category, or vocab↔uttrykk without being reviewed again — exactly
+ * the bug this whole plan doc fixes elsewhere (stats.ts). Doing the live
+ * fix here too (resolving each id via content-lookup.ts's `resolveEntry()`)
+ * would mean importing that full id→location map into progress.ts, which
+ * is bundled into nearly every flashcard/quiz/review route — see the plan
+ * doc's Performance notes. So scoping now happens server-side instead, in
+ * `/api/review-entries`, which already loads production content JSON at
+ * zero client cost: callers pass their desired level/category/type filter
+ * straight through to that endpoint (as request fields) rather than to
+ * this function. See `/review/+page.svelte` for the caller-side change.
  *
  * New/never-studied cards (no progress row) are never included — "due"
  * here specifically means an existing FSRS schedule whose due date has
  * passed, not "not yet seen". See due-only.md's Decisions section.
  */
-export function getDueItems(
-  progressMap: Record<string, CardProgress>,
-  opts: GetDueItemsOptions = {}
-): DueItem[] {
-  const { level, category, type = 'both' } = opts;
+export function getDueItems(progressMap: Record<string, CardProgress>): DueItem[] {
   const now = new Date();
 
   return Object.entries(progressMap)
-    .filter(([key, card]) => {
-      if (new Date(card.fsrs.due) > now) return false;
-      if (level && card.level !== level) return false;
-      if (category && card.category !== category) return false;
-
-      if (type !== 'both') {
-        const isUttrykk =
-          card.category === 'uttrykk' || (card.level === 'C' && UTTRYKK_C_KEYS.has(key));
-        if (type === 'vocab' && isUttrykk) return false;
-        if (type === 'uttrykk' && !isUttrykk) return false;
-      }
-
-      return true;
-    })
-    .map(([id, card]) => ({ id, level: card.level }));
+    .filter(([, card]) => new Date(card.fsrs.due) <= now)
+    .map(([id]) => ({ id }));
 }
 
 // ── Grammar progress ─────────────────────────────────────────────────────────
@@ -667,6 +638,22 @@ export interface GetDueGrammarItemsOptions {
 }
 
 /**
+ * Grammar's due-item shape, kept separate from vocab's `DueItem` (Phase 3,
+ * permanent-structural-fix.md). Grammar topics don't move the way vocab/
+ * uttrykk categories do — confirmed in Phase 3 — so there's no staleness
+ * risk in trusting `card.level` here, and `/api/review-grammar-entries`
+ * still groups by client-supplied level the same way `/api/review-entries`
+ * used to before Phase 3. Don't reuse `DueItem` for this: it lost `level`
+ * in Phase 3 specifically because trusting it for *vocab* was unsafe, which
+ * doesn't apply here — sharing the type anyway is what broke this file's
+ * svelte-check once already (2026-09-26).
+ */
+export interface DueGrammarItem {
+  id: string;
+  level: CEFRLevel;
+}
+
+/**
  * Returns every due grammar card in `progressMap` as the minimal
  * `{ id, level }` shape `/api/review-grammar-entries` expects, optionally
  * narrowed to one level and/or one topic. Mirrors getDueItems() above but
@@ -680,7 +667,7 @@ export interface GetDueGrammarItemsOptions {
 export function getDueGrammarItems(
   progressMap: Record<string, CardProgress>,
   opts: GetDueGrammarItemsOptions = {}
-): DueItem[] {
+): DueGrammarItem[] {
   const { level, topic } = opts;
   const now = new Date();
 

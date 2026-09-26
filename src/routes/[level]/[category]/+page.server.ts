@@ -262,15 +262,17 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
   };
 
   // Phase 3 (ai-docs/implementation/uttrykk-category.md): group the full
-  // uttrykk deck by `theme` and support an optional ?theme= pre-filter.
-  // A1–B2 only — C's uttrykk entries have no `theme` field (they carry a
-  // real category slug instead and are merged in via uttrykkCLoader below),
-  // so this just yields an empty `themes` array for C, which the client
-  // treats as "no breakdown to show".
+  // uttrykk deck by `category` and support an optional ?theme= pre-filter
+  // (query param name kept as `theme` for existing bookmarks/links — see
+  // ai-docs/implementation/uttrykk-theme-category-unification.md — even
+  // though it now reads the entry's `category` field). A1–B2 only — C's
+  // uttrykk entries are merged in via uttrykkCLoader below instead of going
+  // through this grouping, so this just yields an empty `themes` array for
+  // C, which the client treats as "no breakdown to show".
   function groupByTheme(all: VocabEntry[]) {
     const counts = new Map<string, number>();
     for (const e of all) {
-      if (e.theme) counts.set(e.theme, (counts.get(e.theme) ?? 0) + 1);
+      if (e.category) counts.set(e.category, (counts.get(e.category) ?? 0) + 1);
     }
     const themes = [...counts.entries()]
       .map(([theme, count]) => ({ theme, count }))
@@ -286,14 +288,14 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
       const { minor } = partitionUttrykkThemes(themes);
       if (minor.length > 0) {
         const minorNames = new Set(minor.map((t) => t.theme));
-        const entries = all.filter((e) => e.theme && minorNames.has(e.theme));
+        const entries = all.filter((e) => e.category && minorNames.has(e.category));
         return { entries, themes, selectedTheme: UTTRYKK_OTHERS_THEME };
       }
       // No minor themes for this level — fall through to "no filter" below.
     }
 
     const selectedTheme = requested && counts.has(requested) ? requested : null;
-    const entries = selectedTheme ? all.filter((e) => e.theme === selectedTheme) : all;
+    const entries = selectedTheme ? all.filter((e) => e.category === selectedTheme) : all;
     return { entries, themes, selectedTheme };
   }
 
