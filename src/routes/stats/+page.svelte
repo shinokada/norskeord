@@ -15,7 +15,7 @@
   } from '$lib/progress';
   import type { ActivityCell } from '$lib/progress';
   import { CATEGORIES_BY_LEVEL } from '$lib/config';
-  import { UTTRYKK_C_KEYS } from '$lib/uttrykk-c-stats';
+  import { resolveEntry, type ResolvedEntry } from '$lib/content-lookup';
   import type { CardProgress, CEFRLevel } from '$lib/types';
   import { localeStore } from '$lib/localeStore.svelte';
   import * as m from '$lib/paraglide/messages.js';
@@ -92,20 +92,44 @@
     due: number;
   }
 
+  /** A progress row paired with its *live* resolved location (Phase 5,
+   * permanent-structural-fix.md) — content-lookup.ts's resolveEntry(),
+   * not the stored CardProgress.level/.category snapshot, which goes
+   * stale the moment an entry moves level/category/vocab↔uttrykk without
+   * being reviewed again. Built once from progressMap and reused by every
+   * summary stat below (vocab/uttrykk split, per-level bars, CEFR estimate)
+   * so none of them re-read the stale stored fields directly. An id that no
+   * longer resolves anywhere (entry deleted outright, not moved) is simply
+   * absent here — dropped silently, same convention as stats.ts. */
+  interface ResolvedCard {
+    card: CardProgress;
+    resolved: ResolvedEntry;
+  }
+
+  function resolveCards(map: Record<string, CardProgress>): ResolvedCard[] {
+    const out: ResolvedCard[] = [];
+    for (const [id, card] of Object.entries(map)) {
+      const resolved = resolveEntry(id);
+      if (resolved) out.push({ card, resolved });
+    }
+    return out;
+  }
+
   /**
    * Shared by the Vocabulary and Uttrykk blocks' free-tier per-level summary
-   * card — each filters allCards down to its own content type first (see
-   * vocabCards/uttrykkCards below), then calls this against the full A1..C
-   * levels list so the active level's card can just look itself up. For C,
-   * uttrykkCards is built via a key-based match against uttrykk-c.json
-   * (uttrykk-c-stats.ts) rather than category === 'uttrykk', since C's
-   * uttrykk entries carry their real category, not the 'uttrykk' sentinel —
-   * see Phase 4/6 of ai-docs/implementation/uttrykk-category.md.
+   * card — each filters resolvedCards down to its own content type first
+   * (see vocabResolvedCards/uttrykkResolvedCards below), then calls this
+   * against the full A1..C levels list so the active level's card can just
+   * look itself up. Levels are read from each card's *live* resolved
+   * location (`resolved.level`), not the stored `CardProgress.level`
+   * snapshot — so a card moved to a different level since it was last
+   * reviewed still buckets under its current level immediately, matching
+   * vocabCategoryStatsForLevel/uttrykkThemeStatsForLevel in stats.ts.
    */
-  function buildLevelStats(cards: CardProgress[], levelsList: readonly CEFRLevel[]): LevelStat[] {
+  function buildLevelStats(cards: ResolvedCard[], levelsList: readonly CEFRLevel[]): LevelStat[] {
     const now = new Date();
     return levelsList.map((level) => {
-      const lvlCards = cards.filter((c) => c.level === level);
+      const lvlCards = cards.filter((rc) => rc.resolved.level === level).map((rc) => rc.card);
       return {
         level,
         seen: lvlCards.length,
@@ -117,28 +141,28 @@
     });
   }
 
+  // All progress rows paired with their live-resolved location. Recomputed
+  // whenever progressMap changes (mount, reset, etc.) — cheap, see Phase 1's
+  // Performance notes (permanent-structural-fix.md): resolveEntry() is a
+  // single Map lookup per id against content already loaded for this route.
+  const resolvedCards = $derived<ResolvedCard[]>(resolveCards(progressMap));
+
   // ── Vocabulary vs. Uttrykk split ──────────────────────────────────────────
-  // A card's CardProgress.category is 'uttrykk' for A1–B2 uttrykk entries.
-  // C-level uttrykk entries never carry that sentinel — they merge into
-  // vocab-c.json's categories at read time (Phase 4), so a studied C idiom's
-  // card looks identical to a studied C vocab word's card except for its
-  // progressMap key, which uttrykk-c-stats.ts can match back to
-  // uttrykk-c.json. UTTRYKK_C_KEYS.has(key) is what makes that split exact
-  // for C, not just an approximation.
-  const vocabCards = $derived(
-    Object.entries(progressMap)
-      .filter(
-        ([key, c]) => c.category !== 'uttrykk' && !(c.level === 'C' && UTTRYKK_C_KEYS.has(key))
-      )
-      .map(([, c]) => c)
+  // Split by each card's *live* resolved type (Phase 5,
+  // permanent-structural-fix.md), not the stored `CardProgress.category`
+  // sentinel this used to filter on. That sentinel-based check (category
+  // === 'uttrykk', plus a key-based UTTRYKK_C_KEYS lookup for C, whose
+  // uttrykk entries carry real category slugs rather than the sentinel) was
+  // exact at review time but went stale the moment an entry moved vocab↔
+  // uttrykk without being reviewed again — `resolved.type` (which file the
+  // id currently resolves in, from content-lookup.ts) replaces both checks
+  // uniformly across all five levels, live.
+  const vocabResolvedCards = $derived(resolvedCards.filter((rc) => rc.resolved.type === 'vocab'));
+  const uttrykkResolvedCards = $derived(
+    resolvedCards.filter((rc) => rc.resolved.type === 'uttrykk')
   );
-  const uttrykkCards = $derived(
-    Object.entries(progressMap)
-      .filter(
-        ([key, c]) => c.category === 'uttrykk' || (c.level === 'C' && UTTRYKK_C_KEYS.has(key))
-      )
-      .map(([, c]) => c)
-  );
+  const vocabCards = $derived(vocabResolvedCards.map((rc) => rc.card));
+  const uttrykkCards = $derived(uttrykkResolvedCards.map((rc) => rc.card));
 
   function computeDueToday(cards: CardProgress[]): number {
     const now = new Date();
@@ -147,14 +171,14 @@
 
   const vocabSeen = $derived(vocabCards.length);
   const vocabDue = $derived(computeDueToday(vocabCards));
-  const vocabLevelStats = $derived<LevelStat[]>(buildLevelStats(vocabCards, levels));
+  const vocabLevelStats = $derived<LevelStat[]>(buildLevelStats(vocabResolvedCards, levels));
 
   const uttrykkSeen = $derived(uttrykkCards.length);
   const uttrykkDue = $derived(computeDueToday(uttrykkCards));
   // All five levels now — C is included via the key-based split above, using
   // its own real category slugs as "themes" (see uttrykkThemeStatsForLevel
   // in stats.ts).
-  const uttrykkLevelStats = $derived<LevelStat[]>(buildLevelStats(uttrykkCards, levels));
+  const uttrykkLevelStats = $derived<LevelStat[]>(buildLevelStats(uttrykkResolvedCards, levels));
 
   const totalDueToday = $derived(vocabDue + uttrykkDue + grammarDue);
 
@@ -247,7 +271,7 @@
     C: CATEGORIES_BY_LEVEL.C.length
   };
 
-  function getCefrEstimate(cards: CardProgress[]): string {
+  function getCefrEstimate(cards: ResolvedCard[]): string {
     const seenCategoriesByLevel: Record<CEFRLevel, Set<string>> = {
       A1: new Set(),
       A2: new Set(),
@@ -255,8 +279,12 @@
       B2: new Set(),
       C: new Set()
     };
-    for (const card of cards) {
-      seenCategoriesByLevel[card.level].add(card.category);
+    // Live-resolved location (Phase 5, permanent-structural-fix.md), not the
+    // stored CardProgress.level/.category — a card moved to a different
+    // level/category since it was last reviewed now counts toward its
+    // *current* location's coverage immediately.
+    for (const { resolved } of cards) {
+      seenCategoriesByLevel[resolved.level].add(resolved.category);
     }
 
     const coverage = levels.map((level) => ({
@@ -296,7 +324,7 @@
     return m.stats_cefr_getting_started({ a1pct: String(a1pct), a2pct: String(a2pct) });
   }
 
-  const cefrEstimate = $derived(getCefrEstimate(allCards));
+  const cefrEstimate = $derived(getCefrEstimate(resolvedCards));
 
   // ── Share / clipboard ───────────────────────────────────────────────────────
   let copied = $state(false);

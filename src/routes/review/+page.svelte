@@ -61,25 +61,27 @@
       isPlus && userId ? await loadProgressMapFromSupabase(userId) : await loadProgressMap();
 
     // Fix 2 (ai-docs/implementation/due-only-review-update.md): A1–B2
-    // uttrykk rows are keyed by theme, which CardProgress.category can't
-    // express (every A1–B2 uttrykk card's category is the 'uttrykk'
-    // sentinel) — getDueItems() can only scope by category, so skip that
-    // option here and fetch the whole level+type instead; the theme filter
-    // happens below, after resolving, against the real `theme` field that
-    // only exists on the resolved VocabEntry. The synthetic "Others" bucket
-    // needs the same treatment for C too — its category param ('others')
-    // isn't a real CardProgress.category value there either (C's real
-    // per-card categories are its actual slugs), so it can't be scoped by
-    // getDueItems() any more than an A1–B2 theme can.
+    // uttrykk rows are keyed by theme, which no id-based filter can express
+    // as a plain "category" match on its own — skip that option here and
+    // fetch the whole level+type instead; the theme filter happens below,
+    // after resolving, against the real `theme` field that only exists on
+    // the resolved VocabEntry. The synthetic "Others" bucket needs the same
+    // treatment for C too — its category param ('others') isn't a real
+    // category/theme value anywhere in content (C's real per-card
+    // categories are its actual slugs), so it can't be scoped this way
+    // either.
     const isA1B2UttrykkTheme = !!categoryParam && type === 'uttrykk' && levelParam !== 'C';
     const isCOthers =
       categoryParam === UTTRYKK_OTHERS_THEME && type === 'uttrykk' && levelParam === 'C';
 
-    const dueItems = getDueItems(progressMap, {
-      level: levelParam,
-      category: isA1B2UttrykkTheme || isCOthers ? undefined : categoryParam,
-      type
-    });
+    // getDueItems() (Phase 3, permanent-structural-fix.md) no longer scopes
+    // by level/category/type itself — that would mean trusting the stored
+    // (possibly stale) CardProgress.level/.category, or importing the full
+    // content-lookup.ts id→location map into the client bundle. Instead it
+    // just returns every due id, and the level/category/type filter is sent
+    // straight through to /api/review-entries, which resolves each id's
+    // *live* location server-side before filtering.
+    const dueItems = getDueItems(progressMap);
 
     if (dueItems.length === 0) {
       entries = [];
@@ -90,7 +92,12 @@
     const res = await fetch('/api/review-entries', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ items: dueItems.map((d) => ({ id: d.id, level: d.level })) })
+      body: JSON.stringify({
+        ids: dueItems.map((d) => d.id),
+        level: levelParam,
+        category: isA1B2UttrykkTheme || isCOthers ? undefined : categoryParam,
+        type
+      })
     });
     const json = await res.json().catch(() => ({ entries: [] }));
     let resolved = (json.entries as VocabEntry[] | undefined) ?? [];

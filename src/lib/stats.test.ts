@@ -11,8 +11,24 @@ import {
 import { CATEGORIES_BY_LEVEL } from '$lib/config';
 import { UTTRYKK_C_KEYS } from '$lib/uttrykk-c-stats';
 import { GRAMMAR_RULES } from '$lib/grammar/rules';
-import type { CardProgress, GrammarQuestion, GrammarTopic } from '$lib/types';
+import type { CardProgress, GrammarQuestion, GrammarTopic, VocabEntry } from '$lib/types';
 import grammarData from '$lib/data/grammar.json';
+import vocabA1 from '$lib/data/vocab-a1.json';
+import vocabB1 from '$lib/data/vocab-b1.json';
+import uttrykkA1 from '$lib/data/uttrykk-a1.json';
+
+// Phase 2 (permanent-structural-fix.md) made every stats.ts function resolve
+// a progress key's level/category/theme *live* via content-lookup.ts's
+// resolveEntry(), instead of trusting the CardProgress row's stored
+// level/category. That means a fixture's id must be a real id that actually
+// exists in the content JSON — a synthetic key like 'v-a1-greetings-001'
+// (the old fixture convention) no longer resolves to anything and gets
+// silently dropped, same as a genuinely deleted entry. These helpers pull
+// real ids out of the actual content files so fixtures stay valid however
+// the underlying data changes.
+const A1_GREETINGS_ENTRY = (vocabA1 as VocabEntry[]).find((e) => e.category === 'greetings')!;
+const B1_TRAVEL_ENTRY = (vocabB1 as VocabEntry[]).find((e) => e.category === 'travel')!;
+const A1_UTTRYKK_ENTRY = (uttrykkA1 as VocabEntry[])[0];
 
 function fakeCard(
   overrides: Partial<Omit<CardProgress, 'category'>> & { category?: string } = {}
@@ -42,7 +58,7 @@ describe('vocabCategoryStatsForLevel', () => {
 
   it('counts a seen card under its own category and level only', () => {
     const progressMap = {
-      'v-a1-greetings-001': fakeCard({ level: 'A1', category: 'greetings' })
+      [A1_GREETINGS_ENTRY.id]: fakeCard({ level: 'A1', category: 'greetings' })
     };
     const rows = vocabCategoryStatsForLevel('A1', progressMap);
     const greetings = rows.find((r) => r.key === 'greetings')!;
@@ -54,10 +70,23 @@ describe('vocabCategoryStatsForLevel', () => {
 
   it('does not leak B1 progress into the A1 breakdown', () => {
     const progressMap = {
-      'v-b1-travel-001': fakeCard({ level: 'B1', category: 'travel' })
+      [B1_TRAVEL_ENTRY.id]: fakeCard({ level: 'B1', category: 'travel' })
     };
     const rows = vocabCategoryStatsForLevel('A1', progressMap);
     expect(rows.every((r) => r.seen === 0)).toBe(true);
+  });
+
+  it('buckets a card under its CURRENT category/level even when the stored CardProgress row is stale', () => {
+    // Core Phase 2 fix: the stored level/category on the CardProgress row is
+    // deliberately wrong here (as if the entry moved after this card was last
+    // reviewed) — vocabCategoryStatsForLevel must resolve the id's *live*
+    // location from content instead of trusting this stale snapshot.
+    const progressMap = {
+      [A1_GREETINGS_ENTRY.id]: fakeCard({ level: 'B1', category: 'travel' })
+    };
+    const rows = vocabCategoryStatsForLevel('A1', progressMap);
+    const greetings = rows.find((r) => r.key === 'greetings')!;
+    expect(greetings.seen).toBe(1);
   });
 });
 
@@ -68,7 +97,7 @@ describe('progressBucket via vocabCategoryStatsForLevel (learning/review/relearn
   // see progressBucket() in stats.ts.
   it('buckets a low-rep card as learning even though its FSRS state is Review', () => {
     const progressMap = {
-      'v-a1-greetings-001': fakeCard({
+      [A1_GREETINGS_ENTRY.id]: fakeCard({
         fsrs: { ...createEmptyCard(), state: State.Review, reps: 1 } as Card
       })
     };
@@ -81,7 +110,7 @@ describe('progressBucket via vocabCategoryStatsForLevel (learning/review/relearn
 
   it('buckets a card just rated "again" as relearning even though its FSRS state is Review', () => {
     const progressMap = {
-      'v-a1-greetings-001': fakeCard({
+      [A1_GREETINGS_ENTRY.id]: fakeCard({
         fsrs: { ...createEmptyCard(), state: State.Review, reps: 5 } as Card,
         lastRating: 'again'
       })
@@ -95,7 +124,7 @@ describe('progressBucket via vocabCategoryStatsForLevel (learning/review/relearn
 
   it('buckets a card past the reps threshold with a non-"again" last rating as review', () => {
     const progressMap = {
-      'v-a1-greetings-001': fakeCard({
+      [A1_GREETINGS_ENTRY.id]: fakeCard({
         fsrs: { ...createEmptyCard(), state: State.Review, reps: 3 } as Card,
         lastRating: 'hard'
       })
@@ -111,8 +140,8 @@ describe('progressBucket via vocabCategoryStatsForLevel (learning/review/relearn
 describe('uttrykkThemeStatsForLevel', () => {
   it('only counts cards tagged category "uttrykk" for A1–B2', () => {
     const progressMap = {
-      'u-a1-001': fakeCard({ level: 'A1', category: 'uttrykk' }),
-      'v-a1-greetings-001': fakeCard({ level: 'A1', category: 'greetings' })
+      [A1_UTTRYKK_ENTRY.id]: fakeCard({ level: 'A1', category: 'uttrykk' }),
+      [A1_GREETINGS_ENTRY.id]: fakeCard({ level: 'A1', category: 'greetings' })
     };
     const rows = uttrykkThemeStatsForLevel('A1', progressMap);
     const totalSeen = rows.reduce((s, r) => s + r.seen, 0);
@@ -123,6 +152,18 @@ describe('uttrykkThemeStatsForLevel', () => {
     const rows = uttrykkThemeStatsForLevel('C', {});
     expect(rows.length).toBeGreaterThan(0);
     expect(rows.every((r) => typeof r.key === 'string' && r.key.length > 0)).toBe(true);
+  });
+
+  it('buckets a card under its CURRENT theme even when the stored CardProgress row is stale', () => {
+    // Same Phase 2 guarantee as vocabCategoryStatsForLevel above: the stored
+    // level/category here is deliberately wrong (as if the card was reviewed
+    // before a move), and resolution must still find the id's live theme.
+    const progressMap = {
+      [A1_UTTRYKK_ENTRY.id]: fakeCard({ level: 'B1', category: 'travel' })
+    };
+    const rows = uttrykkThemeStatsForLevel('A1', progressMap);
+    const totalSeen = rows.reduce((s, r) => s + r.seen, 0);
+    expect(totalSeen).toBe(1);
   });
 });
 
@@ -207,27 +248,25 @@ describe('uttrykkOthersKeysForLevel', () => {
     }
   });
 
-  it('includes a renamed/stale C category from progressMap, matching the Others row it counts as due', () => {
-    // Simulates uttrykk-c.json content being re-categorised without
-    // migrating existing progress: a real uttrykk-c.json id, but stamped
-    // with a category slug that no longer exists in uttrykkCCategoryCounts().
-    // Before the fix, uttrykkOthersKeysForLevel('C') only looked at current
-    // categories, so this key would never come back — even though
-    // uttrykkThemeStatsForLevel('C', progressMap) counts the same card as due
-    // under the synthetic "Others" row (0 current entries always clears
-    // UTTRYKK_OTHERS_THRESHOLD as minor).
-    const staleCategory = '__renamed-category-no-longer-current__';
+  it('resolves a C uttrykk card under its CURRENT category even when the stored CardProgress row is stale', () => {
+    // Previously (pre-Phase-2), a re-categorised uttrykk-c.json entry left
+    // any existing progress row stamped with a category slug that no longer
+    // existed in uttrykkCCategoryCounts() — uttrykkOthersKeysForLevel('C')
+    // had to specifically union in that stale slug so the due card wasn't
+    // silently dropped from the "Others" resolution (see git history for the
+    // old version of this test). Since Phase 2, `persistedCategories` is
+    // built from `resolveEntry()`'s *live* category, so a stored category
+    // that no longer matches reality can't happen here anymore — the id
+    // simply resolves to wherever it actually lives now. This test pins that
+    // guarantee down directly, the same way the vocab/theme tests above do.
     const staleKey = [...UTTRYKK_C_KEYS][0];
     const progressMap: Record<string, CardProgress> = {
-      [staleKey]: fakeCard({ level: 'C', category: staleCategory })
+      [staleKey]: fakeCard({ level: 'A1', category: 'greetings' })
     };
 
     const rows = uttrykkThemeStatsForLevel('C', progressMap);
-    const othersRow = rows.find((r) => r.key === 'others')!;
-    expect(othersRow.due).toBeGreaterThan(0);
-
-    const keys = uttrykkOthersKeysForLevel('C', progressMap);
-    expect(keys.has(staleCategory)).toBe(true);
+    const totalSeen = rows.reduce((s, r) => s + r.seen, 0);
+    expect(totalSeen).toBe(1);
   });
 });
 
