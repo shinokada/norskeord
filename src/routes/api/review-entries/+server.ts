@@ -71,9 +71,16 @@ const uttrykkLoaders: Partial<Record<CEFRLevel, () => Promise<{ default: VocabEn
 const uttrykkCLoader = () =>
   import('$lib/data/uttrykk-c.json') as unknown as Promise<{ default: VocabEntry[] }>;
 
-// Sanity guard against a pathological payload — a real review session is
-// bounded by however many cards are actually due, which in practice never
-// gets close to this.
+// Two separate bounds:
+// - MAX_RAW_IDS guards against a pathological payload before any filtering
+//   runs (getDueItems() sends every due id across all levels/types as of
+//   Phase 3, permanent-structural-fix.md, so this needs real headroom).
+// - MAX_ITEMS caps how many *matching* (post-filter) entries get resolved,
+//   applied inside the loop below rather than to the raw list — capping
+//   the raw list first would risk truncating away exactly the ids a scoped
+//   request (?level=&category=) is asking for, silently returning fewer
+//   entries (or none) than are actually due.
+const MAX_RAW_IDS = 20000;
 const MAX_ITEMS = 1000;
 
 export const POST: RequestHandler = async ({ request }) => {
@@ -97,8 +104,8 @@ export const POST: RequestHandler = async ({ request }) => {
   if (ids.length === 0) {
     return Response.json({ entries: [] });
   }
-  if (ids.length > MAX_ITEMS) {
-    ids = ids.slice(0, MAX_ITEMS);
+  if (ids.length > MAX_RAW_IDS) {
+    ids = ids.slice(0, MAX_RAW_IDS);
   }
 
   // Resolve each id's *live* level/category/theme/type (content-lookup.ts)
@@ -107,8 +114,12 @@ export const POST: RequestHandler = async ({ request }) => {
   // that doesn't resolve anywhere (entry deleted outright, not moved) is
   // dropped silently, same as elsewhere in the plan doc. Ids are grouped by
   // their *resolved* level so each JSON file is still loaded at most once.
+  // MAX_ITEMS caps *matching* ids, not the raw input — see the constant's
+  // doc comment above for why this order matters for scoped requests.
   const idsByLevel = new Map<CEFRLevel, Set<string>>();
+  let matched = 0;
   for (const id of ids) {
+    if (matched >= MAX_ITEMS) break;
     const resolvedEntry = resolveEntry(id);
     if (!resolvedEntry) continue;
     if (body.level && resolvedEntry.level !== body.level) continue;
@@ -120,6 +131,7 @@ export const POST: RequestHandler = async ({ request }) => {
     const set = idsByLevel.get(resolvedEntry.level) ?? new Set<string>();
     set.add(id);
     idsByLevel.set(resolvedEntry.level, set);
+    matched++;
   }
 
   const resolved: VocabEntry[] = [];

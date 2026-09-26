@@ -38,6 +38,8 @@ function isFreeUttrykkTheme(level, theme) {
   return FREE_UTTRYKK_THEMES[level].includes(theme);
 }
 
+const isNonEmptyString = (value) => typeof value === 'string' && value.length > 0;
+
 const LEVELS = ['a1', 'a2', 'b1', 'b2'];
 let anyIssue = false;
 
@@ -49,9 +51,12 @@ for (const level of LEVELS) {
   // Defense in depth — the rename script already validated this.
   const badSentinel = entries.filter((e) => e.category === 'uttrykk');
   const leftoverTheme = entries.filter((e) => e.theme !== undefined);
-  if (badSentinel.length > 0 || leftoverTheme.length > 0) {
+  const invalidCategory = entries.filter(
+    (e) => e.category !== 'uttrykk' && !isNonEmptyString(e.category)
+  );
+  if (badSentinel.length > 0 || leftoverTheme.length > 0 || invalidCategory.length > 0) {
     console.error(
-      `❌ uttrykk-${level}.json: ${badSentinel.length} entr(y/ies) still have category:'uttrykk', ${leftoverTheme.length} still have a theme key.`
+      `❌ uttrykk-${level}.json: ${badSentinel.length} entr(y/ies) still have category:'uttrykk', ${leftoverTheme.length} still have a theme key, ${invalidCategory.length} have an invalid (empty/non-string) category.`
     );
     anyIssue = true;
     continue;

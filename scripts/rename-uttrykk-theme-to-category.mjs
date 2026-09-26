@@ -44,6 +44,8 @@ const ALL_LEVELS = ['a1', 'a2', 'b1', 'b2'];
 const requested = process.argv.slice(2).map((s) => s.toLowerCase());
 const levels = requested.length > 0 ? requested : ALL_LEVELS;
 
+const isNonEmptyString = (value) => typeof value === 'string' && value.length > 0;
+
 for (const level of levels) {
   if (!ALL_LEVELS.includes(level)) {
     console.error(`Unknown level "${level}" — expected one of ${ALL_LEVELS.join(', ')}`);
@@ -64,31 +66,47 @@ for (const level of levels) {
 
   const entries = JSON.parse(readFileSync(dataPath, 'utf8'));
 
-  const alreadyDone = entries.every((e) => e.category !== 'uttrykk' && e.theme === undefined);
+  const alreadyDone = entries.every(
+    (e) => e.category !== 'uttrykk' && isNonEmptyString(e.category) && e.theme === undefined
+  );
   if (alreadyDone) {
     console.log(`⏭  uttrykk-${level}.json: already renamed, skipping.`);
     continue;
   }
 
-  const missingTheme = [];
+  const invalidTheme = [];
   const unexpectedCategory = [];
+  const invalidCategory = [];
 
   for (const e of entries) {
-    if (e.category === 'uttrykk' && e.theme === undefined) missingTheme.push(e.id ?? e.norsk);
+    if (e.category === 'uttrykk' && !isNonEmptyString(e.theme)) {
+      invalidTheme.push(e.id ?? e.norsk);
+    }
     if (e.category !== 'uttrykk' && e.theme !== undefined) unexpectedCategory.push(e.id ?? e.norsk);
+    if (e.category !== 'uttrykk' && !isNonEmptyString(e.category)) {
+      invalidCategory.push(e.id ?? e.norsk);
+    }
   }
 
-  if (missingTheme.length > 0 || unexpectedCategory.length > 0) {
+  if (invalidTheme.length > 0 || unexpectedCategory.length > 0 || invalidCategory.length > 0) {
     console.error(`❌ uttrykk-${level}.json: data doesn't match the expected shape, aborting.`);
-    if (missingTheme.length > 0) {
-      console.error(`   ${missingTheme.length} entr(y/ies) have category:'uttrykk' but no theme:`);
-      console.error('   ' + missingTheme.join(', '));
+    if (invalidTheme.length > 0) {
+      console.error(
+        `   ${invalidTheme.length} entr(y/ies) have category:'uttrykk' but theme is missing, null, or not a non-empty string:`
+      );
+      console.error('   ' + invalidTheme.join(', '));
     }
     if (unexpectedCategory.length > 0) {
       console.error(
         `   ${unexpectedCategory.length} entr(y/ies) have a theme but category is already something other than 'uttrykk':`
       );
       console.error('   ' + unexpectedCategory.join(', '));
+    }
+    if (invalidCategory.length > 0) {
+      console.error(
+        `   ${invalidCategory.length} entr(y/ies) already have a non-'uttrykk' category that isn't a non-empty string:`
+      );
+      console.error('   ' + invalidCategory.join(', '));
     }
     console.error('   Nothing was written for this file.');
     anyFailed = true;
