@@ -703,7 +703,7 @@
   "onboarding_s7_browse": "Not sure? Browse all levels",
   "onboarding_close_aria_done": "Close",
   "level_hub_start_free": "Start free →",
-  "level_hub_all_articles": "All articles →",
+  "level_hub_all_articles": "View all {count} {level} articles →",
   "level_hub_show_more": "Show more ({count})",
   "level_hub_show_less": "Show less",
   "onboarding_nudge_dot_aria": "Complete your profile",

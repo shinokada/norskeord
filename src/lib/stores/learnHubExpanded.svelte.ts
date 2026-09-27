@@ -1,7 +1,7 @@
 /**
  * Shared reactive "Show more" expand state for the /learn/[level] hub.
  *
- * The hub page's grammarExpanded/blogExpanded/vocabExpanded/uttrykkExpanded
+ * The hub page's grammarExpanded/vocabExpanded/uttrykkExpanded
  * flags used to live as local $state in +page.svelte, backed by a SvelteKit
  * `snapshot` so browser back/forward restored them. That only covers actual
  * history traversal, though — clicking a level link in the main nav (or any
@@ -25,12 +25,11 @@
  *   onclick={() => learnHubExpanded.toggle('uttrykk', data.level)}
  */
 
-export type LearnHubSection = 'grammar' | 'blog' | 'vocab' | 'uttrykk';
+export type LearnHubSection = 'grammar' | 'vocab' | 'uttrykk';
 
 function createLearnHubExpandedStore() {
   const state = $state<Record<LearnHubSection, Record<string, boolean>>>({
     grammar: {},
-    blog: {},
     vocab: {},
     uttrykk: {}
   });

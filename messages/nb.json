@@ -703,7 +703,7 @@
   "onboarding_s7_browse": "Usikker? Se alle nivåer",
   "onboarding_close_aria_done": "Lukk",
   "level_hub_start_free": "Start gratis →",
-  "level_hub_all_articles": "Alle artikler →",
+  "level_hub_all_articles": "Se alle {count} {level}-artikler →",
   "level_hub_show_more": "Vis mer ({count})",
   "level_hub_show_less": "Vis mindre",
   "onboarding_nudge_dot_aria": "Fullfør profilen din",

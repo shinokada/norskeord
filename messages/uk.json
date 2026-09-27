@@ -678,7 +678,7 @@
   "onboarding_s7_browse": "Не впевнені? Переглянути всі рівні",
   "onboarding_close_aria_done": "Закрити",
   "level_hub_start_free": "Почати безкоштовно →",
-  "level_hub_all_articles": "Всі статті →",
+  "level_hub_all_articles": "Дивитися всі {count} статті рівня {level} →",
   "level_hub_show_more": "Показати більше ({count})",
   "level_hub_show_less": "Показати менше",
   "onboarding_nudge_dot_aria": "Заповніть профіль",
