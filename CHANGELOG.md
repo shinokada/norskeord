@@ -1,5 +1,15 @@
 # norske-flashcard
 
+## 2.85.0
+
+### Minor Changes
+
+- - **New Features**
+    - Category lists now show Plus-only topics as dimmed, locked pills that link to Plus.
+    - Vocabulary categories have been divided into more specific topics across B1, B2, and C, with a new A2 Home category.
+  - **Changes**
+    - Removed the aggregate Plus-only count pill and the fixed-expression count link from the level C page.
+
 ## 2.84.0
 
 ### Minor Changes
