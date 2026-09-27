@@ -115,8 +115,10 @@
          ai-docs/implementation/grammar-ux-update.md Step 5). -->
     {#if levelParam()}
       <p class="-mt-4 mb-4 text-sm text-gray-500 dark:text-gray-400">
-        Showing {levelParam()} only ·
-        <a href="/grammar/{data.topic}" class="underline hover:text-indigo-500"> see all levels </a>
+        {m.grammar_level_scope_showing({ level: levelParam()! })}
+        <a href="/grammar/{data.topic}" class="underline hover:text-indigo-500">
+          {m.grammar_level_scope_see_all()}
+        </a>
       </p>
     {/if}
     {#key data.topic}

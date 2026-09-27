@@ -928,7 +928,7 @@
           {m.flashcard_shuffle_restart()}
         </button>
         <a
-          href="/stats"
+          href="/my-progress"
           class="text-sm text-white/80 underline hover:text-white hover:no-underline"
         >
           {m.flashcard_view_stats()}

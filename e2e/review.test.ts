@@ -4,7 +4,7 @@ import { expect, test, type Page } from '@playwright/test';
  * ai-docs/implementation/due-only.md — Step 5 (verification).
  *
  * Free/guest path only — localStorage is trivial to seed with
- * page.addInitScript (same pattern as e2e/stats.test.ts). The Plus path
+ * page.addInitScript (same pattern as e2e/my-progress.test.ts). The Plus path
  * (loadProgressMapFromSupabase + the per-category due badges in
  * LevelStatRows.svelte) isn't testable here for the same reason two tests
  * in e2e/flashcard.test.ts are `.fixme`: injectPlusPlan() only patches
@@ -93,12 +93,12 @@ test.describe('/review', () => {
   });
 });
 
-test.describe('/stats — Study due entry points (Step 4a/4b)', () => {
+test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
   test('shows the global "Study due now" banner linking to /review when something is due', async ({
     page
   }) => {
     await seed(page, DUE_YESTERDAY);
-    await page.goto('/stats');
+    await page.goto('/my-progress');
     const banner = page.getByRole('link', { name: /study due now/i });
     await expect(banner).toBeVisible();
     await expect(banner).toHaveAttribute('href', '/review');
@@ -108,7 +108,7 @@ test.describe('/stats — Study due entry points (Step 4a/4b)', () => {
     // Due tomorrow, not today — totalSeen > 0 but totalDueToday === 0, so
     // the banner should stay hidden even though there's reviewed content.
     await seed(page, DUE_TOMORROW);
-    await page.goto('/stats');
+    await page.goto('/my-progress');
     await expect(page.getByRole('link', { name: /study due now/i })).not.toBeVisible();
   });
 
@@ -116,7 +116,7 @@ test.describe('/stats — Study due entry points (Step 4a/4b)', () => {
     page
   }) => {
     await seed(page, DUE_YESTERDAY);
-    await page.goto('/stats');
+    await page.goto('/my-progress');
     // activeLevel's initial value depends on the CEFR estimate text, which
     // isn't worth pinning down here — select A1 explicitly so the test only
     // depends on what it's actually checking.
@@ -217,13 +217,13 @@ test.describe('/review/grammar', () => {
   });
 });
 
-test.describe('/stats — Grammar due badge (Fix 3)', () => {
+test.describe('/my-progress — Grammar due badge (Fix 3)', () => {
   test('shows a clickable grammar due badge linking to /review/grammar', async ({ page }) => {
     await seedGrammar(page, GRAMMAR_DUE_YESTERDAY);
-    await page.goto('/stats');
+    await page.goto('/my-progress');
     // Grammar topic-level progress is free for every plan (not gated by
     // isPlus — see the comment above the Grammar section in
-    // stats/+page.svelte), so this works for the default guest session,
+    // my-progress/+page.svelte), so this works for the default guest session,
     // same as the rest of this file.
     await page.getByRole('tab', { name: 'A1', exact: true }).click();
     const badge = page.getByRole('link', { name: /1 due/i });

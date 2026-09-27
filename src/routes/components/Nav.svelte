@@ -281,8 +281,10 @@
               >Admin</DropdownItem
             >
           {/if}
-          <DropdownItem class="dark:hover:bg-blue-900" href="/stats" onclick={closeAvatarDropdown}
-            >{m.nav_my_progress()}</DropdownItem
+          <DropdownItem
+            class="dark:hover:bg-blue-900"
+            href="/my-progress"
+            onclick={closeAvatarDropdown}>{m.nav_my_progress()}</DropdownItem
           >
           <DropdownItem class="dark:hover:bg-blue-900" onclick={logout}
             >{m.nav_log_out()}</DropdownItem
@@ -399,7 +401,7 @@
             </div>
           {/snippet}
         </SidebarItem>
-        <SidebarItem label={m.nav_my_progress()} href="/stats">
+        <SidebarItem label={m.nav_my_progress()} href="/my-progress">
           {#snippet icon()}
             <ChartOutline
               class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"

@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { GrammarQuestion } from '$lib/types';
+  import * as m from '$lib/paraglide/messages';
 
   interface GrammarResult {
     question: GrammarQuestion;
@@ -48,13 +49,13 @@
 
 <div class="text-center">
   <p class="mb-1 text-5xl">{scoreEmoji(correctCount, total)}</p>
-  <h2 class="mt-3 text-2xl font-bold dark:text-white">Økt fullført!</h2>
+  <h2 class="mt-3 text-2xl font-bold dark:text-white">{m.grammar_summary_done()}</h2>
   <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">
-    {correctCount} av {total} riktige
+    {m.grammar_summary_score({ correct: correctCount, total })}
   </p>
   {#if dueSoon > 0}
     <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
-      {dueSoon} klare for repetisjon snart
+      {m.grammar_summary_due_soon({ count: dueSoon })}
     </p>
   {/if}
 
@@ -77,7 +78,7 @@
           </p>
           {#if !result.correct && result.userAnswer}
             <p class="mt-0.5 text-xs text-gray-600 dark:text-gray-300">
-              Du skrev:
+              {m.grammar_summary_you_wrote()}
               {result.userAnswer}
             </p>
           {/if}
@@ -92,8 +93,14 @@
       onclick={onrestart}
       class="rounded-lg bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none dark:bg-indigo-500 dark:hover:bg-indigo-600"
     >
-      Øv igjen
+      {m.grammar_summary_restart()}
     </button>
   </div>
-  <p class="mt-4 text-xs text-gray-700 dark:text-gray-300">Trykk R for å øve igjen</p>
+  <p class="mt-4 text-xs text-gray-700 dark:text-gray-300">{m.grammar_summary_restart_hint()}</p>
+  <a
+    href="/my-progress"
+    class="mt-3 inline-block text-sm text-indigo-500 underline hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
+  >
+    {m.flashcard_view_stats()}
+  </a>
 </div>
