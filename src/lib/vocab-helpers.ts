@@ -37,11 +37,12 @@ export function getExampleTranslation(
  * covered (which shouldn't happen once every level's slugs have keys).
  *
  * `level` is case-insensitive ('A1' or 'a1' both work). `slug` uses hyphens
- * as stored in `CATEGORIES_BY_LEVEL` (e.g. 'days-months') — this function
- * does the hyphen→underscore translation the generated message keys need.
+ * as stored in `CATEGORIES_BY_LEVEL` (e.g. 'days-months') — the generated
+ * message keys keep those hyphens literally (e.g. `category_a1_days-months`),
+ * so the slug is used as-is with no hyphen→underscore translation.
  */
 export function categoryLabel(level: string, slug: string): string {
-  const key = `category_${level.toLowerCase()}_${slug.replace(/-/g, '_')}` as keyof typeof m;
+  const key = `category_${level.toLowerCase()}_${slug}` as keyof typeof m;
   const fn = m[key];
   if (typeof fn === 'function') {
     return (fn as () => string)();
