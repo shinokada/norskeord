@@ -66,15 +66,21 @@ export const CATEGORIES_BY_LEVEL = {
     'work',
     'city-life',
     'traditions',
-    'expressing-opinions',
+    'expressing-opinions-adjectives',
+    'expressing-opinions-adverbs',
+    'expressing-opinions-nouns-and-verbs',
     'cooking',
     'accommodation',
     'health',
     'finance',
-    'personal-growth',
+    'personal-growth-adjectives',
+    'personal-growth-nouns',
+    'personal-growth-verbs-and-expressions',
     'reasoning',
-    'society',
-    'communication-skills',
+    'society-nouns',
+    'society-verbs-and-adjectives',
+    'communication-skills-verbs',
+    'communication-skills-nouns-and-expressions',
     'urban-life',
     'mental-wellbeing',
     'fitness',
@@ -275,16 +281,26 @@ export function languageEntryForLocale(code: string) {
  * Free users can see these in the picker but cannot open them.
  */
 export const PLUS_CATEGORIES = new Set<string>([
-  // B1 — plus-only (22)
+  // B1 — plus-only (29) — note: society split into society-nouns (free)
+  // and society-verbs-and-adjectives (plus-only, added below), so this
+  // moves from a pure "list of always-plus categories" to also carrying
+  // one half of a split originally-free category — see
+  // ai-docs/implementation/b1-new-categories.md Decision 3.
   'b1/city-life',
   'b1/traditions',
-  'b1/expressing-opinions',
+  'b1/expressing-opinions-adjectives',
+  'b1/expressing-opinions-adverbs',
+  'b1/expressing-opinions-nouns-and-verbs',
   'b1/cooking',
   'b1/accommodation',
   'b1/finance',
-  'b1/personal-growth',
+  'b1/personal-growth-adjectives',
+  'b1/personal-growth-nouns',
+  'b1/personal-growth-verbs-and-expressions',
   'b1/reasoning',
-  'b1/communication-skills',
+  'b1/society-verbs-and-adjectives',
+  'b1/communication-skills-verbs',
+  'b1/communication-skills-nouns-and-expressions',
   'b1/urban-life',
   'b1/mental-wellbeing',
   'b1/fitness',
