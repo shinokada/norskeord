@@ -232,7 +232,14 @@ export const UTTRYKK_FUNCTIONAL_THEMES = [
   'time-expressions',
   'opinion-formulas',
   'necessity-formulas',
-  'fixed-prepositional-phrases'
+  'fixed-prepositional-phrases',
+  // Added by b2-uttrykk-idioms-split.md — B2's 326 'idioms' entries were
+  // split across these 4 new slugs by grammatical/functional shape.
+  // 'idioms' itself stays above (A2 still uses it, free there).
+  'state-idioms',
+  'light-verb-idioms',
+  'figurative-idioms',
+  'general-fixed-expressions'
 ] as const;
 
 /** Catch-all for entries that don't cleanly fit a topical or functional theme. */
