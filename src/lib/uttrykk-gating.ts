@@ -32,7 +32,11 @@ import type { UttrykkThemeLevel } from '$lib/config';
 export const FREE_UTTRYKK_THEMES: Record<UttrykkThemeLevel, readonly string[]> = {
   A1: [],
   A2: ['idioms', 'opinion-formulas'],
-  B1: ['discourse-markers', 'opinion-formulas', 'personal-growth'],
+  // 'personal-growth' split into 3 POS-based slugs (see
+  // ai-docs/implementation/b1-new-categories.md) — using the
+  // verbs-and-expressions slug as the closest fit for a curated
+  // expressions theme.
+  B1: ['discourse-markers', 'opinion-formulas', 'personal-growth-verbs-and-expressions'],
   B2: ['discourse-markers', 'work-career']
 };
 

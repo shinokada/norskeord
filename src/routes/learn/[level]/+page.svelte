@@ -102,10 +102,10 @@
   );
   const hiddenGrammarCount = $derived(data.grammarTopics.length - GRAMMAR_INITIAL);
 
-  // Vocabulary section show-more. Sliced from the raw (unfiltered-by-lock)
-  // list, matching how hiddenGrammarCount is computed above — a few of the
-  // first VOCAB_INITIAL may render nothing if locked for a free user, same
-  // pre-existing tradeoff as Grammar's count.
+  // Vocabulary section show-more. Locked categories render inline too now
+  // (dimmed, with a 🔒 linking to /plus) instead of being filtered out and
+  // summarized behind an aggregate "+N with Plus" pill, so the raw category
+  // list is exactly what's shown — "Show more" counts/slices it directly.
   const visibleVocabCategories = $derived(
     vocabExpanded ? visibleCategories : visibleCategories.slice(0, VOCAB_INITIAL)
   );
@@ -203,30 +203,17 @@
     <div class="flex flex-wrap gap-2">
       {#each visibleVocabCategories as cat (cat.slug)}
         {@const locked = !isPlus && cat.locked}
-        {#if !locked}
-          <a
-            href="/{data.level}/{cat.slug}"
-            class="inline-flex items-center gap-1 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm
-              font-medium text-gray-700 transition hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
-          >
-            {categoryLabel(data.level, cat.slug)}
-          </a>
-        {/if}
+        <a
+          href={locked ? '/plus?ref=hub-vocab-badge' : `/${data.level}/${cat.slug}`}
+          class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
+            {locked
+            ? 'border-gray-200 bg-white text-gray-500 opacity-60 dark:border-gray-700 dark:bg-indigo-950/40 dark:text-gray-400'
+            : 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'}"
+        >
+          {categoryLabel(data.level, cat.slug)}{#if locked}
+            🔒{/if}
+        </a>
       {/each}
-      {#if !isPlus}
-        {@const lockedCount = data.categories.filter(
-          (c: { slug: string; locked: boolean }) =>
-            c.locked && c.slug !== 'uttrykk' && c.slug !== 'uttrykk-preview'
-        ).length}
-        {#if lockedCount >= 3}
-          <a
-            href="/plus?ref=hub-vocab-badge"
-            class="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-sm font-semibold text-indigo-600 hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-300"
-          >
-            {m.quiz_plus_only_count({ count: lockedCount })}
-          </a>
-        {/if}
-      {/if}
     </div>
     {#if hiddenVocabCount > 0 || vocabExpanded}
       <button
@@ -321,52 +308,29 @@
         <!-- C branch: no per-category lock state of its own for the pills below —
              each pill's lock state comes from the matching Vocabulary
              category. Phase 9 (ai-docs/implementation/uttrykk-category.md)
-             added a virtual /c/uttrykk "study all" deck, matching A1–B2's
-             total-count line above the theme pills (Phase 3b) — clicking it
-             is Plus-gated the same way A1–B2's is, since it pulls from every
-             category at once rather than the free-preview slice. -->
-        <p class="mb-3 text-sm">
-          <a href="/c/uttrykk" class="font-medium {colors.accent} hover:underline">
-            {data.uttrykkThemes.reduce(
-              (sum: number, t: { theme: string; count: number }) => sum + t.count,
-              0
-            )} fixed expressions
-          </a>
-        </p>
+             added a virtual /c/uttrykk "study all" deck; the total-count
+             summary line that used to sit above these pills was removed —
+             no other level page (A1–B2) has an equivalent line, so it was
+             an inconsistency rather than a pattern worth keeping. -->
         <div class="flex flex-wrap gap-2">
           {#each visibleUttrykkCThemes as t (t.theme)}
             {@const cat = data.categories.find(
               (c: { slug: string; locked: boolean }) => c.slug === t.theme
             )}
             {@const catLocked = cat ? !isPlus && cat.locked : false}
-            {#if !catLocked}
-              <a
-                href="/{data.level}/{t.theme}?from=uttrykk"
-                class="inline-flex items-center gap-1 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm
-                  font-medium text-gray-700 transition hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
-              >
-                {categoryLabel(data.level, t.theme)} ({t.count})
-              </a>
-            {/if}
+            <a
+              href={catLocked
+                ? '/plus?ref=hub-uttrykk-badge'
+                : `/${data.level}/${t.theme}?from=uttrykk`}
+              class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
+                {catLocked
+                ? 'border-gray-200 bg-white text-gray-500 opacity-60 dark:border-gray-700 dark:bg-indigo-950/40 dark:text-gray-400'
+                : 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'}"
+            >
+              {categoryLabel(data.level, t.theme)} ({t.count}){#if catLocked}
+                🔒{/if}
+            </a>
           {/each}
-          {#if !isPlus}
-            {@const lockedUttrykkCount = data.uttrykkThemes.filter(
-              (t: { theme: string; count: number }) => {
-                const cat = data.categories.find(
-                  (c: { slug: string; locked: boolean }) => c.slug === t.theme
-                );
-                return cat ? cat.locked : false;
-              }
-            ).length}
-            {#if lockedUttrykkCount >= 3}
-              <a
-                href="/plus?ref=hub-uttrykk-badge"
-                class="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-sm font-semibold text-indigo-600 hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-300"
-              >
-                {m.quiz_plus_only_count({ count: lockedUttrykkCount })}
-              </a>
-            {/if}
-          {/if}
         </div>
         {#if hiddenUttrykkCCount > 0 || uttrykkExpanded}
           <button
