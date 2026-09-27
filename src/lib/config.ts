@@ -192,7 +192,14 @@ export const CATEGORIES_BY_LEVEL = {
     'interpersonal-conflict-idiomatic-expressions',
     'intensifiers-degree',
     'gastronomy',
-    'cultural-heritage'
+    'cultural-heritage',
+    // Added by c-uttrykk-abstract-concepts-fix.md — new slugs for the
+    // 2 stale uttrykk-c.json categories that couldn't merge into an
+    // existing successor. Appended after the free-5, so all three land
+    // Plus-only via PLUS_CATEGORIES' generated .slice(5).
+    'interpersonal-conflict-expressions',
+    'abstract-action-idioms',
+    'abstract-circumstance-expressions'
   ]
 } as const satisfies Record<CEFRLevel, readonly string[]>;
 
