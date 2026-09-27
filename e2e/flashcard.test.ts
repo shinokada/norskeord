@@ -155,16 +155,23 @@ test.fixme('C uttrykk page links back to the /learn/c hub', async ({ page }) => 
   );
 });
 
-// /learn/c's Uttrykk section total-count line is a Phase 9 addition — it
-// used to be plain, unlinked text (see uttrykk-category.md Phase 8) since
-// there was no single C uttrykk deck to link to. Visible for every user
-// regardless of plan; only clicking it hits the Plus gate above.
-test('learn/c hub links to /c/uttrykk from the Uttrykk section', async ({ page }) => {
+// /learn/c's Uttrykk section no longer has an aggregate "N fixed
+// expressions" summary line linking to /c/uttrykk (removed — it was the
+// only such line across A1–B2, an inconsistency rather than a pattern
+// worth keeping). The C branch instead renders one pill per category with
+// phrase-sourced entries, each linking back to that category's own
+// /c/[category] page (?from=uttrykk), not to the /c/uttrykk virtual deck.
+// /c/uttrykk itself still exists and is still linked from /my-progress
+// (see stats.ts), just not from this hub page.
+test('learn/c hub Uttrykk section links to c/[category] pages, not /c/uttrykk', async ({
+  page
+}) => {
   await page.goto('/learn/c');
-  await expect(page.getByRole('link', { name: /fixed expressions/i })).toHaveAttribute(
-    'href',
-    '/c/uttrykk'
-  );
+  const uttrykkSection = page.locator('#uttrykk');
+  await expect(uttrykkSection.getByRole('link', { name: /fixed expressions/i })).toHaveCount(0);
+
+  const categoryPills = uttrykkSection.locator('a[href*="?from=uttrykk"]');
+  await expect(categoryPills.first()).toBeVisible();
 });
 
 test('about page has expected h1', async ({ page }) => {

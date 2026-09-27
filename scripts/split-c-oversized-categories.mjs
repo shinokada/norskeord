@@ -189,7 +189,12 @@ function classifyNatureLandscape(entry) {
 const CATEGORY_CONFIG = {
   'abstract-concepts': {
     classify: classifyAbstractConcepts,
-    newCategories: ['abstract-nouns', 'abstract-adjectives', 'abstract-verbs', 'idiomatic-expressions']
+    newCategories: [
+      'abstract-nouns',
+      'abstract-adjectives',
+      'abstract-verbs',
+      'idiomatic-expressions'
+    ]
   },
   'character-temperament': {
     classify: classifyCharacterTemperament,
