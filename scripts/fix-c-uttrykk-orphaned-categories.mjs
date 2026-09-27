@@ -182,8 +182,20 @@ function main() {
   }
 
   // ── Apply ────────────────────────────────────────────────────────────
+  if (totalStale === 0) {
+    console.log('\n✅ Nothing to do — no stale categories found.');
+    return;
+  }
+
+  // Only ever write the backup once — a repeat run (e.g. after an earlier
+  // run already migrated everything, or a partial run left some stale
+  // entries) must never clobber the original pre-migration snapshot.
   const bakPath = UTTRYKK_FILE + '.bak';
-  fs.copyFileSync(UTTRYKK_FILE, bakPath);
+  if (!fs.existsSync(bakPath)) {
+    fs.copyFileSync(UTTRYKK_FILE, bakPath);
+  } else {
+    console.log(`\nℹ️  Backup already exists at ${bakPath} — not overwriting.`);
+  }
 
   const newData = data.map((e) => {
     const newCategory = newCategoryFor(e);
