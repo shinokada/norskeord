@@ -43,6 +43,20 @@ const originalHandle: Handle = async ({ event, resolve }) => {
     });
   }
 
+  // Legacy /stats → /my-progress (ai-docs/implementation/stats-to-my-progress-rename.md).
+  // Covers old bookmarks, stale PWA "last visited" shortcuts, and search
+  // engines that already indexed /stats. Same long-cacheable-301 pattern as
+  // the /nb redirect above.
+  if (pathname === '/stats') {
+    return new Response(null, {
+      status: 301,
+      headers: {
+        Location: '/my-progress' + event.url.search,
+        'Cache-Control': 'public, max-age=86400, s-maxage=2592000'
+      }
+    });
+  }
+
   const supabase = createSupabaseServerClient(event.cookies);
   event.locals.supabase = supabase;
 
@@ -105,7 +119,7 @@ const originalHandle: Handle = async ({ event, resolve }) => {
   //   /grammar/*    — grammar pages are auth-gated
   //   /quiz/*       — quiz pages are auth-gated
   //   /norskproven  — auth-gated
-  //   /stats        — auth-required
+  //   /my-progress  — auth-required
   //   /my-profile   — auth-required
   const CACHE_EXCLUDED = [
     '/api/',
@@ -114,7 +128,7 @@ const originalHandle: Handle = async ({ event, resolve }) => {
     '/grammar/',
     '/quiz',
     '/norskproven',
-    '/stats',
+    '/my-progress',
     '/my-profile'
   ];
   const isCacheExcluded =

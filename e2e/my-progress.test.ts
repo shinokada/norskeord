@@ -21,14 +21,14 @@ const SEED_VALUE = JSON.stringify({
   category: 'greetings'
 });
 
-test.describe('/stats page — free user (unauthenticated)', () => {
+test.describe('/my-progress page — free user (unauthenticated)', () => {
   test.beforeEach(async ({ page }) => {
     // Write the seed entry before the page loads so onMount picks it up
     await page.addInitScript(({ key, value }) => localStorage.setItem(key, value), {
       key: SEED_KEY,
       value: SEED_VALUE
     });
-    await page.goto('/stats');
+    await page.goto('/my-progress');
   });
 
   // 3-A: free users never see the category table

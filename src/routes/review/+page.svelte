@@ -181,7 +181,10 @@
         — check back later.{:else}You're all caught up — check back later.{/if}
     </p>
     <div class="mt-5 flex justify-center gap-4 text-sm">
-      <a href="/stats" class="font-medium text-indigo-600 hover:underline dark:text-indigo-400">
+      <a
+        href="/my-progress"
+        class="font-medium text-indigo-600 hover:underline dark:text-indigo-400"
+      >
         View stats
       </a>
       <a href="/" class="font-medium text-indigo-600 hover:underline dark:text-indigo-400">

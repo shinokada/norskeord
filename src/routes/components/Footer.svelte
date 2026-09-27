@@ -18,7 +18,7 @@
   ];
 
   const accountPages = [
-    { name: () => m.nav_my_stats(), link: '/stats' },
+    { name: () => m.nav_my_progress(), link: '/my-progress' },
     { name: () => m.nav_my_profile(), link: '/my-profile' },
     { name: () => m.footer_contact(), link: '/contact' }
   ];

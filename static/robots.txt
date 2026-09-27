@@ -4,6 +4,6 @@ Disallow: /admin
 Disallow: /api
 Disallow: /auth
 Disallow: /my-profile
-Disallow: /stats
+Disallow: /my-progress
 
 Sitemap: https://norskeord.no/sitemap.xml

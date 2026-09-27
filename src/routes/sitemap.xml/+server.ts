@@ -65,7 +65,7 @@ export const GET: RequestHandler = async () => {
       /^\/auth.*/,
       /^\/daily.*/,
       /^\/my-profile.*/,
-      /^\/stats.*/,
+      /^\/my-progress.*/,
       /^\/quiz.*/,
       /^\/norskproven\/.*/,
       /^\/plus.*/
