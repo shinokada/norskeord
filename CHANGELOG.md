@@ -1,5 +1,14 @@
 # norske-flashcard
 
+## 2.84.0
+
+### Minor Changes
+
+- - **Updates**
+    - The progress page is now available at **My Progress** (`/my-progress`) throughout navigation, footer links, review pages, and practice summaries. Visits to `/stats` now redirect to the new address while preserving query parameters.
+  - **Localization**
+    - Added translated grammar practice level labels and session-summary text in English, German, Spanish, Norwegian, and Ukrainian.
+
 ## 2.83.1
 
 ### Patch Changes
