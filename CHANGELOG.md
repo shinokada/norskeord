@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.86.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added four B2 expression categories and four C-level categories, covering cultural heritage, interpersonal conflict, and abstract expressions.
+    - Added category labels in German, English, Spanish, Norwegian, and Ukrainian.
+    - Updated level-page article links to show the matching article count and level.
+  - **Updates**
+    - Level pages now show all matching non-guide articles, with links to the full article list for that level.
+
 ## 2.85.0
 
 ### Minor Changes
