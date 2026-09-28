@@ -164,7 +164,9 @@ function main() {
     const entries = data.filter((e) => e.category === 'abstract-concepts');
     const buckets = {};
     for (const e of entries) (buckets[classifyAbstractConcept(e)] ??= []).push(e);
-    console.log(`\n── abstract-concepts (${entries.length}) — verb-first / non-verb-first split ──`);
+    console.log(
+      `\n── abstract-concepts (${entries.length}) — verb-first / non-verb-first split ──`
+    );
     for (const [slug, list] of Object.entries(buckets)) {
       printSample(slug, list, 10);
     }
@@ -175,9 +177,7 @@ function main() {
     console.log(
       '   Confirm the 3 new-slug names (marked TODO at the top of this file) and sanity-check'
     );
-    console.log(
-      '   the abstract-concepts split above before running without --dry-run.\n'
-    );
+    console.log('   the abstract-concepts split above before running without --dry-run.\n');
     return;
   }
 
@@ -190,10 +190,12 @@ function main() {
   // Only ever write the backup once — a repeat run (e.g. after an earlier
   // run already migrated everything, or a partial run left some stale
   // entries) must never clobber the original pre-migration snapshot.
+  // COPYFILE_EXCL makes the no-overwrite check atomic (no exists/copy race).
   const bakPath = UTTRYKK_FILE + '.bak';
-  if (!fs.existsSync(bakPath)) {
-    fs.copyFileSync(UTTRYKK_FILE, bakPath);
-  } else {
+  try {
+    fs.copyFileSync(UTTRYKK_FILE, bakPath, fs.constants.COPYFILE_EXCL);
+  } catch (err) {
+    if (err.code !== 'EEXIST') throw err;
     console.log(`\nℹ️  Backup already exists at ${bakPath} — not overwriting.`);
   }
 

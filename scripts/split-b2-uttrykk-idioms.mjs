@@ -64,17 +64,7 @@ const FIGURATIVE_SLUG = 'figurative-idioms'; // CONFIRMED — ~93 entries
 const FIXED_SLUG = 'general-fixed-expressions'; // CONFIRMED — ~103 entries
 
 const STATE_VERBS = new Set(['være', 'bli']);
-const LIGHT_VERBS = new Set([
-  'ha',
-  'få',
-  'gi',
-  'gjøre',
-  'ta',
-  'holde',
-  'legge',
-  'slå',
-  'sette'
-]);
+const LIGHT_VERBS = new Set(['ha', 'få', 'gi', 'gjøre', 'ta', 'holde', 'legge', 'slå', 'sette']);
 
 // First-word denylist for "definitely not verb-first" — pronouns,
 // prepositions, determiners, adverbs, and a handful of adjective/particle
@@ -159,6 +149,13 @@ function main() {
   const idioms = data.filter((e) => e.category === 'idioms');
   console.log(`Total 'idioms' entries (expect 326): ${idioms.length}`);
 
+  // Nothing left to reassign (e.g. a repeat run after a successful migration):
+  // return before touching the backup or the data file.
+  if (idioms.length === 0) {
+    console.log("\n✅ Nothing to do — no 'idioms' entries found.");
+    return;
+  }
+
   const buckets = { [STATE_SLUG]: [], [LIGHT_SLUG]: [], [FIGURATIVE_SLUG]: [], [FIXED_SLUG]: [] };
   for (const e of idioms) buckets[classify(e)].push(e);
 
@@ -178,8 +175,15 @@ function main() {
     return;
   }
 
+  // COPYFILE_EXCL refuses to overwrite, so the original pre-migration snapshot
+  // is preserved even if a later run finds new entries to reassign.
   const bakPath = UTTRYKK_FILE + '.bak';
-  fs.copyFileSync(UTTRYKK_FILE, bakPath);
+  try {
+    fs.copyFileSync(UTTRYKK_FILE, bakPath, fs.constants.COPYFILE_EXCL);
+  } catch (err) {
+    if (err.code !== 'EEXIST') throw err;
+    console.log(`\nℹ️  Backup already exists at ${bakPath} — not overwriting.`);
+  }
 
   const newData = data.map((e) => {
     if (e.category !== 'idioms') return e;

@@ -94,7 +94,9 @@ export const load: PageServerLoad = async ({ params }) => {
     RawPostModule
   >;
   const allPosts = parsePosts(modules);
-  const matchingBlogPosts = allPosts.filter((p) => cefrLevels(p.cefr).includes(levelUpper));
+  const matchingBlogPosts = allPosts.filter(
+    (p) => p.type !== 'guide' && cefrLevels(p.cefr).includes(levelUpper)
+  );
   const blogPosts = matchingBlogPosts.slice(0, 3);
   const blogPostCount = matchingBlogPosts.length;
 
