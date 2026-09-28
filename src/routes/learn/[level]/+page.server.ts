@@ -94,7 +94,11 @@ export const load: PageServerLoad = async ({ params }) => {
     RawPostModule
   >;
   const allPosts = parsePosts(modules);
-  const blogPosts = allPosts.filter((p) => cefrLevels(p.cefr).includes(levelUpper)).slice(0, 3);
+  const matchingBlogPosts = allPosts.filter(
+    (p) => p.type !== 'guide' && cefrLevels(p.cefr).includes(levelUpper)
+  );
+  const blogPosts = matchingBlogPosts.slice(0, 3);
+  const blogPostCount = matchingBlogPosts.length;
 
   // Phase 3b: group this level's uttrykk deck by category for the hub card.
   // As of the theme/category unification
@@ -127,6 +131,7 @@ export const load: PageServerLoad = async ({ params }) => {
     grammarTopics,
     levelStats,
     blogPosts,
+    blogPostCount,
     uttrykkThemes
     // user and plan come from the root layout — do NOT re-export here
   };

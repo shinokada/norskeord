@@ -81,7 +81,6 @@
   const showNorskproven = $derived(data.level === 'a2' || data.level === 'b1');
 
   const GRAMMAR_INITIAL = 4;
-  const BLOG_INITIAL = 2;
   // Phase 8 (ai-docs/implementation/uttrykk-category.md): same collapse
   // pattern as Grammar/blog, applied to Vocabulary's category pills and
   // Uttrykk's theme/category pills — both sections can run to 15-40 pills
@@ -93,7 +92,6 @@
   // client-side navigation — e.g. into a flashcard session and back via the
   // main nav — not just SvelteKit history back/forward.
   let grammarExpanded = $derived(learnHubExpanded.get('grammar', data.level));
-  let blogExpanded = $derived(learnHubExpanded.get('blog', data.level));
   let vocabExpanded = $derived(learnHubExpanded.get('vocab', data.level));
   let uttrykkExpanded = $derived(learnHubExpanded.get('uttrykk', data.level));
 
@@ -127,11 +125,6 @@
     uttrykkExpanded ? data.uttrykkThemes : data.uttrykkThemes.slice(0, UTTRYKK_INITIAL)
   );
   const hiddenUttrykkCCount = $derived(Math.max(data.uttrykkThemes.length - UTTRYKK_INITIAL, 0));
-
-  const visibleBlogPosts = $derived(
-    blogExpanded ? data.blogPosts : data.blogPosts.slice(0, BLOG_INITIAL)
-  );
-  const hiddenBlogCount = $derived(data.blogPosts.length - BLOG_INITIAL);
 
   const schemaJson = $derived(
     JSON.stringify({
@@ -474,12 +467,15 @@
     <section class="mb-12">
       <div class="mb-4 flex items-center justify-between">
         <h2 class="mb-4">✍️ From the blog</h2>
-        <a href="/blog" class="text-sm font-medium {colors.accent} hover:underline">
-          {m.level_hub_all_articles()}
+        <a
+          href="/blog?level={data.levelUpper}"
+          class="text-sm font-medium {colors.accent} hover:underline"
+        >
+          {m.level_hub_all_articles({ count: data.blogPostCount, level: data.levelUpper })}
         </a>
       </div>
       <div class="space-y-3">
-        {#each visibleBlogPosts as post (post.slug)}
+        {#each data.blogPosts as post (post.slug)}
           <a
             href="/blog/{post.slug}"
             class="block rounded-xl border border-gray-200 bg-white px-5 py-4 text-left transition hover:shadow-sm dark:border-gray-700 dark:bg-indigo-950/60"
@@ -493,16 +489,6 @@
           </a>
         {/each}
       </div>
-      {#if hiddenBlogCount > 0 || blogExpanded}
-        <button
-          onclick={() => learnHubExpanded.toggle('blog', data.level)}
-          class="mt-4 text-sm font-medium {colors.accent} hover:underline"
-        >
-          {blogExpanded
-            ? m.level_hub_show_less()
-            : m.level_hub_show_more({ count: hiddenBlogCount })}
-        </button>
-      {/if}
     </section>
   {/if}
 </div>

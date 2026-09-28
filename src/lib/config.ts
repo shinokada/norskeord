@@ -192,7 +192,14 @@ export const CATEGORIES_BY_LEVEL = {
     'interpersonal-conflict-idiomatic-expressions',
     'intensifiers-degree',
     'gastronomy',
-    'cultural-heritage'
+    'cultural-heritage',
+    // Added by c-uttrykk-abstract-concepts-fix.md — new slugs for the
+    // 2 stale uttrykk-c.json categories that couldn't merge into an
+    // existing successor. Appended after the free-5, so all three land
+    // Plus-only via PLUS_CATEGORIES' generated .slice(5).
+    'interpersonal-conflict-expressions',
+    'abstract-action-idioms',
+    'abstract-circumstance-expressions'
   ]
 } as const satisfies Record<CEFRLevel, readonly string[]>;
 
@@ -225,7 +232,14 @@ export const UTTRYKK_FUNCTIONAL_THEMES = [
   'time-expressions',
   'opinion-formulas',
   'necessity-formulas',
-  'fixed-prepositional-phrases'
+  'fixed-prepositional-phrases',
+  // Added by b2-uttrykk-idioms-split.md — B2's 326 'idioms' entries were
+  // split across these 4 new slugs by grammatical/functional shape.
+  // 'idioms' itself stays above (A2 still uses it, free there).
+  'state-idioms',
+  'light-verb-idioms',
+  'figurative-idioms',
+  'general-fixed-expressions'
 ] as const;
 
 /** Catch-all for entries that don't cleanly fit a topical or functional theme. */
