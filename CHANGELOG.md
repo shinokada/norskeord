@@ -1,5 +1,11 @@
 # norske-flashcard
 
+## 2.86.1
+
+### Patch Changes
+
+- fix: data update
+
 ## 2.86.0
 
 ### Minor Changes
