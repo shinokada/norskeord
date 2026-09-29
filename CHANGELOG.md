@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.87.0
+
+### Minor Changes
+
+- - **New Features**
+    - Progress tabs show due-count badges for levels with vocabulary or expression reviews due. Counts above 99 display as “99+,” and accessible labels include the localized count.
+    - Vocabulary and expression sections show due counts; Plus-user and grammar sections reflect the active level’s due cards.
+    - Due-review actions and labels are localized in English, German, Spanish, Norwegian, and Ukrainian.
+  - **Updates**
+    - Removed the separate “Study due at this level” link beneath the progress tabs.
+
 ## 2.86.1
 
 ### Patch Changes
