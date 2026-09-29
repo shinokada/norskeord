@@ -5,6 +5,8 @@
   /my-progress. Renders nothing when the count is 0 or missing.
 -->
 <script lang="ts">
+  import * as m from '$lib/paraglide/messages.js';
+
   interface Props {
     count?: number;
   }
@@ -15,7 +17,7 @@
 {#if count > 0}
   <span
     class="inline-block rounded-full bg-red-100 px-2 py-0.5 text-xs font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
-    title="{count} due"
+    title={m.stats_due_count({ count })}
   >
     {count > 99 ? '99+' : count}
   </span>

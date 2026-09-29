@@ -99,7 +99,7 @@
 
           <!-- Due badge — its own link into a due-only review session when
                reviewType is set (Step 4c); otherwise a plain badge like today. -->
-          <span class="relative z-[1] w-16 shrink-0 text-right">
+          <span class="relative z-[1] w-10 shrink-0 text-right">
             {#if row.due > 0}
               {@const href = buildReviewHref(row, level, reviewType)}
               {#if href}
@@ -109,16 +109,19 @@
                      neighbouring rows. -->
                 <a
                   {href}
-                  class="relative z-10 inline-block rounded-full bg-red-100 px-2.5 py-1 text-sm font-semibold text-red-600 before:absolute before:-inset-x-1 before:-inset-y-2.5 hover:bg-red-200 dark:bg-red-900/40 dark:text-red-400 dark:hover:bg-red-900/60"
-                  title="Review {row.due} due now"
+                  class="relative z-10 inline-block min-w-8 rounded-full bg-red-100 px-2.5 py-1 text-center text-sm font-semibold text-red-600 before:absolute before:-inset-x-1 before:-inset-y-2.5 hover:bg-red-200 dark:bg-red-900/40 dark:text-red-400 dark:hover:bg-red-900/60"
+                  title={m.stats_due_review_title({ count: row.due })}
+                  aria-label={m.stats_due_review_title({ count: row.due })}
                 >
-                  {row.due} due
+                  {row.due}
                 </a>
               {:else}
                 <span
-                  class="inline-block rounded-full bg-red-100 px-2.5 py-1 text-sm font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
+                  class="inline-block min-w-8 rounded-full bg-red-100 px-2.5 py-1 text-center text-sm font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
+                  title={m.stats_due_count({ count: row.due })}
                 >
-                  {row.due} due
+                  <span aria-hidden="true">{row.due}</span>
+                  <span class="sr-only">{m.stats_due_count({ count: row.due })}</span>
                 </span>
               {/if}
             {/if}

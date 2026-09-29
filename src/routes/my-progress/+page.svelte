@@ -581,7 +581,7 @@
         href="/review"
         class="mb-6 flex items-center justify-between rounded-xl border border-red-200 bg-red-50 px-5 py-4 text-red-700 transition hover:bg-red-100 dark:border-red-800 dark:bg-red-900/20 dark:text-red-300 dark:hover:bg-red-900/30"
       >
-        <span class="font-semibold">📌 Study due now</span>
+        <span class="font-semibold">📌 {m.stats_study_due_now()}</span>
         <span class="rounded-full bg-red-600 px-2.5 py-1 text-sm font-bold text-white"
           >{totalDueToday}</span
         >
@@ -600,7 +600,9 @@
           role="tab"
           aria-selected={activeLevel === lvl}
           onclick={() => setActiveLevel(lvl)}
-          aria-label={dueByLevel[lvl] > 0 ? `${lvl}, ${dueByLevel[lvl]} due` : lvl}
+          aria-label={dueByLevel[lvl] > 0
+            ? m.stats_level_tab_due_aria({ level: lvl, count: dueByLevel[lvl] })
+            : lvl}
           class="flex flex-1 items-center justify-center gap-1.5 rounded-lg py-2.5 text-sm font-semibold transition-colors {activeLevel ===
           lvl
             ? `${levelColors[lvl]} text-white`

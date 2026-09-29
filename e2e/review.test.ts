@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
+import { setNorwegianLocale } from './helpers';
 
 /**
  * ai-docs/implementation/due-only.md — Step 5 (verification).
@@ -122,6 +123,15 @@ test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
     await page.goto('/my-progress');
     await expect(page.getByRole('tab', { name: 'A1, 1 due', exact: true })).toBeVisible();
     await expect(page.getByRole('link', { name: /study due at/i })).toHaveCount(0);
+  });
+
+  test('localizes the level tab accessible name (nb)', async ({ page }) => {
+    // Norwegian: the count suffix comes from paraglide (stats_level_tab_due_aria),
+    // not a hardcoded English "due".
+    await setNorwegianLocale(page);
+    await seed(page, DUE_YESTERDAY);
+    await page.goto('/my-progress');
+    await expect(page.getByRole('tab', { name: 'A1, 1 forfaller', exact: true })).toBeVisible();
   });
 
   test('shows no due count on a level tab when nothing is due there', async ({ page }) => {
