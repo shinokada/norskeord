@@ -47,12 +47,12 @@
         {@const relearningW = row.seen > 0 ? (row.relearning / row.seen) * seenPct : 0}
 
         <div
-          class="group relative flex items-center gap-3 px-4 py-2.5 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50"
+          class="group relative flex items-center gap-2 px-4 py-2.5 transition-colors hover:bg-gray-50 sm:gap-3 dark:hover:bg-gray-800/50"
         >
           <a href={row.href} class="absolute inset-0 z-0" aria-label={row.label}></a>
           <!-- Row label (already display-formatted by the stats.ts builder) -->
           <span
-            class="pointer-events-none relative z-[1] w-36 shrink-0 truncate text-xs font-medium text-gray-700 group-hover:text-blue-600 sm:w-44 dark:text-gray-300 dark:group-hover:text-blue-400"
+            class="pointer-events-none relative z-[1] w-28 shrink-0 truncate text-xs font-medium text-gray-700 group-hover:text-blue-600 sm:w-44 dark:text-gray-300 dark:group-hover:text-blue-400"
             title={row.label}
           >
             {row.label}
@@ -92,27 +92,31 @@
 
           <!-- Seen / total count -->
           <span
-            class="pointer-events-none relative z-[1] w-14 shrink-0 text-right text-xs text-gray-700 tabular-nums dark:text-gray-300"
+            class="pointer-events-none relative z-[1] w-12 shrink-0 text-right text-xs text-gray-700 tabular-nums sm:w-14 dark:text-gray-300"
           >
             {row.seen}/{row.total}
           </span>
 
           <!-- Due badge — its own link into a due-only review session when
                reviewType is set (Step 4c); otherwise a plain badge like today. -->
-          <span class="relative z-[1] w-14 shrink-0 text-right">
+          <span class="relative z-[1] w-16 shrink-0 text-right">
             {#if row.due > 0}
               {@const href = buildReviewHref(row, level, reviewType)}
               {#if href}
+                <!-- The before: pseudo-element stretches the tap area to roughly the
+                     full row height (≈48px) without changing how the pill looks,
+                     so it's easy to hit on mobile and doesn't bleed into the
+                     neighbouring rows. -->
                 <a
                   {href}
-                  class="relative z-10 inline-block rounded-full bg-red-100 px-1.5 py-0.5 text-xs font-semibold text-red-600 hover:bg-red-200 dark:bg-red-900/40 dark:text-red-400 dark:hover:bg-red-900/60"
+                  class="relative z-10 inline-block rounded-full bg-red-100 px-2.5 py-1 text-sm font-semibold text-red-600 before:absolute before:-inset-x-1 before:-inset-y-2.5 hover:bg-red-200 dark:bg-red-900/40 dark:text-red-400 dark:hover:bg-red-900/60"
                   title="Review {row.due} due now"
                 >
                   {row.due} due
                 </a>
               {:else}
                 <span
-                  class="inline-block rounded-full bg-red-100 px-1.5 py-0.5 text-xs font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
+                  class="inline-block rounded-full bg-red-100 px-2.5 py-1 text-sm font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
                 >
                   {row.due} due
                 </span>

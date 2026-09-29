@@ -112,18 +112,23 @@ test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
     await expect(page.getByRole('link', { name: /study due now/i })).not.toBeVisible();
   });
 
-  test('shows the per-level "Study due at A1" link scoped to /review?level=a1', async ({
+  test('shows the due count on the A1 level tab, with no per-level "Study due at" link', async ({
     page
   }) => {
+    // The old per-level "Study due at A1" row was replaced by a count badge on
+    // each level tab (ai-docs/implementation/due-number-update.md). The tab's
+    // accessible name carries the count ("A1, 1 due") for screen readers.
     await seed(page, DUE_YESTERDAY);
     await page.goto('/my-progress');
-    // activeLevel's initial value depends on the CEFR estimate text, which
-    // isn't worth pinning down here — select A1 explicitly so the test only
-    // depends on what it's actually checking.
-    await page.getByRole('tab', { name: 'A1', exact: true }).click();
-    const levelBanner = page.getByRole('link', { name: /study due at a1/i });
-    await expect(levelBanner).toBeVisible();
-    await expect(levelBanner).toHaveAttribute('href', '/review?level=a1');
+    await expect(page.getByRole('tab', { name: 'A1, 1 due', exact: true })).toBeVisible();
+    await expect(page.getByRole('link', { name: /study due at/i })).toHaveCount(0);
+  });
+
+  test('shows no due count on a level tab when nothing is due there', async ({ page }) => {
+    // Due tomorrow, not today — the tab keeps its plain name (no ", N due").
+    await seed(page, DUE_TOMORROW);
+    await page.goto('/my-progress');
+    await expect(page.getByRole('tab', { name: 'A1', exact: true })).toBeVisible();
   });
 });
 
@@ -224,8 +229,9 @@ test.describe('/my-progress — Grammar due badge (Fix 3)', () => {
     // Grammar topic-level progress is free for every plan (not gated by
     // isPlus — see the comment above the Grammar section in
     // my-progress/+page.svelte), so this works for the default guest session,
-    // same as the rest of this file.
-    await page.getByRole('tab', { name: 'A1', exact: true }).click();
+    // same as the rest of this file. The tab's name may carry a ", N due"
+    // suffix, so match the level prefix rather than the exact name.
+    await page.getByRole('tab', { name: /^A1\b/ }).click();
     const badge = page.getByRole('link', { name: /1 due/i });
     await expect(badge).toBeVisible();
     await expect(badge).toHaveAttribute(

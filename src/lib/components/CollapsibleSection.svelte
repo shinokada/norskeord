@@ -9,6 +9,7 @@
 -->
 <script lang="ts">
   import type { Snippet } from 'svelte';
+  import DueBadge from './DueBadge.svelte';
 
   interface Props {
     icon: string; // '📖' | '💬' | '📐'
@@ -16,6 +17,9 @@
     open: boolean;
     onToggle: () => void;
     id: string; // for aria-controls / the content wrapper's id
+    // Optional due count for the active level, shown as a pill next to the
+    // title (due-number-update.md). Hidden when 0/undefined.
+    dueCount?: number;
     // Always-visible content (the summary card/grid) — rendered between the
     // header and the collapsible region, authored by the caller so this
     // component never controls whether it's shown (Goal 2: the at-a-glance
@@ -25,7 +29,7 @@
     children: Snippet;
   }
 
-  let { icon, title, open, onToggle, id, summary, children }: Props = $props();
+  let { icon, title, open, onToggle, id, dueCount, summary, children }: Props = $props();
 </script>
 
 <button
@@ -35,7 +39,10 @@
   aria-controls="{id}-content"
   class="mb-3 flex w-full items-center justify-between gap-2 text-left"
 >
-  <h2 class="!mb-0">{icon} {title}</h2>
+  <span class="flex items-center gap-2">
+    <h2 class="!mb-0">{icon} {title}</h2>
+    <DueBadge count={dueCount} />
+  </span>
   <svg
     viewBox="0 0 20 20"
     fill="currentColor"
