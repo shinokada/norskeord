@@ -27,6 +27,7 @@
   import LevelStatRows from '$lib/components/LevelStatRows.svelte';
   import ActivityChart from '$lib/components/ActivityChart.svelte';
   import CollapsibleSection from '$lib/components/CollapsibleSection.svelte';
+  import DueBadge from '$lib/components/DueBadge.svelte';
 
   // ── State ────────────────────────────────────────────────────────────────────
   let progressMap = $state<Record<string, CardProgress>>({});
@@ -186,6 +187,19 @@
   // which already did this. See permanent-structural-fix.md's "Known bugs"
   // section for the bug this fixes.
   const totalDueToday = $derived(vocabDue + uttrykkDue);
+
+  // Combined vocab+uttrykk due per level, for the level-tab badges
+  // (due-number-update.md). Sums to totalDueToday since every resolved card
+  // has exactly one live level. Grammar is excluded, same as the total.
+  const dueByLevel = $derived<Record<CEFRLevel, number>>(
+    Object.fromEntries(
+      levels.map((lvl) => [
+        lvl,
+        (vocabLevelStats.find((s) => s.level === lvl)?.due ?? 0) +
+          (uttrykkLevelStats.find((s) => s.level === lvl)?.due ?? 0)
+      ])
+    ) as Record<CEFRLevel, number>
+  );
 
   // ── Level tabs (Phase 3) ─────────────────────────────────────────────────────
   const ACTIVE_LEVEL_KEY = 'stats-active-level';
@@ -567,7 +581,7 @@
         href="/review"
         class="mb-6 flex items-center justify-between rounded-xl border border-red-200 bg-red-50 px-5 py-4 text-red-700 transition hover:bg-red-100 dark:border-red-800 dark:bg-red-900/20 dark:text-red-300 dark:hover:bg-red-900/30"
       >
-        <span class="font-semibold">📌 Study due now</span>
+        <span class="font-semibold">📌 {m.stats_study_due_now()}</span>
         <span class="rounded-full bg-red-600 px-2.5 py-1 text-sm font-bold text-white"
           >{totalDueToday}</span
         >
@@ -586,33 +600,26 @@
           role="tab"
           aria-selected={activeLevel === lvl}
           onclick={() => setActiveLevel(lvl)}
-          class="flex-1 rounded-lg py-2.5 text-sm font-semibold transition-colors {activeLevel ===
+          aria-label={dueByLevel[lvl] > 0
+            ? m.stats_level_tab_due_aria({ level: lvl, count: dueByLevel[lvl] })
+            : lvl}
+          class="flex flex-1 items-center justify-center gap-1.5 rounded-lg py-2.5 text-sm font-semibold transition-colors {activeLevel ===
           lvl
             ? `${levelColors[lvl]} text-white`
             : 'text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-white/5'}"
         >
           {lvl}
+          {#if dueByLevel[lvl] > 0}
+            <span
+              class="min-w-5 rounded-full bg-red-600 px-1.5 text-center text-xs leading-5 font-bold text-white ring-1 ring-white/70"
+              aria-hidden="true"
+            >
+              {dueByLevel[lvl] > 99 ? '99+' : dueByLevel[lvl]}
+            </span>
+          {/if}
         </button>
       {/each}
     </div>
-
-    <!-- ── Study due at this level (Step 4b) ────────────────────────────── -->
-    <!-- Vocab+uttrykk only — matches /review's scope; grammar isn't included
-         in that count so this badge stays accurate for what clicking it
-         actually opens (see due-only.md's Open questions). -->
-    {#if activeVocabLevelStat.due + activeUttrykkLevelStat.due > 0}
-      <a
-        href="/review?level={activeLevel.toLowerCase()}"
-        class="-mt-3 mb-6 flex items-center justify-between rounded-lg border border-red-200 bg-white px-4 py-2.5 text-sm text-red-700 transition hover:bg-red-50 dark:border-red-800 dark:bg-indigo-950/60 dark:text-red-300 dark:hover:bg-red-900/20"
-      >
-        <span class="font-medium">Study due at {activeLevel}</span>
-        <span
-          class="rounded-full bg-red-100 px-2 py-0.5 text-xs font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
-        >
-          {activeVocabLevelStat.due + activeUttrykkLevelStat.due} due
-        </span>
-      </a>
-    {/if}
 
     <!-- ── Vocabulary — active level ──────────────────────────────────────────── -->
     <!-- Phase 3: only Plus users get the collapsible wrapper — free users'
@@ -625,6 +632,7 @@
         open={vocabOpen}
         onToggle={() => toggleSection('vocab')}
         id="stats-vocab"
+        dueCount={activeVocabLevelStat.due}
       >
         {#snippet summary()}
           <div
@@ -705,7 +713,10 @@
         </div>
       </CollapsibleSection>
     {:else}
-      <h2 class="mb-3">📖 {m.stats_vocabulary_heading()}</h2>
+      <div class="mb-3 flex items-center gap-2">
+        <h2 class="!mb-0">📖 {m.stats_vocabulary_heading()}</h2>
+        <DueBadge count={activeVocabLevelStat.due} />
+      </div>
       <div
         class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
       >
@@ -796,6 +807,7 @@
         open={uttrykkOpen}
         onToggle={() => toggleSection('uttrykk')}
         id="stats-uttrykk"
+        dueCount={activeUttrykkLevelStat.due}
       >
         {#snippet summary()}
           <div
@@ -878,7 +890,10 @@
         </div>
       </CollapsibleSection>
     {:else}
-      <h2 class="mb-3">💬 {m.stats_uttrykk_heading()}</h2>
+      <div class="mb-3 flex items-center gap-2">
+        <h2 class="!mb-0">💬 {m.stats_uttrykk_heading()}</h2>
+        <DueBadge count={activeUttrykkLevelStat.due} />
+      </div>
       <div
         class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
       >
@@ -975,6 +990,7 @@
         open={grammarOpen}
         onToggle={() => toggleSection('grammar')}
         id="stats-grammar"
+        dueCount={grammarDueForActiveLevel}
       >
         {#snippet summary()}
           <div

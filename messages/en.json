@@ -896,5 +896,9 @@
   "stats_activity_heading": "Activity",
   "stats_tooltip_learning": "{count} learning",
   "stats_tooltip_review": "{count} memorized",
-  "stats_tooltip_relearning": "{count} forgotten"
+  "stats_tooltip_relearning": "{count} forgotten",
+  "stats_due_count": "{count} due",
+  "stats_level_tab_due_aria": "{level}, {count} due",
+  "stats_due_review_title": "Review {count} due now",
+  "stats_study_due_now": "Study due now"
 }

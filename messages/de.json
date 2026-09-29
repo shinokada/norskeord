@@ -896,5 +896,9 @@
   "stats_activity_heading": "Aktivität",
   "stats_tooltip_learning": "{count} werden gelernt",
   "stats_tooltip_review": "{count} gemerkt",
-  "stats_tooltip_relearning": "{count} vergessen"
+  "stats_tooltip_relearning": "{count} vergessen",
+  "stats_due_count": "{count} fällig",
+  "stats_level_tab_due_aria": "{level}, {count} fällig",
+  "stats_due_review_title": "{count} fällige jetzt wiederholen",
+  "stats_study_due_now": "Jetzt Fälliges lernen"
 }

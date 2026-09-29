@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
+import { setNorwegianLocale } from './helpers';
 
 /**
  * ai-docs/implementation/due-only.md — Step 5 (verification).
@@ -58,6 +59,22 @@ async function seed(page: Page, value: string) {
   });
 }
 
+/**
+ * A real production A1 Uttrykk entry (uttrykk-a1.json, "Hvor kommer du fra? ...",
+ * category "greetings"). Seeded alongside the vocab card so the level-tab due
+ * count has to sum *both* content types — a regression that dropped Uttrykk
+ * would otherwise still pass. The stored level/category in seedValue() are
+ * just a snapshot; my-progress buckets by the live resolveEntry() location.
+ */
+const UTTRYKK_DUE_ID = 'w-007931';
+
+async function seedUttrykk(page: Page, value: string) {
+  await page.addInitScript(({ key, value }) => localStorage.setItem(key, value), {
+    key: `progress-${UTTRYKK_DUE_ID}`,
+    value
+  });
+}
+
 test.describe('/review', () => {
   test('shows the empty state when nothing is due', async ({ page }) => {
     // No seed at all — a fresh guest has no progress rows, so getDueItems()
@@ -112,18 +129,35 @@ test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
     await expect(page.getByRole('link', { name: /study due now/i })).not.toBeVisible();
   });
 
-  test('shows the per-level "Study due at A1" link scoped to /review?level=a1', async ({
+  test('shows the combined vocab + uttrykk due count on the A1 level tab, with no per-level "Study due at" link', async ({
     page
   }) => {
+    // The old per-level "Study due at A1" row was replaced by a count badge on
+    // each level tab (ai-docs/implementation/due-number-update.md). The tab's
+    // accessible name carries the count ("A1, 2 due") for screen readers:
+    // 1 vocab + 1 uttrykk card due.
     await seed(page, DUE_YESTERDAY);
+    await seedUttrykk(page, DUE_YESTERDAY);
     await page.goto('/my-progress');
-    // activeLevel's initial value depends on the CEFR estimate text, which
-    // isn't worth pinning down here — select A1 explicitly so the test only
-    // depends on what it's actually checking.
-    await page.getByRole('tab', { name: 'A1', exact: true }).click();
-    const levelBanner = page.getByRole('link', { name: /study due at a1/i });
-    await expect(levelBanner).toBeVisible();
-    await expect(levelBanner).toHaveAttribute('href', '/review?level=a1');
+    await expect(page.getByRole('tab', { name: 'A1, 2 due', exact: true })).toBeVisible();
+    await expect(page.getByRole('link', { name: /study due at/i })).toHaveCount(0);
+  });
+
+  test('localizes the level tab accessible name (nb)', async ({ page }) => {
+    // Norwegian: the count suffix comes from paraglide (stats_level_tab_due_aria),
+    // not a hardcoded English "due".
+    await setNorwegianLocale(page);
+    await seed(page, DUE_YESTERDAY);
+    await seedUttrykk(page, DUE_YESTERDAY);
+    await page.goto('/my-progress');
+    await expect(page.getByRole('tab', { name: 'A1, 2 forfaller', exact: true })).toBeVisible();
+  });
+
+  test('shows no due count on a level tab when nothing is due there', async ({ page }) => {
+    // Due tomorrow, not today — the tab keeps its plain name (no ", N due").
+    await seed(page, DUE_TOMORROW);
+    await page.goto('/my-progress');
+    await expect(page.getByRole('tab', { name: 'A1', exact: true })).toBeVisible();
   });
 });
 
@@ -224,8 +258,9 @@ test.describe('/my-progress — Grammar due badge (Fix 3)', () => {
     // Grammar topic-level progress is free for every plan (not gated by
     // isPlus — see the comment above the Grammar section in
     // my-progress/+page.svelte), so this works for the default guest session,
-    // same as the rest of this file.
-    await page.getByRole('tab', { name: 'A1', exact: true }).click();
+    // same as the rest of this file. The tab's name may carry a ", N due"
+    // suffix, so match the level prefix rather than the exact name.
+    await page.getByRole('tab', { name: /^A1\b/ }).click();
     const badge = page.getByRole('link', { name: /1 due/i });
     await expect(badge).toBeVisible();
     await expect(badge).toHaveAttribute(
