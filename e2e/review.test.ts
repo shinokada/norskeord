@@ -59,6 +59,22 @@ async function seed(page: Page, value: string) {
   });
 }
 
+/**
+ * A real production A1 Uttrykk entry (uttrykk-a1.json, "Hvor kommer du fra? ...",
+ * category "greetings"). Seeded alongside the vocab card so the level-tab due
+ * count has to sum *both* content types — a regression that dropped Uttrykk
+ * would otherwise still pass. The stored level/category in seedValue() are
+ * just a snapshot; my-progress buckets by the live resolveEntry() location.
+ */
+const UTTRYKK_DUE_ID = 'w-007931';
+
+async function seedUttrykk(page: Page, value: string) {
+  await page.addInitScript(({ key, value }) => localStorage.setItem(key, value), {
+    key: `progress-${UTTRYKK_DUE_ID}`,
+    value
+  });
+}
+
 test.describe('/review', () => {
   test('shows the empty state when nothing is due', async ({ page }) => {
     // No seed at all — a fresh guest has no progress rows, so getDueItems()
@@ -113,15 +129,17 @@ test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
     await expect(page.getByRole('link', { name: /study due now/i })).not.toBeVisible();
   });
 
-  test('shows the due count on the A1 level tab, with no per-level "Study due at" link', async ({
+  test('shows the combined vocab + uttrykk due count on the A1 level tab, with no per-level "Study due at" link', async ({
     page
   }) => {
     // The old per-level "Study due at A1" row was replaced by a count badge on
     // each level tab (ai-docs/implementation/due-number-update.md). The tab's
-    // accessible name carries the count ("A1, 1 due") for screen readers.
+    // accessible name carries the count ("A1, 2 due") for screen readers:
+    // 1 vocab + 1 uttrykk card due.
     await seed(page, DUE_YESTERDAY);
+    await seedUttrykk(page, DUE_YESTERDAY);
     await page.goto('/my-progress');
-    await expect(page.getByRole('tab', { name: 'A1, 1 due', exact: true })).toBeVisible();
+    await expect(page.getByRole('tab', { name: 'A1, 2 due', exact: true })).toBeVisible();
     await expect(page.getByRole('link', { name: /study due at/i })).toHaveCount(0);
   });
 
@@ -130,8 +148,9 @@ test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
     // not a hardcoded English "due".
     await setNorwegianLocale(page);
     await seed(page, DUE_YESTERDAY);
+    await seedUttrykk(page, DUE_YESTERDAY);
     await page.goto('/my-progress');
-    await expect(page.getByRole('tab', { name: 'A1, 1 forfaller', exact: true })).toBeVisible();
+    await expect(page.getByRole('tab', { name: 'A1, 2 forfaller', exact: true })).toBeVisible();
   });
 
   test('shows no due count on a level tab when nothing is due there', async ({ page }) => {
