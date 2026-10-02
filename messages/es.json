@@ -909,5 +909,13 @@
   "grammar_map_free": "Gratis",
   "grammar_map_free_levels": "Gratis: {levels}",
   "grammar_map_practise_chapter": "Practicar este capítulo",
-  "grammar_map_back_to_chapter": "← Volver al capítulo"
+  "grammar_map_back_to_chapter": "← Volver al capítulo",
+  "grammar_topic_tab_rule": "Regla",
+  "grammar_topic_tab_practise": "Practicar",
+  "grammar_topic_start_practice": "Empezar a practicar",
+  "grammar_topic_breadcrumb_aria": "Ruta de navegación",
+  "grammar_topic_nav_aria": "Más temas de gramática",
+  "grammar_topic_prev": "Anterior",
+  "grammar_topic_next": "Siguiente",
+  "grammar_topic_related": "Temas relacionados"
 }

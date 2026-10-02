@@ -74,6 +74,12 @@ async function completeGrammarSession(page: Page, maxQuestions = 20) {
     .catch(() => {});
 }
 
+// Topic pages open on the Regel tab for new visitors (grammar-update.md, Phase 6a);
+// practice sits behind the Øv tab.
+async function openPractice(page: Page) {
+  await page.getByTestId('topic-tab-practice').click({ timeout: 8000 });
+}
+
 // ===========================================================================
 // Grammar index page (/grammar)
 // ===========================================================================
@@ -107,6 +113,7 @@ test('ikke-placement topic page loads and shows first question', async ({ page }
   await page.goto('/grammar/ikke-placement');
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible({ timeout: 8000 });
   // The session question counter should appear
+  await openPractice(page);
   await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toBeVisible({ timeout: 8000 });
 });
 
@@ -141,6 +148,7 @@ test('free user sees an A1-only session for a topic that also has plusOnly items
   // questions are plusOnly:true, which isn't the case here.
   await page.goto('/grammar/noun-plurals');
   await page.waitForSelector('[data-testid], h1, .bg-amber-50', { timeout: 8000 }).catch(() => {});
+  await openPractice(page);
   const questionCounter = page.getByText(/question \d+ of|spørsmål \d+ av/i);
   await expect(questionCounter).toBeVisible({ timeout: 10000 });
   await expect(page.getByText(/of 8|av 8/i)).toBeVisible({ timeout: 5000 });
@@ -152,6 +160,7 @@ test('Plus user can answer a grammar question and progress is written to localSt
   await injectPlusPlan(page);
   await page.goto('/grammar/ikke-placement');
 
+  await openPractice(page);
   await page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ timeout: 8000 });
   await answerGrammarAndAdvance(page);
 
@@ -166,10 +175,65 @@ test('Plus user can complete a grammar session and see the summary', async ({ pa
   await injectPlusPlan(page);
   await page.goto('/grammar/ikke-placement');
 
+  await openPractice(page);
   await page.getByText(/question \d+ of|spørsmål \d+ av/i).waitFor({ timeout: 8000 });
   await completeGrammarSession(page);
 
   await expect(page.getByText(/session complete|økt fullført/i)).toBeVisible({ timeout: 15000 });
+});
+
+// ===========================================================================
+// Topic page layout: Regel / Øv tabs, breadcrumb, prev/next, related
+// (grammar-update.md, Phase 6a)
+// ===========================================================================
+
+test('topic page opens on the Regel tab for a new visitor', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.goto('/grammar/ikke-placement');
+  await expect(page.getByTestId('topic-rule')).toBeVisible({ timeout: 8000 });
+  await expect(page.getByTestId('topic-practice')).toBeHidden();
+  await expect(page.getByTestId('topic-tab-rule')).toHaveAttribute('aria-selected', 'true');
+  await expect(page.getByTestId('topic-tab-practice')).toHaveAttribute('aria-selected', 'false');
+});
+
+test('Regel tab: the start button switches to the practice tab', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.goto('/grammar/ikke-placement');
+  await page.getByTestId('topic-start-practice').click({ timeout: 8000 });
+  await expect(page.getByTestId('topic-practice')).toBeVisible();
+  await expect(page.getByTestId('topic-rule')).toBeHidden();
+  await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toBeVisible({ timeout: 8000 });
+});
+
+test('?tab=practice opens the practice tab directly', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.goto('/grammar/ikke-placement?tab=practice');
+  await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toBeVisible({ timeout: 8000 });
+  await expect(page.getByTestId('topic-tab-practice')).toHaveAttribute('aria-selected', 'true');
+});
+
+test('topic page shows a breadcrumb, prev/next in book order and related topics', async ({
+  page
+}) => {
+  // subjekt-og-verbal is the first topic in book order (1.1), free at A1.
+  await page.goto('/grammar/subjekt-og-verbal');
+  const crumb = page.getByTestId('topic-page-breadcrumb');
+  await expect(crumb).toBeVisible({ timeout: 8000 });
+  await expect(crumb.locator('a[href="/grammar/chapter/setningsledd"]')).toBeVisible();
+
+  await expect(page.getByTestId('topic-prev')).toHaveCount(0);
+  await expect(page.getByTestId('topic-next')).toHaveAttribute(
+    'href',
+    '/grammar/sammensatt-verbtid'
+  );
+  // sammensatt-verbtid is the next topic, so related lists the other sibling.
+  await expect(
+    page.getByTestId('topic-related').locator('a[href="/grammar/setningsledd-identifikasjon"]')
+  ).toBeVisible();
+
+  await page.getByTestId('topic-next').click();
+  await expect(page).toHaveURL('/grammar/sammensatt-verbtid');
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible({ timeout: 8000 });
 });
 
 // ===========================================================================
@@ -300,6 +364,7 @@ test('free user hitting the same topic without ?level= still sees its free A1 co
   // pre-existing "any free level" behavior, so old links/bookmarks without
   // the param don't regress.
   await page.goto('/grammar/noun-plurals');
+  await openPractice(page);
   await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toBeVisible({ timeout: 8000 });
   await expect(page.getByText(/of 8|av 8/i)).toBeVisible({ timeout: 5000 });
 });

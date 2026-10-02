@@ -2,7 +2,10 @@
   import { page } from '$app/state';
   import { browser } from '$app/environment';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
-  import GrammarSession from '$lib/components/grammar/GrammarSession.svelte';
+  import TopicTabs from '$lib/components/grammar/TopicTabs.svelte';
+  import TopicNav from '$lib/components/grammar/TopicNav.svelte';
+  import { chapterHref } from '$lib/grammar/overview';
+  import { parseTabParam, topicNavModel } from '$lib/grammar/topic-page';
   import * as m from '$lib/paraglide/messages';
 
   let { data } = $props();
@@ -40,6 +43,10 @@
     )
   );
   let locked = $derived(!isPlus && playable.length === 0);
+
+  // Breadcrumb, prev/next and related topics, all from the taxonomy (Phase 6a).
+  let nav = $derived(topicNavModel(data.topic));
+  let tabParam = $derived(parseTabParam(page.url.searchParams.get('tab')));
 
   // Back-navigation: if the user came from a level hub, show "← B1" on the
   // left and "Grammar topics →" on the right. Otherwise fall back to just
@@ -89,6 +96,22 @@
     </a>
   </div>
 
+  {#if nav}
+    <nav
+      aria-label={m.grammar_topic_breadcrumb_aria()}
+      data-testid="topic-page-breadcrumb"
+      class="mb-3 text-xs text-gray-500 dark:text-gray-400"
+    >
+      <a href="/grammar" class="hover:text-indigo-500">{m.grammar_title()}</a>
+      <span aria-hidden="true">›</span>
+      <a href={chapterHref(nav.chapter.slug, levelParam())} class="hover:text-indigo-500">
+        {nav.chapter.no}. {nav.chapter.titleNb}
+      </a>
+      <span aria-hidden="true">›</span>
+      <span>{nav.section.id} {nav.section.titleNb}</span>
+    </nav>
+  {/if}
+
   <h1 class="mb-6 text-xl font-bold text-gray-900 dark:text-white">{title}</h1>
 
   {#if locked}
@@ -122,7 +145,11 @@
       </p>
     {/if}
     {#key data.topic}
-      <GrammarSession questions={playable} {rule} {userId} />
+      <TopicTabs {rule} questions={playable} {userId} {tabParam} />
     {/key}
+  {/if}
+
+  {#if nav}
+    <TopicNav {nav} />
   {/if}
 </div>

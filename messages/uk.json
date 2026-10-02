@@ -909,5 +909,13 @@
   "grammar_map_free": "Безкоштовно",
   "grammar_map_free_levels": "Безкоштовно: {levels}",
   "grammar_map_practise_chapter": "Практикувати цей розділ",
-  "grammar_map_back_to_chapter": "← Назад до розділу"
+  "grammar_map_back_to_chapter": "← Назад до розділу",
+  "grammar_topic_tab_rule": "Правило",
+  "grammar_topic_tab_practise": "Практика",
+  "grammar_topic_start_practice": "Почати практику",
+  "grammar_topic_breadcrumb_aria": "Навігаційний ланцюжок",
+  "grammar_topic_nav_aria": "Інші теми граматики",
+  "grammar_topic_prev": "Попередня",
+  "grammar_topic_next": "Наступна",
+  "grammar_topic_related": "Пов’язані теми"
 }

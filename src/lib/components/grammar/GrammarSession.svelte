@@ -24,11 +24,14 @@
   let {
     questions: pool,
     rule,
-    userId
+    userId,
+    onprogressloaded
   }: {
     questions: GrammarQuestion[];
     rule: GrammarRule | undefined;
     userId: string | null;
+    /** Called once with the loaded progress map, before the first session is built. */
+    onprogressloaded?: (map: Record<string, CardProgress>) => void;
   } = $props();
 
   type SessionState = 'loading' | 'questioning' | 'revealing' | 'summary';
@@ -69,6 +72,7 @@
         progressMap = userId
           ? await loadGrammarProgressFromSupabase(userId)
           : loadGrammarProgressMap();
+        onprogressloaded?.(progressMap);
       }
       start();
     })();

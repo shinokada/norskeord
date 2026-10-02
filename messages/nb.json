@@ -909,5 +909,13 @@
   "grammar_map_free": "Gratis",
   "grammar_map_free_levels": "Gratis: {levels}",
   "grammar_map_practise_chapter": "Øv på dette kapittelet",
-  "grammar_map_back_to_chapter": "← Tilbake til kapittelet"
+  "grammar_map_back_to_chapter": "← Tilbake til kapittelet",
+  "grammar_topic_tab_rule": "Regel",
+  "grammar_topic_tab_practise": "Øv",
+  "grammar_topic_start_practice": "Start øving",
+  "grammar_topic_breadcrumb_aria": "Brødsmulesti",
+  "grammar_topic_nav_aria": "Flere grammatikktemaer",
+  "grammar_topic_prev": "Forrige",
+  "grammar_topic_next": "Neste",
+  "grammar_topic_related": "Relaterte temaer"
 }
