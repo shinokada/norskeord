@@ -270,6 +270,9 @@ export type GrammarTopic =
   // Nivå B2 topic — "På Nivå" arbeidsbok (see ai-docs/implementation/b2-grammar-pa-niva-arbeidsbok.md)
   | 'determinativ-forsterkere' // emphasizer determinatives: egen/eget/egne, selv/selve, eneste
   | 'adverb-gradboying' // adverb comparison: regular -ere/-est (sakte/fort/ofte) + irregular gjerne→heller→helst
+  // Tier 1 content — see ai-docs/implementation/grammar-content-tier1.md
+  | 'objekt' // direct object: hva/hvem test, place after the verb, objekt vs. adverbial/predikativ, objekt in the front field
+  | 'predikativ' // predicative: describes the subject after være/bli/hete/virke/se ut, noun or adjective, position, predikativ vs. objekt/adverbial
   | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
   | 'setningsledd-identifikasjon'; // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)
 

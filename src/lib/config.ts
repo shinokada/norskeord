@@ -458,6 +458,10 @@ export const FREE_GRAMMAR_TOPICS: Partial<
   // A1 questions keep their free access in the two new topics (and ikke-placement below).
   'fortellende-setninger': ['A1'],
   sporresetninger: ['A1'],
+  // Tier 1 content (ai-docs/implementation/grammar-content-tier1.md): A1 questions are free,
+  // the A2 questions stay Plus under the A1-only policy.
+  objekt: ['A1'],
+  predikativ: ['A1'],
   // Nivå A1 topics, pt. 2 — see ai-docs/implementation/a1-update.md Phase 4.
   'klokka-tid': ['A1'],
   'preposisjoner-sted': ['A1'],

@@ -93,6 +93,75 @@ export const SETNINGSLEDD_RULES: Record<string, GrammarRule> = {
       'rekkefølgen).'
   },
 
+  objekt: {
+    id: 'objekt',
+    titleEn: 'The object',
+    titleNb: 'Objekt',
+    explanationEn:
+      '**Object (objekt):** the person or thing affected by the action of the verb. Find the object by ' +
+      'asking «hva» or «hvem» + verb + subject: «Jeg spiser **et eple**.» (Hva spiser jeg? Et eple.)\n\n' +
+      '**Position:** in a normal statement the object comes after the verb: subject – verb – object. ' +
+      '«Vi ser **en film**.» When an adverbial comes first, the verb and the subject come before the ' +
+      'object: «I går kjøpte jeg **en bil**.»\n\n' +
+      '**An object is not an adverbial:** an adverbial tells, for example, where, when or how ' +
+      'something happens: «Jeg spiser frokost **på kjøkkenet**.» Here «frokost» is the object, ' +
+      'while «på kjøkkenet» is an adverbial.\n\n' +
+      '**An object is not a predikativ:** after «være» and «bli» there is often a predikativ that ' +
+      'describes the subject: «Hun er **lærer**.» An object refers to a person or thing that the ' +
+      'action is directed at: «Hun møter **læreren**.»\n\n' +
+      '**Object first:** the object can come first to emphasise it. The verb still stays in ' +
+      'position 2, and the subject comes after the verb: «Filmen så vi i går.»\n\n' +
+      'Not all verbs have an object: «Hun sover.» «Jeg løper.»',
+    explanationNb:
+      '**Objekt:** Det eller den som blir påvirket av verbhandlingen. Finn objektet ved å spørre ' +
+      '«hva» eller «hvem» + verb + subjekt: «Jeg spiser **et eple**.» (Hva spiser jeg? Et eple.)\n\n' +
+      '**Plass:** I en vanlig påstand står objektet etter verbet: subjekt – verb – objekt. ' +
+      '«Vi ser **en film**.» Står et adverbial først, kommer verbet og subjektet foran objektet: ' +
+      '«I går kjøpte jeg **en bil**.»\n\n' +
+      '**Objekt er ikke adverbial:** Et adverbial sier for eksempel hvor, når eller hvordan noe ' +
+      'skjer: «Jeg spiser frokost **på kjøkkenet**.» Her er «frokost» objektet, mens «på ' +
+      'kjøkkenet» er et adverbial.\n\n' +
+      '**Objekt er ikke predikativ:** Etter «være» og «bli» står det ofte et predikativ som ' +
+      'beskriver subjektet: «Hun er **lærer**.» Et objekt viser til en person eller ting som ' +
+      'handlingen er rettet mot: «Hun møter **læreren**.»\n\n' +
+      '**Objektet først:** Objektet kan stå først for å fremheve det. Verbet står da fortsatt på ' +
+      'plass 2, og subjektet kommer etter verbet: «Filmen så vi i går.»\n\n' +
+      'Ikke alle verb har objekt: «Hun sover.» «Jeg løper.»'
+  },
+
+  predikativ: {
+    id: 'predikativ',
+    titleEn: 'The predicative',
+    titleNb: 'Predikativ',
+    explanationEn:
+      '**Predikativ (predicative):** an element that describes or says something about the subject. ' +
+      'The predikativ often comes after «være», «bli», «hete» and «virke», and after «se … ut»: ' +
+      '«Hun er **lærer**.» «Huset er **stort**.» «Han heter **Ola**.»\n\n' +
+      '**What can be a predikativ?** A noun («Hun er **lærer**.») or an adjective ' +
+      '(«Suppen er **varm**.»).\n\n' +
+      '**Position:** in a normal statement the predikativ comes after the verb: subject – verb – ' +
+      'predikativ. «Maria er **glad**.» With «ikke», the predikativ comes after «ikke»: ' +
+      '«Maria er ikke **glad**.»\n\n' +
+      '**A predikativ is not an object:** with a noun, the predikativ refers to the same thing as the ' +
+      'subject: «Hun er lærer.» (hun = lærer). An object refers to a person or thing that the ' +
+      'action is directed at: «Hun møter læreren.»\n\n' +
+      '**A predikativ is not an adverbial:** a predikativ describes the subject: «Hun er **glad**.» ' +
+      'An adverbial tells, for example, where or when something happens: «Hun er **på jobb**.»',
+    explanationNb:
+      '**Predikativ:** Et ledd som beskriver eller sier noe om subjektet. Predikativet står ofte ' +
+      'etter «være», «bli», «hete» og «virke», og etter «se … ut»: «Hun er **lærer**.» ' +
+      '«Huset er **stort**.» «Han heter **Ola**.»\n\n' +
+      '**Hva kan være predikativ?** Et substantiv («Hun er **lærer**.») eller et adjektiv ' +
+      '(«Suppen er **varm**.»).\n\n' +
+      '**Plass:** I en vanlig påstand står predikativet etter verbet: subjekt – verb – predikativ. ' +
+      '«Maria er **glad**.» Med «ikke» står predikativet etter «ikke»: «Maria er ikke **glad**.»\n\n' +
+      '**Predikativ er ikke objekt:** Med et substantiv viser predikativet til det samme som ' +
+      'subjektet: «Hun er lærer.» (hun = lærer). Et objekt viser til en person eller ting som ' +
+      'handlingen er rettet mot: «Hun møter læreren.»\n\n' +
+      '**Predikativ er ikke adverbial:** Et predikativ beskriver subjektet: «Hun er **glad**.» Et ' +
+      'adverbial sier for eksempel hvor eller når noe skjer: «Hun er **på jobb**.»'
+  },
+
   'predikativ-agreement': {
     id: 'predikativ-agreement',
     titleEn: 'Predikativ adjective agreement',
