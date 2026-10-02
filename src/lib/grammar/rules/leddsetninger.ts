@@ -4,6 +4,23 @@
 import type { GrammarRule } from '$lib/types';
 
 export const LEDDSETNINGER_RULES: Record<string, GrammarRule> = {
+  'leddsetning-grunnleggende': {
+    id: 'leddsetning-grunnleggende',
+    titleEn: 'What is a subordinate clause?',
+    titleNb: 'Hva er en leddsetning?',
+    explanationEn:
+      'A main clause (hovedsetning) can stand alone: "Jeg bor i Oslo." A subordinate clause ' +
+      '(leddsetning) cannot. It starts with a word like «at», «fordi», «når» or «hvis» and belongs ' +
+      'to a main clause: "Jeg vet at han bor her." The subordinate clause can also come first. ' +
+      'Then the main clause starts with the verb, before the subject: "Når jeg er trøtt, drikker ' +
+      'jeg kaffe." For word order inside the subordinate clause, see the topic on subordinate clause word order.',
+    explanationNb:
+      'To slags setninger:\n\n' +
+      '• **hovedsetning** — kan stå alene: "Jeg bor i Oslo."\n' +
+      '• **leddsetning** — kan ikke stå alene. Den begynner med et ord som «at», «fordi», «når» eller «hvis», og den hører til en hovedsetning: "Jeg vet **at han bor her**."\n\n' +
+      'Leddsetningen kan også stå først. Da begynner hovedsetningen med verbet, og subjektet kommer etter verbet: "Når jeg er trøtt, drikker jeg kaffe."'
+  },
+
   'subordinate-order': {
     id: 'subordinate-order',
     titleEn: 'Subordinate clause word order',

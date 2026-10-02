@@ -99,7 +99,9 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
         s('3.2', 'Svar med det', 'Answering with "det"', 'base', ['det-referanse'])
       ]),
       ch(4, 'leddsetninger', 'Leddsetninger', 'Subordinate clauses', [
-        s('4.1', 'Hva er en leddsetning?', 'What is a subordinate clause?'),
+        s('4.1', 'Hva er en leddsetning?', 'What is a subordinate clause?', 'base', [
+          'leddsetning-grunnleggende'
+        ]),
         s('4.2', 'Ordstillingen i leddsetninger', 'Word order in subordinate clauses', 'base', [
           'subordinate-order'
         ]),
@@ -368,7 +370,7 @@ export const ALSO_IN: Partial<Record<GrammarTopic, string[]>> = {
   'hypotetiske-betingelsessetninger': ['11.16'],
   'ikke-placement': ['12.7'],
   imperativ: ['11.9'],
-  'indirekte-tale-at-om': ['4.4'],
+  'indirekte-tale-at-om': ['4.4', '4.5'],
   'infinitiv-a1': ['11.5'],
   'ja-jo': ['15.3'],
   'jo-desto-komparativ': ['9.3'],
