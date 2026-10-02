@@ -33,9 +33,11 @@
   let progressLoaded = $state(false);
   let chosenTab = $state<TopicTab | null>(null);
 
-  // Until progress is known (and unless a tab was asked for), neither panel shows.
-  let activeTab = $derived<TopicTab | null>(
-    chosenTab ?? tabParam ?? (progressLoaded ? defaultTab(dueCount) : null)
+  // Until progress is known (and unless a tab was asked for) the Regel panel
+  // shows: it is what the server renders for crawlers, and a returning learner
+  // with due cards is switched to Øv as soon as their progress has loaded.
+  let activeTab = $derived<TopicTab>(
+    chosenTab ?? tabParam ?? (progressLoaded ? defaultTab(dueCount) : 'rule')
   );
 
   function handleProgress(map: Record<string, CardProgress>) {
@@ -94,10 +96,6 @@
     {/if}
   </button>
 </div>
-
-{#if activeTab === null}
-  <div class="py-10 text-center text-sm text-gray-600 dark:text-gray-300">…</div>
-{/if}
 
 <div
   role="tabpanel"

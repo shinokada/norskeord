@@ -71,9 +71,7 @@
   }
 </script>
 
-<svelte:head>
-  <title>{title} · {m.grammar_title()} — Norskeord</title>
-</svelte:head>
+<!-- <title> and meta come from `pageMetaTags` in +page.ts (merged in +layout.svelte). -->
 
 <div class="mx-auto max-w-2xl px-4 py-10 text-left">
   <div class="mb-4 flex items-center justify-between">

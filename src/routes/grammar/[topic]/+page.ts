@@ -5,8 +5,11 @@ import type { CEFRLevel, GrammarQuestion, GrammarTopic } from '$lib/types';
 import { freeGrammarQuestionIds } from '$lib/access';
 import { GRAMMAR_RULES } from '$lib/grammar/rules';
 import { loadGrammarLevels } from '$lib/grammar/level-loader';
+import { topicMetaTags } from '$lib/grammar/seo';
 
-export const ssr = false;
+// Server-rendered since Phase 6b (grammar-update.md): the rule text, breadcrumb
+// and meta must be in the HTML for crawlers. GrammarSession only starts in
+// onMount, so the practice panel is a placeholder on the server.
 
 type GrammarTopicIndexEntry = {
   levels: CEFRLevel[];
@@ -41,6 +44,9 @@ export const load: PageLoad = async ({ params }) => {
   return {
     topic,
     questions,
-    freeQuestionIds: [...freeIds]
+    freeQuestionIds: [...freeIds],
+    // Merged over the layout defaults in +layout.svelte; noindex for topics
+    // without free A1 content (see $lib/grammar/seo.ts).
+    pageMetaTags: topicMetaTags(topic) ?? undefined
   };
 };

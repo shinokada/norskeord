@@ -18,9 +18,15 @@
 
   let { children, data } = $props();
 
+  // `deepMerge` only copies keys that already exist in the layout meta, and the
+  // layout has no `robots`, so a page-level `noindex` would be dropped. Carry it
+  // over explicitly (used by /grammar/[topic] for topics without free A1 content).
   let metaTags = $derived(
     page.data.pageMetaTags
-      ? deepMerge(page.data.layoutMetaTags, page.data.pageMetaTags)
+      ? {
+          ...deepMerge(page.data.layoutMetaTags, page.data.pageMetaTags),
+          robots: page.data.pageMetaTags.robots
+        }
       : data.layoutMetaTags
   );
 

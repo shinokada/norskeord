@@ -237,6 +237,50 @@ test('topic page shows a breadcrumb, prev/next in book order and related topics'
 });
 
 // ===========================================================================
+// SEO (grammar-update.md, Phase 6b): the rule and meta are server-rendered, so
+// these run with JavaScript disabled, as a crawler's first pass would see them.
+// ===========================================================================
+
+test('A1 topic page is server-rendered with the rule, a title and no noindex', async ({
+  browser
+}) => {
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  const page = await context.newPage();
+  try {
+    await page.goto('/grammar/subjekt-og-verbal');
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expect(page.getByTestId('topic-rule')).toBeVisible();
+    await expect(page.getByTestId('topic-page-breadcrumb')).toBeVisible();
+    await expect(page).toHaveTitle(/Norwegian Grammar/);
+    await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /\S/);
+    await expect(page.locator('meta[name="robots"][content*="noindex"]')).toHaveCount(0);
+  } finally {
+    await context.close();
+  }
+});
+
+test('a topic without free A1 content is noindex', async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  const page = await context.newPage();
+  try {
+    await page.goto('/grammar/uttrykk');
+    await expect(page.locator('meta[name="robots"][content*="noindex"]')).toHaveCount(1);
+  } finally {
+    await context.close();
+  }
+});
+
+test('sitemap lists A1 topics and leaves out a Plus-only topic', async ({ request }) => {
+  const res = await request.get('/sitemap.xml');
+  const xml = await res.text();
+  // The body carries super-sitemap's error message when a route has no paramValues.
+  expect(res.status(), xml.slice(0, 300)).toBe(200);
+  expect(xml).toContain('/grammar/subjekt-og-verbal');
+  expect(xml).not.toContain('/grammar/uttrykk<');
+  expect(xml).not.toContain('/grammar/chapter/');
+});
+
+// ===========================================================================
 // Level chips on the map: a filter (hides non-matching chapters), never a
 // re-sort, and the active level is forwarded into the chapter links
 // (grammar-update.md decision #19)
@@ -371,7 +415,7 @@ test('free user hitting the same topic without ?level= still sees its free A1 co
 
 test('unknown grammar topic shows a 404 error', async ({ page }) => {
   await page.goto('/grammar/this-topic-does-not-exist');
-  // ssr:false routes render the 404 client-side (HTTP status is 200 from the shell).
+  // The topic route is server-rendered since Phase 6b, so this is a real 404.
   // SvelteKit renders a level-1 heading containing "404" and a paragraph with the message.
   await expect(page.getByRole('heading', { name: '404', level: 1 })).toBeVisible({ timeout: 8000 });
 });
