@@ -77,7 +77,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
         ]),
         s('1.2', 'Objekt', 'Object', 'base', ['objekt']),
         s('1.3', 'Predikativ', 'Predicative', 'base', ['predikativ']),
-        s('1.4', 'Adverbial', 'Adverbial'),
+        s('1.4', 'Adverbial', 'Adverbial', 'base', ['adverbial']),
         s('1.5', 'Indirekte objekt', 'Indirect object', 'B1'),
         s('1.6', 'Mer om predikativ', 'More on predicatives', 'B2', ['predikativ-agreement'])
       ]),

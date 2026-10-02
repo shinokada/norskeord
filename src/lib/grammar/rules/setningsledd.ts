@@ -162,6 +162,44 @@ export const SETNINGSLEDD_RULES: Record<string, GrammarRule> = {
       'adverbial sier for eksempel hvor eller når noe skjer: «Hun er **på jobb**.»'
   },
 
+  adverbial: {
+    id: 'adverbial',
+    titleEn: 'The adverbial',
+    titleNb: 'Adverbial',
+    explanationEn:
+      '**Adverbial:** an element that tells where, when, how or why something happens. An adverbial ' +
+      'can be an adverb («her», «i dag», «fort») or a group with a preposition («i Oslo», ' +
+      '«om morgenen», «med bussen»).\n\n' +
+      '**Questions:** the adverbial answers questions such as «hvor», «når» and «hvordan»: ' +
+      '«Jeg bor **i Oslo**.» (Hvor bor jeg? I Oslo.) «Vi spiser middag **klokka seks**.» ' +
+      '(Når spiser vi middag?)\n\n' +
+      '**Position:** in a normal statement the adverbial often comes last: «Vi spiser frokost ' +
+      '**på kjøkkenet**.» A sentence can have several adverbials: «Jeg trener **i parken** ' +
+      '**hver dag**.» The adverbial can also come first. The verb still stays in position 2: ' +
+      '«**I morgen** reiser jeg.»\n\n' +
+      '**An adverbial is not an object:** the object is the person or thing the action is directed ' +
+      'at. The adverbial tells where, when or how something happens: «Hun leser en bok **på ' +
+      'biblioteket**.» («En bok» is the object, «på biblioteket» is the adverbial.)\n\n' +
+      '**An adverbial is not a predikativ:** a predikativ describes the subject: «Hun er **glad**.» ' +
+      'An adverbial tells, for example, where, when or how something happens: «Hun er **hjemme**.»',
+    explanationNb:
+      '**Adverbial:** Et ledd som forteller hvor, når, hvordan eller hvorfor noe skjer. Et adverbial ' +
+      'kan være et adverb («her», «i dag», «fort») eller en gruppe med preposisjon («i Oslo», ' +
+      '«om morgenen», «med bussen»).\n\n' +
+      '**Spørsmål:** Adverbialet svarer på spørsmål som «hvor», «når» og «hvordan»: ' +
+      '«Jeg bor **i Oslo**.» (Hvor bor jeg? I Oslo.) «Vi spiser middag **klokka seks**.» ' +
+      '(Når spiser vi middag?)\n\n' +
+      '**Plass:** I en vanlig påstand står adverbialet ofte sist: «Vi spiser frokost **på ' +
+      'kjøkkenet**.» En setning kan ha flere adverbialer: «Jeg trener **i parken** **hver dag**.» ' +
+      'Adverbialet kan også stå først. Verbet står da fortsatt på plass 2: «**I morgen** reiser ' +
+      'jeg.»\n\n' +
+      '**Adverbial er ikke objekt:** Objektet er det eller den handlingen er rettet mot. ' +
+      'Adverbialet sier hvor, når eller hvordan noe skjer: «Hun leser en bok **på biblioteket**.» ' +
+      '(«En bok» er objektet, «på biblioteket» er adverbialet.)\n\n' +
+      '**Adverbial er ikke predikativ:** Et predikativ beskriver subjektet: «Hun er **glad**.» Et ' +
+      'adverbial sier for eksempel hvor, når eller hvordan noe skjer: «Hun er **hjemme**.»'
+  },
+
   'predikativ-agreement': {
     id: 'predikativ-agreement',
     titleEn: 'Predikativ adjective agreement',

@@ -273,6 +273,7 @@ export type GrammarTopic =
   // Tier 1 content — see ai-docs/implementation/grammar-content-tier1.md
   | 'objekt' // direct object: hva/hvem test, place after the verb, objekt vs. adverbial/predikativ, objekt in the front field
   | 'predikativ' // predicative: describes the subject after være/bli/hete/virke/se ut, noun or adjective, position, predikativ vs. objekt/adverbial
+  | 'adverbial' // adverbial: hvor/når/hvordan, position (last or first), adverbial vs. objekt/predikativ
   | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
   | 'setningsledd-identifikasjon'; // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)
 

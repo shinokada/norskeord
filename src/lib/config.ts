@@ -462,6 +462,7 @@ export const FREE_GRAMMAR_TOPICS: Partial<
   // the A2 questions stay Plus under the A1-only policy.
   objekt: ['A1'],
   predikativ: ['A1'],
+  adverbial: ['A1'],
   // Nivå A1 topics, pt. 2 — see ai-docs/implementation/a1-update.md Phase 4.
   'klokka-tid': ['A1'],
   'preposisjoner-sted': ['A1'],
