@@ -20,6 +20,7 @@ import {
   type ThemeCount
 } from '$lib/vocab-helpers';
 import { GRAMMAR_RULES } from '$lib/grammar/rules';
+import { resolveGrammarQuestion } from '$lib/grammar/id-index';
 import grammarTopicIndex from '$lib/data/grammar-topic-index.json';
 
 import vocabA1 from '$lib/data/vocab-a1.json';
@@ -477,6 +478,12 @@ for (const [topic, entry] of Object.entries(
  * have questions at this level (see grammarTotalsByLevel) — a topic whose
  * questions are all, say, B2 never shows up under the A1 tab.
  *
+ * Each progress key's topic and level are resolved live from the question id
+ * via grammar/id-index.ts (grammar-update.md, Phase 3) instead of trusting the
+ * stored `CardProgress.category`/`.level` snapshot, which is stale for cards
+ * reviewed before the Phase 1b topic reorganisation. An id that no longer
+ * exists in grammar.json is dropped silently.
+ *
  * `isNb` selects the locale for topics outside Nivå C; C topics are always
  * shown in Norwegian (mirrors the forceNb rule in
  * routes/grammar/[topic]/+page.svelte — Nivå C content is hardcoded NB, see
@@ -491,12 +498,12 @@ export function grammarTopicStatsForLevel(
   const totalsForLevel = grammarTotalsByLevel[level];
 
   const cardsByTopic = new Map<string, CardProgress[]>();
-  for (const card of Object.values(grammarMap)) {
-    if (card.level !== level) continue;
-    const topic = card.category as string;
-    const list = cardsByTopic.get(topic) ?? [];
+  for (const [id, card] of Object.entries(grammarMap)) {
+    const resolved = resolveGrammarQuestion(id);
+    if (!resolved || resolved.level !== level) continue;
+    const list = cardsByTopic.get(resolved.topic) ?? [];
     list.push(card);
-    cardsByTopic.set(topic, list);
+    cardsByTopic.set(resolved.topic, list);
   }
 
   return Object.values(GRAMMAR_RULES)

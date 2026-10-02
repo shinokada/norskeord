@@ -628,25 +628,35 @@ export interface GetDueGrammarItemsOptions {
   level?: CEFRLevel;
   /**
    * Restrict to one grammar topic. Used by the per-topic due badge deep
-   * link (LevelStatRows.svelte, reviewType="grammar"). Unlike vocab's A1–B2
-   * uttrykk rows (see getDueItems' `category` doc above), grammar rows never
-   * hit the sentinel-category problem — `saveGrammarProgress` always stores
-   * the real `question.topic` on `CardProgress.category`, so this can filter
-   * directly here rather than needing a post-resolve workaround.
+   * link (LevelStatRows.svelte, reviewType="grammar").
+   *
+   * Without `resolve`, this compares against the STORED `CardProgress.category`
+   * snapshot, which is stale for any card last reviewed before the Phase 1b
+   * topic reorganisation (grammar-update.md). Pass `resolve` whenever `topic`
+   * (or `level`) is set.
    */
   topic?: GrammarTopic;
+  /**
+   * Live id -> { topic, level } resolver, normally `resolveGrammarQuestion`
+   * from `$lib/grammar/id-index`. When given, topic/level filtering and the
+   * returned `level` use the question's CURRENT values instead of the stored
+   * snapshot, and ids that no longer exist in grammar.json are dropped.
+   *
+   * Injected rather than imported here because the id index is ~3,000 entries
+   * and progress.ts is bundled into nearly every flashcard/quiz route (same
+   * reasoning as getDueItems() above).
+   */
+  resolve?: (id: string) => { topic: string; level: CEFRLevel } | undefined;
 }
 
 /**
  * Grammar's due-item shape, kept separate from vocab's `DueItem` (Phase 3,
- * permanent-structural-fix.md). Grammar topics don't move the way vocab/
- * uttrykk categories do — confirmed in Phase 3 — so there's no staleness
- * risk in trusting `card.level` here, and `/api/review-grammar-entries`
- * still groups by client-supplied level the same way `/api/review-entries`
- * used to before Phase 3. Don't reuse `DueItem` for this: it lost `level`
- * in Phase 3 specifically because trusting it for *vocab* was unsafe, which
- * doesn't apply here — sharing the type anyway is what broke this file's
- * svelte-check once already (2026-09-26).
+ * permanent-structural-fix.md). `/api/review-grammar-entries` groups by the
+ * client-supplied `level`, so it must be the question's real level: callers
+ * that can, pass `resolve` to getDueGrammarItems() so it is resolved live.
+ * Don't reuse `DueItem` for this: it lost `level` in Phase 3 specifically
+ * because trusting a stored level for *vocab* was unsafe; sharing the type
+ * anyway is what broke this file's svelte-check once already (2026-09-26).
  */
 export interface DueGrammarItem {
   id: string;
@@ -657,8 +667,11 @@ export interface DueGrammarItem {
  * Returns every due grammar card in `progressMap` as the minimal
  * `{ id, level }` shape `/api/review-grammar-entries` expects, optionally
  * narrowed to one level and/or one topic. Mirrors getDueItems() above but
- * for the grammar progress map (keyed by GrammarQuestion.id, with `level`
- * carrying the CEFR level and `category` carrying the topic).
+ * for the grammar progress map (keyed by GrammarQuestion.id).
+ *
+ * With `opts.resolve`, level/topic come from the live id index; without it,
+ * from the stored `CardProgress.level` / `.category` snapshot (may be stale
+ * after topic reorganisations).
  *
  * New/never-studied questions (no progress row) are never included —
  * "due" here means an existing FSRS schedule whose due date has passed,
@@ -668,17 +681,27 @@ export function getDueGrammarItems(
   progressMap: Record<string, CardProgress>,
   opts: GetDueGrammarItemsOptions = {}
 ): DueGrammarItem[] {
-  const { level, topic } = opts;
+  const { level, topic, resolve } = opts;
   const now = new Date();
 
-  return Object.entries(progressMap)
-    .filter(([, card]) => {
-      if (new Date(card.fsrs.due) > now) return false;
-      if (level && card.level !== level) return false;
-      if (topic && (card.category as unknown as string) !== topic) return false;
-      return true;
-    })
-    .map(([id, card]) => ({ id, level: card.level }));
+  const items: DueGrammarItem[] = [];
+  for (const [id, card] of Object.entries(progressMap)) {
+    if (new Date(card.fsrs.due) > now) continue;
+
+    let cardLevel: CEFRLevel = card.level;
+    let cardTopic = card.category as unknown as string;
+    if (resolve) {
+      const live = resolve(id);
+      if (!live) continue; // question no longer exists
+      cardLevel = live.level;
+      cardTopic = live.topic;
+    }
+
+    if (level && cardLevel !== level) continue;
+    if (topic && cardTopic !== topic) continue;
+    items.push({ id, level: cardLevel });
+  }
+  return items;
 }
 
 /**
