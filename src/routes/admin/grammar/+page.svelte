@@ -52,7 +52,8 @@
     'adj-definite',
     'adj-comparison',
     'sterke-verb',
-    'helsetninger',
+    'fortellende-setninger',
+    'sporresetninger',
     'preposisjoner-tid',
     'preposisjoner-sted',
     // Nivå A1 topics — see ai-docs/implementation/a1-quiz-and-grammar.md

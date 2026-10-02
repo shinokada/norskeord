@@ -461,24 +461,34 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       'foten", "en revet lapp" → "den revne lappen", "et sprukket speil" → "det sprukne speilet".'
   },
 
-  helsetninger: {
-    id: 'helsetninger',
-    titleEn: 'Main clauses (helsetninger)',
-    titleNb: 'Helsetninger',
+  'fortellende-setninger': {
+    id: 'fortellende-setninger',
+    titleEn: 'Statements (declarative sentences)',
+    titleNb: 'Fortellende setninger',
     explanationEn:
-      'Norwegian main clauses follow four key patterns. ' +
-      '1) Declarative: finite verb is always the SECOND element (V2). ' +
-      '2) Yes/no questions: swap subject and verb — «Du snakker norsk.» → «Snakker du norsk?» ' +
-      '3) Wh-questions: question word takes position 1, verb stays 2nd — «Hvor bor du?» ' +
-      '4) Negation: «ikke» comes AFTER the finite verb in main clauses. ' +
-      '5) Presentational «det»: when an indefinite subject follows the verb, use «det» as a dummy subject — «Det bor en mann her.»',
+      'A Norwegian statement has the finite verb in SECOND position (V2). In the simplest ' +
+      'sentence the order is subject — verb — rest: «Jeg bor i Oslo.» If something else comes ' +
+      'first, such as a time or place phrase, the verb still stays second and the subject moves ' +
+      'behind it: «I morgen reiser vi til Bergen.» (not «I morgen vi reiser …»).',
     explanationNb:
-      'Norske helsetninger følger disse mønstrene:\n\n' +
-      '• **fortellende**: det bøyde verbet er alltid på ANDRE PLASS (V2)\n' +
-      '• **ja/nei-spørsmål**: bytt om subjekt og verb — «Du snakker norsk.» → «Snakker du norsk?»\n' +
-      '• **spørresetninger med spørreord**: spørreordet står på første plass, verbet på andre — «Hvor bor du?»\n' +
-      '• **nektelse**: «ikke» kommer ETTER det bøyde verbet i helsetninger\n' +
-      '• **det som formelt subjekt**: når et ubestemt subjekt følger verbet, brukes «det» som formelt subjekt — «Det bor en mann her.»'
+      'En fortellende setning har det bøyde verbet på ANDRE PLASS (V2):\n\n' +
+      '• **vanlig rekkefølge**: subjekt — verb — resten: «Jeg bor i Oslo.»\n' +
+      '• **noe annet først**: verbet blir stående på andre plass, og subjektet kommer etter: «I morgen reiser vi til Bergen.»'
+  },
+
+  sporresetninger: {
+    id: 'sporresetninger',
+    titleEn: 'Questions (yes/no and question words)',
+    titleNb: 'Spørresetninger',
+    explanationEn:
+      'Norwegian has two main question types. Yes/no questions start with the verb, so subject ' +
+      'and verb swap places: «Du snakker norsk.» → «Snakker du norsk?» Questions with a ' +
+      'question word put that word first and keep the finite verb in SECOND position: ' +
+      '«Hvor bor du?», «Når skal du begynne på norskkurs?»',
+    explanationNb:
+      'Det er to hovedtyper spørresetninger:\n\n' +
+      '• **ja/nei-spørsmål**: verbet kommer først — bytt om subjekt og verb: «Du snakker norsk.» → «Snakker du norsk?»\n' +
+      '• **spørreord**: spørreordet står på første plass, og det bøyde verbet blir stående på andre plass: «Hvor bor du?»'
   },
 
   'preposisjoner-tid': {
@@ -1661,44 +1671,29 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• stå til ansvar for'
   },
 
-  'uttrykk-gjenkjenning-c-1': {
-    id: 'uttrykk-gjenkjenning-c-1',
-    titleEn: 'Idiom recognition — part 1',
-    titleNb: 'Gjenkjenning av faste uttrykk — del 1',
+  // Merged from uttrykk-gjenkjenning-c-1/2/3 and -detgaarbra-c (all the same skill:
+  // match an idiom to its paraphrase). Questions are practised in sets of ~25 via the
+  // optional `set` field. Admission rule: only genuine fixed expressions, idioms and
+  // proverbs; an item that illustrates a grammar rule belongs to that rule's topic.
+  uttrykk: {
+    id: 'uttrykk',
+    titleEn: 'Idioms and fixed expressions',
+    titleNb: 'Faste uttrykk og idiomer',
     explanationEn:
-      'Recognizing what a fixed idiom actually means and matching it to the correct paraphrase: ' +
-      '"Hun har fått kalde føtter" = she\'s getting cold feet (about a decision), not literally ' +
-      'cold feet. "Skinnet bedrar" = appearances are deceiving. Norwegian idioms often don\'t ' +
-      'translate literally, and several sound similar to unrelated ones ("gå på skinner" vs. ' +
-      '"skinnet bedrar"), so the goal is precise recognition, not guessing from individual words. ' +
-      'Part 1 covers the first third of the idiom set.',
+      'Recognising what a fixed idiom or proverb really means and matching it to the correct ' +
+      'paraphrase. «Hun har fått kalde føtter» means she is getting nervous about a decision, ' +
+      'not that her feet are literally cold; «skinnet bedrar» means appearances deceive. ' +
+      'Norwegian idioms rarely translate word for word, and some sound alike but mean ' +
+      'something different («gå på skinner» vs. «skinnet bedrar»), so the aim is to recognise ' +
+      'the intended meaning, not to guess from single words. Questions come in sets of about 25.',
     explanationNb:
-      'Å kjenne igjen hva et fast uttrykk faktisk betyr og matche det med riktig omskriving:\n\n' +
+      'Å kjenne igjen hva et fast uttrykk eller ordtak faktisk betyr og matche det med riktig omskriving:\n\n' +
       '• **«Hun har fått kalde føtter»** — betyr at hun nøler med en beslutning, ikke bokstavelig kalde føtter\n' +
-      '• **«Skinnet bedrar»** — betyr at det ytre lurer deg\n\n' +
-      'Norske uttrykk kan ikke alltid oversettes direkte, og flere høres like ut som urelaterte uttrykk ' +
-      '(«gå på skinner» vs. «skinnet bedrar»), så målet er presis gjenkjenning, ikke gjetning ut fra ' +
-      'enkeltord. Del 1 dekker den første tredjedelen av uttrykkssettet.'
-  },
-
-  'uttrykk-gjenkjenning-c-2': {
-    id: 'uttrykk-gjenkjenning-c-2',
-    titleEn: 'Idiom recognition — part 2',
-    titleNb: 'Gjenkjenning av faste uttrykk — del 2',
-    explanationEn:
-      'Same skill as part 1 — matching a bolded fixed idiom to its correct paraphrase — covering ' +
-      'the middle third of the idiom set.',
-    explanationNb:
-      'Samme ferdighet som del 1 — å matche et uthevet fast uttrykk med riktig omskriving — og ' +
-      'dekker den midterste tredjedelen av uttrykkssettet.'
-  },
-
-  'uttrykk-gjenkjenning-c-3': {
-    id: 'uttrykk-gjenkjenning-c-3',
-    titleEn: 'Idiom recognition — part 3',
-    titleNb: 'Gjenkjenning av faste uttrykk — del 3',
-    explanationEn: 'Same skill as parts 1–2, covering the final third of the idiom set.',
-    explanationNb: 'Samme ferdighet som del 1–2, og dekker den siste tredjedelen av uttrykkssettet.'
+      '• **«Skinnet bedrar»** — betyr at det ytre lurer deg\n' +
+      '• **«Ikke selge skinnet før bjørnen er skutt»** — betyr å ikke love noe før man er sikker\n\n' +
+      'Norske uttrykk kan sjelden oversettes direkte, og noen høres like ut, men betyr noe helt annet ' +
+      '(«gå på skinner» vs. «skinnet bedrar»). Målet er presis gjenkjenning av betydningen, ikke ' +
+      'gjetning ut fra enkeltord. Spørsmålene kommer i sett på omtrent 25.'
   },
 
   // ── Nivå B2 topics (Plus only) — see ai-docs/implementation/b2-grammar.md ─────────────────
@@ -2376,26 +2371,6 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
       '• bestemme (seg) for/over\n' +
       '• stemme på\n\n' +
       'Disse står et hakk under de mer avanserte/sjeldnere idiomatiske preposisjonene i `preposisjoner-generelt-c` — høyfrekvente hverdagskollokasjoner snarere enn litterære eller fagspesifikke.'
-  },
-
-  'uttrykk-gjenkjenning-detgaarbra-c': {
-    id: 'uttrykk-gjenkjenning-detgaarbra-c',
-    titleEn: 'Idiom recognition — Det går bra!',
-    titleNb: 'Gjenkjenning av faste uttrykk — Det går bra!',
-    explanationEn:
-      'Recognizing what a fixed idiom or ordtak actually means and matching it to the correct ' +
-      'paraphrase — the same skill as `uttrykk-gjenkjenning-c-1/2/3`, drawn from a different, ' +
-      'smaller idiom set. Norwegian idioms rarely translate literally, so the goal is precise ' +
-      'recognition of the intended meaning, not guessing from individual words: «å få kalde ' +
-      'føtter» means getting nervous about a decision, not literally cold feet; «ikke selge ' +
-      'skinnet før bjørnen er skutt» means not promising something before it is certain.',
-    explanationNb:
-      'Å kjenne igjen hva et fast uttrykk eller ordtak faktisk betyr og matche det med riktig ' +
-      'omskriving — samme ferdighet som `uttrykk-gjenkjenning-c-1/2/3`, hentet fra et annet, ' +
-      'mindre uttrykkssett. Norske uttrykk kan sjelden oversettes direkte, så målet er presis ' +
-      'gjenkjenning av den tiltenkte betydningen, ikke gjetning ut fra enkeltord.\n\n' +
-      '• **«å få kalde føtter»** — betyr å bli nervøs for en beslutning, ikke bokstavelig kalde føtter\n' +
-      '• **«ikke selge skinnet før bjørnen er skutt»** — betyr å ikke love noe før man er sikker.'
   },
 
   'transitiv-intransitiv-verb': {

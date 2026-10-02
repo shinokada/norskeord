@@ -164,7 +164,8 @@ export type GrammarTopic =
   | 'adj-definite' // den/det/de + weak adjective form
   | 'adj-comparison' // comparative and superlative forms
   | 'sterke-verb' // strong verb preteritum and past participle forms
-  | 'helsetninger' // main clause structure: declarative, questions, ikke, det-subject
+  | 'fortellende-setninger' // statements: V2 word order, fronted adverbials
+  | 'sporresetninger' // questions: yes/no inversion, question words
   | 'preposisjoner-tid' // time prepositions: i, om, for–siden, på, til
   | 'preposisjoner-sted' // place & relation prepositions: i/på, geography, hos/ved/til/fra, av/fra, compounds
   // Nivå A2 topics — see ai-docs/implementation/a2-quiz-and-grammar.md
@@ -235,9 +236,7 @@ export type GrammarTopic =
   | 'jo-desto-komparativ' // jo + comparative … desto/jo + comparative correlative
   | 'preposisjoner-kroppsdel-uttrykk' // body-part idiom prepositions (hår, nakke, hals, øre)
   | 'preposisjoner-generelt-c' // general idiomatic preposition collocations
-  | 'uttrykk-gjenkjenning-c-1' // idiom recognition, part 1 (items 83–89)
-  | 'uttrykk-gjenkjenning-c-2' // idiom recognition, part 2 (items 90–96)
-  | 'uttrykk-gjenkjenning-c-3' // idiom recognition, part 3 (items 97–103)
+  | 'uttrykk' // idiom recognition, practised in sets of ~25 (merged from uttrykk-gjenkjenning-*)
   | 'adj-boying-c' // adjective comparison (incl. irregular -en stems) + weak/definite agreement, C level
   // Nivå B2 topics (Plus only) — see ai-docs/implementation/b2-grammar.md
   | 'substantivert-adjektiv' // adjective standing alone as a noun: de unge, de fattige, den ansatte
@@ -268,7 +267,6 @@ export type GrammarTopic =
   // Nivå B2/C topics — Det går bra! (see ai-docs/implementation/b2-c-grammar.md)
   | 'nyanser-uttrykk' // near-synonym/nuance discrimination across word classes (seriøs/alvorlig, tid/time/gang, ryke, såpass)
   | 'preposisjoner-uttrykk-b2' // idiomatic/collocational B2 preposition choices (ta ansvar for, ha inntrykk av, forberedt på)
-  | 'uttrykk-gjenkjenning-detgaarbra-c' // idiom recognition — idiomatiske-uttrykk.md ordtak/faste uttrykk
   // Nivå B2 topic — "På Nivå" arbeidsbok (see ai-docs/implementation/b2-grammar-pa-niva-arbeidsbok.md)
   | 'determinativ-forsterkere' // emphasizer determinatives: egen/eget/egne, selv/selve, eneste
   | 'adverb-gradboying' // adverb comparison: regular -ere/-est (sakte/fort/ofte) + irregular gjerne→heller→helst
@@ -315,4 +313,5 @@ export interface GrammarQuestion {
   alternates?: string[]; // other accepted forms
   hint?: string; // optional nudge shown after a wrong attempt
   plusOnly?: boolean; // gate advanced questions behind Plus
+  set?: string; // optional practice-set label (e.g. 'uttrykk-3'); used by topics offered in sets
 }

@@ -16,10 +16,10 @@
 //   - `entry` is the recommended entry level taken from the reference's
 //     level markers. Gating and practice still use each question's `cefr`.
 //
-// NOTE (Phase 1b): `helsetninger` and the four `uttrykk-gjenkjenning-*`
-// topics are listed under their current ids. Phase 1b splits/merges them
-// and updates this file, the GrammarTopic union and FREE_GRAMMAR_TOPICS in
-// one change.
+// Phase 1b (done): `helsetninger` was split into `fortellende-setninger` (2.1) and
+// `sporresetninger` (2.2), and the four `uttrykk-gjenkjenning-*` topics were merged
+// into `uttrykk` (20.1). The GrammarTopic union and FREE_GRAMMAR_TOPICS were updated
+// in the same change.
 
 import type { GrammarTopic } from '$lib/types';
 
@@ -82,10 +82,9 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
         s('1.6', 'Mer om predikativ', 'More on predicatives', 'B2', ['predikativ-agreement'])
       ]),
       ch(2, 'helsetninger', 'Helsetninger', 'Main clauses', [
-        s('2.1', 'Fortellende setninger', 'Statements'),
-        s('2.2', 'Spørresetninger', 'Questions'),
+        s('2.1', 'Fortellende setninger', 'Statements', 'base', ['fortellende-setninger']),
+        s('2.2', 'Spørresetninger', 'Questions', 'base', ['sporresetninger']),
         s('2.3', 'Ordstillingen i helsetninger', 'Word order in main clauses', 'base', [
-          'helsetninger',
           'adverbial-fronting',
           'det-er-ikke',
           'ikke-placement',
@@ -331,12 +330,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
         ])
       ]),
       ch(20, 'uttrykk-og-idiomer', 'Uttrykk og idiomer', 'Idioms and expressions', [
-        s('20.1', 'Gjenkjenne faste uttrykk', 'Recognising fixed expressions', 'base', [
-          'uttrykk-gjenkjenning-c-1',
-          'uttrykk-gjenkjenning-c-2',
-          'uttrykk-gjenkjenning-c-3',
-          'uttrykk-gjenkjenning-detgaarbra-c'
-        ]),
+        s('20.1', 'Gjenkjenne faste uttrykk', 'Recognising fixed expressions', 'base', ['uttrykk']),
         s('20.2', 'Substantivformer i uttrykk', 'Noun forms in expressions', 'base', [
           'substantiv-uttrykk-c'
         ])
@@ -369,7 +363,6 @@ export const ALSO_IN: Partial<Record<GrammarTopic, string[]>> = {
   'for-a-fordi': ['4.3'],
   'for-sa-arsak-folge': ['16.1'],
   'futurum-referert': ['11.14'],
-  helsetninger: ['2.1', '2.2'],
   'hvis-om-betingelse': ['4.3', '17.5', '17.12'],
   'hypotetiske-betingelsessetninger': ['11.16'],
   'ikke-placement': ['12.7'],

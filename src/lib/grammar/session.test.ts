@@ -177,7 +177,7 @@ describe('gradeGrammarAnswer', () => {
   it('grades multiple-choice by matching the tapped option text against answer', () => {
     const q = makeQuestion({
       type: 'multiple-choice',
-      topic: 'uttrykk-gjenkjenning-c-1',
+      topic: 'uttrykk',
       prompt: 'Hun har fått kalde føtter før brøllopet.',
       options: [
         'Hun nøler med å gifte seg.',

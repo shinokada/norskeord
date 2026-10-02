@@ -454,7 +454,10 @@ export const FREE_GRAMMAR_TOPICS: Partial<
   'adj-agreement': ['A1'],
   'noun-possessives': ['A1'],
   'preposisjoner-tid': ['A1'],
-  helsetninger: ['A1'],
+  // helsetninger was split in Phase 1b (ai-docs/implementation/grammar-update.md): its
+  // A1 questions keep their free access in the two new topics (and ikke-placement below).
+  'fortellende-setninger': ['A1'],
+  sporresetninger: ['A1'],
   // Nivå A1 topics, pt. 2 — see ai-docs/implementation/a1-update.md Phase 4.
   'klokka-tid': ['A1'],
   'preposisjoner-sted': ['A1'],
@@ -469,7 +472,9 @@ export const FREE_GRAMMAR_TOPICS: Partial<
   // entries here — every B2/C question is individually plusOnly regardless
   // of this map, so adding entries for them would be a no-op; see
   // gating-rules.md.
-  'ikke-placement': ['A2'],
+  // A1 added in Phase 1b: two A1 "ikke" questions moved here from helsetninger and must
+  // stay free. A2 remains the legacy free sample (see free-policy.test.ts).
+  'ikke-placement': ['A1', 'A2'],
   'adj-comparison': ['A2'],
   'ordfamilie-avledning': ['B1'],
   'bade-og-verken-eller': ['B1']
