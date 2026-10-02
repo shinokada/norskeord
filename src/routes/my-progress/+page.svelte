@@ -24,7 +24,10 @@
     grammarTopicStatsForLevel,
     progressBucket
   } from '$lib/stats';
+  import { buildGrammarProgress } from '$lib/grammar/progress';
   import LevelStatRows from '$lib/components/LevelStatRows.svelte';
+  import ContentTypeSummary from '$lib/components/ContentTypeSummary.svelte';
+  import ProgressHubCard from '$lib/components/ProgressHubCard.svelte';
   import ActivityChart from '$lib/components/ActivityChart.svelte';
   import CollapsibleSection from '$lib/components/CollapsibleSection.svelte';
   import DueBadge from '$lib/components/DueBadge.svelte';
@@ -61,8 +64,10 @@
 
   // ── Grammar totals ─────────────────────────────────────────────────────────
   const isNb = $derived(localeStore.current === 'nb');
-  const grammarCards = $derived(Object.values(grammarMap));
-  const grammarSeen = $derived(grammarCards.length);
+  // Grammar is rolled up through grammar/progress.ts, which resolves every
+  // card's topic and level live from its id (not the stored snapshot).
+  const grammarProgress = $derived(buildGrammarProgress(grammarMap));
+  const grammarSeen = $derived(grammarProgress.overall.seen);
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
 
@@ -179,24 +184,27 @@
   // in stats.ts).
   const uttrykkLevelStats = $derived<LevelStat[]>(buildLevelStats(uttrykkResolvedCards, levels));
 
-  // Matches /review's "Both" scope exactly (vocab+uttrykk only) — grammar
-  // has its own review flow at /review/grammar and its own due count in the
-  // Grammar section below, so it's deliberately excluded here rather than
-  // counted in a banner that links to a session that can't include it. Same
-  // treatment as the per-level "Study due at {level}" badge just below,
-  // which already did this. See permanent-structural-fix.md's "Known bugs"
-  // section for the bug this fixes.
-  const totalDueToday = $derived(vocabDue + uttrykkDue);
+  const vocabMastered = $derived(vocabCards.filter((c) => progressBucket(c) === 'review').length);
+  const uttrykkMastered = $derived(
+    uttrykkCards.filter((c) => progressBucket(c) === 'review').length
+  );
+  const grammarDue = $derived(grammarProgress.overall.due);
 
-  // Combined vocab+uttrykk due per level, for the level-tab badges
-  // (due-number-update.md). Sums to totalDueToday since every resolved card
-  // has exactly one live level. Grammar is excluded, same as the total.
+  // Sum of all three content types. Each type has its own "Study due" button
+  // on its hub card (vocab/uttrykk -> /review?type=..., grammar ->
+  // /review/grammar), so this total is a plain number with no link of its own
+  // (grammar-update.md Phase 4; it used to exclude grammar and link /review).
+  const totalDueToday = $derived(vocabDue + uttrykkDue + grammarDue);
+
+  // Combined due per level, for the level-tab badges (due-number-update.md).
+  // Sums to totalDueToday since every resolved card has exactly one live level.
   const dueByLevel = $derived<Record<CEFRLevel, number>>(
     Object.fromEntries(
       levels.map((lvl) => [
         lvl,
         (vocabLevelStats.find((s) => s.level === lvl)?.due ?? 0) +
-          (uttrykkLevelStats.find((s) => s.level === lvl)?.due ?? 0)
+          (uttrykkLevelStats.find((s) => s.level === lvl)?.due ?? 0) +
+          grammarProgress.byLevel[lvl].due
       ])
     ) as Record<CEFRLevel, number>
   );
@@ -271,15 +279,11 @@
     uttrykkLevelStats.find((ls) => ls.level === activeLevel)!
   );
 
-  const grammarSeenForActiveLevel = $derived(
-    grammarCards.filter((c) => c.level === activeLevel).length
-  );
-  const grammarDueForActiveLevel = $derived(
-    computeDueToday(grammarCards.filter((c) => c.level === activeLevel))
-  );
-  const grammarMasteredForActiveLevel = $derived(
-    grammarCards.filter((c) => c.level === activeLevel && progressBucket(c) === 'review').length
-  );
+  // Live-resolved per-level grammar numbers (grammar/progress.ts), not the
+  // stored CardProgress.level snapshot.
+  const grammarSeenForActiveLevel = $derived(grammarProgress.byLevel[activeLevel].seen);
+  const grammarDueForActiveLevel = $derived(grammarProgress.byLevel[activeLevel].due);
+  const grammarMasteredForActiveLevel = $derived(grammarProgress.byLevel[activeLevel].review);
 
   // ── CEFR estimate ─────────────────────────────────────────────────────────────
   const categoryCountByLevel: Record<CEFRLevel, number> = {
@@ -541,6 +545,47 @@
       </a>
     </div>
   {:else}
+    <!-- Hub: three equal cards, each with its own Study-due button
+         (grammar-update.md Phase 4; replaces the 4-stat strip and the single
+         /review banner, which could not cover grammar's separate flow). -->
+    <div class="mb-6">
+      <p class="mb-3 text-sm text-gray-600 dark:text-gray-300">
+        {m.stats_due_today()}:
+        <span
+          class="font-semibold {totalDueToday > 0
+            ? 'text-red-600 dark:text-red-400'
+            : 'text-gray-500 dark:text-gray-400'}">{totalDueToday}</span
+        >
+      </p>
+      <div class="grid gap-4 sm:grid-cols-3">
+        <ProgressHubCard
+          icon="📖"
+          title={m.stats_vocabulary_heading()}
+          seen={vocabSeen}
+          mastered={vocabMastered}
+          due={vocabDue}
+          reviewHref="/review?type=vocab"
+        />
+        <ProgressHubCard
+          icon="💬"
+          title={m.stats_uttrykk_heading()}
+          seen={uttrykkSeen}
+          mastered={uttrykkMastered}
+          due={uttrykkDue}
+          reviewHref="/review?type=uttrykk"
+        />
+        <!-- Links to /grammar until /my-progress/grammar exists (Phase 7). -->
+        <ProgressHubCard
+          icon="📐"
+          title={m.stats_grammar_heading()}
+          href="/grammar"
+          seen={grammarSeen}
+          mastered={grammarProgress.overall.review}
+          due={grammarDue}
+          reviewHref="/review/grammar"
+        />
+      </div>
+    </div>
     <!-- ── CEFR Estimate (vocab-based) ───────────────────────────────────────── -->
     {#if totalSeen > 0}
       <div
@@ -562,31 +607,6 @@
       </p>
       <ActivityChart cells={activityCells} {streak} loading={activityLoading} {isPlus} />
     </div>
-
-    <!-- ── Summary strip ─────────────────────────────────────────────────────── -->
-    <div class="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
-      {#each [{ label: m.stats_vocabulary_heading(), value: vocabSeen, color: 'text-gray-800 dark:text-white' }, { label: m.stats_uttrykk_heading(), value: uttrykkSeen, color: 'text-gray-800 dark:text-white' }, { label: m.stats_grammar_practiced(), value: grammarSeen, color: 'text-gray-800 dark:text-white' }, { label: m.stats_due_today(), value: totalDueToday, color: 'text-red-600 dark:text-red-400' }] as stat (stat.label)}
-        <div
-          class="rounded-xl border border-gray-200 bg-white p-4 text-center shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
-        >
-          <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
-          <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-300">{stat.label}</p>
-        </div>
-      {/each}
-    </div>
-
-    <!-- ── Study due (Step 4a, ai-docs/implementation/due-only.md) ────────────── -->
-    {#if totalDueToday > 0}
-      <a
-        href="/review"
-        class="mb-6 flex items-center justify-between rounded-xl border border-red-200 bg-red-50 px-5 py-4 text-red-700 transition hover:bg-red-100 dark:border-red-800 dark:bg-red-900/20 dark:text-red-300 dark:hover:bg-red-900/30"
-      >
-        <span class="font-semibold">📌 {m.stats_study_due_now()}</span>
-        <span class="rounded-full bg-red-600 px-2.5 py-1 text-sm font-bold text-white"
-          >{totalDueToday}</span
-        >
-      </a>
-    {/if}
 
     <!-- ── Level tabs ─────────────────────────────────────────────────────────── -->
     <div
@@ -635,73 +655,12 @@
         dueCount={activeVocabLevelStat.due}
       >
         {#snippet summary()}
-          <div
-            class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
-          >
-            <div class="mb-2 flex items-center justify-between">
-              <span class="font-semibold {levelTextColors[activeLevel]}">{activeLevel}</span>
-              <span class="text-sm text-gray-500 dark:text-gray-300">
-                {activeVocabLevelStat.seen}
-                {m.stats_seen()} · {activeVocabLevelStat.due}
-                {m.stats_due_today_short()}
-              </span>
-            </div>
-            <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
-              {#if activeVocabLevelStat.seen > 0}
-                <div class="flex h-full">
-                  {#if activeVocabLevelStat.learning > 0}
-                    <div
-                      class="bg-yellow-400"
-                      style="width: {(activeVocabLevelStat.learning / activeVocabLevelStat.seen) *
-                        100}%"
-                      title={m.stats_tooltip_learning({ count: activeVocabLevelStat.learning })}
-                    ></div>
-                  {/if}
-                  {#if activeVocabLevelStat.review > 0}
-                    <div
-                      class={levelColors[activeLevel]}
-                      style="width: {(activeVocabLevelStat.review / activeVocabLevelStat.seen) *
-                        100}%"
-                      title={m.stats_tooltip_review({ count: activeVocabLevelStat.review })}
-                    ></div>
-                  {/if}
-                  {#if activeVocabLevelStat.relearning > 0}
-                    <div
-                      class="bg-orange-400"
-                      style="width: {(activeVocabLevelStat.relearning / activeVocabLevelStat.seen) *
-                        100}%"
-                      title={m.stats_tooltip_relearning({
-                        count: activeVocabLevelStat.relearning
-                      })}
-                    ></div>
-                  {/if}
-                </div>
-              {/if}
-            </div>
-            {#if activeVocabLevelStat.seen === 0}
-              <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-                {m.stats_no_cards_this_level()}
-              </p>
-            {:else}
-              <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
-                <span class="flex items-center gap-1">
-                  <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
-                  {m.stats_learning()}
-                  {activeVocabLevelStat.learning}
-                </span>
-                <span class="flex items-center gap-1">
-                  <span class="inline-block h-2 w-2 rounded-full {levelColors[activeLevel]}"></span>
-                  {m.stats_review()}
-                  {activeVocabLevelStat.review}
-                </span>
-                <span class="flex items-center gap-1">
-                  <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
-                  {m.stats_relearning()}
-                  {activeVocabLevelStat.relearning}
-                </span>
-              </div>
-            {/if}
-          </div>
+          <ContentTypeSummary
+            stat={activeVocabLevelStat}
+            level={activeLevel}
+            levelColor={levelColors[activeLevel]}
+            levelTextColor={levelTextColors[activeLevel]}
+          />
         {/snippet}
         <div class="mb-8">
           <LevelStatRows
@@ -717,70 +676,12 @@
         <h2 class="!mb-0">📖 {m.stats_vocabulary_heading()}</h2>
         <DueBadge count={activeVocabLevelStat.due} />
       </div>
-      <div
-        class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
-      >
-        <div class="mb-2 flex items-center justify-between">
-          <span class="font-semibold {levelTextColors[activeLevel]}">{activeLevel}</span>
-          <span class="text-sm text-gray-500 dark:text-gray-300">
-            {activeVocabLevelStat.seen}
-            {m.stats_seen()} · {activeVocabLevelStat.due}
-            {m.stats_due_today_short()}
-          </span>
-        </div>
-        <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
-          {#if activeVocabLevelStat.seen > 0}
-            <div class="flex h-full">
-              {#if activeVocabLevelStat.learning > 0}
-                <div
-                  class="bg-yellow-400"
-                  style="width: {(activeVocabLevelStat.learning / activeVocabLevelStat.seen) *
-                    100}%"
-                  title={m.stats_tooltip_learning({ count: activeVocabLevelStat.learning })}
-                ></div>
-              {/if}
-              {#if activeVocabLevelStat.review > 0}
-                <div
-                  class={levelColors[activeLevel]}
-                  style="width: {(activeVocabLevelStat.review / activeVocabLevelStat.seen) * 100}%"
-                  title={m.stats_tooltip_review({ count: activeVocabLevelStat.review })}
-                ></div>
-              {/if}
-              {#if activeVocabLevelStat.relearning > 0}
-                <div
-                  class="bg-orange-400"
-                  style="width: {(activeVocabLevelStat.relearning / activeVocabLevelStat.seen) *
-                    100}%"
-                  title={m.stats_tooltip_relearning({ count: activeVocabLevelStat.relearning })}
-                ></div>
-              {/if}
-            </div>
-          {/if}
-        </div>
-        {#if activeVocabLevelStat.seen === 0}
-          <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-            {m.stats_no_cards_this_level()}
-          </p>
-        {:else}
-          <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
-            <span class="flex items-center gap-1">
-              <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
-              {m.stats_learning()}
-              {activeVocabLevelStat.learning}
-            </span>
-            <span class="flex items-center gap-1">
-              <span class="inline-block h-2 w-2 rounded-full {levelColors[activeLevel]}"></span>
-              {m.stats_review()}
-              {activeVocabLevelStat.review}
-            </span>
-            <span class="flex items-center gap-1">
-              <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
-              {m.stats_relearning()}
-              {activeVocabLevelStat.relearning}
-            </span>
-          </div>
-        {/if}
-      </div>
+      <ContentTypeSummary
+        stat={activeVocabLevelStat}
+        level={activeLevel}
+        levelColor={levelColors[activeLevel]}
+        levelTextColor={levelTextColors[activeLevel]}
+      />
       <div
         class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
       >
@@ -810,75 +711,12 @@
         dueCount={activeUttrykkLevelStat.due}
       >
         {#snippet summary()}
-          <div
-            class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
-          >
-            <div class="mb-2 flex items-center justify-between">
-              <span class="font-semibold {levelTextColors[activeLevel]}">{activeLevel}</span>
-              <span class="text-sm text-gray-500 dark:text-gray-300">
-                {activeUttrykkLevelStat.seen}
-                {m.stats_seen()} · {activeUttrykkLevelStat.due}
-                {m.stats_due_today_short()}
-              </span>
-            </div>
-            <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
-              {#if activeUttrykkLevelStat.seen > 0}
-                <div class="flex h-full">
-                  {#if activeUttrykkLevelStat.learning > 0}
-                    <div
-                      class="bg-yellow-400"
-                      style="width: {(activeUttrykkLevelStat.learning /
-                        activeUttrykkLevelStat.seen) *
-                        100}%"
-                      title={m.stats_tooltip_learning({ count: activeUttrykkLevelStat.learning })}
-                    ></div>
-                  {/if}
-                  {#if activeUttrykkLevelStat.review > 0}
-                    <div
-                      class={levelColors[activeLevel]}
-                      style="width: {(activeUttrykkLevelStat.review / activeUttrykkLevelStat.seen) *
-                        100}%"
-                      title={m.stats_tooltip_review({ count: activeUttrykkLevelStat.review })}
-                    ></div>
-                  {/if}
-                  {#if activeUttrykkLevelStat.relearning > 0}
-                    <div
-                      class="bg-orange-400"
-                      style="width: {(activeUttrykkLevelStat.relearning /
-                        activeUttrykkLevelStat.seen) *
-                        100}%"
-                      title={m.stats_tooltip_relearning({
-                        count: activeUttrykkLevelStat.relearning
-                      })}
-                    ></div>
-                  {/if}
-                </div>
-              {/if}
-            </div>
-            {#if activeUttrykkLevelStat.seen === 0}
-              <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-                {m.stats_no_cards_this_level()}
-              </p>
-            {:else}
-              <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
-                <span class="flex items-center gap-1">
-                  <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
-                  {m.stats_learning()}
-                  {activeUttrykkLevelStat.learning}
-                </span>
-                <span class="flex items-center gap-1">
-                  <span class="inline-block h-2 w-2 rounded-full {levelColors[activeLevel]}"></span>
-                  {m.stats_review()}
-                  {activeUttrykkLevelStat.review}
-                </span>
-                <span class="flex items-center gap-1">
-                  <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
-                  {m.stats_relearning()}
-                  {activeUttrykkLevelStat.relearning}
-                </span>
-              </div>
-            {/if}
-          </div>
+          <ContentTypeSummary
+            stat={activeUttrykkLevelStat}
+            level={activeLevel}
+            levelColor={levelColors[activeLevel]}
+            levelTextColor={levelTextColors[activeLevel]}
+          />
         {/snippet}
         <div class="mb-8">
           <LevelStatRows
@@ -894,71 +732,12 @@
         <h2 class="!mb-0">💬 {m.stats_uttrykk_heading()}</h2>
         <DueBadge count={activeUttrykkLevelStat.due} />
       </div>
-      <div
-        class="mb-4 rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
-      >
-        <div class="mb-2 flex items-center justify-between">
-          <span class="font-semibold {levelTextColors[activeLevel]}">{activeLevel}</span>
-          <span class="text-sm text-gray-500 dark:text-gray-300">
-            {activeUttrykkLevelStat.seen}
-            {m.stats_seen()} · {activeUttrykkLevelStat.due}
-            {m.stats_due_today_short()}
-          </span>
-        </div>
-        <div class="h-3 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40">
-          {#if activeUttrykkLevelStat.seen > 0}
-            <div class="flex h-full">
-              {#if activeUttrykkLevelStat.learning > 0}
-                <div
-                  class="bg-yellow-400"
-                  style="width: {(activeUttrykkLevelStat.learning / activeUttrykkLevelStat.seen) *
-                    100}%"
-                  title={m.stats_tooltip_learning({ count: activeUttrykkLevelStat.learning })}
-                ></div>
-              {/if}
-              {#if activeUttrykkLevelStat.review > 0}
-                <div
-                  class={levelColors[activeLevel]}
-                  style="width: {(activeUttrykkLevelStat.review / activeUttrykkLevelStat.seen) *
-                    100}%"
-                  title={m.stats_tooltip_review({ count: activeUttrykkLevelStat.review })}
-                ></div>
-              {/if}
-              {#if activeUttrykkLevelStat.relearning > 0}
-                <div
-                  class="bg-orange-400"
-                  style="width: {(activeUttrykkLevelStat.relearning / activeUttrykkLevelStat.seen) *
-                    100}%"
-                  title={m.stats_tooltip_relearning({ count: activeUttrykkLevelStat.relearning })}
-                ></div>
-              {/if}
-            </div>
-          {/if}
-        </div>
-        {#if activeUttrykkLevelStat.seen === 0}
-          <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-            {m.stats_no_cards_this_level()}
-          </p>
-        {:else}
-          <div class="mt-1.5 flex gap-4 text-xs text-gray-500 dark:text-gray-300">
-            <span class="flex items-center gap-1">
-              <span class="inline-block h-2 w-2 rounded-full bg-yellow-400"></span>
-              {m.stats_learning()}
-              {activeUttrykkLevelStat.learning}
-            </span>
-            <span class="flex items-center gap-1">
-              <span class="inline-block h-2 w-2 rounded-full {levelColors[activeLevel]}"></span>
-              {m.stats_review()}
-              {activeUttrykkLevelStat.review}
-            </span>
-            <span class="flex items-center gap-1">
-              <span class="inline-block h-2 w-2 rounded-full bg-orange-400"></span>
-              {m.stats_relearning()}
-              {activeUttrykkLevelStat.relearning}
-            </span>
-          </div>
-        {/if}
-      </div>
+      <ContentTypeSummary
+        stat={activeUttrykkLevelStat}
+        level={activeLevel}
+        levelColor={levelColors[activeLevel]}
+        levelTextColor={levelTextColors[activeLevel]}
+      />
       <div
         class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
       >
