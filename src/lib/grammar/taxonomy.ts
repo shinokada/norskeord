@@ -72,6 +72,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
     chapters: [
       ch(1, 'setningsledd', 'Setningsledd', 'Sentence elements', [
         s('1.1', 'Verbal og subjekt', 'Verb and subject', 'base', [
+          'subjekt-og-verbal',
           'sammensatt-verbtid',
           'setningsledd-identifikasjon'
         ]),

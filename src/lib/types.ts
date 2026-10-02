@@ -271,6 +271,7 @@ export type GrammarTopic =
   | 'determinativ-forsterkere' // emphasizer determinatives: egen/eget/egne, selv/selve, eneste
   | 'adverb-gradboying' // adverb comparison: regular -ere/-est (sakte/fort/ofte) + irregular gjerne→heller→helst
   // Tier 1 content — see ai-docs/implementation/grammar-content-tier1.md
+  | 'subjekt-og-verbal' // subject and verbal: hvem/hva + verb test, verbal (one or more verbs), S-V order, inversion in questions/after a front element, subjekt vs. objekt
   | 'objekt' // direct object: hva/hvem test, place after the verb, objekt vs. adverbial/predikativ, objekt in the front field
   | 'predikativ' // predicative: describes the subject after være/bli/hete/virke/se ut, noun or adjective, position, predikativ vs. objekt/adverbial
   | 'adverbial' // adverbial: hvor/når/hvordan, position (last or first), adverbial vs. objekt/predikativ

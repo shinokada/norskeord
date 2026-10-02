@@ -93,6 +93,42 @@ export const SETNINGSLEDD_RULES: Record<string, GrammarRule> = {
       'rekkefølgen).'
   },
 
+  'subjekt-og-verbal': {
+    id: 'subjekt-og-verbal',
+    titleEn: 'Subject and verbal',
+    titleNb: 'Subjekt og verbal',
+    explanationEn:
+      '**Subjekt (subject):** the person or thing that does something, or that the sentence is ' +
+      'about. Find the subject by asking «hvem» or «hva» + the verb: «**Maria** bor i Oslo.» ' +
+      '(Hvem bor i Oslo? Maria.) «**Bilen** står der.» (Hva står der? Bilen.)\n\n' +
+      '**Verbal:** the verb or verbs in the sentence. The verbal says what the subject does, or ' +
+      'what happens to the subject: «Maria **bor** i Oslo.» The verbal can consist of several ' +
+      'words: «Maria **kan spise** fisk.»\n\n' +
+      '**Position in a normal statement:** the subject comes first, and the verbal comes right ' +
+      'after it: subject – verbal. «Jeg **spiser** frokost.» The first verb of the verbal is in ' +
+      'position 2: «Jeg **kan** spise fisk.»\n\n' +
+      '**The subject after the verbal:** in a question the verbal comes first and the subject ' +
+      'comes after: «Spiser **du** frokost?» The same happens when something else comes first ' +
+      'in the sentence: «I dag spiser **jeg** ute.»\n\n' +
+      '**A subject is not an object:** the subject does the action: «**Læreren** hjelper Per.» ' +
+      'The object is the person or thing the action is directed at: «Læreren hjelper **Per**.»',
+    explanationNb:
+      '**Subjekt:** Den eller det som gjør noe, eller som setningen handler om. Finn subjektet ved ' +
+      'å spørre «hvem» eller «hva» + verbet: «**Maria** bor i Oslo.» (Hvem bor i Oslo? ' +
+      'Maria.) «**Bilen** står der.» (Hva står der? Bilen.)\n\n' +
+      '**Verbal:** Verbet eller verbene i setningen. Verbalet sier hva subjektet gjør, eller hva ' +
+      'som skjer med subjektet: «Maria **bor** i Oslo.» Verbalet kan bestå av flere ord: ' +
+      '«Maria **kan spise** fisk.»\n\n' +
+      '**Plass i en vanlig påstand:** Subjektet står først, og verbalet kommer rett etter: ' +
+      'subjekt – verbal. «Jeg **spiser** frokost.» Det første verbet i verbalet står på plass 2: ' +
+      '«Jeg **kan** spise fisk.»\n\n' +
+      '**Subjektet etter verbalet:** I et spørsmål kommer verbalet først, og subjektet kommer ' +
+      'etter: «Spiser **du** frokost?» Det samme skjer når noe annet står først i setningen: ' +
+      '«I dag spiser **jeg** ute.»\n\n' +
+      '**Subjekt er ikke objekt:** Subjektet gjør handlingen: «**Læreren** hjelper Per.» ' +
+      'Objektet er den eller det handlingen er rettet mot: «Læreren hjelper **Per**.»'
+  },
+
   objekt: {
     id: 'objekt',
     titleEn: 'The object',
