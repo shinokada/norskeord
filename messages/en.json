@@ -900,5 +900,14 @@
   "stats_due_count": "{count} due",
   "stats_level_tab_due_aria": "{level}, {count} due",
   "stats_due_review_title": "Review {count} due now",
-  "stats_study_due_now": "Study due now"
+  "stats_study_due_now": "Study due now",
+  "grammar_map_continue": "Continue: {topic}",
+  "grammar_map_part": "Part {no}",
+  "grammar_map_chapter": "Chapter {no}",
+  "grammar_map_all_chapters": "← All chapters",
+  "grammar_map_progress": "{seen} of {total} practised",
+  "grammar_map_free": "Free",
+  "grammar_map_free_levels": "Free: {levels}",
+  "grammar_map_practise_chapter": "Practise this chapter",
+  "grammar_map_back_to_chapter": "← Back to chapter"
 }

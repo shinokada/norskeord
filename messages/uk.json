@@ -900,5 +900,14 @@
   "stats_due_count": "{count} до повторення",
   "stats_level_tab_due_aria": "{level}, {count} до повторення",
   "stats_due_review_title": "Повторити зараз: {count}",
-  "stats_study_due_now": "Повторити зараз"
+  "stats_study_due_now": "Повторити зараз",
+  "grammar_map_continue": "Продовжити: {topic}",
+  "grammar_map_part": "Частина {no}",
+  "grammar_map_chapter": "Розділ {no}",
+  "grammar_map_all_chapters": "← Усі розділи",
+  "grammar_map_progress": "Опрацьовано {seen} із {total}",
+  "grammar_map_free": "Безкоштовно",
+  "grammar_map_free_levels": "Безкоштовно: {levels}",
+  "grammar_map_practise_chapter": "Практикувати цей розділ",
+  "grammar_map_back_to_chapter": "← Назад до розділу"
 }

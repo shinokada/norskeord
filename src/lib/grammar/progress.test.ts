@@ -11,6 +11,7 @@ import {
   weakSpots,
   isLevelReached,
   estimateGrammarLevel,
+  lastStudiedTopic,
   LEVEL_MASTERED_SHARE,
   LEVEL_MIN_SEEN,
   type LevelProgress,
@@ -153,6 +154,46 @@ describe('buildGrammarProgress', () => {
     expect(p.byLevel.A1.due).toBe(1);
     expect(p.byLevel.C.seen).toBe(0);
     expect(p.byLevel.A1.total).toBe(questions.filter((q) => q.cefr === 'A1').length);
+  });
+});
+
+describe('lastStudiedTopic', () => {
+  const seenAgo = (ms: number): CardProgress => ({
+    ...card(),
+    lastSeen: new Date(Date.now() - ms).toISOString()
+  });
+
+  it('returns the topic of the most recently seen card', () => {
+    const [older] = qsOf('ikke-placement', 1);
+    const [newer] = qsOf('sporresetninger', 1);
+    const map = {
+      [older.id]: seenAgo(3 * DAY),
+      [newer.id]: seenAgo(1 * DAY)
+    };
+    expect(lastStudiedTopic(map)).toBe('sporresetninger');
+  });
+
+  it('resolves the live topic, ignoring the stored category', () => {
+    const [q] = qsOf('sporresetninger', 1);
+    const map = {
+      [q.id]: { ...seenAgo(DAY), category: 'helsetninger' } as unknown as CardProgress
+    };
+    expect(lastStudiedTopic(map)).toBe('sporresetninger');
+  });
+
+  it('skips ids that no longer exist and unparseable dates', () => {
+    const [q] = qsOf('ikke-placement', 1);
+    const map = {
+      'gone-question-id': seenAgo(0),
+      [q.id]: seenAgo(5 * DAY)
+    };
+    expect(lastStudiedTopic(map)).toBe('ikke-placement');
+    const bad = { [q.id]: { ...card(), lastSeen: 'not-a-date' } as CardProgress };
+    expect(lastStudiedTopic(bad)).toBeNull();
+  });
+
+  it('returns null for an empty map', () => {
+    expect(lastStudiedTopic({})).toBeNull();
   });
 });
 

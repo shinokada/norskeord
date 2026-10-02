@@ -900,5 +900,14 @@
   "stats_due_count": "{count} forfaller",
   "stats_level_tab_due_aria": "{level}, {count} forfaller",
   "stats_due_review_title": "Repeter {count} som forfaller nå",
-  "stats_study_due_now": "Studer det som forfaller nå"
+  "stats_study_due_now": "Studer det som forfaller nå",
+  "grammar_map_continue": "Fortsett: {topic}",
+  "grammar_map_part": "Del {no}",
+  "grammar_map_chapter": "Kapittel {no}",
+  "grammar_map_all_chapters": "← Alle kapitler",
+  "grammar_map_progress": "{seen} av {total} øvd",
+  "grammar_map_free": "Gratis",
+  "grammar_map_free_levels": "Gratis: {levels}",
+  "grammar_map_practise_chapter": "Øv på dette kapittelet",
+  "grammar_map_back_to_chapter": "← Tilbake til kapittelet"
 }

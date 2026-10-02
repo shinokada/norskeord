@@ -78,17 +78,22 @@ async function completeGrammarSession(page: Page, maxQuestions = 20) {
 // Grammar index page (/grammar)
 // ===========================================================================
 
-test('grammar index page loads and shows at least one topic card', async ({ page }) => {
+test('grammar index page loads and shows chapter cards in Parts', async ({ page }) => {
   await page.goto('/grammar');
   await expect(page).toHaveURL('/grammar');
-  // At least one topic title card is rendered
-  await expect(page.getByTestId('topic-title').first()).toBeVisible({ timeout: 8000 });
+  // The map is Parts > chapter cards (book order); topics live on chapter pages.
+  await expect(page.getByTestId('chapter-card').first()).toBeVisible({ timeout: 8000 });
+  await expect(page.getByTestId('grammar-part').first()).toBeVisible();
+  await expect(page.getByTestId('chapter-card').first()).toHaveAttribute(
+    'href',
+    /^\/grammar\/chapter\/[\w-]+$/
+  );
 });
 
 test('free user sees Plus upsell on grammar index when locked topics exist', async ({ page }) => {
   await page.goto('/grammar');
-  // Wait for CSR hydration: the free topics grid must be rendered first
-  await expect(page.getByTestId('topic-title').first()).toBeVisible({ timeout: 8000 });
+  // Wait for CSR hydration: the chapter map must be rendered first
+  await expect(page.getByTestId('chapter-card').first()).toBeVisible({ timeout: 8000 });
   // The upsell banner is a <p> tag with text like "7 more topics with Plus"
   await expect(page.getByText(/\d+ more topics with Plus/i)).toBeVisible({ timeout: 5000 });
 });
@@ -168,49 +173,103 @@ test('Plus user can complete a grammar session and see the summary', async ({ pa
 });
 
 // ===========================================================================
-// Segment cards: a topic's free/locked status must not flip with the filter
-// (ai-docs/implementation/grammar-fix.md §7 regression tests)
+// Level chips on the map: a filter (hides non-matching chapters), never a
+// re-sort, and the active level is forwarded into the chapter links
+// (grammar-update.md decision #19)
 // ===========================================================================
 
-test('picker: a topic free only at A1 shows a free card unfiltered but no free card when filtered to a locked level', async ({
+test('level chip hides chapters with no questions at that level and is forwarded into chapter links', async ({
   page
 }) => {
-  // noun-plurals is free at A1 only (FREE_GRAMMAR_TOPICS) and locked at
-  // A2/B1 — it produces two segments: {free, [A1]} and {locked, [A2, B1]}.
-  // Before the segment-card fix, the picker rendered one card per topic and
-  // that card flipped from free to locked depending on the active CEFR
-  // filter. Now each segment is its own fixed-access card, so the free A1
-  // segment must stay a free card unfiltered, and must not appear as a free
-  // card at all once filtered to B1 (only the locked segment matches).
   await page.goto('/grammar');
-  await expect(page.getByTestId('topic-title').first()).toBeVisible({ timeout: 8000 });
+  const cards = page.getByTestId('chapter-card');
+  await expect(cards.first()).toBeVisible({ timeout: 8000 });
+  const all = await cards.count();
 
-  // Unfiltered: the free segment renders as a direct link to the topic. Once
-  // a level pill is active, TopicCard forwards it as ?level= (see
-  // ai-docs/implementation/grammar-ux-update.md Step 2/3), so match on the
-  // path prefix rather than an exact href to cover both the plain link
-  // (unfiltered) and the scoped link (filtered to A1 below).
-  const freeCard = page.locator('a[href^="/grammar/noun-plurals"]');
-  await expect(freeCard).toBeVisible({ timeout: 5000 });
-  await expect(freeCard).toHaveAttribute('href', '/grammar/noun-plurals');
-
-  // Filter to B1 — noun-plurals' B1 segment is locked, so the free card
-  // (direct link) must disappear. It must not reappear as "free" just
-  // because the topic itself has some free content elsewhere (A1).
-  await page.getByRole('button', { name: 'B1', exact: true }).click();
-  await expect(freeCard).toHaveCount(0);
-
-  // The locked segment for noun-plurals should still be shown, but only as
-  // a Plus-gated card (linking to /plus, not straight into the topic).
-  const lockedLinks = page.locator('a[href="/plus?ref=grammar-topics"]');
-  await expect(lockedLinks.first()).toBeVisible({ timeout: 5000 });
-
-  // And filtering back to A1 restores the free card — now scoped with
-  // ?level=A1, since the active pill is forwarded into the link.
-  await page.getByRole('button', { name: 'B1', exact: true }).click(); // deselect
+  // A1: fewer chapters (not every chapter has A1 content), and the global
+  // upsell banner is hidden while a filter is active.
   await page.getByRole('button', { name: 'A1', exact: true }).click();
-  await expect(freeCard).toBeVisible({ timeout: 5000 });
-  await expect(freeCard).toHaveAttribute('href', '/grammar/noun-plurals?level=A1');
+  await expect.poll(() => cards.count()).toBeLessThan(all);
+  await expect(page.getByText(/\d+ more topics with Plus/i)).toHaveCount(0);
+  await expect(cards.first()).toHaveAttribute('href', /\?level=A1$/);
+
+  // Deselecting restores the full map and plain links.
+  await page.getByRole('button', { name: 'A1', exact: true }).click();
+  await expect.poll(() => cards.count()).toBe(all);
+  await expect(cards.first()).toHaveAttribute('href', /^\/grammar\/chapter\/[\w-]+$/);
+});
+
+test('search results are topic rows with a breadcrumb', async ({ page }) => {
+  await page.goto('/grammar');
+  await expect(page.getByTestId('chapter-card').first()).toBeVisible({ timeout: 8000 });
+  await page.getByRole('searchbox', { name: /grammar|grammatikk/i }).fill('ikke');
+  await expect(page.getByTestId('topic-title').first()).toBeVisible({ timeout: 5000 });
+  await expect(page.getByTestId('topic-breadcrumb').first()).toBeVisible();
+  await expect(page.getByTestId('chapter-card')).toHaveCount(0);
+});
+
+// ===========================================================================
+// Chapter page (/grammar/chapter/[slug])
+// ===========================================================================
+
+test('clicking a chapter card opens its chapter page with sections and topics', async ({
+  page
+}) => {
+  await page.goto('/grammar');
+  const first = page.getByTestId('chapter-card').first();
+  await expect(first).toBeVisible({ timeout: 8000 });
+  await first.click();
+  await expect(page).toHaveURL(/\/grammar\/chapter\/[\w-]+$/);
+  await expect(page.getByTestId('chapter-heading')).toBeVisible({ timeout: 8000 });
+  await expect(page.getByTestId('chapter-section').first()).toBeVisible();
+  await expect(page.getByTestId('topic-title').first()).toBeVisible();
+});
+
+test('chapter page: topic links keep the /grammar/[topic] URL', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.goto('/grammar/chapter/helsetninger');
+  await expect(page.getByTestId('topic-title').first()).toBeVisible({ timeout: 8000 });
+  await page.locator('a:has([data-testid="topic-title"])').first().click();
+  await expect(page).toHaveURL(/\/grammar\/(?!chapter\/)[\w-]+$/);
+});
+
+test('free user sees one upsell banner on a chapter with locked topics', async ({ page }) => {
+  // helsetninger: sporresetninger is free at A1 only, so it is a mixed topic.
+  await page.goto('/grammar/chapter/helsetninger');
+  await expect(page.getByTestId('topic-title').first()).toBeVisible({ timeout: 8000 });
+  await expect(page.getByTestId('chapter-upsell')).toHaveCount(1);
+});
+
+test('Plus user sees no upsell banner on a chapter page', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.goto('/grammar/chapter/helsetninger');
+  await expect(page.getByTestId('topic-title').first()).toBeVisible({ timeout: 8000 });
+  await expect(page.getByTestId('chapter-upsell')).toHaveCount(0);
+});
+
+test('chapter page: ?level=A1 shows the scope note and a see-all link', async ({ page }) => {
+  await page.goto('/grammar/chapter/helsetninger?level=A1');
+  await expect(page.getByText(/Showing A1 only/i)).toBeVisible({ timeout: 8000 });
+  // Every A1 topic is free at A1, so there is nothing to upsell.
+  await expect(page.getByTestId('chapter-upsell')).toHaveCount(0);
+  await page.getByRole('link', { name: /see all levels/i }).click();
+  await expect(page).toHaveURL('/grammar/chapter/helsetninger');
+});
+
+test('free user can practise a chapter and gets a mixed-topic session', async ({ page }) => {
+  await page.goto('/grammar/chapter/helsetninger');
+  await page.getByTestId('practise-chapter').click({ timeout: 8000 });
+  await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toBeVisible({
+    timeout: 8000
+  });
+  // Back to the chapter overview.
+  await page.getByRole('button', { name: /back to chapter|tilbake til kapittelet/i }).click();
+  await expect(page.getByTestId('chapter-section').first()).toBeVisible();
+});
+
+test('unknown grammar chapter shows a 404 error', async ({ page }) => {
+  await page.goto('/grammar/chapter/this-chapter-does-not-exist');
+  await expect(page.getByRole('heading', { name: '404', level: 1 })).toBeVisible({ timeout: 8000 });
 });
 
 // ===========================================================================

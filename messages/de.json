@@ -900,5 +900,14 @@
   "stats_due_count": "{count} fällig",
   "stats_level_tab_due_aria": "{level}, {count} fällig",
   "stats_due_review_title": "{count} fällige jetzt wiederholen",
-  "stats_study_due_now": "Jetzt Fälliges lernen"
+  "stats_study_due_now": "Jetzt Fälliges lernen",
+  "grammar_map_continue": "Weiter: {topic}",
+  "grammar_map_part": "Teil {no}",
+  "grammar_map_chapter": "Kapitel {no}",
+  "grammar_map_all_chapters": "← Alle Kapitel",
+  "grammar_map_progress": "{seen} von {total} geübt",
+  "grammar_map_free": "Kostenlos",
+  "grammar_map_free_levels": "Kostenlos: {levels}",
+  "grammar_map_practise_chapter": "Dieses Kapitel üben",
+  "grammar_map_back_to_chapter": "← Zurück zum Kapitel"
 }

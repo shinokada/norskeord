@@ -200,6 +200,26 @@ export function buildGrammarProgress(
   return { parts, byTopic, byLevel, overall: pickCounts(overall) };
 }
 
+// ── Continue (last studied topic) ──────────────────────────────────────────────────────────────
+
+/**
+ * The topic of the most recently reviewed card (by `lastSeen`), resolved live
+ * from the question id. Null when nothing has been reviewed or every reviewed
+ * id no longer exists. Drives the "Continue" strip on /grammar.
+ */
+export function lastStudiedTopic(grammarMap: Record<string, CardProgress>): GrammarTopic | null {
+  let best: { time: number; topic: GrammarTopic } | null = null;
+  for (const [id, card] of Object.entries(grammarMap)) {
+    if (!card.lastSeen) continue;
+    const time = Date.parse(card.lastSeen);
+    if (Number.isNaN(time)) continue;
+    const resolved = resolveGrammarQuestion(id);
+    if (!resolved) continue;
+    if (!best || time > best.time) best = { time, topic: resolved.topic };
+  }
+  return best ? best.topic : null;
+}
+
 // ── Weak spots ──────────────────────────────────────────────────────────────
 
 /**
