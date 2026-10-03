@@ -168,6 +168,39 @@ export const SAMMENBINDING_AV_SETNINGER_RULES: Record<string, GrammarRule> = {
       'ikke gå på jobben.»'
   },
 
+  'tid-samtidighet-plutselig': {
+    id: 'tid-samtidighet-plutselig',
+    titleEn: 'Time: før, innen, simultaneity and sudden events',
+    titleNb: 'Tid: før, innen, samtidighet og plutselige hendelser',
+    explanationEn:
+      'We have many ways to express time and the time relationship between events. «Før» and ' +
+      '«innen» are subjunctions and introduce a subordinate clause: "Jeg kan ikke komme før jeg får ' +
+      'ferie." "De ble ikke ferdige med jobben innen det ble mørkt." For simultaneity, «imens», ' +
+      '«i mellomtida», «på den tida» and «samtidig» are adverbials. When they come first in the ' +
+      'sentence, the verb comes in second position: "Jeg lager middag. Imens kan dere se på ' +
+      'fotballkampen." "Han laget middag. Samtidig så han på tv." «Samtidig som» introduces a ' +
+      'subordinate clause: "De laget mat samtidig som de så på tv." «Da» can refer back to a period ' +
+      'or situation in the past: "I fjor bodde hun i Spania. Da jobbet hun som guide." «Da» can also ' +
+      'be used about something that happens at that very moment: "Hun så ham inn i øynene. Da ' +
+      'ringte telefonen." For sudden events we use «plutselig», «i det samme» (roughly "at that very ' +
+      'moment") or «i samme øyeblikk»: "De satt og så på tv. Plutselig gikk strømmen." "Endelig ' +
+      'startet fotballkampen. I det samme gikk strømmen."',
+    explanationNb:
+      'Vi har mange måter å uttrykke tid og tidsforhold mellom hendelser.\n\n' +
+      '• **«Før» og «innen»** er subjunksjoner og innleder en leddsetning: "Jeg kan ikke komme før ' +
+      'jeg får ferie." "De ble ikke ferdige med jobben innen det ble mørkt."\n' +
+      '• **Samtidighet:** «imens», «i mellomtida», «på den tida» og «samtidig» er adverbialer. ' +
+      'Når de står først i setningen, kommer verbet på andre plass: "Jeg lager middag. Imens kan ' +
+      'dere se på fotballkampen." "Han laget middag. Samtidig så han på tv." «Samtidig som» ' +
+      'innleder en leddsetning: "De laget mat samtidig som de så på tv."\n' +
+      '• **«Da»** kan vise tilbake til en periode eller situasjon i fortiden: "I fjor bodde hun i ' +
+      'Spania. Da jobbet hun som guide." «Da» kan også brukes om noe som skjer akkurat da: "Hun så ' +
+      'ham inn i øynene. Da ringte telefonen."\n' +
+      '• **Plutselige hendelser:** vi bruker «plutselig», «i det samme» (omtrent «akkurat da») ' +
+      'eller «i samme øyeblikk»: "De satt og så på tv. Plutselig gikk strømmen." "Endelig ' +
+      'startet fotballkampen. I det samme gikk strømmen."'
+  },
+
   'arsak-og-folge-uttrykk': {
     id: 'arsak-og-folge-uttrykk',
     titleEn: 'A broader toolkit for cause, effect, and purpose',
