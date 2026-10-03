@@ -3,6 +3,7 @@
   import { page } from '$app/state';
   import { loadGrammarProgressMap, loadGrammarProgressFromSupabase } from '$lib/progress';
   import { buildGrammarProgress, lastStudiedTopic } from '$lib/grammar/progress';
+  import { startHere } from '$lib/grammar/start-path';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import {
     buildGrammarMap,
@@ -14,6 +15,7 @@
   import PartSection from '$lib/components/grammar/PartSection.svelte';
   import ChapterCard from '$lib/components/grammar/ChapterCard.svelte';
   import TopicRow from '$lib/components/grammar/TopicRow.svelte';
+  import StartHere from '$lib/components/grammar/StartHere.svelte';
   import { localeStore } from '$lib/localeStore.svelte';
   import type { CardProgress, CEFRLevel } from '$lib/types';
   import * as m from '$lib/paraglide/messages';
@@ -54,6 +56,7 @@
     continueTopic ? (GRAMMAR_RULES[continueTopic]?.titleNb ?? continueTopic) : ''
   );
   const dueTotal = $derived(progress.overall.due);
+  const start = $derived(startHere(grammarMap));
 
   onMount(async () => {
     try {
@@ -184,6 +187,12 @@
       </div>
     {/if}
   </div>
+
+  <!-- A1 «Start here» path: hidden while filtering/searching and once finished.
+       Below the filter panel so the controls don't jump when it hides. -->
+  {#if !isFiltering && !start.complete}
+    <StartHere steps={start.steps} done={start.done} />
+  {/if}
 
   <!-- Upsell: one banner for free users while nothing is filtered -->
   {#if !isPlus && !isFiltering && lockedSegmentsCount > 0}

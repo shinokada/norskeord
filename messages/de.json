@@ -937,6 +937,12 @@
   "grammar_progress_weak_review": "Wiederholen",
   "grammar_progress_book_heading": "Fortschritt nach Kapitel",
   "grammar_progress_mastered": "{count} gemeistert",
+  "grammar_start_heading": "Hier starten",
+  "grammar_start_intro": "Neu in der norwegischen Grammatik? Arbeite diese A1-Themen der Reihe nach durch.",
+  "grammar_start_summary": "{done} von {total} Themen abgeschlossen",
+  "grammar_start_progress": "{seen} von {total} geübt",
+  "grammar_start_status_done": "Erledigt",
+  "grammar_start_status_next": "Als Nächstes",
   "grammar_progress_empty_title": "Noch keine Grammatik geübt",
   "grammar_progress_empty_body": "Übe ein Thema, dann erscheint dein Fortschritt hier."
 }

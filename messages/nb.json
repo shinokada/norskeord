@@ -937,6 +937,12 @@
   "grammar_progress_weak_review": "Repeter",
   "grammar_progress_book_heading": "Fremgang per kapittel",
   "grammar_progress_mastered": "{count} mestret",
+  "grammar_start_heading": "Start her",
+  "grammar_start_intro": "Ny i norsk grammatikk? Ta disse A1-temaene i rekkefølge.",
+  "grammar_start_summary": "{done} av {total} temaer fullført",
+  "grammar_start_progress": "{seen} av {total} øvd",
+  "grammar_start_status_done": "Fullført",
+  "grammar_start_status_next": "Neste",
   "grammar_progress_empty_title": "Ingen grammatikk øvd ennå",
   "grammar_progress_empty_body": "Øv på et tema, så vises fremgangen din her."
 }

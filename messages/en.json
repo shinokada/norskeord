@@ -937,6 +937,12 @@
   "grammar_progress_weak_review": "Review",
   "grammar_progress_book_heading": "Progress by chapter",
   "grammar_progress_mastered": "{count} mastered",
+  "grammar_start_heading": "Start here",
+  "grammar_start_intro": "New to Norwegian grammar? Work through these A1 topics in order.",
+  "grammar_start_summary": "{done} of {total} topics done",
+  "grammar_start_progress": "{seen} of {total} practised",
+  "grammar_start_status_done": "Done",
+  "grammar_start_status_next": "Next",
   "grammar_progress_empty_title": "No grammar practised yet",
   "grammar_progress_empty_body": "Practise a topic and your progress will show up here."
 }

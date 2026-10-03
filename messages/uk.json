@@ -937,6 +937,12 @@
   "grammar_progress_weak_review": "Повторити",
   "grammar_progress_book_heading": "Прогрес за розділами",
   "grammar_progress_mastered": "{count} засвоєно",
+  "grammar_start_heading": "Почніть тут",
+  "grammar_start_intro": "Вперше з норвезькою граматикою? Пройдіть ці теми рівня A1 по черзі.",
+  "grammar_start_summary": "Завершено тем: {done} з {total}",
+  "grammar_start_progress": "Практика: {seen} з {total}",
+  "grammar_start_status_done": "Готово",
+  "grammar_start_status_next": "Далі",
   "grammar_progress_empty_title": "Граматику ще не практиковано",
   "grammar_progress_empty_body": "Попрактикуйте тему, і ваш прогрес з’явиться тут."
 }

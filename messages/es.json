@@ -937,6 +937,12 @@
   "grammar_progress_weak_review": "Repasar",
   "grammar_progress_book_heading": "Progreso por capítulo",
   "grammar_progress_mastered": "{count} dominadas",
+  "grammar_start_heading": "Empieza aquí",
+  "grammar_start_intro": "¿Nuevo en la gramática noruega? Trabaja estos temas de A1 en orden.",
+  "grammar_start_summary": "{done} de {total} temas completados",
+  "grammar_start_progress": "{seen} de {total} practicadas",
+  "grammar_start_status_done": "Hecho",
+  "grammar_start_status_next": "Siguiente",
   "grammar_progress_empty_title": "Aún no has practicado gramática",
   "grammar_progress_empty_body": "Practica un tema y tu progreso aparecerá aquí."
 }
