@@ -245,6 +245,7 @@ export type GrammarTopic =
   | 'subjunksjon-oversikt' // choosing among many subjunctions by meaning (da, fordi, hvis, selv om, …)
   | 'partisipp-former' // presens partisipp (manner adverbial) + perfektum partisipp used adjectivally
   | 'substantivert-partisipp' // participles used as nouns: de streikende, de reisende, de overlevende (presens, never inflects), de ansatte, den savnede (perfektum, inflects like an adjective), mange ansatte without article
+  | 'sammensatte-partisipper' // compound participles: hjemmelaget, utsolgt, aleneboende (perfektum, usually uninflected after the verb), febernedsettende, enestående (presens, never inflects), building new compounds
   | 'partikkelverb-los-fast' // particle verbs: loose vs. fixed compound, synonym swaps, fixed participles
   | 'modalverb-betydning' // choosing kan/skal/vil/må by meaning (ability, plan, desire, necessity)
   | 'sannsynlighet-uttrykk' // paraphrasing expressions of probability/likelihood

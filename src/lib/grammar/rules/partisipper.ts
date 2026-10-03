@@ -88,5 +88,30 @@ export const PARTISIPPER_RULES: Record<string, GrammarRule> = {
       'adjektiv når det brukes substantivisk.\n' +
       '• **Uten artikkel:** I flertall kan partisippet stå uten artikkel: «Hvor mange ansatte har ' +
       'dere?» «Det var mange reisende.»'
+  },
+
+  'sammensatte-partisipper': {
+    id: 'sammensatte-partisipper',
+    titleEn: 'Compound participles',
+    titleNb: 'Sammensatte partisipper',
+    explanationEn:
+      'A participle can be part of a compound word: "hjemmelaget", "utsolgt", "kjempestressende", ' +
+      '"enestående". We can always make new ones: "koronavaksinert", "selvgående", "aleneboende". ' +
+      'Compound participles are written as one word.\n\n' +
+      '**Perfektum partisipp after the verb:** the participle usually stays uninflected: "Støvlene var ' +
+      'utsolgt." "Alle rettene er hjemmelaget." "Vinduene er nyvasket."\n\n' +
+      '**Presens partisipp:** in compounds it never inflects: "en febernedsettende medisin", "noen ' +
+      'arbeidskrevende oppgaver".\n\n' +
+      '**New compounds:** we put a word and a participle together: "alene" + "boende" = "aleneboende".',
+    explanationNb:
+      'Et partisipp kan være en del av et sammensatt ord: «hjemmelaget», «utsolgt», ' +
+      '«kjempestressende», «enestående». Vi kan stadig lage nye: «koronavaksinert», «selvgående», ' +
+      '«aleneboende». Sammensatte partisipper skrives som ett ord.\n\n' +
+      '• **Perfektum partisipp etter verbet:** Partisippet står vanligvis ubøyd: «Støvlene var ' +
+      'utsolgt.» «Alle rettene er hjemmelaget.» «Vinduene er nyvasket.»\n' +
+      '• **Presens partisipp:** I sammensetninger bøyes det aldri: «en febernedsettende medisin», ' +
+      '«noen arbeidskrevende oppgaver».\n' +
+      '• **Nye sammensetninger:** Vi setter sammen et ord og et partisipp: «alene» + «boende» = ' +
+      '«aleneboende».'
   }
 };
