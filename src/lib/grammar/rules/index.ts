@@ -8,6 +8,7 @@ import { HELSETNINGER_RULES } from './helsetninger';
 import { SVAR_RULES } from './svar';
 import { LEDDSETNINGER_RULES } from './leddsetninger';
 import { DET_SETNINGER_RULES } from './det-setninger';
+import { SETNINGSFRAGMENTER_RULES } from './setningsfragmenter';
 import { SUBSTANTIV_RULES } from './substantiv';
 import { PRONOMEN_RULES } from './pronomen';
 import { ADJEKTIV_RULES } from './adjektiv';
@@ -51,6 +52,7 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
   ...SVAR_RULES,
   ...LEDDSETNINGER_RULES,
   ...DET_SETNINGER_RULES,
+  ...SETNINGSFRAGMENTER_RULES,
   ...SUBSTANTIV_RULES,
   ...PRONOMEN_RULES,
   ...ADJEKTIV_RULES,

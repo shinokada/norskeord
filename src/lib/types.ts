@@ -274,6 +274,7 @@ export type GrammarTopic =
   | 'subjekt-og-verbal' // subject and verbal: hvem/hva + verb test, verbal (one or more verbs), S-V order, inversion in questions/after a front element, subjekt vs. objekt
   | 'objekt' // direct object: hva/hvem test, place after the verb, objekt vs. adverbial/predikativ, objekt in the front field
   | 'predikativ' // predicative: describes the subject after være/bli/hete/virke/se ut, noun or adjective, position, predikativ vs. objekt/adverbial
+  | 'setningsfragment-uttrykk' // fixed expressions without a verb: wishes (god tur, god helg, lykke til, smaklig maltid) and replies (i like mate, ingen arsak, selv takk)
   | 'folelsesuttrykk' // expressing feelings: reaction words by situation (sa bra, sa synd, hurra, au, oi), sa + adjektiv (neuter for a situation, agreement with a noun), det var leit a hore
   | 'hilseord' // greetings and polite expressions: hei/god morgen/god kveld/god natt by time of day, god dag is formal, ha det/vi ses, takk/vaer sa god/unnskyld, hyggelig a mote deg
   | 'tidsadverb' // time adverbs: when (nå, i dag, i går, i morgen), how often (alltid, ofte, aldri), placement, allerede/ennå/fortsatt, i morgen vs. i morges

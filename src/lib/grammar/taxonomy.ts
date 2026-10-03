@@ -123,7 +123,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
         s('5.3', 'Det er + som-setning', '"Det er" + som-clause', 'B2')
       ]),
       ch(6, 'setningsfragmenter', 'Setningsfragmenter', 'Sentence fragments', [
-        s('6.1', 'Faste uttrykk', 'Fixed expressions')
+        s('6.1', 'Faste uttrykk', 'Fixed expressions', 'base', ['setningsfragment-uttrykk'])
       ])
     ]
   },
