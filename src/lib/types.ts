@@ -293,7 +293,8 @@ export type GrammarTopic =
   | 'setningsledd-identifikasjon' // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)
   | 'leddsetning-grunnleggende' // what a leddsetning is: starts with at/fordi/når/hvis, can't stand alone, can come first (then the main clause starts with the verb)
   | 'tillegg-setninger' // adding information between sentences: og, dessuten (verb right after it when first), «også» after the verb or last, heller ikke / heller last
-  | 'betingelse-hvis-dersom'; // conditions: hvis and dersom (same meaning, dersom more formal), condition clause after or before the main clause (verb first in the main clause), ikke between subject and verb
+  | 'betingelse-hvis-dersom' // conditions: hvis and dersom (same meaning, dersom more formal), condition clause after or before the main clause (verb first in the main clause), ikke between subject and verb
+  | 'svarord-nyanser'; // answer word nuances: tja/nja, ja da/jo da/nei da (reassuring), ja vel/nei vel (understood), a ja/a nei, nei to agree and jo to contradict a negative statement
 
 export interface GrammarRule {
   id: GrammarTopic;

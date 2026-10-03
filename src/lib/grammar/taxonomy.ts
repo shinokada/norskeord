@@ -284,7 +284,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
       ch(15, 'interjeksjoner', 'Interjeksjoner', 'Interjections', [
         s('15.1', 'Hilseord', 'Greetings', 'base', ['hilseord']),
         s('15.2', 'Uttrykk for følelser', 'Expressing feelings', 'base', ['folelsesuttrykk']),
-        s('15.3', 'Svarord', 'Answer words')
+        s('15.3', 'Svarord', 'Answer words', 'base', ['svarord-nyanser'])
       ]),
       ch(16, 'konjunksjoner-og-subjunksjoner', 'Konjunksjoner og subjunksjoner', 'Conjunctions', [
         s('16.1', 'Konjunksjoner', 'Coordinating conjunctions', 'base', [
