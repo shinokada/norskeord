@@ -138,6 +138,31 @@ export const PREPOSISJONER_RULES: Record<string, GrammarRule> = {
       'mamma», «kake til kaffen».'
   },
 
+  'sammensatte-preposisjoner': {
+    id: 'sammensatte-preposisjoner',
+    titleEn: 'Compound prepositions',
+    titleNb: 'Sammensatte preposisjoner',
+    explanationEn:
+      'A compound preposition is a fixed group of words that works as one preposition. The words ' +
+      'in the group belong together. "I nærheten av" shows that something is not far away: "Jeg bor i ' +
+      'nærheten av skolen." "I stedet for" shows what is replaced: "Jeg tar te i stedet for kaffe." ' +
+      '"På grunn av" shows the cause: "Flyet er forsinket på grunn av snøen." "Ved hjelp av" shows ' +
+      'the tool or help we use: "Han åpner boksen ved hjelp av en kniv." "I forhold til" compares ' +
+      'two things: "Det er billig i forhold til Oslo." "Til tross for" shows that something happens ' +
+      'even though there is an obstacle: "Vi går tur til tross for regnet."',
+    explanationNb:
+      'En sammensatt preposisjon er en fast gruppe ord som fungerer som én preposisjon. Ordene i ' +
+      'gruppen hører sammen.\n\n' +
+      '• **Sted:** «i nærheten av» viser at noe ikke er langt unna: «Jeg bor i nærheten av skolen.»\n' +
+      '• **Erstatning:** «i stedet for» viser hva som byttes ut: «Jeg tar te i stedet for kaffe.»\n' +
+      '• **Årsak:** «på grunn av» viser årsaken: «Flyet er forsinket på grunn av snøen.»\n' +
+      '• **Hjelpemiddel:** «ved hjelp av» viser hva vi bruker: «Han åpner boksen ved hjelp av en ' +
+      'kniv.»\n' +
+      '• **Sammenligning:** «i forhold til» sammenligner to ting: «Det er billig i forhold til Oslo.»\n' +
+      '• **Motsetning:** «til tross for» viser at noe skjer selv om det er et hinder: «Vi går tur til ' +
+      'tross for regnet.»'
+  },
+
   'preposisjoner-uttrykk-b2': {
     id: 'preposisjoner-uttrykk-b2',
     titleEn: 'Idiomatic B2 preposition collocations',

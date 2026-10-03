@@ -471,6 +471,7 @@ export const FREE_GRAMMAR_TOPICS: Partial<
   'resiprokt-pronomen': ['A1'],
   'preposisjoner-tilhorighet': ['A1'],
   'preposisjoner-annen-bruk': ['A1'],
+  'sammensatte-preposisjoner': ['A1'],
   'subjekt-og-verbal': ['A1'],
   'leddsetning-grunnleggende': ['A1'],
   // Nivå A1 topics, pt. 2 — see ai-docs/implementation/a1-update.md Phase 4.

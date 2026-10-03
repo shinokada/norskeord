@@ -282,6 +282,7 @@ export type GrammarTopic =
   | 'resiprokt-pronomen' // reciprocal pronoun hverandre: each other, hverandre vs. seg vs. dem, position after verb/preposition, also for later actions (vi ser hverandre i morgen)
   | 'preposisjoner-tilhorighet' // prepositions for people: til (bilen til Anna), med (gift med, venn med, sammen med), hos (bor/jobber hos), fra (origin)
   | 'preposisjoner-annen-bruk' // prepositions for means, topic and purpose: med (reiser med tog), uten (kaffe uten sukker), om (snakke om), for (bra for deg, takk for), til (gave til mamma, kake til kaffen)
+  | 'sammensatte-preposisjoner' // compound prepositions as fixed units: i nærheten av, i stedet for, på grunn av, ved hjelp av, i forhold til, til tross for
   | 'adverbial' // adverbial: hvor/når/hvordan, position (last or first), adverbial vs. objekt/predikativ
   | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
   | 'setningsledd-identifikasjon' // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)
