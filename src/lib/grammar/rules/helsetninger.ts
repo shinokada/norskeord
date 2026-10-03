@@ -148,12 +148,20 @@ export const HELSETNINGER_RULES: Record<string, GrammarRule> = {
     titleEn: 'The imperative',
     titleNb: 'Imperativ',
     explanationEn:
-      'The imperative is just the verb stem — the infinitive minus its final -e — with no ' +
-      'subject and no ending: "Du må huske stor bokstav." → "Husk stor bokstav!" "Dere må ' +
-      'snakke norsk." → "Snakk norsk!"',
+      'The imperative is usually the infinitive without its final -e. It has no subject.\n\n' +
+      '**Regular verbs:** "Du må huske stor bokstav." → "Husk stor bokstav!" "Dere må snakke ' +
+      'norsk." → "Snakk norsk!"\n\n' +
+      '**Other vowels:** if the infinitive ends in a vowel other than -e, the imperative is the same ' +
+      'as the infinitive: "å gå" → "Gå forsiktig!" "å ta" → "Ta det med ro!"\n\n' +
+      '**Negative:** when we say that someone should not do something, we usually put «ikke» ' +
+      'before the imperative: "Ikke vent på meg!"',
     explanationNb:
-      'Imperativ er bare verbstammen — infinitiv uten den siste -en — uten subjekt og uten ending:\n\n' +
+      'Imperativ er vanligvis infinitiv uten -e. Imperativ har ikke subjekt.\n\n' +
       '• "Du må huske stor bokstav." → "Husk stor bokstav!"\n' +
-      '• "Dere må snakke norsk." → "Snakk norsk!"'
+      '• "Dere må snakke norsk." → "Snakk norsk!"\n' +
+      '• Slutter infinitiv på en annen vokal enn -e, er imperativ lik infinitiv: "å gå" → "Gå forsiktig!", ' +
+      '"å ta" → "Ta det med ro!"\n' +
+      '• Når vi sier at noen ikke skal gjøre noe, setter vi vanligvis «ikke» foran imperativen: ' +
+      '"Ikke vent på meg!"'
   }
 };
