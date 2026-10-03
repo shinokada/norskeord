@@ -4,6 +4,32 @@
 import type { GrammarRule } from '$lib/types';
 
 export const SAMMENBINDING_AV_SETNINGER_RULES: Record<string, GrammarRule> = {
+  'tillegg-setninger': {
+    id: 'tillegg-setninger',
+    titleEn: 'Adding information: og, dessuten, også, heller ikke',
+    titleNb: 'Tillegg: «og», «dessuten», «også» og «heller ikke»',
+    explanationEn:
+      'We use these words to add more information.\n\n' +
+      '**og** joins two sentences: "Det regnet, og det var kaldt." After «og» the word order is normal.\n\n' +
+      '**dessuten** means "in addition" and is used to add a new point: "Jeg må lage middag, og jeg ' +
+      'må dessuten vaske tøy." When «dessuten» comes first in the sentence, the verb follows right ' +
+      'after it: "Dessuten må jeg vaske tøy."\n\n' +
+      '**også** is used in an affirmative sentence. It can stand after the verb: "Vi skal også til ' +
+      'Roma." It can also stand last: "Vi trenger kaffe også."\n\n' +
+      '**heller ikke** is used in a negated sentence: "Vi har ikke brød, og vi har heller ikke kaffe." ' +
+      'We can also put «heller» last: "Vi har ikke kaffe heller."',
+    explanationNb:
+      'Vi kan bruke disse ordene når vi vil legge til mer informasjon.\n\n' +
+      '• **og** binder sammen to setninger: «Det regnet, og det var kaldt.» Etter «og» har vi vanlig ' +
+      'ordstilling.\n' +
+      '• **dessuten** betyr «i tillegg» og brukes når vi legger til et nytt poeng: «Jeg må lage ' +
+      'middag, og jeg må dessuten vaske tøy.» Står «dessuten» først i setningen, kommer verbet ' +
+      'rett etter: «Dessuten må jeg vaske tøy.»\n' +
+      '• **også** brukes i en bekreftende setning. Det kan stå etter verbet: «Vi skal også til ' +
+      'Roma.» Det kan også stå sist: «Vi trenger kaffe også.»\n' +
+      '• **heller ikke** brukes i en nektende setning: «Vi har ikke brød, og vi har heller ikke ' +
+      'kaffe.» Vi kan også bruke «heller» sist: «Vi har ikke kaffe heller.»'
+  },
   'motsetning-selv-om-likevel': {
     id: 'motsetning-selv-om-likevel',
     titleEn: '«men» vs. «selv om» vs. «likevel»',

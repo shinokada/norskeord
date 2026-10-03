@@ -302,7 +302,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
     titleEn: 'Text cohesion',
     chapters: [
       ch(17, 'sammenbinding-av-setninger', 'Sammenbinding av setninger', 'Linking sentences', [
-        s('17.1', 'Tillegg', 'Addition'),
+        s('17.1', 'Tillegg', 'Addition', 'base', ['tillegg-setninger']),
         s('17.2', 'Motsetning', 'Contrast', 'base', ['motsetning-selv-om-likevel']),
         s('17.3', 'Tid', 'Time', 'base', ['tidssekvens-etter-at-etterpaa']),
         s('17.4', 'Årsak, følge og hensikt', 'Cause, result and purpose', 'base', [

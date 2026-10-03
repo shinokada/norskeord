@@ -291,7 +291,8 @@ export type GrammarTopic =
   | 'indirekte-objekt' // indirect object: the recipient (Lars ga Eva en blomst), position before the direct object, hvem/hva questions, til-phrase alternative, object pronoun form
   | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
   | 'setningsledd-identifikasjon' // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)
-  | 'leddsetning-grunnleggende'; // what a leddsetning is: starts with at/fordi/når/hvis, can't stand alone, can come first (then the main clause starts with the verb)
+  | 'leddsetning-grunnleggende' // what a leddsetning is: starts with at/fordi/når/hvis, can't stand alone, can come first (then the main clause starts with the verb)
+  | 'tillegg-setninger'; // adding information between sentences: og, dessuten (verb right after it when first), «også» after the verb or last, heller ikke / heller last
 
 export interface GrammarRule {
   id: GrammarTopic;
