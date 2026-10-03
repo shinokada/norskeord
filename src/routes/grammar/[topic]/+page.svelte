@@ -94,7 +94,7 @@
       <a
         href="/learn/{fromLevel()}"
         onclick={(e) => goBack(fromLevel()!, e)}
-        class="inline-flex items-center gap-1 text-sm text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-300"
+        class="inline-flex items-center gap-1 rounded text-sm text-indigo-600 hover:text-indigo-800 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none dark:text-indigo-300 dark:hover:text-indigo-200"
       >
         ← {fromLevel()!.toUpperCase()}
       </a>
@@ -103,7 +103,7 @@
     {/if}
     <a
       href="/grammar"
-      class="text-sm text-gray-400 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+      class="rounded text-sm text-gray-600 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none dark:text-gray-300 dark:hover:text-indigo-300"
     >
       {m.grammar_back_to_topics()} →
     </a>
@@ -121,7 +121,7 @@
         {nav.chapter.no}. {nav.chapter.titleNb}
       </a>
       <span aria-hidden="true">›</span>
-      <span>{nav.section.id} {nav.section.titleNb}</span>
+      <span aria-current="page">{nav.section.id} {nav.section.titleNb}</span>
     </nav>
   {/if}
 
@@ -158,7 +158,7 @@
     <div
       class="rounded-2xl border border-amber-300 bg-amber-50 p-6 text-center shadow-sm dark:border-amber-700 dark:bg-amber-900/20"
     >
-      <p class="mb-2 text-2xl">🔒</p>
+      <p class="mb-2 text-2xl" aria-hidden="true">🔒</p>
       <h2 class="mb-2 text-lg font-bold text-amber-800 dark:text-amber-200">
         {m.grammar_plus_locked_title()}
       </h2>

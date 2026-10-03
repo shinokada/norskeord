@@ -23,14 +23,28 @@
     due?: number;
     /** Show the English gloss under the Norwegian title (non-Norwegian UI). */
     showGloss?: boolean;
+    /**
+     * Heading level of the title. 3 under a section heading (chapter page); 2 on
+     * search results, which have no heading above them but the page's h1.
+     */
+    headingLevel?: 2 | 3;
   }
 
-  let { entry, href, isPlus, breadcrumb, seen = 0, due = 0, showGloss = false }: Props = $props();
+  let {
+    entry,
+    href,
+    isPlus,
+    breadcrumb,
+    seen = 0,
+    due = 0,
+    showGloss = false,
+    headingLevel = 3
+  }: Props = $props();
 </script>
 
 <a
   {href}
-  class="hover:border-primary-400 dark:hover:border-primary-500 flex flex-col rounded-xl border border-gray-200 px-5 py-4 transition hover:shadow-sm dark:border-gray-700"
+  class="hover:border-primary-400 dark:hover:border-primary-500 flex flex-col rounded-xl border border-gray-200 px-5 py-4 transition hover:shadow-sm focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none dark:border-gray-700"
 >
   {#if breadcrumb}
     <p class="mb-1 text-xs text-gray-600 dark:text-gray-300" data-testid="topic-breadcrumb">
@@ -52,9 +66,13 @@
     </div>
   </div>
 
-  <p class="font-semibold text-gray-900 dark:text-white" data-testid="topic-title">
+  <svelte:element
+    this={`h${headingLevel}`}
+    class="!mt-0 !mb-0 !text-base font-semibold text-gray-900 dark:text-white"
+    data-testid="topic-title"
+  >
     {entry.title}
-  </p>
+  </svelte:element>
   {#if showGloss && entry.titleEn}
     <p class="text-sm text-gray-500 dark:text-gray-400" data-testid="topic-gloss">
       {entry.titleEn}

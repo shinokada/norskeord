@@ -87,14 +87,14 @@
     {#if practising}
       <button
         onclick={() => (practising = false)}
-        class="text-sm text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-300"
+        class="rounded text-sm text-indigo-600 hover:text-indigo-800 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none dark:text-indigo-300 dark:hover:text-indigo-200"
       >
         {m.grammar_map_back_to_chapter()}
       </button>
     {:else}
       <a
         href="/grammar"
-        class="text-sm text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-300"
+        class="rounded text-sm text-indigo-600 hover:text-indigo-800 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none dark:text-indigo-300 dark:hover:text-indigo-200"
       >
         {m.grammar_map_all_chapters()}
       </a>

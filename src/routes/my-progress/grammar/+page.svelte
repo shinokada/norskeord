@@ -91,7 +91,7 @@
   <a
     href="/my-progress"
     data-testid="grammar-progress-back"
-    class="text-sm text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-300"
+    class="rounded text-sm text-indigo-600 hover:text-indigo-800 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none dark:text-indigo-300 dark:hover:text-indigo-200"
   >
     {m.grammar_progress_back()}
   </a>
@@ -104,7 +104,7 @@
       data-testid="grammar-progress-empty"
       class="rounded-xl border border-gray-200 bg-white p-10 text-center shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
     >
-      <p class="text-2xl">📐</p>
+      <p class="text-2xl" aria-hidden="true">📐</p>
       <p class="mt-3 text-lg font-medium dark:text-white">{m.grammar_progress_empty_title()}</p>
       <p class="mt-1 text-gray-500 dark:text-gray-300">{m.grammar_progress_empty_body()}</p>
       <a
@@ -249,7 +249,9 @@
           data-testid="grammar-progress-part"
           class="mb-3 rounded-xl border border-gray-200 bg-white dark:border-white/10 dark:bg-indigo-950/60"
         >
-          <summary class="flex cursor-pointer flex-wrap items-center gap-x-3 gap-y-1 px-4 py-3">
+          <summary
+            class="flex cursor-pointer flex-wrap items-center gap-x-3 gap-y-1 rounded-xl px-4 py-3 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none"
+          >
             <span class="font-semibold text-gray-900 dark:text-white">
               {m.grammar_map_part({ no: p.part.no })} · {p.part.titleNb}
             </span>
@@ -265,7 +267,9 @@
                 data-testid="grammar-progress-chapter"
                 class="rounded-lg border border-gray-100 dark:border-white/10"
               >
-                <summary class="cursor-pointer px-3 py-2.5">
+                <summary
+                  class="cursor-pointer rounded-lg px-3 py-2.5 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none"
+                >
                   <span class="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
                     <span class="font-medium text-gray-800 dark:text-gray-100">
                       {c.chapter.no}. {c.chapter.titleNb}

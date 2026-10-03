@@ -10,6 +10,7 @@ import {
   parseTabParam,
   pickProgress,
   relatedTopics,
+  tabForKey,
   teaserText,
   topicNavModel
 } from './topic-page';
@@ -17,6 +18,26 @@ import { GRAMMAR_RULES } from './rules';
 import { orderedTopics } from './taxonomy';
 
 const card = () => ({}) as CardProgress;
+
+describe('tabForKey', () => {
+  it('moves right and left, wrapping around', () => {
+    expect(tabForKey('rule', 'ArrowRight')).toBe('practice');
+    expect(tabForKey('practice', 'ArrowRight')).toBe('rule');
+    expect(tabForKey('practice', 'ArrowLeft')).toBe('rule');
+    expect(tabForKey('rule', 'ArrowLeft')).toBe('practice');
+  });
+
+  it('jumps to the first and last tab with Home and End', () => {
+    expect(tabForKey('practice', 'Home')).toBe('rule');
+    expect(tabForKey('rule', 'End')).toBe('practice');
+  });
+
+  it('ignores every other key, so Tab and typing still work', () => {
+    for (const key of ['Tab', 'Enter', ' ', 'ArrowDown', 'ArrowUp', 'a']) {
+      expect(tabForKey('rule', key), key).toBeNull();
+    }
+  });
+});
 
 describe('parseTabParam', () => {
   it('accepts the two tabs and rejects everything else', () => {

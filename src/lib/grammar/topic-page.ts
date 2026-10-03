@@ -35,6 +35,30 @@ export function defaultTab(dueCount: number): TopicTab {
   return dueCount > 0 ? 'practice' : 'rule';
 }
 
+export const TOPIC_TABS: readonly TopicTab[] = ['rule', 'practice'];
+
+/**
+ * The tab a key press moves to, following the ARIA tabs pattern: ArrowRight and
+ * ArrowLeft move to the next / previous tab and wrap around, Home and End jump
+ * to the first / last. Returns null for any other key (the key is not ours).
+ */
+export function tabForKey(current: TopicTab, key: string): TopicTab | null {
+  const i = TOPIC_TABS.indexOf(current);
+  const last = TOPIC_TABS.length - 1;
+  switch (key) {
+    case 'ArrowRight':
+      return TOPIC_TABS[i === last ? 0 : i + 1];
+    case 'ArrowLeft':
+      return TOPIC_TABS[i === 0 ? last : i - 1];
+    case 'Home':
+      return TOPIC_TABS[0];
+    case 'End':
+      return TOPIC_TABS[last];
+    default:
+      return null;
+  }
+}
+
 /** The entries of `map` whose key is in `ids` (a topic's slice of the progress map). */
 export function pickProgress(
   ids: Iterable<string>,

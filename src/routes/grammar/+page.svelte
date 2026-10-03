@@ -46,6 +46,16 @@
       : parts.reduce((n, p) => n + p.chapters.reduce((k, c) => k + c.topics.length, 0), 0)
   );
 
+  // "N topics" while filtering. Shown next to the clear button and also read out by a
+  // live region, so a screen reader hears the result count change as the learner types.
+  const filterStatus = $derived(
+    !isFiltering
+      ? ''
+      : visibleTopicCount === 1
+        ? m.grammar_topic_count_singular({ count: visibleTopicCount })
+        : m.grammar_topic_count({ count: visibleTopicCount })
+  );
+
   // ── Progress ────────────────────────────────────────────────────────────────
   const progress = $derived(buildGrammarProgress(grammarMap));
   const chapterProgress = $derived(
@@ -174,19 +184,21 @@
     {#if isFiltering}
       <div class="flex items-center gap-3">
         <span class="text-xs text-gray-600 dark:text-gray-300">
-          {visibleTopicCount === 1
-            ? m.grammar_topic_count_singular({ count: visibleTopicCount })
-            : m.grammar_topic_count({ count: visibleTopicCount })}
+          {filterStatus}
         </span>
         <button
           onclick={clearFilters}
-          class="text-xs text-gray-400 underline hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-300"
+          class="rounded text-xs text-gray-600 underline hover:text-gray-900 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none dark:text-gray-300 dark:hover:text-white"
         >
           {m.blog_filter_clear()}
         </button>
       </div>
     {/if}
   </div>
+
+  <!-- Live region: always present (a region added at the same time as its text is often
+       not announced). Outside the filter panel so it adds no spacing. -->
+  <p class="sr-only" role="status" data-testid="grammar-filter-status">{filterStatus}</p>
 
   <!-- A1 «Start here» path: hidden while filtering/searching and once finished.
        Below the filter panel so the controls don't jump when it hides. -->
@@ -225,6 +237,7 @@
             href={topicHref(hit.entry, { level: selectedLevel, isPlus })}
             {isPlus}
             breadcrumb="{hit.part.titleNb} › {hit.chapter.titleNb}"
+            headingLevel={2}
             showGloss={!isNb}
             seen={selectedLevel ? 0 : (tp?.seen ?? 0)}
             due={tp?.due ?? 0}

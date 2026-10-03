@@ -15,10 +15,13 @@
 </script>
 
 {#if count > 0}
+  <!-- The visible number alone means nothing to a screen reader, and a title is never
+       announced on touch or keyboard, so the full text ("N due") is read instead. -->
   <span
-    class="inline-block rounded-full bg-red-100 px-2 py-0.5 text-xs font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
+    class="inline-block rounded-full bg-red-100 px-2 py-0.5 text-xs font-semibold text-red-700 dark:bg-red-900/40 dark:text-red-300"
     title={m.stats_due_count({ count })}
   >
-    {count > 99 ? '99+' : count}
+    <span aria-hidden="true">{count > 99 ? '99+' : count}</span>
+    <span class="sr-only">{m.stats_due_count({ count })}</span>
   </span>
 {/if}

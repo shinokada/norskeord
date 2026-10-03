@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { CardProgress, GrammarQuestion, GrammarRule } from '$lib/types';
   import { countDueToday } from '$lib/progress';
-  import { defaultTab, pickProgress, type TopicTab } from '$lib/grammar/topic-page';
+  import { defaultTab, pickProgress, tabForKey, type TopicTab } from '$lib/grammar/topic-page';
   import * as m from '$lib/paraglide/messages';
   import ExplanationText from './ExplanationText.svelte';
   import GrammarSession from './GrammarSession.svelte';
@@ -50,6 +50,18 @@
     progressLoaded = true;
   }
 
+  /**
+   * ARIA tabs pattern: arrow keys, Home and End move between the tabs (and the
+   * selection follows focus); only the selected tab is in the Tab order.
+   */
+  function onTabKeydown(e: KeyboardEvent) {
+    const next = tabForKey(activeTab, e.key);
+    if (!next) return;
+    e.preventDefault();
+    chosenTab = next;
+    document.getElementById(`topic-tab-${next}`)?.focus();
+  }
+
   const tabClass = (active: boolean) =>
     `rounded-t-lg border-b-2 px-4 py-2 text-sm font-semibold focus:ring-4 focus:ring-indigo-300 focus:outline-none ${
       active
@@ -69,9 +81,11 @@
     id="topic-tab-rule"
     aria-selected={activeTab === 'rule'}
     aria-controls="topic-panel-rule"
+    tabindex={activeTab === 'rule' ? 0 : -1}
     data-testid="topic-tab-rule"
     class={tabClass(activeTab === 'rule')}
     onclick={() => (chosenTab = 'rule')}
+    onkeydown={onTabKeydown}
   >
     {m.grammar_topic_tab_rule()}
   </button>
@@ -81,9 +95,11 @@
     id="topic-tab-practice"
     aria-selected={activeTab === 'practice'}
     aria-controls="topic-panel-practice"
+    tabindex={activeTab === 'practice' ? 0 : -1}
     data-testid="topic-tab-practice"
     class={tabClass(activeTab === 'practice')}
     onclick={() => (chosenTab = 'practice')}
+    onkeydown={onTabKeydown}
   >
     {m.grammar_topic_tab_practise()}
     {#if dueCount > 0}

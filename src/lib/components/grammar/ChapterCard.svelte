@@ -46,7 +46,7 @@
 <a
   {href}
   data-testid="chapter-card"
-  class="hover:border-primary-400 dark:hover:border-primary-500 flex flex-col rounded-xl border border-gray-200 px-5 py-4 transition hover:shadow-sm dark:border-gray-700"
+  class="hover:border-primary-400 dark:hover:border-primary-500 flex flex-col rounded-xl border border-gray-200 px-5 py-4 transition hover:shadow-sm focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none dark:border-gray-700"
 >
   <div class="mb-3 flex items-start justify-between gap-2">
     <span class="text-xs font-semibold tracking-widest text-gray-600 uppercase dark:text-gray-300">
@@ -59,9 +59,13 @@
     </div>
   </div>
 
-  <p class="font-semibold text-gray-900 dark:text-white" data-testid="chapter-title">
+  <!-- h3: a chapter sits under its Part's h2 on /grammar. -->
+  <h3
+    class="!mt-0 !mb-0 !text-base font-semibold text-gray-900 dark:text-white"
+    data-testid="chapter-title"
+  >
     {entry.chapter.titleNb}
-  </p>
+  </h3>
   {#if showGloss}
     <p class="text-sm text-gray-500 dark:text-gray-400">{entry.chapter.titleEn}</p>
   {/if}
