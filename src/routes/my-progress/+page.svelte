@@ -574,11 +574,11 @@
           due={uttrykkDue}
           reviewHref="/review?type=uttrykk"
         />
-        <!-- Links to /grammar until /my-progress/grammar exists (Phase 7). -->
+        <!-- Title links to the grammar detail page (Phase 7). -->
         <ProgressHubCard
           icon="📐"
           title={m.stats_grammar_heading()}
-          href="/grammar"
+          href="/my-progress/grammar"
           seen={grammarSeen}
           mastered={grammarProgress.overall.review}
           due={grammarDue}

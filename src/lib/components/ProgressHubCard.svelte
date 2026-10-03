@@ -10,7 +10,7 @@
   interface Props {
     icon: string;
     title: string;
-    /** Optional link for the title (the grammar topic list, until Phase 7). */
+    /** Optional link for the title (the grammar detail page, /my-progress/grammar). */
     href?: string;
     seen: number;
     mastered: number;
