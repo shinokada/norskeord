@@ -45,6 +45,8 @@ export interface TopicEntry {
   topic: GrammarTopic;
   /** Norwegian rule title (grammar content is Norwegian-only). */
   title: string;
+  /** Short English gloss of the title, for navigation (empty if the rule has none). */
+  titleEn: string;
   /** Plain-text preview of the rule, no markdown. */
   summary: string;
   /** Levels with questions (just the active level when filtering). */
@@ -117,6 +119,7 @@ export function topicEntry(topic: GrammarTopic, level: CEFRLevel | null = null):
   return {
     topic,
     title: rule ? rule.titleNb : topic,
+    titleEn: rule ? rule.titleEn.trim() : '',
     summary: rule ? plainSummary(rule.explanationNb) : '',
     levels,
     total,

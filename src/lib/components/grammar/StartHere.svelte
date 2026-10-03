@@ -11,9 +11,11 @@
   interface Props {
     steps: StartStep[];
     done: number;
+    /** Show the English gloss under each Norwegian title (non-Norwegian UI). */
+    showGloss?: boolean;
   }
 
-  let { steps, done }: Props = $props();
+  let { steps, done, showGloss = false }: Props = $props();
 </script>
 
 <section
@@ -54,8 +56,16 @@
           >
             {i + 1}
           </span>
-          <span class="min-w-0 flex-1 font-medium text-gray-900 dark:text-gray-100">
-            {step.title}
+          <span class="min-w-0 flex-1">
+            <span class="block font-medium text-gray-900 dark:text-gray-100">{step.title}</span>
+            {#if showGloss && step.titleEn}
+              <span
+                class="block text-sm text-gray-500 dark:text-gray-400"
+                data-testid="grammar-start-gloss"
+              >
+                {step.titleEn}
+              </span>
+            {/if}
           </span>
           <span class="text-xs text-gray-600 dark:text-gray-300">
             {m.grammar_start_progress({ seen: step.seen, total: step.target })}

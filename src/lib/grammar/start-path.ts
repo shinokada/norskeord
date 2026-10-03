@@ -46,6 +46,8 @@ export interface StartStep {
   topic: GrammarTopic;
   /** Norwegian rule title (grammar content is Norwegian-only). */
   title: string;
+  /** Short English gloss of the title (empty if the rule has none). */
+  titleEn: string;
   /** Distinct A1 questions practised, capped at `target`. */
   seen: number;
   /** Practised A1 questions that count the step as done. */
@@ -92,6 +94,7 @@ export function startHere(grammarMap: Record<string, CardProgress>): StartHere {
     return {
       topic,
       title: GRAMMAR_RULES[topic]?.titleNb ?? topic,
+      titleEn: GRAMMAR_RULES[topic]?.titleEn.trim() ?? '',
       seen: Math.min(seen, target),
       target,
       state,

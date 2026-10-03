@@ -73,6 +73,21 @@ test.describe('/grammar «Start here»', () => {
     await expect(first).toHaveAttribute('data-state', 'next');
   });
 
+  test('shows the English gloss under each step in the English UI', async ({ page }) => {
+    await page.goto('/grammar');
+    const glosses = page.getByTestId('grammar-start-gloss');
+    await expect(glosses).toHaveCount(PATH.length, { timeout: 8000 });
+    await expect(glosses.first()).toContainText('Personal pronouns');
+  });
+
+  test('shows the English gloss on topic cards of a chapter page', async ({ page }) => {
+    await page.goto('/grammar/chapter/pronomen');
+    await expect(page.getByTestId('topic-gloss').first()).toBeVisible({ timeout: 8000 });
+    await expect(
+      page.getByTestId('topic-title').filter({ hasText: 'Personlige pronomen' }).first()
+    ).toBeVisible();
+  });
+
   test('a step opens its topic page scoped to A1', async ({ page }) => {
     await page.goto('/grammar');
     await page.getByTestId('grammar-start-step').first().click();

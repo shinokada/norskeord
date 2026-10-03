@@ -72,6 +72,14 @@ describe('startHere()', () => {
     expect(steps[0].title).toBe(GRAMMAR_RULES[START_HERE_A1[0]].titleNb);
   });
 
+  it('carries the English gloss of every step', () => {
+    const { steps } = startHere({});
+    for (const step of steps) {
+      expect(step.titleEn, step.topic).toBe(GRAMMAR_RULES[step.topic].titleEn.trim());
+      expect(step.titleEn.length, step.topic).toBeGreaterThan(0);
+    }
+  });
+
   it('counts practised A1 questions on the step but keeps it next until the target', () => {
     const ids = idsOf(START_HERE_A1[0], 'A1').slice(0, 3);
     const { steps } = startHere(mapOf(ids));

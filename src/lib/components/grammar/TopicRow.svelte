@@ -21,9 +21,11 @@
     /** Practised questions (whole topic); omitted when counts are level-scoped. */
     seen?: number;
     due?: number;
+    /** Show the English gloss under the Norwegian title (non-Norwegian UI). */
+    showGloss?: boolean;
   }
 
-  let { entry, href, isPlus, breadcrumb, seen = 0, due = 0 }: Props = $props();
+  let { entry, href, isPlus, breadcrumb, seen = 0, due = 0, showGloss = false }: Props = $props();
 </script>
 
 <a
@@ -53,6 +55,11 @@
   <p class="font-semibold text-gray-900 dark:text-white" data-testid="topic-title">
     {entry.title}
   </p>
+  {#if showGloss && entry.titleEn}
+    <p class="text-sm text-gray-500 dark:text-gray-400" data-testid="topic-gloss">
+      {entry.titleEn}
+    </p>
+  {/if}
 
   {#if entry.summary}
     <p class="mt-1 line-clamp-2 text-sm text-gray-500 dark:text-gray-400">{entry.summary}</p>

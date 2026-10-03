@@ -191,7 +191,7 @@
   <!-- A1 «Start here» path: hidden while filtering/searching and once finished.
        Below the filter panel so the controls don't jump when it hides. -->
   {#if !isFiltering && !start.complete}
-    <StartHere steps={start.steps} done={start.done} />
+    <StartHere steps={start.steps} done={start.done} showGloss={!isNb} />
   {/if}
 
   <!-- Upsell: one banner for free users while nothing is filtered -->
@@ -225,6 +225,7 @@
             href={topicHref(hit.entry, { level: selectedLevel, isPlus })}
             {isPlus}
             breadcrumb="{hit.part.titleNb} › {hit.chapter.titleNb}"
+            showGloss={!isNb}
             seen={selectedLevel ? 0 : (tp?.seen ?? 0)}
             due={tp?.due ?? 0}
           />

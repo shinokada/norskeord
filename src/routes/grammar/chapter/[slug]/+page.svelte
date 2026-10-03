@@ -182,6 +182,7 @@
               entry={topic}
               href={topicHref(topic, { level, isPlus, from })}
               {isPlus}
+              {showGloss}
               seen={level ? 0 : (tp?.seen ?? 0)}
               due={tp?.due ?? 0}
             />

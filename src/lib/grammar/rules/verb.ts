@@ -512,7 +512,7 @@ export const VERB_RULES: Record<string, GrammarRule> = {
 
   'kondisjonalis-counterfactual': {
     id: 'kondisjonalis-counterfactual',
-    titleEn: '1./2. kondisjonalis',
+    titleEn: 'Unfulfilled plans and counterfactuals (1./2. kondisjonalis)',
     titleNb: '1./2. kondisjonalis',
     explanationEn:
       '1. kondisjonalis (skulle + infinitiv) expresses an unfulfilled plan in the past ("Jeg ' +

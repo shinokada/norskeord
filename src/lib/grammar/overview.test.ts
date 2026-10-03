@@ -107,6 +107,22 @@ describe('topicEntry access', () => {
   });
 });
 
+describe('topic glosses', () => {
+  it('every topic in the taxonomy has an English gloss that differs from the Norwegian title', () => {
+    const bad = orderedTopics().filter((topic) => {
+      const e = topicEntry(topic);
+      if (!e) return false; // a topic with no questions is not shown anywhere
+      return !e.titleEn || e.titleEn.toLowerCase() === e.title.trim().toLowerCase();
+    });
+    expect(bad).toEqual([]);
+  });
+
+  it('uses the rule\u2019s titleEn, trimmed', () => {
+    const e = topicEntry('sporresetninger')!;
+    expect(e.titleEn).toBe(GRAMMAR_RULES['sporresetninger'].titleEn.trim());
+  });
+});
+
 describe('buildChapter', () => {
   it('returns null for a chapter with no topics (chapter 6 and 15 today)', () => {
     const empty = GRAMMAR_TAXONOMY.flatMap((p) =>
