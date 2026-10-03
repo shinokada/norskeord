@@ -29,5 +29,30 @@ export const INTERJEKSJONER_RULES: Record<string, GrammarRule> = {
       'eller ta farvel om kvelden, ikke når vi møter noen.\n\n' +
       '**Hvordan går det?** Vi svarer ofte: "Bra, takk. Og du?"\n\n' +
       'Etter «hei» kan vi bruke utropstegn eller komma: "Hei!" "Hei, Anna."'
+  },
+
+  folelsesuttrykk: {
+    id: 'folelsesuttrykk',
+    titleEn: 'Expressing feelings',
+    titleNb: 'Uttrykk for følelser',
+    explanationEn:
+      'We use short expressions to show how we feel or react. Good news: Så bra! Så fint! ' +
+      'Gratulerer med dagen! Hurra! Bad news: Så synd! Å nei! Det var leit å høre. Surprise: Oi! ' +
+      'Pain, irritation or something unpleasant: Au! Uff! Huff! "Så + adjective" expresses that ' +
+      'something is very much so, roughly like "Det er veldig fint!" When we react to a whole ' +
+      'situation we use the neuter form: "Så fint!" "Så synd!" With a noun the adjective agrees ' +
+      'with it: "Så fin kjole!" "Så pent hus!" An exclamation mark often follows.',
+    explanationNb:
+      'Vi bruker korte uttrykk for å vise hva vi føler eller hvordan vi reagerer.\n\n' +
+      '• **Gode nyheter:** Så bra! Så fint! Gratulerer med dagen! Hurra!\n' +
+      '• **Dårlige nyheter:** Så synd! Å nei! Det var leit å høre.\n' +
+      '• **Overraskelse:** Oi!\n' +
+      '• **Smerte, irritasjon eller noe ubehagelig:** Au! Uff! Huff!\n\n' +
+      '**Så + adjektiv:** «Så fint!» uttrykker at noe er veldig fint, omtrent som "Det er veldig ' +
+      'fint!" Når vi snakker om en hel situasjon, bruker vi intetkjønn: "Så fint!" "Så ' +
+      'synd!"\n\n' +
+      'Med et substantiv retter adjektivet seg etter substantivet: "Så fin kjole!" "Så pent ' +
+      'hus!"\n\n' +
+      'Etter uttrykkene bruker vi ofte utropstegn: "Så bra!" "Oi!"'
   }
 };
