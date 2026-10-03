@@ -216,6 +216,42 @@ describe('grammarTopicStatsForLevel', () => {
     const row = rows.find((r) => r.key === someA2.topic)!;
     expect(row.seen).toBe(1);
   });
+
+  it('buckets a card under its CURRENT topic even when the stored row carries a retired topic id', () => {
+    // Phase 1b moved 21 helsetninger questions into sporresetninger. A progress
+    // row saved before that still says category 'helsetninger' (a retired id);
+    // the live id index must win over that stale snapshot.
+    const q = allQuestions.find((x) => x.topic === 'sporresetninger')!;
+    expect(q).toBeDefined();
+    const grammarMap = {
+      [q.id]: fakeCard({ level: q.cefr, category: 'helsetninger' })
+    };
+    const rows = grammarTopicStatsForLevel(q.cefr, grammarMap, false);
+    expect(rows.find((r) => r.key === 'sporresetninger')!.seen).toBe(1);
+    expect(rows.some((r) => r.key === 'helsetninger')).toBe(false);
+    expect(rows.reduce((s, r) => s + r.seen, 0)).toBe(1);
+  });
+
+  it('buckets a card under its CURRENT level even when the stored level is stale', () => {
+    const someA2 = allQuestions.find((q) => q.cefr === 'A2')!;
+    const grammarMap = {
+      [someA2.id]: fakeCard({ level: 'C', category: someA2.topic })
+    };
+    expect(grammarTopicStatsForLevel('A2', grammarMap, false).reduce((s, r) => s + r.seen, 0)).toBe(
+      1
+    );
+    expect(grammarTopicStatsForLevel('C', grammarMap, false).reduce((s, r) => s + r.seen, 0)).toBe(
+      0
+    );
+  });
+
+  it('drops a progress key that no longer exists in grammar.json', () => {
+    const grammarMap = {
+      'gone-question-id': fakeCard({ level: 'A1', category: 'sporresetninger' })
+    };
+    const rows = grammarTopicStatsForLevel('A1', grammarMap, false);
+    expect(rows.reduce((s, r) => s + r.seen, 0)).toBe(0);
+  });
 });
 
 describe('uttrykkOthersKeysForLevel', () => {

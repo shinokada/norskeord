@@ -63,10 +63,17 @@ describe('groupTopicLevelsByAccess', () => {
 });
 
 describe('isFreeGrammarTopic — new teaser topics', () => {
-  it('ikke-placement is free at A2, locked at B1, and has no A1 entry', () => {
+  it('ikke-placement is free at A1 and A2, locked at B1', () => {
+    // A1 added in Phase 1b: two A1 questions moved here from helsetninger and
+    // must stay free (ai-docs/implementation/grammar-update.md).
+    expect(isFreeGrammarTopic('ikke-placement' as GrammarTopic, 'A1')).toBe(true);
     expect(isFreeGrammarTopic('ikke-placement' as GrammarTopic, 'A2')).toBe(true);
     expect(isFreeGrammarTopic('ikke-placement' as GrammarTopic, 'B1')).toBe(false);
-    expect(isFreeGrammarTopic('ikke-placement' as GrammarTopic, 'A1')).toBe(false);
+  });
+
+  it('fortellende-setninger and sporresetninger (split from helsetninger) are free at A1', () => {
+    expect(isFreeGrammarTopic('fortellende-setninger' as GrammarTopic, 'A1')).toBe(true);
+    expect(isFreeGrammarTopic('sporresetninger' as GrammarTopic, 'A1')).toBe(true);
   });
 
   it('adj-comparison is free at A2, locked at B1', () => {
