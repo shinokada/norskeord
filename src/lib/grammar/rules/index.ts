@@ -16,6 +16,7 @@ import { VERB_RULES } from './verb';
 import { ADVERB_RULES } from './adverb';
 import { PARTISIPPER_RULES } from './partisipper';
 import { PREPOSISJONER_RULES } from './preposisjoner';
+import { INTERJEKSJONER_RULES } from './interjeksjoner';
 import { KONJUNKSJONER_OG_SUBJUNKSJONER_RULES } from './konjunksjoner-og-subjunksjoner';
 import { SAMMENBINDING_AV_SETNINGER_RULES } from './sammenbinding-av-setninger';
 import { ORDLAGING_RULES } from './ordlaging';
@@ -58,6 +59,7 @@ export const GRAMMAR_RULES: Record<string, GrammarRule> = {
   ...ADVERB_RULES,
   ...PARTISIPPER_RULES,
   ...PREPOSISJONER_RULES,
+  ...INTERJEKSJONER_RULES,
   ...KONJUNKSJONER_OG_SUBJUNKSJONER_RULES,
   ...SAMMENBINDING_AV_SETNINGER_RULES,
   ...ORDLAGING_RULES,

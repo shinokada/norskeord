@@ -464,6 +464,7 @@ export const FREE_GRAMMAR_TOPICS: Partial<
   predikativ: ['A1'],
   adverbial: ['A1'],
   tidsadverb: ['A1'],
+  hilseord: ['A1'],
   'subjekt-og-verbal': ['A1'],
   'leddsetning-grunnleggende': ['A1'],
   // Nivå A1 topics, pt. 2 — see ai-docs/implementation/a1-update.md Phase 4.

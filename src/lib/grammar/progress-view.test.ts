@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import type { CardProgress } from '$lib/types';
 import { buildGrammarProgress } from './progress';
 import { dueByChapter, percent, visibleParts } from './progress-view';
+import { GRAMMAR_TAXONOMY } from './taxonomy';
 
 const NOW = new Date('2026-10-02T12:00:00Z');
 const YESTERDAY = new Date('2026-10-01T12:00:00Z');
@@ -91,11 +92,18 @@ describe('visibleParts', () => {
     }
   });
 
-  it('hides chapters that have no topic yet', () => {
+  it('hides chapters that have no topic yet and shows every chapter that has one', () => {
     const slugs = parts.flatMap((p) => p.chapters.map((c) => c.chapter.slug));
     expect(slugs).toContain('pronomen');
-    expect(slugs).not.toContain('setningsfragmenter'); // 6.1 has no topic
-    expect(slugs).not.toContain('interjeksjoner'); // 15.x has no topic
+
+    // Derived from the taxonomy, so filling a chapter with its first topic (Content
+    // track B) does not break this test.
+    const chapters = GRAMMAR_TAXONOMY.flatMap((part) => part.chapters);
+    for (const chapter of chapters) {
+      const hasTopic = chapter.sections.some((s) => s.topics.length > 0);
+      if (hasTopic) expect(slugs, chapter.slug).toContain(chapter.slug);
+      else expect(slugs, chapter.slug).not.toContain(chapter.slug);
+    }
   });
 
   it('keeps book order', () => {
