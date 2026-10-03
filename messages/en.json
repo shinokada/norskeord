@@ -917,5 +917,8 @@
   "grammar_topic_nav_aria": "More grammar topics",
   "grammar_topic_prev": "Previous",
   "grammar_topic_next": "Next",
-  "grammar_topic_related": "Related topics"
+  "grammar_topic_related": "Related topics",
+  "grammar_teaser_label": "Preview",
+  "grammar_teaser_level_count": "{level}: {count} questions",
+  "grammar_teaser_locked_levels": "{count} more questions at {levels} with Plus"
 }

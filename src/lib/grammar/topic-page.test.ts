@@ -1,14 +1,19 @@
 // src/lib/grammar/topic-page.test.ts
 import { describe, expect, it } from 'vitest';
-import type { CardProgress, GrammarTopic } from '$lib/types';
+import type { CardProgress, CEFRLevel, GrammarTopic } from '$lib/types';
 import {
   MAX_RELATED,
+  TEASER_MAX,
+  countByLevel,
   defaultTab,
+  lockedBreakdown,
   parseTabParam,
   pickProgress,
   relatedTopics,
+  teaserText,
   topicNavModel
 } from './topic-page';
+import { GRAMMAR_RULES } from './rules';
 import { orderedTopics } from './taxonomy';
 
 const card = () => ({}) as CardProgress;
@@ -118,5 +123,61 @@ describe('relatedTopics', () => {
 
   it('returns nothing for an unplaced topic', () => {
     expect(relatedTopics('does-not-exist' as GrammarTopic)).toEqual([]);
+  });
+});
+
+const q = (id: string, cefr: CEFRLevel) => ({ id, cefr });
+
+describe('countByLevel', () => {
+  it('counts per level in A1-to-C order and skips empty levels', () => {
+    const counts = countByLevel([q('1', 'B1'), q('2', 'A1'), q('3', 'B1'), q('4', 'C')]);
+    expect(counts).toEqual([
+      { level: 'A1', count: 1 },
+      { level: 'B1', count: 2 },
+      { level: 'C', count: 1 }
+    ]);
+  });
+
+  it('returns an empty list for no questions', () => {
+    expect(countByLevel([])).toEqual([]);
+  });
+});
+
+describe('lockedBreakdown', () => {
+  const questions = [q('a1', 'A1'), q('a2', 'A1'), q('b1', 'A2'), q('b2', 'B1'), q('b3', 'B1')];
+
+  it('counts the questions that are not free, per level', () => {
+    const result = lockedBreakdown(questions, new Set(['a1', 'a2']));
+    expect(result.total).toBe(3);
+    expect(result.levels).toEqual([
+      { level: 'A2', count: 1 },
+      { level: 'B1', count: 2 }
+    ]);
+  });
+
+  it('is empty when everything is free', () => {
+    expect(lockedBreakdown(questions, new Set(questions.map((x) => x.id)))).toEqual({
+      total: 0,
+      levels: []
+    });
+  });
+
+  it('locks everything when nothing is free', () => {
+    expect(lockedBreakdown(questions, new Set()).total).toBe(questions.length);
+  });
+});
+
+describe('teaserText', () => {
+  it('is empty without a rule', () => {
+    expect(teaserText(undefined)).toBe('');
+  });
+
+  it('is plain text, not longer than the limit, for every rule', () => {
+    for (const [id, rule] of Object.entries(GRAMMAR_RULES)) {
+      const text = teaserText(rule);
+      expect(text.length, id).toBeGreaterThan(0);
+      expect(text.length, id).toBeLessThanOrEqual(TEASER_MAX + 1);
+      expect(text, id).not.toContain('**');
+    }
   });
 });

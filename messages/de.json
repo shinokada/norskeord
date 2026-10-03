@@ -917,5 +917,8 @@
   "grammar_topic_nav_aria": "Weitere Grammatikthemen",
   "grammar_topic_prev": "Zurück",
   "grammar_topic_next": "Weiter",
-  "grammar_topic_related": "Verwandte Themen"
+  "grammar_topic_related": "Verwandte Themen",
+  "grammar_teaser_label": "Vorschau",
+  "grammar_teaser_level_count": "{level}: {count} Fragen",
+  "grammar_teaser_locked_levels": "{count} weitere Fragen auf {levels} mit Plus"
 }

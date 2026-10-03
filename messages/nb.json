@@ -917,5 +917,8 @@
   "grammar_topic_nav_aria": "Flere grammatikktemaer",
   "grammar_topic_prev": "Forrige",
   "grammar_topic_next": "Neste",
-  "grammar_topic_related": "Relaterte temaer"
+  "grammar_topic_related": "Relaterte temaer",
+  "grammar_teaser_label": "Forhåndsvisning",
+  "grammar_teaser_level_count": "{level}: {count} spørsmål",
+  "grammar_teaser_locked_levels": "{count} flere spørsmål på {levels} med Plus"
 }

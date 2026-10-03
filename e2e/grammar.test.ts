@@ -265,6 +265,8 @@ test('a topic without free A1 content is noindex', async ({ browser }) => {
   try {
     await page.goto('/grammar/uttrykk');
     await expect(page.locator('meta[name="robots"][content*="noindex"]')).toHaveCount(1);
+    // The Plus teaser is in the server HTML too (grammar-update.md, Phase 6c).
+    await expect(page.getByTestId('topic-teaser')).toBeVisible();
   } finally {
     await context.close();
   }
@@ -278,6 +280,46 @@ test('sitemap lists A1 topics and leaves out a Plus-only topic', async ({ reques
   expect(xml).toContain('/grammar/subjekt-og-verbal');
   expect(xml).not.toContain('/grammar/uttrykk<');
   expect(xml).not.toContain('/grammar/chapter/');
+});
+
+// ===========================================================================
+// Plus teaser and locked-level notice (grammar-update.md, Phase 6c)
+// ===========================================================================
+
+test('free user on a Plus-only topic sees a teaser with level counts and the upsell', async ({
+  page
+}) => {
+  // uttrykk has no free level, so a free learner gets the teaser, not a session.
+  await page.goto('/grammar/uttrykk');
+  await expect(page.getByTestId('topic-teaser')).toBeVisible({ timeout: 8000 });
+  await expect(page.getByTestId('topic-teaser-text')).not.toBeEmpty();
+  await expect(page.getByTestId('topic-teaser-levels')).toContainText(/\d+/);
+  await expect(page.getByText(/This topic is a Plus feature|Plus-funksjon/i)).toBeVisible();
+  await expect(page.getByRole('link', { name: /get plus|få plus/i })).toBeVisible();
+  await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toHaveCount(0);
+});
+
+test('free user on a mixed-level topic sees how many questions Plus adds', async ({ page }) => {
+  // noun-plurals: free at A1 only, so its A2/B1 questions are Plus.
+  await page.goto('/grammar/noun-plurals');
+  const notice = page.getByTestId('topic-locked-levels');
+  await expect(notice).toBeVisible({ timeout: 8000 });
+  await expect(notice.locator('a')).toHaveAttribute('href', /^\/plus\?ref=grammar-topic-levels/);
+  await expect(page.getByTestId('topic-teaser')).toHaveCount(0);
+});
+
+test('the locked-level notice is hidden for a Plus user', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.goto('/grammar/noun-plurals');
+  await expect(page.getByTestId('topic-rule')).toBeVisible({ timeout: 8000 });
+  await expect(page.getByTestId('topic-locked-levels')).toHaveCount(0);
+});
+
+test('the locked-level notice is hidden when scoped to a free level', async ({ page }) => {
+  // ?level=A1: every question in scope is free, so there is nothing to upsell.
+  await page.goto('/grammar/noun-plurals?level=A1');
+  await expect(page.getByTestId('topic-rule')).toBeVisible({ timeout: 8000 });
+  await expect(page.getByTestId('topic-locked-levels')).toHaveCount(0);
 });
 
 // ===========================================================================

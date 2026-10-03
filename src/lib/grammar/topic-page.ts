@@ -5,8 +5,9 @@
 // Pure functions only, so everything is unit-testable. Access (free / Plus) is
 // not decided here; the page keeps using its existing per-question gating.
 
-import type { CardProgress, GrammarTopic } from '$lib/types';
+import type { CardProgress, CEFRLevel, GrammarRule, GrammarTopic } from '$lib/types';
 import { GRAMMAR_RULES } from './rules';
+import { plainSummary } from './summary';
 import {
   adjacentTopics,
   placementOf,
@@ -119,4 +120,43 @@ export function topicNavModel(topic: GrammarTopic): TopicNavModel | null {
     next: next ? linkFor(next) : null,
     related: relatedTopics(topic, exclude)
   };
+}
+
+// ── Plus teaser (Phase 6c) ─────────────────────────────────────────────────────────────────────────
+
+export const CEFR_ORDER: readonly CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
+
+/** Longest rule preview shown on a locked topic. */
+export const TEASER_MAX = 300;
+
+export interface LevelCount {
+  level: CEFRLevel;
+  count: number;
+}
+
+/** Question counts per CEFR level, in level order (A1 to C), skipping empty levels. */
+export function countByLevel(questions: readonly { cefr: CEFRLevel }[]): LevelCount[] {
+  const counts = new Map<CEFRLevel, number>();
+  for (const q of questions) counts.set(q.cefr, (counts.get(q.cefr) ?? 0) + 1);
+  return CEFR_ORDER.filter((level) => counts.has(level)).map((level) => ({
+    level,
+    count: counts.get(level)!
+  }));
+}
+
+/**
+ * The questions a free learner cannot play (not in `freeIds`), as a total and
+ * per level. Drives the «+ N more questions at A2, B1 with Plus» notice.
+ */
+export function lockedBreakdown(
+  questions: readonly { id: string; cefr: CEFRLevel }[],
+  freeIds: ReadonlySet<string>
+): { total: number; levels: LevelCount[] } {
+  const locked = questions.filter((q) => !freeIds.has(q.id));
+  return { total: locked.length, levels: countByLevel(locked) };
+}
+
+/** Plain-text preview of a rule (its opening paragraph), or '' when there is no rule. */
+export function teaserText(rule: GrammarRule | undefined): string {
+  return rule ? plainSummary(rule.explanationNb, TEASER_MAX) : '';
 }
