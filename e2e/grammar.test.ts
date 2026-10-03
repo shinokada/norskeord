@@ -75,9 +75,15 @@ async function completeGrammarSession(page: Page, maxQuestions = 20) {
 }
 
 // Topic pages open on the Regel tab for new visitors (grammar-update.md, Phase 6a);
-// practice sits behind the Øv tab.
+// practice sits behind the Øv tab. The page is server-rendered (Phase 6b), so the tab
+// exists before hydration and an early click is silently lost. Retry until the tab is
+// really selected; clicking an already-selected tab is harmless.
 async function openPractice(page: Page) {
-  await page.getByTestId('topic-tab-practice').click({ timeout: 8000 });
+  const tab = page.getByTestId('topic-tab-practice');
+  await expect(async () => {
+    await tab.click({ timeout: 2000 });
+    await expect(tab).toHaveAttribute('aria-selected', 'true', { timeout: 1000 });
+  }).toPass({ timeout: 10000 });
 }
 
 // ===========================================================================

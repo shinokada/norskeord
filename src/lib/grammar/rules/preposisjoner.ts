@@ -89,6 +89,30 @@ export const PREPOSISJONER_RULES: Record<string, GrammarRule> = {
       'Høytider oppfører seg annerledes: «i» + BESTEMT substantiv (i julen, i påsken, i pinsen) kan vise til fortid, nåtid ELLER framtid — det er verbets tidsform som avgjør: «Hva skal du gjøre i julen?» (framtid), «Hva gjorde dere i påsken i fjor?» (fortid), «I pinsen pleier vi å dra på tur» (generelt/vanemessig).'
   },
 
+  'preposisjoner-tilhorighet': {
+    id: 'preposisjoner-tilhorighet',
+    titleEn: 'Belonging and connection',
+    titleNb: 'Tilhørighet og tilknytning',
+    explanationEn:
+      'Prepositions can show who something belongs to, who someone has a relationship with, ' +
+      'where someone lives or works, and where someone comes from. "Til" + a person shows who ' +
+      'something or someone belongs to: "bilen til Anna", "søsteren til Ola", "naboen til Ola". ' +
+      '"Med" shows the relationship between people: "gift med", "venn med", "sammen med": "Hun er ' +
+      'gift med Ola." "Vi bor sammen med venner." "Hos" + a person or a company shows who someone ' +
+      'lives or works with or for: "Jeg bor hos foreldrene mine." "Han jobber hos Equinor." "Fra" ' +
+      'shows origin: "Hun er fra Spania."',
+    explanationNb:
+      'Preposisjoner kan vise hvem noe tilhører, hvem noen har et forhold til, hvor noen bor eller ' +
+      'jobber, og hvor noen kommer fra.\n\n' +
+      '• **Til:** «til» + person viser hvem noe eller noen tilhører: «bilen til Anna», «søsteren ' +
+      'til Ola», «naboen til Ola».\n' +
+      '• **Med:** «med» viser forholdet mellom personer: «gift med», «venn med», «sammen med»: ' +
+      '«Hun er gift med Ola.» «Vi bor sammen med venner.»\n' +
+      '• **Hos:** «Hos» + person eller firma viser hvem noen bor hos eller jobber hos: «Jeg bor ' +
+      'hos foreldrene mine.» «Han jobber hos Equinor.»\n' +
+      '• **Fra:** «fra» viser opprinnelse: «Hun er fra Spania.»'
+  },
+
   'preposisjoner-uttrykk-b2': {
     id: 'preposisjoner-uttrykk-b2',
     titleEn: 'Idiomatic B2 preposition collocations',

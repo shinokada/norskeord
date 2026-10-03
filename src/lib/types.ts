@@ -280,6 +280,7 @@ export type GrammarTopic =
   | 'tidsadverb' // time adverbs: when (nå, i dag, i går, i morgen), how often (alltid, ofte, aldri), placement, allerede/ennå/fortsatt, i morgen vs. i morges
   | 'egennavn' // proper names: capital letter for names and places, small letter for weekdays/months/languages/nationality words, no article before names, titles before a name (kong Harald), seas/lakes/mountains
   | 'resiprokt-pronomen' // reciprocal pronoun hverandre: each other, hverandre vs. seg vs. dem, position after verb/preposition, also for later actions (vi ser hverandre i morgen)
+  | 'preposisjoner-tilhorighet' // prepositions for people: til (bilen til Anna), med (gift med, venn med, sammen med), hos (bor/jobber hos), fra (origin)
   | 'adverbial' // adverbial: hvor/når/hvordan, position (last or first), adverbial vs. objekt/predikativ
   | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
   | 'setningsledd-identifikasjon' // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)
