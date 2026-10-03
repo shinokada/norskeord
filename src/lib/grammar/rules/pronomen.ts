@@ -53,6 +53,35 @@ export const PRONOMEN_RULES: Record<string, GrammarRule> = {
       '"Jeg liker deg." "Hun snakker med ham." Merk at dere er likt i begge former.'
   },
 
+  'resiprokt-pronomen': {
+    id: 'resiprokt-pronomen',
+    titleEn: 'Each other: the reciprocal pronoun',
+    titleNb: 'Hverandre',
+    explanationEn:
+      '"Hverandre" (each other) is used when two or more people do something with or to one ' +
+      'another: "Anna hjelper Ola, og Ola hjelper Anna" = "De hjelper hverandre." The word never ' +
+      'changes and always refers to more than one person. It stands as an object after the verb: ' +
+      '"Vi kjenner hverandre." After a preposition it comes after the preposition: "De bor ved ' +
+      'siden av hverandre." "Seg" points back to one person ("Han vasker seg."), while "hverandre" ' +
+      'points to two or more doing something to each other ("De vasker hverandre."). "De ser dem" ' +
+      'means they see other people; "De ser hverandre" means two or more of them see one another. ' +
+      '"Hverandre" can also be used about something that happens later: "Vi ser hverandre i ' +
+      'morgen." Some verbs use -s instead: "De møtes" = "De møter hverandre."',
+    explanationNb:
+      '«Hverandre» brukes når to eller flere personer gjør noe med eller mot hverandre: «Anna ' +
+      'hjelper Ola, og Ola hjelper Anna» = «De hjelper hverandre.» Ordet endrer seg ikke, og vi ' +
+      'bruker det om flere enn én.\n\n' +
+      '**Plass:** «Hverandre» står som objekt etter verbet: «Vi kjenner hverandre.» Etter en ' +
+      'preposisjon står det også etter preposisjonen: «De bor ved siden av hverandre.»\n\n' +
+      '**Hverandre eller seg?** «Seg» viser tilbake til én person: «Han vasker seg.» ' +
+      '«Hverandre» viser til to eller flere som gjør noe mot hverandre: «De vasker hverandre.»\n\n' +
+      '**Hverandre eller dem?** «De ser dem» betyr at de ser andre personer. «De ser hverandre» ' +
+      'betyr at de to eller flere ser på hverandre.\n\n' +
+      '**Senere handling:** «Hverandre» kan også brukes om noe som skjer senere: «Vi ser ' +
+      'hverandre i morgen.»\n\n' +
+      'Noen verb bruker -s i stedet: «De møtes» = «De møter hverandre.»'
+  },
+
   'man-en-upersonlig-pronomen': {
     id: 'man-en-upersonlig-pronomen',
     titleEn: 'Impersonal pronouns «man» and «en»',

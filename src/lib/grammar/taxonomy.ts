@@ -150,7 +150,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
           'pronomen-den-det-de',
           'pronomen-objektsform'
         ]),
-        s('8.2', 'Resiprokt pronomen', 'Reciprocal pronoun'),
+        s('8.2', 'Resiprokt pronomen', 'Reciprocal pronoun', 'base', ['resiprokt-pronomen']),
         s('8.3', 'Ubestemt pronomen', 'Indefinite pronoun', 'base', ['man-en-upersonlig-pronomen']),
         s('8.4', 'Mer om pronomen', 'More on pronouns', 'B2')
       ]),
