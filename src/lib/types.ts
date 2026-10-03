@@ -278,6 +278,7 @@ export type GrammarTopic =
   | 'folelsesuttrykk' // expressing feelings: reaction words by situation (sa bra, sa synd, hurra, au, oi), sa + adjektiv (neuter for a situation, agreement with a noun), det var leit a hore
   | 'hilseord' // greetings and polite expressions: hei/god morgen/god kveld/god natt by time of day, god dag is formal, ha det/vi ses, takk/vaer sa god/unnskyld, hyggelig a mote deg
   | 'tidsadverb' // time adverbs: when (nå, i dag, i går, i morgen), how often (alltid, ofte, aldri), placement, allerede/ennå/fortsatt, i morgen vs. i morges
+  | 'egennavn' // proper names: capital letter for names and places, small letter for weekdays/months/languages/nationality words, no article before names, titles before a name (kong Harald), seas/lakes/mountains
   | 'adverbial' // adverbial: hvor/når/hvordan, position (last or first), adverbial vs. objekt/predikativ
   | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
   | 'setningsledd-identifikasjon' // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)

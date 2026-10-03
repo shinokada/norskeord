@@ -80,6 +80,31 @@ export const SUBSTANTIV_RULES: Record<string, GrammarRule> = {
       '• **noen verb** gjør artikkelen valgfri: "Jeg skal kjøpe (en) bil."'
   },
 
+  egennavn: {
+    id: 'egennavn',
+    titleEn: 'Proper names and capital letters',
+    titleNb: 'Egennavn og stor bokstav',
+    explanationEn:
+      'A proper name (egennavn) names a specific person, place or thing and is written with a ' +
+      'capital letter: Anna, Oslo, Norge, Ola Nordmann. Unlike English, Norwegian writes weekdays, ' +
+      'months, languages and nationality words with a small letter: mandag, januar, norsk, svensk, ' +
+      'nordmann. Names of people, cities and countries usually take no article: "Anna bor i ' +
+      'Oslo." (not "en Anna" or "i en Oslo"). A title before a name is written with a small ' +
+      'letter: kong Harald, dronning Sonja. Names of seas, lakes and mountains are written with a ' +
+      'capital letter: Nordsjøen, Mjøsa, Galdhøpiggen.',
+    explanationNb:
+      'Et egennavn er navnet på en bestemt person, et sted eller en ting. Egennavn skrives med ' +
+      'stor forbokstav: Anna, Oslo, Norge, Ola Nordmann.\n\n' +
+      '• **Liten forbokstav:** Ukedager, måneder, språk og nasjonalitetsord skrives med liten ' +
+      'forbokstav på norsk: mandag, januar, norsk, svensk, nordmann.\n' +
+      '• **Ingen artikkel:** Vi bruker vanligvis ikke artikkel foran personnavn eller navn på ' +
+      'byer og land: «Anna bor i Oslo.» Vi sier ikke «en Anna» eller «i en Oslo».\n' +
+      '• **Titler:** En tittel foran navnet skrives med liten forbokstav: kong Harald, dronning ' +
+      'Sonja.\n' +
+      '• **Geografiske navn:** Navn på hav, innsjøer og fjell skrives med stor forbokstav: ' +
+      'Nordsjøen, Mjøsa, Galdhøpiggen.'
+  },
+
   'noun-possessives': {
     id: 'noun-possessives',
     titleEn: 'Noun possessives (genitive -s)',

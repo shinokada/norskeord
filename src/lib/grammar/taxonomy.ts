@@ -137,7 +137,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
         s('7.2', 'Flertall', 'Plural', 'base', ['noun-plurals']),
         s('7.3', 'Bestemt form', 'Definite form', 'base', ['substantiv-bestemt-form']),
         s('7.4', 'Ubestemt artikkel', 'Indefinite article', 'base', ['ubestemt-artikkel-c']),
-        s('7.5', 'Egennavn', 'Proper names'),
+        s('7.5', 'Egennavn', 'Proper names', 'base', ['egennavn']),
         s('7.6', 'Genitiv', 'Genitive', 'base', ['noun-possessives']),
         s('7.7', 'Sammensatte substantiv', 'Compound nouns', 'base', [
           'sammensatte-substantiv',
