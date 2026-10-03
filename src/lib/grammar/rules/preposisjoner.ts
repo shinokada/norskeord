@@ -187,6 +187,36 @@ export const PREPOSISJONER_RULES: Record<string, GrammarRule> = {
       'Disse står et hakk under de mer avanserte/sjeldnere idiomatiske preposisjonene i `preposisjoner-generelt-c` — høyfrekvente hverdagskollokasjoner snarere enn litterære eller fagspesifikke.'
   },
 
+  'preposisjoner-av-for-med': {
+    id: 'preposisjoner-av-for-med',
+    titleEn: 'More uses: av, for and med',
+    titleNb: 'Flere bruksmåter: av, for og med',
+    explanationEn:
+      'Some prepositions are used in several ways. Here we look at "av", "for" and "med".\n\n' +
+      '**Av, material:** "av" shows what something is made of: "Ringen er laget av gull." "en stol av tre".\n\n' +
+      '**Av, cause:** "av" shows the cause, often of a feeling or a reaction: "Hun gråt av glede." ' +
+      '"Vi er stolte av laget."\n\n' +
+      '**Av, source:** "av" shows who we learn something from or get something from: "Jeg lærte å ' +
+      'strikke av bestemor."\n\n' +
+      '**Av, who does something:** in the passive, "av" shows who carries out the action: "Huset ble ' +
+      'bygd av to brødre."\n\n' +
+      '**For:** "for" shows who something is easy, difficult or important for: "Matematikk er ' +
+      'vanskelig for meg."\n\n' +
+      '**Med:** "med" can show how something happens: "Han leste boka med stor interesse."',
+    explanationNb:
+      'Noen preposisjoner brukes på flere måter. Her ser vi på «av», «for» og «med».\n\n' +
+      '• **Av, materiale:** «av» viser hva noe er laget av: «Ringen er laget av gull.» «en stol av tre».\n' +
+      '• **Av, årsak:** «av» viser årsaken, ofte til en følelse eller en reaksjon: «Hun gråt av glede.» ' +
+      '«Vi er stolte av laget.»\n' +
+      '• **Av, kilde:** «av» viser hvem vi lærer noe av eller får noe fra: «Jeg lærte å strikke av ' +
+      'bestemor.»\n' +
+      '• **Av, hvem som gjør noe:** I passiv viser «av» hvem som utfører handlingen: «Huset ble bygd av ' +
+      'to brødre.»\n' +
+      '• **For:** «for» viser hvem noe er lett, vanskelig eller viktig for: «Matematikk er vanskelig for ' +
+      'meg.»\n' +
+      '• **Med:** «med» kan vise hvordan noe skjer: «Han leste boka med stor interesse.»'
+  },
+
   'preposisjoner-kroppsdel-uttrykk': {
     id: 'preposisjoner-kroppsdel-uttrykk',
     titleEn: 'Body-part idioms with prepositions',

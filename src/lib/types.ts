@@ -283,6 +283,7 @@ export type GrammarTopic =
   | 'preposisjoner-tilhorighet' // prepositions for people: til (bilen til Anna), med (gift med, venn med, sammen med), hos (bor/jobber hos), fra (origin)
   | 'preposisjoner-annen-bruk' // prepositions for means, topic and purpose: med (reiser med tog), uten (kaffe uten sukker), om (snakke om), for (bra for deg, takk for), til (gave til mamma, kake til kaffen)
   | 'sammensatte-preposisjoner' // compound prepositions as fixed units: i nærheten av, i stedet for, på grunn av, ved hjelp av, i forhold til, til tross for
+  | 'preposisjoner-av-for-med' // more uses of av (material, cause, source, passive agent), for (who it concerns), med (manner)
   | 'adverbial' // adverbial: hvor/når/hvordan, position (last or first), adverbial vs. objekt/predikativ
   | 'indirekte-objekt' // indirect object: the recipient (Lars ga Eva en blomst), position before the direct object, hvem/hva questions, til-phrase alternative, object pronoun form
   | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
