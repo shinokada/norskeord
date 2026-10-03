@@ -165,7 +165,9 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
           'adj-boying-c',
           'adj-mer-mest'
         ]),
-        s('9.4', 'Enkel eller dobbel bestemmelse?', 'Single or double determination?', 'B2'),
+        s('9.4', 'Enkel eller dobbel bestemmelse?', 'Single or double determination?', 'B2', [
+          'enkel-dobbel-bestemmelse'
+        ]),
         s('9.5', 'Adjektiv brukt som substantiv', 'Adjectives used as nouns', 'base', [
           'substantivert-adjektiv'
         ]),

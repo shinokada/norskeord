@@ -57,6 +57,30 @@ export const ADJEKTIV_RULES: Record<string, GrammarRule> = {
       'Utelat aldri artikkelen: *gamle mannen er feil.'
   },
 
+  'enkel-dobbel-bestemmelse': {
+    id: 'enkel-dobbel-bestemmelse',
+    titleEn: 'Double determination and exceptions',
+    titleNb: 'Dobbel bestemmelse og unntak',
+    explanationEn:
+      'Normally we use double determination: both the article (den/det/de) and the noun in the definite ' +
+      'form: "den gode maten", "det store treet".\n\n' +
+      '**Everyday language:** in ordinary language we use double determination: "det norske folket".\n\n' +
+      '**Fixed names:** some names have the article and the adjective, but the noun has no definite ending: ' +
+      '"Det hvite hus", "Den røde plass", "Den norske kirke", "De forente nasjoner". Compare: "Det hvite ' +
+      'hus" (the name) and "det hvite huset" (an ordinary house that is white).\n\n' +
+      '**Formal written language:** in solemn or formal text the noun can also appear without the definite ' +
+      'ending: "Det norske folk ønsket frigjøring." In everyday language we say "det norske folket".',
+    explanationNb:
+      'Vanligvis har vi dobbel bestemmelse: både artikkelen (den/det/de) og substantivet i bestemt form: ' +
+      '«den gode maten», «det store treet».\n\n' +
+      '• **Hverdagsspråk:** I vanlig språk bruker vi dobbel bestemmelse: «det norske folket».\n' +
+      '• **Faste navn:** Noen navn har artikkel og adjektiv, men substantivet står uten bestemt endelse: ' +
+      '«Det hvite hus», «Den røde plass», «Den norske kirke», «De forente nasjoner». Sammenlign: ' +
+      '«Det hvite hus» (navnet) og «det hvite huset» (et vanlig hus som er hvitt).\n' +
+      '• **Formelt skriftspråk:** I høytidelig eller formell tekst kan substantivet også stå uten ' +
+      'bestemt endelse: «Det norske folk ønsket frigjøring.» I hverdagsspråk sier vi «det norske folket».'
+  },
+
   'adj-comparison': {
     id: 'adj-comparison',
     titleEn: 'Adjective comparison',

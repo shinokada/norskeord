@@ -162,6 +162,7 @@ export type GrammarTopic =
   | 'noun-possessives' // Eriks / Annes — no apostrophe in Norwegian
   | 'adj-agreement' // adjective agreement: ubestemt sg → pl, bestemt form
   | 'adj-definite' // den/det/de + weak adjective form
+  | 'enkel-dobbel-bestemmelse' // double determination (den gode maten) as the norm; exceptions: fixed names (Det hvite hus, De forente nasjoner) and formal written language (Det norske folk)
   | 'adj-comparison' // comparative and superlative forms
   | 'sterke-verb' // strong verb preteritum and past participle forms
   | 'fortellende-setninger' // statements: V2 word order, fronted adverbials
