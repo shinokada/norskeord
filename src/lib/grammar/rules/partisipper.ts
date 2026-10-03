@@ -64,5 +64,29 @@ export const PARTISIPPER_RULES: Record<string, GrammarRule> = {
       '• «sunget» forblir «sunget» i predikativ\n' +
       '• «stjålet» tar en uregelmessig -et-form\n\n' +
       'Læres enkeltvis, ikke utledes fra en regel.'
+  },
+
+  'substantivert-partisipp': {
+    id: 'substantivert-partisipp',
+    titleEn: 'Participles used as nouns',
+    titleNb: 'Partisipp som substantiv',
+    explanationEn:
+      'A participle can stand alone as a noun and refer to people: "De streikende samlet seg foran ' +
+      'Stortinget."\n\n' +
+      '**Presens partisipp (-ende):** "de streikende", "de reisende", "de overlevende". It never ' +
+      'inflects: "den streikende", "de streikende".\n\n' +
+      '**Perfektum partisipp:** "de ansatte", "den savnede". A perfektum participle inflects like an ' +
+      'adjective when it is used as a noun.\n\n' +
+      '**Without an article:** in the plural the participle can stand without an article: "Hvor mange ' +
+      'ansatte har dere?" "Det var mange reisende."',
+    explanationNb:
+      'Et partisipp kan stå alene som et substantiv og vise til personer: «De streikende samlet seg ' +
+      'foran Stortinget.»\n\n' +
+      '• **Presens partisipp (-ende):** «de streikende», «de reisende», «de overlevende». Det ' +
+      'bøyes aldri: «den streikende», «de streikende».\n' +
+      '• **Perfektum partisipp:** «de ansatte», «den savnede». Perfektum partisipp bøyes som et ' +
+      'adjektiv når det brukes substantivisk.\n' +
+      '• **Uten artikkel:** I flertall kan partisippet stå uten artikkel: «Hvor mange ansatte har ' +
+      'dere?» «Det var mange reisende.»'
   }
 };

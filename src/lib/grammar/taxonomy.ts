@@ -251,7 +251,9 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
           'B1',
           ['adj-partisipp-som-adjektiv']
         ),
-        s('13.4', 'Substantivisk bruk av partisippene', 'Participles used as nouns', 'B2'),
+        s('13.4', 'Substantivisk bruk av partisippene', 'Participles used as nouns', 'B2', [
+          'substantivert-partisipp'
+        ]),
         s('13.5', 'Sammensatte partisipper', 'Compound participles', 'B2')
       ]),
       ch(14, 'preposisjoner', 'Preposisjoner', 'Prepositions', [
