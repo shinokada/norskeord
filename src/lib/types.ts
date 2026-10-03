@@ -274,6 +274,7 @@ export type GrammarTopic =
   | 'subjekt-og-verbal' // subject and verbal: hvem/hva + verb test, verbal (one or more verbs), S-V order, inversion in questions/after a front element, subjekt vs. objekt
   | 'objekt' // direct object: hva/hvem test, place after the verb, objekt vs. adverbial/predikativ, objekt in the front field
   | 'predikativ' // predicative: describes the subject after være/bli/hete/virke/se ut, noun or adjective, position, predikativ vs. objekt/adverbial
+  | 'tidsadverb' // time adverbs: when (nå, i dag, i går, i morgen), how often (alltid, ofte, aldri), placement, allerede/ennå/fortsatt, i morgen vs. i morges
   | 'adverbial' // adverbial: hvor/når/hvordan, position (last or first), adverbial vs. objekt/predikativ
   | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
   | 'setningsledd-identifikasjon' // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)

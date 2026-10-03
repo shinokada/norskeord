@@ -223,7 +223,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
         ])
       ]),
       ch(12, 'adverb', 'Adverb', 'Adverbs', [
-        s('12.1', 'Tidsadverb', 'Adverbs of time'),
+        s('12.1', 'Tidsadverb', 'Adverbs of time', 'base', ['tidsadverb']),
         s('12.2', 'Stedsadverb', 'Adverbs of place', 'base', [
           'adverb-sted-hjem',
           'stedsadverb-statisk-dynamisk'

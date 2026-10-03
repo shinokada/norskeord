@@ -4,6 +4,37 @@
 import type { GrammarRule } from '$lib/types';
 
 export const ADVERB_RULES: Record<string, GrammarRule> = {
+  tidsadverb: {
+    id: 'tidsadverb',
+    titleEn: 'Time adverbs (when and how often)',
+    titleNb: 'Tidsadverb',
+    explanationEn:
+      'Time adverbs say WHEN something happens (nå, i dag, i går, i morgen, i kveld, snart) or ' +
+      'HOW OFTEN (alltid, ofte, noen ganger, sjelden, aldri). A "when" adverb usually comes last: ' +
+      '"Jeg jobber i dag." It can also come first, and then the verb follows right after: "I dag ' +
+      'jobber jeg." A "how often" adverb usually comes right after the verb: "Hun spiser alltid ' +
+      'frokost." In a question it comes after the subject: "Spiser du ofte fisk?" Allerede ' +
+      '(already) means something has happened, earlier than expected; "ikke ... ennå" (not yet) ' +
+      'means it has not happened so far; fortsatt (still) means something continues or is still ' +
+      'true. "I morgen" is tomorrow, "i morges" is earlier this morning.',
+    explanationNb:
+      'Tidsadverb forteller **når** noe skjer, eller **hvor ofte** det skjer.\n\n' +
+      '• **når:** nå, i dag, i går, i morgen, i kveld, snart: "Vi spiser middag nå." "Hun kommer i ' +
+      'morgen."\n' +
+      '• **hvor ofte:** alltid, ofte, noen ganger, sjelden, aldri: "Jeg drikker alltid kaffe om ' +
+      'morgenen."\n\n' +
+      '**Plassering:** Et tidsadverb som sier når, står vanligvis sist: "Jeg jobber i dag." Det ' +
+      'kan også stå først. Da kommer verbet rett etter: "I dag jobber jeg."\n\n' +
+      'Et adverb som sier hvor ofte, står vanligvis rett etter verbet: "Hun spiser alltid ' +
+      'frokost." I et spørsmål kommer det etter subjektet: "Spiser du ofte fisk?"\n\n' +
+      '**Allerede, ennå og fortsatt:**\n' +
+      '• «allerede»: noe har skjedd, tidligere enn forventet: "Han har allerede reist."\n' +
+      '• «ikke ... ennå»: noe har ikke skjedd til nå: "Jeg har ikke spist ennå."\n' +
+      '• «fortsatt»: noe varer eller er sant, som før: "Hun bor fortsatt i Oslo."\n\n' +
+      '**I morgen og i morges:** «i morgen» er dagen etter i dag. «I morges» er tidligere i dag, ' +
+      'om morgenen.'
+  },
+
   'adverb-sted-hjem': {
     id: 'adverb-sted-hjem',
     titleEn: 'Location vs. movement adverbs (inne/ute, inn/ut, hjem/hjemme)',
