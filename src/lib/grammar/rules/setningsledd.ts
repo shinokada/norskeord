@@ -236,6 +236,36 @@ export const SETNINGSLEDD_RULES: Record<string, GrammarRule> = {
       'adverbial sier for eksempel hvor, når eller hvordan noe skjer: «Hun er **hjemme**.»'
   },
 
+  'indirekte-objekt': {
+    id: 'indirekte-objekt',
+    titleEn: 'The indirect object',
+    titleNb: 'Indirekte objekt',
+    explanationEn:
+      '**Indirect object (indirekte objekt):** the person who receives, gets or benefits from the ' +
+      'action. It comes together with a direct object: «Lars ga **Eva** en blomst.» («Eva» is the ' +
+      'indirect object, «en blomst» is the direct object.)\n\n' +
+      '**Position:** the indirect object comes before the direct object.\n\n' +
+      '**Questions:** ask «hva» for the direct object (Hva ga Lars? En blomst.) and «hvem» for the ' +
+      'indirect object (Hvem fikk blomsten? Eva.)\n\n' +
+      '**With «til»:** we can move the recipient after the direct object and use «til»: «Lars ga en ' +
+      'blomst til Eva.» Then the sentence no longer has an indirect object, but a phrase with «til».\n\n' +
+      '**Pronouns:** the indirect object has the object form: «Han viste **meg** bildet.»\n\n' +
+      '**Common verbs:** gi, sende, vise, kjøpe, fortelle, lære.\n\n' +
+      '**Not all verbs:** many verbs have only one object: «Jeg ser en film.»',
+    explanationNb:
+      '**Indirekte objekt:** Den som får, mottar eller har nytte av handlingen. Det står sammen med ' +
+      'et direkte objekt: «Lars ga **Eva** en blomst.» («Eva» er indirekte objekt, «en blomst» er ' +
+      'direkte objekt.)\n\n' +
+      '**Plass:** Det indirekte objektet står foran det direkte objektet.\n\n' +
+      '**Spørsmål:** Spør «hva» for det direkte objektet (Hva ga Lars? En blomst.) og «hvem» for ' +
+      'det indirekte (Hvem fikk blomsten? Eva.)\n\n' +
+      '**Med «til»:** Vi kan flytte mottakeren etter det direkte objektet og bruke «til»: «Lars ga ' +
+      'en blomst til Eva.» Da har setningen ikke lenger et indirekte objekt, men en frase med «til».\n\n' +
+      '**Pronomen:** Det indirekte objektet har objektsform: «Han viste **meg** bildet.»\n\n' +
+      '**Vanlige verb:** gi, sende, vise, kjøpe, fortelle, lære.\n\n' +
+      '**Ikke alle verb:** Mange verb har bare ett objekt: «Jeg ser en film.»'
+  },
+
   'predikativ-agreement': {
     id: 'predikativ-agreement',
     titleEn: 'Predikativ adjective agreement',

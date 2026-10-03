@@ -284,6 +284,7 @@ export type GrammarTopic =
   | 'preposisjoner-annen-bruk' // prepositions for means, topic and purpose: med (reiser med tog), uten (kaffe uten sukker), om (snakke om), for (bra for deg, takk for), til (gave til mamma, kake til kaffen)
   | 'sammensatte-preposisjoner' // compound prepositions as fixed units: i nærheten av, i stedet for, på grunn av, ved hjelp av, i forhold til, til tross for
   | 'adverbial' // adverbial: hvor/når/hvordan, position (last or first), adverbial vs. objekt/predikativ
+  | 'indirekte-objekt' // indirect object: the recipient (Lars ga Eva en blomst), position before the direct object, hvem/hva questions, til-phrase alternative, object pronoun form
   | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
   | 'setningsledd-identifikasjon' // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)
   | 'leddsetning-grunnleggende'; // what a leddsetning is: starts with at/fordi/når/hvis, can't stand alone, can come first (then the main clause starts with the verb)

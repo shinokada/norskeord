@@ -62,8 +62,9 @@ export const PRONOMEN_RULES: Record<string, GrammarRule> = {
       'another: "Anna hjelper Ola, og Ola hjelper Anna" = "De hjelper hverandre." The word never ' +
       'changes and always refers to more than one person. It stands as an object after the verb: ' +
       '"Vi kjenner hverandre." After a preposition it comes after the preposition: "De bor ved ' +
-      'siden av hverandre." "Seg" points back to one person ("Han vasker seg."), while "hverandre" ' +
-      'points to two or more doing something to each other ("De vasker hverandre."). "De ser dem" ' +
+      'siden av hverandre." "Seg" is used when the subject does something to itself, also with a plural ' +
+      'subject ("Han vasker seg." "De vasker seg" = each of them washes themselves), while "hverandre" ' +
+      'is used when they do something to one another ("De vasker hverandre."). "De ser dem" ' +
       'means they see other people; "De ser hverandre" means two or more of them see one another. ' +
       '"Hverandre" can also be used about something that happens later: "Vi ser hverandre i ' +
       'morgen." Some verbs use -s instead: "De møtes" = "De møter hverandre."',
@@ -73,8 +74,9 @@ export const PRONOMEN_RULES: Record<string, GrammarRule> = {
       'bruker det om flere enn én.\n\n' +
       '**Plass:** «Hverandre» står som objekt etter verbet: «Vi kjenner hverandre.» Etter en ' +
       'preposisjon står det også etter preposisjonen: «De bor ved siden av hverandre.»\n\n' +
-      '**Hverandre eller seg?** «Seg» viser tilbake til én person: «Han vasker seg.» ' +
-      '«Hverandre» viser til to eller flere som gjør noe mot hverandre: «De vasker hverandre.»\n\n' +
+      '**Hverandre eller seg?** «Seg» brukes når subjektet gjør noe med seg selv, også i flertall: ' +
+      '«Han vasker seg.» «De vasker seg.» (hver for seg). «Hverandre» brukes når de gjør noe med ' +
+      'hverandre: «De vasker hverandre.» (den ene vasker den andre).\n\n' +
       '**Hverandre eller dem?** «De ser dem» betyr at de ser andre personer. «De ser hverandre» ' +
       'betyr at de to eller flere ser på hverandre.\n\n' +
       '**Senere handling:** «Hverandre» kan også brukes om noe som skjer senere: «Vi ser ' +
