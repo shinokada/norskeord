@@ -258,7 +258,9 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
         s('14.3', 'Tilhørighet og tilknytning', 'Belonging and connection', 'base', [
           'preposisjoner-tilhorighet'
         ]),
-        s('14.4', 'Annen bruk av preposisjoner', 'Other uses of prepositions'),
+        s('14.4', 'Annen bruk av preposisjoner', 'Other uses of prepositions', 'base', [
+          'preposisjoner-annen-bruk'
+        ]),
         s('14.5', 'Sammensatte preposisjoner', 'Compound prepositions'),
         s('14.6', 'Litt mer om preposisjoner', 'A little more on prepositions', 'B1'),
         s('14.7', 'Faste uttrykk med preposisjon', 'Fixed expressions with prepositions', 'B1', [

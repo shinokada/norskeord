@@ -113,6 +113,31 @@ export const PREPOSISJONER_RULES: Record<string, GrammarRule> = {
       '• **Fra:** «fra» viser opprinnelse: «Hun er fra Spania.»'
   },
 
+  'preposisjoner-annen-bruk': {
+    id: 'preposisjoner-annen-bruk',
+    titleEn: 'Means, topic and purpose',
+    titleNb: 'Måte, tema og formål',
+    explanationEn:
+      'Prepositions can show how something happens, what a conversation is about, and who or ' +
+      'what something is meant for. "Med" shows a tool or how we travel: "Jeg reiser med tog." ' +
+      '"Han skriver med blyant." "Uten" shows that something is missing: "kaffe uten sukker". ' +
+      '"Om" shows the topic: "Vi snakker om været." "en bok om Norge". "For" shows who ' +
+      'something is good or important for, and it is used with "takk": "Dette er bra for deg." ' +
+      '"Takk for hjelpen!" "Til" shows who something is meant for, or what it is used for: "en ' +
+      'gave til mamma", "kake til kaffen".',
+    explanationNb:
+      'Preposisjoner kan vise hvordan noe skjer, hva en samtale handler om, og hvem eller hva noe ' +
+      'er ment for.\n\n' +
+      '• **Med:** «med» viser hjelpemiddel og hvordan vi reiser: «Jeg reiser med tog.» «Han ' +
+      'skriver med blyant.»\n' +
+      '• **Uten:** «uten» viser at noe mangler: «kaffe uten sukker».\n' +
+      '• **Om:** «om» viser temaet: «Vi snakker om været.» «en bok om Norge».\n' +
+      '• **For:** «for» viser hvem noe er bra eller viktig for, og vi bruker det med «takk»: ' +
+      '«Dette er bra for deg.» «Takk for hjelpen!»\n' +
+      '• **Til:** «til» viser hvem noe er ment for, eller hva noe skal brukes til: «en gave til ' +
+      'mamma», «kake til kaffen».'
+  },
+
   'preposisjoner-uttrykk-b2': {
     id: 'preposisjoner-uttrykk-b2',
     titleEn: 'Idiomatic B2 preposition collocations',
