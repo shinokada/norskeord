@@ -310,7 +310,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
           'derfor-fordi',
           'for-sa-arsak-folge'
         ]),
-        s('17.5', 'Betingelse', 'Condition'),
+        s('17.5', 'Betingelse', 'Condition', 'base', ['betingelse-hvis-dersom']),
         s('17.6', 'Mer om tillegg', 'More on addition', 'B2'),
         s('17.7', 'Mer om motsetning', 'More on contrast', 'B2', ['kontrast-uttrykk']),
         s('17.8', 'Mer om tid', 'More on time', 'B2'),

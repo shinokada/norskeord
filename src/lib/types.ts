@@ -292,7 +292,8 @@ export type GrammarTopic =
   | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
   | 'setningsledd-identifikasjon' // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)
   | 'leddsetning-grunnleggende' // what a leddsetning is: starts with at/fordi/når/hvis, can't stand alone, can come first (then the main clause starts with the verb)
-  | 'tillegg-setninger'; // adding information between sentences: og, dessuten (verb right after it when first), «også» after the verb or last, heller ikke / heller last
+  | 'tillegg-setninger' // adding information between sentences: og, dessuten (verb right after it when first), «også» after the verb or last, heller ikke / heller last
+  | 'betingelse-hvis-dersom'; // conditions: hvis and dersom (same meaning, dersom more formal), condition clause after or before the main clause (verb first in the main clause), ikke between subject and verb
 
 export interface GrammarRule {
   id: GrammarTopic;

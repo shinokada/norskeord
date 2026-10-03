@@ -147,6 +147,27 @@ export const SAMMENBINDING_AV_SETNINGER_RULES: Record<string, GrammarRule> = {
       '«Ennå» har bare betydningen fremdeles — det kan aldri erstatte «enda» foran tallord, komparativ eller som subjunksjon.'
   },
 
+  'betingelse-hvis-dersom': {
+    id: 'betingelse-hvis-dersom',
+    titleEn: 'Conditions with hvis and dersom',
+    titleNb: 'Betingelse: «hvis» og «dersom»',
+    explanationEn:
+      'We use «hvis» or «dersom» to express a condition for something to happen. «Dersom» means the ' +
+      'same as «hvis» and is often used in slightly more formal language.\n\n' +
+      '**The condition clause after the main clause:** "Jeg kommer hvis jeg får tid." "Han kommer ' +
+      'dersom han ikke har feber." In the condition clause, «ikke» stands between the subject and the ' +
+      'verb.\n\n' +
+      '**The condition clause first:** the verb then comes first in the main clause: "Hvis du har ' +
+      'feber, må du ikke gå på jobben."',
+    explanationNb:
+      'Vi bruker «hvis» eller «dersom» når vi uttrykker en betingelse for at noe skal skje. ' +
+      '«Dersom» betyr det samme som «hvis» og brukes ofte i et litt mer formelt språk.\n\n' +
+      '• **Leddsetningen etter hovedsetningen:** «Jeg kommer hvis jeg får tid.» «Han kommer dersom han ' +
+      'ikke har feber.» I leddsetningen står «ikke» mellom subjektet og verbet.\n' +
+      '• **Leddsetningen først:** Da kommer verbet først i hovedsetningen: «Hvis du har feber, må du ' +
+      'ikke gå på jobben.»'
+  },
+
   'arsak-og-folge-uttrykk': {
     id: 'arsak-og-folge-uttrykk',
     titleEn: 'A broader toolkit for cause, effect, and purpose',
