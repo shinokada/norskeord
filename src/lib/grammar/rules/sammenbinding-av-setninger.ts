@@ -224,6 +224,38 @@ export const SAMMENBINDING_AV_SETNINGER_RULES: Record<string, GrammarRule> = {
       'Det faste uttrykket «dermed basta!» ("og dermed er saken avgjort!") bruker «dermed» for å erklære en sak avsluttet, uten videre diskusjon.'
   },
 
+  'folge-uttrykk': {
+    id: 'folge-uttrykk',
+    titleEn: 'Result: derfor, av den grunn, så … at and sånn at',
+    titleNb: 'Følge: derfor, av den grunn, så … at og sånn at',
+    explanationEn:
+      'We have several ways to express the result of something. «Derfor» often comes first in ' +
+      'the sentence, but can also stand in the middle field, where it can seem more written and ' +
+      'formal: "Ministeren er sykmeldt, og hun har derfor ikke anledning til å svare i dag." ' +
+      '«Av den grunn» and «som en følge av det» refer back to the cause mentioned before: "Han ' +
+      'hadde feber. Av den grunn kunne han ikke gå på jobb." "Det var streik, og som en følge ' +
+      'av det kom ikke bussen." The construction «så … at» expresses a result. «At» introduces the ' +
+      'subordinate clause. Between «så» and «at» there is an adjective or adverb, and the ' +
+      'adjective agrees with the subject: "Hun var så trøtt at hun sovnet." "De var så trøtte at ' +
+      'de sovnet." "De snakket så fort at ingen skjønte hva de sa." «Slik at» and «sånn at» ' +
+      '(more spoken) also express a result and introduce a subordinate clause: "Hun forklarte det en ' +
+      'gang til sånn at de skjønte det."',
+    explanationNb:
+      'Vi har flere måter å uttrykke følgen av noe på.\n\n' +
+      '• **«Derfor»** står ofte først i setningen, men kan også stå i midtfeltet. Der kan det ' +
+      'virke mer skriftlig og formelt: "Ministeren er sykmeldt, og hun har derfor ikke anledning ' +
+      'til å svare i dag."\n' +
+      '• **«Av den grunn»** og **«som en følge av det»** viser tilbake til årsaken som er nevnt ' +
+      'før: "Han hadde feber. Av den grunn kunne han ikke gå på jobb." "Det var streik, og som en ' +
+      'følge av det kom ikke bussen."\n' +
+      '• **Konstruksjonen «så … at»** brukes til å uttrykke en følge. «At» innleder leddsetningen. ' +
+      'Mellom «så» og «at» står et adjektiv eller adverb. Adjektivet retter seg etter subjektet: ' +
+      '"Hun var så trøtt at hun sovnet." "De var så trøtte at de sovnet." "De snakket så fort at ' +
+      'ingen skjønte hva de sa."\n' +
+      '• **«Slik at»** og **«sånn at»** (mer muntlig) uttrykker også en følge og innleder en ' +
+      'leddsetning: "Hun forklarte det en gang til sånn at de skjønte det."'
+  },
+
   'hypotetiske-betingelsessetninger': {
     id: 'hypotetiske-betingelsessetninger',
     titleEn: 'Hypothetical and counterfactual conditionals',

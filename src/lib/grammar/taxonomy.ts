@@ -315,7 +315,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
         s('17.7', 'Mer om motsetning', 'More on contrast', 'B2', ['kontrast-uttrykk']),
         s('17.8', 'Mer om tid', 'More on time', 'B2', ['tid-samtidighet-plutselig']),
         s('17.9', 'Mer om årsak', 'More on cause', 'B2', ['arsak-og-folge-uttrykk']),
-        s('17.10', 'Mer om følge', 'More on result', 'B2'),
+        s('17.10', 'Mer om følge', 'More on result', 'B2', ['folge-uttrykk']),
         s('17.11', 'Mer om hensikt', 'More on purpose', 'B2'),
         s('17.12', 'Mer om betingelse', 'More on condition', 'B2', [
           'hypotetiske-betingelsessetninger'
