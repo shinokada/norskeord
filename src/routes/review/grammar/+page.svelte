@@ -10,11 +10,15 @@
    *   ?level=b1        restrict to one CEFR level (omit = all levels)
    *   ?topic=v2-word-order
    *                    restrict to one grammar topic (used by the
-   *                    per-topic due badge — LevelStatRows.svelte). Unlike
-   *                    vocab's A1–B2 uttrykk rows, grammar topics never hit
-   *                    the sentinel-category problem, so no post-resolve
-   *                    theme workaround is needed here — see
-   *                    getDueGrammarItems' doc comment in progress.ts.
+   *                    per-topic due badge — LevelStatRows.svelte). Matched
+   *                    against the question's live topic (id-index.ts), so
+   *                    progress saved under a retired topic id still counts.
+   *   ?chapter=pronomen
+   *                    restrict to one chapter of the grammar book (its
+   *                    primary topics; slug from grammar/taxonomy.ts). Used
+   *                    by the per-chapter due links on /my-progress/grammar
+   *                    (grammar-update.md, Phase 7). An unknown slug shows the
+   *                    empty state instead of reviewing everything.
    *
    * This is a lighter renderer than GrammarSession.svelte, by design (see
    * the Fix 3 discussion in due-only-review-update.md): it doesn't call
@@ -37,6 +41,8 @@
     countDueToday
   } from '$lib/progress';
   import { gradeGrammarAnswer } from '$lib/grammar/session';
+  import { resolveGrammarQuestion } from '$lib/grammar/id-index';
+  import { chapterScope, dueInScope } from '$lib/grammar/review-scope';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import * as m from '$lib/paraglide/messages';
   import FillQuestion from '$lib/components/grammar/FillQuestion.svelte';
@@ -118,7 +124,18 @@
     progressMap =
       isPlus && userId ? await loadGrammarProgressFromSupabase(userId) : loadGrammarProgressMap();
 
-    const dueItems = getDueGrammarItems(progressMap, { level: levelParam, topic: topicParam });
+    // `resolve` makes the level/topic filters use each question's CURRENT
+    // topic/level (grammar/id-index.ts), not the snapshot stored on the
+    // progress row, which is stale for cards reviewed before Phase 1b.
+    const dueItems = dueInScope(
+      getDueGrammarItems(progressMap, {
+        level: levelParam,
+        topic: topicParam,
+        resolve: resolveGrammarQuestion
+      }),
+      chapterScope(page.url.searchParams.get('chapter')),
+      (id) => resolveGrammarQuestion(id)?.topic
+    );
 
     if (dueItems.length === 0) {
       duePool = [];

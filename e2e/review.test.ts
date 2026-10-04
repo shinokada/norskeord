@@ -111,22 +111,35 @@ test.describe('/review', () => {
 });
 
 test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
-  test('shows the global "Study due now" banner linking to /review when something is due', async ({
+  test('shows a "Study due now" button on the Vocabulary card linking to /review?type=vocab', async ({
     page
   }) => {
+    // grammar-update.md Phase 4: the single global banner is gone; each
+    // content-type hub card has its own button. Only vocab is due here, so
+    // exactly one such link renders.
     await seed(page, DUE_YESTERDAY);
     await page.goto('/my-progress');
-    const banner = page.getByRole('link', { name: /study due now/i });
-    await expect(banner).toBeVisible();
-    await expect(banner).toHaveAttribute('href', '/review');
+    const button = page.getByRole('link', { name: /study due now/i });
+    await expect(button).toHaveCount(1);
+    await expect(button).toHaveAttribute('href', '/review?type=vocab');
   });
 
-  test('hides the global banner when nothing is currently due', async ({ page }) => {
-    // Due tomorrow, not today — totalSeen > 0 but totalDueToday === 0, so
-    // the banner should stay hidden even though there's reviewed content.
+  test('shows a "Study due now" button on the Uttrykk card linking to /review?type=uttrykk', async ({
+    page
+  }) => {
+    await seedUttrykk(page, DUE_YESTERDAY);
+    await page.goto('/my-progress');
+    const button = page.getByRole('link', { name: /study due now/i });
+    await expect(button).toHaveCount(1);
+    await expect(button).toHaveAttribute('href', '/review?type=uttrykk');
+  });
+
+  test('hides every "Study due now" button when nothing is currently due', async ({ page }) => {
+    // Due tomorrow, not today — totalSeen > 0 but nothing is due, so no card
+    // renders a button.
     await seed(page, DUE_TOMORROW);
     await page.goto('/my-progress');
-    await expect(page.getByRole('link', { name: /study due now/i })).not.toBeVisible();
+    await expect(page.getByRole('link', { name: /study due now/i })).toHaveCount(0);
   });
 
   test('shows the combined vocab + uttrykk due count on the A1 level tab, with no per-level "Study due at" link', async ({
@@ -252,6 +265,16 @@ test.describe('/review/grammar', () => {
 });
 
 test.describe('/my-progress — Grammar due badge (Fix 3)', () => {
+  test('shows a "Study due now" button on the Grammar card linking to /review/grammar', async ({
+    page
+  }) => {
+    await seedGrammar(page, GRAMMAR_DUE_YESTERDAY);
+    await page.goto('/my-progress');
+    const button = page.getByRole('link', { name: /study due now/i });
+    await expect(button).toHaveCount(1);
+    await expect(button).toHaveAttribute('href', '/review/grammar');
+  });
+
   test('shows a clickable grammar due badge linking to /review/grammar', async ({ page }) => {
     await seedGrammar(page, GRAMMAR_DUE_YESTERDAY);
     await page.goto('/my-progress');

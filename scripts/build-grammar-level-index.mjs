@@ -12,6 +12,13 @@
  *   - src/lib/data/grammar-b2.json
  *   - src/lib/data/grammar-c.json
  *   - src/lib/data/grammar-topic-index.json
+ *   - src/lib/data/grammar-id-index.json   (question id -> [topic, cefr])
+ *
+ * grammar-id-index.json lets progress/stats code resolve a stored question
+ * id to its CURRENT topic and level at read time, instead of trusting the
+ * topic/level snapshot saved on a progress row (which goes stale when topics
+ * are reorganised, e.g. grammar-update.md Phase 1b). Imported only through
+ * src/lib/grammar/id-index.ts so it stays out of routes that don't need it.
  *
  * Safety check: exits non-zero if the per-level split counts + index
  * counts don't reconcile back to grammar.json's total question count.
@@ -40,6 +47,7 @@ const LEVEL_FILE = {
   C: 'grammar-c.json'
 };
 const TOPIC_INDEX_FILE = resolve(DATA_DIR, 'grammar-topic-index.json');
+const ID_INDEX_FILE = resolve(DATA_DIR, 'grammar-id-index.json');
 
 const raw = readFileSync(SRC_FILE, 'utf-8');
 const questions = JSON.parse(raw);
@@ -91,6 +99,19 @@ for (const [topic, entry] of topicMap.entries()) {
   };
 }
 
+// --- Build id index: question id -> [topic, cefr] ---
+const idIndex = new Map();
+const duplicateIds = [];
+for (const q of questions) {
+  if (idIndex.has(q.id)) duplicateIds.push(q.id);
+  idIndex.set(q.id, [q.topic, q.cefr]);
+}
+if (duplicateIds.length > 0) {
+  console.error(`Found ${duplicateIds.length} duplicate question id(s):`);
+  for (const id of duplicateIds.slice(0, 10)) console.error(`  ${id}`);
+  process.exit(1);
+}
+
 // --- Safety check: split totals + index totals reconcile to source total ---
 const sourceTotal = questions.length;
 const splitTotal = LEVELS.reduce((sum, lvl) => sum + byLevel[lvl].length, 0);
@@ -118,6 +139,16 @@ for (const lvl of LEVELS) {
 
 writeFileSync(TOPIC_INDEX_FILE, JSON.stringify(topicIndex, null, 2) + '\n', 'utf-8');
 console.log(`  grammar-topic-index.json: ${Object.keys(topicIndex).length} topics`);
+
+// One entry per line (inline [topic, cefr] arrays) keeps the file small and diffs readable.
+const idIndexBody = [...idIndex.entries()]
+  .map(
+    ([id, [topic, cefr]]) =>
+      `  ${JSON.stringify(id)}: [${JSON.stringify(topic)}, ${JSON.stringify(cefr)}]`
+  )
+  .join(',\n');
+writeFileSync(ID_INDEX_FILE, `{\n${idIndexBody}\n}\n`, 'utf-8');
+console.log(`  grammar-id-index.json: ${idIndex.size} question ids`);
 
 console.log(
   `\n✅  Split ${sourceTotal} questions across ${LEVELS.length} level files, ` +

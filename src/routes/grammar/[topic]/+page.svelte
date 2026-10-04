@@ -2,7 +2,16 @@
   import { page } from '$app/state';
   import { browser } from '$app/environment';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
-  import GrammarSession from '$lib/components/grammar/GrammarSession.svelte';
+  import TopicTabs from '$lib/components/grammar/TopicTabs.svelte';
+  import TopicNav from '$lib/components/grammar/TopicNav.svelte';
+  import { chapterHref } from '$lib/grammar/overview';
+  import {
+    countByLevel,
+    lockedBreakdown,
+    parseTabParam,
+    teaserText,
+    topicNavModel
+  } from '$lib/grammar/topic-page';
   import * as m from '$lib/paraglide/messages';
 
   let { data } = $props();
@@ -41,6 +50,19 @@
   );
   let locked = $derived(!isPlus && playable.length === 0);
 
+  // Plus teaser (Phase 6c): the questions in scope (all levels, or just
+  // ?level=), how they split by level, and how many a free learner cannot play.
+  let scoped = $derived(
+    levelParam() ? data.questions.filter((q) => q.cefr === levelParam()) : data.questions
+  );
+  let teaser = $derived(teaserText(rule));
+  let teaserLevels = $derived(countByLevel(scoped));
+  let lockedInfo = $derived(lockedBreakdown(scoped, freeSet));
+
+  // Breadcrumb, prev/next and related topics, all from the taxonomy (Phase 6a).
+  let nav = $derived(topicNavModel(data.topic));
+  let tabParam = $derived(parseTabParam(page.url.searchParams.get('tab')));
+
   // Back-navigation: if the user came from a level hub, show "← B1" on the
   // left and "Grammar topics →" on the right. Otherwise fall back to just
   // "Grammar topics →" on the left.
@@ -64,9 +86,7 @@
   }
 </script>
 
-<svelte:head>
-  <title>{title} · {m.grammar_title()} — Norskeord</title>
-</svelte:head>
+<!-- <title> and meta come from `pageMetaTags` in +page.ts (merged in +layout.svelte). -->
 
 <div class="mx-auto max-w-2xl px-4 py-10 text-left">
   <div class="mb-4 flex items-center justify-between">
@@ -74,7 +94,7 @@
       <a
         href="/learn/{fromLevel()}"
         onclick={(e) => goBack(fromLevel()!, e)}
-        class="inline-flex items-center gap-1 text-sm text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-300"
+        class="inline-flex items-center gap-1 rounded text-sm text-indigo-600 hover:text-indigo-800 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none dark:text-indigo-300 dark:hover:text-indigo-200"
       >
         ← {fromLevel()!.toUpperCase()}
       </a>
@@ -83,19 +103,62 @@
     {/if}
     <a
       href="/grammar"
-      class="text-sm text-gray-400 hover:text-indigo-500 dark:text-gray-300 dark:hover:text-indigo-300"
+      class="rounded text-sm text-gray-600 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none dark:text-gray-300 dark:hover:text-indigo-300"
     >
       {m.grammar_back_to_topics()} →
     </a>
   </div>
 
+  {#if nav}
+    <nav
+      aria-label={m.grammar_topic_breadcrumb_aria()}
+      data-testid="topic-page-breadcrumb"
+      class="mb-3 text-xs text-gray-500 dark:text-gray-400"
+    >
+      <a href="/grammar" class="hover:text-indigo-500">{m.grammar_title()}</a>
+      <span aria-hidden="true">›</span>
+      <a href={chapterHref(nav.chapter.slug, levelParam())} class="hover:text-indigo-500">
+        {nav.chapter.no}. {nav.chapter.titleNb}
+      </a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">{nav.section.id} {nav.section.titleNb}</span>
+    </nav>
+  {/if}
+
   <h1 class="mb-6 text-xl font-bold text-gray-900 dark:text-white">{title}</h1>
 
   {#if locked}
+    <!-- Plus teaser: the rule's opening and what is inside, then the upsell. -->
+    {#if teaser}
+      <section
+        data-testid="topic-teaser"
+        class="mb-4 rounded-2xl border border-gray-200 bg-white p-6 text-left shadow-sm dark:border-gray-700 dark:bg-indigo-950/60"
+      >
+        <p
+          class="mb-2 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400"
+        >
+          {m.grammar_teaser_label()}
+        </p>
+        <p class="text-sm text-gray-700 dark:text-gray-300" data-testid="topic-teaser-text">
+          {teaser}
+        </p>
+        {#if teaserLevels.length > 0}
+          <ul class="mt-4 flex flex-wrap gap-2" data-testid="topic-teaser-levels">
+            {#each teaserLevels as lc (lc.level)}
+              <li
+                class="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700 dark:bg-gray-800 dark:text-gray-200"
+              >
+                {m.grammar_teaser_level_count({ level: lc.level, count: lc.count })}
+              </li>
+            {/each}
+          </ul>
+        {/if}
+      </section>
+    {/if}
     <div
       class="rounded-2xl border border-amber-300 bg-amber-50 p-6 text-center shadow-sm dark:border-amber-700 dark:bg-amber-900/20"
     >
-      <p class="mb-2 text-2xl">🔒</p>
+      <p class="mb-2 text-2xl" aria-hidden="true">🔒</p>
       <h2 class="mb-2 text-lg font-bold text-amber-800 dark:text-amber-200">
         {m.grammar_plus_locked_title()}
       </h2>
@@ -122,7 +185,24 @@
       </p>
     {/if}
     {#key data.topic}
-      <GrammarSession questions={playable} {rule} {userId} />
+      <TopicTabs {rule} questions={playable} {userId} {tabParam} />
     {/key}
+    {#if !isPlus && lockedInfo.total > 0}
+      <p class="mt-6 text-sm" data-testid="topic-locked-levels">
+        <a
+          href="/plus?ref=grammar-topic-levels"
+          class="text-amber-700 underline hover:text-amber-900 dark:text-amber-300 dark:hover:text-amber-200"
+        >
+          {m.grammar_teaser_locked_levels({
+            count: lockedInfo.total,
+            levels: lockedInfo.levels.map((l) => l.level).join(', ')
+          })} →
+        </a>
+      </p>
+    {/if}
+  {/if}
+
+  {#if nav}
+    <TopicNav {nav} />
   {/if}
 </div>

@@ -10,6 +10,7 @@
     countDueToday
   } from '$lib/progress';
   import { buildGrammarSession, gradeGrammarAnswer } from '$lib/grammar/session';
+  import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import * as m from '$lib/paraglide/messages';
   import FillQuestion from './FillQuestion.svelte';
   import OrderQuestion from './OrderQuestion.svelte';
@@ -23,11 +24,14 @@
   let {
     questions: pool,
     rule,
-    userId
+    userId,
+    onprogressloaded
   }: {
     questions: GrammarQuestion[];
     rule: GrammarRule | undefined;
     userId: string | null;
+    /** Called once with the loaded progress map, before the first session is built. */
+    onprogressloaded?: (map: Record<string, CardProgress>) => void;
   } = $props();
 
   type SessionState = 'loading' | 'questioning' | 'revealing' | 'summary';
@@ -54,6 +58,9 @@
   let fsrsRetention = $derived((page.data.fsrsRetention as number | null | undefined) ?? null);
 
   let current = $derived(questions[currentIndex]);
+  // Single-topic pages pass `rule`; chapter practice mixes topics, so it passes
+  // none and each question's own topic rule is shown after answering.
+  let currentRule = $derived(rule ?? (current ? GRAMMAR_RULES[current.topic] : undefined));
   let progress = $derived(
     questions.length > 0 ? Math.round((currentIndex / questions.length) * 100) : 0
   );
@@ -65,6 +72,7 @@
         progressMap = userId
           ? await loadGrammarProgressFromSupabase(userId)
           : loadGrammarProgressMap();
+        onprogressloaded?.(progressMap);
       }
       start();
     })();
@@ -168,7 +176,7 @@
   {:else if sessionState === 'revealing'}
     <AnswerReveal
       question={current}
-      {rule}
+      rule={currentRule}
       isCorrect={isCorrect ?? false}
       {userAnswer}
       isLast={currentIndex >= questions.length - 1}

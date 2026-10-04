@@ -162,9 +162,11 @@ export type GrammarTopic =
   | 'noun-possessives' // Eriks / Annes — no apostrophe in Norwegian
   | 'adj-agreement' // adjective agreement: ubestemt sg → pl, bestemt form
   | 'adj-definite' // den/det/de + weak adjective form
+  | 'enkel-dobbel-bestemmelse' // double determination (den gode maten) as the norm; exceptions: fixed names (Det hvite hus, De forente nasjoner) and formal written language (Det norske folk)
   | 'adj-comparison' // comparative and superlative forms
   | 'sterke-verb' // strong verb preteritum and past participle forms
-  | 'helsetninger' // main clause structure: declarative, questions, ikke, det-subject
+  | 'fortellende-setninger' // statements: V2 word order, fronted adverbials
+  | 'sporresetninger' // questions: yes/no inversion, question words
   | 'preposisjoner-tid' // time prepositions: i, om, for–siden, på, til
   | 'preposisjoner-sted' // place & relation prepositions: i/på, geography, hos/ved/til/fra, av/fra, compounds
   // Nivå A2 topics — see ai-docs/implementation/a2-quiz-and-grammar.md
@@ -235,15 +237,15 @@ export type GrammarTopic =
   | 'jo-desto-komparativ' // jo + comparative … desto/jo + comparative correlative
   | 'preposisjoner-kroppsdel-uttrykk' // body-part idiom prepositions (hår, nakke, hals, øre)
   | 'preposisjoner-generelt-c' // general idiomatic preposition collocations
-  | 'uttrykk-gjenkjenning-c-1' // idiom recognition, part 1 (items 83–89)
-  | 'uttrykk-gjenkjenning-c-2' // idiom recognition, part 2 (items 90–96)
-  | 'uttrykk-gjenkjenning-c-3' // idiom recognition, part 3 (items 97–103)
+  | 'uttrykk' // idiom recognition, practised in sets of ~25 (merged from uttrykk-gjenkjenning-*)
   | 'adj-boying-c' // adjective comparison (incl. irregular -en stems) + weak/definite agreement, C level
   // Nivå B2 topics (Plus only) — see ai-docs/implementation/b2-grammar.md
   | 'substantivert-adjektiv' // adjective standing alone as a noun: de unge, de fattige, den ansatte
   | 'motsetning-prefiks' // forming an antonym with a negative prefix: u-, mis-, van-
   | 'subjunksjon-oversikt' // choosing among many subjunctions by meaning (da, fordi, hvis, selv om, …)
   | 'partisipp-former' // presens partisipp (manner adverbial) + perfektum partisipp used adjectivally
+  | 'substantivert-partisipp' // participles used as nouns: de streikende, de reisende, de overlevende (presens, never inflects), de ansatte, den savnede (perfektum, inflects like an adjective), mange ansatte without article
+  | 'sammensatte-partisipper' // compound participles: hjemmelaget, utsolgt, aleneboende (perfektum, usually uninflected after the verb), febernedsettende, enestående (presens, never inflects), building new compounds
   | 'partikkelverb-los-fast' // particle verbs: loose vs. fixed compound, synonym swaps, fixed participles
   | 'modalverb-betydning' // choosing kan/skal/vil/må by meaning (ability, plan, desire, necessity)
   | 'sannsynlighet-uttrykk' // paraphrasing expressions of probability/likelihood
@@ -268,12 +270,37 @@ export type GrammarTopic =
   // Nivå B2/C topics — Det går bra! (see ai-docs/implementation/b2-c-grammar.md)
   | 'nyanser-uttrykk' // near-synonym/nuance discrimination across word classes (seriøs/alvorlig, tid/time/gang, ryke, såpass)
   | 'preposisjoner-uttrykk-b2' // idiomatic/collocational B2 preposition choices (ta ansvar for, ha inntrykk av, forberedt på)
-  | 'uttrykk-gjenkjenning-detgaarbra-c' // idiom recognition — idiomatiske-uttrykk.md ordtak/faste uttrykk
   // Nivå B2 topic — "På Nivå" arbeidsbok (see ai-docs/implementation/b2-grammar-pa-niva-arbeidsbok.md)
   | 'determinativ-forsterkere' // emphasizer determinatives: egen/eget/egne, selv/selve, eneste
   | 'adverb-gradboying' // adverb comparison: regular -ere/-est (sakte/fort/ofte) + irregular gjerne→heller→helst
+  // Tier 1 content — see ai-docs/implementation/grammar-content-tier1.md
+  | 'subjekt-og-verbal' // subject and verbal: hvem/hva + verb test, verbal (one or more verbs), S-V order, inversion in questions/after a front element, subjekt vs. objekt
+  | 'objekt' // direct object: hva/hvem test, place after the verb, objekt vs. adverbial/predikativ, objekt in the front field
+  | 'predikativ' // predicative: describes the subject after være/bli/hete/virke/se ut, noun or adjective, position, predikativ vs. objekt/adverbial
+  | 'setningsfragment-uttrykk' // fixed expressions without a verb: wishes (god tur, god helg, lykke til, smaklig maltid) and replies (i like mate, ingen arsak, selv takk)
+  | 'folelsesuttrykk' // expressing feelings: reaction words by situation (sa bra, sa synd, hurra, au, oi), sa + adjektiv (neuter for a situation, agreement with a noun), det var leit a hore
+  | 'hilseord' // greetings and polite expressions: hei/god morgen/god kveld/god natt by time of day, god dag is formal, ha det/vi ses, takk/vaer sa god/unnskyld, hyggelig a mote deg
+  | 'tidsadverb' // time adverbs: when (nå, i dag, i går, i morgen), how often (alltid, ofte, aldri), placement, allerede/ennå/fortsatt, i morgen vs. i morges
+  | 'egennavn' // proper names: capital letter for names and places, small letter for weekdays/months/languages/nationality words, no article before names, titles before a name (kong Harald), seas/lakes/mountains
+  | 'resiprokt-pronomen' // reciprocal pronoun hverandre: each other, hverandre vs. seg vs. dem, position after verb/preposition, also for later actions (vi ser hverandre i morgen)
+  | 'preposisjoner-tilhorighet' // prepositions for people: til (bilen til Anna), med (gift med, venn med, sammen med), hos (bor/jobber hos), fra (origin)
+  | 'preposisjoner-annen-bruk' // prepositions for means, topic and purpose: med (reiser med tog), uten (kaffe uten sukker), om (snakke om), for (bra for deg, takk for), til (gave til mamma, kake til kaffen)
+  | 'sammensatte-preposisjoner' // compound prepositions as fixed units: i nærheten av, i stedet for, på grunn av, ved hjelp av, i forhold til, til tross for
+  | 'preposisjoner-av-for-med' // more uses of av (material, cause, source, passive agent), for (who it concerns), med (manner)
+  | 'adverbial' // adverbial: hvor/når/hvordan, position (last or first), adverbial vs. objekt/predikativ
+  | 'indirekte-objekt' // indirect object: the recipient (Lars ga Eva en blomst), position before the direct object, hvem/hva questions, til-phrase alternative, object pronoun form
   | 'sammensatt-verbtid' // naming verb1 (finite auxiliary) / verb2 (non-finite main verb) / tempus in compound verb forms
-  | 'setningsledd-identifikasjon'; // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)
+  | 'setningsledd-identifikasjon' // naming/labeling sentence elements (subjekt/verbal/objekt/predikativ/adverbial), NP-building, and clause-function analysis (leddsetning as subjekt/objekt/adverbial)
+  | 'leddsetning-grunnleggende' // what a leddsetning is: starts with at/fordi/når/hvis, can't stand alone, can come first (then the main clause starts with the verb)
+  | 'tillegg-setninger' // adding information between sentences: og, dessuten (verb right after it when first), «også» after the verb or last, heller ikke / heller last
+  | 'betingelse-hvis-dersom' // conditions: hvis and dersom (same meaning, dersom more formal), condition clause after or before the main clause (verb first in the main clause), ikke between subject and verb
+  | 'svarord-nyanser' // answer word nuances: tja/nja, ja da/jo da/nei da (reassuring), ja vel/nei vel (understood), a ja/a nei, nei to agree and jo to contradict a negative statement
+  | 'tid-samtidighet-plutselig' // time relations: før/innen as subjunctions, simultaneity adverbials (imens, i mellomtida, på den tida, samtidig (som)), da, sudden events (plutselig, i det samme, i samme øyeblikk)
+  | 'folge-uttrykk' // result: derfor in the middle field (formal), av den grunn / som en følge av det, så … at (adjective agrees with the subject), slik at / sånn at (more spoken)
+  | 'i-tillegg-uttrykk' // addition: i tillegg (verb second when first, can also stand last), og så (spoken), i tillegg til + noun
+  | 'tror-ikke-og-innskutt' // word order with tror/synes/sier: ikke right after the verb (tror ikke (at) ...), trailing expressions with the verb before the subject (..., tror jeg / sier han)
+  | 'det-er-som-sporsmal' // questions with det er/var ... som: quantity word as subject (som), as object (no som), stress on one element, with question words (Hvor er det dere bor?)
+  | 'pronomen-mer'; // more on pronouns: den/det/de for place names (by gender of the noun), logical pronoun for groups (familien/politiet → de) and persons (vitnet → hun/han), hun eller han (hen in the rule only)
 
 export interface GrammarRule {
   id: GrammarTopic;
@@ -315,4 +342,5 @@ export interface GrammarQuestion {
   alternates?: string[]; // other accepted forms
   hint?: string; // optional nudge shown after a wrong attempt
   plusOnly?: boolean; // gate advanced questions behind Plus
+  set?: string; // optional practice-set label (e.g. 'uttrykk-3'); used by topics offered in sets
 }

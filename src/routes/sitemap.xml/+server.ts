@@ -1,7 +1,8 @@
 // /src/routes/sitemap.xml/+server.ts
 import * as sitemap from 'super-sitemap/sveltekit';
 import type { RequestHandler } from '@sveltejs/kit';
-import { CATEGORIES_BY_LEVEL, PLUS_CATEGORIES, FREE_GRAMMAR_TOPICS } from '$lib/config';
+import { CATEGORIES_BY_LEVEL, PLUS_CATEGORIES } from '$lib/config';
+import { indexableTopics } from '$lib/grammar/seo';
 import { parsePosts, type RawPostModule } from '$lib/blog';
 
 export const GET: RequestHandler = async () => {
@@ -42,11 +43,10 @@ export const GET: RequestHandler = async () => {
     }
   }
 
-  // Free grammar topics for /grammar/[topic]. FREE_GRAMMAR_TOPICS is a
-  // Partial<Record<GrammarTopic, ...>> (keyed by topic, mapping to which
-  // CEFR levels are free — see ai-docs/gating-rules.md), not a Set, so its
-  // keys are read via Object.keys rather than spreading it directly.
-  const grammarTopics: [string][] = Object.keys(FREE_GRAMMAR_TOPICS).map((topic) => [topic]);
+  // Grammar topics for /grammar/[topic]: only topics with free A1 content are
+  // indexable (grammar-update.md Phase 6b); the rest are `noindex` and stay out
+  // of the sitemap. See $lib/grammar/seo.ts.
+  const grammarTopics: [string][] = indexableTopics().map((topic) => [topic]);
 
   // CEFR levels for /learn/[level] — /learn/c now shares this dynamic route too
   const learnLevels: [string][] = ['a1', 'a2', 'b1', 'b2', 'c'].map((l) => [l]);
@@ -64,6 +64,9 @@ export const GET: RequestHandler = async () => {
       /^\/api.*/,
       /^\/auth.*/,
       /^\/daily.*/,
+      // Chapter pages are client-rendered (ssr = false) and have no paramValues;
+      // without this exclusion super-sitemap throws for the whole sitemap.
+      /^\/grammar\/chapter\/.*/,
       /^\/my-profile.*/,
       /^\/my-progress.*/,
       /^\/quiz.*/,

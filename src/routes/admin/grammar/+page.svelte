@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import type { GrammarQuestion, GrammarTopic, CEFRLevel } from '$lib/types';
+  import type { GrammarQuestion, CEFRLevel } from '$lib/types';
+  import { topicGroups } from '$lib/admin/topicGroups';
   import { generateId, validateQuestion, blankQuestion } from '$lib/admin/questionUtils';
   import type { ReviewState } from '$lib/admin/reviewState';
 
@@ -34,99 +35,8 @@
   );
   const totalReviewable = $derived(draft.filter((q) => q._status !== 'deleted').length);
 
-  const TOPICS: GrammarTopic[] = [
-    'ikke-placement',
-    'v2-word-order',
-    'det-sentence',
-    'det-er-ikke',
-    'modal-verb-order',
-    'subordinate-order',
-    'relative-som',
-    'setningsadverbial',
-    'adverbial-fronting',
-    'svar-ja-jo-nei',
-    'noun-articles',
-    'noun-plurals',
-    'noun-possessives',
-    'adj-agreement',
-    'adj-definite',
-    'adj-comparison',
-    'sterke-verb',
-    'helsetninger',
-    'preposisjoner-tid',
-    'preposisjoner-sted',
-    // Nivå A1 topics — see ai-docs/implementation/a1-quiz-and-grammar.md
-    'personlige-pronomen',
-    'presens-verb',
-    'pronomen-objektsform',
-    'og-men',
-    'adverb-sted-hjem',
-    'refleksive-uttrykk',
-    'infinitiv-a1',
-    'substantiv-bestemt-form',
-    'pronomen-den-det-de',
-    'denne-dette-disse',
-    'imperativ',
-    'possessiver-min-din',
-    'refleksivt-possessiv-sin',
-    'ja-jo',
-    'preteritum-a1',
-    'for-a-fordi',
-    'vaer-det-subjekt',
-    'indirekte-tale-at-om',
-    'synes-tror',
-    // Nivå A1 topics, pt. 2 — see ai-docs/implementation/a1-update.md
-    'klokka-tid',
-    'ordenstall-dato',
-    'for-siden',
-    // Nivå A2 topics — see ai-docs/implementation/a2-quiz-and-grammar.md
-    'presens-perfektum',
-    'derfor-fordi',
-    'kvantorer',
-    'modalverb-preteritum',
-    'plassering-verb',
-    'refleksive-verb',
-    'ha-vs-vaere',
-    // Nivå B1 topics — see ai-docs/implementation/b1-grammar.md
-    'framtid-uttrykk',
-    'for-sa-arsak-folge',
-    'da-naar',
-    'hvis-om-betingelse',
-    'passiv-bli-s',
-    'bade-og-verken-eller',
-    'adjektiv-eller-adverb',
-    'motsetning-selv-om-likevel',
-    'tidssekvens-etter-at-etterpaa',
-    // Extended down to B1 from their original C-only scope, per b1-grammar.md
-    'ordfamilie-avledning',
-    'sammensatte-substantiv',
-    // Nivå B2 topics — see ai-docs/implementation/b2-grammar.md
-    'substantivert-adjektiv',
-    'motsetning-prefiks',
-    'subjunksjon-oversikt',
-    'partisipp-former',
-    'partikkelverb-los-fast',
-    'modalverb-betydning',
-    'sannsynlighet-uttrykk',
-    'bli-presens-partisipp',
-    'fa-perfektum-partisipp',
-    'mene-synes-tro-tenke',
-    // Nivå B2 topics, round 2 — see ai-docs/implementation/b2-grammar-2.md
-    'modale-adverb',
-    'sammensatte-substantiv-b2',
-    'preteritum-perfektum-og-futurum',
-    'det-formelt-subjekt',
-    'det-referanse',
-    'spesial-kvantorer',
-    'arsak-og-folge-uttrykk',
-    'kontrast-uttrykk',
-    'hoflig-preteritum',
-    'hypotetiske-betingelsessetninger',
-    'stedsadverb-statisk-dynamisk',
-    'man-en-upersonlig-pronomen',
-    // Nivå B2/C topic — punctuation — see ai-docs/implementation/punctuation.md
-    'kommaregler'
-  ];
+  // Every taxonomy topic, grouped by chapter in book order (the single source of truth).
+  const TOPIC_GROUPS = topicGroups();
   const CEFR_LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
   const TYPES: GrammarQuestion['type'][] = [
     'fill',
@@ -487,8 +397,12 @@
         class="rounded border border-gray-300 px-2 py-1 text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white"
       >
         <option value="">All topics</option>
-        {#each TOPICS as t (t)}
-          <option value={t}>{t}</option>
+        {#each TOPIC_GROUPS as g (g.no)}
+          <optgroup label={g.label}>
+            {#each g.topics as t (t)}
+              <option value={t}>{t}</option>
+            {/each}
+          </optgroup>
         {/each}
       </select>
 
@@ -668,8 +582,12 @@
             bind:value={modal.question.topic}
             class="mt-1 w-full rounded border border-gray-300 px-2 py-1 text-sm dark:border-gray-600 dark:bg-gray-800 dark:text-white"
           >
-            {#each TOPICS as t (t)}
-              <option value={t}>{t}</option>
+            {#each TOPIC_GROUPS as g (g.no)}
+              <optgroup label={g.label}>
+                {#each g.topics as t (t)}
+                  <option value={t}>{t}</option>
+                {/each}
+              </optgroup>
             {/each}
           </select>
         </label>

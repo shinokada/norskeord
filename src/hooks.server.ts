@@ -2,6 +2,7 @@ import { sequence } from '@sveltejs/kit/hooks';
 import { getTextDirection } from '$lib/paraglide/runtime';
 import { paraglideMiddleware } from '$lib/paraglide/server';
 import { createSupabaseServerClient } from '$lib/server/supabase';
+import { legacyGrammarRedirect } from '$lib/grammar/legacy-redirects';
 import type { Handle } from '@sveltejs/kit';
 // hooks.server.ts
 import { PUBLIC_SUPABASE_URL } from '$env/static/public';
@@ -52,6 +53,21 @@ const originalHandle: Handle = async ({ event, resolve }) => {
       status: 301,
       headers: {
         Location: '/my-progress' + event.url.search,
+        'Cache-Control': 'public, max-age=86400, s-maxage=2592000'
+      }
+    });
+  }
+
+  // Renamed grammar topics (Phase 1b of ai-docs/implementation/grammar-update.md):
+  // `helsetninger` was split and the `uttrykk-gjenkjenning-*` topics were merged into
+  // `uttrykk`. The old /grammar/<topic> URLs were in the sitemap, so redirect them with
+  // the same long-cacheable 301 as above. The map lives in $lib/grammar/legacy-redirects.ts.
+  const grammarRedirect = legacyGrammarRedirect(pathname);
+  if (grammarRedirect) {
+    return new Response(null, {
+      status: 301,
+      headers: {
+        Location: grammarRedirect + event.url.search,
         'Cache-Control': 'public, max-age=86400, s-maxage=2592000'
       }
     });
