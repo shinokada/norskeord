@@ -299,7 +299,8 @@ export type GrammarTopic =
   | 'folge-uttrykk' // result: derfor in the middle field (formal), av den grunn / som en følge av det, så … at (adjective agrees with the subject), slik at / sånn at (more spoken)
   | 'i-tillegg-uttrykk' // addition: i tillegg (verb second when first, can also stand last), og så (spoken), i tillegg til + noun
   | 'tror-ikke-og-innskutt' // word order with tror/synes/sier: ikke right after the verb (tror ikke (at) ...), trailing expressions with the verb before the subject (..., tror jeg / sier han)
-  | 'det-er-som-sporsmal'; // questions with det er/var ... som: quantity word as subject (som), as object (no som), stress on one element, with question words (Hvor er det dere bor?)
+  | 'det-er-som-sporsmal' // questions with det er/var ... som: quantity word as subject (som), as object (no som), stress on one element, with question words (Hvor er det dere bor?)
+  | 'pronomen-mer'; // more on pronouns: den/det/de for place names (by gender of the noun), logical pronoun for groups (familien/politiet → de) and persons (vitnet → hun/han), hun eller han (hen in the rule only)
 
 export interface GrammarRule {
   id: GrammarTopic;

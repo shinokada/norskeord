@@ -102,5 +102,33 @@ export const PRONOMEN_RULES: Record<string, GrammarRule> = {
       'Muntlig «du» eller «folk» kan brukes på samme måte i uformell stil.\n\n' +
       '«En» har også en egen eieform, «ens»: "Det er fint når ens egne barn gjør det godt på skolen." ' +
       '«Man» har ingen egen eieform — «ens» brukes også sammen med «man».'
+  },
+
+  'pronomen-mer': {
+    id: 'pronomen-mer',
+    titleEn: 'More on pronouns: place names, collective nouns and «hen»',
+    titleNb: 'Mer om pronomen: stedsnavn, kollektiv og hen',
+    explanationEn:
+      'Pronouns can stand in for place names and for words that refer to people. Place names: the ' +
+      'pronoun usually follows the gender of the noun the name stands for: "London er en stor by. Den ' +
+      'har over ni millioner innbyggere." "Kilimanjaro er et fjell. Det er 5885 meter høyt." ' +
+      '"Kanariøyene ligger utenfor Afrika. De har et godt klima." Grammar or meaning: sometimes we use ' +
+      'a pronoun that refers to the people we are talking about, even if it does not match the ' +
+      'noun\'s grammatical gender or number: "Hvor bor familien din? De bor på Vestlandet." "Vi ringte ' +
+      'politiet, og de kom raskt." "Vitnet er en kvinne. Hun kunne ikke fortelle så mye." Unknown ' +
+      "gender: when we do not know a person's gender, we can use «hun eller han» or «han eller hun». " +
+      'We can also use «hen»: "Læreren må bestemme hvordan hen vil gjøre dette."',
+    explanationNb:
+      'Pronomen kan stå i stedet for stedsnavn og for ord som viser til personer.\n\n' +
+      '• **Stedsnavn:** Pronomenet følger vanligvis kjønnet til substantivet som stedsnavnet viser ' +
+      'til: "London er en stor by. Den har over ni millioner innbyggere." "Kilimanjaro er et fjell. ' +
+      'Det er 5885 meter høyt." "Kanariøyene ligger utenfor Afrika. De har et godt klima."\n' +
+      '• **Grammatikk eller betydning:** Noen ganger bruker vi et pronomen som viser til personene ' +
+      'vi snakker om, selv om det ikke stemmer med substantivets grammatiske kjønn eller tall: "Hvor ' +
+      'bor familien din? De bor på Vestlandet." "Vi ringte politiet, og de kom raskt." "Vitnet er en ' +
+      'kvinne. Hun kunne ikke fortelle så mye."\n' +
+      '• **Ukjent kjønn:** Når vi ikke kjenner kjønnet til en person, kan vi bruke «hun eller han» ' +
+      'eller «han eller hun». Vi kan også bruke «hen»: "Læreren må bestemme hvordan hen vil gjøre ' +
+      'dette."'
   }
 };

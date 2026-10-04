@@ -152,7 +152,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
         ]),
         s('8.2', 'Resiprokt pronomen', 'Reciprocal pronoun', 'base', ['resiprokt-pronomen']),
         s('8.3', 'Ubestemt pronomen', 'Indefinite pronoun', 'base', ['man-en-upersonlig-pronomen']),
-        s('8.4', 'Mer om pronomen', 'More on pronouns', 'B2')
+        s('8.4', 'Mer om pronomen', 'More on pronouns', 'B2', ['pronomen-mer'])
       ]),
       ch(9, 'adjektiv', 'Adjektiv', 'Adjectives', [
         s('9.1', 'Kjønn og tall', 'Gender and number', 'base', [
