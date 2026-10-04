@@ -120,7 +120,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
           'det-formelt-subjekt'
         ]),
         s('5.2', 'Utbryting', 'Clefting', 'base', ['det-sentence']),
-        s('5.3', 'Det er + som-setning', '"Det er" + som-clause', 'B2')
+        s('5.3', 'Det er + som-setning', '"Det er" + som-clause', 'B2', ['det-er-som-sporsmal'])
       ]),
       ch(6, 'setningsfragmenter', 'Setningsfragmenter', 'Sentence fragments', [
         s('6.1', 'Faste uttrykk', 'Fixed expressions', 'base', ['setningsfragment-uttrykk'])

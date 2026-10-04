@@ -61,5 +61,30 @@ export const DET_SETNINGER_RULES: Record<string, GrammarRule> = {
       'To bruksområder for «det er …» kløvningssetninger:\n\n' +
       '• **med «at»/«å»** — flytter et leddsetnings-subjekt til slutten, med «det» som formelt forutgripende subjekt: "At du kan komme, er fint." → "Det er fint at du kan komme."\n' +
       '• **med «som»** — fronter et vanlig subjekt for å fremheve det: "Mange er bekymret." → "Det er mange som er bekymret." "Henrik fikk jobben." → "Det var Henrik som fikk jobben."'
+  },
+
+  'det-er-som-sporsmal': {
+    id: 'det-er-som-sporsmal',
+    titleEn: 'Questions with "det er … som"',
+    titleNb: 'Spørsmål med «det er … som»',
+    explanationEn:
+      'In questions we often use «det er / det var … som» when a quantity word like «mange», ' +
+      '«mye», «noe», «noen» or «ingen» is the subject. When the quantity word is the subject: ' +
+      '"Var det mange som deltok?" "Er det noe som ikke er klart?" "Er det ingen som vil svare?" ' +
+      'When the quantity word is the object, we leave out «som»: "Er det noe du ikke forstår?" ' +
+      '"Var det ingen du kjente der?" We can also put stress on one element: "Er det dere som har ' +
+      'ansvaret?" "Er det her du jobber?" The pattern is also common in questions with a question ' +
+      'word: "Hvor er det dere bor?" "Når var det du kom hit?" "Hva var det som skjedde?" Such ' +
+      'questions are a little more emphatic than "Hvor bor dere?".',
+    explanationNb:
+      'I spørsmål brukes ofte «det er / det var … som» når et mengdeord som «mange», «mye», ' +
+      '«noe», «noen» eller «ingen» står som subjekt.\n\n' +
+      '• **Mengdeordet er subjekt:** "Var det mange som deltok?" "Er det noe som ikke er klart?" "Er ' +
+      'det ingen som vil svare?"\n' +
+      '• **Mengdeordet er objekt:** da sløyfer vi «som»: "Er det noe du ikke forstår?" "Var det ' +
+      'ingen du kjente der?"\n' +
+      '• **Vi kan legge trykk på ett ledd:** "Er det dere som har ansvaret?" "Er det her du jobber?"\n' +
+      '• **Også i spørsmål med spørreord:** "Hvor er det dere bor?" "Når var det du kom hit?" "Hva ' +
+      'var det som skjedde?" Slike spørsmål er litt mer framhevet enn "Hvor bor dere?".'
   }
 };
