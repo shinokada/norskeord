@@ -73,6 +73,26 @@ export const LEDDSETNINGER_RULES: Record<string, GrammarRule> = {
       'De to ligner fordi begge ofte kan oversettes med engelsk "if", men bare «hvis» uttrykker en betingelse — «om» kommer alltid etter et verb som spør/vet/lurer på noe usikkert.'
   },
 
+  'tror-ikke-og-innskutt': {
+    id: 'tror-ikke-og-innskutt',
+    titleEn: 'Word order with tror, synes and sier: tror ikke and …, tror jeg',
+    titleNb: 'Ordstilling med «tror», «synes» og «sier»: «tror ikke» og «…, tror jeg»',
+    explanationEn:
+      'Two word orders are common with «tror», «synes» and «sier». When the verb in the main ' +
+      'clause is «tror» or «synes», we often put «ikke» right after the verb instead of in the ' +
+      'subordinate clause: "Han tror at hun ikke kommer." or "Han tror ikke (at) hun kommer." "Han ' +
+      'synes at maten ikke er god." or "Han synes ikke (at) maten er god." Expressions like «tror ' +
+      'jeg», «synes jeg» and «sier han» can come after the statement. Then the verb comes before ' +
+      'the subject: "Hun kommer senere, tror jeg." "Det går bra, sier han."',
+    explanationNb:
+      'Med «tror», «synes» og «sier» er to ordstillinger vanlige.\n\n' +
+      '• Når verbet i helsetningen er «tror» eller «synes», setter vi ofte «ikke» rett etter verbet ' +
+      'i stedet for i leddsetningen: "Han tror at hun ikke kommer." eller "Han tror ikke (at) hun ' +
+      'kommer." "Han synes at maten ikke er god." eller "Han synes ikke (at) maten er god."\n' +
+      '• Uttrykk som «tror jeg», «synes jeg» og «sier han» kan stå etter utsagnet. Da kommer ' +
+      'verbet foran subjektet: "Hun kommer senere, tror jeg." "Det går bra, sier han."'
+  },
+
   'indirekte-tale-at-om': {
     id: 'indirekte-tale-at-om',
     titleEn: 'Reported speech: «at» vs. «om»',

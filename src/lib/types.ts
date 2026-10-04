@@ -297,7 +297,8 @@ export type GrammarTopic =
   | 'svarord-nyanser' // answer word nuances: tja/nja, ja da/jo da/nei da (reassuring), ja vel/nei vel (understood), a ja/a nei, nei to agree and jo to contradict a negative statement
   | 'tid-samtidighet-plutselig' // time relations: før/innen as subjunctions, simultaneity adverbials (imens, i mellomtida, på den tida, samtidig (som)), da, sudden events (plutselig, i det samme, i samme øyeblikk)
   | 'folge-uttrykk' // result: derfor in the middle field (formal), av den grunn / som en følge av det, så … at (adjective agrees with the subject), slik at / sånn at (more spoken)
-  | 'i-tillegg-uttrykk'; // addition: i tillegg (verb second when first, can also stand last), og så (spoken), i tillegg til + noun
+  | 'i-tillegg-uttrykk' // addition: i tillegg (verb second when first, can also stand last), og så (spoken), i tillegg til + noun
+  | 'tror-ikke-og-innskutt'; // word order with tror/synes/sier: ikke right after the verb (tror ikke (at) ...), trailing expressions with the verb before the subject (..., tror jeg / sier han)
 
 export interface GrammarRule {
   id: GrammarTopic;

@@ -110,7 +110,7 @@ export const GRAMMAR_TAXONOMY: TaxonomyPart[] = [
           'hvis-om-betingelse'
         ]),
         s('4.5', 'Leddsetninger med spørreord', 'Clauses with question words'),
-        s('4.6', 'Mer om ordstilling', 'More on word order', 'B1'),
+        s('4.6', 'Mer om ordstilling', 'More on word order', 'B1', ['tror-ikke-og-innskutt']),
         s('4.7', 'Indirekte tale', 'Reported speech', 'base', ['indirekte-tale-at-om']),
         s('4.8', 'Som-setninger', 'Relative clauses with "som"', 'base', ['relative-som'])
       ]),
