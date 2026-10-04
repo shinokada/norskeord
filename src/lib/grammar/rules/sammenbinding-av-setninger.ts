@@ -120,6 +120,31 @@ export const SAMMENBINDING_AV_SETNINGER_RULES: Record<string, GrammarRule> = {
       '• **«så»** — uttrykker FØLGEN, også i den andre setningen: "Hun har det travelt, så hun kommer ikke i morgen."'
   },
 
+  'i-tillegg-uttrykk': {
+    id: 'i-tillegg-uttrykk',
+    titleEn: 'Addition: i tillegg, og så and i tillegg til',
+    titleNb: 'Tillegg: «i tillegg», «og så» og «i tillegg til»',
+    explanationEn:
+      'We have several ways to add more information. «I tillegg» is an adverbial. When «i ' +
+      'tillegg» comes first in the sentence, the verb comes in second position: "Jeg vil ikke ut i ' +
+      'dag. Det regner, og i tillegg er det kaldt." "Du må huske å kjøpe brød. I tillegg ' +
+      'trenger vi kaffe." It can also stand last: "Vi trenger kaffe i tillegg." «Og så» can also ' +
+      'add something new and is common in spoken language. The verb comes in second position: "Du ' +
+      'må huske å kjøpe brød, og så trenger vi kaffe." «I tillegg til» is a preposition and ' +
+      'comes before a noun: "Du må kjøpe brød i tillegg til kaffe." "Hun studerer norsk i tillegg ' +
+      'til engelsk."',
+    explanationNb:
+      'Vi har flere måter å legge til mer informasjon på.\n\n' +
+      '• **«I tillegg»** er et adverbial. Når «i tillegg» står først i setningen, kommer verbet ' +
+      'på andre plass: "Jeg vil ikke ut i dag. Det regner, og i tillegg er det kaldt." "Du må huske ' +
+      'å kjøpe brød. I tillegg trenger vi kaffe." Det kan også stå sist: "Vi trenger kaffe i ' +
+      'tillegg."\n' +
+      '• **«Og så»** kan også legge til noe nytt og er vanlig i muntlig språk. Verbet kommer på ' +
+      'andre plass: "Du må huske å kjøpe brød, og så trenger vi kaffe."\n' +
+      '• **«I tillegg til»** er en preposisjon og står foran et substantiv: "Du må kjøpe brød i ' +
+      'tillegg til kaffe." "Hun studerer norsk i tillegg til engelsk."'
+  },
+
   'kontrast-uttrykk': {
     id: 'kontrast-uttrykk',
     titleEn: 'A broader toolkit for contrast and concession',
