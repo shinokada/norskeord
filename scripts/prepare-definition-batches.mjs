@@ -113,9 +113,10 @@ const doneIds = new Set();
 for (const f of outputFiles) {
 	try {
 		const rows = readJson(path.join(outputDir, f));
+		if (!Array.isArray(rows)) throw new Error('not a JSON array');
 		for (const r of rows) if (r && r.id) doneIds.add(r.id);
 	} catch (err) {
-		console.warn(`Warning: could not read output/${f} (${err.message}); its ids are not skipped.`);
+		fail(`Could not read output/${f} (${err.message}); fix it before preparing new batches.`);
 	}
 }
 
@@ -136,9 +137,10 @@ const queuedIds = new Set();
 for (const f of inputFiles) {
 	try {
 		const rows = readJson(path.join(inputDir, f));
+		if (!Array.isArray(rows)) throw new Error('not a JSON array');
 		for (const r of rows) if (r && r.id) queuedIds.add(r.id);
 	} catch (err) {
-		console.warn(`Warning: could not read input/${f} (${err.message}); its ids are not skipped.`);
+		fail(`Could not read input/${f} (${err.message}); fix it before preparing new batches.`);
 	}
 }
 

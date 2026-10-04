@@ -248,13 +248,24 @@ if (args.dryRun) {
 
 const backup = `${vocabFile}.bak`;
 fs.copyFileSync(vocabFile, backup);
-fs.writeFileSync(vocabFile, JSON.stringify(result, null, 2) + '\n');
 
-// verify
-const check = readJson(vocabFile);
-if (!Array.isArray(check) || check.length !== entryCount) {
+// Write to a temp file in the same directory, then rename it over the target, so a crash
+// can never leave a truncated vocab file. Any failure restores from the backup.
+const tmp = `${vocabFile}.tmp`;
+let check;
+try {
+	fs.writeFileSync(tmp, JSON.stringify(result, null, 2) + '\n');
+	fs.renameSync(tmp, vocabFile);
+
+	// verify
+	check = readJson(vocabFile);
+	if (!Array.isArray(check) || check.length !== entryCount) {
+		throw new Error(`entry count ${check?.length} vs ${entryCount}`);
+	}
+} catch (err) {
+	fs.rmSync(tmp, { force: true });
 	fs.copyFileSync(backup, vocabFile);
-	fail(`Verification failed (entry count ${check?.length} vs ${entryCount}). Restored from backup.`);
+	fail(`Write or verification failed (${err.message}). Restored from backup.`);
 }
 const withDef = check.filter((e) => typeof e.definition === 'string' && e.definition.trim() !== '').length;
 console.log(`\nBackup : ${path.relative(ROOT, backup)}`);

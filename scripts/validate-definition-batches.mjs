@@ -286,10 +286,16 @@ for (const num of batchNums) {
 
 	// Expected ids: input batch if present; otherwise (e.g. the chat pilot) the ids in the output.
 	let expected;
-	let inputEntries = null;
 	if (fs.existsSync(inFile)) {
-		inputEntries = readJson(inFile);
-		expected = inputEntries.map((e) => e.id);
+		try {
+			const inputEntries = readJson(inFile);
+			if (!Array.isArray(inputEntries)) throw new Error('not a JSON array');
+			expected = inputEntries.map((e) => e.id);
+		} catch (err) {
+			summary.push({ batch: name, status: `INVALID INPUT: ${err.message}`, entries: '', rejected: '', warnings: '' });
+			totalRejected++;
+			continue;
+		}
 	} else {
 		expected = [...rows.keys()];
 	}
