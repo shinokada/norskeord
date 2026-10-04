@@ -1,5 +1,22 @@
 # norske-flashcard
 
+## 2.88.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added a grammar map organized by book parts and chapters, with topic search, CEFR-level filtering, chapter practice, and links between related topics.
+    - Added an A1 “Start here” learning path with practice progress.
+    - Added grammar progress pages with level estimates, chapter progress, weak-topic insights, and chapter-specific review links.
+    - Added grammar explanations, topic previews, Plus access indicators, and expanded free A1 practice content.
+    - Added grammar navigation and progress text in English, German, Spanish, Norwegian, and Ukrainian.
+    - Added separate “Study due now” links and progress summaries for Vocabulary, Uttrykk, and Grammar.
+    - Added keyboard-accessible topic tabs and search, plus server-rendered grammar topic pages with SEO metadata.
+
+  - **Bug Fixes**
+    - Grammar progress and due reviews now reflect questions’ current topics and levels after content changes.
+    - Legacy grammar topic links now redirect to replacement pages.
+
 ## 2.87.0
 
 ### Minor Changes
