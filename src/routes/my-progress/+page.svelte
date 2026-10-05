@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { page } from '$app/state';
+  import { replaceState } from '$app/navigation';
   import {
     loadProgressMap,
     loadProgressMapFromSupabase,
@@ -29,7 +30,6 @@
   import ContentTypeSummary from '$lib/components/ContentTypeSummary.svelte';
   import ProgressHubCard from '$lib/components/ProgressHubCard.svelte';
   import ActivityChart from '$lib/components/ActivityChart.svelte';
-  import CollapsibleSection from '$lib/components/CollapsibleSection.svelte';
   import DueBadge from '$lib/components/DueBadge.svelte';
 
   // ── State ────────────────────────────────────────────────────────────────────
@@ -190,23 +190,108 @@
   );
   const grammarDue = $derived(grammarProgress.overall.due);
 
-  // Sum of all three content types. Each type has its own "Study due" button
-  // on its hub card (vocab/uttrykk -> /review?type=..., grammar ->
-  // /review/grammar), so this total is a plain number with no link of its own
-  // (grammar-update.md Phase 4; it used to exclude grammar and link /review).
+  // Sum of all three content types, shown as the plain "Due today" number above
+  // the tabs. Each type's "Study due now" button lives in the panel header
+  // (vocab/uttrykk -> /review?type=..., grammar -> /review/grammar).
   const totalDueToday = $derived(vocabDue + uttrykkDue + grammarDue);
 
-  // Combined due per level, for the level-tab badges (due-number-update.md).
-  // Sums to totalDueToday since every resolved card has exactly one live level.
+  // ── Content-type tabs (my-progress-update.md) ───────────────────────────────
+  // The three hub cards are the tabs. Restored in onMount: ?tab= wins, then the
+  // last-used tab from localStorage, then 'vocab'.
+  type ProgressTab = 'vocab' | 'uttrykk' | 'grammar';
+  const PROGRESS_TABS: readonly ProgressTab[] = ['vocab', 'uttrykk', 'grammar'];
+  const ACTIVE_TAB_KEY = 'stats-active-tab';
+  const PANEL_ID = 'progress-panel';
+
+  function isProgressTab(v: string | null | undefined): v is ProgressTab {
+    return !!v && (PROGRESS_TABS as readonly string[]).includes(v);
+  }
+
+  let activeTab = $state<ProgressTab>('vocab');
+
+  function setActiveTab(tab: ProgressTab) {
+    activeTab = tab;
+    try {
+      localStorage.setItem(ACTIVE_TAB_KEY, tab);
+    } catch {
+      /* ignore */
+    }
+    // Keep the tab in the URL (no new history entry) so refresh/share keeps it.
+    try {
+      const url = new URL(page.url);
+      url.searchParams.set('tab', tab);
+      // url is built from page.url (already base-aware), so resolve() is not needed.
+      // eslint-disable-next-line svelte/no-navigation-without-resolve
+      replaceState(url, page.state);
+    } catch {
+      /* ignore */
+    }
+  }
+
+  /**
+   * Arrow / Home / End navigation for the content-type tabs (ARIA tabs pattern,
+   * automatic activation): Left/Right move with wrap-around, Home/End jump to the
+   * first/last tab. Selection and focus move together, so the focus ring and the
+   * panel always agree. Wired onto each card button (not the tablist div) so the
+   * handler sits on an interactive element.
+   */
+  function onProgressTabKeydown(e: KeyboardEvent) {
+    const current = PROGRESS_TABS.findIndex(
+      (t) => `tab-${t}` === (e.currentTarget as HTMLElement).id
+    );
+    if (current === -1) return;
+    const last = PROGRESS_TABS.length - 1;
+    let next: number;
+    switch (e.key) {
+      case 'ArrowRight':
+        next = current === last ? 0 : current + 1;
+        break;
+      case 'ArrowLeft':
+        next = current === 0 ? last : current - 1;
+        break;
+      case 'Home':
+        next = 0;
+        break;
+      case 'End':
+        next = last;
+        break;
+      default:
+        return;
+    }
+    e.preventDefault();
+    const tab = PROGRESS_TABS[next];
+    setActiveTab(tab);
+    document.getElementById(`tab-${tab}`)?.focus();
+  }
+
+  // Due per level for the level-tab badges: only the active tab's content type,
+  // so the badge matches what the panel below shows. Per-type totals stay on
+  // the cards, and totalDueToday stays the combined number.
   const dueByLevel = $derived<Record<CEFRLevel, number>>(
     Object.fromEntries(
       levels.map((lvl) => [
         lvl,
-        (vocabLevelStats.find((s) => s.level === lvl)?.due ?? 0) +
-          (uttrykkLevelStats.find((s) => s.level === lvl)?.due ?? 0) +
-          grammarProgress.byLevel[lvl].due
+        activeTab === 'vocab'
+          ? (vocabLevelStats.find((s) => s.level === lvl)?.due ?? 0)
+          : activeTab === 'uttrykk'
+            ? (uttrykkLevelStats.find((s) => s.level === lvl)?.due ?? 0)
+            : grammarProgress.byLevel[lvl].due
       ])
     ) as Record<CEFRLevel, number>
+  );
+
+  const activeTabDue = $derived(
+    activeTab === 'vocab' ? vocabDue : activeTab === 'uttrykk' ? uttrykkDue : grammarDue
+  );
+  const activeTabIcon = $derived(
+    activeTab === 'vocab' ? '📖' : activeTab === 'uttrykk' ? '💬' : '📐'
+  );
+  const activeReviewHref = $derived(
+    activeTab === 'vocab'
+      ? '/review?type=vocab'
+      : activeTab === 'uttrykk'
+        ? '/review?type=uttrykk'
+        : '/review/grammar'
   );
 
   // ── Level tabs (Phase 3) ─────────────────────────────────────────────────────
@@ -227,41 +312,7 @@
     }
   }
 
-  // ── Accordion sections (stats-page-update.md) ───────────────────────────────
-  // One global flag per content type — not per-level (see the doc's resolved
-  // Open questions). Defaults to expanded so first visit is pixel-for-pixel
-  // identical to the pre-accordion page (Goal 4).
-  type SectionKey = 'vocab' | 'uttrykk' | 'grammar';
-
-  const SECTION_STORAGE_KEYS: Record<SectionKey, string> = {
-    vocab: 'stats-section-vocab-open',
-    uttrykk: 'stats-section-uttrykk-open',
-    grammar: 'stats-section-grammar-open'
-  };
-
-  let vocabOpen = $state(true);
-  let uttrykkOpen = $state(true);
-  let grammarOpen = $state(true);
-
-  function toggleSection(key: SectionKey) {
-    let next: boolean;
-    if (key === 'vocab') {
-      vocabOpen = !vocabOpen;
-      next = vocabOpen;
-    } else if (key === 'uttrykk') {
-      uttrykkOpen = !uttrykkOpen;
-      next = uttrykkOpen;
-    } else {
-      grammarOpen = !grammarOpen;
-      next = grammarOpen;
-    }
-    try {
-      localStorage.setItem(SECTION_STORAGE_KEYS[key], String(next));
-    } catch {
-      /* ignore */
-    }
-  }
-
+  // ── Per-level rows (my-progress-update.md) ───────────────────────────────
   // Per-level rows for the three content-type blocks — same StatRow shape
   // for all three (see stats.ts), rendered through the one LevelStatRows
   // component (Phase 2).
@@ -410,18 +461,13 @@
       /* ignore */
     }
 
-    // Restore each section's collapse state — missing or invalid value
-    // (e.g. a user who never touched a toggle) defaults to expanded, so
-    // first-time-toggling users still see everything as before.
+    // Restore the active content tab: a valid ?tab= wins, then the last-used
+    // tab from localStorage, then the 'vocab' default.
     try {
-      const savedVocab = localStorage.getItem(SECTION_STORAGE_KEYS.vocab);
-      if (savedVocab === 'true' || savedVocab === 'false') vocabOpen = savedVocab === 'true';
-      const savedUttrykk = localStorage.getItem(SECTION_STORAGE_KEYS.uttrykk);
-      if (savedUttrykk === 'true' || savedUttrykk === 'false')
-        uttrykkOpen = savedUttrykk === 'true';
-      const savedGrammar = localStorage.getItem(SECTION_STORAGE_KEYS.grammar);
-      if (savedGrammar === 'true' || savedGrammar === 'false')
-        grammarOpen = savedGrammar === 'true';
+      const fromUrl = page.url.searchParams.get('tab');
+      const saved = localStorage.getItem(ACTIVE_TAB_KEY);
+      if (isProgressTab(fromUrl)) activeTab = fromUrl;
+      else if (isProgressTab(saved)) activeTab = saved;
     } catch {
       /* ignore */
     }
@@ -545,9 +591,8 @@
       </a>
     </div>
   {:else}
-    <!-- Hub: three equal cards, each with its own Study-due button
-         (grammar-update.md Phase 4; replaces the 4-stat strip and the single
-         /review banner, which could not cover grammar's separate flow). -->
+    <!-- Hub: three cards that act as the content-type tabs (my-progress-update.md).
+         Study-due buttons and the grammar detail link live in the panel header. -->
     <div class="mb-6">
       <p class="mb-3 text-sm text-gray-600 dark:text-gray-300">
         {m.stats_due_today()}:
@@ -557,58 +602,50 @@
             : 'text-gray-500 dark:text-gray-400'}">{totalDueToday}</span
         >
       </p>
-      <div class="grid gap-4 sm:grid-cols-3">
+      <div
+        class="grid grid-cols-3 gap-2 sm:gap-4"
+        role="tablist"
+        aria-label={m.stats_content_type_tabs()}
+      >
         <ProgressHubCard
+          id="tab-vocab"
+          panelId={PANEL_ID}
           icon="📖"
           title={m.stats_vocabulary_heading()}
           seen={vocabSeen}
           mastered={vocabMastered}
           due={vocabDue}
-          reviewHref="/review?type=vocab"
+          active={activeTab === 'vocab'}
+          onSelect={() => setActiveTab('vocab')}
+          onKeydown={onProgressTabKeydown}
         />
         <ProgressHubCard
+          id="tab-uttrykk"
+          panelId={PANEL_ID}
           icon="💬"
           title={m.stats_uttrykk_heading()}
           seen={uttrykkSeen}
           mastered={uttrykkMastered}
           due={uttrykkDue}
-          reviewHref="/review?type=uttrykk"
+          active={activeTab === 'uttrykk'}
+          onSelect={() => setActiveTab('uttrykk')}
+          onKeydown={onProgressTabKeydown}
         />
-        <!-- Title links to the grammar detail page (Phase 7). -->
         <ProgressHubCard
+          id="tab-grammar"
+          panelId={PANEL_ID}
           icon="📐"
           title={m.stats_grammar_heading()}
-          href="/my-progress/grammar"
           seen={grammarSeen}
           mastered={grammarProgress.overall.review}
           due={grammarDue}
-          reviewHref="/review/grammar"
+          active={activeTab === 'grammar'}
+          onSelect={() => setActiveTab('grammar')}
+          onKeydown={onProgressTabKeydown}
         />
       </div>
     </div>
-    <!-- ── CEFR Estimate (vocab-based) ───────────────────────────────────────── -->
-    {#if totalSeen > 0}
-      <div
-        class="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-5 dark:border-blue-800 dark:bg-blue-900/20"
-      >
-        <p class="text-sm font-semibold tracking-wide text-blue-600 uppercase dark:text-blue-400">
-          {m.stats_cefr_label()}
-        </p>
-        <p class="mt-1 text-base text-gray-800 dark:text-gray-200">{cefrEstimate}</p>
-      </div>
-    {/if}
-
-    <!-- ── Activity chart ────────────────────────────────────────────────────── -->
-    <div
-      class="mb-6 rounded-xl border border-gray-200 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
-    >
-      <p class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
-        {m.stats_activity_heading()}
-      </p>
-      <ActivityChart cells={activityCells} {streak} loading={activityLoading} {isPlus} />
-    </div>
-
-    <!-- ── Level tabs ─────────────────────────────────────────────────────────── -->
+    <!-- ── Level tabs ───────────────────────────────────────── -->
     <div
       class="mb-6 flex gap-1 rounded-xl border border-gray-200 bg-gray-50 p-1 dark:border-white/10 dark:bg-indigo-900/30"
       role="tablist"
@@ -641,158 +678,158 @@
       {/each}
     </div>
 
-    <!-- ── Vocabulary — active level ──────────────────────────────────────────── -->
-    <!-- Phase 3: only Plus users get the collapsible wrapper — free users'
-         collapsible content is just the small upsell box, which isn't worth
-         collapsing (see stats-page-update.md Phase 3). -->
-    {#if isPlus}
-      <CollapsibleSection
-        icon="📖"
-        title={m.stats_vocabulary_heading()}
-        open={vocabOpen}
-        onToggle={() => toggleSection('vocab')}
-        id="stats-vocab"
-        dueCount={activeVocabLevelStat.due}
-      >
-        {#snippet summary()}
-          <ContentTypeSummary
-            stat={activeVocabLevelStat}
-            level={activeLevel}
-            levelColor={levelColors[activeLevel]}
-            levelTextColor={levelTextColors[activeLevel]}
-          />
-        {/snippet}
-        <div class="mb-8">
-          <LevelStatRows
-            rows={vocabRowsForActiveLevel}
-            levelColor={levelColors[activeLevel]}
-            level={activeLevel}
-            reviewType="vocab"
-          />
+    <!-- ── Content panel: header ────────────────────────────────────────────────────── -->
+    <div id={PANEL_ID} role="tabpanel" aria-labelledby="tab-{activeTab}">
+      <div class="mb-3 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-2">
+          <h2 class="!my-0">
+            {activeTabIcon}
+            {activeTab === 'vocab'
+              ? m.stats_vocabulary_heading()
+              : activeTab === 'uttrykk'
+                ? m.stats_uttrykk_heading()
+                : m.stats_grammar_heading()}
+          </h2>
+          <DueBadge count={dueByLevel[activeLevel]} />
         </div>
-      </CollapsibleSection>
-    {:else}
-      <div class="mb-3 flex items-center gap-2">
-        <h2 class="!mb-0">📖 {m.stats_vocabulary_heading()}</h2>
-        <DueBadge count={activeVocabLevelStat.due} />
-      </div>
-      <ContentTypeSummary
-        stat={activeVocabLevelStat}
-        level={activeLevel}
-        levelColor={levelColors[activeLevel]}
-        levelTextColor={levelTextColors[activeLevel]}
-      />
-      <div
-        class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
-      >
-        <p class="font-semibold text-orange-700 dark:text-orange-300">
-          ⭐ {m.stats_plus_category_heading()}
-        </p>
-        <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
-          {m.stats_plus_category_body()}
-        </p>
-        <a
-          href="/plus"
-          class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
-        >
-          {m.stats_plus_upgrade()}
-        </a>
-      </div>
-    {/if}
-
-    <!-- ── Uttrykk — active level ─────────────────────────────────────────────── -->
-    {#if isPlus}
-      <CollapsibleSection
-        icon="💬"
-        title={m.stats_uttrykk_heading()}
-        open={uttrykkOpen}
-        onToggle={() => toggleSection('uttrykk')}
-        id="stats-uttrykk"
-        dueCount={activeUttrykkLevelStat.due}
-      >
-        {#snippet summary()}
-          <ContentTypeSummary
-            stat={activeUttrykkLevelStat}
-            level={activeLevel}
-            levelColor={levelColors[activeLevel]}
-            levelTextColor={levelTextColors[activeLevel]}
-          />
-        {/snippet}
-        <div class="mb-8">
-          <LevelStatRows
-            rows={uttrykkRowsForActiveLevel}
-            levelColor={levelColors[activeLevel]}
-            level={activeLevel}
-            reviewType="uttrykk"
-          />
+        <div class="flex flex-wrap items-center gap-3">
+          {#if activeTab === 'grammar'}
+            <a
+              href="/my-progress/grammar"
+              class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-400"
+              >{m.stats_all_grammar_topics()}</a
+            >
+          {/if}
+          {#if activeTabDue > 0}
+            <a
+              href={activeReviewHref}
+              class="flex items-center gap-2 rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-700 focus:ring-4 focus:ring-red-300 focus:outline-none"
+            >
+              <span aria-hidden="true">📌</span>
+              {m.stats_study_due_now()}
+            </a>
+          {/if}
         </div>
-      </CollapsibleSection>
-    {:else}
-      <div class="mb-3 flex items-center gap-2">
-        <h2 class="!mb-0">💬 {m.stats_uttrykk_heading()}</h2>
-        <DueBadge count={activeUttrykkLevelStat.due} />
       </div>
-      <ContentTypeSummary
-        stat={activeUttrykkLevelStat}
-        level={activeLevel}
-        levelColor={levelColors[activeLevel]}
-        levelTextColor={levelTextColors[activeLevel]}
-      />
-      <div
-        class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
-      >
-        <p class="font-semibold text-orange-700 dark:text-orange-300">
-          ⭐ {m.stats_plus_theme_heading()}
-        </p>
-        <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
-          {m.stats_plus_theme_body()}
-        </p>
-        <a
-          href="/plus"
-          class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
-        >
-          {m.stats_plus_upgrade()}
-        </a>
-      </div>
-    {/if}
 
-    <!-- ── Grammar — active level ─────────────────────────────────────────────── -->
-    <!-- Only rendered when this level actually has grammar topics (grammar
-         content starts at A2 today — see stats.ts's grammarTotalsByLevel /
-         stats.test.ts). Not gated by isPlus — grammar topic-level progress
-         has always been free (see routes/grammar/[topic] plusOnly gating,
-         which is per-question, not per-topic-list). -->
-    {#if grammarRowsForActiveLevel.length > 0}
-      <CollapsibleSection
-        icon="📐"
-        title={m.stats_grammar_heading()}
-        open={grammarOpen}
-        onToggle={() => toggleSection('grammar')}
-        id="stats-grammar"
-        dueCount={grammarDueForActiveLevel}
-      >
-        {#snippet summary()}
-          <div
-            class="mb-3 grid grid-cols-3 divide-x divide-gray-100 overflow-hidden rounded-xl border border-gray-200 dark:divide-white/10 dark:border-white/10"
-          >
-            {#each [{ label: m.stats_grammar_practiced(), value: grammarSeenForActiveLevel, color: 'text-gray-800 dark:text-white' }, { label: m.stats_grammar_due(), value: grammarDueForActiveLevel, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_grammar_mastered(), value: grammarMasteredForActiveLevel, color: 'text-green-600 dark:text-green-400' }] as stat (stat.label)}
-              <div class="bg-white p-4 text-center dark:bg-indigo-950/60">
-                <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
-                <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-300">{stat.label}</p>
-              </div>
-            {/each}
+      <!-- ── Content panel: Vocabulary ─────────────────────────────────────────────────────────── -->
+      {#if activeTab === 'vocab'}
+        <ContentTypeSummary
+          stat={activeVocabLevelStat}
+          level={activeLevel}
+          levelColor={levelColors[activeLevel]}
+          levelTextColor={levelTextColors[activeLevel]}
+        />
+        {#if isPlus}
+          <div class="mb-8">
+            <LevelStatRows
+              rows={vocabRowsForActiveLevel}
+              levelColor={levelColors[activeLevel]}
+              level={activeLevel}
+              reviewType="vocab"
+            />
           </div>
-        {/snippet}
-        <div class="mb-8">
-          <LevelStatRows
-            rows={grammarRowsForActiveLevel}
-            levelColor={levelColors[activeLevel]}
-            level={activeLevel}
-            reviewType="grammar"
-          />
+        {:else}
+          <div
+            class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
+          >
+            <p class="font-semibold text-orange-700 dark:text-orange-300">
+              ⭐ {m.stats_plus_category_heading()}
+            </p>
+            <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
+              {m.stats_plus_category_body()}
+            </p>
+            <a
+              href="/plus"
+              class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
+            >
+              {m.stats_plus_upgrade()}
+            </a>
+          </div>
+        {/if}
+
+        <!-- ── Content panel: Uttrykk ──────────────────────────────────────────── -->
+      {:else if activeTab === 'uttrykk'}
+        <ContentTypeSummary
+          stat={activeUttrykkLevelStat}
+          level={activeLevel}
+          levelColor={levelColors[activeLevel]}
+          levelTextColor={levelTextColors[activeLevel]}
+        />
+        {#if isPlus}
+          <div class="mb-8">
+            <LevelStatRows
+              rows={uttrykkRowsForActiveLevel}
+              levelColor={levelColors[activeLevel]}
+              level={activeLevel}
+              reviewType="uttrykk"
+            />
+          </div>
+        {:else}
+          <div
+            class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
+          >
+            <p class="font-semibold text-orange-700 dark:text-orange-300">
+              ⭐ {m.stats_plus_theme_heading()}
+            </p>
+            <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
+              {m.stats_plus_theme_body()}
+            </p>
+            <a
+              href="/plus"
+              class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
+            >
+              {m.stats_plus_upgrade()}
+            </a>
+          </div>
+        {/if}
+
+        <!-- ── Content panel: Grammar (closes the panel) ─────────────────────────────────────────────── -->
+      {:else}
+        <div
+          class="mb-3 grid grid-cols-3 divide-x divide-gray-100 overflow-hidden rounded-xl border border-gray-200 dark:divide-white/10 dark:border-white/10"
+        >
+          {#each [{ label: m.stats_grammar_practiced(), value: grammarSeenForActiveLevel, color: 'text-gray-800 dark:text-white' }, { label: m.stats_grammar_due(), value: grammarDueForActiveLevel, color: 'text-red-600 dark:text-red-400' }, { label: m.stats_grammar_mastered(), value: grammarMasteredForActiveLevel, color: 'text-green-600 dark:text-green-400' }] as stat (stat.label)}
+            <div class="bg-white p-4 text-center dark:bg-indigo-950/60">
+              <p class="text-2xl font-bold {stat.color}">{stat.value}</p>
+              <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-300">{stat.label}</p>
+            </div>
+          {/each}
         </div>
-      </CollapsibleSection>
+        <!-- Grammar is not gated by isPlus: topic-level progress has always been free. -->
+        {#if grammarRowsForActiveLevel.length > 0}
+          <div class="mb-8">
+            <LevelStatRows
+              rows={grammarRowsForActiveLevel}
+              levelColor={levelColors[activeLevel]}
+              level={activeLevel}
+              reviewType="grammar"
+            />
+          </div>
+        {/if}
+      {/if}
+    </div>
+
+    <!-- ── CEFR estimate and activity chart ─────────────────────────────────────────────── -->
+    {#if totalSeen > 0}
+      <div
+        class="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-5 dark:border-blue-800 dark:bg-blue-900/20"
+      >
+        <p class="text-sm font-semibold tracking-wide text-blue-600 uppercase dark:text-blue-400">
+          {m.stats_cefr_label()}
+        </p>
+        <p class="mt-1 text-base text-gray-800 dark:text-gray-200">{cefrEstimate}</p>
+      </div>
     {/if}
+
+    <div
+      class="mb-6 rounded-xl border border-gray-200 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
+    >
+      <p class="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
+        {m.stats_activity_heading()}
+      </p>
+      <ActivityChart cells={activityCells} {streak} loading={activityLoading} {isPlus} />
+    </div>
 
     <!-- ── Reset ──────────────────────────────────────────────────────────────── -->
     <div class="mt-8 border-t border-white/10 pt-8">

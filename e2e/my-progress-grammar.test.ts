@@ -137,9 +137,9 @@ test.describe('/my-progress/grammar', () => {
     await expect(chapter.locator('a[href="/grammar/personlige-pronomen"]')).toBeVisible();
   });
 
-  test('is linked from the Grammar card on /my-progress', async ({ page }) => {
+  test('is linked from the Grammar panel on /my-progress', async ({ page }) => {
     await seed(page, DUE_YESTERDAY);
-    await page.goto('/my-progress');
+    await page.goto('/my-progress?tab=grammar');
     await expect(page.locator('a[href="/my-progress/grammar"]')).toBeVisible({ timeout: 8000 });
   });
 });
