@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.89.0
+
+### Minor Changes
+
+- - **New Features**
+    - Definition-based flashcards are available for any category containing definitions, regardless of level. If a category has none, flashcards automatically switch to Norwegian-to-English mode.
+    - You can choose definition-based cards for word entries at any level. If you switch to phrase cards, the card direction returns to the standard language-to-language mode.
+    - Added tools to prepare vocabulary definition batches, validate entries, and merge reviewed definitions. You can preview planned changes, review validation issues, and back up vocabulary data before updates.
+  - **Documentation**
+    - Added instructions for preparing, validating, and merging vocabulary definition batches.
+
 ## 2.88.0
 
 ### Minor Changes
