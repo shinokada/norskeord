@@ -22,6 +22,58 @@
   // ai-docs/implementation/grammar-with-only-norsk.md).
   let ruleTitle = $derived(rule ? rule.titleNb : '');
   let ruleText = $derived(rule ? rule.explanationNb : '');
+
+  const LETTERS = ['A', 'B', 'C'];
+  const BLANK = /_{2,}/;
+  const same = (a: string, b: string) => a.trim() === b.trim();
+
+  // Option questions are answered by picking, so the options list carries the
+  // result (✓ on the right one, ✗ on a wrong pick) instead of a separate answer box.
+  let isOptionType = $derived(
+    question.type === 'minimal-pair' ||
+      question.type === 'multiple-choice' ||
+      question.type === 'punctuation'
+  );
+
+  interface RevealOption {
+    label: string;
+    text: string;
+    correct: boolean;
+    picked: boolean;
+  }
+
+  let options = $derived.by((): RevealOption[] => {
+    if (question.type === 'minimal-pair') {
+      return [
+        { label: 'A', text: question.optionA ?? '' },
+        { label: 'B', text: question.optionB ?? '' }
+      ].map((o) => ({
+        ...o,
+        correct: same(question.answer, o.label),
+        picked: same(userAnswer, o.label)
+      }));
+    }
+    if (question.type === 'multiple-choice' || question.type === 'punctuation') {
+      return (question.options ?? []).map((text, i) => ({
+        label: LETTERS[i] ?? String(i + 1),
+        text,
+        correct: same(question.answer, text),
+        picked: userAnswer !== '' && same(userAnswer, text)
+      }));
+    }
+    return [];
+  });
+
+  // A fill sentence with a blank, split around it, so the finished sentence can
+  // be shown with the answer in place. Null when the sentence has no blank.
+  let filledParts = $derived.by((): string[] | null => {
+    if (question.type !== 'fill' || !question.sentence) return null;
+    const parts = question.sentence.split(BLANK);
+    return parts.length > 1 ? parts : null;
+  });
+
+  // «Du skrev» only for a wrong typed answer; a skipped question has none.
+  let showUser = $derived(!isCorrect && userAnswer !== '' && !isOptionType);
 </script>
 
 <div
@@ -39,28 +91,101 @@
     {/if}
   </div>
 
-  <p class="mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
-    Riktig svar
-  </p>
-  {#if question.type === 'minimal-pair'}
-    <p class="mb-1 text-xs font-semibold text-indigo-500 dark:text-indigo-400">
-      Option {question.answer}
+  <!-- The question, so the answer can be read against what was asked. -->
+  <div
+    class="mb-4 rounded-lg bg-white/60 px-4 py-3 dark:bg-indigo-950/60"
+    data-testid="reveal-question"
+  >
+    <p class="mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
+      Spørsmålet
     </p>
-    <p class="mb-4 text-xl font-bold text-gray-800 dark:text-white">
-      {question.answer === 'A' ? question.optionA : question.optionB}
-    </p>
-    {#if question.explanation}
-      <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">{question.explanation}</p>
+    {#if question.prompt}
+      <p class="text-sm text-gray-700 dark:text-gray-300">{question.prompt}</p>
     {/if}
-  {:else}
-    <p class="mb-4 text-xl font-bold text-gray-800 dark:text-white">{question.answer}</p>
-  {/if}
 
-  {#if !isCorrect && userAnswer}
-    <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
-      Du skrev:
-      <span class="font-medium text-gray-700 dark:text-gray-200">{userAnswer}</span>
-    </p>
+    {#if question.type === 'fill' && question.sentence}
+      <p class="mt-2 text-base font-medium text-gray-900 dark:text-white">{question.sentence}</p>
+    {:else if question.type === 'order'}
+      <div class="mt-2 flex flex-wrap gap-2">
+        {#each question.tokens ?? [] as token, i (i)}
+          <span
+            class="rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1 text-sm font-medium text-indigo-700 dark:border-indigo-800 dark:bg-indigo-900/30 dark:text-indigo-300"
+          >
+            {token}
+          </span>
+        {/each}
+      </div>
+    {:else if options.length > 0}
+      <ul class="mt-2 flex flex-col gap-2">
+        {#each options as opt (opt.label)}
+          <li
+            class="flex items-start gap-2 rounded-lg border px-3 py-2 text-sm text-gray-800 dark:text-gray-100 {opt.correct
+              ? 'border-green-400 bg-green-100/60 dark:border-green-600 dark:bg-green-900/30'
+              : opt.picked
+                ? 'border-red-400 bg-red-100/60 dark:border-red-600 dark:bg-red-900/30'
+                : 'border-gray-200 dark:border-gray-600'}"
+          >
+            <span class="mt-0.5 text-xs font-bold text-gray-500 dark:text-gray-400"
+              >{opt.label}</span
+            >
+            <span class="min-w-0 flex-1">{opt.text}</span>
+            {#if opt.picked}
+              <span class="text-xs text-gray-500 dark:text-gray-400">Ditt valg</span>
+            {/if}
+            {#if opt.correct}
+              <span aria-hidden="true" class="font-bold text-green-600 dark:text-green-400">✓</span>
+              <span class="sr-only">Riktig svar</span>
+            {:else if opt.picked}
+              <span aria-hidden="true" class="font-bold text-red-600 dark:text-red-400">✗</span>
+              <span class="sr-only">Feil svar</span>
+            {/if}
+          </li>
+        {/each}
+      </ul>
+    {:else if question.source}
+      <p class="mt-2 text-base font-medium text-gray-900 italic dark:text-white">
+        "{question.source}"
+      </p>
+    {/if}
+  </div>
+
+  {#if !isOptionType}
+    <!-- Your answer next to the correct one; the correct one is on top on mobile. -->
+    <div class="mb-4 grid gap-3 {showUser ? 'sm:grid-cols-2' : ''}">
+      {#if showUser}
+        <div
+          class="order-2 rounded-lg border border-red-300 bg-red-100/50 px-4 py-3 sm:order-1 dark:border-red-700 dark:bg-red-900/20"
+          data-testid="reveal-user-answer"
+        >
+          <p
+            class="mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400"
+          >
+            Du skrev
+          </p>
+          <p class="text-lg font-semibold text-red-700 dark:text-red-300">{userAnswer}</p>
+        </div>
+      {/if}
+      <div
+        class="order-1 rounded-lg border border-green-300 bg-green-100/50 px-4 py-3 sm:order-2 dark:border-green-700 dark:bg-green-900/20"
+        data-testid="reveal-correct-answer"
+      >
+        <p
+          class="mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400"
+        >
+          Riktig svar
+        </p>
+        <p class="text-xl font-bold text-gray-800 dark:text-white">{question.answer}</p>
+        {#if filledParts}
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+            {#each filledParts as part, i (i)}{#if i > 0}<strong
+                  class="font-bold text-green-700 dark:text-green-300">{question.answer}</strong
+                >{/if}{part}{/each}
+          </p>
+        {/if}
+      </div>
+    </div>
+  {:else if question.type === 'minimal-pair' && question.explanation}
+    <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">{question.explanation}</p>
   {/if}
 
   {#if !isCorrect && question.hint}
