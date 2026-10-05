@@ -125,7 +125,9 @@
                 ? 'border-red-400 bg-red-100/60 dark:border-red-600 dark:bg-red-900/30'
                 : 'border-gray-200 dark:border-gray-600'}"
           >
-            <span class="mt-0.5 text-xs font-bold text-gray-500 dark:text-gray-400">{opt.label}</span>
+            <span class="mt-0.5 text-xs font-bold text-gray-500 dark:text-gray-400"
+              >{opt.label}</span
+            >
             <span class="min-w-0 flex-1">{opt.text}</span>
             {#if opt.picked}
               <span class="text-xs text-gray-500 dark:text-gray-400">Ditt valg</span>
@@ -167,7 +169,9 @@
         class="order-1 rounded-lg border border-green-300 bg-green-100/50 px-4 py-3 sm:order-2 dark:border-green-700 dark:bg-green-900/20"
         data-testid="reveal-correct-answer"
       >
-        <p class="mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
+        <p
+          class="mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400"
+        >
           Riktig svar
         </p>
         <p class="text-xl font-bold text-gray-800 dark:text-white">{question.answer}</p>
