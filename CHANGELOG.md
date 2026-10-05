@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.91.0
+
+### Minor Changes
+
+- - **New Features**
+    - Grammar statistics now appear in book order and include links to relevant chapters when available.
+    - Fill-in questions with a blank now display a label that reflects the task.
+    - Grammar topic navigation displays section IDs when available.
+    - Answer reveals now highlight selected and correct options, show typed answers when incorrect, and present question-specific content.
+  - **Bug Fixes**
+    - Reveal and restart shortcuts no longer trigger while typing in text fields or when a key event has already been handled or is repeating.
+    - Level statistics reserve space for section links consistently when section information is available.
+
 ## 2.90.0
 
 ### Minor Changes
