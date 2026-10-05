@@ -899,6 +899,7 @@
   "stats_due_count": "{count} до повторення",
   "stats_level_tab_due_aria": "{level}, {count} до повторення",
   "stats_due_review_title": "Повторити зараз: {count}",
+  "stats_content_type_tabs": "Тип вмісту",
   "stats_study_due_now": "Повторити зараз",
   "stats_all_grammar_topics": "Усі теми граматики →",
   "grammar_map_continue": "Продовжити: {topic}",

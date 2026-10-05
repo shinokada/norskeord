@@ -8,6 +8,10 @@
 
   Below `sm` only the icon, title and due count are shown so three columns fit
   on a phone; seen / mastered appear from `sm` up.
+
+  Keyboard: roving tabindex (only the active tab is a Tab stop). Arrow / Home /
+  End handling is passed in as `onKeydown` by +page.svelte, which owns the tab
+  order and moves focus between the sibling tabs.
 -->
 <script lang="ts">
   import * as m from '$lib/paraglide/messages.js';
@@ -20,13 +24,16 @@
     due: number;
     active: boolean;
     onSelect: () => void;
+    /** Arrow / Home / End handling, owned by the page so it can move focus between the sibling tabs. */
+    onKeydown?: (e: KeyboardEvent) => void;
     /** Id of this tab, referenced by the panel's aria-labelledby. */
     id: string;
     /** Id of the tabpanel this tab controls. */
     panelId: string;
   }
 
-  let { icon, title, seen, mastered, due, active, onSelect, id, panelId }: Props = $props();
+  let { icon, title, seen, mastered, due, active, onSelect, onKeydown, id, panelId }: Props =
+    $props();
 </script>
 
 <button
@@ -35,7 +42,9 @@
   {id}
   aria-selected={active}
   aria-controls={panelId}
+  tabindex={active ? 0 : -1}
   onclick={onSelect}
+  onkeydown={onKeydown}
   class="flex w-full cursor-pointer flex-col rounded-xl border p-3 text-left shadow-sm transition focus-visible:ring-4 focus-visible:ring-blue-300 focus-visible:outline-none sm:p-4 {active
     ? 'border-blue-500 bg-blue-50 ring-1 ring-blue-500 dark:border-blue-400 dark:bg-blue-900/30 dark:ring-blue-400'
     : 'border-gray-200 bg-white hover:border-gray-400 dark:border-white/10 dark:bg-indigo-950/60 dark:hover:border-white/30'}"

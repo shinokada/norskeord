@@ -111,6 +111,45 @@ test.describe('/my-progress page — content-type tabs', () => {
     await expect(page.locator('#tab-vocab')).toHaveAttribute('aria-selected', 'false');
   });
 
+  test('exposes a labelled tablist with a roving tabindex', async ({ page }) => {
+    await page.goto('/my-progress');
+    await expect(page.getByRole('tablist', { name: 'Content type' })).toBeVisible();
+    // Only the active tab is a Tab stop (ARIA tabs pattern).
+    await expect(page.locator('#tab-vocab')).toHaveAttribute('tabindex', '0');
+    await expect(page.locator('#tab-uttrykk')).toHaveAttribute('tabindex', '-1');
+    await expect(page.locator('#tab-grammar')).toHaveAttribute('tabindex', '-1');
+  });
+
+  test('arrow keys, Home and End move selection and focus between the cards', async ({ page }) => {
+    await page.goto('/my-progress');
+    const vocab = page.locator('#tab-vocab');
+    const uttrykk = page.locator('#tab-uttrykk');
+    const grammar = page.locator('#tab-grammar');
+
+    await vocab.focus();
+    await page.keyboard.press('ArrowRight');
+    await expect(uttrykk).toBeFocused();
+    await expect(uttrykk).toHaveAttribute('aria-selected', 'true');
+    await expect(uttrykk).toHaveAttribute('tabindex', '0');
+    await expect(vocab).toHaveAttribute('tabindex', '-1');
+
+    await page.keyboard.press('End');
+    await expect(grammar).toBeFocused();
+    await expect(grammar).toHaveAttribute('aria-selected', 'true');
+    // The panel followed the selection: the grammar-only link is now shown.
+    await expect(page.locator('a[href="/my-progress/grammar"]')).toBeVisible();
+
+    // Right wraps from the last tab to the first, Left wraps back.
+    await page.keyboard.press('ArrowRight');
+    await expect(vocab).toBeFocused();
+    await page.keyboard.press('ArrowLeft');
+    await expect(grammar).toBeFocused();
+
+    await page.keyboard.press('Home');
+    await expect(vocab).toBeFocused();
+    await expect(vocab).toHaveAttribute('aria-selected', 'true');
+  });
+
   test('ignores an invalid ?tab= and uses the default', async ({ page }) => {
     await page.goto('/my-progress?tab=foo');
     await expect(page.locator('#tab-vocab')).toHaveAttribute('aria-selected', 'true');

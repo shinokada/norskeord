@@ -899,6 +899,7 @@
   "stats_due_count": "{count} fällig",
   "stats_level_tab_due_aria": "{level}, {count} fällig",
   "stats_due_review_title": "{count} fällige jetzt wiederholen",
+  "stats_content_type_tabs": "Inhaltstyp",
   "stats_study_due_now": "Jetzt Fälliges lernen",
   "stats_all_grammar_topics": "Alle Grammatikthemen →",
   "grammar_map_continue": "Weiter: {topic}",

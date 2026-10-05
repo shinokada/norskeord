@@ -228,6 +228,42 @@
     }
   }
 
+  /**
+   * Arrow / Home / End navigation for the content-type tabs (ARIA tabs pattern,
+   * automatic activation): Left/Right move with wrap-around, Home/End jump to the
+   * first/last tab. Selection and focus move together, so the focus ring and the
+   * panel always agree. Wired onto each card button (not the tablist div) so the
+   * handler sits on an interactive element.
+   */
+  function onProgressTabKeydown(e: KeyboardEvent) {
+    const current = PROGRESS_TABS.findIndex(
+      (t) => `tab-${t}` === (e.currentTarget as HTMLElement).id
+    );
+    if (current === -1) return;
+    const last = PROGRESS_TABS.length - 1;
+    let next: number;
+    switch (e.key) {
+      case 'ArrowRight':
+        next = current === last ? 0 : current + 1;
+        break;
+      case 'ArrowLeft':
+        next = current === 0 ? last : current - 1;
+        break;
+      case 'Home':
+        next = 0;
+        break;
+      case 'End':
+        next = last;
+        break;
+      default:
+        return;
+    }
+    e.preventDefault();
+    const tab = PROGRESS_TABS[next];
+    setActiveTab(tab);
+    document.getElementById(`tab-${tab}`)?.focus();
+  }
+
   // Due per level for the level-tab badges: only the active tab's content type,
   // so the badge matches what the panel below shows. Per-type totals stay on
   // the cards, and totalDueToday stays the combined number.
@@ -566,7 +602,11 @@
             : 'text-gray-500 dark:text-gray-400'}">{totalDueToday}</span
         >
       </p>
-      <div class="grid grid-cols-3 gap-2 sm:gap-4" role="tablist">
+      <div
+        class="grid grid-cols-3 gap-2 sm:gap-4"
+        role="tablist"
+        aria-label={m.stats_content_type_tabs()}
+      >
         <ProgressHubCard
           id="tab-vocab"
           panelId={PANEL_ID}
@@ -577,6 +617,7 @@
           due={vocabDue}
           active={activeTab === 'vocab'}
           onSelect={() => setActiveTab('vocab')}
+          onKeydown={onProgressTabKeydown}
         />
         <ProgressHubCard
           id="tab-uttrykk"
@@ -588,6 +629,7 @@
           due={uttrykkDue}
           active={activeTab === 'uttrykk'}
           onSelect={() => setActiveTab('uttrykk')}
+          onKeydown={onProgressTabKeydown}
         />
         <ProgressHubCard
           id="tab-grammar"
@@ -599,6 +641,7 @@
           due={grammarDue}
           active={activeTab === 'grammar'}
           onSelect={() => setActiveTab('grammar')}
+          onKeydown={onProgressTabKeydown}
         />
       </div>
     </div>
