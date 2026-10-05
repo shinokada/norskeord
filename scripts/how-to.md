@@ -149,6 +149,7 @@ node scripts/validate-definition-batches.mjs --level a1 --batch 003
 # Exit code 1 when any entry is rejected.
 
 # 3. Merge reviewed batches (listed in draft/definitions/{level}/reviewed.txt)
+# Use zero-padded batch numbers in reviewed.txt, one per line, for example 001.
 node scripts/merge-definitions.mjs --level a1 --dry-run
 node scripts/merge-definitions.mjs --level a1
 # --force overwrites entries that already have a definition.
