@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.90.0
+
+### Minor Changes
+
+- - **New Features**
+    - The progress page organizes Vocabulary, Uttrykk, and Grammar into selectable tabs. Your selection is reflected in the URL and saved for your next visit.
+    - Due counts and review links match the selected content type. The Grammar panel links to all grammar topics, with labels available in English, German, Spanish, Norwegian, and Ukrainian.
+    - CEFR estimates and activity charts appear below the selected content panel.
+  - **Improvements**
+    - Vocabulary and Uttrykk details remain available to Plus members, while Grammar details are available to all users.
+
 ## 2.89.0
 
 ### Minor Changes
