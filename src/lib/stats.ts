@@ -21,6 +21,7 @@ import {
 } from '$lib/vocab-helpers';
 import { GRAMMAR_RULES } from '$lib/grammar/rules';
 import { resolveGrammarQuestion } from '$lib/grammar/id-index';
+import { orderedTopics, placementOf } from '$lib/grammar/taxonomy';
 import grammarTopicIndex from '$lib/data/grammar-topic-index.json';
 
 import vocabA1 from '$lib/data/vocab-a1.json';
@@ -55,6 +56,13 @@ export interface StatRow {
   learning: number;
   relearning: number;
   due: number;
+  /**
+   * Grammar rows only: the book section the topic sits in (e.g. '9.1') and the
+   * chapter page it links to. LevelStatRows shows them as a small muted prefix.
+   * Absent for vocab/uttrykk rows and for topics without a taxonomy placement.
+   */
+  sectionId?: string;
+  sectionHref?: string;
 }
 
 /**
@@ -506,11 +514,21 @@ export function grammarTopicStatsForLevel(
     cardsByTopic.set(resolved.topic, list);
   }
 
+  // Book order (chapter, section, topic) so the list follows /grammar/chapter/…;
+  // a topic with no taxonomy placement sorts last. Array.sort is stable, so
+  // those keep their GRAMMAR_RULES order.
+  const bookOrder = new Map(orderedTopics().map((topic, i) => [topic, i]));
+
   return Object.values(GRAMMAR_RULES)
     .filter((rule) => (totalsForLevel[rule.id] ?? 0) > 0)
+    .sort(
+      (a, b) =>
+        (bookOrder.get(a.id) ?? Number.MAX_SAFE_INTEGER) -
+        (bookOrder.get(b.id) ?? Number.MAX_SAFE_INTEGER)
+    )
     .map((rule) => {
       const title = level === 'C' ? rule.titleNb : isNb ? rule.titleNb : rule.titleEn;
-      return buildStatRow(
+      const row = buildStatRow(
         rule.id,
         title,
         `/grammar/${rule.id}`,
@@ -518,5 +536,11 @@ export function grammarTopicStatsForLevel(
         cardsByTopic.get(rule.id) ?? [],
         now
       );
+      const placement = placementOf(rule.id);
+      if (placement) {
+        row.sectionId = placement.section.id;
+        row.sectionHref = `/grammar/chapter/${placement.chapter.slug}`;
+      }
+      return row;
     });
 }

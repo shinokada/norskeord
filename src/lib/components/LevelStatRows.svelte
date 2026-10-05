@@ -31,6 +31,10 @@
   }
 
   let { rows, levelColor, emptyMessage, level, reviewType }: Props = $props();
+
+  // Grammar rows carry a section number (e.g. '9.1'); the column only exists when
+  // at least one row has one, so vocab and uttrykk lists are unchanged.
+  const hasSectionCol = $derived(rows.some((r) => r.sectionId));
 </script>
 
 {#if rows.length === 0}
@@ -50,6 +54,22 @@
           class="group relative flex items-center gap-2 px-4 py-2.5 transition-colors hover:bg-gray-50 sm:gap-3 dark:hover:bg-gray-800/50"
         >
           <a href={row.href} class="absolute inset-0 z-0" aria-label={row.label}></a>
+          <!-- Section number: its own link to the chapter page, above the row link.
+               Fixed width keeps the names aligned; rows without one keep the gap. -->
+          {#if hasSectionCol}
+            {#if row.sectionId && row.sectionHref}
+              <a
+                href={row.sectionHref}
+                class="relative z-10 w-9 shrink-0 text-xs text-gray-500 tabular-nums hover:text-blue-600 hover:underline dark:text-gray-400 dark:hover:text-blue-400"
+                title={row.sectionId}
+                data-testid="stat-row-section"
+              >
+                {row.sectionId}
+              </a>
+            {:else}
+              <span class="w-9 shrink-0" aria-hidden="true"></span>
+            {/if}
+          {/if}
           <!-- Row label (already display-formatted by the stats.ts builder) -->
           <span
             class="pointer-events-none relative z-[1] w-28 shrink-0 truncate text-xs font-medium text-gray-700 group-hover:text-blue-600 sm:w-44 dark:text-gray-300 dark:group-hover:text-blue-400"
