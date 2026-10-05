@@ -900,6 +900,7 @@
   "stats_level_tab_due_aria": "{level}, {count} due",
   "stats_due_review_title": "Review {count} due now",
   "stats_study_due_now": "Study due now",
+  "stats_all_grammar_topics": "All grammar topics →",
   "grammar_map_continue": "Continue: {topic}",
   "grammar_map_part": "Part {no}",
   "grammar_map_chapter": "Chapter {no}",

@@ -1,8 +1,13 @@
 <!--
   ProgressHubCard.svelte
-  grammar-update.md Phase 4: one of the three equal cards (Vocabulary,
-  Uttrykk, Grammar) at the top of /my-progress. Shows seen / mastered / due
-  and its own "Study due" button, which only renders when something is due.
+  my-progress-update.md Phase 1: one of the three cards (Vocabulary, Uttrykk,
+  Grammar) at the top of /my-progress, now acting as a tab. Selecting it shows
+  that content type in the panel below. It no longer holds links: the
+  "Study due now" button and the grammar detail link live in the panel header
+  (a link or button inside a tab button would be invalid HTML).
+
+  Below `sm` only the icon, title and due count are shown so three columns fit
+  on a phone; seen / mastered appear from `sm` up.
 -->
 <script lang="ts">
   import * as m from '$lib/paraglide/messages.js';
@@ -10,57 +15,57 @@
   interface Props {
     icon: string;
     title: string;
-    /** Optional link for the title (the grammar detail page, /my-progress/grammar). */
-    href?: string;
     seen: number;
     mastered: number;
     due: number;
-    /** Review flow for this content type. */
-    reviewHref: string;
+    active: boolean;
+    onSelect: () => void;
+    /** Id of this tab, referenced by the panel's aria-labelledby. */
+    id: string;
+    /** Id of the tabpanel this tab controls. */
+    panelId: string;
   }
 
-  let { icon, title, href, seen, mastered, due, reviewHref }: Props = $props();
+  let { icon, title, seen, mastered, due, active, onSelect, id, panelId }: Props = $props();
 </script>
 
-<div
-  class="flex flex-col rounded-xl border border-gray-200 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
+<button
+  type="button"
+  role="tab"
+  {id}
+  aria-selected={active}
+  aria-controls={panelId}
+  onclick={onSelect}
+  class="flex w-full cursor-pointer flex-col rounded-xl border p-3 text-left shadow-sm transition focus-visible:ring-4 focus-visible:ring-blue-300 focus-visible:outline-none sm:p-4 {active
+    ? 'border-blue-500 bg-blue-50 ring-1 ring-blue-500 dark:border-blue-400 dark:bg-blue-900/30 dark:ring-blue-400'
+    : 'border-gray-200 bg-white hover:border-gray-400 dark:border-white/10 dark:bg-indigo-950/60 dark:hover:border-white/30'}"
 >
-  <h2 class="!mb-3 text-lg">
-    {#if href}
-      <a {href} class="hover:underline">{icon} {title}</a>
-    {:else}
-      {icon} {title}
-    {/if}
-  </h2>
+  <span
+    class="font-norse flex items-center gap-1.5 text-sm font-bold text-gray-900 sm:text-lg dark:text-white"
+  >
+    <span aria-hidden="true">{icon}</span>
+    <span class="truncate">{title}</span>
+  </span>
 
-  <div class="grid grid-cols-3 gap-2 text-center">
-    <div>
-      <p class="text-2xl font-bold text-gray-800 dark:text-white">{seen}</p>
-      <p class="text-xs text-gray-500 dark:text-gray-300">{m.stats_seen()}</p>
-    </div>
-    <div>
-      <p class="text-2xl font-bold text-green-600 dark:text-green-400">{mastered}</p>
-      <p class="text-xs text-gray-500 dark:text-gray-300">{m.stats_grammar_mastered()}</p>
-    </div>
-    <div>
-      <p
-        class="text-2xl font-bold {due > 0
-          ? 'text-red-600 dark:text-red-400'
-          : 'text-gray-400 dark:text-gray-500'}"
-      >
-        {due}
-      </p>
-      <p class="text-xs text-gray-500 dark:text-gray-300">{m.stats_due_today_short()}</p>
-    </div>
-  </div>
-
-  {#if due > 0}
-    <a
-      href={reviewHref}
-      class="mt-4 flex items-center justify-center gap-2 rounded-lg bg-red-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-red-700 focus:ring-4 focus:ring-red-300 focus:outline-none"
+  <!-- Due count: always visible, including on mobile -->
+  <span class="mt-2 flex items-baseline gap-1">
+    <span
+      class="text-xl font-bold sm:text-2xl {due > 0
+        ? 'text-red-600 dark:text-red-400'
+        : 'text-gray-400 dark:text-gray-500'}">{due}</span
     >
-      <span aria-hidden="true">📌</span>
-      {m.stats_study_due_now()}
-    </a>
-  {/if}
-</div>
+    <span class="text-xs text-gray-500 dark:text-gray-300">{m.stats_due_today_short()}</span>
+  </span>
+
+  <!-- Seen / mastered: sm and up -->
+  <span class="mt-2 hidden gap-4 text-xs text-gray-500 sm:flex dark:text-gray-300">
+    <span
+      ><span class="font-semibold text-gray-800 dark:text-white">{seen}</span>
+      {m.stats_seen()}</span
+    >
+    <span
+      ><span class="font-semibold text-green-600 dark:text-green-400">{mastered}</span>
+      {m.stats_grammar_mastered()}</span
+    >
+  </span>
+</button>

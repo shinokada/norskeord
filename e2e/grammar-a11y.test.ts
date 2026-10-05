@@ -33,9 +33,14 @@ test.describe('topic tabs (keyboard)', () => {
   test('Home and End jump to the first and last tab', async ({ page }) => {
     await page.goto('/grammar/personlige-pronomen?tab=rule');
     const rule = page.getByTestId('topic-tab-rule');
-    await rule.focus();
-    await page.keyboard.press('End');
-    await expect(page.getByTestId('topic-tab-practice')).toBeFocused();
+    const practice = page.getByTestId('topic-tab-practice');
+    // The tabs are server-rendered, so a key press can land before hydration
+    // attaches the handler and do nothing. Retry until it takes effect.
+    await expect(async () => {
+      await rule.focus();
+      await page.keyboard.press('End');
+      await expect(practice).toBeFocused({ timeout: 500 });
+    }).toPass({ timeout: 8000 });
     await page.keyboard.press('Home');
     await expect(rule).toBeFocused();
   });

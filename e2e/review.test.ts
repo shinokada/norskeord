@@ -114,9 +114,9 @@ test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
   test('shows a "Study due now" button on the Vocabulary card linking to /review?type=vocab', async ({
     page
   }) => {
-    // grammar-update.md Phase 4: the single global banner is gone; each
-    // content-type hub card has its own button. Only vocab is due here, so
-    // exactly one such link renders.
+    // my-progress-update.md: one "Study due now" button in the panel header,
+    // for the selected tab only. Vocab is the default tab and the only type
+    // due here, so exactly one such link renders.
     await seed(page, DUE_YESTERDAY);
     await page.goto('/my-progress');
     const button = page.getByRole('link', { name: /study due now/i });
@@ -128,7 +128,7 @@ test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
     page
   }) => {
     await seedUttrykk(page, DUE_YESTERDAY);
-    await page.goto('/my-progress');
+    await page.goto('/my-progress?tab=uttrykk');
     const button = page.getByRole('link', { name: /study due now/i });
     await expect(button).toHaveCount(1);
     await expect(button).toHaveAttribute('href', '/review?type=uttrykk');
@@ -142,18 +142,21 @@ test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
     await expect(page.getByRole('link', { name: /study due now/i })).toHaveCount(0);
   });
 
-  test('shows the combined vocab + uttrykk due count on the A1 level tab, with no per-level "Study due at" link', async ({
+  test('shows the active tab\'s due count on the A1 level tab, with no per-level "Study due at" link', async ({
     page
   }) => {
     // The old per-level "Study due at A1" row was replaced by a count badge on
     // each level tab (ai-docs/implementation/due-number-update.md). The tab's
-    // accessible name carries the count ("A1, 2 due") for screen readers:
-    // 1 vocab + 1 uttrykk card due.
+    // accessible name carries the count ("A1, 1 due") for screen readers.
+    // my-progress-update.md: the badge counts only the active content tab, so
+    // 1 vocab + 1 uttrykk card due gives 1 on each tab, not 2.
     await seed(page, DUE_YESTERDAY);
     await seedUttrykk(page, DUE_YESTERDAY);
-    await page.goto('/my-progress');
-    await expect(page.getByRole('tab', { name: 'A1, 2 due', exact: true })).toBeVisible();
+    await page.goto('/my-progress?tab=vocab');
+    await expect(page.getByRole('tab', { name: 'A1, 1 due', exact: true })).toBeVisible();
     await expect(page.getByRole('link', { name: /study due at/i })).toHaveCount(0);
+    await page.goto('/my-progress?tab=uttrykk');
+    await expect(page.getByRole('tab', { name: 'A1, 1 due', exact: true })).toBeVisible();
   });
 
   test('localizes the level tab accessible name (nb)', async ({ page }) => {
@@ -163,7 +166,7 @@ test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
     await seed(page, DUE_YESTERDAY);
     await seedUttrykk(page, DUE_YESTERDAY);
     await page.goto('/my-progress');
-    await expect(page.getByRole('tab', { name: 'A1, 2 forfaller', exact: true })).toBeVisible();
+    await expect(page.getByRole('tab', { name: 'A1, 1 forfaller', exact: true })).toBeVisible();
   });
 
   test('shows no due count on a level tab when nothing is due there', async ({ page }) => {
@@ -269,7 +272,7 @@ test.describe('/my-progress — Grammar due badge (Fix 3)', () => {
     page
   }) => {
     await seedGrammar(page, GRAMMAR_DUE_YESTERDAY);
-    await page.goto('/my-progress');
+    await page.goto('/my-progress?tab=grammar');
     const button = page.getByRole('link', { name: /study due now/i });
     await expect(button).toHaveCount(1);
     await expect(button).toHaveAttribute('href', '/review/grammar');
@@ -277,7 +280,7 @@ test.describe('/my-progress — Grammar due badge (Fix 3)', () => {
 
   test('shows a clickable grammar due badge linking to /review/grammar', async ({ page }) => {
     await seedGrammar(page, GRAMMAR_DUE_YESTERDAY);
-    await page.goto('/my-progress');
+    await page.goto('/my-progress?tab=grammar');
     // Grammar topic-level progress is free for every plan (not gated by
     // isPlus — see the comment above the Grammar section in
     // my-progress/+page.svelte), so this works for the default guest session,
