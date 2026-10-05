@@ -139,7 +139,8 @@ from small batch files; scripts split, validate and merge. Style guide:
 # 1. Split entries without a definition into batches (default size 50)
 node scripts/prepare-definition-batches.mjs --level a1 --size 50
 node scripts/prepare-definition-batches.mjs --level a2 --size 50 --dry-run
-# Skips batches whose output file exists; --force rebuilds them.
+# Skips ids already in input or output batches. --force deletes input batches
+# that have no output yet and rebuilds them (batches with output are never touched).
 
 # 2. After Claude Desktop writes draft/definitions/{level}/output/batch-NNN.json
 node scripts/validate-definition-batches.mjs --level a1

@@ -329,7 +329,9 @@ for (const num of batchNums) {
     .sort((a, b) => a - b);
   for (const k of redoNums) {
     try {
-      for (const r of readJson(path.join(outputDir, `${name}.redo-${k}.json`))) {
+      const redoRows = readJson(path.join(outputDir, `${name}.redo-${k}.json`));
+      if (!Array.isArray(redoRows)) throw new Error('not a JSON array');
+      for (const r of redoRows) {
         if (r && typeof r.id === 'string') rows.set(r.id, r);
       }
     } catch (err) {
