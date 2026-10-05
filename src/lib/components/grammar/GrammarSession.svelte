@@ -111,6 +111,17 @@
   }
 
   function handleKeyDown(e: KeyboardEvent) {
+    // The Enter that submits an answer must not also count as "next". Free and
+    // guest users save to localStorage with no network await, so submit() reaches
+    // 'revealing' in microtasks *between* the input's handler and this window
+    // handler for the same keypress, which would skip the reveal at once. Plus
+    // users never hit it (the Supabase await keeps the reveal alive). Skip keys
+    // already handled by the question component, held-down (auto-repeat) keys,
+    // and keys typed in a field.
+    if (e.defaultPrevented || e.repeat) return;
+    const tag = (e.target as HTMLElement | null)?.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+
     if (sessionState === 'revealing' && (e.key === ' ' || e.key === 'Enter')) {
       e.preventDefault();
       next();
