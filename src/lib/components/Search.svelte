@@ -194,8 +194,8 @@
   }
 
   // ── Translation for the currently selected locale ─────────────────────────
-  // 'nb' (Norsk) prefers the monolingual Norwegian definition (B1+ only);
-  // falls back to English when no definition exists (A1/A2) or none was found.
+  // 'nb' (Norsk) prefers the monolingual Norwegian definition;
+  // falls back to English when no definition exists (e.g. uttrykk) or none was found.
   // Other locales show that language's translation, falling back to English
   // when the entry hasn't been translated yet.
   function translationFor(entry: SearchEntry): string {

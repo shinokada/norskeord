@@ -19,7 +19,6 @@
   let mounted = false;
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
-  const B1_PLUS_LEVELS = new Set(['B1', 'B2', 'C']);
 
   const speedOptions = [
     { value: '0.5', label: m.profile_prefs_speed_0_5() },
@@ -88,21 +87,16 @@
       { value: 'l1_l2', label: `Norsk → ${l2Name}` },
       { value: 'l2_l1', label: `${l2Name} → Norsk` }
     ];
-    if (cardType === 'word' && B1_PLUS_LEVELS.has(currentLevel)) {
+    if (cardType === 'word') {
       return [...base, { value: 'def_l1', label: m.profile_prefs_card_direction_def_no() }];
     }
     return base;
   });
 
-  // If def_l1 is selected but the user switches to phrase or A1/A2, fall back to l1_l2.
+  // If def_l1 is selected but the user switches to phrase, fall back to l1_l2.
   let effectiveCardDirection = $derived(
-    cardDirection === 'def_l1' && (cardType !== 'word' || !B1_PLUS_LEVELS.has(currentLevel))
-      ? 'l1_l2'
-      : cardDirection
+    cardDirection === 'def_l1' && cardType !== 'word' ? 'l1_l2' : cardDirection
   );
-
-  // Whether to show the definition-mode explanatory note.
-  let showDefNote = $derived(cardType === 'word' && B1_PLUS_LEVELS.has(currentLevel));
 
   function applyToLocalStorage() {
     const modeMap: Record<string, string> = { l1_l2: 'noreng', l2_l1: 'engnor', def_l1: 'defnor' };
@@ -252,11 +246,6 @@
         bind:selected={cardDirection}
         hint={m.profile_prefs_card_direction_hint()}
       />
-      {#if showDefNote}
-        <p class="mt-1 text-xs text-indigo-600 dark:text-indigo-400">
-          {m.profile_prefs_card_direction_def_note()}
-        </p>
-      {/if}
     </div>
 
     <!-- Card type -->

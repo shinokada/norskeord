@@ -582,7 +582,7 @@
 
         <label class="col-span-2 text-sm">
           <span class="block font-medium dark:text-gray-200"
-            >Definition (Norwegian, optional — B1+)</span
+            >Definition (Norwegian, optional)</span
           >
           <input
             type="text"

@@ -148,16 +148,8 @@
   // Whether any entry in the current category has a definition — gates the defnor cycle
   let hasDefinitions = $derived(entries.some((e) => !!e.definition));
 
-  // Definition mode is only available for B1 and above.
-  const B1_PLUS_LEVELS = new Set(['B1', 'B2', 'C']);
-  let isDefnorLevel = $derived(B1_PLUS_LEVELS.has(level.toUpperCase()));
-
-  // Effective mode: fall back to noreng if:
-  //  - the category has no definitions, or
-  //  - the level is below B1 (A1/A2)
-  let effectiveMode = $derived<Mode>(
-    mode === 'defnor' && (!hasDefinitions || !isDefnorLevel) ? 'noreng' : mode
-  );
+  // Effective mode: fall back to noreng if the category has no definitions.
+  let effectiveMode = $derived<Mode>(mode === 'defnor' && !hasDefinitions ? 'noreng' : mode);
 
   // 3-A: plan from layout server data
   let plan = $derived(page.data.plan as 'free' | 'plus');
@@ -752,7 +744,7 @@
       >
         {LANGUAGES[language].abbr} → NO
       </button>
-      {#if hasDefinitions && cardType === 'word' && isDefnorLevel}
+      {#if hasDefinitions && cardType === 'word'}
         <button
           type="button"
           class={segmentCls(effectiveMode === 'defnor', 'green')}
