@@ -24,9 +24,9 @@ function shuffle<T>(arr: T[]): T[] {
  *  rather than translation-based, regardless of category. See isQuizable
  *  below for the per-entry exclusion this implies. B1 is deliberately not
  *  included here — B1 can go monolingual too, but only per-category (see
- *  isB1MonolingualEligible below), mirroring the same `hasDefinitions` /
- *  `isDefnorLevel` cutoff VocabFlashcardPage already uses for its `defnor`
- *  mode. See ai-docs/implementation/quiz-i18n-and-categories.md Phase 1. */
+ *  isB1MonolingualEligible below), mirroring the `hasDefinitions` check
+ *  VocabFlashcardPage uses for its `defnor` mode. See
+ *  ai-docs/implementation/quiz-i18n-and-categories.md Phase 1. */
 const MONOLINGUAL_LEVELS = new Set(['B2', 'C']);
 
 export function isMonolingualLevel(level: string): boolean {

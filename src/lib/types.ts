@@ -45,7 +45,7 @@ export interface VocabEntry {
   example_spanish?: string;
   example_ukrainian?: string;
   example_german?: string;
-  definition?: string; //monolingual Norwegian definition of the word (B1+)
+  definition?: string; //monolingual Norwegian definition of the word
   level: CEFRLevel;
   category: Category;
   part: PartOfSpeech;

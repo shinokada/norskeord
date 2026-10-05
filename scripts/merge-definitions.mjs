@@ -35,27 +35,27 @@ const WORK_DIR = path.join(ROOT, 'draft', 'definitions');
 // ---------- args ----------
 
 function fail(msg) {
-	console.error(`Error: ${msg}`);
-	process.exit(1);
+  console.error(`Error: ${msg}`);
+  process.exit(1);
 }
 
 function parseArgs(argv) {
-	const args = { level: null, dryRun: false, force: false };
-	for (let i = 0; i < argv.length; i++) {
-		const a = argv[i];
-		if (a === '--level') args.level = (argv[++i] ?? '').toLowerCase();
-		else if (a === '--dry-run') args.dryRun = true;
-		else if (a === '--force') args.force = true;
-		else if (a === '--help' || a === '-h') args.help = true;
-		else fail(`Unknown argument: ${a}`);
-	}
-	return args;
+  const args = { level: null, dryRun: false, force: false };
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    if (a === '--level') args.level = (argv[++i] ?? '').toLowerCase();
+    else if (a === '--dry-run') args.dryRun = true;
+    else if (a === '--force') args.force = true;
+    else if (a === '--help' || a === '-h') args.help = true;
+    else fail(`Unknown argument: ${a}`);
+  }
+  return args;
 }
 
 const args = parseArgs(process.argv.slice(2));
 if (args.help || !args.level) {
-	console.log('Usage: node scripts/merge-definitions.mjs --level a1|a2 [--dry-run] [--force]');
-	process.exit(args.help ? 0 : 1);
+  console.log('Usage: node scripts/merge-definitions.mjs --level a1|a2 [--dry-run] [--force]');
+  process.exit(args.help ? 0 : 1);
 }
 if (!['a1', 'a2'].includes(args.level)) fail('--level must be a1 or a2');
 
@@ -67,33 +67,34 @@ const rejectedDir = path.join(levelDir, 'rejected');
 const reviewedFile = path.join(levelDir, 'reviewed.txt');
 
 if (!fs.existsSync(vocabFile)) fail(`Not found: ${vocabFile}`);
-if (!fs.existsSync(reviewedFile)) fail(`Not found: ${reviewedFile} (no batch has been reviewed yet)`);
+if (!fs.existsSync(reviewedFile))
+  fail(`Not found: ${reviewedFile} (no batch has been reviewed yet)`);
 
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 
 // ---------- reviewed batches ----------
 
 const reviewed = new Set(
-	fs
-		.readFileSync(reviewedFile, 'utf8')
-		.split(/\r?\n/)
-		.map((l) => l.trim())
-		.filter(Boolean)
+  fs
+    .readFileSync(reviewedFile, 'utf8')
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .filter(Boolean)
 );
 
 const allOutputNums = fs.existsSync(outputDir)
-	? fs
-			.readdirSync(outputDir)
-			.map((f) => /^batch-(\d+)\.json$/.exec(f))
-			.filter(Boolean)
-			.map((m) => m[1])
-			.sort()
-	: [];
+  ? fs
+      .readdirSync(outputDir)
+      .map((f) => /^batch-(\d+)\.json$/.exec(f))
+      .filter(Boolean)
+      .map((m) => m[1])
+      .sort()
+  : [];
 
 const unreviewed = allOutputNums.filter((n) => !reviewed.has(n));
 const reviewedMissingOutput = [...reviewed].filter((n) => !allOutputNums.includes(n));
 if (reviewedMissingOutput.length) {
-	fail(`reviewed.txt lists batches without an output file: ${reviewedMissingOutput.join(', ')}`);
+  fail(`reviewed.txt lists batches without an output file: ${reviewedMissingOutput.join(', ')}`);
 }
 
 // ---------- collect definitions ----------
@@ -103,54 +104,55 @@ const collected = new Map();
 const problems = [];
 
 for (const num of allOutputNums.filter((n) => reviewed.has(n))) {
-	const name = `batch-${num}`;
-	const rows = new Map();
+  const name = `batch-${num}`;
+  const rows = new Map();
 
-	let main;
-	try {
-		main = readJson(path.join(outputDir, `${name}.json`));
-		if (!Array.isArray(main)) throw new Error('not a JSON array');
-	} catch (err) {
-		fail(`${name}.json is not valid: ${err.message}`);
-	}
-	for (const r of main) if (r && typeof r.id === 'string') rows.set(r.id, r);
+  let main;
+  try {
+    main = readJson(path.join(outputDir, `${name}.json`));
+    if (!Array.isArray(main)) throw new Error('not a JSON array');
+  } catch (err) {
+    fail(`${name}.json is not valid: ${err.message}`);
+  }
+  for (const r of main) if (r && typeof r.id === 'string') rows.set(r.id, r);
 
-	// redo rounds in numeric order
-	const redoNums = fs
-		.readdirSync(outputDir)
-		.map((f) => new RegExp(`^${name}\\.redo-(\\d+)\\.json$`).exec(f))
-		.filter(Boolean)
-		.map((m) => Number(m[1]))
-		.sort((a, b) => a - b);
-	for (const k of redoNums) {
-		try {
-			for (const r of readJson(path.join(outputDir, `${name}.redo-${k}.json`))) {
-				if (r && typeof r.id === 'string') rows.set(r.id, r);
-			}
-		} catch (err) {
-			fail(`${name}.redo-${k}.json is not valid: ${err.message}`);
-		}
-	}
+  // redo rounds in numeric order
+  const redoNums = fs
+    .readdirSync(outputDir)
+    .map((f) => new RegExp(`^${name}\\.redo-(\\d+)\\.json$`).exec(f))
+    .filter(Boolean)
+    .map((m) => Number(m[1]))
+    .sort((a, b) => a - b);
+  for (const k of redoNums) {
+    try {
+      for (const r of readJson(path.join(outputDir, `${name}.redo-${k}.json`))) {
+        if (r && typeof r.id === 'string') rows.set(r.id, r);
+      }
+    } catch (err) {
+      fail(`${name}.redo-${k}.json is not valid: ${err.message}`);
+    }
+  }
 
-	// ids still rejected by the validator are never merged
-	const rejFile = path.join(rejectedDir, `${name}.json`);
-	const stillRejected = new Set();
-	if (fs.existsSync(rejFile)) {
-		for (const r of readJson(rejFile)) if (r?.id) stillRejected.add(r.id);
-	}
+  // ids still rejected by the validator are never merged
+  const rejFile = path.join(rejectedDir, `${name}.json`);
+  const stillRejected = new Set();
+  if (fs.existsSync(rejFile)) {
+    for (const r of readJson(rejFile)) if (r?.id) stillRejected.add(r.id);
+  }
 
-	for (const [id, row] of rows) {
-		if (stillRejected.has(id)) {
-			problems.push(`${id} (${name}): still in rejected/, not merged`);
-			continue;
-		}
-		if (typeof row.definition !== 'string' || row.definition.trim() === '') {
-			problems.push(`${id} (${name}): empty definition, not merged`);
-			continue;
-		}
-		if (collected.has(id)) problems.push(`${id}: appears in ${collected.get(id).batch} and ${name}; using ${name}`);
-		collected.set(id, { definition: row.definition.trim(), batch: name });
-	}
+  for (const [id, row] of rows) {
+    if (stillRejected.has(id)) {
+      problems.push(`${id} (${name}): still in rejected/, not merged`);
+      continue;
+    }
+    if (typeof row.definition !== 'string' || row.definition.trim() === '') {
+      problems.push(`${id} (${name}): empty definition, not merged`);
+      continue;
+    }
+    if (collected.has(id))
+      problems.push(`${id}: appears in ${collected.get(id).batch} and ${name}; using ${name}`);
+    collected.set(id, { definition: row.definition.trim(), batch: name });
+  }
 }
 
 // ---------- merge ----------
@@ -171,77 +173,86 @@ let overwritten = 0;
 let skipped = 0;
 
 function withDefinition(entry, definition) {
-	// Place `definition` right before `level` (after example_german), as in the B1 files.
-	const out = {};
-	let placed = false;
-	for (const [key, value] of Object.entries(entry)) {
-		if (key === 'definition') continue;
-		if (key === 'level' && !placed) {
-			out.definition = definition;
-			placed = true;
-		}
-		out[key] = value;
-	}
-	if (!placed) out.definition = definition;
-	return out;
+  // Place `definition` right before `level` (after example_german), as in the B1 files.
+  const out = {};
+  let placed = false;
+  for (const [key, value] of Object.entries(entry)) {
+    if (key === 'definition') continue;
+    if (key === 'level' && !placed) {
+      out.definition = definition;
+      placed = true;
+    }
+    out[key] = value;
+  }
+  if (!placed) out.definition = definition;
+  return out;
 }
 
 const result = vocab.map((entry) => {
-	const hit = collected.get(entry.id);
-	if (!hit) return entry;
-	const has = typeof entry.definition === 'string' && entry.definition.trim() !== '';
-	if (has && !args.force) {
-		skipped++;
-		return entry;
-	}
-	if (has) {
-		overwritten++;
-		// keep the existing key position when overwriting
-		return Object.fromEntries(
-			Object.entries(entry).map(([k, v]) => [k, k === 'definition' ? hit.definition : v])
-		);
-	}
-	merged++;
-	return withDefinition(entry, hit.definition);
+  const hit = collected.get(entry.id);
+  if (!hit) return entry;
+  const has = typeof entry.definition === 'string' && entry.definition.trim() !== '';
+  if (has && !args.force) {
+    skipped++;
+    return entry;
+  }
+  if (has) {
+    overwritten++;
+    // keep the existing key position when overwriting
+    return Object.fromEntries(
+      Object.entries(entry).map(([k, v]) => [k, k === 'definition' ? hit.definition : v])
+    );
+  }
+  merged++;
+  return withDefinition(entry, hit.definition);
 });
 
-const missing = result.filter((e) => !(typeof e.definition === 'string' && e.definition.trim() !== ''));
+const missing = result.filter(
+  (e) => !(typeof e.definition === 'string' && e.definition.trim() !== '')
+);
 
 // ---------- report ----------
 
-console.log(`\nMerge definitions: ${level.toUpperCase()}${args.dryRun ? '  (dry run, nothing written)' : ''}\n`);
+console.log(
+  `\nMerge definitions: ${level.toUpperCase()}${args.dryRun ? '  (dry run, nothing written)' : ''}\n`
+);
 console.log(`Reviewed batches : ${[...reviewed].sort().join(' ')}  (${reviewed.size})`);
 if (unreviewed.length) {
-	console.log(`WARNING: unreviewed batches (not merged): ${unreviewed.join(' ')}`);
+  console.log(`WARNING: unreviewed batches (not merged): ${unreviewed.join(' ')}`);
 }
 console.log(`Definitions read : ${collected.size}`);
 console.log(`Merged           : ${merged}`);
 if (args.force) console.log(`Overwritten      : ${overwritten}`);
-console.log(`Skipped (had one): ${skipped}${skipped && !args.force ? '  (use --force to overwrite)' : ''}`);
+console.log(
+  `Skipped (had one): ${skipped}${skipped && !args.force ? '  (use --force to overwrite)' : ''}`
+);
 console.log(`Missing          : ${missing.length}  (entries still without a definition)`);
-if (unknownIds.length) console.log(`Unknown ids      : ${unknownIds.length}  (${unknownIds.slice(0, 5).join(', ')}${unknownIds.length > 5 ? ', ...' : ''})`);
+if (unknownIds.length)
+  console.log(
+    `Unknown ids      : ${unknownIds.length}  (${unknownIds.slice(0, 5).join(', ')}${unknownIds.length > 5 ? ', ...' : ''})`
+  );
 if (reformats) {
-	console.log(
-		'\nNOTE: the file is not in canonical 2-space JSON format, so writing it will reformat other lines too.'
-	);
+  console.log(
+    '\nNOTE: the file is not in canonical 2-space JSON format, so writing it will reformat other lines too.'
+  );
 }
 if (problems.length) {
-	console.log('\nProblems:');
-	for (const p of problems) console.log(`  - ${p}`);
+  console.log('\nProblems:');
+  for (const p of problems) console.log(`  - ${p}`);
 }
 if (missing.length && missing.length <= 30) {
-	console.log('\nEntries without a definition:');
-	for (const e of missing) console.log(`  ${e.id}  ${e.norsk}`);
+  console.log('\nEntries without a definition:');
+  for (const e of missing) console.log(`  ${e.id}  ${e.norsk}`);
 } else if (missing.length) {
-	console.log(`\nFirst 30 entries without a definition (of ${missing.length}):`);
-	for (const e of missing.slice(0, 30)) console.log(`  ${e.id}  ${e.norsk}`);
+  console.log(`\nFirst 30 entries without a definition (of ${missing.length}):`);
+  for (const e of missing.slice(0, 30)) console.log(`  ${e.id}  ${e.norsk}`);
 }
 
 if (unknownIds.length) fail('Some ids are not in the vocab file; fix the batches first.');
 
 if (args.dryRun) {
-	console.log('\nDry run finished. Run again without --dry-run to write the file.\n');
-	process.exit(0);
+  console.log('\nDry run finished. Run again without --dry-run to write the file.\n');
+  process.exit(0);
 }
 
 // ---------- write ----------
@@ -254,19 +265,23 @@ fs.copyFileSync(vocabFile, backup);
 const tmp = `${vocabFile}.tmp`;
 let check;
 try {
-	fs.writeFileSync(tmp, JSON.stringify(result, null, 2) + '\n');
-	fs.renameSync(tmp, vocabFile);
+  fs.writeFileSync(tmp, JSON.stringify(result, null, 2) + '\n');
+  fs.renameSync(tmp, vocabFile);
 
-	// verify
-	check = readJson(vocabFile);
-	if (!Array.isArray(check) || check.length !== entryCount) {
-		throw new Error(`entry count ${check?.length} vs ${entryCount}`);
-	}
+  // verify
+  check = readJson(vocabFile);
+  if (!Array.isArray(check) || check.length !== entryCount) {
+    throw new Error(`entry count ${check?.length} vs ${entryCount}`);
+  }
 } catch (err) {
-	fs.rmSync(tmp, { force: true });
-	fs.copyFileSync(backup, vocabFile);
-	fail(`Write or verification failed (${err.message}). Restored from backup.`);
+  fs.rmSync(tmp, { force: true });
+  fs.copyFileSync(backup, vocabFile);
+  fail(`Write or verification failed (${err.message}). Restored from backup.`);
 }
-const withDef = check.filter((e) => typeof e.definition === 'string' && e.definition.trim() !== '').length;
+const withDef = check.filter(
+  (e) => typeof e.definition === 'string' && e.definition.trim() !== ''
+).length;
 console.log(`\nBackup : ${path.relative(ROOT, backup)}`);
-console.log(`Written: ${path.relative(ROOT, vocabFile)}  (${check.length} entries, ${withDef} with definition)\n`);
+console.log(
+  `Written: ${path.relative(ROOT, vocabFile)}  (${check.length} entries, ${withDef} with definition)\n`
+);

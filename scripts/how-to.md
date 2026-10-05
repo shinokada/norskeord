@@ -126,3 +126,33 @@ node add-b2-fields.mjs --files vocab-b2-combined.json
 # Smaller batches if you hit rate limits
 node add-b2-fields.mjs --batch 10
 ```
+
+## Definition scripts (A1/A2 vocab, no API)
+
+Adds a monolingual Norwegian `definition` to `src/lib/data/vocab-a1.json` and
+`vocab-a2.json` without the Anthropic API. Claude Desktop writes the definitions
+from small batch files; scripts split, validate and merge. Style guide:
+`draft/definitions/instructions.md`. Full plan:
+`ai-docs/implementation/add-definition-a1-a2.md`.
+
+```
+# 1. Split entries without a definition into batches (default size 50)
+node scripts/prepare-definition-batches.mjs --level a1 --size 50
+node scripts/prepare-definition-batches.mjs --level a2 --size 50 --dry-run
+# Skips batches whose output file exists; --force rebuilds them.
+
+# 2. After Claude Desktop writes draft/definitions/{level}/output/batch-NNN.json
+node scripts/validate-definition-batches.mjs --level a1
+node scripts/validate-definition-batches.mjs --level a1 --batch 003
+# Writes rejected/batch-NNN.json and draft/definitions/report-{level}.md.
+# Exit code 1 when any entry is rejected.
+
+# 3. Merge reviewed batches (listed in draft/definitions/{level}/reviewed.txt)
+node scripts/merge-definitions.mjs --level a1 --dry-run
+node scripts/merge-definitions.mjs --level a1
+# --force overwrites entries that already have a definition.
+# Matches by id, inserts `definition` before `level`, writes vocab-{level}.json.bak
+# first. Do not commit the .bak files.
+```
+
+After merging, run `npx tsx scripts/check-vocab.ts`.
