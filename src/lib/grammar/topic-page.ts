@@ -77,6 +77,8 @@ export interface TopicLink {
   topic: GrammarTopic;
   /** Norwegian rule title (grammar content is Norwegian-only). */
   title: string;
+  /** Book section the topic sits in (e.g. '1.6'); absent for an unplaced topic. */
+  sectionId?: string;
 }
 
 export interface TopicNavModel {
@@ -94,7 +96,9 @@ export const MAX_RELATED = 4;
 
 function linkFor(topic: GrammarTopic): TopicLink | null {
   const rule = GRAMMAR_RULES[topic];
-  return rule ? { topic, title: rule.titleNb } : null;
+  if (!rule) return null;
+  const sectionId = placementOf(topic)?.section.id;
+  return sectionId ? { topic, title: rule.titleNb, sectionId } : { topic, title: rule.titleNb };
 }
 
 /**

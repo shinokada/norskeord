@@ -21,6 +21,10 @@
           <span class="block text-xs text-gray-500 dark:text-gray-400">
             ← {m.grammar_topic_prev()}
           </span>
+          {#if nav.prev.sectionId}<span
+              class="text-gray-500 tabular-nums dark:text-gray-400"
+              data-testid="topic-prev-section">{nav.prev.sectionId}</span
+            >{/if}
           {nav.prev.title}
         </a>
       {:else}
@@ -35,6 +39,10 @@
           <span class="block text-xs text-gray-500 dark:text-gray-400">
             {m.grammar_topic_next()} →
           </span>
+          {#if nav.next.sectionId}<span
+              class="text-gray-500 tabular-nums dark:text-gray-400"
+              data-testid="topic-next-section">{nav.next.sectionId}</span
+            >{/if}
           {nav.next.title}
         </a>
       {/if}
