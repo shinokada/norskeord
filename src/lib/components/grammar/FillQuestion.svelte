@@ -7,6 +7,11 @@
   let value = $state('');
   let inputRef = $state<HTMLInputElement | null>(null);
 
+  // Some `fill` questions ask the learner to pick a word out of a complete
+  // sentence (e.g. «Skriv objektet i setningen.») and have no blank in it. Only
+  // call it a blank when the sentence actually has one (a run of underscores).
+  const hasBlank = $derived(/_{2,}/.test(question.sentence ?? ''));
+
   // Reset + focus whenever the question changes.
   $effect(() => {
     void question.id;
@@ -16,7 +21,7 @@
 </script>
 
 <p class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-300">
-  Fyll inn i den tomme plassen
+  {hasBlank ? 'Fyll inn i den tomme plassen' : 'Skriv svaret'}
 </p>
 
 {#if question.prompt}
