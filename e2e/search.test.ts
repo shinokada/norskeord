@@ -137,3 +137,46 @@ test('second modal open does NOT re-fetch the search index', async ({ page }) =>
 
   expect(fetchCount).toBe(1);
 });
+
+// ---------------------------------------------------------------------------
+// Deep link: result click carries the exact entry id (vocab-multiple-senses,
+// Phase 2b). Works against real data.
+// ---------------------------------------------------------------------------
+
+test('clicking a search result navigates with id=w-NNNNNN and word= in the URL', async ({
+  page
+}) => {
+  await injectPlusPlan(page);
+  await page.goto('/');
+  await page.getByTestId('search-button').click();
+  await page.getByRole('searchbox').pressSequentially('hei');
+  // A1 rows are free-tier, so the redirect to /plus can't interfere.
+  const row = page.getByRole('option').filter({ hasText: 'A1' }).first();
+  await expect(row).toBeVisible({ timeout: 10000 });
+  await row.click();
+  await page.waitForURL(/[?&]id=w-\d{6}/, { timeout: 10000 });
+  expect(page.url()).toMatch(/[?&]word=/);
+  // The deck built for the deep link is not empty.
+  await expect(page.getByText(/^\d+\/\d+$/)).toBeVisible({ timeout: 10000 });
+});
+
+test('the two senses of `gang (en)` are separate results with different ids', async ({ page }) => {
+  test.setTimeout(60000);
+  const ids = new Set<string>();
+  await injectPlusPlan(page);
+
+  for (const index of [0, 1]) {
+    await page.goto('/');
+    await page.getByTestId('search-button').click();
+    await page.getByRole('searchbox').pressSequentially('gang');
+    // Anchor to the start of the row: a plain substring would also match
+    // compounds such as `inngang (en)` / `utgang (en)`.
+    const rows = page.getByRole('option').filter({ hasText: /^\s*gang \(en\)/ });
+    await expect(rows).toHaveCount(2, { timeout: 10000 });
+    await rows.nth(index).click();
+    await page.waitForURL(/[?&]id=w-\d{6}/, { timeout: 10000 });
+    ids.add(new URL(page.url()).searchParams.get('id') ?? '');
+  }
+
+  expect(ids.size).toBe(2);
+});
