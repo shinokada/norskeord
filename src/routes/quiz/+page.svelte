@@ -176,7 +176,16 @@
     // missing → 10. Cap to available entries.
     const raw = browser ? (localStorage.getItem('vocab-quiz-limit') ?? 'default') : 'default';
     const quizCount = raw === 'default' ? 10 : Math.max(1, parseInt(raw, 10) || 10);
-    questions = buildQuizSession(entries, data.allEntries, progressMap, quizCount, quizLanguage);
+    const session = buildQuizSession(
+      entries,
+      data.allEntries,
+      progressMap,
+      quizCount,
+      quizLanguage
+    );
+    // Never enter the questioning state with no `current` question.
+    if (session.length === 0) return;
+    questions = session;
     currentIndex = 0;
     correctCount = 0;
     results = [];

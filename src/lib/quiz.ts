@@ -1,5 +1,6 @@
 import type { VocabEntry, CardProgress, FlashcardLanguage } from '$lib/types';
 import { getTranslation } from '$lib/vocab-helpers';
+import { vocabKey } from '$lib/progress';
 
 // ── Shuffle ───────────────────────────────────────────────────────────────────
 
@@ -263,7 +264,16 @@ export function buildTypeQuestion(
  * Build a mixed quiz session of `count` questions from `entries`.
  *
  * Due cards (overdue FSRS) come first so the session integrates with the
- * existing review schedule. New (unseen) cards fill the remainder.
+ * existing review schedule. New (unseen) cards come next. If that still leaves
+ * fewer than `count` questions (e.g. the person has already studied every card
+ * in the category and none is due yet), the session is topped up with the
+ * not-yet-due cards whose due date is soonest, so a quiz is never empty or
+ * short while eligible cards exist.
+ *
+ * Progress is looked up by `vocabKey(entry)` (`entry.id`), the same key
+ * `saveProgress` writes and both progress loaders return. Never key by
+ * `entry.norsk`: entries that share a `norsk` (different senses) have
+ * independent progress.
  *
  * Question type distribution (by position mod 4):
  *   0, 1 → multiple choice  (50 %)
@@ -289,12 +299,22 @@ export function buildQuizSession(
   const quizable = entries.filter(isQuizable);
   const categoryHasDefinitions = entries.some((e) => !!e.definition);
 
-  const due = quizable.filter(
-    (e) => progressMap[e.norsk] && new Date(progressMap[e.norsk].fsrs.due) <= now
-  );
-  const newCards = quizable.filter((e) => !progressMap[e.norsk]);
+  const due: VocabEntry[] = [];
+  const newCards: VocabEntry[] = [];
+  const notYetDue: VocabEntry[] = [];
+  for (const e of quizable) {
+    const p = progressMap[vocabKey(e)];
+    if (!p) newCards.push(e);
+    else if (new Date(p.fsrs.due) <= now) due.push(e);
+    else notYetDue.push(e);
+  }
 
-  const pool = [...shuffle(due), ...shuffle(newCards)].slice(0, count);
+  // Top-up candidates: soonest-due first. Only reached by the final slice when
+  // due + new cards don't fill `count`.
+  const dueTime = (e: VocabEntry) => new Date(progressMap[vocabKey(e)].fsrs.due).getTime();
+  const soonestDue = [...notYetDue].sort((a, b) => dueTime(a) - dueTime(b));
+
+  const pool = [...shuffle(due), ...shuffle(newCards), ...soonestDue].slice(0, count);
 
   return pool.map((entry, i) => {
     const monolingualOverride = isB1MonolingualEligible(entry, categoryHasDefinitions);

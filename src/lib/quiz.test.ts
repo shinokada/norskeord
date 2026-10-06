@@ -9,13 +9,17 @@ import {
   bareLemma
 } from './quiz';
 import type { VocabEntry, CardProgress } from '$lib/types';
+import { vocabKey } from '$lib/progress';
 import { createEmptyCard } from 'ts-fsrs';
 
 // ── Fixtures ──────────────────────────────────────────────────────────────────
 
 function makeEntry(overrides: Partial<VocabEntry> = {}): VocabEntry {
+  // Unique id per norsk so id-keyed bugs (progress lookups) aren't masked by
+  // fixtures sharing one id. Override `id` to build siblings with the same norsk.
+  const norsk = overrides.norsk ?? 'jobbe';
   return {
-    id: 'v-a1-verbs-013',
+    id: `w-test-${norsk}`,
     norsk: 'jobbe',
     english: 'to work',
     spanish: 'trabajar',
@@ -419,7 +423,7 @@ describe('buildQuizSession', () => {
     const newEntry = makeEntry({ norsk: 'reise', english: 'to travel' });
 
     const progressMap: Record<string, CardProgress> = {
-      jobbe: makeProgress(-1) // overdue by 1 day
+      [vocabKey(overdueEntry)]: makeProgress(-1) // overdue by 1 day
     };
 
     // Run several times to account for the internal shuffle within each group
@@ -432,16 +436,71 @@ describe('buildQuizSession', () => {
     expect(overdueFirst.every(Boolean)).toBe(true);
   });
 
-  it('excludes cards not yet due', () => {
+  it('orders overdue, then new, then soonest-due top-up', () => {
+    const overdue = makeEntry({ norsk: 'jobbe', english: 'to work' });
+    const fresh = makeEntry({ norsk: 'reise', english: 'to travel' });
+    const later = makeEntry({ norsk: 'spise', english: 'to eat' });
+    const soon = makeEntry({ norsk: 'sove', english: 'to sleep' });
+
+    const progressMap: Record<string, CardProgress> = {
+      [vocabKey(overdue)]: makeProgress(-1),
+      [vocabKey(later)]: makeProgress(10),
+      [vocabKey(soon)]: makeProgress(2)
+    };
+
+    const session = buildQuizSession([later, soon, fresh, overdue], POOL, progressMap, 4);
+    expect(session.map((q) => q.entry.norsk)).toEqual(['jobbe', 'reise', 'sove', 'spise']);
+  });
+
+  it('tops up with soonest-due cards when every card has progress and none is due', () => {
+    const entries = Array.from({ length: 6 }, (_, i) =>
+      makeEntry({ norsk: `word${i}`, english: `word ${i} en` })
+    );
+    // word0 is due in 6 days, word1 in 5, ... word5 in 1 day
+    const progressMap: Record<string, CardProgress> = {};
+    entries.forEach((e, i) => {
+      progressMap[vocabKey(e)] = makeProgress(6 - i);
+    });
+
+    const session = buildQuizSession(entries, POOL, progressMap, 4);
+    expect(session).toHaveLength(4);
+    expect(session.map((q) => q.entry.norsk)).toEqual(['word5', 'word4', 'word3', 'word2']);
+  });
+
+  it('does not pad with not-yet-due cards when due + new already fill count', () => {
+    const fresh = Array.from({ length: 3 }, (_, i) =>
+      makeEntry({ norsk: `new${i}`, english: `new ${i} en` })
+    );
+    const waiting = makeEntry({ norsk: 'waiting', english: 'waiting en' });
+    const progressMap: Record<string, CardProgress> = {
+      [vocabKey(waiting)]: makeProgress(1)
+    };
+
+    const session = buildQuizSession([...fresh, waiting], POOL, progressMap, 3);
+    expect(session).toHaveLength(3);
+    expect(session.map((q) => q.entry.norsk)).not.toContain('waiting');
+  });
+
+  it('treats siblings with the same norsk independently', () => {
+    const a = makeEntry({ id: 'w-000001', norsk: 'bank (en)', english: 'bank (money)' });
+    const b = makeEntry({ id: 'w-000002', norsk: 'bank (en)', english: 'bench' });
+    // Only the first sense has been studied (and is overdue).
+    const progressMap: Record<string, CardProgress> = {
+      'w-000001': makeProgress(-1)
+    };
+
+    const session = buildQuizSession([b, a], POOL, progressMap, 2);
+    expect(session.map((q) => q.entry.id)).toEqual(['w-000001', 'w-000002']);
+  });
+
+  it('tops up with not-yet-due cards instead of returning an empty session', () => {
     const futureEntry = makeEntry({ norsk: 'jobbe', english: 'to work' });
     const progressMap: Record<string, CardProgress> = {
-      jobbe: makeProgress(5) // due in 5 days
+      [vocabKey(futureEntry)]: makeProgress(5) // due in 5 days
     };
-    // Pool only has futureEntry — it should be treated as a non-due card, not excluded
     const session = buildQuizSession([futureEntry], POOL, progressMap, 1);
-    // It's not overdue, but it's also not new — it simply won't appear in the `due` bucket.
-    // The pool is: due=[], new=[] (it has progress). So session length is 0.
-    expect(session).toHaveLength(0);
+    expect(session).toHaveLength(1);
+    expect(session[0].entry).toBe(futureEntry);
   });
 
   it('returns empty array when entries is empty', () => {
