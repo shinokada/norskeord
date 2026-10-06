@@ -99,6 +99,10 @@ Example: `w-000001`
 
 Vocab and uttrykk ids are drawn from the same counter and are otherwise indistinguishable by shape — which file an entry lives in, and its `category`/`part` fields, are the only source of truth for its type.
 
+**Never key progress, maps or lookups by `norsk`.** Use `vocabKey(entry)` (`entry.id`, from `src/lib/progress.ts`). Entries with an identical `norsk` are different senses with independent progress (see the `sense` field), so a `norsk`-keyed lookup such as `progressMap[e.norsk]` silently matches nothing (or the wrong card). `norsk` is a display form, not an identifier.
+
+**Checks:** `pnpm check:ids` verifies that every production vocab and uttrykk entry has a well-formed `w-NNNNNN` id and that no id is used twice, including between vocab and uttrykk (`check-vocab.ts` and `check-uttrykk.ts` each only see their own files). `pnpm check:data` runs all three checkers with `--strict`.
+
 ### `definition` field (vocab-b1/b2/c and uttrykk-c)
 
 A monolingual Norwegian, dictionary-style definition of the sense shown in `english`.

@@ -40,7 +40,9 @@
     "check:languages": "node scripts/check-language-sync.mjs",
     "check:unused-keys": "node scripts/check-unused-keys.mjs",
     "check:category-keys": "npx tsx scripts/check-category-keys.ts",
-    "check:spelling": "npx tsx scripts/check-spelling.ts"
+    "check:spelling": "npx tsx scripts/check-spelling.ts",
+    "check:ids": "npx tsx scripts/check-ids.ts --strict",
+    "check:data": "npx tsx scripts/check-vocab.ts --strict && npx tsx scripts/check-uttrykk.ts --strict && npx tsx scripts/check-ids.ts --strict"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.117.1",
