@@ -527,6 +527,14 @@
           {m.quiz_mc_prompt()}
         </p>
         <p class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{q.prompt}</p>
+        {#if q.entry.sense && q.prompt === q.entry.norsk}
+          <p class="-mt-4 mb-6">
+            <span
+              class="rounded-full bg-indigo-100 px-3 py-0.5 text-sm font-medium text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-200"
+              >{q.entry.sense}</span
+            >
+          </p>
+        {/if}
         <div class="space-y-3">
           {#each q.options as option, i (i)}
             <button
@@ -725,6 +733,12 @@
         <span class="text-lg font-bold text-gray-800 dark:text-white">
           {current.entry.norsk}
         </span>
+        {#if current.entry.sense}
+          <span
+            class="rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-600 dark:bg-gray-700 dark:text-gray-300"
+            >{current.entry.sense}</span
+          >
+        {/if}
         <SpeakButton word={current.entry.norsk} label={m.speak_pronounce_word()} />
         <span class="text-xs text-gray-600 dark:text-gray-300">
           {current.entry.part} · {current.entry.level}
@@ -795,6 +809,11 @@
             <div class="min-w-0 flex-1">
               <p class="font-medium text-gray-800 dark:text-gray-100">
                 {result.question.entry.norsk}
+                {#if result.question.entry.sense}
+                  <span class="text-xs font-normal text-gray-500 dark:text-gray-400"
+                    >({result.question.entry.sense})</span
+                  >
+                {/if}
                 <span class="ml-1 font-normal text-gray-600 dark:text-gray-300">
                   — {entryIsMonolingual(result.question.entry)
                     ? (result.question.entry.definition ??
