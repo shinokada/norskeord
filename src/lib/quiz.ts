@@ -162,8 +162,13 @@ export interface MultipleChoiceQuestion {
 export interface FillBlankQuestion {
   type: 'fill';
   entry: VocabEntry;
-  /** Example sentence with the target Norwegian word replaced by "________". */
+  /** Example sentence with the target Norwegian word replaced by "________",
+   *  or, when the word isn't in the example verbatim, a direct prompt (see
+   *  `isFallback`). */
   sentence: string;
+  /** True when `sentence` is the direct fallback prompt, which already contains
+   *  the translation/definition. The UI must not print that gloss a second time. */
+  isFallback: boolean;
   /** The exact Norwegian word expected. */
   answer: string;
 }
@@ -240,12 +245,13 @@ export function buildFillQuestion(
 ): FillBlankQuestion {
   const blanked = entry.example.replace(entry.norsk, '________');
   const monolingual = isMonolingualLevel(entry.level) || monolingualOverride;
-  const sentence = blanked.includes('________')
+  const isFallback = !blanked.includes('________');
+  const sentence = !isFallback
     ? blanked
     : monolingual
       ? `Hvilket ord betyr: «${entry.definition ?? getTranslation(entry, language)}»?`
       : `Hva er det norske ordet for "${getTranslation(entry, language)}"?`;
-  return { type: 'fill', entry, sentence, answer: bareLemma(entry.norsk) };
+  return { type: 'fill', entry, sentence, isFallback, answer: bareLemma(entry.norsk) };
 }
 
 /**

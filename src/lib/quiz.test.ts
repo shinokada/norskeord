@@ -369,6 +369,23 @@ describe('buildFillQuestion', () => {
     const q = buildFillQuestion(inflected);
     expect(q.sentence).toContain('Hva er det norske ordet for');
     expect(q.sentence).toContain(inflected.english);
+    expect(q.isFallback).toBe(true);
+  });
+
+  it('uses the Norwegian definition prompt as the fallback at a monolingual level', () => {
+    const inflected = makeEntry({
+      norsk: 'kjøre',
+      level: 'B2',
+      definition: 'bevege seg i bil',
+      example: 'Han kjørte bilen.'
+    });
+    const q = buildFillQuestion(inflected);
+    expect(q.sentence).toBe('Hvilket ord betyr: «bevege seg i bil»?');
+    expect(q.isFallback).toBe(true);
+  });
+
+  it('is not a fallback when the word appears verbatim in the example', () => {
+    expect(buildFillQuestion(TARGET).isFallback).toBe(false);
   });
 
   it('entry reference is the original entry', () => {

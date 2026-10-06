@@ -527,14 +527,6 @@
           {m.quiz_mc_prompt()}
         </p>
         <p class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{q.prompt}</p>
-        {#if q.entry.sense && q.prompt === q.entry.norsk}
-          <p class="-mt-4 mb-6">
-            <span
-              class="rounded-full bg-indigo-100 px-3 py-0.5 text-sm font-medium text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-200"
-              >{q.entry.sense}</span
-            >
-          </p>
-        {/if}
         <div class="space-y-3">
           {#each q.options as option, i (i)}
             <button
@@ -559,14 +551,21 @@
         >
           {m.quiz_fill_prompt()}
         </p>
-        <p class="mb-2 text-lg font-medium text-gray-900 italic dark:text-white">
+        <p
+          class="{q.isFallback
+            ? 'mb-6'
+            : 'mb-2'} text-lg font-medium text-gray-900 italic dark:text-white"
+        >
           "{q.sentence}"
         </p>
-        <p class="mb-6 text-sm text-indigo-500 dark:text-indigo-400">
-          {entryIsMonolingual(q.entry)
-            ? (q.entry.definition ?? getTranslation(q.entry, quizLanguage))
-            : getTranslation(q.entry, quizLanguage)}
-        </p>
+        <!-- The fallback sentence already contains the translation/definition. -->
+        {#if !q.isFallback}
+          <p class="mb-6 text-sm text-indigo-500 dark:text-indigo-400">
+            {entryIsMonolingual(q.entry)
+              ? (q.entry.definition ?? getTranslation(q.entry, quizLanguage))
+              : getTranslation(q.entry, quizLanguage)}
+          </p>
+        {/if}
         <div class="flex gap-2">
           <input
             bind:this={inputRef}
