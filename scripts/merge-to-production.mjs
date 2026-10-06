@@ -150,24 +150,35 @@ function mergeOne(level, kind) {
     return { failed: true };
   }
 
-  // 4. Lemma collisions with production — warning only.
-  const prodLemmas = new Set(prodEntries.map((e) => (e.lemma ?? '').toLowerCase()).filter(Boolean));
-  const lemmaCollisions = draftEntries.filter(
-    (e) => e.lemma && prodLemmas.has(e.lemma.toLowerCase())
-  );
+  // 4. Lemma collisions with production — warning only. A draft entry whose `sense`
+  //    is non-empty and different from the production entry's `sense` is a deliberate
+  //    split sense (see data-rules/vocab-and-uttrykk.md), not a possible duplicate.
+  const prodByLemmaAll = new Map(); // lowercased lemma -> all production entries
+  for (const e of prodEntries) {
+    const key = (e.lemma ?? '').toLowerCase();
+    if (!key) continue;
+    if (!prodByLemmaAll.has(key)) prodByLemmaAll.set(key, []);
+    prodByLemmaAll.get(key).push(e);
+  }
+  const normSense = (e) => (e.sense ?? '').trim().toLowerCase();
+  const distinctSense = (a, b) =>
+    normSense(a) !== '' && normSense(b) !== '' && normSense(a) !== normSense(b);
+  // draft entry -> the production entry it may duplicate (first one with no distinct sense)
+  const lemmaCollisions = [];
+  for (const e of draftEntries) {
+    if (!e.lemma) continue;
+    const match = (prodByLemmaAll.get(e.lemma.toLowerCase()) ?? []).find(
+      (p) => !distinctSense(e, p)
+    );
+    if (match) lemmaCollisions.push({ draft: e, match });
+  }
   if (lemmaCollisions.length > 0) {
     console.log(
       `  ⚠️   ${lemmaCollisions.length} draft entry(ies) share a lemma with an existing production entry (possible duplicate — not blocking, double-check these):`
     );
-    const prodByLemma = new Map();
-    for (const e of prodEntries) {
-      const key = (e.lemma ?? '').toLowerCase();
-      if (key) prodByLemma.set(key, e); // last wins if dupes already in prod
-    }
-    for (const e of lemmaCollisions) {
-      const match = prodByLemma.get(e.lemma.toLowerCase());
+    for (const { draft, match } of lemmaCollisions) {
       console.log(
-        `      "lemma": "${e.lemma}",  "draft_id": "${e.id}" (${draftFilename}),  "prod_id": "${match?.id ?? '?'}" (${prodFilename})\n`
+        `      "lemma": "${draft.lemma}",  "draft_id": "${draft.id}" (${draftFilename}),  "prod_id": "${match.id ?? '?'}" (${prodFilename})\n`
       );
     }
   }

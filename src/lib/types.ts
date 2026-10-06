@@ -36,6 +36,11 @@ export interface VocabEntry {
   id: string;
   lemma?: string;
   norsk: string;
+  /** Short English gloss that disambiguates entries with an identical `norsk`,
+   *  e.g. "money" vs "furniture". Required on every entry in such a group.
+   *  Trimmed, lowercase, no parentheses, 1-3 words (~25 chars max). Shown on card
+   *  fronts and quiz prompts. See data-rules/vocab-and-uttrykk.md (sense field). */
+  sense?: string;
   english: string;
   spanish?: string;
   ukrainian?: string;

@@ -135,6 +135,32 @@ Example:
 "verb_type": "v1"
 ```
 
+### `sense` field (optional, vocab only)
+
+A short English gloss that tells apart **separate entries for different senses of the same word** (e.g. `bank (en)` "money" vs `bank (en)` "bench"). Each sense is its own `VocabEntry`, so FSRS schedules it independently: a learner may know `å legge` "to lay" but not "to go to bed".
+
+**Rule:** entries with an identical `norsk` (case-insensitive) must each have a distinct, non-empty `sense`. Entries that share only a `lemma` (different `norsk`, e.g. `å legge` vs `å legge seg`, or `bok` vs `bøker (pl.)`) don't need one: their card fronts already differ.
+
+**Format:** trimmed, lowercase, no parentheses, 1-3 words, ~25 characters at most. English only for now.
+
+```
+"norsk": "bank (en)",
+"lemma": "bank",
+"sense": "money"
+```
+
+Why a separate field: a noun's `norsk` must end in a gender / `(pl.)` / `(ubøy.)` marker, so a gloss like `bank (finansinstitusjon)` is not allowed there. `definition` exists only at B1+ and is Norwegian; `note` is free text that isn't shown on every card.
+
+**When to split:** when knowing one meaning does not imply the other (homonyms, clearly different senses, a different part of speech or conjugation class, a different CEFR level). Don't split minor nuances. Each sense may live in a different level file and category.
+
+**ID policy:**
+
+- The most common sense keeps the **original `id`**, so existing `card_progress` rows stay valid.
+- Every additional sense gets a plain next-free `w-NNNNNN` from `scripts/assign-ids.mjs`. Never hand-assign, renumber, insert, or use suffixed ids like `w-000123-2`.
+- Progress is always keyed by `id` (`vocabKey(entry)`), never by `norsk`: siblings share `norsk` but have independent progress.
+
+Split through the draft pipeline (the admin section is dormant): edit the original in place (keep `id`, add `sense`, narrow `english` / translations / `definition` / `example`), add each other sense as a draft entry with `id: ""`, the same `lemma`, and its own `sense`, then run `find_dupes.py`, `check-vocab.ts --draft`, `assign-ids.mjs`, `merge-to-production.mjs`. See `ai-docs/implementation/vocab-multiple-senses.md`.
+
 ## Vocab vs Uttrykk
 
 The vocab/uttrykk split is based on **lexical unit-hood**, not on whether the meaning is compositional. Compositionality is a bad test — `i går` ("in yesterday") is fully compositional but still belongs in uttrykk, while `kle på seg` is arguably just as compositional but is an ordinary conjugatable verb. So instead of asking "is the meaning compositional?", ask whether the entry **functions as a dictionary lemma**.
@@ -329,3 +355,5 @@ within-file duplicate sections catch exact-text repeats; its "normalized
 duplicates" section will keep surfacing head-word/collocation pairs like
 `tåle` vs `tåle kulde` — that's expected noise under this policy, not
 something to action.
+
+Identical `norsk` text is **not** a duplicate when every entry in the group has a distinct, non-empty `sense` (see the `sense` field section): those are deliberately split senses. `find_dupes.py` skips such groups, `merge-to-production.mjs` doesn't warn about a lemma collision between entries with different senses, and `check-vocab.ts` enforces the `sense` rule instead.

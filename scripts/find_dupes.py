@@ -37,6 +37,14 @@ def normalize_norsk(s):
     s = VERB_PREFIX.sub('', s)
     return s.strip()
 
+
+def has_distinct_senses(level_entry_pairs):
+    """True when every entry in the group has a non-empty `sense` and no two
+    senses are equal (case-insensitive). Such a group is a set of deliberately
+    split senses (see data-rules/vocab-and-uttrykk.md), not a duplicate."""
+    senses = [((entry.get('sense') or '').strip().lower()) for _, entry in level_entry_pairs]
+    return all(senses) and len(set(senses)) == len(senses)
+
 parser = argparse.ArgumentParser()
 parser.add_argument(
     '--details',
@@ -113,6 +121,9 @@ cross = {}
 for k, entries in norsk_map.items():
     if len(entries) < 2:
         continue
+    # Deliberately split senses (distinct non-empty `sense` on every entry) are not duplicates.
+    if has_distinct_senses(full_norsk_map[k]):
+        continue
     levels = [e[1] for e in entries]
     if len(set(levels)) == 1:
         within[k] = entries
@@ -128,6 +139,8 @@ for k, entries in normalized_map.items():
         continue
     raw_variants = set(e[0].lower() for e in entries)
     if len(raw_variants) < 2:
+        continue
+    if has_distinct_senses(full_normalized_map[k]):
         continue
     normalized_dupes[k] = entries
 
@@ -178,7 +191,7 @@ print(f"\nResults written to: {out_path}")
 # ---------------------------------------------------------------------------
 if args.details:
     FIELDS = [
-        'id', 'lemma', 'english', 'ukrainian', 'spanish', 'german',
+        'id', 'lemma', 'sense', 'english', 'ukrainian', 'spanish', 'german',
         'example', 'example_english', 'category', 'part',
     ]
 

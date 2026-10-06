@@ -27,6 +27,11 @@
  *      non-empty, and vice-versa.
  *  10. Translation coverage — warns if an entry is missing a language that other entries
  *      in the same file have.
+ *  11. sense field — optional short gloss (trimmed, lowercase, no parentheses, 1-3 words,
+ *      ~25 chars). Entries sharing an identical `norsk` must each have a distinct sense:
+ *      a group with some senses but missing/duplicate ones is an error; a legacy group
+ *      with none is a warning (an error in --draft mode, where it is a new entry).
+ *      Only the vocab files being checked are grouped (+ production as context in --draft).
  *
  * NOTE: "numeral" appears in vocab-a1.json (numbers category) but is not in
  * types.ts PartOfSpeech. It is treated as a warning, not an error, so you can
@@ -223,11 +228,37 @@ function checkLemma(entry) {
   return warnings;
 }
 
+/**
+ * sense must be a short disambiguating gloss: trimmed, lowercase, no parentheses,
+ * 1-3 words, ~25 chars max. Returns { errors, warnings } (length/word-count are
+ * soft limits — "~25" / "1-3" in the design doc — so they only warn).
+ */
+function checkSense(entry) {
+  const errors = [];
+  const warnings = [];
+  if (entry.sense === undefined) return { errors, warnings };
+  if (typeof entry.sense !== 'string' || entry.sense.trim() === '') {
+    errors.push('sense must be a non-empty string when present');
+    return { errors, warnings };
+  }
+  const s = entry.sense;
+  if (s !== s.trim()) errors.push(`sense "${s}" has leading/trailing whitespace`);
+  if (s !== s.toLowerCase()) errors.push(`sense "${s}" must be lowercase`);
+  if (/[()]/.test(s)) errors.push(`sense "${s}" must not contain parentheses`);
+  if (s.length > 25) warnings.push(`sense "${s}" is longer than ~25 characters`);
+  if (s.trim().split(/\s+/).length > 3) warnings.push(`sense "${s}" is longer than 3 words`);
+  return { errors, warnings };
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 let totalErrors = 0;
 let totalWarnings = 0;
 const globalIds = new Map(); // id → filename
+// Every entry seen, for the cross-entry `sense` check after the main loop.
+// `checked` = entry belongs to a file being validated (vs. production context
+// loaded only so drafts are compared against it in --draft mode).
+const senseGroupPool = [];
 
 for (const level of LEVELS) {
   if (!targetLevels.includes(level)) continue;
@@ -315,6 +346,15 @@ for (const level of LEVELS) {
       warns.push(...checkLemma(entry));
     }
 
+    // sense format
+    {
+      const s = checkSense(entry);
+      errs.push(...s.errors);
+      warns.push(...s.warnings);
+    }
+
+    senseGroupPool.push({ entry, filename, checked: true, index: i });
+
     // Language consistency: translation field and its example_{lang} must both be present
     for (const lang of KNOWN_LANGUAGES) {
       const hasTranslation = entry[lang] != null && entry[lang] !== '';
@@ -369,6 +409,98 @@ for (const level of LEVELS) {
   console.log(`\n${status}  ${filename}: ${fileErrors} error(s), ${fileWarnings} warning(s)`);
   totalErrors += fileErrors;
   totalWarnings += fileWarnings;
+}
+
+// ── Cross-entry check: identical `norsk` needs a distinct `sense` ─────────────
+//
+// Entries with the same (case-insensitive) `norsk` are separate senses of one
+// word. Each must carry a distinct, non-empty `sense`.
+//   - Group where NO entry has a sense: a warning for legacy homographs already in
+//     production (until backfilled) — but an error if the group includes an entry
+//     from a checked --draft file, since a new entry must either get a `sense` or
+//     is a real duplicate (find_dupes.py).
+//   - Group where SOME entry has a sense: missing or duplicate senses are errors.
+// Scope: only the vocab files being checked (a single-level run sees only that
+// level's groups). In --draft mode the production vocab files are also loaded, as
+// context, so a draft is compared against the entry it shares `norsk` with.
+// Uttrykk are not checked here (find_dupes.py covers them).
+
+if (DRAFT) {
+  for (const level of LEVELS) {
+    const filename = `vocab-${level}.json`;
+    try {
+      const prod = JSON.parse(readFileSync(join(DATA_DIR, filename), 'utf8'));
+      prod.forEach((entry, index) =>
+        senseGroupPool.push({ entry, filename, checked: false, index })
+      );
+    } catch {
+      // production file missing/unreadable — context only, ignore
+    }
+  }
+}
+
+{
+  const groups = new Map();
+  for (const item of senseGroupPool) {
+    const key = (item.entry.norsk ?? '').trim().toLowerCase();
+    if (!key) continue;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(item);
+  }
+
+  const label = (item) =>
+    `${item.filename} id=${item.entry.id || '(unassigned)'}${item.entry.sense ? ` sense="${item.entry.sense}"` : ''}`;
+
+  let groupErrors = 0;
+  let groupWarnings = 0;
+  const lines = [];
+
+  for (const [key, items] of groups) {
+    if (items.length < 2) continue;
+    // In --draft mode only report groups that include a draft entry.
+    if (DRAFT && !items.some((it) => it.checked)) continue;
+
+    const senses = items.map((it) => (it.entry.sense ?? '').trim().toLowerCase());
+    const anySense = senses.some(Boolean);
+    const hasDraft = DRAFT && items.some((it) => it.checked);
+    const members = items.map(label).join('; ');
+
+    if (!anySense) {
+      if (hasDraft) {
+        groupErrors++;
+        lines.push(
+          `  ❌  norsk "${key}" appears ${items.length}× with no \`sense\` — add a distinct sense to each, or remove the duplicate: ${members}`
+        );
+      } else {
+        groupWarnings++;
+        lines.push(
+          `  ⚠️   norsk "${key}" appears ${items.length}× with no \`sense\` (legacy homograph — backfill): ${members}`
+        );
+      }
+      continue;
+    }
+
+    const missing = senses.filter((s) => !s).length;
+    const distinct = new Set(senses.filter(Boolean)).size;
+    const filled = senses.filter(Boolean).length;
+    if (missing > 0) {
+      groupErrors++;
+      lines.push(
+        `  ❌  norsk "${key}": ${missing} of ${items.length} entries lack a \`sense\`: ${members}`
+      );
+    } else if (distinct < filled) {
+      groupErrors++;
+      lines.push(`  ❌  norsk "${key}": duplicate \`sense\` values within the group: ${members}`);
+    }
+  }
+
+  console.log(`\n${'─'.repeat(60)}`);
+  console.log(`🔀  Identical-norsk groups (sense check)`);
+  console.log(`${'─'.repeat(60)}`);
+  if (lines.length === 0) console.log('  ✅  none needing attention');
+  else for (const l of lines) console.log(l);
+  totalErrors += groupErrors;
+  totalWarnings += groupWarnings;
 }
 
 console.log(`\n${'═'.repeat(60)}`);
