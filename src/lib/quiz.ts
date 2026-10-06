@@ -99,19 +99,32 @@ export function getDistractors(
   const key = (e: VocabEntry) => (monolingual ? e.definition : getTranslation(e, language));
 
   const sameLevel = usable.filter(
-    (e) => e !== entry && e.level === entry.level && key(e) !== key(entry)
+    (e) => e !== entry && !isSiblingOf(e, entry) && e.level === entry.level && key(e) !== key(entry)
   );
 
   let pool = shuffle(sameLevel);
 
   if (pool.length < n) {
     const other = usable.filter(
-      (e) => e !== entry && e.level !== entry.level && key(e) !== key(entry)
+      (e) =>
+        e !== entry && !isSiblingOf(e, entry) && e.level !== entry.level && key(e) !== key(entry)
     );
     pool = [...pool, ...shuffle(other)];
   }
 
   return pool.slice(0, n);
+}
+
+/**
+ * Whether `a` is the same word as `b` (a different sense, or a plural card of the
+ * same lemma): identical `norsk` or identical lemma (`lemma`, else the bare form
+ * of `norsk`). Such an entry must never be offered as a distractor: in `noreng`
+ * its translation can be a second correct answer for the same prompt, and in
+ * `engnor` its `norsk` would duplicate the correct option.
+ */
+function isSiblingOf(a: VocabEntry, b: VocabEntry): boolean {
+  const lemmaOf = (e: VocabEntry) => (e.lemma ?? bareLemma(e.norsk)).trim().toLowerCase();
+  return a.norsk.trim().toLowerCase() === b.norsk.trim().toLowerCase() || lemmaOf(a) === lemmaOf(b);
 }
 
 // ── Typed-answer normalisation ───────────────────────────────────────────────

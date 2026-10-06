@@ -135,6 +135,33 @@ describe('getDistractors', () => {
     }
   });
 
+  it('never includes a sibling sense with the same norsk', () => {
+    const target = makeEntry({ id: 'w-000001', norsk: 'bank (en)', english: 'bank (money)' });
+    const sibling = makeEntry({ id: 'w-000002', norsk: 'bank (en)', english: 'bench' });
+    const pool = [target, sibling, ...POOL];
+    for (let i = 0; i < 30; i++) {
+      expect(getDistractors(target, pool, 3)).not.toContain(sibling);
+    }
+  });
+
+  it('never includes an entry that shares the target lemma (e.g. a plural card)', () => {
+    const target = makeEntry({ norsk: 'bok (en)', lemma: 'bok', english: 'book' });
+    const plural = makeEntry({ norsk: 'bøker (pl.)', lemma: 'bok', english: 'books' });
+    const pool = [target, plural, ...POOL];
+    for (let i = 0; i < 30; i++) {
+      expect(getDistractors(target, pool, 3)).not.toContain(plural);
+    }
+  });
+
+  it('falls back to the bare norsk when comparing entries without a lemma', () => {
+    const target = makeEntry({ norsk: 'fot (en)', english: 'foot' });
+    const other = makeEntry({ norsk: 'fot (et)', english: 'unit of length' });
+    const pool = [target, other, ...POOL];
+    for (let i = 0; i < 30; i++) {
+      expect(getDistractors(target, pool, 3)).not.toContain(other);
+    }
+  });
+
   it('prefers entries from the same CEFR level', () => {
     // All B1 distractors should come from B1 when pool is large enough
     const b1Pool = POOL.filter((e) => e.level === 'B1');
@@ -222,6 +249,26 @@ describe('buildMCQuestion', () => {
     const q = buildMCQuestion(TARGET, POOL);
     const unique = new Set(q.options);
     expect(unique.size).toBe(q.options.length);
+  });
+
+  it('engnor options never repeat the target norsk when a sibling sense exists', () => {
+    const target = makeEntry({ id: 'w-000001', norsk: 'bank (en)', english: 'bank (money)' });
+    const sibling = makeEntry({ id: 'w-000002', norsk: 'bank (en)', english: 'bench' });
+    const pool = [target, sibling, ...POOL];
+    for (let i = 0; i < 30; i++) {
+      const q = buildMCQuestion(target, pool, 'engnor');
+      expect(q.options.filter((o) => o === target.norsk)).toHaveLength(1);
+    }
+  });
+
+  it('noreng options never include a sibling translation as a second correct answer', () => {
+    const target = makeEntry({ id: 'w-000001', norsk: 'bank (en)', english: 'bank (money)' });
+    const sibling = makeEntry({ id: 'w-000002', norsk: 'bank (en)', english: 'bench' });
+    const pool = [target, sibling, ...POOL];
+    for (let i = 0; i < 30; i++) {
+      const q = buildMCQuestion(target, pool, 'noreng');
+      expect(q.options).not.toContain('bench');
+    }
   });
 
   it('correct answer appears at different positions across calls (shuffle)', () => {
