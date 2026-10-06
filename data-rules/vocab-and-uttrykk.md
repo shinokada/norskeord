@@ -137,16 +137,16 @@ Example:
 
 ### `sense` field (optional, vocab only)
 
-A short English gloss that tells apart **separate entries for different senses of the same word** (e.g. `bank (en)` "money" vs `bank (en)` "bench"). Each sense is its own `VocabEntry`, so FSRS schedules it independently: a learner may know `å legge` "to lay" but not "to go to bed".
+A short Norwegian gloss that tells apart **separate entries for different senses of the same word** (e.g. `bank (en)` "penger" vs `bank (en)` "sitte på"). Each sense is its own `VocabEntry`, so FSRS schedules it independently: a learner may know `å legge` "to lay" but not "to go to bed".
 
 **Rule:** entries with an identical `norsk` (case-insensitive) must each have a distinct, non-empty `sense`. Entries that share only a `lemma` (different `norsk`, e.g. `å legge` vs `å legge seg`, or `bok` vs `bøker (pl.)`) don't need one: their card fronts already differ.
 
-**Format:** trimmed, lowercase, no parentheses, 1-3 words, ~25 characters at most. English only for now.
+**Format:** trimmed, lowercase, no parentheses, 1-3 words, ~25 characters at most. **Norwegian only**: it is language-neutral, so learners of every flashcard language see the same pill and no per-language field is needed. Use vocabulary at or below the entry's own level, and prefer a context or topic hint (`til strikking`, `om mat`) or a simple synonym over a translation of the word.
 
 ```
-"norsk": "bank (en)",
-"lemma": "bank",
-"sense": "money"
+"norsk": "garn (et)",
+"lemma": "garn",
+"sense": "til strikking"
 ```
 
 Why a separate field: a noun's `norsk` must end in a gender / `(pl.)` / `(ubøy.)` marker, so a gloss like `bank (finansinstitusjon)` is not allowed there. `definition` exists only at B1+ and is Norwegian; `note` is free text that isn't shown on every card.
