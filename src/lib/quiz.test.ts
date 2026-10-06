@@ -432,6 +432,35 @@ describe('buildQuizSession', () => {
     expect(session).toHaveLength(5);
   });
 
+  it('never puts two senses of the same word back to back when others are available', () => {
+    const senseA = makeEntry({
+      id: 'w-100001',
+      norsk: 'gang (en)',
+      lemma: 'gang',
+      sense: 'hvor ofte',
+      english: 'time, occasion'
+    });
+    const senseB = makeEntry({
+      id: 'w-100002',
+      norsk: 'gang (en)',
+      lemma: 'gang',
+      sense: 'korridor',
+      english: 'hallway'
+    });
+    const entries = [senseA, senseB, ...POOL];
+
+    // The pool order is random, so repeat to cover many shuffles.
+    for (let run = 0; run < 50; run++) {
+      const session = buildQuizSession(entries, entries, {}, entries.length);
+      expect(session).toHaveLength(entries.length);
+      const indexes = session
+        .map((q, i) => (q.entry.lemma === 'gang' ? i : -1))
+        .filter((i) => i >= 0);
+      expect(indexes).toHaveLength(2);
+      expect(indexes[1] - indexes[0]).toBeGreaterThan(1);
+    }
+  });
+
   it('defaults to 10 questions when count is omitted', () => {
     // POOL has 10 entries — all new (no progress)
     const session = buildQuizSession(POOL, POOL, {});

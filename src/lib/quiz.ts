@@ -1,6 +1,7 @@
 import type { VocabEntry, CardProgress, FlashcardLanguage } from '$lib/types';
 import { getTranslation } from '$lib/vocab-helpers';
 import { vocabKey } from '$lib/progress';
+import { spaceSiblings } from '$lib/sibling-spacing';
 
 // ── Shuffle ───────────────────────────────────────────────────────────────────
 
@@ -116,6 +117,15 @@ export function getDistractors(
 }
 
 /**
+ * Key that identifies the lexical item behind an entry: `lemma`, else the bare
+ * form of `norsk`, lowercased. Entries with the same key are senses (or plural
+ * cards) of one word. Used for distractor exclusion and for sibling spacing.
+ */
+export function siblingKey(e: VocabEntry): string {
+  return (e.lemma ?? bareLemma(e.norsk)).trim().toLowerCase();
+}
+
+/**
  * Whether `a` is the same word as `b` (a different sense, or a plural card of the
  * same lemma): identical `norsk` or identical lemma (`lemma`, else the bare form
  * of `norsk`). Such an entry must never be offered as a distractor: in `noreng`
@@ -123,8 +133,9 @@ export function getDistractors(
  * `engnor` its `norsk` would duplicate the correct option.
  */
 function isSiblingOf(a: VocabEntry, b: VocabEntry): boolean {
-  const lemmaOf = (e: VocabEntry) => (e.lemma ?? bareLemma(e.norsk)).trim().toLowerCase();
-  return a.norsk.trim().toLowerCase() === b.norsk.trim().toLowerCase() || lemmaOf(a) === lemmaOf(b);
+  return (
+    a.norsk.trim().toLowerCase() === b.norsk.trim().toLowerCase() || siblingKey(a) === siblingKey(b)
+  );
 }
 
 // ── Typed-answer normalisation ───────────────────────────────────────────────
@@ -333,7 +344,12 @@ export function buildQuizSession(
   const dueTime = (e: VocabEntry) => new Date(progressMap[vocabKey(e)].fsrs.due).getTime();
   const soonestDue = [...notYetDue].sort((a, b) => dueTime(a) - dueTime(b));
 
-  const pool = [...shuffle(due), ...shuffle(newCards), ...soonestDue].slice(0, count);
+  // Keep two senses of the same word (or a word and its plural card) from
+  // appearing back to back. Done before the question types are assigned by index.
+  const pool = spaceSiblings(
+    [...shuffle(due), ...shuffle(newCards), ...soonestDue].slice(0, count),
+    siblingKey
+  );
 
   return pool.map((entry, i) => {
     const monolingualOverride = isB1MonolingualEligible(entry, categoryHasDefinitions);

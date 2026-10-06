@@ -11,6 +11,8 @@
   import { LANGUAGES } from '$lib/config';
   import { getTranslation, getExampleTranslation } from '$lib/vocab-helpers';
   import { resolveTargetEntry, type DeckTarget } from '$lib/deck-target';
+  import { spaceSiblings } from '$lib/sibling-spacing';
+  import { siblingKey } from '$lib/quiz';
   import {
     saveProgress,
     loadProgressMap,
@@ -295,9 +297,13 @@
       const rest = source.filter((e) => e !== targetEntry);
       const shuffledRest = shuffle(rest);
       const restLimit = limit != null ? Math.max(limit - 1, 0) : shuffledRest.length;
+      // The searched word stays first and its sibling may follow it (seeing both
+      // senses is useful); only the rest of the deck is spaced.
       items = [
         makeDeckItem(targetEntry, mo, ct),
-        ...shuffledRest.slice(0, restLimit).map((e) => makeDeckItem(e, mo, ct))
+        ...spaceSiblings(shuffledRest.slice(0, restLimit), siblingKey).map((e) =>
+          makeDeckItem(e, mo, ct)
+        )
       ];
     } else if (dm === 'due') {
       // Fix 1: fresh session (not a restart) recomputes the fixed pool and
@@ -313,11 +319,11 @@
       const dealt = dealChunk(dueSessionPool, dueDealIndex, limit);
       dueSessionPool = dealt.pool;
       dueDealIndex = dealt.dealIndex;
-      items = dealt.chunk.map((e) => makeDeckItem(e, mo, ct));
+      items = spaceSiblings(dealt.chunk, siblingKey).map((e) => makeDeckItem(e, mo, ct));
     } else {
-      items = shuffle(source)
-        .slice(0, limit ?? source.length)
-        .map((e) => makeDeckItem(e, mo, ct));
+      items = spaceSiblings(shuffle(source).slice(0, limit ?? source.length), siblingKey).map((e) =>
+        makeDeckItem(e, mo, ct)
+      );
     }
 
     deck = items;
