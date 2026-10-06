@@ -140,8 +140,6 @@ for k, entries in normalized_map.items():
     raw_variants = set(e[0].lower() for e in entries)
     if len(raw_variants) < 2:
         continue
-    if has_distinct_senses(full_normalized_map[k]):
-        continue
     normalized_dupes[k] = entries
 
 output = []
