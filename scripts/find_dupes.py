@@ -14,6 +14,8 @@ normalized groups that the exact-match pass didn't already catch.
 Usage:
     python scripts/find_dupes.py
     python scripts/find_dupes.py --details   # also write full side-by-side entry pairs
+    python scripts/find_dupes.py --data-dir DIR --out FILE   # read another tree / write the
+                                             # report elsewhere (used by the fixture test)
 """
 import argparse
 import json
@@ -52,12 +54,23 @@ parser.add_argument(
     help="Also write scripts/outputs/find-dupes-details.txt with full "
          "side-by-side entry pairs for every duplicate group, for quick review."
 )
+parser.add_argument(
+    '--data-dir',
+    default=None,
+    help="Directory holding the vocab-*.json / uttrykk-*.json files "
+         "(default: src/lib/data)."
+)
+parser.add_argument(
+    '--out',
+    default=None,
+    help="Where to write the report (default: scripts/vocab_duplicate_report.txt)."
+)
 args = parser.parse_args()
 
 # Works whether run from project root or scripts/
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(script_dir)
-base = os.path.join(project_root, "src", "lib", "data")
+base = os.path.abspath(args.data_dir) if args.data_dir else os.path.join(project_root, "src", "lib", "data")
 
 files = {
     'A1': os.path.join(base, 'vocab-a1.json'),
@@ -174,8 +187,8 @@ for k in sorted(normalized_dupes.keys()):
 result_text = "\n".join(output)
 print(result_text)
 
-# Write report next to this script
-out_path = os.path.join(script_dir, "vocab_duplicate_report.txt")
+# Write report next to this script (or to --out)
+out_path = os.path.abspath(args.out) if args.out else os.path.join(script_dir, "vocab_duplicate_report.txt")
 with open(out_path, 'w', encoding='utf-8') as f:
     f.write(f"Entry counts: {counts}\n")
     f.write(f"Total entries: {total}\n\n")

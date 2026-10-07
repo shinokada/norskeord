@@ -44,6 +44,7 @@
  *   npx tsx scripts/check-vocab.ts --strict  # exit 1 if any errors found
  *   npx tsx scripts/check-vocab.ts --draft    # check draft/{level}/vocab-{level}-new.json instead
  *   npx tsx scripts/check-vocab.ts c --draft  # check only draft/c/vocab-c-new.json
+ *   --data-dir=<dir> / --draft-dir=<dir>      # read from another tree (used by the fixture test)
  *
  * --draft mode (Step 3B in work-flow.md, run BEFORE Step 4 assigns real IDs):
  *   - Reads draft/{level}/vocab-{level}-new.json instead of src/lib/data/vocab-{level}.json
@@ -53,12 +54,22 @@
 
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { dirname, join, resolve } from 'path';
 import { CATEGORIES_BY_LEVEL as CATEGORIES_BY_LEVEL_RAW } from '../src/lib/config.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = join(__dirname, '../src/lib/data');
-const DRAFT_DIR = join(__dirname, '../draft');
+
+/** Value of a `--name=value` CLI flag, or undefined. */
+function flagValue(name: string): string | undefined {
+  const prefix = `--${name}=`;
+  const hit = process.argv.slice(2).find((a) => a.startsWith(prefix));
+  return hit ? hit.slice(prefix.length) : undefined;
+}
+
+// Defaults are the real data; the flags exist so the fixture test
+// (src/lib/check-scripts.test.ts) can run this script against a throwaway tree.
+const DATA_DIR = resolve(flagValue('data-dir') ?? join(__dirname, '../src/lib/data'));
+const DRAFT_DIR = resolve(flagValue('draft-dir') ?? join(__dirname, '../draft'));
 
 // ── Config (real import from config.ts, keys lower-cased — no more
 // hand-copied constant that can silently drift out of sync) ──────────────────
