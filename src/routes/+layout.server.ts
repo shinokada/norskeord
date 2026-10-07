@@ -47,7 +47,9 @@ export const load = async ({ url, locals }) => {
   // Single-row select — minimal overhead on every request.
   let displayName: string | null = null;
   let currentLevel: string | null = null;
-  let sessionLimit: number | null = null;
+  // undefined = guest or no profile row (the client falls back to localStorage),
+  // null = the profile chose "All cards", number = that limit.
+  let sessionLimit: number | null | undefined = undefined;
   let showExample: boolean = false;
   let onboardingDone: boolean = false;
   let onboardingSnoozedAt: string | null = null;
@@ -64,7 +66,7 @@ export const load = async ({ url, locals }) => {
       .maybeSingle();
     displayName = data?.display_name ?? null;
     currentLevel = data?.current_level ?? null;
-    sessionLimit = data?.session_limit ?? null;
+    sessionLimit = data ? data.session_limit : undefined;
     showExample = data?.show_example ?? false;
     onboardingDone = data?.onboarding_done ?? false;
     onboardingSnoozedAt = data?.onboarding_snoozed_at ?? null;

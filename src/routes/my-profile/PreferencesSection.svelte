@@ -9,6 +9,7 @@
   import Toggle from '$lib/components/ui/Toggle.svelte';
   import SegmentedControl from '$lib/components/ui/SegmentedControl.svelte';
   import { toast } from '$lib/stores/toast.svelte';
+  import { seedSessionLimit } from '$lib/session-limit';
 
   let {
     profile,
@@ -49,9 +50,7 @@
   let cardType = $state(untrack(() => ((profile?.include_phrases ?? false) ? 'phrase' : 'word')));
   let voiceSpeed = $state(untrack(() => String(profile?.voice_speed ?? 1)));
   let voicePitch = $state(untrack(() => String(profile?.voice_pitch ?? 1)));
-  let sessionLimit = $state(
-    untrack(() => (profile?.session_limit != null ? String(profile.session_limit) : '20'))
-  );
+  let sessionLimit = $state(untrack(() => seedSessionLimit(profile)));
   let quizLimit = $state(
     untrack(() => (profile?.quiz_limit != null ? String(profile.quiz_limit) : 'default'))
   );
