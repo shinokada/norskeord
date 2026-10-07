@@ -1,4 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { createEmptyCard, Rating } from 'ts-fsrs';
 import {
   loadProgressMap,
   saveProgress,
@@ -176,27 +177,39 @@ describe('saveProgress', () => {
 // ── getFsrs ───────────────────────────────────────────────────────────────────
 
 describe('getFsrs', () => {
-  // Only the no-userId path is tested here — a real userId would make getFsrs hit the
-  // live Supabase client (no mock exists for it in this suite), same reason saveProgress
-  // is never tested elsewhere in this file with a userId argument.
-  it('returns an FSRS instance for a guest (no userId)', async () => {
-    const f = await getFsrs(null);
-    expect(f).toBeDefined();
-    expect(typeof f.next).toBe('function');
-  });
-
-  it('returns the same cached instance shape on repeated guest calls', async () => {
-    const a = await getFsrs(undefined);
-    const b = await getFsrs(undefined);
-    expect(a).toBe(b); // guest path always returns the module-level DEFAULT_FSRS
-  });
-
-  it('ignores the retention argument for guests (no userId)', async () => {
-    // Guests always get DEFAULT_FSRS regardless of retention — the preset only
-    // applies once a userId is present (Phase 2 wiring).
-    const a = await getFsrs(null, 0.8);
-    const b = await getFsrs(null, 0.95);
+  it('returns the same default instance for null and undefined retention', () => {
+    const a = getFsrs(null);
+    const b = getFsrs(undefined);
+    expect(typeof a.next).toBe('function');
     expect(a).toBe(b);
+  });
+
+  it('caches one instance per retention and keys the cache by retention only', () => {
+    expect(getFsrs(0.8)).toBe(getFsrs(0.8));
+    expect(getFsrs(0.95)).toBe(getFsrs(0.95));
+    expect(getFsrs(0.8)).not.toBe(getFsrs(0.95));
+  });
+
+  it('schedules a new card at Hard 3d / Good 5d / Easy 8d at the default retention', () => {
+    // BASE_W's initial-stability overrides (see fsrs-update.md Phase 3), Standard preset.
+    const i = previewIntervals(null, new Date(), getFsrs(null));
+    expect(i.hard).toBe('3d');
+    expect(i.good).toBe('5d');
+    expect(i.easy).toBe('8d');
+  });
+
+  it('applies the retention preset: Intensive reviews sooner than Relaxed', () => {
+    const now = new Date();
+    const card = createEmptyCard(now);
+    const relaxed = getFsrs(0.8).next(card, now, Rating.Good).card.scheduled_days;
+    const intensive = getFsrs(0.95).next(card, now, Rating.Good).card.scheduled_days;
+    expect(intensive).toBeLessThan(relaxed);
+  });
+
+  it('saveProgress ignores the retention preset when there is no userId (guest / free)', async () => {
+    const relaxed = await saveProgress(entry, 'good', {}, null, 0.8);
+    const intensive = await saveProgress(entry, 'good', {}, null, 0.95);
+    expect(relaxed[KEY].fsrs.scheduled_days).toBe(intensive[KEY].fsrs.scheduled_days);
   });
 });
 
