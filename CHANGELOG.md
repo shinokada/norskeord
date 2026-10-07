@@ -1,5 +1,15 @@
 # norske-flashcard
 
+## 2.92.1
+
+### Patch Changes
+
+- - **Scheduling**
+    - Plus users’ retention settings now affect review intervals. Guests and free users receive the default review schedule, including when saving progress.
+    - Default new-card intervals are 3 days for Hard, 5 days for Good, and 8 days for Easy.
+  - **Changes**
+    - Personalized review-weight optimization is no longer available; review scheduling uses shared default weights instead.
+
 ## 2.92.0
 
 ### Minor Changes
