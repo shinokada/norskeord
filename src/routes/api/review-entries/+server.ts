@@ -154,8 +154,7 @@ export const POST: RequestHandler = async ({ request }) => {
     if (level === 'C') {
       const uttrykkC = await uttrykkCLoader();
       for (const e of uttrykkC.default) {
-        const key = e.id ?? e.norsk;
-        if (levelIds.has(key)) resolved.push(e);
+        if (levelIds.has(e.id)) resolved.push(e);
       }
     } else {
       const uttrykkLoader = uttrykkLoaders[level];
