@@ -50,6 +50,29 @@ describe('spaceSiblings', () => {
     }
   });
 
+  it('rebalances three siblings when no single swap can separate them', () => {
+    const input = ['b1', 'a1', 'b2', 'a2', 'a3'];
+    const out = spaceSiblings(input, key);
+    expect(hasAdjacentSiblings(out)).toBe(false);
+    expect([...out].sort()).toEqual([...input].sort());
+  });
+
+  it('leaves no adjacent siblings for any order of three siblings and two others', () => {
+    // 3 of 5 is the largest group a valid order allows (ceil(5 / 2)).
+    const base = ['a1', 'a2', 'a3', 'b1', 'b2'];
+    const permutations = (arr: string[]): string[][] =>
+      arr.length <= 1
+        ? [arr]
+        : arr.flatMap((x, i) =>
+            permutations([...arr.slice(0, i), ...arr.slice(i + 1)]).map((p) => [x, ...p])
+          );
+    for (const order of permutations(base)) {
+      const out = spaceSiblings(order, key);
+      expect(hasAdjacentSiblings(out)).toBe(false);
+      expect([...out].sort()).toEqual([...base].sort());
+    }
+  });
+
   it('handles an empty list and a single item', () => {
     expect(spaceSiblings([], key)).toEqual([]);
     expect(spaceSiblings(['a1'], key)).toEqual(['a1']);
