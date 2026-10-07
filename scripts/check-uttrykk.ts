@@ -207,8 +207,9 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds, file
         errs.push(
           `category "${entry.category}" is the retired sentinel — use the real theme slug (e.g. "greetings")`
         );
-      } else if (!SLUG_PATTERN.test(entry.category)) {
-        errs.push(`category "${entry.category}" is not a kebab-case slug`);
+      } else if (typeof entry.category !== 'string' || !SLUG_PATTERN.test(entry.category)) {
+        // typeof first: SLUG_PATTERN.test() would coerce ["greetings"] to "greetings" and pass it
+        errs.push(`category ${JSON.stringify(entry.category)} is not a kebab-case slug string`);
       }
     }
 

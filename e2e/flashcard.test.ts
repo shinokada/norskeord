@@ -170,14 +170,19 @@ test('learn/c hub Uttrykk section links to c/[category] pages, not /c/uttrykk', 
   const uttrykkSection = page.locator('#uttrykk');
   await expect(uttrykkSection.getByRole('link', { name: /fixed expressions/i })).toHaveCount(0);
 
+  // Pills are sorted by uttrykk count and only the first 8 show until "Show more".
+  // The largest C categories are Plus-only, so for a free user the first 8 are all
+  // locked (link to /plus); the free categories (rhetoric, formal-writing, ...) rank
+  // lower. Expand first, otherwise this depends on how the counts happen to rank.
+  const showMore = uttrykkSection.getByRole('button', { name: /show more/i });
+  if (await showMore.count()) await showMore.click();
+
   const categoryPills = uttrykkSection.locator('a[href*="?from=uttrykk"]');
   await expect(categoryPills.first()).toBeVisible();
 
   // Free user: a locked C category (e.g. linguistics is Plus-only, see
   // config.ts PLUS_CATEGORIES) should render as a dimmed pill linking to
   // /plus, not be hidden or silently route to an unlocked category.
-  const showMore = uttrykkSection.getByRole('button', { name: /show more/i });
-  if (await showMore.count()) await showMore.click();
   const lockedCategoryPills = uttrykkSection
     .locator('a[href="/plus?ref=hub-uttrykk-badge"]')
     .filter({ hasText: '🔒' });
