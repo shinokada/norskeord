@@ -84,7 +84,7 @@ export const GRAMMAR_LS_PREFIX = 'grammar-';
  * Called on logout so the next person who opens the browser sees no progress.
  */
 export function clearUserProgress(): void {
-  // Guest/free users store vocab keys as 'progress-<vocabId|norsk>' and grammar
+  // Guest/free users store vocab keys as 'progress-<vocabId>' and grammar
   // keys as 'grammar-<questionId>'. (Plus users no longer use localStorage at all.)
   const keysToRemove: string[] = [];
   for (let i = 0; i < localStorage.length; i++) {
@@ -104,13 +104,17 @@ const RATING_MAP: Record<FSRSRating, Grade> = {
 // ── Stable key helper ────────────────────────────────────────────────────────
 
 /**
- * Returns the stable key for a vocab entry: entry.id when present (post-migration
- * entries), falling back to entry.norsk for any entry that pre-dates the id
- * migration. Both guest/free localStorage and the in-memory progressMap use
- * this key so lookups are consistent regardless of which path wrote the data.
+ * Returns the stable progress key for a vocab entry: its `id` (`w-NNNNNN`). Never `norsk`:
+ * sibling senses share it, so a `norsk` key would merge their cards (the lint rule in
+ * eslint.config.js blocks `x[e.norsk]`). `VocabEntry.id` is required and `pnpm check:ids`
+ * guarantees every production entry has one. Both guest/free localStorage and the
+ * in-memory progressMap use this key.
+ *
+ * Old guest localStorage keys written by `norsk` (before ids existed) never match any
+ * entry and are simply ignored; they are not migrated.
  */
 export function vocabKey(entry: VocabEntry): string {
-  return entry.id ?? entry.norsk;
+  return entry.id;
 }
 
 // ── Stale-id migration (Phase 3/7/11, id-new-format.md) ───────────────────────
@@ -123,7 +127,7 @@ export function vocabKey(entry: VocabEntry): string {
  *
  * Deliberately a whitelist of known-past shapes, not "anything that doesn't
  * match the current shape" — the latter would also flag legacy norsk-
- * fallback keys (vocabKey() falls back to entry.norsk for pre-id entries) as
+ * keys (from before ids existed; vocabKey() no longer falls back to norsk) as
  * "possibly stale", paying the id-migration-map.json fetch cost for guests
  * who have no stale id at all, just an older storage convention with
  * nothing in the mapping file to find.
@@ -221,7 +225,7 @@ export async function loadProgressMap(): Promise<Record<string, CardProgress>> {
 // ── Supabase row shape ───────────────────────────────────────────────────────
 
 interface ProgressRow {
-  // vocab_id is the stable lookup key (entry.id ?? entry.norsk).
+  // vocab_id is the stable lookup key (entry.id).
   // NOT NULL — migration 016 added it as NOT NULL with a unique constraint.
   vocab_id: string;
   level: string;
@@ -242,7 +246,7 @@ interface ProgressRow {
 
 function toRow(entry: VocabEntry, p: CardProgress): Omit<ProgressRow, never> {
   return {
-    vocab_id: entry.id ?? entry.norsk, // stable key; falls back to norsk for old entries
+    vocab_id: vocabKey(entry),
     // level/category: same Phase 4 backward-compat note as saveProgress()
     // below — written for Table Editor readability, not read back for
     // stats/due-filtering (Phase 2/3 resolve those live instead).
@@ -302,7 +306,7 @@ function rowKey(row: ProgressRow): string {
 
 /**
  * Fetches all card_progress rows for a Plus user and returns them as a
- * CardProgress map keyed by vocab_id (or norsk for legacy rows).
+ * CardProgress map keyed by vocab_id.
  * Called on mount for Plus users instead of loadProgressMap.
  */
 export async function loadProgressMapFromSupabase(
@@ -412,7 +416,7 @@ async function maybeTriggerOptimisation(userId: string, totalReps: number) {
  *   uniform call signature).
  *
  * The in-memory progressMap and localStorage are keyed by vocabKey(entry)
- * (i.e. entry.id when present, else entry.norsk).
+ * (i.e. entry.id).
  *
  * Callers should await this function regardless of user type.
  */

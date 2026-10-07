@@ -164,11 +164,13 @@
 
   async function navigateTo(entry: SearchEntry) {
     close();
-    // Carry the exact word into the flashcard deck via ?word= so the target
-    // page can surface it first instead of wherever it lands in the shuffle
-    // (see ai-docs/implementation/search-jump-to-card.md).
+    // Carry the exact entry into the flashcard deck so the target page can
+    // surface it first. `id` (the real w-NNNNNN) identifies the exact sense when
+    // several entries share a `norsk`; `word` stays as the fallback for entries
+    // without an id (see ai-docs/implementation/search-jump-to-card.md).
     const separator = entry.href.includes('?') ? '&' : '?';
-    const href = `${entry.href}${separator}word=${encodeURIComponent(entry.norsk)}`;
+    const idParam = entry.entryId ? `id=${encodeURIComponent(entry.entryId)}&` : '';
+    const href = `${entry.href}${separator}${idParam}word=${encodeURIComponent(entry.norsk)}`;
     // entry.href values are valid app routes generated at build time
     // eslint-disable-next-line svelte/no-navigation-without-resolve
     await goto(href);

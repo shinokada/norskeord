@@ -36,6 +36,12 @@ export interface VocabEntry {
   id: string;
   lemma?: string;
   norsk: string;
+  /** Short Norwegian gloss that disambiguates entries with an identical `norsk`,
+   *  e.g. "til strikking" vs "til fiske". Required on every entry in such a group.
+   *  Trimmed, lowercase, no parentheses, 1-3 words (~25 chars max). Shown on flashcard
+   *  fronts, the quiz reveal card and the summary (not in quiz prompts, where it
+   *  could give the answer away). See data-rules/vocab-and-uttrykk.md (sense field). */
+  sense?: string;
   english: string;
   spanish?: string;
   ukrainian?: string;

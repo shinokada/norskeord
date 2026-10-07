@@ -12,7 +12,10 @@
  *                     dead, out-of-scope format, see ai-docs/implementation/id-new-format.md Round 2)
  *   2. ID uniqueness — no duplicates within or across files
  *   3. level field  — must match file's CEFR level (case-insensitive)
- *   4. category     — must be "uttrykk" or "uttrykk-preview"
+ *   4. category     — full A1–B2 files: a kebab-case slug (the real theme; the old "uttrykk" sentinel
+ *                     was retired by ai-docs/implementation/uttrykk-theme-category-unification.md,
+ *                     2026-09-26); C: must be in CATEGORIES_BY_LEVEL.C; preview files (dead
+ *                     format): "uttrykk-preview"
  *   5. part         — uttrykk entries should be "phrase"
  *   6. norsk field  — must be present and non-empty
  *   7. lemma field  — must be present and non-empty; must be bare (no leading "å "), unlike
@@ -66,7 +69,8 @@ const REQUIRED_FIELDS = [
   'category',
   'part'
 ];
-const VALID_CATEGORIES = new Set(['uttrykk', 'uttrykk-preview']);
+const VALID_CATEGORIES = new Set(['uttrykk', 'uttrykk-preview']); // preview files only
+const SLUG_PATTERN = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
 // C-level uttrykk entries carry a real C category slug instead of the
 // generic "uttrykk" placeholder (see ai-docs/implementation/uttrykk-category.md
@@ -183,18 +187,29 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds, file
       errs.push(`level field "${entry.level}" does not match file level "${level.toUpperCase()}"`);
     }
 
-    // category — C-level uttrykk entries carry a real C category slug
-    // (see C_CATEGORIES above) instead of the generic "uttrykk"/"uttrykk-preview"
-    // placeholder used by A1–B2.
+    // category — since the 2026-09-26 theme -> category unification
+    // (ai-docs/implementation/uttrykk-theme-category-unification.md) A1–B2 full files carry
+    // the real topical slug in `category` (no "uttrykk" sentinel, no `theme` field), the
+    // same shape C already had. C slugs must exist in CATEGORIES_BY_LEVEL.C, otherwise the
+    // entry is merged into no c/{category} page. Preview files keep the old rule (dead format).
     if (entry.category) {
-      if (level === 'c') {
+      if (isPreview) {
+        if (!VALID_CATEGORIES.has(entry.category)) {
+          errs.push(`category "${entry.category}" is not "uttrykk" or "uttrykk-preview"`);
+        } else if (entry.category !== expectedCategory) {
+          warns.push(`category "${entry.category}" — expected "${expectedCategory}" for this file`);
+        }
+      } else if (level === 'c') {
         if (!C_CATEGORIES.has(entry.category)) {
           errs.push(`category "${entry.category}" is not a valid C-level category slug`);
         }
-      } else if (!VALID_CATEGORIES.has(entry.category)) {
-        errs.push(`category "${entry.category}" is not "uttrykk" or "uttrykk-preview"`);
-      } else if (entry.category !== expectedCategory) {
-        warns.push(`category "${entry.category}" — expected "${expectedCategory}" for this file`);
+      } else if (entry.category === 'uttrykk' || entry.category === 'uttrykk-preview') {
+        errs.push(
+          `category "${entry.category}" is the retired sentinel — use the real theme slug (e.g. "greetings")`
+        );
+      } else if (typeof entry.category !== 'string' || !SLUG_PATTERN.test(entry.category)) {
+        // typeof first: SLUG_PATTERN.test() would coerce ["greetings"] to "greetings" and pass it
+        errs.push(`category ${JSON.stringify(entry.category)} is not a kebab-case slug string`);
       }
     }
 
@@ -203,13 +218,10 @@ function checkFile(filename, level, expectedCategory, isPreview, globalIds, file
       warns.push(`part is "${entry.part}" — uttrykk entries are typically "phrase"`);
     }
 
-    // theme — every full-file uttrykk entry should have a non-empty theme
-    // (ai-docs/implementation/uttrykk-category.md Phase 2). Preview files and
-    // draft/no-id entries are not required to have one yet.
-    if (!isPreview && !DRAFT && entry.category === 'uttrykk') {
-      if (entry.theme == null || entry.theme === '') {
-        errs.push('missing "theme" field (Phase 2 requires every uttrykk entry to be themed)');
-      }
+    // theme — retired by the 2026-09-26 unification (VocabEntry.theme was removed from
+    // types.ts; the value now lives in `category`). A stray `theme` key is leftover data.
+    if (entry.theme != null) {
+      warns.push('has a retired "theme" field — the theme now lives in "category"');
     }
 
     // lemma — must be bare (no leading "å "); unlike norsk, which may

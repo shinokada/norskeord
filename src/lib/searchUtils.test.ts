@@ -455,3 +455,44 @@ describe('search — locale-aware translation matching', () => {
     expect(results.some((r) => r.norsk === 'takk')).toBe(true);
   });
 });
+
+// ── sibling senses (vocab-multiple-senses) ──────────────────────────────────────────────────
+
+describe('search — sibling senses (identical norsk)', () => {
+  const siblings: SearchEntry[] = [
+    makeEntry({
+      id: 'vocab-a2-1',
+      entryId: 'w-001101',
+      norsk: 'gang (en)',
+      lemma: 'gang',
+      english: 'time, occasion',
+      level: 'A2',
+      category: 'time',
+      part: 'noun',
+      href: '/a2/time'
+    }),
+    makeEntry({
+      id: 'vocab-a2-2',
+      entryId: 'w-010707',
+      norsk: 'gang (en)',
+      lemma: 'gang',
+      english: 'hallway',
+      level: 'A2',
+      category: 'home',
+      part: 'noun',
+      href: '/a2/home'
+    })
+  ];
+
+  it('returns both senses and keeps each entryId', () => {
+    const results = search('gang', siblings);
+    expect(results).toHaveLength(2);
+    expect(results.map((r) => r.entryId).sort()).toEqual(['w-001101', 'w-010707']);
+  });
+
+  it('finds each sense by its own translation', () => {
+    const results = search('hallway', siblings);
+    expect(results).toHaveLength(1);
+    expect(results[0].entryId).toBe('w-010707');
+  });
+});

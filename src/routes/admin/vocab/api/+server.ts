@@ -29,6 +29,9 @@ function getFilePath(url: URL): string {
 
 function validateEntry(e: Partial<VocabEntry>): string[] {
   const errs: string[] = [];
+  if (!e.id?.trim()) {
+    errs.push('id is required — add new entries via the draft pipeline (scripts/assign-ids.mjs)');
+  }
   if (!e.norsk?.trim()) errs.push('norsk is required');
   if (!e.english?.trim()) errs.push('english is required');
   if (!e.level) errs.push('level is required');

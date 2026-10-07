@@ -3,3 +3,7 @@ package-lock.json
 pnpm-lock.yaml
 yarn.lock
 draft/
+
+# Data submodule: content is validated by `pnpm check:data`, and Prettier must not
+# rewrite the data repo's JSON (it produced whitespace-only diffs in grammar-*.json).
+src/lib/data/

@@ -10,6 +10,9 @@
   import type { VocabEntry, FlashcardLanguage, FSRSRating, CardProgress } from '$lib/types';
   import { LANGUAGES } from '$lib/config';
   import { getTranslation, getExampleTranslation } from '$lib/vocab-helpers';
+  import { resolveTargetEntry, type DeckTarget } from '$lib/deck-target';
+  import { spaceSiblings } from '$lib/sibling-spacing';
+  import { siblingKey } from '$lib/quiz';
   import {
     saveProgress,
     loadProgressMap,
@@ -279,11 +282,11 @@
     ct: CardType,
     dm: DeckMode,
     limit: number | null,
-    targetNorsk: string | null = null,
+    target: DeckTarget | null = null,
     isRestart = false
   ) {
     const source = mo === 'defnor' ? es.filter((e) => !!e.definition) : es;
-    const targetEntry = targetNorsk ? source.find((e) => e.norsk === targetNorsk) : undefined;
+    const targetEntry = target ? resolveTargetEntry(source, target) : undefined;
 
     let items: DeckItem[];
     if (targetEntry) {
@@ -294,9 +297,13 @@
       const rest = source.filter((e) => e !== targetEntry);
       const shuffledRest = shuffle(rest);
       const restLimit = limit != null ? Math.max(limit - 1, 0) : shuffledRest.length;
+      // The searched word stays first and its sibling may follow it (seeing both
+      // senses is useful); only the rest of the deck is spaced.
       items = [
         makeDeckItem(targetEntry, mo, ct),
-        ...shuffledRest.slice(0, restLimit).map((e) => makeDeckItem(e, mo, ct))
+        ...spaceSiblings(shuffledRest.slice(0, restLimit), siblingKey).map((e) =>
+          makeDeckItem(e, mo, ct)
+        )
       ];
     } else if (dm === 'due') {
       // Fix 1: fresh session (not a restart) recomputes the fixed pool and
@@ -312,11 +319,11 @@
       const dealt = dealChunk(dueSessionPool, dueDealIndex, limit);
       dueSessionPool = dealt.pool;
       dueDealIndex = dealt.dealIndex;
-      items = dealt.chunk.map((e) => makeDeckItem(e, mo, ct));
+      items = spaceSiblings(dealt.chunk, siblingKey).map((e) => makeDeckItem(e, mo, ct));
     } else {
-      items = shuffle(source)
-        .slice(0, limit ?? source.length)
-        .map((e) => makeDeckItem(e, mo, ct));
+      items = spaceSiblings(shuffle(source).slice(0, limit ?? source.length), siblingKey).map((e) =>
+        makeDeckItem(e, mo, ct)
+      );
     }
 
     deck = items;
@@ -387,6 +394,13 @@
   const toggleBack = () => (showCardBack = !showCardBack);
 
   let current = $derived(deck[currentIndex]);
+
+  // The sense gloss only helps where the card front is the bare Norwegian word
+  // (NO → translation, word cards). In the other directions the front is already
+  // sense-specific (a translation, a definition, or an example sentence).
+  let currentFrontTag = $derived(
+    current && effectiveMode === 'noreng' && cardType === 'word' ? current.entry.sense : undefined
+  );
 
   function deriveExample(entry: VocabEntry, mo: Mode, ct: CardType): string {
     if (ct === 'phrase') return mo === 'noreng' ? entry.norsk : getTranslation(entry, language);
@@ -498,10 +512,13 @@
   // ── Rebuild deck when entries / mode / cardType / deckMode changes ───────────
 
   // Word to jump straight to in the deck, e.g. arriving from a search result
-  // (?word=<norsk>). Read reactively from the URL, so restart() (which calls
-  // buildDeck without this arg) naturally reverts to a full shuffle, and a
-  // fresh search navigation with a new ?word= rebuilds the deck again.
+  // (?id=<w-NNNNNN>&word=<norsk>). `id` identifies the exact sense; `word` is the
+  // fallback for old links without an id (see resolveTargetEntry). Read
+  // reactively from the URL, so restart() (which calls buildDeck without a
+  // target) naturally reverts to a full shuffle, and a fresh search navigation
+  // with new params rebuilds the deck again.
   let targetWord = $derived(page.url.searchParams.get('word'));
+  let targetId = $derived(page.url.searchParams.get('id'));
 
   $effect(() => {
     const e = entries;
@@ -511,7 +528,7 @@
     const ct = cardType;
     const dm = deckMode;
     const lim = sessionLimit;
-    const target = targetWord;
+    const target: DeckTarget = { id: targetId, word: targetWord };
     untrack(() => {
       if (e.length === 0) {
         deck = [];
@@ -947,11 +964,18 @@
           ? 'Flashcard showing answer, press to show question'
           : 'Flashcard showing question, press to reveal answer'}
       >
-        <Flashcard front={current?.front} back={current?.back} {showCardBack} />
+        <Flashcard
+          front={current?.front}
+          back={current?.back}
+          {showCardBack}
+          frontTag={currentFrontTag}
+        />
       </div>
       <!-- aria-live region: announces card content to screen readers on flip/advance -->
       <div aria-live="polite" class="sr-only">
-        {showCardBack ? current?.back : current?.front}
+        {showCardBack
+          ? current?.back
+          : [current?.front, currentFrontTag].filter(Boolean).join(', ')}
       </div>
     {/if}
   </div>

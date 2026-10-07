@@ -50,16 +50,14 @@ export interface ResolvedEntry {
 }
 
 interface LookupSourceEntry {
-  id?: string;
+  id: string;
   norsk: string;
   category: string;
 }
 
-/** Stable lookup key for a content entry: id when present, else norsk — same
- * fallback vocabKey() uses in progress.ts for entries that predate the id
- * migration. */
+/** Stable lookup key for a content entry: its `id` (same key vocabKey() uses in progress.ts). */
 function entryKey(e: LookupSourceEntry): string {
-  return e.id ?? e.norsk;
+  return e.id;
 }
 
 const vocabFilesByLevel: Record<CEFRLevel, LookupSourceEntry[]> = {

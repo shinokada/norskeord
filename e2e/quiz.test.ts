@@ -126,6 +126,31 @@ test('Plus user can complete a quiz session and see summary', async ({ page }) =
 });
 
 // ===========================================================================
+// Exhausted category (regression for the soonest-due top-up, vocab-multiple-senses Phase 0a)
+// ===========================================================================
+
+test('Try again on a small, fully-answered category still starts a full session', async ({
+  page
+}) => {
+  test.setTimeout(60000);
+  await injectPlusPlan(page);
+  // A1 greetings is small (8 entries); a limit of 10 exceeds the pool, so every
+  // card has progress after the first run and none is due.
+  await page.goto('/quiz?level=a1&category=greetings');
+  await page.evaluate(() => localStorage.setItem('vocab-quiz-limit', '10'));
+  await page.reload();
+
+  await page.getByRole('button', { name: /start quiz/i }).click();
+  await completeSession(page, 10);
+
+  await page.getByRole('button', { name: /try again|prøv igjen/i }).click();
+  // Without the top-up the new session would be empty and no counter would show.
+  await expect(page.getByText(/question 1 of \d+|spørsmål 1 av \d+/i)).toBeVisible({
+    timeout: 10000
+  });
+});
+
+// ===========================================================================
 // FSRS / localStorage
 // ===========================================================================
 

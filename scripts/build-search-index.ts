@@ -25,6 +25,12 @@ const OUT_FILE = resolve(OUT_DIR, 'search-index.json');
 
 export interface SearchEntry {
   id: string;
+  /** The entry's real `w-NNNNNN` id from the data file (the `id` above is a
+   *  positional index-builder key, not stable across data changes). Use this for
+   *  deep links and progress lookups. */
+  entryId?: string;
+  /** Disambiguating gloss for entries that share a `norsk` (see VocabEntry.sense). */
+  sense?: string;
   norsk: string;
   lemma: string;
   english: string;
@@ -72,6 +78,8 @@ for (const { file, source } of FILES) {
       const category = (e.category as string) ?? '';
       index.push({
         id: `${source}-${level.toLowerCase()}-${String(before + i).padStart(5, '0')}`,
+        entryId: e.id as string | undefined,
+        sense: e.sense as string | undefined,
         norsk: (e.norsk as string) ?? '',
         lemma: (e.lemma as string) ?? (e.norsk as string) ?? '',
         english: (e.english as string) ?? '',

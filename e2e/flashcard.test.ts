@@ -170,14 +170,19 @@ test('learn/c hub Uttrykk section links to c/[category] pages, not /c/uttrykk', 
   const uttrykkSection = page.locator('#uttrykk');
   await expect(uttrykkSection.getByRole('link', { name: /fixed expressions/i })).toHaveCount(0);
 
+  // Pills are sorted by uttrykk count and only the first 8 show until "Show more".
+  // The largest C categories are Plus-only, so for a free user the first 8 are all
+  // locked (link to /plus); the free categories (rhetoric, formal-writing, ...) rank
+  // lower. Expand first, otherwise this depends on how the counts happen to rank.
+  const showMore = uttrykkSection.getByRole('button', { name: /show more/i });
+  if (await showMore.count()) await showMore.click();
+
   const categoryPills = uttrykkSection.locator('a[href*="?from=uttrykk"]');
   await expect(categoryPills.first()).toBeVisible();
 
   // Free user: a locked C category (e.g. linguistics is Plus-only, see
   // config.ts PLUS_CATEGORIES) should render as a dimmed pill linking to
   // /plus, not be hidden or silently route to an unlocked category.
-  const showMore = uttrykkSection.getByRole('button', { name: /show more/i });
-  if (await showMore.count()) await showMore.click();
   const lockedCategoryPills = uttrykkSection
     .locator('a[href="/plus?ref=hub-uttrykk-badge"]')
     .filter({ hasText: '🔒' });
@@ -187,4 +192,25 @@ test('learn/c hub Uttrykk section links to c/[category] pages, not /c/uttrykk', 
 test('about page has expected h1', async ({ page }) => {
   await page.goto('/about');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Guide to Norskeord');
+});
+
+// vocab-multiple-senses Phase 5: two A2 `home` entries share `norsk` (`kasse (en)`
+// crate vs checkout, `gang (en)` hallway vs occasion). The ?id= deep link must
+// put the exact sense first, and the NO → translation front must show its pill.
+test('deep link by id shows that sense pill on the card front (gang, hallway)', async ({
+  page
+}) => {
+  await page.goto('/a2/home?id=w-010707&word=gang%20(en)');
+  await page.getByRole('button', { name: /NO → EN/i }).click();
+  await expect(page.getByText(/^\d+\/\d+$/)).toBeVisible({ timeout: 10000 });
+  await expect(page.getByText('korridor', { exact: true })).toBeVisible();
+  await expect(page.getByText('hvor ofte', { exact: true })).not.toBeVisible();
+});
+
+test('deep link by id shows that sense pill on the card front (kasse, crate)', async ({ page }) => {
+  await page.goto('/a2/home?id=w-001729&word=kasse%20(en)');
+  await page.getByRole('button', { name: /NO → EN/i }).click();
+  await expect(page.getByText(/^\d+\/\d+$/)).toBeVisible({ timeout: 10000 });
+  await expect(page.getByText('til flasker', { exact: true })).toBeVisible();
+  await expect(page.getByText('i butikken', { exact: true })).not.toBeVisible();
 });

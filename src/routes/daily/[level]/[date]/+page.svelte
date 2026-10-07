@@ -55,7 +55,7 @@
     <div
       class="divide-y divide-gray-100 rounded-xl border border-gray-200 dark:divide-gray-700 dark:border-gray-700"
     >
-      {#each lesson.vocabulary as item (item.norsk)}
+      {#each lesson.vocabulary as item, i (i)}
         <div class="flex flex-col gap-1 px-4 py-3 sm:flex-row sm:items-start sm:gap-4">
           <div class="flex items-center gap-2 sm:w-36 sm:shrink-0">
             <span class="font-semibold text-gray-900 dark:text-white">{item.norsk}</span>

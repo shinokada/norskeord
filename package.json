@@ -16,7 +16,6 @@
   "scripts": {
     "dev": "pnpm stats && vite dev",
     "build": "pnpm stats && pnpm grammar:split && vite build",
-    "vercel-build": "bash scripts/setup-submodule.sh && pnpm search:index && pnpm build",
     "grammar:split": "node scripts/build-grammar-level-index.mjs",
     "preview": "vite preview",
     "prepare": "svelte-kit sync || echo ''",
@@ -40,7 +39,9 @@
     "check:languages": "node scripts/check-language-sync.mjs",
     "check:unused-keys": "node scripts/check-unused-keys.mjs",
     "check:category-keys": "npx tsx scripts/check-category-keys.ts",
-    "check:spelling": "npx tsx scripts/check-spelling.ts"
+    "check:spelling": "npx tsx scripts/check-spelling.ts",
+    "check:ids": "npx tsx scripts/check-ids.ts --strict",
+    "check:data": "npx tsx scripts/check-vocab.ts --strict && npx tsx scripts/check-uttrykk.ts --strict && npx tsx scripts/check-ids.ts --strict"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.117.1",

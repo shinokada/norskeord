@@ -9,13 +9,17 @@ import {
   bareLemma
 } from './quiz';
 import type { VocabEntry, CardProgress } from '$lib/types';
+import { vocabKey } from '$lib/progress';
 import { createEmptyCard } from 'ts-fsrs';
 
 // ── Fixtures ──────────────────────────────────────────────────────────────────
 
 function makeEntry(overrides: Partial<VocabEntry> = {}): VocabEntry {
+  // Unique id per norsk so id-keyed bugs (progress lookups) aren't masked by
+  // fixtures sharing one id. Override `id` to build siblings with the same norsk.
+  const norsk = overrides.norsk ?? 'jobbe';
   return {
-    id: 'v-a1-verbs-013',
+    id: `w-test-${norsk}`,
     norsk: 'jobbe',
     english: 'to work',
     spanish: 'trabajar',
@@ -131,6 +135,33 @@ describe('getDistractors', () => {
     }
   });
 
+  it('never includes a sibling sense with the same norsk', () => {
+    const target = makeEntry({ id: 'w-000001', norsk: 'bank (en)', english: 'bank (money)' });
+    const sibling = makeEntry({ id: 'w-000002', norsk: 'bank (en)', english: 'bench' });
+    const pool = [target, sibling, ...POOL];
+    for (let i = 0; i < 30; i++) {
+      expect(getDistractors(target, pool, 3)).not.toContain(sibling);
+    }
+  });
+
+  it('never includes an entry that shares the target lemma (e.g. a plural card)', () => {
+    const target = makeEntry({ norsk: 'bok (en)', lemma: 'bok', english: 'book' });
+    const plural = makeEntry({ norsk: 'bøker (pl.)', lemma: 'bok', english: 'books' });
+    const pool = [target, plural, ...POOL];
+    for (let i = 0; i < 30; i++) {
+      expect(getDistractors(target, pool, 3)).not.toContain(plural);
+    }
+  });
+
+  it('falls back to the bare norsk when comparing entries without a lemma', () => {
+    const target = makeEntry({ norsk: 'fot (en)', english: 'foot' });
+    const other = makeEntry({ norsk: 'fot (et)', english: 'unit of length' });
+    const pool = [target, other, ...POOL];
+    for (let i = 0; i < 30; i++) {
+      expect(getDistractors(target, pool, 3)).not.toContain(other);
+    }
+  });
+
   it('prefers entries from the same CEFR level', () => {
     // All B1 distractors should come from B1 when pool is large enough
     const b1Pool = POOL.filter((e) => e.level === 'B1');
@@ -218,6 +249,26 @@ describe('buildMCQuestion', () => {
     const q = buildMCQuestion(TARGET, POOL);
     const unique = new Set(q.options);
     expect(unique.size).toBe(q.options.length);
+  });
+
+  it('engnor options never repeat the target norsk when a sibling sense exists', () => {
+    const target = makeEntry({ id: 'w-000001', norsk: 'bank (en)', english: 'bank (money)' });
+    const sibling = makeEntry({ id: 'w-000002', norsk: 'bank (en)', english: 'bench' });
+    const pool = [target, sibling, ...POOL];
+    for (let i = 0; i < 30; i++) {
+      const q = buildMCQuestion(target, pool, 'engnor');
+      expect(q.options.filter((o) => o === target.norsk)).toHaveLength(1);
+    }
+  });
+
+  it('noreng options never include a sibling translation as a second correct answer', () => {
+    const target = makeEntry({ id: 'w-000001', norsk: 'bank (en)', english: 'bank (money)' });
+    const sibling = makeEntry({ id: 'w-000002', norsk: 'bank (en)', english: 'bench' });
+    const pool = [target, sibling, ...POOL];
+    for (let i = 0; i < 30; i++) {
+      const q = buildMCQuestion(target, pool, 'noreng');
+      expect(q.options).not.toContain('bench');
+    }
   });
 
   it('correct answer appears at different positions across calls (shuffle)', () => {
@@ -318,6 +369,23 @@ describe('buildFillQuestion', () => {
     const q = buildFillQuestion(inflected);
     expect(q.sentence).toContain('Hva er det norske ordet for');
     expect(q.sentence).toContain(inflected.english);
+    expect(q.isFallback).toBe(true);
+  });
+
+  it('uses the Norwegian definition prompt as the fallback at a monolingual level', () => {
+    const inflected = makeEntry({
+      norsk: 'kjøre',
+      level: 'B2',
+      definition: 'bevege seg i bil',
+      example: 'Han kjørte bilen.'
+    });
+    const q = buildFillQuestion(inflected);
+    expect(q.sentence).toBe('Hvilket ord betyr: «bevege seg i bil»?');
+    expect(q.isFallback).toBe(true);
+  });
+
+  it('is not a fallback when the word appears verbatim in the example', () => {
+    expect(buildFillQuestion(TARGET).isFallback).toBe(false);
   });
 
   it('entry reference is the original entry', () => {
@@ -362,6 +430,35 @@ describe('buildQuizSession', () => {
   it('returns the requested number of questions when pool is large enough', () => {
     const session = buildQuizSession(POOL, POOL, {}, 5);
     expect(session).toHaveLength(5);
+  });
+
+  it('never puts two senses of the same word back to back when others are available', () => {
+    const senseA = makeEntry({
+      id: 'w-100001',
+      norsk: 'gang (en)',
+      lemma: 'gang',
+      sense: 'hvor ofte',
+      english: 'time, occasion'
+    });
+    const senseB = makeEntry({
+      id: 'w-100002',
+      norsk: 'gang (en)',
+      lemma: 'gang',
+      sense: 'korridor',
+      english: 'hallway'
+    });
+    const entries = [senseA, senseB, ...POOL];
+
+    // The pool order is random, so repeat to cover many shuffles.
+    for (let run = 0; run < 50; run++) {
+      const session = buildQuizSession(entries, entries, {}, entries.length);
+      expect(session).toHaveLength(entries.length);
+      const indexes = session
+        .map((q, i) => (q.entry.lemma === 'gang' ? i : -1))
+        .filter((i) => i >= 0);
+      expect(indexes).toHaveLength(2);
+      expect(indexes[1] - indexes[0]).toBeGreaterThan(1);
+    }
   });
 
   it('defaults to 10 questions when count is omitted', () => {
@@ -419,7 +516,7 @@ describe('buildQuizSession', () => {
     const newEntry = makeEntry({ norsk: 'reise', english: 'to travel' });
 
     const progressMap: Record<string, CardProgress> = {
-      jobbe: makeProgress(-1) // overdue by 1 day
+      [vocabKey(overdueEntry)]: makeProgress(-1) // overdue by 1 day
     };
 
     // Run several times to account for the internal shuffle within each group
@@ -432,16 +529,71 @@ describe('buildQuizSession', () => {
     expect(overdueFirst.every(Boolean)).toBe(true);
   });
 
-  it('excludes cards not yet due', () => {
+  it('orders overdue, then new, then soonest-due top-up', () => {
+    const overdue = makeEntry({ norsk: 'jobbe', english: 'to work' });
+    const fresh = makeEntry({ norsk: 'reise', english: 'to travel' });
+    const later = makeEntry({ norsk: 'spise', english: 'to eat' });
+    const soon = makeEntry({ norsk: 'sove', english: 'to sleep' });
+
+    const progressMap: Record<string, CardProgress> = {
+      [vocabKey(overdue)]: makeProgress(-1),
+      [vocabKey(later)]: makeProgress(10),
+      [vocabKey(soon)]: makeProgress(2)
+    };
+
+    const session = buildQuizSession([later, soon, fresh, overdue], POOL, progressMap, 4);
+    expect(session.map((q) => q.entry.norsk)).toEqual(['jobbe', 'reise', 'sove', 'spise']);
+  });
+
+  it('tops up with soonest-due cards when every card has progress and none is due', () => {
+    const entries = Array.from({ length: 6 }, (_, i) =>
+      makeEntry({ norsk: `word${i}`, english: `word ${i} en` })
+    );
+    // word0 is due in 6 days, word1 in 5, ... word5 in 1 day
+    const progressMap: Record<string, CardProgress> = {};
+    entries.forEach((e, i) => {
+      progressMap[vocabKey(e)] = makeProgress(6 - i);
+    });
+
+    const session = buildQuizSession(entries, POOL, progressMap, 4);
+    expect(session).toHaveLength(4);
+    expect(session.map((q) => q.entry.norsk)).toEqual(['word5', 'word4', 'word3', 'word2']);
+  });
+
+  it('does not pad with not-yet-due cards when due + new already fill count', () => {
+    const fresh = Array.from({ length: 3 }, (_, i) =>
+      makeEntry({ norsk: `new${i}`, english: `new ${i} en` })
+    );
+    const waiting = makeEntry({ norsk: 'waiting', english: 'waiting en' });
+    const progressMap: Record<string, CardProgress> = {
+      [vocabKey(waiting)]: makeProgress(1)
+    };
+
+    const session = buildQuizSession([...fresh, waiting], POOL, progressMap, 3);
+    expect(session).toHaveLength(3);
+    expect(session.map((q) => q.entry.norsk)).not.toContain('waiting');
+  });
+
+  it('treats siblings with the same norsk independently', () => {
+    const a = makeEntry({ id: 'w-000001', norsk: 'bank (en)', english: 'bank (money)' });
+    const b = makeEntry({ id: 'w-000002', norsk: 'bank (en)', english: 'bench' });
+    // Only the first sense has been studied (and is overdue).
+    const progressMap: Record<string, CardProgress> = {
+      'w-000001': makeProgress(-1)
+    };
+
+    const session = buildQuizSession([b, a], POOL, progressMap, 2);
+    expect(session.map((q) => q.entry.id)).toEqual(['w-000001', 'w-000002']);
+  });
+
+  it('tops up with not-yet-due cards instead of returning an empty session', () => {
     const futureEntry = makeEntry({ norsk: 'jobbe', english: 'to work' });
     const progressMap: Record<string, CardProgress> = {
-      jobbe: makeProgress(5) // due in 5 days
+      [vocabKey(futureEntry)]: makeProgress(5) // due in 5 days
     };
-    // Pool only has futureEntry — it should be treated as a non-due card, not excluded
     const session = buildQuizSession([futureEntry], POOL, progressMap, 1);
-    // It's not overdue, but it's also not new — it simply won't appear in the `due` bucket.
-    // The pool is: due=[], new=[] (it has progress). So session length is 0.
-    expect(session).toHaveLength(0);
+    expect(session).toHaveLength(1);
+    expect(session[0].entry).toBe(futureEntry);
   });
 
   it('returns empty array when entries is empty', () => {

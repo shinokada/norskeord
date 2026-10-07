@@ -1,5 +1,7 @@
 import type { VocabEntry, CardProgress, FlashcardLanguage } from '$lib/types';
 import { getTranslation } from '$lib/vocab-helpers';
+import { vocabKey } from '$lib/progress';
+import { spaceSiblings } from '$lib/sibling-spacing';
 
 // ── Shuffle ───────────────────────────────────────────────────────────────────
 
@@ -98,19 +100,42 @@ export function getDistractors(
   const key = (e: VocabEntry) => (monolingual ? e.definition : getTranslation(e, language));
 
   const sameLevel = usable.filter(
-    (e) => e !== entry && e.level === entry.level && key(e) !== key(entry)
+    (e) => e !== entry && !isSiblingOf(e, entry) && e.level === entry.level && key(e) !== key(entry)
   );
 
   let pool = shuffle(sameLevel);
 
   if (pool.length < n) {
     const other = usable.filter(
-      (e) => e !== entry && e.level !== entry.level && key(e) !== key(entry)
+      (e) =>
+        e !== entry && !isSiblingOf(e, entry) && e.level !== entry.level && key(e) !== key(entry)
     );
     pool = [...pool, ...shuffle(other)];
   }
 
   return pool.slice(0, n);
+}
+
+/**
+ * Key that identifies the lexical item behind an entry: `lemma`, else the bare
+ * form of `norsk`, lowercased. Entries with the same key are senses (or plural
+ * cards) of one word. Used for distractor exclusion and for sibling spacing.
+ */
+export function siblingKey(e: VocabEntry): string {
+  return (e.lemma ?? bareLemma(e.norsk)).trim().toLowerCase();
+}
+
+/**
+ * Whether `a` is the same word as `b` (a different sense, or a plural card of the
+ * same lemma): identical `norsk` or identical lemma (`lemma`, else the bare form
+ * of `norsk`). Such an entry must never be offered as a distractor: in `noreng`
+ * its translation can be a second correct answer for the same prompt, and in
+ * `engnor` its `norsk` would duplicate the correct option.
+ */
+function isSiblingOf(a: VocabEntry, b: VocabEntry): boolean {
+  return (
+    a.norsk.trim().toLowerCase() === b.norsk.trim().toLowerCase() || siblingKey(a) === siblingKey(b)
+  );
 }
 
 // ── Typed-answer normalisation ───────────────────────────────────────────────
@@ -148,8 +173,13 @@ export interface MultipleChoiceQuestion {
 export interface FillBlankQuestion {
   type: 'fill';
   entry: VocabEntry;
-  /** Example sentence with the target Norwegian word replaced by "________". */
+  /** Example sentence with the target Norwegian word replaced by "________",
+   *  or, when the word isn't in the example verbatim, a direct prompt (see
+   *  `isFallback`). */
   sentence: string;
+  /** True when `sentence` is the direct fallback prompt, which already contains
+   *  the translation/definition. The UI must not print that gloss a second time. */
+  isFallback: boolean;
   /** The exact Norwegian word expected. */
   answer: string;
 }
@@ -226,12 +256,13 @@ export function buildFillQuestion(
 ): FillBlankQuestion {
   const blanked = entry.example.replace(entry.norsk, '________');
   const monolingual = isMonolingualLevel(entry.level) || monolingualOverride;
-  const sentence = blanked.includes('________')
+  const isFallback = !blanked.includes('________');
+  const sentence = !isFallback
     ? blanked
     : monolingual
       ? `Hvilket ord betyr: «${entry.definition ?? getTranslation(entry, language)}»?`
       : `Hva er det norske ordet for "${getTranslation(entry, language)}"?`;
-  return { type: 'fill', entry, sentence, answer: bareLemma(entry.norsk) };
+  return { type: 'fill', entry, sentence, isFallback, answer: bareLemma(entry.norsk) };
 }
 
 /**
@@ -263,7 +294,16 @@ export function buildTypeQuestion(
  * Build a mixed quiz session of `count` questions from `entries`.
  *
  * Due cards (overdue FSRS) come first so the session integrates with the
- * existing review schedule. New (unseen) cards fill the remainder.
+ * existing review schedule. New (unseen) cards come next. If that still leaves
+ * fewer than `count` questions (e.g. the person has already studied every card
+ * in the category and none is due yet), the session is topped up with the
+ * not-yet-due cards whose due date is soonest, so a quiz is never empty or
+ * short while eligible cards exist.
+ *
+ * Progress is looked up by `vocabKey(entry)` (`entry.id`), the same key
+ * `saveProgress` writes and both progress loaders return. Never key by
+ * `entry.norsk`: entries that share a `norsk` (different senses) have
+ * independent progress.
  *
  * Question type distribution (by position mod 4):
  *   0, 1 → multiple choice  (50 %)
@@ -289,12 +329,27 @@ export function buildQuizSession(
   const quizable = entries.filter(isQuizable);
   const categoryHasDefinitions = entries.some((e) => !!e.definition);
 
-  const due = quizable.filter(
-    (e) => progressMap[e.norsk] && new Date(progressMap[e.norsk].fsrs.due) <= now
-  );
-  const newCards = quizable.filter((e) => !progressMap[e.norsk]);
+  const due: VocabEntry[] = [];
+  const newCards: VocabEntry[] = [];
+  const notYetDue: VocabEntry[] = [];
+  for (const e of quizable) {
+    const p = progressMap[vocabKey(e)];
+    if (!p) newCards.push(e);
+    else if (new Date(p.fsrs.due) <= now) due.push(e);
+    else notYetDue.push(e);
+  }
 
-  const pool = [...shuffle(due), ...shuffle(newCards)].slice(0, count);
+  // Top-up candidates: soonest-due first. Only reached by the final slice when
+  // due + new cards don't fill `count`.
+  const dueTime = (e: VocabEntry) => new Date(progressMap[vocabKey(e)].fsrs.due).getTime();
+  const soonestDue = [...notYetDue].sort((a, b) => dueTime(a) - dueTime(b));
+
+  // Keep two senses of the same word (or a word and its plural card) from
+  // appearing back to back. Done before the question types are assigned by index.
+  const pool = spaceSiblings(
+    [...shuffle(due), ...shuffle(newCards), ...soonestDue].slice(0, count),
+    siblingKey
+  );
 
   return pool.map((entry, i) => {
     const monolingualOverride = isB1MonolingualEligible(entry, categoryHasDefinitions);

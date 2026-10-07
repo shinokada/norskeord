@@ -29,6 +29,31 @@ export default ts.config(
     }
   },
   {
+    files: ['src/**/*.{ts,js,svelte}'],
+    rules: {
+      // Progress is keyed by vocabKey(entry) (the entry id), never by `norsk`: sibling
+      // senses share a `norsk`, so a `norsk` key merges their cards. See
+      // ai-docs/implementation/vocab-multiple-senses.md (Phase 4) and
+      // data-rules/vocab-and-uttrykk.md. A deliberate, non-progress use (e.g. grouping
+      // for display) can opt out with a line-level disable and a reason.
+      'no-restricted-syntax': [
+        'error',
+        {
+          selector:
+            "MemberExpression[computed=true] > MemberExpression.property[property.name='norsk']",
+          message:
+            'Do not key by `.norsk` (sibling senses share it). Use vocabKey(entry) from $lib/progress.'
+        },
+        {
+          selector:
+            "MemberExpression[computed=true] > ChainExpression.property > MemberExpression[property.name='norsk']",
+          message:
+            'Do not key by `.norsk` (sibling senses share it). Use vocabKey(entry) from $lib/progress.'
+        }
+      ]
+    }
+  },
+  {
     files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],
     ignores: ['eslint.config.js', 'svelte.config.js'],
 

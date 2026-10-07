@@ -176,7 +176,16 @@
     // missing → 10. Cap to available entries.
     const raw = browser ? (localStorage.getItem('vocab-quiz-limit') ?? 'default') : 'default';
     const quizCount = raw === 'default' ? 10 : Math.max(1, parseInt(raw, 10) || 10);
-    questions = buildQuizSession(entries, data.allEntries, progressMap, quizCount, quizLanguage);
+    const session = buildQuizSession(
+      entries,
+      data.allEntries,
+      progressMap,
+      quizCount,
+      quizLanguage
+    );
+    // Never enter the questioning state with no `current` question.
+    if (session.length === 0) return;
+    questions = session;
     currentIndex = 0;
     correctCount = 0;
     results = [];
@@ -542,14 +551,21 @@
         >
           {m.quiz_fill_prompt()}
         </p>
-        <p class="mb-2 text-lg font-medium text-gray-900 italic dark:text-white">
+        <p
+          class="{q.isFallback
+            ? 'mb-6'
+            : 'mb-2'} text-lg font-medium text-gray-900 italic dark:text-white"
+        >
           "{q.sentence}"
         </p>
-        <p class="mb-6 text-sm text-indigo-500 dark:text-indigo-400">
-          {entryIsMonolingual(q.entry)
-            ? (q.entry.definition ?? getTranslation(q.entry, quizLanguage))
-            : getTranslation(q.entry, quizLanguage)}
-        </p>
+        <!-- The fallback sentence already contains the translation/definition. -->
+        {#if !q.isFallback}
+          <p class="mb-6 text-sm text-indigo-500 dark:text-indigo-400">
+            {entryIsMonolingual(q.entry)
+              ? (q.entry.definition ?? getTranslation(q.entry, quizLanguage))
+              : getTranslation(q.entry, quizLanguage)}
+          </p>
+        {/if}
         <div class="flex gap-2">
           <input
             bind:this={inputRef}
@@ -716,6 +732,12 @@
         <span class="text-lg font-bold text-gray-800 dark:text-white">
           {current.entry.norsk}
         </span>
+        {#if current.entry.sense}
+          <span
+            class="rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-600 dark:bg-gray-700 dark:text-gray-300"
+            >{current.entry.sense}</span
+          >
+        {/if}
         <SpeakButton word={current.entry.norsk} label={m.speak_pronounce_word()} />
         <span class="text-xs text-gray-600 dark:text-gray-300">
           {current.entry.part} · {current.entry.level}
@@ -786,6 +808,11 @@
             <div class="min-w-0 flex-1">
               <p class="font-medium text-gray-800 dark:text-gray-100">
                 {result.question.entry.norsk}
+                {#if result.question.entry.sense}
+                  <span class="text-xs font-normal text-gray-500 dark:text-gray-400"
+                    >({result.question.entry.sense})</span
+                  >
+                {/if}
                 <span class="ml-1 font-normal text-gray-600 dark:text-gray-300">
                   — {entryIsMonolingual(result.question.entry)
                     ? (result.question.entry.definition ??

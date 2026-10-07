@@ -14,6 +14,8 @@ normalized groups that the exact-match pass didn't already catch.
 Usage:
     python scripts/find_dupes.py
     python scripts/find_dupes.py --details   # also write full side-by-side entry pairs
+    python scripts/find_dupes.py --data-dir DIR --out FILE   # read another tree / write the
+                                             # report elsewhere (used by the fixture test)
 """
 import argparse
 import json
@@ -37,6 +39,14 @@ def normalize_norsk(s):
     s = VERB_PREFIX.sub('', s)
     return s.strip()
 
+
+def has_distinct_senses(level_entry_pairs):
+    """True when every entry in the group has a non-empty `sense` and no two
+    senses are equal (case-insensitive). Such a group is a set of deliberately
+    split senses (see data-rules/vocab-and-uttrykk.md), not a duplicate."""
+    senses = [((entry.get('sense') or '').strip().lower()) for _, entry in level_entry_pairs]
+    return all(senses) and len(set(senses)) == len(senses)
+
 parser = argparse.ArgumentParser()
 parser.add_argument(
     '--details',
@@ -44,12 +54,23 @@ parser.add_argument(
     help="Also write scripts/outputs/find-dupes-details.txt with full "
          "side-by-side entry pairs for every duplicate group, for quick review."
 )
+parser.add_argument(
+    '--data-dir',
+    default=None,
+    help="Directory holding the vocab-*.json / uttrykk-*.json files "
+         "(default: src/lib/data)."
+)
+parser.add_argument(
+    '--out',
+    default=None,
+    help="Where to write the report (default: scripts/vocab_duplicate_report.txt)."
+)
 args = parser.parse_args()
 
 # Works whether run from project root or scripts/
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(script_dir)
-base = os.path.join(project_root, "src", "lib", "data")
+base = os.path.abspath(args.data_dir) if args.data_dir else os.path.join(project_root, "src", "lib", "data")
 
 files = {
     'A1': os.path.join(base, 'vocab-a1.json'),
@@ -113,6 +134,9 @@ cross = {}
 for k, entries in norsk_map.items():
     if len(entries) < 2:
         continue
+    # Deliberately split senses (distinct non-empty `sense` on every entry) are not duplicates.
+    if has_distinct_senses(full_norsk_map[k]):
+        continue
     levels = [e[1] for e in entries]
     if len(set(levels)) == 1:
         within[k] = entries
@@ -163,8 +187,8 @@ for k in sorted(normalized_dupes.keys()):
 result_text = "\n".join(output)
 print(result_text)
 
-# Write report next to this script
-out_path = os.path.join(script_dir, "vocab_duplicate_report.txt")
+# Write report next to this script (or to --out)
+out_path = os.path.abspath(args.out) if args.out else os.path.join(script_dir, "vocab_duplicate_report.txt")
 with open(out_path, 'w', encoding='utf-8') as f:
     f.write(f"Entry counts: {counts}\n")
     f.write(f"Total entries: {total}\n\n")
@@ -178,7 +202,7 @@ print(f"\nResults written to: {out_path}")
 # ---------------------------------------------------------------------------
 if args.details:
     FIELDS = [
-        'id', 'lemma', 'english', 'ukrainian', 'spanish', 'german',
+        'id', 'lemma', 'sense', 'english', 'ukrainian', 'spanish', 'german',
         'example', 'example_english', 'category', 'part',
     ]
 

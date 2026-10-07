@@ -99,6 +99,10 @@ Example: `w-000001`
 
 Vocab and uttrykk ids are drawn from the same counter and are otherwise indistinguishable by shape — which file an entry lives in, and its `category`/`part` fields, are the only source of truth for its type.
 
+**Never key progress, maps or lookups by `norsk`.** Use `vocabKey(entry)` (`entry.id`, from `src/lib/progress.ts`). Entries with an identical `norsk` are different senses with independent progress (see the `sense` field), so a `norsk`-keyed lookup such as `progressMap[e.norsk]` silently matches nothing (or the wrong card). `norsk` is a display form, not an identifier.
+
+**Checks:** `pnpm check:ids` verifies that every production vocab and uttrykk entry has a well-formed `w-NNNNNN` id and that no id is used twice, including between vocab and uttrykk (`check-vocab.ts` and `check-uttrykk.ts` each only see their own files). `pnpm check:data` runs all three checkers with `--strict`.
+
 ### `definition` field (vocab-b1/b2/c and uttrykk-c)
 
 A monolingual Norwegian, dictionary-style definition of the sense shown in `english`.
@@ -134,6 +138,32 @@ Example:
 "part": "verb",
 "verb_type": "v1"
 ```
+
+### `sense` field (optional, vocab only)
+
+A short Norwegian gloss that tells apart **separate entries for different senses of the same word** (e.g. `bank (en)` "penger" vs `bank (en)` "sitte på"). Each sense is its own `VocabEntry`, so FSRS schedules it independently: a learner may know `å legge` "to lay" but not "to go to bed".
+
+**Rule:** entries with an identical `norsk` (case-insensitive) must each have a distinct, non-empty `sense`. Entries that share only a `lemma` (different `norsk`, e.g. `å legge` vs `å legge seg`, or `bok` vs `bøker (pl.)`) don't need one: their card fronts already differ.
+
+**Format:** trimmed, lowercase, no parentheses, 1-3 words, ~25 characters at most. **Norwegian only**: it is language-neutral, so learners of every flashcard language see the same pill and no per-language field is needed. Use vocabulary at or below the entry's own level, and prefer a context or topic hint (`til strikking`, `om mat`) or a simple synonym over a translation of the word.
+
+```
+"norsk": "garn (et)",
+"lemma": "garn",
+"sense": "til strikking"
+```
+
+Why a separate field: a noun's `norsk` must end in a gender / `(pl.)` / `(ubøy.)` marker, so a gloss like `bank (finansinstitusjon)` is not allowed there. `definition` exists only at B1+ and is Norwegian; `note` is free text that isn't shown on every card.
+
+**When to split:** when knowing one meaning does not imply the other (homonyms, clearly different senses, a different part of speech or conjugation class, a different CEFR level). Don't split minor nuances. Each sense may live in a different level file and category.
+
+**ID policy:**
+
+- The most common sense keeps the **original `id`**, so existing `card_progress` rows stay valid.
+- Every additional sense gets a plain next-free `w-NNNNNN` from `scripts/assign-ids.mjs`. Never hand-assign, renumber, insert, or use suffixed ids like `w-000123-2`.
+- Progress is always keyed by `id` (`vocabKey(entry)`), never by `norsk`: siblings share `norsk` but have independent progress.
+
+Split through the draft pipeline (the admin section is dormant): edit the original in place (keep `id`, add `sense`, narrow `english` / translations / `definition` / `example`), add each other sense as a draft entry with `id: ""`, the same `lemma`, and its own `sense`, then run `find_dupes.py`, `check-vocab.ts --draft`, `assign-ids.mjs`, `merge-to-production.mjs`. See `ai-docs/implementation/vocab-multiple-senses.md`.
 
 ## Vocab vs Uttrykk
 
@@ -329,3 +359,5 @@ within-file duplicate sections catch exact-text repeats; its "normalized
 duplicates" section will keep surfacing head-word/collocation pairs like
 `tåle` vs `tåle kulde` — that's expected noise under this policy, not
 something to action.
+
+Identical `norsk` text is **not** a duplicate when every entry in the group has a distinct, non-empty `sense` (see the `sense` field section): those are deliberately split senses. `find_dupes.py` skips such groups, `merge-to-production.mjs` doesn't warn about a lemma collision between entries with different senses, and `check-vocab.ts` enforces the `sense` rule instead.

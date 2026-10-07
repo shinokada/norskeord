@@ -10,12 +10,12 @@
 // studied C-level idiom's CardProgress.category is a real CATEGORIES_BY_LEVEL.C
 // slug — identical in shape to a studied vocab-c.json entry's progress card.
 // The only way to tell them apart afterwards is by the progress map's key
-// (vocab_id, falling back to norsk — see vocabKey() in progress.ts): if that
+// (vocab_id = the entry id, see vocabKey() in progress.ts): if that
 // key matches an uttrykk-c.json entry, the card is uttrykk-sourced.
 import uttrykkC from '$lib/data/uttrykk-c.json';
 
 interface UttrykkCEntry {
-  id?: string;
+  id: string;
   norsk: string;
   category: string;
 }
@@ -23,11 +23,11 @@ interface UttrykkCEntry {
 const entries = uttrykkC as UttrykkCEntry[];
 
 /**
- * id (falling back to norsk) → true for every uttrykk-c.json entry.
+ * id → true for every uttrykk-c.json entry.
  * Used to decide whether a studied C-level card came from uttrykk-c.json
  * (belongs in the Uttrykk section) or vocab-c.json (belongs in Vocabulary).
  */
-export const UTTRYKK_C_KEYS: ReadonlySet<string> = new Set(entries.map((e) => e.id ?? e.norsk));
+export const UTTRYKK_C_KEYS: ReadonlySet<string> = new Set(entries.map((e) => e.id));
 
 /**
  * Per-category entry counts across uttrykk-c.json. C has no separate `theme`
