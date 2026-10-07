@@ -23,7 +23,7 @@
     vocabKey,
     getFsrs
   } from '$lib/progress';
-  import { State, type FSRS } from 'ts-fsrs';
+  import { State } from 'ts-fsrs';
   import { SvelteSet } from 'svelte/reactivity';
   import * as m from '$lib/paraglide/messages.js';
 
@@ -138,12 +138,6 @@
   // localStorage fallback — read synchronously at init (browser only), kept reactive for storage events
   let localSessionLimit = $state<number | null>(browser ? getSessionLimit(localStorage) : 20);
 
-  // Per-user FSRS instance (personal weights + enable_short_term: false), resolved once on
-  // mount so previewIntervals() matches what saveProgress() will actually schedule. Falls
-  // back to the module default (undefined → previewIntervals uses its own DEFAULT_FSRS)
-  // until this resolves.
-  let fsrsInstance = $state<FSRS | undefined>(undefined);
-
   // touch
   let isTouch = $state(false);
   let touchStartX = 0;
@@ -168,9 +162,13 @@
   let showExample = $derived((page.data.showExample as boolean) ?? false);
 
   // FSRS review-intensity preset from layout server (0.8/0.9/0.95, or null for
-  // default Standard). Only meaningful for Plus users — getFsrs()/saveProgress()
-  // ignore it when userId is null.
+  // default Standard). Only meaningful for Plus users — saveProgress() ignores it
+  // when userId is null.
   let fsrsRetention = $derived((page.data.fsrsRetention as number | null | undefined) ?? null);
+
+  // FSRS instance for the interval preview, so previewIntervals() matches what
+  // saveProgress() will actually schedule (the preset applies to Plus users only).
+  let fsrsInstance = $derived(getFsrs(isPlus ? fsrsRetention : null));
 
   // session limit — DB value (cross-device) takes priority; localStorage is the fallback for
   // unauthenticated users or when no profile value is set.
@@ -198,12 +196,6 @@
         dueCount = countDueToday(map);
       });
     }
-
-    // Resolve the per-user FSRS instance (personal weights for Plus users, module default
-    // otherwise) so the interval preview below matches actual scheduling.
-    getFsrs(isPlus ? (page.data.user?.id ?? null) : null, fsrsRetention).then((f) => {
-      fsrsInstance = f;
-    });
 
     // Seed showExampleDefault from the layout server value for logged-in users,
     // so it syncs across devices. localStorage remains the fallback for guests.

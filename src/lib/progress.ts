@@ -1,5 +1,5 @@
 import { FSRS, createEmptyCard, Rating, generatorParameters } from 'ts-fsrs';
-import type { Grade, FSRSParameters } from 'ts-fsrs';
+import type { Grade } from 'ts-fsrs';
 import type { FSRSRating, CardProgress, CEFRLevel, GrammarTopic } from '$lib/types';
 import type { VocabEntry, GrammarQuestion } from '$lib/types';
 import { supabase } from '$lib/supabase';
@@ -31,43 +31,29 @@ const BASE_W = (() => {
 
 const DEFAULT_FSRS = new FSRS(generatorParameters({ enable_short_term: false, w: BASE_W }));
 
-// Per-user FSRS instance cache. Keyed by `${userId}:${retention}` so a user who
-// changes their review-intensity preset mid-session gets a fresh instance rather
-// than a stale cached one built for a different retention value.
-const fsrsCache = new Map<string, FSRS>();
+// FSRS instance cache, keyed by retention. Every instance uses the same BASE_W and
+// enable_short_term: false; only request_retention varies. A user who changes their
+// review-intensity preset mid-session gets the matching instance.
+const fsrsCache = new Map<number, FSRS>();
 
 /**
- * Returns an FSRS instance using the user's personal weights if available,
- * falling back to default weights, with `request_retention` set from the
- * user's `fsrs_retention` preset (0.8 Relaxed / 0.9 Standard / 0.95 Intensive;
- * null/undefined falls back to ts-fsrs's own default of 0.9). Cached in memory
- * per userId+retention combination for the session.
+ * Returns the FSRS instance for a review-intensity preset: `request_retention` is set from
+ * the user's `fsrs_retention` (0.8 Relaxed / 0.9 Standard / 0.95 Intensive). null/undefined
+ * returns DEFAULT_FSRS (ts-fsrs's own default of 0.9). Instances are cached per retention.
  *
- * Previously defined but never called — saveProgress/saveGrammarProgress/
- * previewIntervals all used DEFAULT_FSRS directly, so a user's optimised weights
- * (written by the optimise-fsrs-weights Edge Function) never actually affected
- * scheduling. Now wired into all three call sites.
+ * Weights are always BASE_W. There are no per-user weights: the optimise-fsrs-weights Edge
+ * Function and the user_settings lookup were removed (ai-docs/implementation/
+ * fsrs-optimise-function.md).
  */
-export async function getFsrs(userId?: string | null, retention?: number | null): Promise<FSRS> {
-  if (!userId) return DEFAULT_FSRS;
-  const cacheKey = `${userId}:${retention ?? 'default'}`;
-  if (fsrsCache.has(cacheKey)) return fsrsCache.get(cacheKey)!;
-  const weights = await loadFsrsWeights(userId);
-  const params: Partial<FSRSParameters> = {
-    enable_short_term: false,
-    ...(retention != null && { request_retention: retention }),
-    w: (weights as FSRSParameters['w'] | null) ?? (BASE_W as FSRSParameters['w'])
-  };
-  const instance = new FSRS(generatorParameters(params));
-  fsrsCache.set(cacheKey, instance);
+export function getFsrs(retention?: number | null): FSRS {
+  if (retention == null) return DEFAULT_FSRS;
+  const cached = fsrsCache.get(retention);
+  if (cached) return cached;
+  const instance = new FSRS(
+    generatorParameters({ enable_short_term: false, request_retention: retention, w: BASE_W })
+  );
+  fsrsCache.set(retention, instance);
   return instance;
-}
-
-/** Call after optimisation completes to force a fresh FSRS instance next rating. */
-export function invalidateFsrsCache(userId: string) {
-  for (const key of fsrsCache.keys()) {
-    if (key.startsWith(`${userId}:`)) fsrsCache.delete(key);
-  }
 }
 
 export const LS_PREFIX = 'progress-';
@@ -367,43 +353,6 @@ export async function resetProgressInSupabase(userId: string): Promise<void> {
   }
 }
 
-// ── FSRS weight optimisation ────────────────────────────────────────────────
-
-/**
- * Returns the user's personal FSRS weights from user_settings, or null if not
- * yet optimised.
- */
-export async function loadFsrsWeights(userId: string): Promise<number[] | null> {
-  const { data } = await supabase
-    .from('user_settings')
-    .select('fsrs_weights')
-    .eq('user_id', userId)
-    .maybeSingle();
-  return data?.fsrs_weights ?? null;
-}
-
-/**
- * Fires the optimise-fsrs-weights Edge Function when the user crosses a
- * 1,000-review milestone. Fire-and-forget.
- */
-async function maybeTriggerOptimisation(userId: string, totalReps: number) {
-  const shouldOptimise =
-    totalReps >= 1000 && (totalReps <= 5000 ? totalReps % 1000 === 0 : totalReps % 5000 === 0);
-
-  if (!shouldOptimise) return;
-
-  try {
-    const supabaseUrl = import.meta.env.VITE_PUBLIC_SUPABASE_URL as string;
-    await fetch(`${supabaseUrl}/functions/v1/optimise-fsrs-weights`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ user_id: userId })
-    });
-  } catch {
-    // Silent failure
-  }
-}
-
 // ── Core progress functions ──────────────────────────────────────────────────
 
 /**
@@ -432,7 +381,8 @@ export async function saveProgress(
   const existing = progressMap[key] ?? null;
   const card = existing ? existing.fsrs : createEmptyCard(now);
 
-  const fsrs = await getFsrs(userId, retention);
+  // Retention presets apply to Plus users only; guests and free users use the default.
+  const fsrs = getFsrs(userId ? retention : null);
   const result = fsrs.next(card, now, RATING_MAP[rating]);
 
   const updated: CardProgress = {
@@ -455,10 +405,6 @@ export async function saveProgress(
     void recordStudyDay(userId);
 
     const newMap = await saveProgressToSupabase(userId, entry, updated, progressMap);
-
-    const totalReps = Object.values(newMap).reduce((sum, c) => sum + c.fsrs.reps, 0);
-    void maybeTriggerOptimisation(userId, totalReps);
-
     return newMap;
   } else {
     // Guest / free: localStorage only
@@ -724,7 +670,8 @@ export async function saveGrammarProgress(
   const existing = progressMap[question.id] ?? null;
   const card = existing ? existing.fsrs : createEmptyCard(now);
 
-  const fsrs = await getFsrs(userId, retention);
+  // Retention presets apply to Plus users only; guests and free users use the default.
+  const fsrs = getFsrs(userId ? retention : null);
   const result = fsrs.next(card, now, RATING_MAP[rating]);
 
   const updated: CardProgress = {
