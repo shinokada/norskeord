@@ -32,6 +32,24 @@ describe('spaceSiblings', () => {
     expect(spaceSiblings(['b1', 'a1', 'a2', 'a3'], key)).toEqual(['b1', 'a1', 'a2', 'a3']);
   });
 
+  it('separates a sibling pair at the end using an earlier non-sibling', () => {
+    expect(hasAdjacentSiblings(spaceSiblings(['b1', 'c1', 'a1', 'a2'], key))).toBe(false);
+    expect(hasAdjacentSiblings(spaceSiblings(['b1', 'c1', 'a1', 'a2', 'a3'], key))).toBe(false);
+  });
+
+  it('leaves no adjacent siblings for any order of two siblings among non-siblings', () => {
+    const base = ['a1', 'a2', 'b1', 'c1', 'd1', 'e1'];
+    const permutations = (arr: string[]): string[][] =>
+      arr.length <= 1
+        ? [arr]
+        : arr.flatMap((x, i) =>
+            permutations([...arr.slice(0, i), ...arr.slice(i + 1)]).map((p) => [x, ...p])
+          );
+    for (const order of permutations(base)) {
+      expect(hasAdjacentSiblings(spaceSiblings(order, key))).toBe(false);
+    }
+  });
+
   it('handles an empty list and a single item', () => {
     expect(spaceSiblings([], key)).toEqual([]);
     expect(spaceSiblings(['a1'], key)).toEqual(['a1']);

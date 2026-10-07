@@ -143,6 +143,14 @@ describe('check-vocab.ts: sense rules', { timeout: 30_000 }, () => {
     expect(r.status).toBe(0);
     expect(r.out).toContain('none needing attention');
   });
+
+  it('rejects --data-dir / --draft-dir with an empty value (usage error, exit 2)', () => {
+    for (const flag of ['data-dir', 'draft-dir']) {
+      const r = run(process.execPath, ['--import', 'tsx', CHECK_VOCAB, 'a1', `--${flag}=`]);
+      expect(r.status).toBe(2);
+      expect(r.out).toContain(`--${flag} requires a non-empty value`);
+    }
+  });
 });
 
 const hasPython = spawnSync('python3', ['--version']).status === 0;

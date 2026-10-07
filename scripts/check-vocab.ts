@@ -63,7 +63,14 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 function flagValue(name: string): string | undefined {
   const prefix = `--${name}=`;
   const hit = process.argv.slice(2).find((a) => a.startsWith(prefix));
-  return hit ? hit.slice(prefix.length) : undefined;
+  if (hit === undefined) return undefined; // flag absent: caller uses its default
+  const value = hit.slice(prefix.length);
+  if (!value) {
+    // Present but empty (`--data-dir=`) is a usage error; resolve('') would silently mean the CWD.
+    console.error(`--${name} requires a non-empty value`);
+    process.exit(2);
+  }
+  return value;
 }
 
 // Defaults are the real data; the flags exist so the fixture test
