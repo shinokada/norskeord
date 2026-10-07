@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.92.0
+
+### Minor Changes
+
+- - **New Features**
+    - Vocabulary entries with the same Norwegian spelling can show sense labels on flashcards and quiz answers.
+    - Search results open the exact matching entry, including when several entries share a spelling.
+  - **Improvements**
+    - Progress is tracked separately for distinct entries, and related cards are spaced apart in decks and quizzes.
+    - Quiz sessions can include cards that are not yet due to fill a short session.
+    - Answer choices avoid entries with the same Norwegian form or lemma; fallback fill-in-the-blank questions use clearer prompts.
+  - **Bug Fixes**
+    - Retrying a quiz with no available questions no longer replaces the current quiz state.
+
 ## 2.91.0
 
 ### Minor Changes
