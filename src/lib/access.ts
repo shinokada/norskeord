@@ -4,6 +4,8 @@
 
 import type { CEFRLevel, GrammarTopic, GrammarQuestion } from '$lib/types';
 import { PLUS_CATEGORIES, FREE_QUIZ_CATEGORIES, FREE_GRAMMAR_TOPICS } from '$lib/config';
+import type { UttrykkThemeLevel } from '$lib/config';
+import { isFreeUttrykkTheme } from '$lib/uttrykk-gating';
 
 export function isPlusCategory(level: string, category: string): boolean {
   return PLUS_CATEGORIES.has(`${level.toLowerCase()}/${category}`);
@@ -11,6 +13,30 @@ export function isPlusCategory(level: string, category: string): boolean {
 
 export function isFreeQuizCategory(level: string, category: string): boolean {
   return FREE_QUIZ_CATEGORIES.has(`${level.toLowerCase()}/${category}`);
+}
+
+/**
+ * Whether a single resolved vocab/uttrykk entry is Plus-only for a free user,
+ * judged by its live level, category and type (not by the URL it was reached
+ * through). Used by /api/review-entries so Due Review never deals, and the API
+ * never returns, cards from categories free users can't open — including cards
+ * a free user studied while the category was still free.
+ *
+ * - A1: always free.
+ * - Vocab (any level): locked when the category is in PLUS_CATEGORIES.
+ * - Uttrykk at C: C idioms live inside the vocab categories, so they follow
+ *   the same category lock.
+ * - Uttrykk at A2–B2: locked unless the theme is in FREE_UTTRYKK_THEMES
+ *   (currently none).
+ */
+export function isPlusOnlyEntry(
+  level: CEFRLevel,
+  category: string,
+  type: 'vocab' | 'uttrykk'
+): boolean {
+  if (level === 'A1') return false;
+  if (type === 'vocab' || level === 'C') return isPlusCategory(level, category);
+  return !isFreeUttrykkTheme(level as UttrykkThemeLevel, category);
 }
 
 /**

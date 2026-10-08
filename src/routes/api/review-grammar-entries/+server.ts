@@ -11,14 +11,14 @@
  * id/level/topic on each CardProgress row, not the full question (prompt,
  * sentence, options, answer, ...).
  *
- * No auth check — this returns the same public grammar data every
- * /grammar/[topic] page already serves, just addressed by id instead of
- * by topic.
+ * No auth check — anyone may call it, but free and guest callers only get
+ * questions they could open anyway (see freeGrammarQuestionIds in $lib/access).
  */
 
 import type { RequestHandler } from './$types';
 import type { CEFRLevel, GrammarQuestion } from '$lib/types';
 import { grammarLevelLoaders } from '$lib/grammar/level-loader';
+import { isFreeGrammarTopic } from '$lib/access';
 
 interface ReviewGrammarEntryRequest {
   id: string;
@@ -29,7 +29,9 @@ interface ReviewGrammarEntryRequest {
 // grammar cards are actually due, which never gets close to this.
 const MAX_ITEMS = 1000;
 
-export const POST: RequestHandler = async ({ request }) => {
+export const POST: RequestHandler = async ({ request, locals }) => {
+  const isPlus = locals.plan === 'plus';
+
   let items: ReviewGrammarEntryRequest[];
   try {
     const body = await request.json();
@@ -62,7 +64,12 @@ export const POST: RequestHandler = async ({ request }) => {
     if (!loader) continue;
     const questions = await loader();
     for (const q of questions.default) {
-      if (ids.has(q.id)) resolved.push(q);
+      if (!ids.has(q.id)) continue;
+      // Free-tier gate (free-tier-simplification.md): same rule as
+      // freeGrammarQuestionIds() — a free user never gets plusOnly questions or
+      // topics/levels that are Plus, even if they studied them while free.
+      if (!isPlus && (q.plusOnly || !isFreeGrammarTopic(q.topic, q.cefr))) continue;
+      resolved.push(q);
     }
   }
 

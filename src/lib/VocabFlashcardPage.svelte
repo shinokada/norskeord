@@ -17,12 +17,12 @@
     saveProgress,
     loadProgressMap,
     loadProgressMapFromSupabase,
-    countDueToday,
     previewIntervals,
     restoreProgressToLocalStorage,
     vocabKey,
     getFsrs
   } from '$lib/progress';
+  import { countDueForPlan } from '$lib/due-count';
   import { State } from 'ts-fsrs';
   import { SvelteSet } from 'svelte/reactivity';
   import * as m from '$lib/paraglide/messages.js';
@@ -183,12 +183,12 @@
     if (isPlus && page.data.user?.id) {
       loadProgressMapFromSupabase(page.data.user.id).then((map) => {
         progressMap = map;
-        dueCount = countDueToday(map);
+        dueCount = countDueForPlan(map, isPlus);
       });
     } else {
       loadProgressMap().then((map) => {
         progressMap = map;
-        dueCount = countDueToday(map);
+        dueCount = countDueForPlan(map, isPlus);
       });
     }
 
@@ -491,7 +491,7 @@
     }
 
     progressMap = previousMap;
-    dueCount = countDueToday(previousMap);
+    dueCount = countDueForPlan(previousMap, isPlus);
     currentIndex = previousIndex;
     resetCardState();
     completed = false;
@@ -633,7 +633,7 @@
     next();
 
     progressMap = await saveProgress(entry, rating, progressMap, userId, fsrsRetention);
-    dueCount = countDueToday(progressMap);
+    dueCount = countDueForPlan(progressMap, isPlus);
     if (deckMode === 'due') {
       ratedThisVisit.add(key);
     }

@@ -19,12 +19,12 @@ const uttrykkCLoader = () =>
 export const load: PageServerLoad = async ({ locals }) => {
   const isPlus = locals.plan === 'plus';
 
-  // Same Plus lock as every other C category (PLUS_CATEGORIES' .slice(5)
-  // free-preview pattern), but applied to the whole route rather than a
-  // partial slice: this deck pulls entries from all 37 C categories at once,
-  // so there's no clean "first 5 categories' worth of idioms" free preview to
-  // carve out. This mirrors how A1–B2's "study all" (no ?theme=) is Plus-only
-  // too — see isFreeUttrykkTheme in [level]/[category]/+page.server.ts.
+  // Same Plus lock as every other C category (every C category outside
+  // FREE_VOCAB_CATEGORIES.C is Plus), but applied to the whole route rather
+  // than a partial slice: this deck pulls entries from all 37 C categories at once,
+  // so there's no clean free preview to carve out. This mirrors how A1–B2's
+  // "study all" (no ?theme=) is Plus-only too — see isFreeUttrykkTheme in
+  // [level]/[category]/+page.server.ts.
   if (!isPlus) {
     redirect(302, '/plus?ref=category-lock');
   }

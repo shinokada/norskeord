@@ -14,7 +14,7 @@ most-visited B1 category. Free cards: A2 71, B1 152, B2 89, C 67.
 | A2    | 3: money, clothing, weather                       | 0       | 0       | 3: money, clothing, weather                       | All  | Test 1      |
 | B1    | 3: travel, environment, technology                | 0       | 0       | 3: travel, environment, technology                | All  | Test 1      |
 | B2    | 3: discourse-markers, science, literature         | 0       | 0       | 3: discourse-markers, science, literature         | All  | —           |
-| C     | 3: academic, architecture-design, character-types | 0       | 0       | 3: academic, architecture-design, character-types | All  | —           |
+| C     | 3: academic, architecture-design, character-types | 0*      | 0       | 3: academic, architecture-design, character-types | All  | —           |
 
 ## Changes from today
 
@@ -32,11 +32,14 @@ most-visited B1 category. Free cards: A2 71, B1 152, B2 89, C 67.
 ## Decisions
 
 - Norskprøven Test 1 stays free at A2 and B1 (confirmed).
+- \* C has no separate uttrykk deck: its idioms sit inside the vocab categories. The 3 free C categories open
+  in full, which includes their idioms. Today that is 2 idioms, both in `academic` (`architecture-design` and
+  `character-types` have none). Accepted 2026-10-08; not filtered. Every other C idiom stays Plus.
 - No announcement; one line on `/plus` states the new rules. See the plan doc.
 
 ## Sources (current code)
 
-- Vocab: `PLUS_CATEGORIES` in `src/lib/config.ts`.
+- Vocab: `FREE_VOCAB_CATEGORIES` in `src/lib/config.ts`; `PLUS_CATEGORIES` is generated from it.
 - Uttrykk: `FREE_UTTRYKK_THEMES` and `isFreeUttrykkTheme` in `src/lib/uttrykk-gating.ts`.
 - Grammar: `FREE_GRAMMAR_TOPICS` in `src/lib/config.ts`; policy in `ai-docs/gating-rules.md`.
 - Quiz: `FREE_QUIZ_CATEGORIES` in `src/lib/config.ts`.
