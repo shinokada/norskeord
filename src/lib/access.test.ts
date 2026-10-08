@@ -18,6 +18,11 @@ describe('groupTopicLevelsByAccess', () => {
     expect(segments).toEqual([{ access: 'locked', levels: ['A2', 'B1'] }]);
   });
 
+  it('locks the former A2/B1 free samples: no free level beyond A1', () => {
+    const segments = groupTopicLevelsByAccess('adj-comparison' as GrammarTopic, ['A2', 'B1']);
+    expect(segments).toEqual([{ access: 'locked', levels: ['A2', 'B1'] }]);
+  });
+
   it('splits a topic free at A1 only, spanning A1/A2/B1, into two segments', () => {
     const levels: CEFRLevel[] = ['A1', 'A2', 'B1'];
     const segments = groupTopicLevelsByAccess('noun-plurals' as GrammarTopic, levels);
@@ -27,14 +32,14 @@ describe('groupTopicLevelsByAccess', () => {
     ]);
   });
 
-  it('produces two segments for a topic free at A2 only, with no A1 content', () => {
-    // 'ikke-placement' is free at A2, Plus at B1, and has no A1 content —
-    // matches the new teaser-topic policy.
-    const levels: CEFRLevel[] = ['A2', 'B1'];
+  it('produces two segments for ikke-placement: free at A1, locked at A2 and B1', () => {
+    // The A1 questions moved here from helsetninger stay free; the former A2
+    // free sample is Plus under the free-tier simplification.
+    const levels: CEFRLevel[] = ['A1', 'A2', 'B1'];
     const segments = groupTopicLevelsByAccess('ikke-placement' as GrammarTopic, levels);
     expect(segments).toEqual([
-      { access: 'free', levels: ['A2'] },
-      { access: 'locked', levels: ['B1'] }
+      { access: 'free', levels: ['A1'] },
+      { access: 'locked', levels: ['A2', 'B1'] }
     ]);
   });
 
@@ -62,12 +67,12 @@ describe('groupTopicLevelsByAccess', () => {
   });
 });
 
-describe('isFreeGrammarTopic — new teaser topics', () => {
-  it('ikke-placement is free at A1 and A2, locked at B1', () => {
+describe('isFreeGrammarTopic — former teaser topics', () => {
+  it('ikke-placement is free at A1 only', () => {
     // A1 added in Phase 1b: two A1 questions moved here from helsetninger and
     // must stay free (ai-docs/implementation/grammar-update.md).
     expect(isFreeGrammarTopic('ikke-placement' as GrammarTopic, 'A1')).toBe(true);
-    expect(isFreeGrammarTopic('ikke-placement' as GrammarTopic, 'A2')).toBe(true);
+    expect(isFreeGrammarTopic('ikke-placement' as GrammarTopic, 'A2')).toBe(false);
     expect(isFreeGrammarTopic('ikke-placement' as GrammarTopic, 'B1')).toBe(false);
   });
 
@@ -76,17 +81,11 @@ describe('isFreeGrammarTopic — new teaser topics', () => {
     expect(isFreeGrammarTopic('sporresetninger' as GrammarTopic, 'A1')).toBe(true);
   });
 
-  it('adj-comparison is free at A2, locked at B1', () => {
-    expect(isFreeGrammarTopic('adj-comparison' as GrammarTopic, 'A2')).toBe(true);
-    expect(isFreeGrammarTopic('adj-comparison' as GrammarTopic, 'B1')).toBe(false);
-  });
-
-  it('ordfamilie-avledning is free at B1, locked at C', () => {
-    expect(isFreeGrammarTopic('ordfamilie-avledning' as GrammarTopic, 'B1')).toBe(true);
-    expect(isFreeGrammarTopic('ordfamilie-avledning' as GrammarTopic, 'C')).toBe(false);
-  });
-
-  it('bade-og-verken-eller is free at B1', () => {
-    expect(isFreeGrammarTopic('bade-og-verken-eller' as GrammarTopic, 'B1')).toBe(true);
+  it('adj-comparison, ordfamilie-avledning and bade-og-verken-eller are Plus at every level', () => {
+    for (const topic of ['adj-comparison', 'ordfamilie-avledning', 'bade-og-verken-eller']) {
+      for (const level of ['A2', 'B1', 'C'] as CEFRLevel[]) {
+        expect(isFreeGrammarTopic(topic as GrammarTopic, level), `${topic} ${level}`).toBe(false);
+      }
+    }
   });
 });

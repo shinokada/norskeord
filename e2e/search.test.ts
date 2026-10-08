@@ -173,9 +173,15 @@ test('the two senses of `gang (en)` are separate results with different ids', as
     // compounds such as `inngang (en)` / `utgang (en)`.
     const rows = page.getByRole('option').filter({ hasText: /^\s*gang \(en\)/ });
     await expect(rows).toHaveCount(2, { timeout: 10000 });
-    await rows.nth(index).click();
-    await page.waitForURL(/[?&]id=w-\d{6}/, { timeout: 10000 });
-    ids.add(new URL(page.url()).searchParams.get('id') ?? '');
+    // The result links to /a2/home?id=..., which is Plus-only for a free session
+    // (the e2e suite has no real Plus session), so the page redirects to /plus.
+    // The id is still present in the navigation or its __data.json request, so
+    // read it from the request instead of waiting for the final URL.
+    const [request] = await Promise.all([
+      page.waitForRequest((req) => /[?&]id=w-\d{6}/.test(req.url()), { timeout: 10000 }),
+      rows.nth(index).click()
+    ]);
+    ids.add(new URL(request.url()).searchParams.get('id') ?? '');
   }
 
   expect(ids.size).toBe(2);

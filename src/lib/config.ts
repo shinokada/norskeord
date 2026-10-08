@@ -195,8 +195,8 @@ export const CATEGORIES_BY_LEVEL = {
     'cultural-heritage',
     // Added by c-uttrykk-abstract-concepts-fix.md — new slugs for the
     // 2 stale uttrykk-c.json categories that couldn't merge into an
-    // existing successor. Appended after the free-5, so all three land
-    // Plus-only via PLUS_CATEGORIES' generated .slice(5).
+    // existing successor. None is in FREE_VOCAB_CATEGORIES, so all three land
+    // Plus-only via the generated PLUS_CATEGORIES.
     'interpersonal-conflict-expressions',
     'abstract-action-idioms',
     'abstract-circumstance-expressions'
@@ -290,107 +290,50 @@ export function languageEntryForLocale(code: string) {
   return Object.entries(LANGUAGES).find(([, v]) => v.code === code);
 }
 
+type GatedLevel = Exclude<CEFRLevel, 'A1'>;
+
+/**
+ * The single source of truth for free vocab (and Quiz) access above A1:
+ * exactly 3 categories per level. A1 is free in full and needs no entry.
+ * Policy and rationale: data-rules/free-items.md and
+ * ai-docs/implementation/free-tier-simplification.md.
+ */
+export const FREE_VOCAB_CATEGORIES: Record<GatedLevel, readonly string[]> = {
+  A2: ['money', 'clothing', 'weather'],
+  B1: ['travel', 'environment', 'technology'],
+  B2: ['discourse-markers', 'science', 'literature'],
+  C: ['academic', 'architecture-design', 'character-types']
+};
+
 /**
  * Categories that require a Plus subscription.
  * Free users can see these in the picker but cannot open them.
+ *
+ * Generated from CATEGORIES_BY_LEVEL (instead of hand-listed) so a newly added
+ * category is Plus by default at A2 and above, instead of silently leaking
+ * through as free — see the manner-of-motion gating bug.
+ *
+ * `uttrykk` is excluded: full uttrykk decks are gated per-theme, not
+ * per-category — see src/lib/uttrykk-gating.ts. Free users get no uttrykk
+ * above A1, enforced in [level]/[category]/+page.server.ts rather than here.
  */
-export const PLUS_CATEGORIES = new Set<string>([
-  // B1 — plus-only (29) — note: society split into society-nouns (free)
-  // and society-verbs-and-adjectives (plus-only, added below), so this
-  // moves from a pure "list of always-plus categories" to also carrying
-  // one half of a split originally-free category — see
-  // ai-docs/implementation/b1-new-categories.md Decision 3.
-  'b1/city-life',
-  'b1/traditions',
-  'b1/expressing-opinions-adjectives',
-  'b1/expressing-opinions-adverbs',
-  'b1/expressing-opinions-nouns-and-verbs',
-  'b1/cooking',
-  'b1/accommodation',
-  'b1/finance',
-  'b1/personal-growth-adjectives',
-  'b1/personal-growth-nouns',
-  'b1/personal-growth-verbs-and-expressions',
-  'b1/reasoning',
-  'b1/society-verbs-and-adjectives',
-  'b1/communication-skills-verbs',
-  'b1/communication-skills-nouns-and-expressions',
-  'b1/urban-life',
-  'b1/mental-wellbeing',
-  'b1/fitness',
-  'b1/arts-culture',
-  'b1/economics',
-  'b1/sustainability',
-  'b1/science-nature',
-  'b1/journalism',
-  'b1/workplace',
-  'b1/family',
-  'b1/politics',
-  'b1/language-learning',
-  'b1/healthcare',
-  'b1/animals',
-  // B2 — plus-only (31 vocab; uttrykk gated per-theme, see below)
-  'b2/arts',
-  'b2/emotions',
-  'b2/history',
-  'b2/law',
-  'b2/literature',
-  'b2/advanced-adjectives',
-  'b2/philosophy',
-  'b2/medicine',
-  'b2/psychology',
-  'b2/business',
-  'b2/religion',
-  'b2/environment',
-  'b2/technology',
-  'b2/media',
-  'b2/education',
-  'b2/language',
-  'b2/argumentation',
-  'b2/abstract-nouns',
-  'b2/phrasal-verbs',
-  'b2/academic-verbs',
-  'b2/reflexive-verbs',
-  'b2/everyday-verbs',
-  'b2/geography',
-  'b2/culture',
-  'b2/global-issues',
-  'b2/academic-language',
-  'b2/discourse-markers',
-  'b2/work-career',
-  'b2/relationships',
-  'b2/communication',
-  // Full uttrykk decks are gated per-theme, not per-category — see
-  // src/lib/uttrykk-gating.ts / ai-docs/implementation/uttrykk-gate.md.
-  // Free users can study FREE_UTTRYKK_THEMES in full; everything else
-  // requires Plus, enforced in [level]/[category]/+page.server.ts rather
-  // than here.
-  // C — first 5 free; rest plus-only.
-  // Generated from CATEGORIES_BY_LEVEL.C (instead of hand-listed) so newly
-  // added C categories are automatically gated instead of silently leaking
-  // through as free — see the manner-of-motion gating bug.
-  ...CATEGORIES_BY_LEVEL.C.slice(5).map((cat) => `c/${cat}`)
-]);
+export const PLUS_CATEGORIES = new Set<string>(
+  (Object.keys(FREE_VOCAB_CATEGORIES) as GatedLevel[]).flatMap((level) =>
+    (CATEGORIES_BY_LEVEL[level] as readonly string[])
+      .filter((cat) => cat !== 'uttrykk' && !FREE_VOCAB_CATEGORIES[level].includes(cat))
+      .map((cat) => `${level.toLowerCase()}/${cat}`)
+  )
+);
 
 /**
- * Top 3 categories per level available to free users in the Quiz.
+ * Categories available to free users in the Quiz: every A1 category, and the
+ * same 3 free categories as Vocab at A2 to C.
  */
 export const FREE_QUIZ_CATEGORIES = new Set<string>([
-  'a1/greetings',
-  'a1/numbers',
-  'a1/colors',
-  'a2/shopping',
-  'a2/transport',
-  'a2/clothing',
-  'b1/travel',
-  'b1/environment',
-  'b1/media',
-  'b2/politics',
-  'b2/economics',
-  'b2/social-issues',
-  'c/philosophy',
-  'c/academic',
-  'c/formal-writing'
+  ...CATEGORIES_BY_LEVEL.A1.map((cat) => `a1/${cat}`),
+  ...(Object.keys(FREE_VOCAB_CATEGORIES) as GatedLevel[]).flatMap((level) =>
+    FREE_VOCAB_CATEGORIES[level].map((cat) => `${level.toLowerCase()}/${cat}`)
+  )
 ]);
 
 /**
@@ -491,9 +434,8 @@ export const FREE_GRAMMAR_TOPICS: Partial<
   // of this map, so adding entries for them would be a no-op; see
   // gating-rules.md.
   // A1 added in Phase 1b: two A1 "ikke" questions moved here from helsetninger and must
-  // stay free. A2 remains the legacy free sample (see free-policy.test.ts).
-  'ikke-placement': ['A1', 'A2'],
-  'adj-comparison': ['A2'],
-  'ordfamilie-avledning': ['B1'],
-  'bade-og-verken-eller': ['B1']
+  // stay free. The A2/B1 legacy free samples (adj-comparison, ordfamilie-avledning,
+  // bade-og-verken-eller, and ikke-placement at A2) were removed by
+  // ai-docs/implementation/free-tier-simplification.md: nothing above A1 is free.
+  'ikke-placement': ['A1']
 };

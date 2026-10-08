@@ -285,8 +285,9 @@ describe('shuffleTokens', () => {
 
 describe('freeGrammarQuestionIds', () => {
   it('frees every non-plusOnly question in a fully-free topic (no cap)', () => {
+    // ikke-placement is free at A1 only (its A2 free sample was removed by the free-tier simplification).
     const qs: GrammarQuestion[] = Array.from({ length: 8 }, (_, i) =>
-      makeQuestion({ id: `ikke-${i}`, topic: 'ikke-placement', cefr: 'A2' })
+      makeQuestion({ id: `ikke-${i}`, topic: 'ikke-placement', cefr: 'A1' })
     );
     const free = freeGrammarQuestionIds(qs);
     expect(free.size).toBe(8);
@@ -296,7 +297,7 @@ describe('freeGrammarQuestionIds', () => {
   it('gates topics independently: a topic not in FREE_GRAMMAR_TOPICS stays fully locked', () => {
     const qs: GrammarQuestion[] = [
       ...Array.from({ length: 4 }, (_, i) =>
-        makeQuestion({ id: `ikke-${i}`, topic: 'ikke-placement', cefr: 'A2' })
+        makeQuestion({ id: `ikke-${i}`, topic: 'ikke-placement', cefr: 'A1' })
       ),
       ...Array.from({ length: 4 }, (_, i) =>
         makeQuestion({ id: `sterke-${i}`, topic: 'sterke-verb', cefr: 'A2' })
@@ -321,8 +322,8 @@ describe('freeGrammarQuestionIds', () => {
 
   it('never frees plusOnly questions, even in a free topic/level', () => {
     const qs = [
-      makeQuestion({ id: 'p1', topic: 'ikke-placement', cefr: 'A2', plusOnly: true }),
-      makeQuestion({ id: 'f1', topic: 'ikke-placement', cefr: 'A2' })
+      makeQuestion({ id: 'p1', topic: 'ikke-placement', cefr: 'A1', plusOnly: true }),
+      makeQuestion({ id: 'f1', topic: 'ikke-placement', cefr: 'A1' })
     ];
     const free = freeGrammarQuestionIds(qs);
     expect(free.has('p1')).toBe(false);

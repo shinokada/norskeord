@@ -20,14 +20,11 @@ describe('FREE_UTTRYKK_THEMES', () => {
       }
     });
 
-    // A1's array is intentionally empty — it's opened fully via
-    // isFreeUttrykkTheme's level check instead of a curated allow-list,
+    // A1 is fully open and A2–B2 are fully Plus; both have an empty allow-list,
     // see uttrykk-gating.ts.
-    if (level !== 'A1') {
-      it(`${level} has at least one free theme`, () => {
-        expect(FREE_UTTRYKK_THEMES[level].length).toBeGreaterThan(0);
-      });
-    }
+    it(`${level} has no curated free themes`, () => {
+      expect(FREE_UTTRYKK_THEMES[level]).toEqual([]);
+    });
 
     it(`${level}'s free themes never include the catch-all "general" bucket`, () => {
       expect(FREE_UTTRYKK_THEMES[level]).not.toContain(UTTRYKK_CATCHALL_THEME);
@@ -36,16 +33,21 @@ describe('FREE_UTTRYKK_THEMES', () => {
 });
 
 describe('isFreeUttrykkTheme', () => {
-  it('returns true only for themes in the allow-list', () => {
-    expect(isFreeUttrykkTheme('A2', 'idioms')).toBe(true);
-    expect(isFreeUttrykkTheme('A2', 'directions')).toBe(false);
+  it('returns false for every theme at A2–B2 (uttrykk is Plus beyond A1)', () => {
+    for (const level of ['A2', 'B1', 'B2'] as const) {
+      for (const theme of UTTRYKK_THEMES_BY_LEVEL[level]) {
+        expect(isFreeUttrykkTheme(level, theme), `${level}/${theme}`).toBe(false);
+      }
+    }
   });
 
-  it('returns false for null (no theme selected / "study all") at levels with a curated allow-list', () => {
+  it('returns false for null (no theme selected / "study all") at A2–B2', () => {
     expect(isFreeUttrykkTheme('A2', null)).toBe(false);
+    expect(isFreeUttrykkTheme('B1', null)).toBe(false);
+    expect(isFreeUttrykkTheme('B2', null)).toBe(false);
   });
 
-  it('returns false for the Others bucket and unknown slugs at levels with a curated allow-list', () => {
+  it('returns false for the Others bucket and unknown slugs at A2–B2', () => {
     expect(isFreeUttrykkTheme('B2', 'others')).toBe(false);
     expect(isFreeUttrykkTheme('B2', 'not-a-real-theme')).toBe(false);
   });

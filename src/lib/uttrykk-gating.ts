@@ -12,32 +12,20 @@
 import type { UttrykkThemeLevel } from '$lib/config';
 
 /**
- * 2–3 curated themes per level that are free to study in full (real
- * entries, real FSRS — not a separate preview file). Every other theme is
- * Plus-only. Never includes `general` (the catch-all bucket — a poor first
- * impression) and deliberately excludes any single theme that would
- * dominate a deck (e.g. B2's `idioms`, 541/679 entries).
- *
- * Sized roughly to each level's existing *vocabulary* free ratio so Uttrykk
- * doesn't feel oddly more or less generous than the rest of that level:
- * A1/A2 vocab is 100% free today, B1 ~27%, B2 ~9%.
- *
- * A1 is intentionally empty: it's opened fully instead (see
- * `isFreeUttrykkTheme` below) rather than curated here — A1 vocab is
- * already 100% free, so a partial Uttrykk wall at that level was an
- * inconsistent first impression. Kept as a key (rather than removed) so
- * this stays a `Record<UttrykkThemeLevel, ...>` — every level with a real
- * theme taxonomy has an entry here, even one that's now unused.
+ * Free-to-study uttrykk themes per level (real entries, real FSRS — not a
+ * separate preview file). Under the free-tier simplification
+ * (ai-docs/implementation/free-tier-simplification.md) every level is empty:
+ * A1 is opened fully via `isFreeUttrykkTheme` below, and A2–B2 uttrykk is
+ * Plus-only. The record stays (rather than being removed) so it remains a
+ * `Record<UttrykkThemeLevel, ...>` and a theme can be freed again by adding
+ * it here. Never include `general` (the catch-all bucket) or a theme that
+ * would dominate a deck (e.g. B2's `idioms`, 541/679 entries).
  */
 export const FREE_UTTRYKK_THEMES: Record<UttrykkThemeLevel, readonly string[]> = {
   A1: [],
-  A2: ['idioms', 'opinion-formulas'],
-  // 'personal-growth' split into 3 POS-based slugs (see
-  // ai-docs/implementation/b1-new-categories.md) — using the
-  // verbs-and-expressions slug as the closest fit for a curated
-  // expressions theme.
-  B1: ['discourse-markers', 'opinion-formulas', 'personal-growth-verbs-and-expressions'],
-  B2: ['discourse-markers', 'work-career']
+  A2: [],
+  B1: [],
+  B2: []
 };
 
 /**
