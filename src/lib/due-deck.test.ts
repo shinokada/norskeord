@@ -113,6 +113,22 @@ describe('computeDuePool', () => {
     expect(newInPool).toHaveLength(NEW_CARD_SESSION_LIMIT);
   });
 
+  it('takes every new card when the new-card limit is null (All cards)', () => {
+    const newEntries = Array.from({ length: 47 }, (_, i) => makeEntry({ id: `new-${i}` }));
+    expect(computeDuePool(newEntries, {}, new Date(), null)).toHaveLength(47);
+  });
+
+  it('caps new cards at a custom limit, but never caps overdue cards', () => {
+    const overdueEntries = Array.from({ length: 30 }, (_, i) => makeEntry({ id: `overdue-${i}` }));
+    const newEntries = Array.from({ length: 47 }, (_, i) => makeEntry({ id: `new-${i}` }));
+    const progressMap: Record<string, CardProgress> = {};
+    for (const e of overdueEntries) progressMap[e.id] = progressDue(-1);
+
+    const pool = computeDuePool([...overdueEntries, ...newEntries], progressMap, new Date(), 10);
+    expect(pool.filter((e) => e.id.startsWith('overdue-'))).toHaveLength(30);
+    expect(pool.filter((e) => e.id.startsWith('new-'))).toHaveLength(10);
+  });
+
   it('accepts an explicit `now` for deterministic due-boundary testing', () => {
     const fixedNow = new Date('2025-06-01T12:00:00Z');
     const e = makeEntry({ id: 'v-1' });

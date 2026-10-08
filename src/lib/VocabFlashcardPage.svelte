@@ -1,6 +1,6 @@
 <script lang="ts">
   import { getSessionLimit, resolveSessionLimit } from '$lib/session-limit';
-  import { computeDuePool, dealChunk, NEW_CARD_SESSION_LIMIT } from '$lib/due-deck';
+  import { computeDuePool, dealChunk } from '$lib/due-deck';
   import { onMount, untrack } from 'svelte';
   import { browser } from '$app/environment';
   import { page } from '$app/state';
@@ -297,9 +297,10 @@
       // clears this visit's rated-set; a restart just deals the next chunk
       // (reshuffling on wrap) from the pool already established this visit.
       // `source` is already mode-filtered (defnor excludes entries with no
-      // `definition`), so computeDuePool needs no filtering of its own.
+      // `definition`), so computeDuePool needs no filtering of its own. The
+      // session limit also caps the never-seen cards in the pool (null = All).
       if (!isRestart) {
-        dueSessionPool = shuffle(computeDuePool(source, progressMap));
+        dueSessionPool = shuffle(computeDuePool(source, progressMap, new Date(), limit));
         dueDealIndex = 0;
         ratedThisVisit = new SvelteSet();
       }
@@ -967,8 +968,8 @@
     {/if}
   </div>
 
-  <!-- 2-B: new-card cap notice -->
-  {#if deckMode === 'due' && sessionNewCardCount >= NEW_CARD_SESSION_LIMIT}
+  <!-- 2-B: new-card cap notice (the cap is the Cards per session setting; none for All cards) -->
+  {#if deckMode === 'due' && sessionLimit !== null && sessionNewCardCount >= sessionLimit}
     <p class="mt-2 text-xs text-gray-700 dark:text-gray-300">
       {m.flashcard_new_limit()}
     </p>
