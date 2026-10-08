@@ -49,8 +49,22 @@ describe('resolveSessionLimit', () => {
 });
 
 describe('seedSessionLimit', () => {
-  it('seeds 20 when there is no profile row', () => {
+  it('seeds 20 when there is no profile row and no local limit is given', () => {
     expect(seedSessionLimit(null)).toBe('20');
+  });
+
+  it('seeds the active local limit when there is no profile row', () => {
+    expect(seedSessionLimit(null, 50)).toBe('50');
+    expect(seedSessionLimit(null, null)).toBe('all');
+  });
+
+  it('falls back to 20 for a local value that is not an option', () => {
+    expect(seedSessionLimit(null, 7)).toBe('20');
+  });
+
+  it('ignores the local limit when a profile row exists', () => {
+    expect(seedSessionLimit({ session_limit: 30 }, 50)).toBe('30');
+    expect(seedSessionLimit({ session_limit: null }, 50)).toBe('all');
   });
 
   it('seeds all for a stored NULL', () => {

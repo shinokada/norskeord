@@ -31,11 +31,20 @@ export function resolveSessionLimit(
   return profileValue === undefined ? local : profileValue;
 }
 
+const SESSION_LIMIT_OPTIONS = [10, 20, 30, 50];
+
 /**
  * Initial value of the "Cards per session" control on the profile page:
- * 'all' for a stored NULL, the stored number as a string, or '20' when there is no profile row.
+ * - profile row: 'all' for a stored NULL, otherwise the stored number as a string.
+ * - no profile row: this device's active local limit (so the control does not silently
+ *   replace it on the first autosave), or '20' when `local` is omitted or not one of the
+ *   allowed options.
  */
-export function seedSessionLimit(profile: { session_limit: number | null } | null): string {
-  if (!profile) return '20';
-  return profile.session_limit === null ? 'all' : String(profile.session_limit);
+export function seedSessionLimit(
+  profile: { session_limit: number | null } | null,
+  local: number | null = 20
+): string {
+  if (profile) return profile.session_limit === null ? 'all' : String(profile.session_limit);
+  if (local === null) return 'all';
+  return SESSION_LIMIT_OPTIONS.includes(local) ? String(local) : '20';
 }
