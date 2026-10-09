@@ -1,11 +1,11 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
-  "nav_plus_badge": "Plus",
+  "nav_plus_badge": "Preise",
   "nav_log_in": "Anmelden",
   "nav_log_out": "Abmelden",
   "nav_my_progress": "Mein Fortschritt",
   "nav_norskproven": "Norskprøven",
-  "nav_plus": "Plus",
+  "nav_plus": "Plus-Preise",
   "nav_guide": "Guide",
   "nav_help": "Hilfe",
   "nav_free_resources": "Kostenlose Ressourcen",

@@ -58,6 +58,18 @@ const originalHandle: Handle = async ({ event, resolve }) => {
     });
   }
 
+  // /price and /pricing → /plus. Visitors look for a pricing page by name;
+  // /plus is the single pricing page. Same long-cacheable 301 as above.
+  if (pathname === '/price' || pathname === '/pricing') {
+    return new Response(null, {
+      status: 301,
+      headers: {
+        Location: '/plus' + event.url.search,
+        'Cache-Control': 'public, max-age=86400, s-maxage=2592000'
+      }
+    });
+  }
+
   // Renamed grammar topics (Phase 1b of ai-docs/implementation/grammar-update.md):
   // `helsetninger` was split and the `uttrykk-gjenkjenning-*` topics were merged into
   // `uttrykk`. The old /grammar/<topic> URLs were in the sitemap, so redirect them with
