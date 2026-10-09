@@ -15,8 +15,26 @@ import type { CEFRLevel } from './types';
 
 const GATED_LEVELS = ['A2', 'B1', 'B2', 'C'] as const satisfies readonly CEFRLevel[];
 
+// Test-owned copy of the documented free set (data-rules/free-items.md). It is
+// deliberately NOT derived from config: PLUS_CATEGORIES and FREE_QUIZ_CATEGORIES
+// are generated from FREE_VOCAB_CATEGORIES, so without this the other tests
+// would still pass if a free slug were swapped for another valid one. Changing
+// the free policy on purpose means updating this list and free-items.md too.
+const EXPECTED_FREE_VOCAB = {
+  A2: ['money', 'clothing', 'weather'],
+  B1: ['travel', 'environment', 'technology'],
+  B2: ['discourse-markers', 'science', 'literature'],
+  C: ['academic', 'architecture-design', 'character-types']
+} as const satisfies Record<(typeof GATED_LEVELS)[number], readonly string[]>;
+
 describe('free vocab categories', () => {
   for (const level of GATED_LEVELS) {
+    it(`${level} free categories are exactly the documented ones`, () => {
+      expect([...FREE_VOCAB_CATEGORIES[level]].sort()).toEqual(
+        [...EXPECTED_FREE_VOCAB[level]].sort()
+      );
+    });
+
     it(`${level} has exactly 3 free categories, all real and distinct`, () => {
       const free = FREE_VOCAB_CATEGORIES[level];
       expect(free).toHaveLength(3);
