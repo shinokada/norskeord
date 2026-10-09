@@ -2,7 +2,7 @@
   import { removeHyphensAndCapitalize } from '$lib/utils';
   import * as m from '$lib/paraglide/messages.js';
   import { page } from '$app/state';
-  import { isFreeTest } from '$lib/access';
+  import { isFreeTest, isPlusCategory } from '$lib/access';
   import { Tooltip } from 'flowbite-svelte';
 
   const plan = $derived(page.data.plan);
@@ -91,7 +91,7 @@
         { slug: 'health', noteKey: 'b1_health' as const },
         { slug: 'relationships', noteKey: 'b1_relationships' as const },
         { slug: 'travel', noteKey: 'b1_travel' as const },
-        { slug: 'society', noteKey: 'b1_society' as const },
+        { slug: 'society-nouns', noteKey: 'b1_society' as const },
         { slug: 'culture', noteKey: 'b1_culture' as const },
         { slug: 'environment', noteKey: 'b1_environment' as const }
       ]
@@ -267,12 +267,18 @@
 
       <div class="flex flex-wrap gap-2">
         {#each section.categories as cat (cat.slug)}
+          {@const locked = !isPlus && isPlusCategory(section.level, cat.slug)}
+          <!-- Locked pills keep their normal href: the category route redirects free users
+               to /plus?ref=category-lock, so no separate redirect logic lives here. -->
           <a
             href="/{section.level.toLowerCase()}/{cat.slug}"
-            class="inline-flex items-center rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300"
+            class="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium transition
+              {locked
+              ? 'border-gray-200 bg-gray-50 text-gray-400 hover:border-indigo-300 hover:text-indigo-600 dark:border-gray-700 dark:bg-indigo-950/30 dark:text-gray-500 dark:hover:border-indigo-500 dark:hover:text-indigo-300'
+              : 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'}"
             title={getCategoryNote(cat.noteKey)}
           >
-            {removeHyphensAndCapitalize(cat.slug)}
+            {removeHyphensAndCapitalize(cat.slug)}{locked ? ' 🔒' : ''}
           </a>
         {/each}
       </div>
@@ -296,6 +302,19 @@
           </a>
         {/if}
       </p>
+      <!-- A2 keeps its "browse all" line above; free users also get the unlock prompt, since
+           all of the A2 exam categories are Plus. -->
+      {#if section.level === 'A2' && plan !== 'plus'}
+        <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">
+          {m.norskproven_unlock_more_prompt({ level: section.level })}
+          <a
+            href="/plus?ref=norskproven-{section.level.toLowerCase()}"
+            class="font-semibold text-blue-500 underline hover:text-blue-700 dark:hover:text-blue-300"
+          >
+            {m.norskproven_unlock_cta()}
+          </a>
+        </p>
+      {/if}
     </div>
   {/each}
 </div>

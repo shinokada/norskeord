@@ -6,7 +6,13 @@
 // Pure functions only, so everything is unit-testable.
 
 import type { TaxonomyChapter, TaxonomyPart } from './taxonomy';
-import type { ChapterProgress, GrammarProgress, PartProgress, SectionProgress } from './progress';
+import type {
+  ChapterProgress,
+  GrammarProgress,
+  PartProgress,
+  SectionProgress,
+  TopicProgress
+} from './progress';
 
 export interface ChapterDue {
   part: TaxonomyPart;
@@ -49,6 +55,71 @@ export function visibleParts(progress: GrammarProgress): PartProgress[] {
     }
     if (chapters.length > 0) parts.push({ ...part, chapters });
   }
+  return parts;
+}
+
+/** A topic row that may be a locked teaser (free users, nothing free in it). */
+export interface TopicView extends TopicProgress {
+  locked: boolean;
+}
+export interface SectionView extends Omit<SectionProgress, 'topics'> {
+  topics: TopicView[];
+}
+export interface ChapterView extends Omit<ChapterProgress, 'sections'> {
+  sections: SectionView[];
+  /** Every topic in the chapter is locked. */
+  locked: boolean;
+}
+export interface PartView extends Omit<PartProgress, 'chapters'> {
+  chapters: ChapterView[];
+  /** Every chapter in the part is locked. */
+  locked: boolean;
+}
+
+/**
+ * Like visibleParts, but keeps topics that have questions yet nothing the user can
+ * practise, as locked rows with zeroed progress and their full question count.
+ * `scoped` is the roll-up the user sees (free users: built with the free policy as scope);
+ * `full` is the unscoped roll-up, used only for which topics exist and their full totals.
+ * Section, chapter and part counts stay the scoped ones, so locked topics never count.
+ * A topic is locked when its scoped total is 0. For Plus, pass the same roll-up twice:
+ * nothing is locked. Both roll-ups come from the same taxonomy, so they line up by index.
+ */
+export function visiblePartsWithLocked(scoped: GrammarProgress, full: GrammarProgress): PartView[] {
+  const parts: PartView[] = [];
+  scoped.parts.forEach((sp, pi) => {
+    const chapters: ChapterView[] = [];
+    sp.chapters.forEach((sc, ci) => {
+      const sections: SectionView[] = [];
+      sc.sections.forEach((ss, si) => {
+        const fullSection = full.parts[pi].chapters[ci].sections[si];
+        const topics: TopicView[] = fullSection.topics
+          .filter((ft) => ft.total > 0)
+          .map((ft) => {
+            const own = scoped.byTopic.get(ft.topic);
+            if (own && own.total > 0) return { ...own, locked: false };
+            return {
+              ...ft,
+              seen: 0,
+              review: 0,
+              learning: 0,
+              relearning: 0,
+              due: 0,
+              lapses: 0,
+              locked: true
+            };
+          });
+        if (topics.length > 0) sections.push({ ...ss, topics });
+      });
+      if (sections.length > 0) {
+        const locked = sections.every((s) => s.topics.every((t) => t.locked));
+        chapters.push({ ...sc, sections, locked });
+      }
+    });
+    if (chapters.length > 0) {
+      parts.push({ ...sp, chapters, locked: chapters.every((c) => c.locked) });
+    }
+  });
   return parts;
 }
 

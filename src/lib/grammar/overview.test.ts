@@ -183,8 +183,10 @@ describe('links', () => {
   const free = topicEntry('noun-plurals', 'A1')!;
   const locked = topicEntry('noun-plurals', 'B1')!;
 
-  it('sends a free user to /plus for a fully locked topic, a Plus user into it', () => {
-    expect(topicHref(locked, { level: 'B1', isPlus: false })).toBe('/plus?ref=grammar-topics');
+  it('links a fully locked topic to its topic page for free and Plus users alike', () => {
+    expect(topicHref(locked, { level: 'B1', isPlus: false })).toBe(
+      '/grammar/noun-plurals?level=B1'
+    );
     expect(topicHref(locked, { level: 'B1', isPlus: true })).toBe('/grammar/noun-plurals?level=B1');
   });
 

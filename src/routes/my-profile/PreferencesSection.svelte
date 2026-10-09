@@ -9,6 +9,7 @@
   import Toggle from '$lib/components/ui/Toggle.svelte';
   import SegmentedControl from '$lib/components/ui/SegmentedControl.svelte';
   import { toast } from '$lib/stores/toast.svelte';
+  import { getSessionLimit, seedSessionLimit } from '$lib/session-limit';
 
   let {
     profile,
@@ -49,8 +50,15 @@
   let cardType = $state(untrack(() => ((profile?.include_phrases ?? false) ? 'phrase' : 'word')));
   let voiceSpeed = $state(untrack(() => String(profile?.voice_speed ?? 1)));
   let voicePitch = $state(untrack(() => String(profile?.voice_pitch ?? 1)));
+  // No profile row: seed from this device's active limit so the first autosave does not
+  // replace it with 20 (localStorage is undefined during SSR; the default is 20 there).
   let sessionLimit = $state(
-    untrack(() => (profile?.session_limit != null ? String(profile.session_limit) : '20'))
+    untrack(() =>
+      seedSessionLimit(
+        profile,
+        typeof localStorage === 'undefined' ? undefined : getSessionLimit(localStorage)
+      )
+    )
   );
   let quizLimit = $state(
     untrack(() => (profile?.quiz_limit != null ? String(profile.quiz_limit) : 'default'))

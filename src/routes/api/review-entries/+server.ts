@@ -24,14 +24,15 @@
  * content-lookup.ts into progress.ts, keeps that full id→location map out
  * of the client bundle (see the plan doc's Performance notes).
  *
- * No auth check — this returns the same public vocab/uttrykk data every
- * `/{level}/{category}` page already serves, just addressed by id instead
- * of by category.
+ * No auth check — anyone may call it, but free and guest callers only get
+ * entries they could open anyway: Plus-only categories are dropped for them
+ * (see isPlusOnlyEntry in $lib/access). `locals.plan` is set by hooks.server.ts.
  */
 
 import type { RequestHandler } from './$types';
 import type { VocabEntry, CEFRLevel } from '$lib/types';
 import { resolveEntry } from '$lib/content-lookup';
+import { isPlusOnlyEntry } from '$lib/access';
 
 interface ReviewEntriesRequest {
   ids: string[];
@@ -83,7 +84,9 @@ const uttrykkCLoader = () =>
 const MAX_RAW_IDS = 20000;
 const MAX_ITEMS = 1000;
 
-export const POST: RequestHandler = async ({ request }) => {
+export const POST: RequestHandler = async ({ request, locals }) => {
+  const isPlus = locals.plan === 'plus';
+
   let body: ReviewEntriesRequest;
   try {
     const raw = await request.json();
@@ -127,6 +130,14 @@ export const POST: RequestHandler = async ({ request }) => {
       continue;
     }
     if (body.type && body.type !== 'both' && resolvedEntry.type !== body.type) continue;
+    // Free-tier gate (free-tier-simplification.md): drop cards from categories a
+    // free user can't open, even if they studied them while still free.
+    if (
+      !isPlus &&
+      isPlusOnlyEntry(resolvedEntry.level, resolvedEntry.category, resolvedEntry.type)
+    ) {
+      continue;
+    }
 
     const set = idsByLevel.get(resolvedEntry.level) ?? new Set<string>();
     set.add(id);

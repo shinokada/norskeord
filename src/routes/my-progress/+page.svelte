@@ -16,6 +16,8 @@
   import type { ActivityCell } from '$lib/progress';
   import { CATEGORIES_BY_LEVEL } from '$lib/config';
   import { resolveEntry, type ResolvedEntry } from '$lib/content-lookup';
+  import { filterProgressForPlan, freeGrammarRows, freeStatRows } from '$lib/free-progress';
+  import { isFreeGrammarTopic } from '$lib/access';
   import type { CardProgress, CEFRLevel } from '$lib/types';
   import { localeStore } from '$lib/localeStore.svelte';
   import * as m from '$lib/paraglide/messages.js';
@@ -53,20 +55,21 @@
   let isPlus = $derived(plan === 'plus');
 
   // ── Derived totals ────────────────────────────────────────────────────────────
-  const allCards = $derived(Object.values(progressMap));
-  const totalSeen = $derived(allCards.length);
-
-  const byState = $derived({
-    learning: allCards.filter((c) => progressBucket(c) === 'learning').length,
-    review: allCards.filter((c) => progressBucket(c) === 'review').length,
-    relearning: allCards.filter((c) => progressBucket(c) === 'relearning').length
-  });
+  // Free users only see stats for cards they can still study: progress in categories
+  // that are Plus-only now is left out of every number below (src/lib/free-progress.ts).
+  // The stored progress is untouched, and Plus users see their full map. Streak and the
+  // activity chart still use the raw maps, since studying on a day is real either way.
+  const visibleMap = $derived(filterProgressForPlan(progressMap, isPlus, resolveEntry));
 
   // ── Grammar totals ─────────────────────────────────────────────────────────
   const isNb = $derived(localeStore.current === 'nb');
   // Grammar is rolled up through grammar/progress.ts, which resolves every
   // card's topic and level live from its id (not the stored snapshot).
-  const grammarProgress = $derived(buildGrammarProgress(grammarMap));
+  // Free users' grammar numbers cover only what the policy lets them practise
+  // (FREE_GRAMMAR_TOPICS via isFreeGrammarTopic), in both totals and progress.
+  const grammarProgress = $derived(
+    buildGrammarProgress(grammarMap, new Date(), isPlus ? undefined : isFreeGrammarTopic)
+  );
   const grammarSeen = $derived(grammarProgress.overall.seen);
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
@@ -149,7 +152,20 @@
   // whenever progressMap changes (mount, reset, etc.) — cheap, see Phase 1's
   // Performance notes (permanent-structural-fix.md): resolveEntry() is a
   // single Map lookup per id against content already loaded for this route.
-  const resolvedCards = $derived<ResolvedCard[]>(resolveCards(progressMap));
+  const resolvedCards = $derived<ResolvedCard[]>(resolveCards(visibleMap));
+
+  // Display totals come from the resolved cards, not from visibleMap. filterProgressForPlan
+  // keeps ids that resolve nowhere (deleted entries), and resolveCards drops them, so counting
+  // visibleMap would show a total, enable Share and hide the empty state for cards that are
+  // never displayed. visibleMap itself stays as it is, for storage and plan filtering.
+  const allCards = $derived(resolvedCards.map((rc) => rc.card));
+  const totalSeen = $derived(allCards.length);
+
+  const byState = $derived({
+    learning: allCards.filter((c) => progressBucket(c) === 'learning').length,
+    review: allCards.filter((c) => progressBucket(c) === 'review').length,
+    relearning: allCards.filter((c) => progressBucket(c) === 'relearning').length
+  });
 
   // ── Vocabulary vs. Uttrykk split ──────────────────────────────────────────
   // Split by each card's *live* resolved type (Phase 5,
@@ -316,10 +332,18 @@
   // Per-level rows for the three content-type blocks — same StatRow shape
   // for all three (see stats.ts), rendered through the one LevelStatRows
   // component (Phase 2).
-  const vocabRowsForActiveLevel = $derived(vocabCategoryStatsForLevel(activeLevel, progressMap));
-  const uttrykkRowsForActiveLevel = $derived(uttrykkThemeStatsForLevel(activeLevel, progressMap));
+  // Free users see A1 in full and, above A1, only rows for the 3 free categories per level
+  // (freeStatRows); Plus sees every row.
+  const vocabRowsForActiveLevel = $derived(
+    freeStatRows(vocabCategoryStatsForLevel(activeLevel, visibleMap), activeLevel, 'vocab', isPlus)
+  );
+  const uttrykkRowsForActiveLevel = $derived(
+    freeStatRows(uttrykkThemeStatsForLevel(activeLevel, visibleMap), activeLevel, 'uttrykk', isPlus)
+  );
+  // Free users see the topics that are free at this level first, then the rest as locked
+  // teasers that link to the topic page (freeGrammarRows). Plus sees all.
   const grammarRowsForActiveLevel = $derived(
-    grammarTopicStatsForLevel(activeLevel, grammarMap, isNb)
+    freeGrammarRows(grammarTopicStatsForLevel(activeLevel, grammarMap, isNb), activeLevel, isPlus)
   );
 
   // Free-tier per-level summary cards — the vocabLevelStats/uttrykkLevelStats
@@ -720,7 +744,7 @@
           levelColor={levelColors[activeLevel]}
           levelTextColor={levelTextColors[activeLevel]}
         />
-        {#if isPlus}
+        {#if vocabRowsForActiveLevel.length > 0}
           <div class="mb-8">
             <LevelStatRows
               rows={vocabRowsForActiveLevel}
@@ -729,7 +753,8 @@
               reviewType="vocab"
             />
           </div>
-        {:else}
+        {/if}
+        {#if !isPlus && activeLevel !== 'A1'}
           <div
             class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
           >
@@ -756,7 +781,7 @@
           levelColor={levelColors[activeLevel]}
           levelTextColor={levelTextColors[activeLevel]}
         />
-        {#if isPlus}
+        {#if uttrykkRowsForActiveLevel.length > 0}
           <div class="mb-8">
             <LevelStatRows
               rows={uttrykkRowsForActiveLevel}
@@ -765,7 +790,8 @@
               reviewType="uttrykk"
             />
           </div>
-        {:else}
+        {/if}
+        {#if !isPlus && activeLevel !== 'A1'}
           <div
             class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
           >
@@ -796,7 +822,7 @@
             </div>
           {/each}
         </div>
-        <!-- Grammar is not gated by isPlus: topic-level progress has always been free. -->
+        <!-- Grammar rows: free topics first, then locked teasers for free users (freeGrammarRows). -->
         {#if grammarRowsForActiveLevel.length > 0}
           <div class="mb-8">
             <LevelStatRows

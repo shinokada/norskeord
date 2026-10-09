@@ -16,7 +16,7 @@ export interface Profile {
   email_lesson: boolean;
   voice_speed: number;
   voice_pitch: number;
-  session_limit: number | null;
+  session_limit: number | null; // null = All cards; the column default is 20
   quiz_limit: number | null; // null = default (10)
   show_example: boolean; // show example translation below the card by default
   fsrs_retention: number | null; // FSRS request_retention preset: 0.8/0.9/0.95, null = default (0.9)

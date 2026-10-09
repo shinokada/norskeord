@@ -9,9 +9,10 @@
 import type { CardProgress, VocabEntry } from './types';
 import { vocabKey } from './progress';
 
-// Mirrors VocabFlashcardPage.svelte's NEW_CARD_SESSION_LIMIT — caps how many
-// never-seen cards can enter a due-only pool in one visit, so a huge backlog
-// of brand-new cards doesn't crowd out actually-overdue ones.
+// Default cap on never-seen cards in a due-only pool when the caller passes no limit.
+// VocabFlashcardPage passes the user's "Cards per session" setting instead (null = All
+// cards = no cap), so this only applies to callers that don't know the setting. The cap
+// exists so a huge backlog of brand-new cards doesn't crowd out actually-overdue ones.
 export const NEW_CARD_SESSION_LIMIT = 20;
 
 /** Fisher–Yates shuffle (returns a new array, does not mutate the input). */
@@ -26,8 +27,12 @@ export function shuffle<T>(arr: T[]): T[] {
 
 /**
  * The fixed pool of due+new cards for one due-only visit: every card whose
- * FSRS due date has passed, plus up to NEW_CARD_SESSION_LIMIT never-seen
- * cards (randomly chosen, since "new" cards have no due date to sort by).
+ * FSRS due date has passed, plus up to `newCardLimit` never-seen cards
+ * (randomly chosen, since "new" cards have no due date to sort by).
+ * `newCardLimit` is the user's "Cards per session" setting: a number caps the
+ * new cards at that many, `null` (All cards) takes every new card. It defaults
+ * to NEW_CARD_SESSION_LIMIT for callers that don't pass one. Overdue cards are
+ * never capped.
  *
  * `entries` should already reflect any mode-specific filtering the caller
  * wants applied before due-scoping (e.g. VocabFlashcardPage filters out
@@ -42,7 +47,8 @@ export function shuffle<T>(arr: T[]): T[] {
 export function computeDuePool(
   entries: VocabEntry[],
   progressMap: Record<string, CardProgress>,
-  now: Date = new Date()
+  now: Date = new Date(),
+  newCardLimit: number | null = NEW_CARD_SESSION_LIMIT
 ): VocabEntry[] {
   const overdue: VocabEntry[] = [];
   const newCards: VocabEntry[] = [];
@@ -56,7 +62,8 @@ export function computeDuePool(
     }
   }
 
-  const newCapped = shuffle(newCards).slice(0, NEW_CARD_SESSION_LIMIT);
+  const shuffledNew = shuffle(newCards);
+  const newCapped = newCardLimit === null ? shuffledNew : shuffledNew.slice(0, newCardLimit);
   return [...overdue, ...newCapped];
 }
 

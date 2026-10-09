@@ -14,6 +14,14 @@
   import { validFlashcardPathPattern } from '$lib/utils';
   import { languageStore } from '$lib/stores/language.svelte';
   import { FLASHCARD_LANGUAGES } from '$lib/config';
+  import {
+    LOGIN_EVENT,
+    SIGNED_IN_KEY,
+    UPGRADE_CLICK_EVENT,
+    isNewSignIn,
+    trackEvent,
+    upgradeClickParams
+  } from '$lib/analytics';
   import type { FlashcardLanguage } from '$lib/types';
 
   let { children, data } = $props();
@@ -44,8 +52,39 @@
     }
   });
 
+  // GA key event "login": fires when the signed-in user on this device changes from none (or
+  // another account) to this one. An effect, so a sign-in without a full page load counts too.
+  $effect(() => {
+    const userId = (data.user?.id as string | undefined) ?? null;
+    try {
+      const previous = localStorage.getItem(SIGNED_IN_KEY) || null;
+      if (isNewSignIn(previous, userId)) {
+        trackEvent(LOGIN_EVENT, { plan: String(page.data.plan ?? 'free') });
+      }
+      localStorage.setItem(SIGNED_IN_KEY, userId ?? '');
+    } catch {
+      /* storage blocked: skip the event rather than fire it on every page */
+    }
+  });
+
   // Prevent horizontal swipe-to-pan on Android PWA.
   onMount(() => {
+    // GA key event "upgrade_click": one capture-phase listener sees every link to /plus, whatever
+    // its ?ref=, including those SvelteKit handles as client-side navigation.
+    function onUpgradeClick(e: MouseEvent) {
+      const link = (e.target as Element | null)?.closest?.('a[href]');
+      if (!link) return;
+      const params = upgradeClickParams(link.getAttribute('href') ?? '', location.href);
+      if (params) {
+        trackEvent(UPGRADE_CLICK_EVENT, {
+          ...params,
+          from_path: location.pathname,
+          plan: String(page.data.plan ?? 'guest')
+        });
+      }
+    }
+    document.addEventListener('click', onUpgradeClick, true);
+
     // Sync profile's flashcard_language into the store (overrides localStorage default).
     // This ensures the flashcard page uses the correct language for authenticated users.
     if (data.flashcardLanguage && data.flashcardLanguage in FLASHCARD_LANGUAGES) {
@@ -70,6 +109,7 @@
     document.addEventListener('touchmove', onTouchMove, { passive: false });
 
     return () => {
+      document.removeEventListener('click', onUpgradeClick, true);
       document.removeEventListener('touchstart', onTouchStart);
       document.removeEventListener('touchmove', onTouchMove);
     };

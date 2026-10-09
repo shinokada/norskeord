@@ -127,29 +127,51 @@ function pickCounts(c: ProgressCounts): ProgressCounts {
 // ── Roll-up ─────────────────────────────────────────────────────────────────
 
 /**
+ * Decides which (topic, level) pairs count towards totals and progress. Free users
+ * pass `isFreeGrammarTopic` so the numbers cover only what they can practise; Plus
+ * (and the default) counts everything.
+ */
+export type GrammarScope = (topic: GrammarTopic, level: CEFRLevel) => boolean;
+
+/**
  * Builds the full topic -> section -> chapter -> part roll-up from a grammar
- * progress map. `now` is injectable for tests.
+ * progress map. `now` is injectable for tests. With a `scope`, questions outside it
+ * are left out of both the totals and the seen/due counts.
  */
 export function buildGrammarProgress(
   grammarMap: Record<string, CardProgress>,
-  now: Date = new Date()
+  now: Date = new Date(),
+  scope?: GrammarScope
 ): GrammarProgress {
+  const include: GrammarScope = scope ?? (() => true);
+
   // 1. Topic + level counters from the live-resolved cards.
   const byTopic = new Map<GrammarTopic, TopicProgress>();
   const byLevel = Object.fromEntries(
     LEVEL_ORDER.map((l) => [l, { total: 0, seen: 0, review: 0, due: 0 }])
   ) as Record<CEFRLevel, LevelProgress>;
 
-  for (const entry of Object.values(TOPIC_INDEX)) {
+  for (const [topic, entry] of Object.entries(TOPIC_INDEX)) {
     for (const [level, count] of Object.entries(entry.countsByLevel) as [CEFRLevel, number][]) {
-      byLevel[level].total += count;
+      if (include(topic as GrammarTopic, level)) byLevel[level].total += count;
     }
   }
+
+  /** A topic's question total: the index total, or only the in-scope levels' counts. */
+  const topicTotal = (topic: GrammarTopic): number => {
+    const entry = TOPIC_INDEX[topic];
+    if (!entry) return 0;
+    if (!scope) return entry.total;
+    return (Object.entries(entry.countsByLevel) as [CEFRLevel, number][]).reduce(
+      (sum, [level, count]) => (scope(topic, level) ? sum + count : sum),
+      0
+    );
+  };
 
   const topicRow = (topic: GrammarTopic): TopicProgress => {
     let row = byTopic.get(topic);
     if (!row) {
-      row = { ...emptyCounts(TOPIC_INDEX[topic]?.total ?? 0), topic, lapses: 0 };
+      row = { ...emptyCounts(topicTotal(topic)), topic, lapses: 0 };
       byTopic.set(topic, row);
     }
     return row;
@@ -158,6 +180,7 @@ export function buildGrammarProgress(
   for (const [id, card] of Object.entries(grammarMap)) {
     const resolved = resolveGrammarQuestion(id);
     if (!resolved) continue; // question no longer exists
+    if (!include(resolved.topic, resolved.level)) continue; // outside the caller's scope
 
     const row = topicRow(resolved.topic);
     const bucket = progressBucket(card);

@@ -18,7 +18,6 @@
   import { loadProgressMap, loadProgressMapFromSupabase, saveProgress } from '$lib/progress';
   import type { FSRSRating, CardProgress, FlashcardLanguage } from '$lib/types';
   import { isFreeQuizCategory } from '$lib/access';
-  import { FREE_QUIZ_CATEGORIES } from '$lib/config';
   import { languageStore } from '$lib/stores/language.svelte';
   import { getTranslation, getExampleTranslation, categoryLabel } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages';
@@ -85,8 +84,7 @@
   // Free users: categories visible in the picker for the selected level
   let freeCategories = $derived.by(() => {
     if (!selectedLevel) return [] as string[];
-    const level = selectedLevel.toLowerCase();
-    return availableCategories.filter((cat) => FREE_QUIZ_CATEGORIES.has(`${level}/${cat}`));
+    return availableCategories.filter((cat) => isFreeQuizCategory(selectedLevel, cat));
   });
 
   // Count of Plus-only categories for the upsell badge

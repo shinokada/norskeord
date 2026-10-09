@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import type { CardProgress } from '$lib/types';
 import { buildGrammarProgress } from './progress';
-import { dueByChapter, percent, visibleParts } from './progress-view';
+import { dueByChapter, percent, visibleParts, visiblePartsWithLocked } from './progress-view';
+import { isFreeGrammarTopic } from '$lib/access';
 import { GRAMMAR_TAXONOMY } from './taxonomy';
 
 const NOW = new Date('2026-10-02T12:00:00Z');
@@ -114,6 +115,54 @@ describe('visibleParts', () => {
   it('does not change any count', () => {
     const total = parts.reduce((sum, p) => sum + p.total, 0);
     expect(total).toBe(progress.overall.total);
+  });
+});
+
+describe('visiblePartsWithLocked', () => {
+  const full = buildGrammarProgress({}, NOW);
+  const scoped = buildGrammarProgress({}, NOW, isFreeGrammarTopic);
+  const topicsOf = (parts: ReturnType<typeof visiblePartsWithLocked>) =>
+    parts.flatMap((p) => p.chapters.flatMap((c) => c.sections.flatMap((s) => s.topics)));
+
+  it('locks nothing for Plus (same roll-up twice)', () => {
+    const topics = topicsOf(visiblePartsWithLocked(full, full));
+    expect(topics.length).toBeGreaterThan(0);
+    expect(topics.every((t) => !t.locked)).toBe(true);
+  });
+
+  it('has the same topics as visibleParts of the full roll-up, for free users too', () => {
+    const expected = visibleParts(full).flatMap((p) =>
+      p.chapters.flatMap((c) => c.sections.flatMap((s) => s.topics.map((t) => t.topic)))
+    );
+    expect(topicsOf(visiblePartsWithLocked(scoped, full)).map((t) => t.topic)).toEqual(expected);
+  });
+
+  it('marks a topic locked exactly when it has nothing free, with its full total and no progress', () => {
+    for (const t of topicsOf(visiblePartsWithLocked(scoped, full))) {
+      const scopedTotal = scoped.byTopic.get(t.topic)?.total ?? 0;
+      expect(t.locked).toBe(scopedTotal === 0);
+      if (t.locked) {
+        expect(t.total).toBe(full.byTopic.get(t.topic)?.total);
+        expect([t.seen, t.review, t.due, t.lapses]).toEqual([0, 0, 0, 0]);
+      } else {
+        expect(t.total).toBe(scopedTotal);
+      }
+    }
+  });
+
+  it('keeps the scoped counts for sections, chapters and parts, so locked topics never count', () => {
+    const parts = visiblePartsWithLocked(scoped, full);
+    expect(parts.reduce((sum, p) => sum + p.total, 0)).toBe(scoped.overall.total);
+  });
+
+  it('flags a chapter or part as locked only when everything in it is locked', () => {
+    for (const p of visiblePartsWithLocked(scoped, full)) {
+      expect(p.locked).toBe(p.chapters.every((c) => c.locked));
+      for (const c of p.chapters) {
+        const all = c.sections.flatMap((s) => s.topics);
+        expect(c.locked).toBe(all.every((t) => t.locked));
+      }
+    }
   });
 });
 

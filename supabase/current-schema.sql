@@ -61,7 +61,7 @@ CREATE TABLE public.profiles (
   voice_speed numeric NOT NULL DEFAULT 1.0 CHECK (voice_speed = ANY (ARRAY[0.5, 0.75, 1.0, 1.25, 1.5])),
   voice_pitch numeric NOT NULL DEFAULT 1.0 CHECK (voice_pitch = ANY (ARRAY[0.7, 1.0, 1.3])),
   push_subscription jsonb,
-  session_limit integer CHECK (session_limit IS NULL OR (session_limit = ANY (ARRAY[10, 20, 30, 50]))),
+  session_limit integer DEFAULT 20 CHECK (session_limit IS NULL OR (session_limit = ANY (ARRAY[10, 20, 30, 50]))),
   quiz_limit integer CHECK (quiz_limit IS NULL OR (quiz_limit = ANY (ARRAY[5, 10, 15, 20]))),
   email_reminder boolean NOT NULL DEFAULT false,
   show_example boolean NOT NULL DEFAULT false,

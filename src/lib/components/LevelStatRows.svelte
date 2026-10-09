@@ -50,103 +50,135 @@
         {@const learningW = row.seen > 0 ? (row.learning / row.seen) * seenPct : 0}
         {@const relearningW = row.seen > 0 ? (row.relearning / row.seen) * seenPct : 0}
 
-        <div
-          class="group relative flex items-center gap-2 px-4 py-2.5 transition-colors hover:bg-gray-50 sm:gap-3 dark:hover:bg-gray-800/50"
-        >
-          <a href={row.href} class="absolute inset-0 z-0" aria-label={row.label}></a>
-          <!-- Section number: its own link to the chapter page, above the row link.
-               Fixed width keeps the names aligned; rows without one keep the gap. -->
-          {#if hasSectionCol}
-            {#if row.sectionId && row.sectionHref}
-              <a
-                href={row.sectionHref}
-                class="relative z-10 w-9 shrink-0 text-xs text-gray-500 tabular-nums hover:text-blue-600 hover:underline dark:text-gray-400 dark:hover:text-blue-400"
-                title={row.sectionId}
-                data-testid="stat-row-section"
-              >
-                {row.sectionId}
-              </a>
-            {:else}
-              <span class="w-9 shrink-0" aria-hidden="true"></span>
-            {/if}
-          {/if}
-          <!-- Row label (already display-formatted by the stats.ts builder) -->
-          <span
-            class="pointer-events-none relative z-[1] w-28 shrink-0 truncate text-xs font-medium text-gray-700 group-hover:text-blue-600 sm:w-44 dark:text-gray-300 dark:group-hover:text-blue-400"
-            title={row.label}
+        {#if row.locked}
+          <!-- Locked teaser (free users, grammar): title and question count only, linking to the
+               topic page. No bar, no due badge, no review link. -->
+          <div
+            class="group relative flex items-center gap-2 px-4 py-2.5 opacity-80 transition-colors hover:bg-gray-50 hover:opacity-100 sm:gap-3 dark:hover:bg-gray-800/50"
+            data-testid="stat-row-locked"
           >
-            {row.label}
-          </span>
-
-          <!-- Progress bar: full width = 100% of this row's total -->
-          <div class="pointer-events-none relative z-[1] min-w-0 flex-1">
-            <div
-              class="h-4 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40"
-              title="{row.seen}/{row.total} cards seen"
+            <a href={row.href} class="absolute inset-0 z-0" aria-label={row.label}></a>
+            {#if hasSectionCol}
+              <span
+                class="pointer-events-none relative z-[1] w-9 shrink-0 text-xs text-gray-500 tabular-nums dark:text-gray-400"
+              >
+                {row.sectionId ?? ''}
+              </span>
+            {/if}
+            <span aria-hidden="true" class="pointer-events-none relative z-[1] shrink-0 text-xs"
+              >🔒</span
             >
-              <div class="flex h-full">
-                {#if reviewW > 0}
-                  <div
-                    class="h-full transition-all {levelColor}"
-                    style="width: {reviewW}%"
-                    title="{m.stats_review()}: {row.review}"
-                  ></div>
-                {/if}
-                {#if learningW > 0}
-                  <div
-                    class="h-full bg-yellow-400 transition-all"
-                    style="width: {learningW}%"
-                    title="{m.stats_learning()}: {row.learning}"
-                  ></div>
-                {/if}
-                {#if relearningW > 0}
-                  <div
-                    class="h-full bg-orange-400 transition-all"
-                    style="width: {relearningW}%"
-                    title="{m.stats_forgotten()}: {row.relearning}"
-                  ></div>
-                {/if}
+            <span
+              class="pointer-events-none relative z-[1] min-w-0 flex-1 truncate text-xs font-medium text-gray-700 group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-blue-400"
+              title={row.label}
+            >
+              {row.label}
+            </span>
+            <span
+              class="pointer-events-none relative z-[1] shrink-0 text-right text-xs text-gray-500 tabular-nums dark:text-gray-400"
+            >
+              {row.total}
+            </span>
+          </div>
+        {:else}
+          <div
+            class="group relative flex items-center gap-2 px-4 py-2.5 transition-colors hover:bg-gray-50 sm:gap-3 dark:hover:bg-gray-800/50"
+          >
+            <a href={row.href} class="absolute inset-0 z-0" aria-label={row.label}></a>
+            <!-- Section number: its own link to the chapter page, above the row link.
+               Fixed width keeps the names aligned; rows without one keep the gap. -->
+            {#if hasSectionCol}
+              {#if row.sectionId && row.sectionHref}
+                <a
+                  href={row.sectionHref}
+                  class="relative z-10 w-9 shrink-0 text-xs text-gray-500 tabular-nums hover:text-blue-600 hover:underline dark:text-gray-400 dark:hover:text-blue-400"
+                  title={row.sectionId}
+                  data-testid="stat-row-section"
+                >
+                  {row.sectionId}
+                </a>
+              {:else}
+                <span class="w-9 shrink-0" aria-hidden="true"></span>
+              {/if}
+            {/if}
+            <!-- Row label (already display-formatted by the stats.ts builder) -->
+            <span
+              class="pointer-events-none relative z-[1] w-28 shrink-0 truncate text-xs font-medium text-gray-700 group-hover:text-blue-600 sm:w-44 dark:text-gray-300 dark:group-hover:text-blue-400"
+              title={row.label}
+            >
+              {row.label}
+            </span>
+
+            <!-- Progress bar: full width = 100% of this row's total -->
+            <div class="pointer-events-none relative z-[1] min-w-0 flex-1">
+              <div
+                class="h-4 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-indigo-900/40"
+                title="{row.seen}/{row.total} cards seen"
+              >
+                <div class="flex h-full">
+                  {#if reviewW > 0}
+                    <div
+                      class="h-full transition-all {levelColor}"
+                      style="width: {reviewW}%"
+                      title="{m.stats_review()}: {row.review}"
+                    ></div>
+                  {/if}
+                  {#if learningW > 0}
+                    <div
+                      class="h-full bg-yellow-400 transition-all"
+                      style="width: {learningW}%"
+                      title="{m.stats_learning()}: {row.learning}"
+                    ></div>
+                  {/if}
+                  {#if relearningW > 0}
+                    <div
+                      class="h-full bg-orange-400 transition-all"
+                      style="width: {relearningW}%"
+                      title="{m.stats_forgotten()}: {row.relearning}"
+                    ></div>
+                  {/if}
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Seen / total count -->
-          <span
-            class="pointer-events-none relative z-[1] w-12 shrink-0 text-right text-xs text-gray-700 tabular-nums sm:w-14 dark:text-gray-300"
-          >
-            {row.seen}/{row.total}
-          </span>
+            <!-- Seen / total count -->
+            <span
+              class="pointer-events-none relative z-[1] w-12 shrink-0 text-right text-xs text-gray-700 tabular-nums sm:w-14 dark:text-gray-300"
+            >
+              {row.seen}/{row.total}
+            </span>
 
-          <!-- Due badge — its own link into a due-only review session when
+            <!-- Due badge — its own link into a due-only review session when
                reviewType is set (Step 4c); otherwise a plain badge like today. -->
-          <span class="relative z-[1] w-10 shrink-0 text-right">
-            {#if row.due > 0}
-              {@const href = buildReviewHref(row, level, reviewType)}
-              {#if href}
-                <!-- The before: pseudo-element stretches the tap area to roughly the
+            <span class="relative z-[1] w-10 shrink-0 text-right">
+              {#if row.due > 0}
+                {@const href = buildReviewHref(row, level, reviewType)}
+                {#if href}
+                  <!-- The before: pseudo-element stretches the tap area to roughly the
                      full row height (≈48px) without changing how the pill looks,
                      so it's easy to hit on mobile and doesn't bleed into the
                      neighbouring rows. -->
-                <a
-                  {href}
-                  class="relative z-10 inline-block min-w-8 rounded-full bg-red-100 px-2.5 py-1 text-center text-sm font-semibold text-red-600 before:absolute before:-inset-x-1 before:-inset-y-2.5 hover:bg-red-200 dark:bg-red-900/40 dark:text-red-400 dark:hover:bg-red-900/60"
-                  title={m.stats_due_review_title({ count: row.due })}
-                  aria-label={m.stats_due_review_title({ count: row.due })}
-                >
-                  {row.due}
-                </a>
-              {:else}
-                <span
-                  class="inline-block min-w-8 rounded-full bg-red-100 px-2.5 py-1 text-center text-sm font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
-                  title={m.stats_due_count({ count: row.due })}
-                >
-                  <span aria-hidden="true">{row.due}</span>
-                  <span class="sr-only">{m.stats_due_count({ count: row.due })}</span>
-                </span>
+                  <a
+                    {href}
+                    class="relative z-10 inline-block min-w-8 rounded-full bg-red-100 px-2.5 py-1 text-center text-sm font-semibold text-red-600 before:absolute before:-inset-x-1 before:-inset-y-2.5 hover:bg-red-200 dark:bg-red-900/40 dark:text-red-400 dark:hover:bg-red-900/60"
+                    title={m.stats_due_review_title({ count: row.due })}
+                    aria-label={m.stats_due_review_title({ count: row.due })}
+                  >
+                    {row.due}
+                  </a>
+                {:else}
+                  <span
+                    class="inline-block min-w-8 rounded-full bg-red-100 px-2.5 py-1 text-center text-sm font-semibold text-red-600 dark:bg-red-900/40 dark:text-red-400"
+                    title={m.stats_due_count({ count: row.due })}
+                  >
+                    <span aria-hidden="true">{row.due}</span>
+                    <span class="sr-only">{m.stats_due_count({ count: row.due })}</span>
+                  </span>
+                {/if}
               {/if}
-            {/if}
-          </span>
-        </div>
+            </span>
+          </div>
+        {/if}
       {/each}
     </div>
 

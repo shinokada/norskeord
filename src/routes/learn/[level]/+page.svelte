@@ -419,7 +419,7 @@
           Start a {data.levelUpper} quiz
         </p>
         <p class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
-          Multiple-choice, fill-in-the-blank, and typed answers{#if !isPlus}
+          Multiple-choice, fill-in-the-blank, and typed answers{#if !isPlus && data.level !== 'a1'}
             · some categories require Plus{/if}
         </p>
       </div>

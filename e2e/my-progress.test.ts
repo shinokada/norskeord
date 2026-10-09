@@ -1,8 +1,10 @@
 import { expect, test } from '@playwright/test';
 
 // Seed one progress entry so the stats page renders past the empty state.
-// The exact FSRS shape doesn't matter — we only need totalSeen > 0.
-const SEED_KEY = 'progress-hei';
+// The id must resolve to a real card (w-000001 is "hei", A1 greetings): ids that resolve
+// nowhere are not counted, so a stale id like the old 'progress-hei' key shows the empty
+// state. The exact FSRS shape doesn't matter.
+const SEED_KEY = 'progress-w-000001';
 const SEED_VALUE = JSON.stringify({
   fsrs: {
     due: new Date(Date.now() + 86_400_000).toISOString(), // due tomorrow
@@ -31,29 +33,38 @@ test.describe('/my-progress page — free user (unauthenticated)', () => {
     await page.goto('/my-progress');
   });
 
-  // 3-A: free users never see the category table
+  // 3-A (revised by free-tier-simplification.md Phase 6): free users never see a <table>. They do
+  // see per-category rows for A1 and for their 3 free categories above it (tests below).
   test('does not show per-category breakdown table', async ({ page }) => {
     await expect(page.getByRole('table')).not.toBeVisible();
   });
 
-  // 3-A: free users see the Plus upsell cards instead — one for
-  // Vocabulary's "By Category" breakdown, one for Uttrykk's "By Theme"
-  // breakdown (stats-page-improvement.md Phase 6 split the page into these
-  // two sections after this test was originally written for a single
-  // blended card — both reuse the same "Upgrade to Plus →" label, so a free
-  // user legitimately sees two matching links, not one).
-  test('shows Plus upsell cards with links to /plus', async ({ page }) => {
-    // my-progress-update.md: one panel at a time, so each upsell shows on its own tab.
-    await expect(page.getByText('Per-category breakdown is a Plus feature')).toBeVisible();
-    await expect(page.getByRole('link', { name: /upgrade to plus/i })).toHaveCount(1);
-    await page.goto('/my-progress?tab=uttrykk');
-    await expect(page.getByText('Per-theme breakdown is a Plus feature')).toBeVisible();
+  // Phase 6 of free-tier-simplification.md: A1 rows are free in full; above A1 a free user
+  // sees only the 3 free categories per level, plus an upsell for the rest.
+  test('A1 shows every category row and no Plus upsell', async ({ page }) => {
+    await expect(page.locator('a[href="/a1/greetings"]')).toHaveCount(1);
+    await expect(page.locator('a[href="/a1/animals"]')).toHaveCount(1);
+    await expect(page.getByText('See every category with Plus')).not.toBeVisible();
+  });
+
+  test('A2 shows only the 3 free category rows and the Plus upsell', async ({ page }) => {
+    await page.getByRole('tab', { name: 'A2', exact: true }).click();
+    for (const slug of ['money', 'clothing', 'weather']) {
+      await expect(page.locator(`a[href="/a2/${slug}"]`)).toHaveCount(1);
+    }
+    await expect(page.locator('a[href="/a2/animals"]')).toHaveCount(0);
+    await expect(page.getByText('See every category with Plus')).toBeVisible();
     const upgradeLinks = page.getByRole('link', { name: /upgrade to plus/i });
     await expect(upgradeLinks).toHaveCount(1);
-    const hrefs = await upgradeLinks.evaluateAll((links) =>
-      links.map((l) => l.getAttribute('href'))
-    );
-    expect(hrefs).toEqual(['/plus']);
+    await expect(upgradeLinks).toHaveAttribute('href', '/plus');
+  });
+
+  test('Uttrykk: A1 rows are free, A2 shows the Plus upsell', async ({ page }) => {
+    await page.goto('/my-progress?tab=uttrykk');
+    await expect(page.getByText('Per-theme breakdown is a Plus feature')).not.toBeVisible();
+    await page.getByRole('tab', { name: 'A2', exact: true }).click();
+    await expect(page.getByText('Per-theme breakdown is a Plus feature')).toBeVisible();
+    await expect(page.getByRole('link', { name: /upgrade to plus/i })).toHaveCount(1);
   });
 
   // CEFR estimate is free for all users — must still be visible
@@ -153,5 +164,20 @@ test.describe('/my-progress page — content-type tabs', () => {
   test('ignores an invalid ?tab= and uses the default', async ({ page }) => {
     await page.goto('/my-progress?tab=foo');
     await expect(page.locator('#tab-vocab')).toHaveAttribute('aria-selected', 'true');
+  });
+});
+
+// Progress saved under an id that resolves to no card (an entry deleted from the content, or an
+// old-format key) is not displayed, so it must not count either: the page shows the empty state.
+test.describe('/my-progress page — unresolved progress ids', () => {
+  test('a stale id does not count as seen, so the empty state still shows', async ({ page }) => {
+    await page.addInitScript(({ key, value }) => localStorage.setItem(key, value), {
+      key: 'progress-hei',
+      value: SEED_VALUE
+    });
+    await page.goto('/my-progress');
+    await expect(page.getByText('No cards reviewed yet')).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Start studying' })).toBeVisible();
+    await expect(page.getByRole('tablist', { name: 'Content type' })).not.toBeVisible();
   });
 });

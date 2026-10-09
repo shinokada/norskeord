@@ -2,14 +2,15 @@
 // Policy guard for the grammar free tier (Phase 1 of
 // ai-docs/implementation/grammar-update.md, decision #2).
 //
-// Policy: every A1 grammar question is free; everything else is Plus, except
-// four legacy "free sample" topics listed explicitly below. Free access is
+// Policy: every A1 grammar question is free; nothing above A1 is free (the four
+// legacy A2/B1 free samples were removed by
+// ai-docs/implementation/free-tier-simplification.md). Free access is
 // config-driven (FREE_GRAMMAR_TOPICS in $lib/config), so without this test a
 // new A1 topic could be added to grammar.json and silently ship as Plus-only,
 // or a Plus topic could be freed by accident.
 //
-// If you deliberately change the policy (e.g. drop the legacy samples), update
-// LEGACY_FREE_SAMPLES here so the change stays visible in review.
+// If you deliberately free a non-A1 topic again, list it in LEGACY_FREE_SAMPLES
+// here so the change stays visible in review.
 
 import { describe, it, expect } from 'vitest';
 import grammarData from '$lib/data/grammar.json';
@@ -18,13 +19,8 @@ import type { CEFRLevel, GrammarQuestion, GrammarTopic } from '$lib/types';
 
 const questions = grammarData as GrammarQuestion[];
 
-/** Topics that are intentionally free at a non-A1 level (open question 8). */
-const LEGACY_FREE_SAMPLES: Partial<Record<GrammarTopic, CEFRLevel[]>> = {
-  'ikke-placement': ['A2'],
-  'adj-comparison': ['A2'],
-  'ordfamilie-avledning': ['B1'],
-  'bade-og-verken-eller': ['B1']
-};
+/** Topics that are intentionally free at a non-A1 level. None: beyond A1 nothing is free. */
+const LEGACY_FREE_SAMPLES: Partial<Record<GrammarTopic, CEFRLevel[]>> = {};
 
 function freeLevels(topic: GrammarTopic): CEFRLevel[] | 'all' | null {
   const entry = FREE_GRAMMAR_TOPICS[topic];
@@ -47,7 +43,7 @@ describe('grammar free-tier policy', () => {
     expect(gated).toEqual([]);
   });
 
-  it('beyond A1, only the documented legacy samples are free', () => {
+  it('beyond A1, nothing is free', () => {
     const beyondA1: Partial<Record<GrammarTopic, CEFRLevel[]>> = {};
     for (const topic of Object.keys(FREE_GRAMMAR_TOPICS) as GrammarTopic[]) {
       const levels = freeLevels(topic);

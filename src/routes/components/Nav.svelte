@@ -365,6 +365,11 @@
         >{m.nav_contact()}</DropdownItem
       >
     </Dropdown>
+    <!-- My Progress for guests: free progress lives in localStorage, so the page works signed out.
+         Signed-in users reach it from the avatar dropdown. -->
+    {#if !effectiveUser}
+      <NavLi href="/my-progress" class="md:dark:text-gray-200">{m.nav_my_progress()}</NavLi>
+    {/if}
   </NavUl>
 </Navbar>
 
@@ -416,6 +421,13 @@
           {/snippet}
         </SidebarItem>
       {:else}
+        <SidebarItem label={m.nav_my_progress()} href="/my-progress">
+          {#snippet icon()}
+            <ChartOutline
+              class="h-5 w-5 text-gray-600 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+            />
+          {/snippet}
+        </SidebarItem>
         <SidebarItem label={m.nav_log_in()} href="/auth/login">
           {#snippet icon()}
             <ArrowLeftToBracketOutline

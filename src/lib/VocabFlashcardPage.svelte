@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { getSessionLimit } from '$lib/session-limit';
-  import { computeDuePool, dealChunk, NEW_CARD_SESSION_LIMIT } from '$lib/due-deck';
+  import { getSessionLimit, resolveSessionLimit } from '$lib/session-limit';
+  import { computeDuePool, dealChunk } from '$lib/due-deck';
   import { onMount, untrack } from 'svelte';
   import { browser } from '$app/environment';
   import { page } from '$app/state';
@@ -17,12 +17,12 @@
     saveProgress,
     loadProgressMap,
     loadProgressMapFromSupabase,
-    countDueToday,
     previewIntervals,
     restoreProgressToLocalStorage,
     vocabKey,
     getFsrs
   } from '$lib/progress';
+  import { countDueForPlan } from '$lib/due-count';
   import { State } from 'ts-fsrs';
   import { SvelteSet } from 'svelte/reactivity';
   import * as m from '$lib/paraglide/messages.js';
@@ -153,10 +153,9 @@
   let isPlus = $derived(plan === 'plus');
   let isGuest = $derived(page.data.user === null);
 
-  // session limit from layout server data (cross-device); falls back to localStorage for guests
-  let profileSessionLimit = $derived<number | null>(
-    (page.data.sessionLimit as number | null | undefined) ?? null
-  );
+  // Session limit from the layout server data (cross-device): a number, null = All cards,
+  // or undefined for guests / no profile row, who use this device's localStorage value.
+  let profileSessionLimit = $derived(page.data.sessionLimit as number | null | undefined);
 
   // show_example from layout server (cross-device default)
   let showExample = $derived((page.data.showExample as boolean) ?? false);
@@ -170,14 +169,10 @@
   // saveProgress() will actually schedule (the preset applies to Plus users only).
   let fsrsInstance = $derived(getFsrs(isPlus ? fsrsRetention : null));
 
-  // session limit — DB value (cross-device) takes priority; localStorage is the fallback for
-  // unauthenticated users or when no profile value is set.
+  // session limit — a profile value (including null = All cards) always wins; localStorage is the
+  // fallback for guests and users with no profile row.
   // Uses $derived so it stays in sync if the prop changes (e.g. navigation).
-  let sessionLimit = $derived<number | null>(
-    profileSessionLimit !== null && profileSessionLimit !== undefined
-      ? profileSessionLimit
-      : localSessionLimit
-  );
+  let sessionLimit = $derived(resolveSessionLimit(profileSessionLimit, localSessionLimit));
 
   onMount(() => {
     isTouch = window.matchMedia('(pointer: coarse)').matches;
@@ -188,12 +183,12 @@
     if (isPlus && page.data.user?.id) {
       loadProgressMapFromSupabase(page.data.user.id).then((map) => {
         progressMap = map;
-        dueCount = countDueToday(map);
+        dueCount = countDueForPlan(map, isPlus);
       });
     } else {
       loadProgressMap().then((map) => {
         progressMap = map;
-        dueCount = countDueToday(map);
+        dueCount = countDueForPlan(map, isPlus);
       });
     }
 
@@ -206,9 +201,9 @@
     }
 
     // Keep localSessionLimit in sync if the user updates it in another tab
-    // (only matters for unauthenticated users — logged-in users use the DB value)
+    // (only matters when there is no profile value: guests and users with no profile row)
     function onStorageChange(e: StorageEvent) {
-      if (e.key === 'vocab-flashcard-session-limit' && profileSessionLimit === null) {
+      if (e.key === 'vocab-flashcard-session-limit' && profileSessionLimit === undefined) {
         localSessionLimit = getSessionLimit(localStorage);
       }
     }
@@ -302,9 +297,10 @@
       // clears this visit's rated-set; a restart just deals the next chunk
       // (reshuffling on wrap) from the pool already established this visit.
       // `source` is already mode-filtered (defnor excludes entries with no
-      // `definition`), so computeDuePool needs no filtering of its own.
+      // `definition`), so computeDuePool needs no filtering of its own. The
+      // session limit also caps the never-seen cards in the pool (null = All).
       if (!isRestart) {
-        dueSessionPool = shuffle(computeDuePool(source, progressMap));
+        dueSessionPool = shuffle(computeDuePool(source, progressMap, new Date(), limit));
         dueDealIndex = 0;
         ratedThisVisit = new SvelteSet();
       }
@@ -495,7 +491,7 @@
     }
 
     progressMap = previousMap;
-    dueCount = countDueToday(previousMap);
+    dueCount = countDueForPlan(previousMap, isPlus);
     currentIndex = previousIndex;
     resetCardState();
     completed = false;
@@ -637,7 +633,7 @@
     next();
 
     progressMap = await saveProgress(entry, rating, progressMap, userId, fsrsRetention);
-    dueCount = countDueToday(progressMap);
+    dueCount = countDueForPlan(progressMap, isPlus);
     if (deckMode === 'due') {
       ratedThisVisit.add(key);
     }
@@ -972,8 +968,8 @@
     {/if}
   </div>
 
-  <!-- 2-B: new-card cap notice -->
-  {#if deckMode === 'due' && sessionNewCardCount >= NEW_CARD_SESSION_LIMIT}
+  <!-- 2-B: new-card cap notice (the cap is the Cards per session setting; none for All cards) -->
+  {#if deckMode === 'due' && sessionLimit !== null && sessionNewCardCount >= sessionLimit}
     <p class="mt-2 text-xs text-gray-700 dark:text-gray-300">
       {m.flashcard_new_limit()}
     </p>
