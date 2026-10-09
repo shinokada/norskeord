@@ -60,14 +60,6 @@
   // The stored progress is untouched, and Plus users see their full map. Streak and the
   // activity chart still use the raw maps, since studying on a day is real either way.
   const visibleMap = $derived(filterProgressForPlan(progressMap, isPlus, resolveEntry));
-  const allCards = $derived(Object.values(visibleMap));
-  const totalSeen = $derived(allCards.length);
-
-  const byState = $derived({
-    learning: allCards.filter((c) => progressBucket(c) === 'learning').length,
-    review: allCards.filter((c) => progressBucket(c) === 'review').length,
-    relearning: allCards.filter((c) => progressBucket(c) === 'relearning').length
-  });
 
   // ── Grammar totals ─────────────────────────────────────────────────────────
   const isNb = $derived(localeStore.current === 'nb');
@@ -161,6 +153,19 @@
   // Performance notes (permanent-structural-fix.md): resolveEntry() is a
   // single Map lookup per id against content already loaded for this route.
   const resolvedCards = $derived<ResolvedCard[]>(resolveCards(visibleMap));
+
+  // Display totals come from the resolved cards, not from visibleMap. filterProgressForPlan
+  // keeps ids that resolve nowhere (deleted entries), and resolveCards drops them, so counting
+  // visibleMap would show a total, enable Share and hide the empty state for cards that are
+  // never displayed. visibleMap itself stays as it is, for storage and plan filtering.
+  const allCards = $derived(resolvedCards.map((rc) => rc.card));
+  const totalSeen = $derived(allCards.length);
+
+  const byState = $derived({
+    learning: allCards.filter((c) => progressBucket(c) === 'learning').length,
+    review: allCards.filter((c) => progressBucket(c) === 'review').length,
+    relearning: allCards.filter((c) => progressBucket(c) === 'relearning').length
+  });
 
   // ── Vocabulary vs. Uttrykk split ──────────────────────────────────────────
   // Split by each card's *live* resolved type (Phase 5,

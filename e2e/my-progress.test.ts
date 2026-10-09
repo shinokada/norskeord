@@ -1,8 +1,10 @@
 import { expect, test } from '@playwright/test';
 
 // Seed one progress entry so the stats page renders past the empty state.
-// The exact FSRS shape doesn't matter — we only need totalSeen > 0.
-const SEED_KEY = 'progress-hei';
+// The id must resolve to a real card (w-000001 is "hei", A1 greetings): ids that resolve
+// nowhere are not counted, so a stale id like the old 'progress-hei' key shows the empty
+// state. The exact FSRS shape doesn't matter.
+const SEED_KEY = 'progress-w-000001';
 const SEED_VALUE = JSON.stringify({
   fsrs: {
     due: new Date(Date.now() + 86_400_000).toISOString(), // due tomorrow
@@ -162,5 +164,20 @@ test.describe('/my-progress page — content-type tabs', () => {
   test('ignores an invalid ?tab= and uses the default', async ({ page }) => {
     await page.goto('/my-progress?tab=foo');
     await expect(page.locator('#tab-vocab')).toHaveAttribute('aria-selected', 'true');
+  });
+});
+
+// Progress saved under an id that resolves to no card (an entry deleted from the content, or an
+// old-format key) is not displayed, so it must not count either: the page shows the empty state.
+test.describe('/my-progress page — unresolved progress ids', () => {
+  test('a stale id does not count as seen, so the empty state still shows', async ({ page }) => {
+    await page.addInitScript(({ key, value }) => localStorage.setItem(key, value), {
+      key: 'progress-hei',
+      value: SEED_VALUE
+    });
+    await page.goto('/my-progress');
+    await expect(page.getByText('No cards reviewed yet')).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Start studying' })).toBeVisible();
+    await expect(page.getByRole('tablist', { name: 'Content type' })).not.toBeVisible();
   });
 });

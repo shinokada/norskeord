@@ -4,9 +4,8 @@
 //
 // Everything here is derived from the policy (`isFreeGrammarTopic`, which reads
 // FREE_GRAMMAR_TOPICS in config.ts) and the question counts in the topic index. Nothing
-// restates the policy, so freeing another level later changes every total, row and
-// "+N topics with Plus" count with one edit in config.ts. free-access.test.ts checks
-// these numbers against the real questions.
+// restates the policy, so freeing another level later changes every total and row with one
+// edit in config.ts. free-access.test.ts checks these numbers against the real questions.
 
 import type { CEFRLevel, GrammarTopic } from '$lib/types';
 import { isFreeGrammarTopic } from '$lib/access';
@@ -26,11 +25,4 @@ export function freeGrammarTotal(topic: GrammarTopic): number {
     (sum, [level, count]) => (isFreeGrammarTopic(topic, level) ? sum + count : sum),
     0
   );
-}
-
-/** Topics that have questions but nothing a free user can practise. */
-export function plusOnlyGrammarTopicCount(): number {
-  return Object.entries(TOPIC_INDEX).filter(
-    ([topic, entry]) => entry.total > 0 && freeGrammarTotal(topic as GrammarTopic) === 0
-  ).length;
 }

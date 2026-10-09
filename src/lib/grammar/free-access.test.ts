@@ -8,7 +8,7 @@ import { describe, it, expect } from 'vitest';
 import grammarData from '$lib/data/grammar.json';
 import { freeGrammarQuestionIds, isFreeGrammarTopic } from '$lib/access';
 import type { CEFRLevel, GrammarQuestion, GrammarTopic } from '$lib/types';
-import { freeGrammarTotal, plusOnlyGrammarTopicCount } from './free-access';
+import { freeGrammarTotal } from './free-access';
 import { buildGrammarProgress } from './progress';
 
 const questions = grammarData as GrammarQuestion[];
@@ -46,12 +46,5 @@ describe('free grammar totals', () => {
   it('the unscoped roll-up still counts every question', () => {
     const progress = buildGrammarProgress({});
     expect(levelTotal(progress)).toBeGreaterThan(freeIds.size);
-  });
-
-  it('some topics are Plus-only, and the count never exceeds the topics that exist', () => {
-    const topicCount = new Set(questions.map((q) => q.topic)).size;
-    const count = plusOnlyGrammarTopicCount();
-    expect(count).toBeGreaterThan(0);
-    expect(count).toBeLessThanOrEqual(topicCount);
   });
 });
