@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.93.0
+
+### Minor Changes
+
+- - **Bug Fixes**
+    - Profile card-limit preferences now take precedence over the device’s saved setting. “All cards” is respected, while profiles without a saved limit continue to use the device setting.
+  - **Updates**
+    - New profiles default to a 20-card session limit. Existing profiles without a limit are set to 20; “All cards” remains available. Session limits also cap new cards added to due-card sessions.
+    - Free access includes all A1 content and three vocabulary and quiz categories per level from A2 through C. Grammar is free at A1; higher-level grammar and expressions require Plus.
+    - Free progress views show available progress and locked-content teasers, and due counts reflect each plan’s access.
+    - Non-Plus visitors can see which exam categories require Plus and access unlock prompts.
+  - **New Features**
+    - Signed-out visitors can access “My Progress” from the navigation.
+
 ## 2.92.1
 
 ### Patch Changes
