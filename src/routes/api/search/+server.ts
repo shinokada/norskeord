@@ -9,6 +9,7 @@
  *   403 { error: 'plus_required' }  — logged out or free
  *   429 { error: 'rate_limited' }   — over SEARCH_RATE_LIMIT_PER_MINUTE (Retry-After set)
  *   400 { error: 'bad_request' }    — invalid q / source / level
+ *   503 { error: 'unavailable' }    — the in-memory index could not be built (next request retries)
  *   200 { results: SearchResult[] } — never cached
  */
 import { json } from '@sveltejs/kit';
@@ -63,7 +64,13 @@ export const GET: RequestHandler = async ({ url, locals }) => {
     level
   };
 
-  const index = await getSearchIndex();
+  let index;
+  try {
+    index = await getSearchIndex();
+  } catch (err) {
+    console.error('[api/search] index unavailable:', (err as Error).message);
+    return json({ error: 'unavailable' }, { status: 503, headers: NO_STORE });
+  }
   const results = search(
     q,
     index,

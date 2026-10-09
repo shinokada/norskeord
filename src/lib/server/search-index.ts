@@ -79,25 +79,31 @@ const SOURCES: { file: string; source: SearchSource; load: Loader }[] = [
   { file: 'uttrykk-a2.json', source: 'uttrykk', load: () => import('$lib/data/uttrykk-a2.json') },
   { file: 'uttrykk-b1.json', source: 'uttrykk', load: () => import('$lib/data/uttrykk-b1.json') },
   { file: 'uttrykk-b2.json', source: 'uttrykk', load: () => import('$lib/data/uttrykk-b2.json') },
-  { file: 'uttrykk-c.json', source: 'uttrykk', load: () => import('$lib/data/uttrykk-c.json') },
-  {
-    file: 'norske_metaforiske_uttrykk_B1_B2.json',
-    source: 'uttrykk',
-    load: () => import('$lib/data/norske_metaforiske_uttrykk_B1_B2.json')
-  }
+  { file: 'uttrykk-c.json', source: 'uttrykk', load: () => import('$lib/data/uttrykk-c.json') }
 ];
 
 async function loadAll(): Promise<SearchEntry[]> {
   const files: SourceRows[] = [];
+  const failed: string[] = [];
   for (const { file, source, load } of SOURCES) {
     try {
       const mod = await load();
       if (Array.isArray(mod.default)) {
         files.push({ source, rows: mod.default as Record<string, unknown>[] });
+      } else {
+        failed.push(file);
+        console.error(`[search-index] ${file} is not an array`);
       }
     } catch (err) {
+      failed.push(file);
       console.error(`[search-index] could not load ${file}:`, (err as Error).message);
     }
+  }
+  // Reject instead of returning a partial index: getSearchIndex does not cache a
+  // rejection, so the next request retries, and the endpoint answers 500 rather
+  // than 200 with missing results.
+  if (failed.length > 0) {
+    throw new Error(`[search-index] failed to load: ${failed.join(', ')}`);
   }
   return buildSearchEntries(files);
 }

@@ -192,6 +192,17 @@ describe('GET /api/search \u2014 results', () => {
     const partial = await (await call('?q=he')).json();
     expect(partial.results).toHaveLength(0);
   });
+  it('returns 503 with no-store when the index cannot be built, then recovers', async () => {
+    const spy = vi.spyOn(console, 'error').mockImplementation(() => {});
+    mockGetIndex.mockRejectedValueOnce(new Error('boom'));
+    const res = await call('?q=hei');
+    expect(res.status).toBe(503);
+    expect(await res.json()).toEqual({ error: 'unavailable' });
+    expect(res.headers.get('Cache-Control')).toBe('private, no-store');
+    spy.mockRestore();
+    // the next request retries and succeeds
+    expect((await call('?q=hei')).status).toBe(200);
+  });
 });
 
 // ── Validation ────────────────────────────────────────────────────────────────

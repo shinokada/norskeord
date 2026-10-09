@@ -143,16 +143,16 @@ pnpm test:unit      # Vitest
 
 Utility scripts live in `scripts/`. See `scripts/how-to.md` for full usage. Key ones:
 
-| Script                                           | Purpose                                                                   |
-| ------------------------------------------------ | ------------------------------------------------------------------------- |
-| `translate-messages.mjs`                         | AI-translate `en.json` into another locale                                |
-| `add-language-translations.mjs`                  | Add `spanish`/`ukrainian` fields to vocab JSON files                      |
-| `generate-og.mjs`                                | Generate OG images for decks and blog posts                               |
-| `generate-stats.mjs`                             | Print vocab/uttrykk counts per level (`pnpm stats`)                       |
-| `analyse_dupes.mjs` + `apply_dupe_decisions.mjs` | Find and resolve duplicate vocabulary entries                             |
-| `patch-*.mjs`                                    | One-off bulk patches to message or data files                             |
-| `verify-vocab-ids.mjs`                           | Check all vocab entries have unique IDs                                   |
-| `cleanup-e2e-users.ts`                           | Remove test accounts created by Playwright runs                           |
+| Script                                           | Purpose                                              |
+| ------------------------------------------------ | ---------------------------------------------------- |
+| `translate-messages.mjs`                         | AI-translate `en.json` into another locale           |
+| `add-language-translations.mjs`                  | Add `spanish`/`ukrainian` fields to vocab JSON files |
+| `generate-og.mjs`                                | Generate OG images for decks and blog posts          |
+| `generate-stats.mjs`                             | Print vocab/uttrykk counts per level (`pnpm stats`)  |
+| `analyse_dupes.mjs` + `apply_dupe_decisions.mjs` | Find and resolve duplicate vocabulary entries        |
+| `patch-*.mjs`                                    | One-off bulk patches to message or data files        |
+| `verify-vocab-ids.mjs`                           | Check all vocab entries have unique IDs              |
+| `cleanup-e2e-users.ts`                           | Remove test accounts created by Playwright runs      |
 
 ---
 
@@ -204,7 +204,7 @@ Search is Plus-only and runs on the server (`GET /api/search`). The index is bui
 
 ## Changelog
 
-`pnpm ch` — builds the search index, runs `changeset`, then prints stats. Use before committing a release.  
+`pnpm ch` — runs `changeset`, then prints stats. Use before committing a release.  
 `pnpm cv` — bump versions from pending changesets.
 
 ---
