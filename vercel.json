@@ -1,6 +1,6 @@
 {
   "installCommand": "pnpm install",
-  "buildCommand": "bash scripts/setup-submodule.sh && pnpm check:data && pnpm search:index && pnpm build",
+  "buildCommand": "bash scripts/setup-submodule.sh && pnpm check:data && pnpm build",
   "redirects": [
     { "source": "/nb", "destination": "/", "permanent": true },
     { "source": "/nb/:path*", "destination": "/:path*", "permanent": true }
@@ -13,12 +13,6 @@
     {
       "path": "/api/email/welcome-sequence",
       "schedule": "0 8 * * *"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/data/search-index.json",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
     }
   ]
 }

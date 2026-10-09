@@ -3,18 +3,19 @@
 
   Full-text search modal for Plus users.
   - Opens on Cmd/Ctrl+K or when `open` prop is set true by the Nav
-  - Lazy-loads /data/search-index.json on first open
-  - Debounced 150 ms input; four-pass in-browser scoring
+  - Searches on the server: GET /api/search (Plus-only, rate limited). The index
+    never reaches the browser (ai-docs/implementation/search-index-gate.md)
+  - Debounced 250 ms input; filter/locale changes search immediately; an
+    AbortController drops stale responses and identical requests are skipped
   - Keyboard: ↑/↓ navigate results, Enter navigates, Escape closes
   - Only shown in the Nav for Plus users (free users don't see the button)
 -->
 <script lang="ts">
   import { goto } from '$app/navigation';
-  import { loadSearchIndex } from '$lib/search';
-  import { search, hasInflection } from '$lib/searchUtils';
-  import type { SearchEntry } from '$lib/search';
-  import type { SearchFilter } from '$lib/searchUtils';
-  import { tick } from 'svelte';
+  import { fetchSearch, SearchRequestError } from '$lib/search';
+  import { hasInflection } from '$lib/searchUtils';
+  import type { SearchResult } from '$lib/search';
+  import { tick, untrack } from 'svelte';
   import { categoryLabel } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
@@ -29,7 +30,7 @@
 
   // ── State ──────────────────────────────────────────────────────────────────
   let query = $state('');
-  let results: SearchEntry[] = $state([]);
+  let results: SearchResult[] = $state([]);
   let activeIndex = $state(-1);
   let loading = $state(false);
   let error = $state('');
@@ -39,26 +40,64 @@
 
   const LEVELS = ['all', 'A1', 'A2', 'B1', 'B2', 'C'] as const;
 
-  // ── Index cache ───────────────────────────────────────────────────────────
-  let index: SearchEntry[] | null = null;
+  // ── Server search ─────────────────────────────────────────────────────────
+  const DEBOUNCE_MS = 250;
 
-  async function ensureIndex() {
-    if (index) return;
+  // The request currently in flight, and the key of the last request that
+  // succeeded (used to skip an identical request, e.g. re-clicking the active filter).
+  let controller: AbortController | null = null;
+  let lastKey = '';
+
+  function cancelSearch() {
+    controller?.abort();
+    controller = null;
+    lastKey = '';
+    loading = false;
+  }
+
+  async function runSearch() {
+    const q = query.trim();
+    if (!isPlus || q.length < 2) {
+      cancelSearch();
+      results = [];
+      error = '';
+      return;
+    }
+
+    const params = {
+      q,
+      source: sourceFilter,
+      level: levelFilter,
+      locale: localeStore.current
+    };
+    const key = JSON.stringify(params);
+    if (key === lastKey) return;
+
+    controller?.abort();
+    const mine = new AbortController();
+    controller = mine;
     loading = true;
     error = '';
+
     try {
-      index = await loadSearchIndex();
-      // The user may have already typed (and had a debounced runSearch()
-      // bail out via `if (!index) return;` above) while this fetch was
-      // still in flight — nothing else re-triggers a search once `index`
-      // is set, since it's a plain variable, not reactive `$state`. Re-run
-      // now so a query typed during the ~4MB fetch doesn't get stuck on
-      // an empty result set forever.
-      if (query.trim().length >= 2) runSearch();
-    } catch {
-      error = m.search_load_error();
+      const found = await fetchSearch(params, mine.signal);
+      if (controller !== mine) return; // a newer request replaced this one
+      results = found;
+      activeIndex = -1;
+      lastKey = key;
+    } catch (err) {
+      if (controller !== mine || mine.signal.aborted) return;
+      results = [];
+      lastKey = ''; // allow a retry of the same query
+      error =
+        err instanceof SearchRequestError && err.status === 429
+          ? m.search_rate_limited()
+          : m.search_load_error();
     } finally {
-      loading = false;
+      if (controller === mine) {
+        loading = false;
+        controller = null;
+      }
     }
   }
 
@@ -69,21 +108,11 @@
     query = (e.target as HTMLInputElement).value;
     activeIndex = -1;
     if (debounceTimer) clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(runSearch, 150);
-  }
-
-  function runSearch() {
-    if (!index) return;
-    const filter: SearchFilter = {
-      source: sourceFilter === 'all' ? undefined : sourceFilter,
-      level: levelFilter === 'all' ? undefined : levelFilter
-    };
-    results = search(query, index, filter, translationFor, exampleTranslationFor);
-    activeIndex = -1;
+    debounceTimer = setTimeout(runSearch, DEBOUNCE_MS);
   }
 
   // Re-run search when filters or the active locale change (locale changes
-  // which language field matching/display use — see translationFor below)
+  // which translation the server matches and returns).
   $effect(() => {
     // Explicitly read reactive values so the effect re-runs on change
     const _s = sourceFilter;
@@ -92,7 +121,9 @@
     void _s;
     void _l;
     void _loc;
-    if (index) runSearch();
+    // untrack: runSearch reads `query`, which must not trigger a search per
+    // keystroke (typing goes through the debounce above).
+    if (untrack(() => open)) untrack(runSearch);
   });
 
   // ── Modal open/close ───────────────────────────────────────────────────────
@@ -101,13 +132,15 @@
 
   $effect(() => {
     if (open) {
-      ensureIndex().then(async () => {
-        await tick();
+      tick().then(() => {
         if (isPlus) inputEl?.focus();
       });
     } else {
+      if (debounceTimer) clearTimeout(debounceTimer);
+      cancelSearch();
       query = '';
       results = [];
+      error = '';
       activeIndex = -1;
     }
   });
@@ -162,7 +195,7 @@
     });
   }
 
-  async function navigateTo(entry: SearchEntry) {
+  async function navigateTo(entry: SearchResult) {
     close();
     // Carry the exact entry into the flashcard deck so the target page can
     // surface it first. `id` (the real w-NNNNNN) identifies the exact sense when
@@ -193,33 +226,6 @@
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
-  }
-
-  // ── Translation for the currently selected locale ─────────────────────────
-  // 'nb' (Norsk) prefers the monolingual Norwegian definition;
-  // falls back to English when no definition exists (e.g. uttrykk) or none was found.
-  // Other locales show that language's translation, falling back to English
-  // when the entry hasn't been translated yet.
-  function translationFor(entry: SearchEntry): string {
-    const locale = localeStore.current;
-    if (locale === 'nb') return entry.definition ?? entry.english;
-    if (locale === 'es') return entry.spanish ?? entry.english;
-    if (locale === 'uk') return entry.ukrainian ?? entry.english;
-    if (locale === 'de') return entry.german ?? entry.english;
-    return entry.english;
-  }
-
-  // Example-sentence counterpart of translationFor, used so a query typed in
-  // the selected language can also match against the example translation
-  // (mirrors getExampleTranslation in vocab-helpers.ts, but for SearchEntry).
-  // No definition equivalent exists for examples, so 'nb' just falls back to
-  // English like every other locale with a missing translation.
-  function exampleTranslationFor(entry: SearchEntry): string {
-    const locale = localeStore.current;
-    if (locale === 'es') return entry.example_spanish ?? entry.example_english;
-    if (locale === 'uk') return entry.example_ukrainian ?? entry.example_english;
-    if (locale === 'de') return entry.example_german ?? entry.example_english;
-    return entry.example_english;
   }
 </script>
 
@@ -373,7 +379,7 @@
               </div>
               <div class="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
                 <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-                {@html highlight(translationFor(entry), query)}
+                {@html highlight(entry.translation, query)}
               </div>
               {#if entry.example}
                 <div class="mt-0.5 line-clamp-1 text-xs text-gray-600 italic dark:text-gray-300">

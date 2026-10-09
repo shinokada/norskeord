@@ -147,7 +147,6 @@ Utility scripts live in `scripts/`. See `scripts/how-to.md` for full usage. Key 
 | ------------------------------------------------ | ------------------------------------------------------------------------- |
 | `translate-messages.mjs`                         | AI-translate `en.json` into another locale                                |
 | `add-language-translations.mjs`                  | Add `spanish`/`ukrainian` fields to vocab JSON files                      |
-| `build-search-index.ts`                          | Generate `static/data/search-index.json` (runs before every Vercel build) |
 | `generate-og.mjs`                                | Generate OG images for decks and blog posts                               |
 | `generate-stats.mjs`                             | Print vocab/uttrykk counts per level (`pnpm stats`)                       |
 | `analyse_dupes.mjs` + `apply_dupe_decisions.mjs` | Find and resolve duplicate vocabulary entries                             |
@@ -196,10 +195,10 @@ Push notification cron is managed by Supabase pg_cron (see `current-cron-push-no
 Vercel. Every push to `main` deploys automatically. Build command (from `vercel.json`):
 
 ```bash
-pnpm search:index && pnpm build
+bash scripts/setup-submodule.sh && pnpm check:data && pnpm build
 ```
 
-The search index must be built before SvelteKit so it lands in `static/data/` before the build copies static files.
+Search is Plus-only and runs on the server (`GET /api/search`). The index is built in memory from the private data submodule on the first request, so there is no search-index file to generate or deploy. See `ai-docs/implementation/search-index-gate.md`.
 
 ---
 

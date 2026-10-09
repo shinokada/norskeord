@@ -1,5 +1,14 @@
 import { describe, it, expect } from 'vitest';
-import { search, normalize, hasInflection, MAX_RESULTS } from './searchUtils';
+import {
+  search,
+  normalize,
+  hasInflection,
+  normalizeLocale,
+  translationFor,
+  exampleTranslationFor,
+  toSearchResult,
+  MAX_RESULTS
+} from './searchUtils';
 import type { SearchEntry } from './search';
 
 // ── Fixtures ──────────────────────────────────────────────────────────────────
@@ -190,8 +199,67 @@ describe('search — short query guard', () => {
     expect(search('   ', ENTRIES)).toHaveLength(0);
   });
 
-  it('returns results for a 2-character query', () => {
-    expect(search('hei', ENTRIES).length).toBeGreaterThan(0);
+  it('finds an exact 2-character lemma', () => {
+    expect(search('gå', ENTRIES).some((r) => r.norsk === 'gå')).toBe(true);
+  });
+
+  it('finds a 3-character prefix', () => {
+    expect(search('tak', ENTRIES).some((r) => r.norsk === 'takk')).toBe(true);
+  });
+});
+
+describe('search — 2-character queries match exactly only', () => {
+  const SHORT: SearchEntry[] = [
+    makeEntry({
+      id: 's1',
+      norsk: 'er',
+      lemma: 'å være',
+      english: 'is',
+      example: 'Hun er glad.',
+      example_english: 'She is happy.'
+    }),
+    makeEntry({
+      id: 's2',
+      norsk: 'på',
+      lemma: 'på',
+      english: 'on',
+      example: 'Boka ligger på bordet.',
+      example_english: 'The book is on the table.'
+    }),
+    makeEntry({
+      id: 's3',
+      norsk: 'takk',
+      lemma: 'takk',
+      english: 'thanks',
+      example: 'Takk for maten.',
+      example_english: 'Thanks for the food.'
+    })
+  ];
+
+  it('matches an exact norsk form even when the lemma differs', () => {
+    expect(search('er', SHORT).map((r) => r.id)).toContain('s1');
+  });
+
+  it('matches an exact lemma', () => {
+    expect(search('på', SHORT).map((r) => r.id)).toContain('s2');
+  });
+
+  it('matches an exact translation', () => {
+    expect(search('on', SHORT).map((r) => r.id)).toContain('s2');
+  });
+
+  it('does not prefix-match', () => {
+    expect(search('ta', SHORT)).toHaveLength(0);
+  });
+
+  it('does not substring-match example sentences', () => {
+    // 'bo' is inside "Boka" and 'gl' inside "glad", but no field equals them
+    expect(search('bo', SHORT)).toHaveLength(0);
+    expect(search('gl', SHORT)).toHaveLength(0);
+  });
+
+  it('does not token-match', () => {
+    expect(search('th', SHORT)).toHaveLength(0);
   });
 });
 
@@ -370,16 +438,14 @@ describe('search — filters', () => {
     expect(results.every((r) => r.level === 'B1')).toBe(true);
   });
 
-  it('filter by level=all returns entries from multiple levels', () => {
-    // 'to' appears in many english fields across levels
-    const results = search('to', ENTRIES, { level: 'all' });
-    // just check the filter does not over-restrict
-    const levels = new Set(results.map((r) => r.level));
-    expect(levels.size).toBeGreaterThanOrEqual(1);
+  it('filter by level=all does not restrict the results', () => {
+    const results = search('travel', ENTRIES, { level: 'all' });
+    expect(results.some((r) => r.norsk === 'reise')).toBe(true);
   });
 
   it('combining source and level filters applies both', () => {
-    const results = search('to', ENTRIES, { source: 'vocab', level: 'B1' });
+    const results = search('travel', ENTRIES, { source: 'vocab', level: 'B1' });
+    expect(results.length).toBeGreaterThan(0);
     expect(results.every((r) => r.source === 'vocab' && r.level === 'B1')).toBe(true);
   });
 
@@ -494,5 +560,101 @@ describe('search — sibling senses (identical norsk)', () => {
     const results = search('hallway', siblings);
     expect(results).toHaveLength(1);
     expect(results[0].entryId).toBe('w-010707');
+  });
+});
+
+// ── locale helpers (shared with /api/search) ────────────────────────────────────────────────────
+
+describe('normalizeLocale', () => {
+  it('accepts the five supported locales', () => {
+    for (const l of ['en', 'nb', 'es', 'uk', 'de']) expect(normalizeLocale(l)).toBe(l);
+  });
+
+  it('falls back to en for anything else', () => {
+    expect(normalizeLocale('fr')).toBe('en');
+    expect(normalizeLocale('')).toBe('en');
+    expect(normalizeLocale(null)).toBe('en');
+    expect(normalizeLocale(undefined)).toBe('en');
+    expect(normalizeLocale('EN')).toBe('en');
+  });
+});
+
+describe('translationFor / exampleTranslationFor', () => {
+  const e = makeEntry({
+    english: 'food',
+    spanish: 'comida',
+    ukrainian: 'їжа',
+    german: 'Essen',
+    definition: 'Det man spiser.',
+    example_english: 'The food smells good.',
+    example_spanish: 'La comida huele bien.'
+  });
+
+  it('picks the locale translation', () => {
+    expect(translationFor(e, 'en')).toBe('food');
+    expect(translationFor(e, 'es')).toBe('comida');
+    expect(translationFor(e, 'uk')).toBe('їжа');
+    expect(translationFor(e, 'de')).toBe('Essen');
+  });
+
+  it('nb prefers the definition and falls back to English', () => {
+    expect(translationFor(e, 'nb')).toBe('Det man spiser.');
+    expect(translationFor({ ...e, definition: undefined }, 'nb')).toBe('food');
+  });
+
+  it('falls back to English when the locale translation is missing', () => {
+    expect(translationFor({ ...e, spanish: undefined }, 'es')).toBe('food');
+  });
+
+  it('example translation follows the locale, nb falls back to English', () => {
+    expect(exampleTranslationFor(e, 'es')).toBe('La comida huele bien.');
+    expect(exampleTranslationFor(e, 'nb')).toBe('The food smells good.');
+    expect(exampleTranslationFor(e, 'de')).toBe('The food smells good.');
+  });
+});
+
+describe('toSearchResult', () => {
+  it('returns only the slim result fields', () => {
+    const r = toSearchResult(
+      makeEntry({
+        entryId: 'w-000001',
+        spanish: 'hola',
+        ukrainian: 'привіт',
+        german: 'hallo',
+        example_spanish: 'Hola.',
+        example_ukrainian: 'Привіт.',
+        example_german: 'Hallo.',
+        definition: 'En hilsen.'
+      }),
+      'es'
+    );
+    expect(Object.keys(r).sort()).toEqual(
+      [
+        'category',
+        'entryId',
+        'example',
+        'href',
+        'id',
+        'lemma',
+        'level',
+        'norsk',
+        'sense',
+        'source',
+        'translation'
+      ].sort()
+    );
+    expect(r.translation).toBe('hola');
+  });
+
+  it('does not carry other-locale or example translations when serialised', () => {
+    const json = JSON.stringify(
+      toSearchResult(
+        makeEntry({ spanish: 'hola', german: 'hallo', example_english: 'Hi! How are you?' }),
+        'es'
+      )
+    );
+    expect(json).not.toContain('hallo');
+    expect(json).not.toContain('example_english');
+    expect(json).not.toContain('How are you');
   });
 });

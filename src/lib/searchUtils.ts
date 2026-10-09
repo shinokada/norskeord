@@ -17,9 +17,20 @@
  * Results are sorted by score descending, capped at MAX_RESULTS.
  */
 
-import type { SearchEntry } from '$lib/search';
+import type { SearchEntry, SearchResult } from '$lib/search';
 
 export const MAX_RESULTS = 50;
+
+/** Shortest query that is searched at all. */
+export const MIN_QUERY_LENGTH = 2;
+
+/**
+ * Queries shorter than this match exactly only (lemma, norsk or translation equals
+ * the query). Prefix, substring and token passes start here. Short words (på, og,
+ * er, å) still work, while enumerating 2-letter prefixes returns almost nothing
+ * (ai-docs/implementation/search-index-gate.md).
+ */
+export const SUBSTRING_MIN_QUERY_LENGTH = 3;
 
 export interface SearchFilter {
   source?: 'vocab' | 'uttrykk' | 'all';
@@ -34,7 +45,8 @@ export function search(
   getExampleTranslation: (entry: SearchEntry) => string = (e) => e.example_english
 ): SearchEntry[] {
   const q = normalize(query);
-  if (q.length < 2) return [];
+  if (q.length < MIN_QUERY_LENGTH) return [];
+  const exactOnly = q.length < SUBSTRING_MIN_QUERY_LENGTH;
 
   const results: { entry: SearchEntry; score: number }[] = [];
 
@@ -47,8 +59,10 @@ export function search(
     const ln = normalize(entry.lemma);
     const tr = normalize(getTranslation(entry));
 
-    if (ln === q || tr === q) {
+    if (ln === q || tr === q || (exactOnly && normalize(entry.norsk) === q)) {
       score = 10;
+    } else if (exactOnly) {
+      continue;
     } else if (ln.startsWith(q) || tr.startsWith(q)) {
       score = 8;
     } else if (
@@ -72,11 +86,64 @@ export function search(
     .map((r) => r.entry);
 }
 
+export type SearchLocale = 'en' | 'nb' | 'es' | 'uk' | 'de';
+const SEARCH_LOCALES: readonly SearchLocale[] = ['en', 'nb', 'es', 'uk', 'de'];
+
+/** Allow-list for a `locale` request parameter; anything else falls back to English. */
+export function normalizeLocale(raw: string | null | undefined): SearchLocale {
+  return SEARCH_LOCALES.includes(raw as SearchLocale) ? (raw as SearchLocale) : 'en';
+}
+
+/**
+ * Translation shown (and matched) for a locale. 'nb' prefers the monolingual
+ * Norwegian definition and falls back to English; other locales fall back to
+ * English when the entry has no translation yet.
+ */
+export function translationFor(entry: SearchEntry, locale: SearchLocale): string {
+  if (locale === 'nb') return entry.definition ?? entry.english;
+  if (locale === 'es') return entry.spanish ?? entry.english;
+  if (locale === 'uk') return entry.ukrainian ?? entry.english;
+  if (locale === 'de') return entry.german ?? entry.english;
+  return entry.english;
+}
+
+/**
+ * Example-sentence counterpart of translationFor, used so a query typed in the
+ * selected language can also match the example translation. 'nb' has no
+ * definition equivalent for examples, so it falls back to English.
+ */
+export function exampleTranslationFor(entry: SearchEntry, locale: SearchLocale): string {
+  if (locale === 'es') return entry.example_spanish ?? entry.example_english;
+  if (locale === 'uk') return entry.example_ukrainian ?? entry.example_english;
+  if (locale === 'de') return entry.example_german ?? entry.example_english;
+  return entry.example_english;
+}
+
+/**
+ * The slim shape the /api/search endpoint returns: only what the search modal
+ * shows. No other-locale translations, no example translations.
+ */
+export function toSearchResult(entry: SearchEntry, locale: SearchLocale): SearchResult {
+  return {
+    id: entry.id,
+    entryId: entry.entryId,
+    sense: entry.sense,
+    norsk: entry.norsk,
+    lemma: entry.lemma,
+    translation: translationFor(entry, locale),
+    example: entry.example,
+    level: entry.level,
+    category: entry.category,
+    source: entry.source,
+    href: entry.href
+  };
+}
+
 /**
  * Returns true when the norsk surface form differs from the lemma,
  * meaning the matched word is an inflected form.
  */
-export function hasInflection(entry: SearchEntry): boolean {
+export function hasInflection(entry: Pick<SearchEntry, 'norsk' | 'lemma'>): boolean {
   return entry.norsk !== entry.lemma;
 }
 
