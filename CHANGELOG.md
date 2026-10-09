@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.94.0
+
+### Minor Changes
+
+- - **Features**
+    - `/price` and `/pricing` now permanently redirect to `/plus`, preserving query parameters.
+    - Navigation labels in several languages now clearly identify Plus pricing. Free and guest offers use consistent copy about Plus access and syncing progress across devices, with a call to action to view Plus pricing.
+    - Guest progress text no longer mentions signing in to sync.
+  - **Bug Fixes**
+    - Sitemap listings now include `/plus` and paths such as `/plusfoo`.
+
 ## 2.93.0
 
 ### Minor Changes
