@@ -12,6 +12,10 @@ export function isPlusCategory(level: string, category: string): boolean {
 }
 
 export function isFreeQuizCategory(level: string, category: string): boolean {
+  // A1 is free in full, whatever categories the data files carry. FREE_QUIZ_CATEGORIES
+  // lists only the slugs in CATEGORIES_BY_LEVEL.A1, so a category that exists in the
+  // data but not in that list would otherwise show as "Plus" at A1.
+  if (level.toLowerCase() === 'a1') return true;
   return FREE_QUIZ_CATEGORIES.has(`${level.toLowerCase()}/${category}`);
 }
 

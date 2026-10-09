@@ -336,7 +336,8 @@
   </div>
 
   <!-- ── Free vs Plus comparison table ──────────────────────────────────────────── -->
-  <h2 class="mb-6">{m.plus_table_heading()}</h2>
+  <h2 class="mb-2">{m.plus_table_heading()}</h2>
+  <p class="mb-6 text-base text-gray-600 dark:text-gray-300">{m.plus_free_rules_note()}</p>
   <div class="mb-14 overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700">
     <table class="w-full text-sm">
       <thead>

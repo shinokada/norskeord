@@ -63,6 +63,11 @@ export interface StatRow {
    */
   sectionId?: string;
   sectionHref?: string;
+  /**
+   * Grammar rows only, free users: the topic has nothing free at this level. The row is
+   * shown as a teaser (lock, question count, link to the topic page) with no progress.
+   */
+  locked?: boolean;
 }
 
 /**

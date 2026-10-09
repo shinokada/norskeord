@@ -9,12 +9,15 @@
    *
    * Same data path as /my-progress: Plus reads Supabase, free and guest read
    * localStorage. Every card's topic and level is resolved live from its id
-   * (grammar/progress.ts), never from the stored snapshot. Free for every plan.
+   * (grammar/progress.ts), never from the stored snapshot. Free users see only what
+   * the grammar free policy lets them practise (FREE_GRAMMAR_TOPICS, via the scope
+   * passed to buildGrammarProgress); Plus sees everything.
    */
   import { onMount } from 'svelte';
   import { page } from '$app/state';
   import { loadGrammarProgressMap, loadGrammarProgressFromSupabase } from '$lib/progress';
   import type { CardProgress, CEFRLevel } from '$lib/types';
+  import { isFreeGrammarTopic } from '$lib/access';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import {
     LEVEL_MASTERED_SHARE,
@@ -23,7 +26,7 @@
     estimateGrammarLevel,
     weakSpots
   } from '$lib/grammar/progress';
-  import { dueByChapter, percent, visibleParts } from '$lib/grammar/progress-view';
+  import { dueByChapter, percent, visiblePartsWithLocked } from '$lib/grammar/progress-view';
   import * as m from '$lib/paraglide/messages.js';
 
   let grammarMap = $state<Record<string, CardProgress>>({});
@@ -34,8 +37,15 @@
 
   const levels: readonly CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C'];
 
-  const progress = $derived(buildGrammarProgress(grammarMap));
-  const parts = $derived(visibleParts(progress));
+  // Free users: totals and progress cover only what is free to practise (the policy
+  // decides, see grammar/free-access.ts). Plus: everything.
+  const progress = $derived(
+    buildGrammarProgress(grammarMap, new Date(), isPlus ? undefined : isFreeGrammarTopic)
+  );
+  // Topics with nothing free stay in the list as locked rows (visiblePartsWithLocked), so a
+  // free user sees what Plus covers. Their numbers never count. Plus: nothing is locked.
+  const fullProgress = buildGrammarProgress({});
+  const parts = $derived(visiblePartsWithLocked(progress, fullProgress));
   const chaptersDue = $derived(dueByChapter(progress));
   const weak = $derived(weakSpots(progress));
   const estimate = $derived(estimateGrammarLevel(progress.byLevel));
@@ -245,7 +255,7 @@
 
       {#each parts as p (p.part.no)}
         <details
-          open
+          open={!p.locked}
           data-testid="grammar-progress-part"
           class="mb-3 rounded-xl border border-gray-200 bg-white dark:border-white/10 dark:bg-indigo-950/60"
         >
@@ -253,12 +263,15 @@
             class="flex cursor-pointer flex-wrap items-center gap-x-3 gap-y-1 rounded-xl px-4 py-3 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none"
           >
             <span class="font-semibold text-gray-900 dark:text-white">
+              {#if p.locked}<span aria-hidden="true">🔒</span>{/if}
               {m.grammar_map_part({ no: p.part.no })} · {p.part.titleNb}
             </span>
-            <span class="text-xs text-gray-500 dark:text-gray-300">
-              {m.grammar_map_progress({ seen: p.seen, total: p.total })}
-            </span>
-            {@render dueBadge(p.due)}
+            {#if !p.locked}
+              <span class="text-xs text-gray-500 dark:text-gray-300">
+                {m.grammar_map_progress({ seen: p.seen, total: p.total })}
+              </span>
+              {@render dueBadge(p.due)}
+            {/if}
           </summary>
 
           <div class="space-y-2 px-3 pb-3">
@@ -272,15 +285,22 @@
                 >
                   <span class="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
                     <span class="font-medium text-gray-800 dark:text-gray-100">
+                      {#if c.locked}<span aria-hidden="true">🔒</span>{/if}
                       {c.chapter.no}. {c.chapter.titleNb}
                     </span>
-                    <span class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-300">
-                      {m.grammar_map_progress({ seen: c.seen, total: c.total })} ·
-                      {m.grammar_progress_mastered({ count: c.review })}
-                      {@render dueBadge(c.due)}
-                    </span>
+                    {#if !c.locked}
+                      <span
+                        class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-300"
+                      >
+                        {m.grammar_map_progress({ seen: c.seen, total: c.total })} ·
+                        {m.grammar_progress_mastered({ count: c.review })}
+                        {@render dueBadge(c.due)}
+                      </span>
+                    {/if}
                   </span>
-                  <span class="mt-2 block">{@render bar(c.seen, c.review, c.total)}</span>
+                  {#if !c.locked}
+                    <span class="mt-2 block">{@render bar(c.seen, c.review, c.total)}</span>
+                  {/if}
                 </summary>
 
                 <div class="space-y-3 px-3 pt-1 pb-3">
@@ -300,13 +320,18 @@
                               href="/grammar/{t.topic}"
                               class="min-w-0 truncate text-gray-800 hover:underline dark:text-gray-100"
                             >
+                              {#if t.locked}<span aria-hidden="true">🔒</span>{/if}
                               {topicTitle(t.topic)}
                             </a>
                             <span
                               class="flex shrink-0 items-center gap-2 text-xs text-gray-500 dark:text-gray-300"
                             >
-                              {m.grammar_map_progress({ seen: t.seen, total: t.total })}
-                              {@render dueBadge(t.due)}
+                              {#if t.locked}
+                                {t.total}
+                              {:else}
+                                {m.grammar_map_progress({ seen: t.seen, total: t.total })}
+                                {@render dueBadge(t.due)}
+                              {/if}
                             </span>
                           </li>
                         {/each}

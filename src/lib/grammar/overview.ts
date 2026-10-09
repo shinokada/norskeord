@@ -203,12 +203,16 @@ export function countLockedSegments(level: CEFRLevel | null = null): number {
   return count;
 }
 
-/** Where a topic card links. Fully locked topics send free users to /plus. */
+/**
+ * Where a topic card links. Fully locked topics link to the topic page too: for a free user it
+ * shows the rule's teaser, the question counts per level and the Plus button, which beats
+ * dropping them on /plus unannounced. (/my-progress/grammar links its locked rows the same
+ * way.) `isPlus` no longer changes the link; it stays in the options so callers don't change.
+ */
 export function topicHref(
   entry: TopicEntry,
   opts: { level: CEFRLevel | null; isPlus: boolean; from?: string | null }
 ): string {
-  if (entry.access === 'locked' && !opts.isPlus) return '/plus?ref=grammar-topics';
   const base = `/grammar/${entry.topic}`;
   if (!opts.level) return base;
   return `${base}?level=${opts.level}${opts.from ? `&from=${opts.from}` : ''}`;

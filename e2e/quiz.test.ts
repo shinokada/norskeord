@@ -91,7 +91,10 @@ test('free user can access /quiz and sees free category picker', async ({ page }
   await expect(
     page.getByRole('button', { name: /greetings|numbers|colors/i }).first()
   ).toBeVisible();
-  // Upsell link is visible
+  // A1 is free in full: no "N with Plus" upsell link
+  await expect(page.getByRole('link', { name: /with Plus/i })).toHaveCount(0);
+  // Above A1 only 3 categories are free, so the upsell link appears
+  await page.locator('select#quiz-level').selectOption('A2');
   await expect(page.getByRole('link', { name: /with Plus/i })).toBeVisible();
 });
 
