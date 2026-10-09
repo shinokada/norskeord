@@ -71,7 +71,7 @@ export const GET: RequestHandler = async () => {
       /^\/my-progress.*/,
       /^\/quiz.*/,
       /^\/norskproven\/.*/,
-      /^\/plus.*/
+      /^\/plus\/.+/
     ],
     processPaths: (paths) => {
       return paths.map((p) => ({

@@ -6,7 +6,7 @@ test.describe('/my-progress page — sync upsell banner', () => {
     await page.goto('/my-progress');
     const banner = page.getByText(/all A2 to C vocabulary, uttrykk and grammar/i);
     await expect(banner).toBeVisible();
-    const link = page.getByRole('link', { name: /get plus/i });
+    const link = page.getByRole('link', { name: /see plus pricing/i });
     await expect(link).toBeVisible();
     await expect(link).toHaveAttribute('href', '/plus');
   });
@@ -15,6 +15,6 @@ test.describe('/my-progress page — sync upsell banner', () => {
     await injectPlusPlan(page);
     await page.goto('/my-progress');
     await expect(page.getByText(/all A2 to C vocabulary, uttrykk and grammar/i)).not.toBeVisible();
-    await expect(page.getByRole('link', { name: /get plus/i })).not.toBeVisible();
+    await expect(page.getByRole('link', { name: /see plus pricing/i })).not.toBeVisible();
   });
 });

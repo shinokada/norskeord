@@ -15,13 +15,10 @@ test('home page shows all CEFR level cards linking to hub pages', async ({ page 
 
 test('home page level cards link to /learn/[level]', async ({ page }) => {
   await page.goto('/');
+  // Locate by href rather than a name regex: /c/i also matches unrelated links
+  // such as the header's "Pricing" link, which made the C level check flaky.
   for (const level of ['a1', 'a2', 'b1', 'b2', 'c']) {
-    await expect(
-      page
-        .getByRole('link', { name: new RegExp(level, 'i') })
-        .filter({ hasText: new RegExp(level, 'i') })
-        .first()
-    ).toHaveAttribute('href', `/learn/${level}`);
+    await expect(page.locator(`a[href="/learn/${level}"]`).first()).toBeVisible();
   }
 });
 
