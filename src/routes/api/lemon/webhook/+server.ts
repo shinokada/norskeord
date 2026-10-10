@@ -17,8 +17,11 @@ import { json } from '@sveltejs/kit';
 import { createClient } from '@supabase/supabase-js';
 import { PUBLIC_SUPABASE_URL } from '$env/static/public';
 import { SUPABASE_SERVICE_ROLE_KEY, LEMONSQUEEZY_WEBHOOK_SECRET } from '$env/static/private';
+import { LEMONSQUEEZY_VARIANT_ID, LEMONSQUEEZY_VARIANT_ID_ANNUAL } from '$env/static/private';
 import {
   verifyLemonSqueezyWebhook,
+  billingIntervalFromVariant,
+  subscriptionValidUntil,
   type LemonSqueezyWebhookPayload,
   type SubscriptionStatus
 } from '$lib/server/lemonsqueezy';
@@ -71,19 +74,29 @@ export const POST: RequestHandler = async ({ request }) => {
     case 'subscription_updated':
     case 'subscription_activated': {
       const ourStatus: SubscriptionStatus =
-        lsStatus === 'active' || lsStatus === 'on_trial' ? 'active' : 'past_due';
+        lsStatus === 'active' || lsStatus === 'on_trial'
+          ? 'active'
+          : lsStatus === 'cancelled'
+            ? 'cancelled' // LS sends subscription_updated after a cancel; don't downgrade the label to past_due
+            : lsStatus === 'expired'
+              ? 'expired'
+              : 'past_due';
       // 'unpaid' means a renewal payment failed and LS is (or has finished) dunning.
       // Lemon Squeezy can leave a subscription in this state indefinitely with no
       // ends_at set, so we must not grant Plus while status is unpaid — otherwise
       // a null valid_until would let hooks.server.ts treat access as never-expiring.
-      const plan = lsStatus === 'unpaid' ? 'free' : 'plus';
+      const plan = lsStatus === 'unpaid' || lsStatus === 'expired' ? 'free' : 'plus';
 
       const { data: applied, error } = await supabase.rpc('upsert_subscription_if_newer', {
         p_user_id: userId,
         p_plan: plan,
         p_status: ourStatus,
-        p_billing_interval: attrs.billing_interval ?? null,
-        p_valid_until: attrs.ends_at ?? null,
+        p_billing_interval: billingIntervalFromVariant(
+          attrs.variant_id,
+          LEMONSQUEEZY_VARIANT_ID,
+          LEMONSQUEEZY_VARIANT_ID_ANNUAL
+        ),
+        p_valid_until: subscriptionValidUntil(attrs),
         p_subscription_id: subscriptionId,
         p_customer_id: String(attrs.customer_id),
         p_order_id: String(attrs.order_id),
@@ -185,7 +198,7 @@ export const POST: RequestHandler = async ({ request }) => {
         p_plan: null,
         p_status: 'active' satisfies SubscriptionStatus,
         p_billing_interval: null,
-        p_valid_until: attrs.ends_at ?? null,
+        p_valid_until: subscriptionValidUntil(attrs),
         p_subscription_id: subscriptionId,
         p_customer_id: String(attrs.customer_id),
         p_order_id: String(attrs.order_id),
