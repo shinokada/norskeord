@@ -1,6 +1,7 @@
 import { fail, redirect } from '@sveltejs/kit';
 import { createSupabaseServerClient } from '$lib/server/supabase';
 import { verifyTurnstileToken } from '$lib/server/turnstile';
+import { safeNext } from '$lib/safe-next';
 import type { Actions, PageServerLoad } from './$types';
 
 const PENDING_COOKIE = 'login_pending_email';
@@ -18,7 +19,39 @@ export const load: PageServerLoad = async ({ cookies }) => {
   return { pendingEmail };
 };
 
+// Providers the `oauth` action accepts. The form value is never passed to
+// Supabase directly. Apple later; Facebook never (see the plan's decisions).
+const OAUTH_PROVIDERS = ['google'] as const;
+
 export const actions: Actions = {
+  oauth: async ({ request, cookies, url }) => {
+    const data = await request.formData();
+    const next = safeNext(data.get('next') as string | null);
+    const provider = OAUTH_PROVIDERS.find((p) => p === data.get('provider'));
+
+    if (!provider) {
+      return fail(400, { error: 'login_error_generic', next });
+    }
+
+    // Server client, so the PKCE verifier cookie is set on this response and
+    // survives the round trip to the provider (SameSite=Lax, path=/).
+    const supabase = createSupabaseServerClient(cookies);
+    const { data: oauth, error } = await supabase.auth.signInWithOAuth({
+      provider,
+      options: {
+        redirectTo: `${url.origin}/auth/callback?next=${encodeURIComponent(next)}`,
+        skipBrowserRedirect: true
+      }
+    });
+
+    if (error || !oauth?.url) {
+      console.error('[oauth] signInWithOAuth error:', error?.message);
+      return fail(500, { error: 'login_error_generic', next });
+    }
+
+    throw redirect(303, oauth.url);
+  },
+
   clearPending: async ({ cookies }) => {
     cookies.delete(PENDING_COOKIE, { path: '/auth/login' });
     return {};
@@ -28,7 +61,7 @@ export const actions: Actions = {
     const data = await request.formData();
     const email = (data.get('email') as string | null)?.trim() ?? '';
     const turnstileToken = (data.get('cf-turnstile-response') as string | null) ?? '';
-    const next = (data.get('next') as string | null) ?? '/';
+    const next = safeNext(data.get('next') as string | null);
 
     // --- Basic email validation ---
     if (!email) {
@@ -87,7 +120,7 @@ export const actions: Actions = {
     const data = await request.formData();
     const email = (data.get('email') as string | null)?.trim() ?? '';
     const token = ((data.get('token') as string | null) ?? '').replace(/\s/g, '').trim();
-    const next = (data.get('next') as string | null) ?? '/';
+    const next = safeNext(data.get('next') as string | null);
 
     if (!token || !/^\d{6}$/.test(token)) {
       return fail(400, { error: 'login_error_otp_invalid', email, next, step: 'verify' });

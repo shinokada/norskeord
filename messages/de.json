@@ -1,5 +1,7 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "login_google": "Weiter mit Google",
+  "login_or": "oder",
   "nav_plus_badge": "Preise",
   "nav_log_in": "Anmelden",
   "nav_log_out": "Abmelden",
