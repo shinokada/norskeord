@@ -1,5 +1,6 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "stats_study_all_due": "Repeter alle forfalte ({count})",
   "login_google": "Fortsett med Google",
   "login_or": "eller",
   "nav_plus_badge": "Priser",

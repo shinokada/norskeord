@@ -204,9 +204,11 @@
 <div class="mx-auto max-w-sm px-4 py-16">
   <div class="mb-8 text-center">
     <h1>{m.login_heading()}</h1>
-    <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
-      {m.login_subheading()}
-    </p>
+    {#if step === 'verify'}
+      <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
+        {m.login_subheading()}
+      </p>
+    {/if}
     <p class="mt-3 text-sm font-medium text-green-600 dark:text-green-400">
       {m.login_free_no_cc()}
     </p>
@@ -325,6 +327,10 @@
       <span class="text-sm text-gray-500 dark:text-gray-400">{m.login_or()}</span>
       <span class="h-px flex-1 bg-gray-200 dark:bg-gray-700"></span>
     </div>
+
+    <p class="mb-4 text-center text-base text-gray-600 dark:text-gray-300">
+      {m.login_subheading()}
+    </p>
 
     <form onsubmit={handleSubmit} novalidate>
       <div

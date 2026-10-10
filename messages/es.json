@@ -1,5 +1,6 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "stats_study_all_due": "Estudiar todo lo pendiente ({count})",
   "login_google": "Continuar con Google",
   "login_or": "o",
   "nav_plus_badge": "Precios",
