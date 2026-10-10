@@ -18,6 +18,8 @@ declare global {
 
 export const UPGRADE_CLICK_EVENT = 'upgrade_click';
 export const LOGIN_EVENT = 'login';
+/** The "Already Plus? Log in" link on a locked category page (locked-teaser-social-login.md, Phase 3). */
+export const LOCKED_LOGIN_CLICK_EVENT = 'locked_login_click';
 /** localStorage key holding the last user id seen on this device ('' when signed out). */
 export const SIGNED_IN_KEY = 'ga-last-user-id';
 

@@ -92,11 +92,14 @@ test('Plus member C academic flashcard page loads and shows cards', async ({ pag
   await expect(page.getByRole('button', { name: /good|bra/i })).toBeVisible();
 });
 
-// free user is redirected away from a Plus-only C category (linguistics is Plus-only)
-test('free user is redirected from C linguistics to /plus', async ({ page }) => {
+// A free user on a Plus-only C category (linguistics) sees the locked teaser, not a
+// redirect (locked-teaser-social-login.md, Phase 3). Leak and button checks are in
+// e2e/teaser.test.ts.
+test('free user sees the locked teaser on C linguistics, not a redirect', async ({ page }) => {
   await page.goto('/c/linguistics');
-  await page.waitForURL(/\/plus/, { timeout: 10000 });
-  await expect(page).toHaveURL(/\/plus/);
+  await expect(page).toHaveURL(/\/c\/linguistics/);
+  await expect(page.getByRole('img', { name: /preview of the first card/i })).toBeVisible();
+  await expect(page.locator('a[href^="/plus?ref=teaser-vocab"]')).toBeVisible();
 });
 
 // Phase 9 (ai-docs/implementation/uttrykk-category.md): the virtual
@@ -179,12 +182,17 @@ test('learn/c hub Uttrykk section links to c/[category] pages, not /c/uttrykk', 
   await expect(categoryPills.first()).toBeVisible();
 
   // Free user: a locked C category (e.g. linguistics is Plus-only, see
-  // config.ts PLUS_CATEGORIES) should render as a dimmed pill linking to
-  // /plus, not be hidden or silently route to an unlocked category.
+  // config.ts PLUS_CATEGORIES) should render as a dimmed pill that opens the
+  // category's teaser page with its ref kept (locked-teaser-social-login.md,
+  // Phase 5), not be hidden or silently route to an unlocked category.
   const lockedCategoryPills = uttrykkSection
-    .locator('a[href="/plus?ref=hub-uttrykk-badge"]')
+    .locator('a[href*="ref=hub-uttrykk-badge"]')
     .filter({ hasText: '🔒' });
   await expect(lockedCategoryPills.first()).toBeVisible();
+  await expect(lockedCategoryPills.first()).toHaveAttribute(
+    'href',
+    /^\/c\/[^?]+\?from=uttrykk&ref=hub-uttrykk-badge$/
+  );
 });
 
 test('about page has expected h1', async ({ page }) => {

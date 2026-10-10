@@ -115,6 +115,37 @@ export async function injectPlusPlan(page: Page) {
   });
 }
 
+/**
+ * A signed-in user on the free plan: patches `user` into the SSR HTML but leaves
+ * `plan` alone, so a locked page still renders the teaser. Unlike the helpers
+ * above it does not set the Norwegian locale, so assertions use English copy.
+ * Only the HTML is patched: the server still sees no real session.
+ */
+export async function injectLoggedInFreeUser(page: Page) {
+  await page.route('**', async (route) => {
+    const request = route.request();
+    if (request.resourceType() === 'document') {
+      try {
+        const response = await fetchWithRetry(route);
+        const body = await response.text();
+        const patched = body.replace(
+          /user:null/,
+          'user:{id:"00000000-0000-0000-0000-000000000001",email:"test@example.com",app_metadata:{},user_metadata:{},aud:"authenticated",created_at:"2024-01-01T00:00:00Z"}'
+        );
+        await route.fulfill({
+          status: response.status(),
+          headers: response.headers(),
+          body: patched
+        });
+      } catch {
+        await route.continue();
+      }
+      return;
+    }
+    await route.continue();
+  });
+}
+
 export async function injectLoggedInUser(page: Page) {
   await setNorwegianLocale(page);
   await page.route('**', async (route) => {

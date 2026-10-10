@@ -21,6 +21,7 @@ describe('isCacheExcluded', () => {
     '/auth/login',
     '/auth/sync',
     '/learn/a1',
+    '/plus/success',
     '/grammar/chapter/x',
     '/quiz',
     '/quiz/a1/greetings',

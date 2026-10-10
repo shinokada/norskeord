@@ -312,9 +312,9 @@ test('the two senses of `gang (en)` are separate results with different ids', as
     const rows = page.getByRole('option').filter({ hasText: /^\s*gang \(en\)/ });
     await expect(rows).toHaveCount(2, { timeout: 10000 });
     // The result links to /a2/home?id=..., which is Plus-only for a free session
-    // (the e2e suite has no real Plus session), so the page redirects to /plus.
-    // The id is still present in the navigation or its __data.json request, so
-    // read it from the request instead of waiting for the final URL.
+    // (the e2e suite has no real Plus session), so the page shows the locked teaser
+    // (a 200 at the same URL, no longer a redirect to /plus). The id is in that
+    // navigation request either way, so read it from the request.
     const [request] = await Promise.all([
       page.waitForRequest((req) => /[?&]id=w-\d{6}/.test(req.url()), { timeout: 10000 }),
       rows.nth(index).click()

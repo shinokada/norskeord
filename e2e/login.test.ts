@@ -84,6 +84,17 @@ test.describe('/auth/login page', () => {
     await expect(btn).toBeEnabled();
   });
 
+  test('Google button renders and its form targets the oauth action', async ({ page }) => {
+    // Real Google cannot run in e2e: check the button and where its form posts.
+    // It must stay a button, and its label must not match /send code/i (the OTP
+    // tests above find that button by name).
+    const form = page.locator('form[action="?/oauth"]');
+    await expect(form).toHaveAttribute('method', /post/i);
+    await expect(form.getByRole('button', { name: /continue with google/i })).toBeVisible();
+    await expect(form.locator('input[name="next"]')).toHaveCount(1);
+    await expect(page.getByRole('button', { name: /send code/i })).toHaveCount(1);
+  });
+
   test('shows error when submitting empty email', async ({ page }) => {
     // Form is now a server action — wait for the POST round-trip to complete.
     await Promise.all([

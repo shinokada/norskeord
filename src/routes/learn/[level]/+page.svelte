@@ -197,7 +197,9 @@
       {#each visibleVocabCategories as cat (cat.slug)}
         {@const locked = !isPlus && cat.locked}
         <a
-          href={locked ? '/plus?ref=hub-vocab-badge' : `/${data.level}/${cat.slug}`}
+          href={locked
+            ? `/${data.level}/${cat.slug}?ref=hub-vocab-badge`
+            : `/${data.level}/${cat.slug}`}
           class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
             {locked
             ? 'border-gray-200 bg-white text-gray-500 opacity-60 dark:border-gray-700 dark:bg-indigo-950/40 dark:text-gray-400'
@@ -254,7 +256,7 @@
                 !isPlus && !isFreeUttrykkTheme(data.levelUpper as UttrykkThemeLevel, t.theme)}
               <a
                 href={themeLocked
-                  ? '/plus?ref=hub-uttrykk-theme'
+                  ? `/${data.level}/uttrykk?theme=${t.theme}&ref=hub-uttrykk-theme`
                   : `/${data.level}/uttrykk?theme=${t.theme}`}
                 class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
                   {themeLocked
@@ -274,7 +276,7 @@
                 !isFreeUttrykkTheme(data.levelUpper as UttrykkThemeLevel, UTTRYKK_OTHERS_THEME)}
               <a
                 href={othersLocked
-                  ? '/plus?ref=hub-uttrykk-theme'
+                  ? `/${data.level}/uttrykk?theme=${UTTRYKK_OTHERS_THEME}&ref=hub-uttrykk-theme`
                   : `/${data.level}/uttrykk?theme=${UTTRYKK_OTHERS_THEME}`}
                 class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
                   {othersLocked
@@ -313,7 +315,7 @@
             {@const catLocked = cat ? !isPlus && cat.locked : false}
             <a
               href={catLocked
-                ? '/plus?ref=hub-uttrykk-badge'
+                ? `/${data.level}/${t.theme}?from=uttrykk&ref=hub-uttrykk-badge`
                 : `/${data.level}/${t.theme}?from=uttrykk`}
               class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
                 {catLocked
