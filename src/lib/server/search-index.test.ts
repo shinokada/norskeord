@@ -1,5 +1,23 @@
 import { describe, it, expect } from 'vitest';
-import { buildSearchEntries } from './search-index';
+import { buildSearchEntries, hrefFor } from './search-index';
+
+describe('hrefFor', () => {
+  it('opens the category deck for vocab at every level', () => {
+    expect(hrefFor('vocab', 'A1', 'school')).toBe('/a1/school');
+    expect(hrefFor('vocab', 'C', 'school')).toBe('/c/school');
+  });
+
+  it('opens the uttrykk page filtered by theme for A1–B2 expressions', () => {
+    expect(hrefFor('uttrykk', 'A1', 'greetings')).toBe('/a1/uttrykk?theme=greetings');
+    expect(hrefFor('uttrykk', 'B2', 'work')).toBe('/b2/uttrykk?theme=work');
+  });
+
+  it('opens the merged category page for C expressions', () => {
+    expect(hrefFor('uttrykk', 'C', 'interpersonal-conflict')).toBe(
+      '/c/interpersonal-conflict?from=uttrykk'
+    );
+  });
+});
 
 describe('buildSearchEntries', () => {
   const rows = [
@@ -65,5 +83,18 @@ describe('buildSearchEntries', () => {
 
   it('returns an empty index for no files', () => {
     expect(buildSearchEntries([])).toEqual([]);
+  });
+
+  it('gives expression entries the uttrykk route and vocab entries the category route', () => {
+    const index = buildSearchEntries([
+      { source: 'vocab', rows: [{ norsk: 'bok', level: 'A1', category: 'school' }] },
+      { source: 'uttrykk', rows: [{ norsk: 'hei', level: 'A1', category: 'greetings' }] },
+      { source: 'uttrykk', rows: [{ norsk: 'x', level: 'C', category: 'idioms' }] }
+    ]);
+    expect(index.map((e) => e.href)).toEqual([
+      '/a1/school',
+      '/a1/uttrykk?theme=greetings',
+      '/c/idioms?from=uttrykk'
+    ]);
   });
 });

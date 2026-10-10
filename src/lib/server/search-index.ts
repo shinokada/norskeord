@@ -25,6 +25,18 @@ function str(v: unknown): string | undefined {
 }
 
 /**
+ * Route a result opens. A1–B2 expressions live on the /{level}/uttrykk page
+ * filtered by ?theme=; C has no uttrykk route (its expressions are merged into
+ * /c/{category}, and ?from=uttrykk selects the expression breadcrumb and nav).
+ * Vocab always opens /{level}/{category}.
+ */
+export function hrefFor(source: SearchSource, level: string, category: string): string {
+  const l = level.toLowerCase();
+  if (source !== 'uttrykk') return `/${l}/${category}`;
+  return l === 'c' ? `/c/${category}?from=uttrykk` : `/${l}/uttrykk?theme=${category}`;
+}
+
+/**
  * Pure mapping from raw data rows to SearchEntry[]. Kept separate from the
  * loader so it can be unit-tested without the data submodule.
  * `id` is a positional key unique within one build; the stable id is `entryId`.
@@ -57,7 +69,7 @@ export function buildSearchEntries(files: SourceRows[]): SearchEntry[] {
         category,
         part: str(e.part),
         source,
-        href: `/${level.toLowerCase()}/${category}`
+        href: hrefFor(source, level, category)
       });
     }
   }
