@@ -1,7 +1,41 @@
 import { describe, it, expect } from 'vitest';
-import { successRedirectUrl, postPaymentDestination, DEFAULT_POST_PAYMENT } from './post-payment';
+import {
+  successRedirectUrl,
+  successReturnPath,
+  postPaymentDestination,
+  DEFAULT_POST_PAYMENT
+} from './post-payment';
 
 const ORIGIN = 'https://norskeord.no';
+
+describe('successReturnPath', () => {
+  it('keeps a safe next, encoded', () => {
+    expect(successReturnPath('/a2/transport')).toBe('/plus/success?next=%2Fa2%2Ftransport');
+    expect(successReturnPath('/a2/transport?x=1')).toBe(
+      '/plus/success?next=%2Fa2%2Ftransport%3Fx%3D1'
+    );
+  });
+
+  it('keeps a next that equals the default destination', () => {
+    // The old route compared against the default and dropped this; it is a real next.
+    expect(successReturnPath(DEFAULT_POST_PAYMENT)).toBe('/plus/success?next=%2Fa1%2Fgreetings');
+  });
+
+  it('drops a missing, non-string, bare "/" or unsafe next', () => {
+    for (const bad of [
+      undefined,
+      null,
+      42,
+      '',
+      '/',
+      '//evil.com',
+      'https://evil.com',
+      '/\\evil.com'
+    ]) {
+      expect(successReturnPath(bad)).toBe('/plus/success');
+    }
+  });
+});
 
 describe('successRedirectUrl', () => {
   it('keeps a safe next, encoded', () => {
