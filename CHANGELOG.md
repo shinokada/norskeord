@@ -1,5 +1,15 @@
 # norske-flashcard
 
+## 2.97.1
+
+### Patch Changes
+
+- - **Subscription Updates**
+    - Subscription plans now reflect the monthly or annual plan associated with the selected variant.
+    - When an end date is unavailable, subscription access dates use the renewal date when provided.
+    - Cancelled and expired subscriptions now show their corresponding statuses. Unpaid and expired subscriptions are assigned the free plan.
+    - Subscriptions without a recognized plan variant or available end and renewal dates are handled without assuming a value.
+
 ## 2.97.0
 
 ### Minor Changes
