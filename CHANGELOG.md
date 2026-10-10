@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.95.0
+
+### Minor Changes
+
+- - **New Features**
+    - Plus users can search with localized results and source and level filters.
+    - Search begins after at least two characters are entered.
+    - Search requests are limited to 20 per minute, with a notice when the limit is reached.
+  - **Bug Fixes**
+    - Search status and error messages now describe search availability rather than index loading.
+  - **Documentation**
+    - Updated setup and deployment guidance to reflect server-side search.
+
 ## 2.94.0
 
 ### Minor Changes
