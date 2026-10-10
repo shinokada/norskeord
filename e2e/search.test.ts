@@ -1,5 +1,116 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type Page } from '@playwright/test';
 import { injectPlusPlan, setNorwegianLocale } from './helpers.js';
+
+// ---------------------------------------------------------------------------
+// /api/search is Plus-only on the server, but the e2e suite only fakes Plus on
+// the client (see injectPlusPlan), so the real endpoint would answer 403.
+// These tests mock the endpoint and assert on the requests the modal makes.
+// Call mockSearchApi AFTER injectPlusPlan: later page.route handlers win.
+// ---------------------------------------------------------------------------
+
+const SEARCH_API = /\/api\/search(\?|$)/;
+const OLD_INDEX = /\/data\/search-index\.json/;
+
+type FixtureResult = {
+  id: string;
+  entryId: string;
+  sense?: string;
+  norsk: string;
+  lemma: string;
+  translation: string;
+  example: string;
+  level: string;
+  category: string;
+  source: 'vocab' | 'uttrykk';
+  href: string;
+};
+
+function resultsFor(q: string): FixtureResult[] {
+  if (q.startsWith('hei')) {
+    return [
+      {
+        id: 'vocab-a1-00001',
+        entryId: 'w-000001',
+        norsk: 'hei',
+        lemma: 'hei',
+        translation: 'hello',
+        example: 'Hei! Hvordan g\u00e5r det?',
+        level: 'A1',
+        category: 'greetings',
+        source: 'vocab',
+        href: '/a1/greetings'
+      }
+    ];
+  }
+  if (q.startsWith('gang')) {
+    return [
+      {
+        id: 'vocab-a2-00010',
+        entryId: 'w-000010',
+        sense: 'walk',
+        norsk: 'gang (en)',
+        lemma: 'gang',
+        translation: 'walk',
+        example: 'Vi tok en gang rundt vannet.',
+        level: 'A2',
+        category: 'home',
+        source: 'vocab',
+        href: '/a2/home'
+      },
+      {
+        id: 'vocab-a2-00011',
+        entryId: 'w-000011',
+        sense: 'time',
+        norsk: 'gang (en)',
+        lemma: 'gang',
+        translation: 'time, occasion',
+        example: 'Jeg har v\u00e6rt der \u00e9n gang.',
+        level: 'A2',
+        category: 'home',
+        source: 'vocab',
+        href: '/a2/home'
+      },
+      {
+        id: 'vocab-a2-00012',
+        entryId: 'w-000012',
+        norsk: 'inngang (en)',
+        lemma: 'inngang',
+        translation: 'entrance',
+        example: 'Vi m\u00f8tes ved inngangen.',
+        level: 'A2',
+        category: 'home',
+        source: 'vocab',
+        href: '/a2/home'
+      }
+    ];
+  }
+  return [];
+}
+
+/** Mocks /api/search and returns the list of request URLs it has received. */
+async function mockSearchApi(page: Page): Promise<string[]> {
+  const calls: string[] = [];
+  await page.route(SEARCH_API, async (route) => {
+    const url = route.request().url();
+    calls.push(url);
+    const q = new URL(url).searchParams.get('q') ?? '';
+    await route.fulfill({
+      status: 200,
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'private, no-store' },
+      body: JSON.stringify({ results: resultsFor(q) })
+    });
+  });
+  return calls;
+}
+
+/** Records any request to the removed public index file. */
+function trackOldIndex(page: Page): string[] {
+  const hits: string[] = [];
+  page.on('request', (req) => {
+    if (OLD_INDEX.test(req.url())) hits.push(req.url());
+  });
+  return hits;
+}
 
 // ---------------------------------------------------------------------------
 // Free user — search button is NOT visible (Plus-only feature)
@@ -17,6 +128,22 @@ test('free user Cmd/Ctrl+K does not open search modal', async ({ page }) => {
   await page.keyboard.press('Meta+k');
   // Modal must not appear for free users
   await expect(page.getByRole('dialog')).not.toBeVisible();
+});
+
+test('free user never requests /api/search or the old search index', async ({ page }) => {
+  await setNorwegianLocale(page);
+  const searchCalls: string[] = [];
+  page.on('request', (req) => {
+    if (SEARCH_API.test(req.url())) searchCalls.push(req.url());
+  });
+  const oldIndexHits = trackOldIndex(page);
+
+  await page.goto('/');
+  await page.keyboard.press('Meta+k');
+  await page.waitForTimeout(500);
+
+  expect(searchCalls).toHaveLength(0);
+  expect(oldIndexHits).toHaveLength(0);
 });
 
 // ---------------------------------------------------------------------------
@@ -76,77 +203,87 @@ test('clicking backdrop closes the search modal', async ({ page }) => {
 
 test('typing a query shows results', async ({ page }) => {
   await injectPlusPlan(page);
+  await mockSearchApi(page);
   await page.goto('/');
   await page.getByTestId('search-button').click();
   await page.getByRole('searchbox').pressSequentially('hei');
-  // Wait for debounce (150 ms) + results to render. Use an assertion-level
-  // timeout instead of a fixed sleep so this doesn't flake under load when
-  // run alongside the full suite (parallel workers sharing one server).
+  // Wait for debounce (250 ms) + the response. Use an assertion-level
+  // timeout instead of a fixed sleep so this doesn't flake under load.
   await expect(page.getByRole('option').first()).toBeVisible({ timeout: 10000 });
 });
 
-test('short query (1 char) shows no results', async ({ page }) => {
+test('short query (1 char) makes no request and shows no results', async ({ page }) => {
   await injectPlusPlan(page);
+  const calls = await mockSearchApi(page);
   await page.goto('/');
   await page.getByTestId('search-button').click();
   await page.getByRole('searchbox').fill('h');
-  await page.waitForTimeout(300);
-  await expect(page.getByRole('option')).toHaveCount(0);
-});
-
-test('network request to /data/search-index.json is made on first open', async ({ page }) => {
-  await injectPlusPlan(page);
-
-  const indexRequests: string[] = [];
-  page.on('request', (req) => {
-    if (req.url().includes('/data/search-index.json')) {
-      indexRequests.push(req.url());
-    }
-  });
-
-  await page.goto('/');
-  await page.getByTestId('search-button').click();
-  // Wait for index to load
-  await expect(page.getByRole('searchbox')).toBeVisible();
   await page.waitForTimeout(500);
-
-  expect(indexRequests.length).toBeGreaterThan(0);
+  await expect(page.getByRole('option')).toHaveCount(0);
+  expect(calls).toHaveLength(0);
 });
 
-test('second modal open does NOT re-fetch the search index', async ({ page }) => {
+test('searches go to /api/search with q, source, level and locale, never the old index', async ({
+  page
+}) => {
   await injectPlusPlan(page);
-
-  let fetchCount = 0;
-  page.on('request', (req) => {
-    if (req.url().includes('/data/search-index.json')) fetchCount++;
-  });
+  const calls = await mockSearchApi(page);
+  const oldIndexHits = trackOldIndex(page);
 
   await page.goto('/');
-
-  // First open — fetches index
   await page.getByTestId('search-button').click();
-  await expect(page.getByRole('searchbox')).toBeVisible();
-  // Wait long enough for the fetch to complete and cached to be set
-  await page.waitForTimeout(1000);
-  await page.keyboard.press('Escape');
+  await page.getByRole('searchbox').pressSequentially('hei');
+  await expect(page.getByRole('option').first()).toBeVisible({ timeout: 10000 });
 
-  // Second open — should NOT fetch again
+  expect(calls.length).toBeGreaterThan(0);
+  const params = new URL(calls[calls.length - 1]).searchParams;
+  expect(params.get('q')).toBe('hei');
+  expect(params.get('source')).toBe('all');
+  expect(params.get('level')).toBe('all');
+  expect(params.get('locale')).toBe('nb');
+  expect(oldIndexHits).toHaveLength(0);
+});
+
+test('a level filter click re-searches with that level', async ({ page }) => {
+  await injectPlusPlan(page);
+  const calls = await mockSearchApi(page);
+  await page.goto('/');
   await page.getByTestId('search-button').click();
-  await expect(page.getByRole('searchbox')).toBeVisible();
-  await page.waitForTimeout(300);
+  await page.getByRole('searchbox').pressSequentially('hei');
+  await expect(page.getByRole('option').first()).toBeVisible({ timeout: 10000 });
 
-  expect(fetchCount).toBe(1);
+  await page.getByRole('button', { name: 'B1', exact: true }).click();
+  await expect
+    .poll(() => calls.some((u) => new URL(u).searchParams.get('level') === 'B1'))
+    .toBe(true);
+});
+
+test('a 429 shows the rate-limit message', async ({ page }) => {
+  await injectPlusPlan(page);
+  await page.route(SEARCH_API, (route) =>
+    route.fulfill({
+      status: 429,
+      headers: { 'Content-Type': 'application/json', 'Retry-After': '30' },
+      body: JSON.stringify({ error: 'rate_limited' })
+    })
+  );
+  await page.goto('/');
+  await page.getByTestId('search-button').click();
+  await page.getByRole('searchbox').pressSequentially('hei');
+  await expect(page.getByText('For mange s\u00f8k')).toBeVisible({ timeout: 10000 });
+  await expect(page.getByRole('option')).toHaveCount(0);
 });
 
 // ---------------------------------------------------------------------------
 // Deep link: result click carries the exact entry id (vocab-multiple-senses,
-// Phase 2b). Works against real data.
+// Phase 2b). Results come from the mocked endpoint above.
 // ---------------------------------------------------------------------------
 
 test('clicking a search result navigates with id=w-NNNNNN and word= in the URL', async ({
   page
 }) => {
   await injectPlusPlan(page);
+  await mockSearchApi(page);
   await page.goto('/');
   await page.getByTestId('search-button').click();
   await page.getByRole('searchbox').pressSequentially('hei');
@@ -164,6 +301,7 @@ test('the two senses of `gang (en)` are separate results with different ids', as
   test.setTimeout(60000);
   const ids = new Set<string>();
   await injectPlusPlan(page);
+  await mockSearchApi(page);
 
   for (const index of [0, 1]) {
     await page.goto('/');

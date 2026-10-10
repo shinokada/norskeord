@@ -10,7 +10,7 @@ export default defineConfig({
   // workers: process.env.CI ? 2 : 4,
   workers: 2,
   webServer: {
-    command: 'npm run search:index && npm run build && npm run preview',
+    command: 'npm run build && npm run preview',
     port: 4173,
     env: {
       ...process.env,
