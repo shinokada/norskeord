@@ -92,6 +92,14 @@
       the law requires. When you ask us to delete your account, we delete your personal data, except
       what we must keep by law.
     </p>
+    <p>
+      Technical and usage data (such as IP address, browser information and pages visited) is kept
+      only as long as needed for security, abuse prevention and usage statistics. How long exactly
+      depends on the retention settings of the providers that process it, such as our hosting and
+      analytics providers, and it is not kept longer than those purposes require. In Google
+      Analytics, user-level and event-level data is kept for 2 months, after which it is deleted
+      automatically. Aggregated reports may be kept longer.
+    </p>
 
     <h2 class="mt-8">Your rights</h2>
     <p>
