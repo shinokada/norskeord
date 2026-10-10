@@ -11,7 +11,9 @@ const { mockRpc, mockVerify } = vi.hoisted(() => ({
 
 vi.mock('$env/static/private', () => ({
   SUPABASE_SERVICE_ROLE_KEY: 'test-service-role-key',
-  LEMONSQUEEZY_WEBHOOK_SECRET: 'test-webhook-secret'
+  LEMONSQUEEZY_WEBHOOK_SECRET: 'test-webhook-secret',
+  LEMONSQUEEZY_VARIANT_ID: '333',
+  LEMONSQUEEZY_VARIANT_ID_ANNUAL: '444'
 }));
 
 vi.mock('$env/static/public', () => ({
@@ -46,10 +48,12 @@ function makePayload(
       attributes: {
         order_id: 111,
         customer_id: 222,
-        variant_id: 333,
+        variant_id: 333, // monthly variant in the env mock above
         status: 'active',
+        // Real LS payloads: ends_at is null while active, renews_at holds the
+        // period end, and there is no billing_interval attribute.
         ends_at: null,
-        billing_interval: 'month',
+        renews_at: '2026-02-02T00:00:00.000Z',
         updated_at: '2026-01-02T00:00:00.000Z',
         ...attrsOverrides
       }
@@ -126,7 +130,7 @@ describe('POST /api/lemon/webhook', () => {
           p_plan: 'plus',
           p_status: 'active',
           p_billing_interval: 'month',
-          p_valid_until: null,
+          p_valid_until: '2026-02-02T00:00:00.000Z',
           p_subscription_id: 'sub-1',
           p_customer_id: '222',
           p_order_id: '111',
@@ -136,6 +140,48 @@ describe('POST /api/lemon/webhook', () => {
     }
   );
 
+  it('subscription_created: derives billing_interval year from the annual variant', async () => {
+    await POST({
+      request: makeRequest(makePayload('subscription_created', { variant_id: 444 }))
+    } as never);
+    expect(mockRpc).toHaveBeenCalledWith(
+      'upsert_subscription_if_newer',
+      expect.objectContaining({ p_billing_interval: 'year' })
+    );
+  });
+
+  it('subscription_created: passes null billing_interval for an unknown variant', async () => {
+    await POST({
+      request: makeRequest(makePayload('subscription_created', { variant_id: 999 }))
+    } as never);
+    expect(mockRpc).toHaveBeenCalledWith(
+      'upsert_subscription_if_newer',
+      expect.objectContaining({ p_billing_interval: null })
+    );
+  });
+
+  it('subscription_updated: ends_at takes precedence over renews_at for valid_until', async () => {
+    await POST({
+      request: makeRequest(
+        makePayload('subscription_updated', { ends_at: '2026-01-20T00:00:00.000Z' })
+      )
+    } as never);
+    expect(mockRpc).toHaveBeenCalledWith(
+      'upsert_subscription_if_newer',
+      expect.objectContaining({ p_valid_until: '2026-01-20T00:00:00.000Z' })
+    );
+  });
+
+  it('subscription_created: valid_until is null when both ends_at and renews_at are missing', async () => {
+    await POST({
+      request: makeRequest(makePayload('subscription_created', { renews_at: null }))
+    } as never);
+    expect(mockRpc).toHaveBeenCalledWith(
+      'upsert_subscription_if_newer',
+      expect.objectContaining({ p_valid_until: null })
+    );
+  });
+
   it('subscription_created: treats on_trial as active', async () => {
     await POST({
       request: makeRequest(makePayload('subscription_created', { status: 'on_trial' }))
@@ -143,6 +189,40 @@ describe('POST /api/lemon/webhook', () => {
     expect(mockRpc).toHaveBeenCalledWith(
       'upsert_subscription_if_newer',
       expect.objectContaining({ p_plan: 'plus', p_status: 'active' })
+    );
+  });
+
+  it('subscription_updated: keeps status cancelled (not past_due) and plan plus until ends_at', async () => {
+    await POST({
+      request: makeRequest(
+        makePayload('subscription_updated', {
+          status: 'cancelled',
+          ends_at: '2026-02-01T00:00:00.000Z'
+        })
+      )
+    } as never);
+    expect(mockRpc).toHaveBeenCalledWith(
+      'upsert_subscription_if_newer',
+      expect.objectContaining({
+        p_plan: 'plus',
+        p_status: 'cancelled',
+        p_valid_until: '2026-02-01T00:00:00.000Z'
+      })
+    );
+  });
+
+  it('subscription_updated: maps expired status to plan free', async () => {
+    await POST({
+      request: makeRequest(
+        makePayload('subscription_updated', {
+          status: 'expired',
+          ends_at: '2026-02-01T00:00:00.000Z'
+        })
+      )
+    } as never);
+    expect(mockRpc).toHaveBeenCalledWith(
+      'upsert_subscription_if_newer',
+      expect.objectContaining({ p_plan: 'free', p_status: 'expired' })
     );
   });
 
@@ -266,6 +346,19 @@ describe('POST /api/lemon/webhook', () => {
       );
     }
   );
+
+  it('subscription_resumed: falls back to renews_at when ends_at is null', async () => {
+    await POST({
+      request: makeRequest(makePayload('subscription_resumed'))
+    } as never);
+    expect(mockRpc).toHaveBeenCalledWith(
+      'upsert_subscription_if_newer',
+      expect.objectContaining({
+        p_status: 'active',
+        p_valid_until: '2026-02-02T00:00:00.000Z'
+      })
+    );
+  });
 
   // ── Unhandled events ──────────────────────────────────────────────────────
 
