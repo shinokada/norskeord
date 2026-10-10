@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.96.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added Google sign-in alongside the existing email login option.
+    - Added Privacy Policy and Terms of Service pages, covering data practices, accounts, billing, and service terms.
+  - **Bug Fixes**
+    - Improved handling of sign-in sessions and return destinations, including when authentication uses multiple cookies.
+    - Limited public edge caching to eligible pages and preserved existing cache settings.
+
 ## 2.95.0
 
 ### Minor Changes
