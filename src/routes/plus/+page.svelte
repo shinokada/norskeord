@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import { page } from '$app/state';
   import * as m from '$lib/paraglide/messages.js';
+  import { safeNext } from '$lib/safe-next';
 
   // Server-provided auth/plan state
   let { data } = $props<{ data: { isLoggedIn: boolean; isPlus: boolean } }>();
@@ -12,6 +13,24 @@
   // Checkout state
   let checkoutLoading = $state(false);
   let checkoutError = $state('');
+
+  // Where the visitor came from (e.g. a locked category), kept through login and
+  // payment. Only a same-origin path survives; '' means there is none.
+  const nextPath = $derived(safeNext(page.url.searchParams.get('next'), ''));
+
+  // The page was opened to start checkout right away (after login, `?checkout=1`):
+  // cover it with a spinner so the visitor never sees the pricing page flash by.
+  // Rendered on the server too, so there is no flash. An error brings the page back.
+  const autoCheckout = $derived(
+    data.isLoggedIn && !data.isPlus && page.url.searchParams.get('checkout') === '1'
+  );
+  const showRedirecting = $derived(autoCheckout && !checkoutError);
+
+  // The /plus URL that restarts checkout after login, with the interval and `next`.
+  function returnUrl(): string {
+    const base = `/plus?checkout=1&interval=${billingInterval}`;
+    return nextPath ? `${base}&next=${encodeURIComponent(nextPath)}` : base;
+  }
 
   // Auto-trigger checkout if redirected here after login with ?checkout=1
   // Also treat ?checkout=1 on the page itself (nav button) — if already logged in, go straight to checkout.
@@ -25,11 +44,8 @@
     }
   });
 
-  // Build the login URL carrying checkout intent (interval included)
-  const loginHref = $derived.by(() => {
-    const next = encodeURIComponent(`/plus?checkout=1&interval=${billingInterval}`);
-    return `/auth/login?next=${next}`;
-  });
+  // Build the login URL carrying checkout intent (interval and the page to return to)
+  const loginHref = $derived.by(() => `/auth/login?next=${encodeURIComponent(returnUrl())}`);
 
   type TableCell = { value: string; yes: boolean; soon?: boolean };
   type TableRow = { feature: string; free: TableCell; pro: TableCell };
@@ -147,13 +163,13 @@
       const res = await fetch('/api/lemon/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ interval: billingInterval })
+        body: JSON.stringify({ interval: billingInterval, next: nextPath || undefined })
       });
       const result = await res.json();
 
       if (!res.ok) {
         if (result.error === 'login_required') {
-          window.location.href = `/auth/login?next=${encodeURIComponent(`/plus?checkout=1&interval=${billingInterval}`)}`;
+          window.location.href = `/auth/login?next=${encodeURIComponent(returnUrl())}`;
           return;
         }
         checkoutError = m.checkout_error_generic();
@@ -168,6 +184,20 @@
     }
   }
 </script>
+
+{#if showRedirecting}
+  <div
+    class="fixed inset-0 z-50 flex flex-col items-center justify-center gap-4 bg-white dark:bg-indigo-950"
+    role="status"
+    aria-live="polite"
+  >
+    <span
+      class="h-10 w-10 animate-spin rounded-full border-4 border-indigo-600 border-t-transparent"
+      aria-hidden="true"
+    ></span>
+    <p class="text-base font-medium text-gray-700 dark:text-gray-200">{m.plus_activating()}</p>
+  </div>
+{/if}
 
 <div class="mx-auto max-w-4xl px-4 py-10 text-left">
   <!-- ── Hero ──────────────────────────────────────────────────────────────────── -->

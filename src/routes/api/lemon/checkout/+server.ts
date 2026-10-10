@@ -2,8 +2,10 @@
  * POST /api/lemon/checkout
  *
  * Creates a Lemon Squeezy checkout URL for the authenticated user.
- * Accepts an optional JSON body: { interval: 'month' | 'year' }
+ * Accepts an optional JSON body: { interval: 'month' | 'year', next?: string }
  * Defaults to 'month' if not provided or invalid.
+ * `next` is a same-origin path (checked with safeNext) the buyer returns to after
+ * payment: the checkout redirects to /plus/success?next=<next>.
  * Returns JSON { checkoutUrl: string } on success.
  *
  * Errors:
@@ -18,6 +20,7 @@ import {
   LEMONSQUEEZY_VARIANT_ID_ANNUAL
 } from '$env/static/private';
 import type { RequestHandler } from './$types';
+import { successRedirectUrl } from '$lib/post-payment';
 
 export const POST: RequestHandler = async ({ request, locals, url }) => {
   // 1. Require auth
@@ -25,11 +28,13 @@ export const POST: RequestHandler = async ({ request, locals, url }) => {
     return json({ error: 'login_required' }, { status: 401 });
   }
 
-  // 2. Read optional interval from request body (default: 'month')
+  // 2. Read optional interval and next from request body (default: monthly, no next)
   let interval: 'month' | 'year' = 'month';
+  let rawNext: unknown = null;
   try {
     const body = await request.json();
     if (body?.interval === 'year') interval = 'year';
+    rawNext = body?.next;
   } catch {
     // no body or non-JSON — fall back to monthly
   }
@@ -59,7 +64,7 @@ export const POST: RequestHandler = async ({ request, locals, url }) => {
               email: locals.user.email
             },
             product_options: {
-              redirect_url: `${origin}/plus/success`
+              redirect_url: successRedirectUrl(origin, rawNext)
             }
           },
           relationships: {

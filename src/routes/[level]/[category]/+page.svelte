@@ -3,10 +3,14 @@
   import { languageStore } from '$lib/stores/language.svelte';
   import { categoryLabel, partitionUttrykkThemes, UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages.js';
+  import LockedTeaser from '$lib/components/LockedTeaser.svelte';
 
   let { data } = $props();
 
-  const learningResourceSchemaJson = $derived(JSON.stringify(data.learningResourceSchema));
+  // Null on a locked page: the teaser must not advertise a free LearningResource.
+  const learningResourceSchemaJson = $derived(
+    data.learningResourceSchema ? JSON.stringify(data.learningResourceSchema) : ''
+  );
 
   /**
    * Phase 2/3 (ai-docs/implementation/quiz-i18n-and-categories.md): label
@@ -48,11 +52,27 @@
 </script>
 
 <svelte:head>
-  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-  {@html '<scr' + 'ipt type="application/ld+json">' + learningResourceSchemaJson + '</scr' + 'ipt>'}
+  {#if learningResourceSchemaJson}
+    <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+    {@html '<scr' +
+      'ipt type="application/ld+json">' +
+      learningResourceSchemaJson +
+      '</scr' +
+      'ipt>'}
+  {/if}
 </svelte:head>
 
-{#if data.entries.length > 0}
+{#if data.locked && data.teaser}
+  <LockedTeaser
+    level={data.level}
+    category={data.category}
+    categoryName={studyingLabel}
+    {sectionLabel}
+    section={data.section}
+    front={data.teaser.front}
+    totalCount={data.teaser.totalCount}
+  />
+{:else if data.entries.length > 0}
   <!-- Phase 3 (ai-docs/implementation/quiz-i18n-and-categories.md): the
        "Studying: X" breadcrumb is now unconditional — every category page
        shows it, not just uttrykk-with-theme. When data.selectedTheme is set

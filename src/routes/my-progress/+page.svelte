@@ -302,12 +302,17 @@
   const activeTabIcon = $derived(
     activeTab === 'vocab' ? '📖' : activeTab === 'uttrykk' ? '💬' : '📐'
   );
-  const activeReviewHref = $derived(
-    activeTab === 'vocab'
-      ? '/review?type=vocab'
-      : activeTab === 'uttrykk'
-        ? '/review?type=uttrykk'
-        : '/review/grammar'
+  // The button studies the selected level only (the badge next to it shows the same
+  // number); the secondary link below studies every level's due cards. Both /review and
+  // /review/grammar read ?level=.
+  const activeReviewHref = $derived.by(() => {
+    const level = encodeURIComponent(activeLevel);
+    return activeTab === 'grammar'
+      ? `/review/grammar?level=${level}`
+      : `/review?type=${activeTab}&level=${level}`;
+  });
+  const activeReviewAllHref = $derived(
+    activeTab === 'grammar' ? '/review/grammar' : `/review?type=${activeTab}`
   );
 
   // ── Level tabs (Phase 3) ─────────────────────────────────────────────────────
@@ -724,7 +729,14 @@
               >{m.stats_all_grammar_topics()}</a
             >
           {/if}
-          {#if activeTabDue > 0}
+          {#if activeTabDue > dueByLevel[activeLevel]}
+            <a
+              href={activeReviewAllHref}
+              class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-400"
+              >{m.stats_study_all_due({ count: activeTabDue })}</a
+            >
+          {/if}
+          {#if dueByLevel[activeLevel] > 0}
             <a
               href={activeReviewHref}
               class="flex items-center gap-2 rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-700 focus:ring-4 focus:ring-red-300 focus:outline-none"

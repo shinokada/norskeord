@@ -66,10 +66,11 @@ test.describe('/norskproven page', () => {
     );
   });
 
-  test('A2 health is Plus-only and redirects free users to /plus', async ({ page }) => {
+  test('A2 health is Plus-only and shows the locked teaser to free users', async ({ page }) => {
     await page.goto('/a2/health');
-    await page.waitForURL(/\/plus/, { timeout: 10000 });
-    await expect(page).toHaveURL(/\/plus/);
+    await expect(page).toHaveURL(/\/a2\/health/);
+    await expect(page.getByRole('img', { name: /preview of the first card/i })).toBeVisible();
+    await expect(page.locator('a[href^="/plus?ref=teaser-vocab"]')).toBeVisible();
   });
 
   // ── B1 free categories are not plus-gated ────────────────────────────────
@@ -89,10 +90,10 @@ test.describe('/norskproven page', () => {
   const b1PlusSlugs = ['work', 'education', 'health', 'relationships', 'culture'];
 
   for (const slug of b1PlusSlugs) {
-    test(`B1 ${slug} is Plus-only and redirects free users to /plus`, async ({ page }) => {
+    test(`B1 ${slug} is Plus-only and shows the locked teaser to free users`, async ({ page }) => {
       await page.goto(`/b1/${slug}`);
-      await page.waitForURL(/\/plus/, { timeout: 10000 });
-      await expect(page).toHaveURL(/\/plus/);
+      await expect(page).toHaveURL(new RegExp(`/b1/${slug}`));
+      await expect(page.getByRole('img', { name: /preview of the first card/i })).toBeVisible();
     });
   }
 

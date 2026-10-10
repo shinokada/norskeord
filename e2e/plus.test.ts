@@ -62,3 +62,17 @@ test.describe('/plus page', () => {
     await expect(link).toHaveAttribute('href', /\/auth\/login.*checkout/);
   });
 });
+
+test.describe('/plus/success logged out', () => {
+  test('redirects to login with the success path and the original next kept', async ({ page }) => {
+    // No session: the load function redirects (303) to /auth/login. `commit` stops at
+    // the final response, so the test does not wait for the login page's third-party
+    // scripts. The login URL's own `next` must bring the visitor back here, still
+    // carrying the page they came from.
+    await page.goto('/plus/success?next=%2Fa2%2Ftransport', { waitUntil: 'commit' });
+
+    const url = new URL(page.url());
+    expect(url.pathname).toBe('/auth/login');
+    expect(url.searchParams.get('next')).toBe('/plus/success?next=%2Fa2%2Ftransport');
+  });
+});

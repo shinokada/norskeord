@@ -10,6 +10,7 @@ import type { UttrykkThemeLevel } from '$lib/config';
 import type { MetaProps } from 'runes-meta-tags';
 import { removeHyphensAndCapitalize } from '$lib/utils';
 import { partitionUttrykkThemes, UTTRYKK_OTHERS_THEME } from '$lib/vocab-helpers';
+import { buildTeaser } from '$lib/teaser';
 
 // ---------------------------------------------------------------------------
 // Vocab loaders — imported server-side so the JSON is never bundled into the
@@ -54,7 +55,7 @@ const uttrykkCLoader = () =>
 // locals.plan is set by hooks.server.ts before this runs.
 // ---------------------------------------------------------------------------
 
-export const load: PageServerLoad = async ({ params, locals, url }) => {
+export const load: PageServerLoad = async ({ params, locals, url, setHeaders }) => {
   const { level, category } = params;
   const isPlus = locals.plan === 'plus';
 
@@ -76,10 +77,11 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
     redirect(301, `/${level.toLowerCase()}/uttrykk`);
   }
 
-  // Gate: redirect free users who try to open a Plus-only category directly
-  if (!isPlus && isPlusCategory(level, category)) {
-    redirect(302, '/plus?ref=category-lock');
-  }
+  // Gate. A free visitor on a Plus-only vocab category gets the locked teaser
+  // (Phase 3, ai-docs/implementation/locked-teaser-social-login.md) instead of a
+  // redirect. `uttrykk` is never in PLUS_CATEGORIES (it is gated per theme, see
+  // the uttrykk branch below, Phase 5), so `locked` is only true for vocab.
+  const locked = !isPlus && isPlusCategory(level, category);
 
   const key = `${level.toLowerCase()}/${category}`;
   const levelUpper = level.toUpperCase() as CEFRLevel;
@@ -195,8 +197,10 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
   const ogImage = `https://norskeord.no/og/deck/${level.toLowerCase()}/${category}.png`;
   const pageTitle = `Norwegian ${levelUpper} ${categoryName} Vocabulary — Norskeord`;
   // C is the combined C1/C2 "Mastery" level — keep its distinct SEO copy
-  const pageDescription =
-    levelUpper === 'C'
+  // A locked page must not claim to be free: its description names Plus.
+  const pageDescription = locked
+    ? `Preview ${categoryName} vocabulary at ${levelUpper} level. Unlock the full audio flashcards with Norskeord Plus.`
+    : levelUpper === 'C'
       ? `Learn Norwegian ${categoryName} words at C (Mastery) level. Free on Norskeord.`
       : `Learn Norwegian ${categoryName} words with audio flashcards at ${levelUpper} level. Free on Norskeord.`;
 
@@ -311,7 +315,44 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
     const { entries, themes, selectedTheme } = groupByTheme(data.default);
 
     if (!isPlus && !isFreeUttrykkTheme(levelUpper as UttrykkThemeLevel, selectedTheme)) {
-      redirect(302, '/plus?ref=uttrykk-theme-lock');
+      // Phase 5 (ai-docs/implementation/locked-teaser-social-login.md): the same
+      // teaser as a locked vocab category, for the selected theme (or the whole
+      // deck when there is no ?theme=). Only the first word and the count leave
+      // the server; `themes` is empty and there is no prev/next on the teaser.
+      const teaser = buildTeaser(entries);
+      if (!teaser) redirect(302, '/plus?ref=uttrykk-theme-lock');
+      // The page differs by account, so it must never be shared from a cache.
+      setHeaders({ 'Cache-Control': 'private, no-store' });
+
+      const themeName =
+        selectedTheme && selectedTheme !== UTTRYKK_OTHERS_THEME
+          ? ` (${removeHyphensAndCapitalize(selectedTheme)})`
+          : '';
+      // The shared description above says "Free on Norskeord"; a locked page must not.
+      const lockedDescription = `Preview ${levelUpper} Norwegian expressions${themeName}. Unlock the full audio flashcards with Norskeord Plus.`;
+      const lockedMetaTags: MetaProps = {
+        ...pageMetaTags,
+        description: lockedDescription,
+        og: { ...pageMetaTags.og, description: lockedDescription },
+        twitter: { ...pageMetaTags.twitter, description: lockedDescription }
+      };
+
+      return {
+        entries: [] as VocabEntry[],
+        level: levelUpper,
+        category,
+        section: 'uttrykk' as const,
+        themes: [] as { theme: string; count: number }[],
+        selectedTheme,
+        prevCategory: null,
+        nextCategory: null,
+        nextLocked: null,
+        locked: true as const,
+        teaser,
+        uttrykkContext: null,
+        pageMetaTags: lockedMetaTags,
+        learningResourceSchema: null
+      };
     }
 
     // Prev/next nav for a theme-filtered uttrykk page must step through
@@ -382,6 +423,8 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
       prevCategory: uttrykkPrevCategory,
       nextCategory: uttrykkNextCategory,
       nextLocked: uttrykkNextLocked,
+      locked: false as const,
+      teaser: null,
       uttrykkContext: null,
       pageMetaTags,
       learningResourceSchema
@@ -401,6 +444,8 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
       prevCategory,
       nextCategory,
       nextLocked,
+      locked: false as const,
+      teaser: null,
       uttrykkContext: null,
       pageMetaTags,
       learningResourceSchema
@@ -430,6 +475,31 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
     }
   }
 
+  if (locked) {
+    // Only the first word and the count leave the server (see $lib/teaser). No
+    // entries, no backs, no other cards, and no prev/next links on the teaser.
+    const teaser = buildTeaser(entries);
+    if (!teaser) redirect(302, '/plus?ref=category-lock');
+    // The page differs by account, so it must never be shared from a cache.
+    setHeaders({ 'Cache-Control': 'private, no-store' });
+    return {
+      entries: [] as VocabEntry[],
+      level: levelUpper,
+      category,
+      section: 'vocab' as const,
+      themes: [] as { theme: string; count: number }[],
+      selectedTheme: null as string | null,
+      prevCategory: null,
+      nextCategory: null,
+      nextLocked: null,
+      locked: true as const,
+      teaser,
+      uttrykkContext: null,
+      pageMetaTags,
+      learningResourceSchema: null
+    };
+  }
+
   return {
     entries,
     level: levelUpper,
@@ -440,6 +510,8 @@ export const load: PageServerLoad = async ({ params, locals, url }) => {
     prevCategory: prevCategoryFinal,
     nextCategory: nextCategoryFinal,
     nextLocked: nextLockedFinal,
+    locked: false as const,
+    teaser: null,
     uttrykkContext,
     pageMetaTags,
     learningResourceSchema

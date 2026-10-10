@@ -121,7 +121,8 @@ test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
     await page.goto('/my-progress');
     const button = page.getByRole('link', { name: /study due now/i });
     await expect(button).toHaveCount(1);
-    await expect(button).toHaveAttribute('href', '/review?type=vocab');
+    // "Study due now" studies the selected level (A1 is the default tab here).
+    await expect(button).toHaveAttribute('href', '/review?type=vocab&level=A1');
   });
 
   test('shows a "Study due now" button on the Uttrykk card linking to /review?type=uttrykk', async ({
@@ -131,7 +132,7 @@ test.describe('/my-progress — Study due entry points (Step 4a/4b)', () => {
     await page.goto('/my-progress?tab=uttrykk');
     const button = page.getByRole('link', { name: /study due now/i });
     await expect(button).toHaveCount(1);
-    await expect(button).toHaveAttribute('href', '/review?type=uttrykk');
+    await expect(button).toHaveAttribute('href', '/review?type=uttrykk&level=A1');
   });
 
   test('hides every "Study due now" button when nothing is currently due', async ({ page }) => {
@@ -275,7 +276,7 @@ test.describe('/my-progress — Grammar due badge (Fix 3)', () => {
     await page.goto('/my-progress?tab=grammar');
     const button = page.getByRole('link', { name: /study due now/i });
     await expect(button).toHaveCount(1);
-    await expect(button).toHaveAttribute('href', '/review/grammar');
+    await expect(button).toHaveAttribute('href', '/review/grammar?level=A1');
   });
 
   test('shows a clickable grammar due badge linking to /review/grammar', async ({ page }) => {
