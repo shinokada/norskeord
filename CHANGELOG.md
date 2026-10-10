@@ -1,5 +1,20 @@
 # norske-flashcard
 
+## 2.97.0
+
+### Minor Changes
+
+- - **New Features**
+    - Free visitors can preview locked learning categories, including the first Norwegian word and card count, before choosing whether to sign in or upgrade.
+    - Locked category links open the relevant learning page instead of sending visitors directly to the Plus page.
+    - “My Progress” offers a way to study all due cards when they span multiple levels.
+    - Login, checkout, and post-payment flows preserve a safe return destination. The success page shows activation status while Plus access is confirmed.
+    - Added localized preview and activation messages.
+
+  - **Bug Fixes**
+    - Study links now include the selected level.
+    - Login and payment completion use a consistent fallback destination when no valid return path is provided.
+
 ## 2.96.0
 
 ### Minor Changes
