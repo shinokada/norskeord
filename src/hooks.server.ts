@@ -2,6 +2,8 @@ import { sequence } from '@sveltejs/kit/hooks';
 import { getTextDirection } from '$lib/paraglide/runtime';
 import { paraglideMiddleware } from '$lib/paraglide/server';
 import { createSupabaseServerClient } from '$lib/server/supabase';
+import { isCacheExcluded } from '$lib/server/edge-cache';
+import { hasSupabaseSession } from '$lib/server/supabase-session';
 import { legacyGrammarRedirect } from '$lib/grammar/legacy-redirects';
 import type { Handle } from '@sveltejs/kit';
 // hooks.server.ts
@@ -88,7 +90,9 @@ const originalHandle: Handle = async ({ event, resolve }) => {
   const supabase = createSupabaseServerClient(event.cookies);
   event.locals.supabase = supabase;
 
-  const hasSession = !!event.cookies.get(SUPABASE_AUTH_COOKIE);
+  // Matches the chunked form too (`<name>.0`, `.1`, ...) that @supabase/ssr uses
+  // for large sessions such as Google logins.
+  const hasSession = hasSupabaseSession(event.cookies, SUPABASE_AUTH_COOKIE);
 
   if (hasSession) {
     // getUser() validates the JWT with Supabase's servers — never trust the
@@ -138,31 +142,17 @@ const originalHandle: Handle = async ({ event, resolve }) => {
   // but ONLY for fully static/marketing pages where auth state doesn't affect
   // the rendered HTML (e.g. home, /plus, /resources, /blog/[slug]).
   //
-  // Excluded:
-  //   /api/*        — dynamic JSON endpoints
-  //   /auth/*       — login / callback routes
-  //   /learn/*      — hub pages show auth-sensitive UI (avatar, Plus badges)
-  //   /blog         — blog index shows auth-sensitive nav
-  //   /[level]/*    — flashcard pages are auth-gated
-  //   /grammar/*    — grammar pages are auth-gated
-  //   /quiz/*       — quiz pages are auth-gated
-  //   /norskproven  — auth-gated
-  //   /my-progress  — auth-required
-  //   /my-profile   — auth-required
-  const CACHE_EXCLUDED = [
-    '/api/',
-    '/auth/',
-    '/learn/',
-    '/grammar/',
-    '/quiz',
-    '/norskproven',
-    '/my-progress',
-    '/my-profile'
-  ];
-  const isCacheExcluded =
-    CACHE_EXCLUDED.some((prefix) => pathname.startsWith(prefix)) || pathname === '/blog'; // blog index (not individual posts)
-
-  if (!hasSession && event.request.method === 'GET' && !isCacheExcluded) {
+  // Vercel keys its cache by URL and ignores cookies, so any path whose
+  // response differs by account must be excluded (see isCacheExcluded in
+  // $lib/server/edge-cache.ts, which lists them, including the /[level]/*
+  // flashcard routes). A response that already sets its own Cache-Control
+  // (e.g. a locked page's `private, no-store`) is left alone.
+  if (
+    !hasSession &&
+    event.request.method === 'GET' &&
+    !isCacheExcluded(pathname) &&
+    !response.headers.has('cache-control')
+  ) {
     response.headers.set('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=3600');
   }
 

@@ -1,4 +1,5 @@
 import { getProfile } from '$lib/server/profile';
+import { safeNext } from '$lib/safe-next';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ locals, url }) => {
@@ -6,7 +7,9 @@ export const load: PageServerLoad = async ({ locals, url }) => {
 
   // Determine destination server-side so we can do a hard redirect,
   // which bypasses any stale edge-cached anonymous responses.
-  const next = url.searchParams.get('next') ?? '/';
+  // `next` comes from the query string, so only a same-origin path is accepted
+  // (the client runs `window.location.href = destination`).
+  const next = safeNext(url.searchParams.get('next'), '/');
   let destination = '/learn/a1';
 
   if (next !== '/') {

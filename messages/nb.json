@@ -1,5 +1,7 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "login_google": "Fortsett med Google",
+  "login_or": "eller",
   "nav_plus_badge": "Priser",
   "nav_log_in": "Logg inn",
   "nav_log_out": "Logg ut",
