@@ -19,7 +19,9 @@
  *
  * Skip list (words that are valid unaccented, e.g. German `fordern`, Spanish
  * `papa`, Norwegian `mal`): scripts/audit/corpus-scan-skip.json
- *   { "german": ["fordern"], "spanish": ["papa"], "norwegian": ["mal"] }
+ *   { "german": ["fordern", "Wahlen"], "spanish": ["papa"], "norwegian": ["mal"] }
+ * Entries are case-sensitive: a lowercase entry skips the word in any casing, a
+ * capitalised entry (a German noun such as "Wahlen") skips only that exact token.
  *
  * Classification:
  *   likely  — the accented form is at least 5x as frequent as the bare form
@@ -71,7 +73,8 @@ const LOOK_MAX_BARE = 5;
 const decomposed = [];
 
 function loadItems(file) {
-  if (!existsSync(file)) return [];
+  // A missing configured corpus file must fail the scan (readFileSync throws),
+  // not silently count as an empty corpus and produce a false "all clean".
   const data = JSON.parse(readFileSync(file, 'utf8'));
   if (Array.isArray(data)) return data;
   const arr = Object.values(data).find(Array.isArray);
@@ -95,7 +98,10 @@ const summary = [];
 
 for (const [lang, cfg] of Object.entries(LANGUAGES)) {
   if (ONLY_LANG !== 'all' && ONLY_LANG !== lang) continue;
-  const skip = new Set((SKIP[lang] || []).map((w) => w.toLowerCase()));
+  // Entries are case-sensitive: "fordern" skips every casing of the word, while a
+  // capitalised entry such as "Wahlen" skips only that capitalised token (the noun)
+  // and still lets lowercase "wahlen" (a degraded "wählen") through.
+  const skip = new Set(SKIP[lang] || []);
 
   // Pass 1: count every token (lowercased), find which accented forms exist.
   const counts = new Map();
@@ -109,7 +115,7 @@ for (const [lang, cfg] of Object.entries(LANGUAGES)) {
       for (const m of text.matchAll(WORD)) {
         const w = m[0].toLowerCase();
         counts.set(w, (counts.get(w) || 0) + 1);
-        occurrences.push({ w, id: item.id, file, field, text, index: m.index });
+        occurrences.push({ w, orig: m[0], id: item.id, file, field, text, index: m.index });
       }
     }
   }
@@ -127,7 +133,7 @@ for (const [lang, cfg] of Object.entries(LANGUAGES)) {
   // Pass 2: bare tokens that have an accented twin.
   const found = new Map(); // bare word -> { twins, rows[] }
   for (const o of occurrences) {
-    if (o.w.length < MIN_LENGTH || skip.has(o.w)) continue;
+    if (o.w.length < MIN_LENGTH || skip.has(o.w) || skip.has(o.orig)) continue;
     const twins = accentedByBare.get(o.w);
     if (!twins || cfg.degrade(o.w) !== o.w) continue;
     if (!found.has(o.w)) found.set(o.w, { twins, rows: [] });
@@ -165,7 +171,9 @@ if (decomposed.length) {
   );
 }
 
-const stamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+// Milliseconds keep back-to-back scans (e.g. one per --lang) from sharing a filename;
+// the 'wx' flag below makes any remaining collision fail instead of overwriting.
+const stamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 23);
 const outDir = join(__dirname, 'audit');
 mkdirSync(outDir, { recursive: true });
 const outFile = join(outDir, `corpus-diacritic-scan-${stamp}.md`);
@@ -173,7 +181,7 @@ const header =
   '# Corpus-based diacritic scan\n\n' +
   'Bare words whose accented form appears elsewhere in the data (A1–C, vocab + uttrykk).\n' +
   'Format: `word` (count) → accented form(s) (count)\n\n';
-writeFileSync(outFile, header + report.join('\n'));
+writeFileSync(outFile, header + report.join('\n'), { flag: 'wx' });
 
 console.log(summary.join('\n'));
 console.log(`\nReport: ${outFile}`);

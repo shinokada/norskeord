@@ -927,6 +927,21 @@ const ES_NOUN_DETERMINERS = new Set([
 const ES_DE_QUE_LEADERS = new Set(['antes', 'después', 'pesar', 'tal', 'fin']);
 const ES_ARTICLES = new Set(['el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas']);
 
+// Verbal "está" needs a subject right before it: a pronoun ("Ella esta nerviosa")
+// or a determiner + noun ("Mi hermano esta nervioso"). Demonstrative "esta" never
+// sits there, so these shapes keep "esta" flagged even when the word after it
+// is not in ES_ESTA_VERB_FOLLOWERS.
+const ES_ESTA_SUBJECT_PRONOUNS = new Set(['ella', 'él', 'usted', 'ello']);
+const ES_ESTA_SUBJECT_DETERMINERS = new Set([
+  ...ES_ARTICLES, 'mi', 'mis', 'tu', 'tus', 'su', 'sus', 'nuestro', 'nuestra', 'nuestros', 'nuestras'
+]);
+// "un poco esta imagen": the article belongs to a quantifier, not to a subject noun.
+const ES_ESTA_QUANTIFIERS = new Set(['poco', 'mucho']);
+// "esta noche/semana/…" is always the demonstrative, wherever it sits in the clause.
+const ES_ESTA_TIME_NOUNS = new Set([
+  'noche', 'semana', 'tarde', 'mañana', 'vez', 'mes', 'año', 'temporada', 'época'
+]);
+
 /** Finds the ¿…? or ¡…! span containing `index`, if any. */
 function esSpanAt(text, index) {
   for (const m of text.matchAll(/[¿¡][^?!¿¡]*[?!]/gu)) {
@@ -951,6 +966,16 @@ export function resolveES(word, ctx) {
   if (word === 'esta') {
     if (!next) return toks.some((t) => ES_DEMONSTRATIVE_LISTING.has(t.lower));
     if (ES_ESTA_VERB_FOLLOWERS.has(next) || /(ando|iendo|yendo)$/.test(next)) return false;
+    if (ES_ESTA_TIME_NOUNS.has(next)) return true;
+    if (ES_ESTA_SUBJECT_PRONOUNS.has(prev)) return false;
+    if (
+      prev &&
+      !ES_PREPOSITIONS.has(prev) &&
+      !ES_ESTA_QUANTIFIERS.has(prev) &&
+      ES_ESTA_SUBJECT_DETERMINERS.has(toks[i - 2]?.lower)
+    ) {
+      return false;
+    }
     return true; // followed by a noun → demonstrative "esta"
   }
 
@@ -965,11 +990,11 @@ export function resolveES(word, ctx) {
   const isFirstInSpan = span ? !prev || toks[i - 1].index < span.start : false;
 
   if (span?.open === '¿') {
-    return !(isFirstInSpan || ES_PREPOSITIONS.has(prev));
+    return !(isFirstInSpan || ES_PREPOSITIONS.has(prev) || ES_INDIRECT_TRIGGERS.has(prev));
   }
   if (span?.open === '¡') {
     if (word === 'que') return !(isFirstInSpan && ES_EXCLAMATIVE_COMPLEMENTS.has(next));
-    return !(isFirstInSpan || ES_PREPOSITIONS.has(prev));
+    return !(isFirstInSpan || ES_PREPOSITIONS.has(prev) || ES_INDIRECT_TRIGGERS.has(prev));
   }
   // Outside any question/exclamation: only an indirect question needs the accent.
   return !(prev && ES_INDIRECT_TRIGGERS.has(prev));
@@ -1350,7 +1375,10 @@ const DE_DIGRAPH_LEGIT_WORDS = new Set([
 const DE_DIGRAPH_LEGIT_PARTS =
   /[txdns]uell|zuer(?:st|kenn|halt|kannt)|zuent|zuein|laestadi|(?:klima|netto|brutto|radio|video|audio|foto|photo|stereo)e|^aero/;
 
-function isDeDigraphCandidate(lower) {
+function isDeDigraphCandidate(word) {
+  // Acronyms such as UEFA/OECD are not digraph spellings.
+  if (word.length > 1 && word === word.toUpperCase()) return false;
+  const lower = word.toLowerCase();
   DE_DIGRAPH_RE.lastIndex = 0;
   const has = DE_DIGRAPH_RE.test(lower);
   DE_DIGRAPH_RE.lastIndex = 0;
@@ -1373,7 +1401,7 @@ export function findGermanDigraphIssues(text, fieldName, wordMap = {}) {
   if (!text) return issues;
   for (const tok of tokens(text)) {
     const lower = tok.toLowerCase();
-    if (!isDeDigraphCandidate(lower)) continue;
+    if (!isDeDigraphCandidate(tok)) continue;
     if (Object.prototype.hasOwnProperty.call(wordMap, lower)) continue; // map already reports it
     issues.push({
       kind: 'digraph',
@@ -1393,7 +1421,7 @@ export function fixGermanDigraphs(text, wordMap = {}) {
         ? part
         : part.replace(WORD_RE, (w) => {
             const lower = w.toLowerCase();
-            if (!isDeDigraphCandidate(lower)) return w;
+            if (!isDeDigraphCandidate(w)) return w;
             if (Object.prototype.hasOwnProperty.call(wordMap, lower)) return w;
             return fixDeDigraphWord(w);
           })
@@ -1422,12 +1450,18 @@ const DE_ESZETT_STEMS = [
   ['heiss', 'heiß'],
   ['weiss', 'weiß'],
   ['stoss', 'stoß'],
-  ['reiss', 'reiß'],
   ['beiss', 'beiß'],
   ['giess', 'gieß'],
   ['fuss', 'fuß'],
   ['ausser', 'außer']
 ];
+// "reiss" is ß only in the verb reißen (zerreissen, aufzureissen, …) and a few of its
+// compounds. Reis + s… compounds (Reissuppe, Reisschüssel, Reissalat) keep "ss", so the
+// whole word has to match — a bare "starts with reiss" test would rewrite them.
+const DE_REISSEN_RE = new RegExp(
+  '^(?:(?:zer|ab|an|auf|aus|durch|ein|los|nieder|um|weg|zusammen|heraus|hinunter|mit|ver|hin|her|fort)(?:zu)?)?' +
+    'reiss(?=(?:en|t|e|st|end(?:e|en|er|es|em)?|verschluss\\w*|zweck\\w*|brett\\w*|nagel\\w*|leine\\w*|wolf\\w*)$)'
+);
 const DE_ESZETT_EXACT = { sass: 'saß', sassen: 'saßen', bloss: 'bloß', gruss: 'gruß' };
 // Words that are correct with "ss" or whose umlaut form is ambiguous — never rewritten.
 const DE_ESZETT_SKIP =
@@ -1441,6 +1475,11 @@ function eszettFix(word) {
   if (/^gross(?:e|en)$/.test(lower) && word[0] !== lower[0]) return null;
   if (Object.prototype.hasOwnProperty.call(DE_ESZETT_EXACT, lower)) {
     return matchCase(word, DE_ESZETT_EXACT[lower]);
+  }
+  const reissen = lower.match(DE_REISSEN_RE);
+  if (reissen) {
+    const at = reissen[0].length - 'reiss'.length;
+    return word.slice(0, at) + matchCase(word.slice(at, at + 5), 'reiß') + word.slice(at + 5);
   }
   for (const [stem, rep] of DE_ESZETT_STEMS) {
     if (lower.startsWith(stem)) {
