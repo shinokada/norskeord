@@ -75,7 +75,17 @@ import {
   findSpanishPunctuationIssues,
   fixSpanishPunctuation,
   findGermanBigramIssues,
-  fixGermanBigrams
+  fixGermanBigrams,
+  findSpanishSuffixIssues,
+  fixSpanishSuffixes,
+  findGermanDigraphIssues,
+  fixGermanDigraphs,
+  findGermanEszettIssues,
+  fixGermanEszett,
+  findMixedScriptIssues,
+  resolveNO,
+  resolveDE,
+  resolveES
 } from './lib/diacritics.mjs';
 
 // Words that DE_BIGRAM_RULES (in diacritics.mjs) can resolve unambiguously
@@ -159,6 +169,7 @@ const LANGUAGES = {
     bareWord: bareWordNO,
     wordMap: NO_COMMON_WORD_MAP,
     ambiguousWords: NO_AMBIGUOUS_WORDS,
+    resolveAmbiguous: resolveNO,
     punctuation: false
   },
   german: {
@@ -172,8 +183,11 @@ const LANGUAGES = {
     bareWord: bareWordIntl,
     wordMap: DE_COMMON_WORD_MAP,
     ambiguousWords: DE_AMBIGUOUS_WORDS,
+    resolveAmbiguous: resolveDE,
     punctuation: false,
-    bigram: true
+    bigram: true,
+    digraph: true,
+    eszett: true
   },
   spanish: {
     label: 'Spanish',
@@ -186,7 +200,9 @@ const LANGUAGES = {
     bareWord: bareWordIntl,
     wordMap: ES_COMMON_WORD_MAP,
     ambiguousWords: ES_AMBIGUOUS_WORDS,
-    punctuation: true
+    resolveAmbiguous: resolveES,
+    punctuation: true,
+    suffix: true
   }
 };
 
@@ -233,6 +249,8 @@ function findIssuesForLang(entry, langKey) {
     bareWord: cfg.bareWord,
     wordMap: cfg.wordMap,
     ambiguousWords: cfg.ambiguousWords,
+    resolveAmbiguous: cfg.resolveAmbiguous,
+    entry,
     exampleField: cfg.exampleField,
     exampleValue: ''
   });
@@ -247,6 +265,37 @@ function findIssuesForLang(entry, langKey) {
         lang: langKey
       }))
     );
+  }
+
+  // 3b. Generic spelling-pattern checks that need no word list: Spanish
+  // unaccented -cion/-sion endings, and German ue/oe/ae digraphs (see the
+  // whitelist in diacritics.mjs). Words already in wordMap are skipped there so
+  // nothing is reported twice.
+  for (const field of cfg.commonFields) {
+    if (cfg.suffix) {
+      issues.push(
+        ...findSpanishSuffixIssues(entry[field], field, cfg.wordMap).map((i) => ({
+          ...i,
+          lang: langKey
+        }))
+      );
+    }
+    if (cfg.digraph) {
+      issues.push(
+        ...findGermanDigraphIssues(entry[field], field, cfg.wordMap).map((i) => ({
+          ...i,
+          lang: langKey
+        }))
+      );
+    }
+    if (cfg.eszett) {
+      issues.push(
+        ...findGermanEszettIssues(entry[field], field, cfg.wordMap).map((i) => ({
+          ...i,
+          lang: langKey
+        }))
+      );
+    }
   }
 
   // 4. Bigram disambiguation (German only) — some otherwise-ambiguous
@@ -275,6 +324,13 @@ function findIssuesForLang(entry, langKey) {
     }
   }
   ambiguous = ambiguous.concat(commonAmbiguous.map((a) => ({ ...a, lang: langKey })));
+
+  // Latin/Cyrillic homoglyphs (manual fix only).
+  for (const field of cfg.commonFields) {
+    ambiguous.push(
+      ...findMixedScriptIssues(entry[field], field).map((a) => ({ ...a, lang: langKey }))
+    );
+  }
 
   return { issues, ambiguous, headwordFixes };
 }
@@ -392,7 +448,14 @@ function processFile(kind, level) {
           if (entry[field]) {
             let value = entry[field];
             if (cfg.bigram) value = fixGermanBigrams(value);
-            entry[field] = applyFixes(value, hfs, cfg.wordMap);
+            value = applyFixes(value, hfs, cfg.wordMap);
+            // Run after the word map so mapped words (e.g. Rueckschlagen →
+            // Rückschlägen) keep their exact correction.
+            if (cfg.suffix) value = fixSpanishSuffixes(value);
+            if (cfg.digraph) value = fixGermanDigraphs(value, cfg.wordMap);
+            // After digraphs, so "Grossmaechte" → "Grossmächte" → "Großmächte".
+            if (cfg.eszett) value = fixGermanEszett(value, cfg.wordMap);
+            entry[field] = value;
           }
         }
         if (cfg.punctuation && entry[cfg.exampleField]) {
