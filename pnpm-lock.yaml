@@ -69,6 +69,12 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      dictionary-de:
+        specifier: ^3.0.0
+        version: 3.0.0
+      dictionary-es:
+        specifier: ^4.0.0
+        version: 4.0.0
       dictionary-nb:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2096,6 +2102,12 @@ packages:
 
   devalue@5.9.0:
     resolution: {integrity: sha512-RWrqdArjvPbsATEhOPUo6Wndc/iWnkWKlhIrdlF3zMMYo/c3CVtoaVAyLtWxz5h8nSlkHzxnzV2uLydPXmtF+A==}
+
+  dictionary-de@3.0.0:
+    resolution: {integrity: sha512-0Xbq+YpWTscAL1e18aPPaqfG4goC2o9T595L/54v2OvOPC0/TJFFlclYanxuUoK73wutM5f9EgSuWGkvQXlOXw==}
+
+  dictionary-es@4.0.0:
+    resolution: {integrity: sha512-8J3IYdaHYmkojxqhB+DneQpek6N/s3MwbVk3bPNGQSTBT5kxJtmbuiT0LSDP0Al6K9Vevo1sjspG8AGP9Yvxiw==}
 
   dictionary-nb@3.0.0:
     resolution: {integrity: sha512-YemD394r1z5BrC1HUsV7iF6zLIalFBbcDfMCn4OV+KP3fRqC5VBLuohGBGmKnCmwwXSJmhOjmzaQY2cbK61iFw==}
@@ -5871,6 +5883,10 @@ snapshots:
   detect-libc@2.1.2: {}
 
   devalue@5.9.0: {}
+
+  dictionary-de@3.0.0: {}
+
+  dictionary-es@4.0.0: {}
 
   dictionary-nb@3.0.0: {}
 
