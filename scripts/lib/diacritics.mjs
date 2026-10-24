@@ -53,9 +53,12 @@ export const NO_COMMON_WORD_MAP = {
   kjore: { correct: 'kjøre', label: 'kjøre' },
   hore: { correct: 'høre', label: 'høre' },
   sporre: { correct: 'spørre', label: 'spørre' },
-  fole: { correct: 'føle', label: 'føle' },
+  // "fole" (foal) is a real noun ("sprek som en fole"), not just a degraded "føle".
+  // See NO_AMBIGUOUS_WORDS / resolveNoFole.
   foler: { correct: 'føler', label: 'føler' },
-  fore: { correct: 'føre', label: 'føre' },
+  // "fore" is deliberately NOT mapped here — "ha noe fore" (to have something
+  // planned) is a genuine idiom, so "fore" is a real word, not just a degraded
+  // "føre". See NO_AMBIGUOUS_WORDS / resolveNoFore.
   blo: { correct: 'blø', label: 'blø' },
   bloe: { correct: 'blø', label: 'blø' },
   laege: { correct: 'lege', label: 'lege' },
@@ -95,7 +98,13 @@ export const NO_COMMON_WORD_MAP = {
   lopeskoa: { correct: 'løpeskoa', label: 'løpeskoa' },
   gronnsakene: { correct: 'grønnsakene', label: 'grønnsakene' },
   smorer: { correct: 'smører', label: 'smører' },
-  kjokken: { correct: 'kjøkken', label: 'kjøkken' }
+  kjokken: { correct: 'kjøkken', label: 'kjøkken' },
+
+  // Corpus-scan additions (2026-10-24): unaccented form has no valid reading.
+  doren: { correct: 'døren', label: 'døren' },
+  innforte: { correct: 'innførte', label: 'innførte' },
+  vaken: { correct: 'våken', label: 'våken' },
+  vaknet: { correct: 'våknet', label: 'våknet' }
 };
 
 // Words that are genuinely ambiguous in ASCII form — ONLY reported, never
@@ -107,6 +116,8 @@ export const NO_AMBIGUOUS_WORDS = {
   ar: 'ar (rare unit of area) OR "år" ("year") — review manually',
   vare: 'vare ("goods/product") OR "våre" ("our") OR "være" ("to be") — review manually',
   ga: 'ga ("gave", past tense of "å gi") OR "gå" ("to go/walk") — review manually',
+  fore: 'fore ("ha noe fore" = have planned) OR "føre" ("to lead") — review manually',
+  fole: 'fole ("foal", noun) OR "føle" ("to feel") — review manually',
   far: 'far ("father", noun) OR "får" ("gets/receives", verb, OR "sheep", noun) — review manually'
 };
 
@@ -202,7 +213,8 @@ export const DE_COMMON_WORD_MAP = {
   wahrend: { correct: 'während', label: 'während' },
   ubung: { correct: 'Übung', label: 'Übung' },
   arzte: { correct: 'Ärzte', label: 'Ärzte' },
-  nahe: { correct: 'Nähe', label: 'Nähe' },
+  // "nahe" (near, adj./adv.) is a real word — the old map entry turned "sehr nahe"
+  // into "sehr Nähe". See DE_AMBIGUOUS_WORDS / resolveDE.
   gemutlich: { correct: 'gemütlich', label: 'gemütlich' },
   plane: { correct: 'Pläne', label: 'Pläne' },
   gesattigt: { correct: 'gesättigt', label: 'gesättigt' },
@@ -350,7 +362,107 @@ export const DE_COMMON_WORD_MAP = {
   glaeser: { correct: 'Gläser', label: 'Gläser' },
   draussen: { correct: 'draußen', label: 'draußen' },
   parkuberwacher: { correct: 'Parküberwacher', label: 'Parküberwacher' },
-  parkueberwacher: { correct: 'Parküberwacher', label: 'Parküberwacher' }
+  parkueberwacher: { correct: 'Parküberwacher', label: 'Parküberwacher' },
+  behutet: { correct: 'behütet', label: 'behütet' },
+  behuetet: { correct: 'behütet', label: 'behütet' },
+  kunstliche: { correct: 'künstliche', label: 'künstliche' },
+  kuenstliche: { correct: 'künstliche', label: 'künstliche' },
+  rueckschlagen: { correct: 'Rückschlägen', label: 'Rückschlägen' },
+  fuhrung: { correct: 'Führung', label: 'Führung' },
+  fuhrungskraft: { correct: 'Führungskraft', label: 'Führungskraft' },
+
+  // Corpus-scan additions (2026-10-24): unaccented form has no valid reading.
+  abschliessen: { correct: 'abschließen', label: 'abschließen' },
+  aktivitat: { correct: 'aktivität', label: 'aktivität' },
+  altere: { correct: 'ältere', label: 'ältere' },
+  assen: { correct: 'aßen', label: 'aßen' },
+  atmosphare: { correct: 'atmosphäre', label: 'atmosphäre' },
+  behorden: { correct: 'behörden', label: 'behörden' },
+  bekampfen: { correct: 'bekämpfen', label: 'bekämpfen' },
+  beschaftigt: { correct: 'beschäftigt', label: 'beschäftigt' },
+  betruger: { correct: 'betrüger', label: 'betrüger' },
+  bevolkerung: { correct: 'bevölkerung', label: 'bevölkerung' },
+  bucher: { correct: 'bücher', label: 'bücher' },
+  diat: { correct: 'diät', label: 'diät' },
+  durchgefuhrt: { correct: 'durchgeführt', label: 'durchgeführt' },
+  enthullen: { correct: 'enthüllen', label: 'enthüllen' },
+  enttauschung: { correct: 'enttäuschung', label: 'enttäuschung' },
+  erbarmlich: { correct: 'erbärmlich', label: 'erbärmlich' },
+  erhohen: { correct: 'erhöhen', label: 'erhöhen' },
+  erklart: { correct: 'erklärt', label: 'erklärt' },
+  ermoglichen: { correct: 'ermöglichen', label: 'ermöglichen' },
+  ermoglicht: { correct: 'ermöglicht', label: 'ermöglicht' },
+  erwagt: { correct: 'erwägt', label: 'erwägt' },
+  erwahnen: { correct: 'erwähnen', label: 'erwähnen' },
+  erzahlen: { correct: 'erzählen', label: 'erzählen' },
+  fahigkeit: { correct: 'fähigkeit', label: 'fähigkeit' },
+  fahigkeiten: { correct: 'fähigkeiten', label: 'fähigkeiten' },
+  fuhrungskrafte: { correct: 'führungskräfte', label: 'führungskräfte' },
+  funf: { correct: 'fünf', label: 'fünf' },
+  gefahrlich: { correct: 'gefährlich', label: 'gefährlich' },
+  gefuhl: { correct: 'gefühl', label: 'gefühl' },
+  gegenuber: { correct: 'gegenüber', label: 'gegenüber' },
+  gehort: { correct: 'gehört', label: 'gehört' },
+  geoffnet: { correct: 'geöffnet', label: 'geöffnet' },
+  gepragt: { correct: 'geprägt', label: 'geprägt' },
+  gerausch: { correct: 'geräusch', label: 'geräusch' },
+  gesprach: { correct: 'gespräch', label: 'gespräch' },
+  gewahlt: { correct: 'gewählt', label: 'gewählt' },
+  gewohnlich: { correct: 'gewöhnlich', label: 'gewöhnlich' },
+  grunden: { correct: 'gründen', label: 'gründen' },
+  grundete: { correct: 'gründete', label: 'gründete' },
+  haufig: { correct: 'häufig', label: 'häufig' },
+  hauptsachlich: { correct: 'hauptsächlich', label: 'hauptsächlich' },
+  hinzufugen: { correct: 'hinzufügen', label: 'hinzufügen' },
+  horen: { correct: 'hören', label: 'hören' },
+  integritat: { correct: 'integrität', label: 'integrität' },
+  jager: { correct: 'jäger', label: 'jäger' },
+  koder: { correct: 'köder', label: 'köder' },
+  korper: { correct: 'körper', label: 'körper' },
+  kriminalitat: { correct: 'kriminalität', label: 'kriminalität' },
+  kuhl: { correct: 'kühl', label: 'kühl' },
+  kuhlschrank: { correct: 'kühlschrank', label: 'kühlschrank' },
+  kummern: { correct: 'kümmern', label: 'kümmern' },
+  kummert: { correct: 'kümmert', label: 'kümmert' },
+  kuste: { correct: 'küste', label: 'küste' },
+  larm: { correct: 'lärm', label: 'lärm' },
+  lastig: { correct: 'lästig', label: 'lästig' },
+  marchen: { correct: 'märchen', label: 'märchen' },
+  militar: { correct: 'militär', label: 'militär' },
+  mittelmassig: { correct: 'mittelmäßig', label: 'mittelmäßig' },
+  offnete: { correct: 'öffnete', label: 'öffnete' },
+  personliches: { correct: 'persönliches', label: 'persönliches' },
+  plotzlich: { correct: 'plötzlich', label: 'plötzlich' },
+  punktlich: { correct: 'pünktlich', label: 'pünktlich' },
+  qualitat: { correct: 'qualität', label: 'qualität' },
+  schamen: { correct: 'schämen', label: 'schämen' },
+  spater: { correct: 'später', label: 'später' },
+  stadten: { correct: 'städten', label: 'städten' },
+  standigen: { correct: 'ständigen', label: 'ständigen' },
+  tur: { correct: 'tür', label: 'tür' },
+  ubersehen: { correct: 'übersehen', label: 'übersehen' },
+  ubersetzen: { correct: 'übersetzen', label: 'übersetzen' },
+  ubertragen: { correct: 'übertragen', label: 'übertragen' },
+  ubertrieben: { correct: 'übertrieben', label: 'übertrieben' },
+  ubrig: { correct: 'übrig', label: 'übrig' },
+  unabhangig: { correct: 'unabhängig', label: 'unabhängig' },
+  unmoglich: { correct: 'unmöglich', label: 'unmöglich' },
+  unterstutzen: { correct: 'unterstützen', label: 'unterstützen' },
+  unterstutzt: { correct: 'unterstützt', label: 'unterstützt' },
+  ursprunglich: { correct: 'ursprünglich', label: 'ursprünglich' },
+  verandert: { correct: 'verändert', label: 'verändert' },
+  verhaltnis: { correct: 'verhältnis', label: 'verhältnis' },
+  veroffentlichen: { correct: 'veröffentlichen', label: 'veröffentlichen' },
+  verstosst: { correct: 'verstößt', label: 'verstößt' },
+  vollstandig: { correct: 'vollständig', label: 'vollständig' },
+  weiterfuhrende: { correct: 'weiterführende', label: 'weiterführende' },
+  wohlfuhlen: { correct: 'wohlfühlen', label: 'wohlfühlen' },
+  wortern: { correct: 'wörtern', label: 'wörtern' },
+  wuste: { correct: 'wüste', label: 'wüste' },
+  zerreissen: { correct: 'zerreißen', label: 'zerreißen' },
+  zuruckgeben: { correct: 'zurückgeben', label: 'zurückgeben' },
+  zuruckzukehren: { correct: 'zurückzukehren', label: 'zurückzukehren' },
+  zusammenreissen: { correct: 'zusammenreißen', label: 'zusammenreißen' }
 };
 
 export const DE_AMBIGUOUS_WORDS = {
@@ -362,7 +474,8 @@ export const DE_AMBIGUOUS_WORDS = {
   mochte:
     'mochte ("liked/wanted", simple past of "mögen") OR "möchte" ("would like") — review manually',
   fuhren:
-    'fuhren ("drove", simple past of "fahren") OR "führen" ("to lead/manage") — review manually'
+    'fuhren ("drove", simple past of "fahren") OR "führen" ("to lead/manage") — review manually',
+  nahe: 'nahe ("near", adj./adv.) OR "Nähe" ("proximity", noun) — review manually'
 };
 
 /** German: ü/ö/ä → single-char (NFD strip) and → digraph (ue/oe/ae); ß → ss. */
@@ -434,12 +547,14 @@ export const ES_COMMON_WORD_MAP = {
   ilusion: { correct: 'ilusión', label: 'ilusión' },
   tio: { correct: 'tío', label: 'tío' },
   tia: { correct: 'tía', label: 'tía' },
-  saludo: { correct: 'saludó', label: 'saludó' },
-  // "cualificada" used to self-map to itself here — harmless no-op, but
-  // cluttered the fixable-issues report on already-correct text. Removed.
-  esta_verb: { correct: 'está', label: 'está (verb)' },
+  // "saludo" (I greet / a greeting) vs "saludó" (greeted) is ambiguous — the
+  // old map entry silently "fixed" correct present-tense "Saludo al vecino".
+  // See ES_AMBIGUOUS_WORDS.
   // Added after auditing a2 output round 2 — see scripts/outputs/audit-*-a2-draft-*.txt (2026-07-05)
   despues: { correct: 'después', label: 'después' },
+  // "mas" ("but", literary) never occurs in this corpus; unaccented "mas" is
+  // always a degraded "más" ("mas tarde", "una vez mas").
+  mas: { correct: 'más', label: 'más' },
   habia: { correct: 'había', label: 'había' },
   ademas: { correct: 'además', label: 'además' },
   periodico: { correct: 'periódico', label: 'periódico' },
@@ -483,7 +598,47 @@ export const ES_COMMON_WORD_MAP = {
   operacion: { correct: 'operación', label: 'operación' },
   informacion: { correct: 'información', label: 'información' },
   fisica: { correct: 'física', label: 'física' },
-  azucar: { correct: 'azúcar', label: 'azúcar' }
+  azucar: { correct: 'azúcar', label: 'azúcar' },
+  generacion: { correct: 'generación', label: 'generación' },
+  especializacion: { correct: 'especialización', label: 'especialización' },
+
+  // Corpus-scan additions (2026-10-24): unaccented form has no valid reading.
+  balon: { correct: 'balón', label: 'balón' },
+  banarse: { correct: 'bañarse', label: 'bañarse' },
+  cajon: { correct: 'cajón', label: 'cajón' },
+  camion: { correct: 'camión', label: 'camión' },
+  companero: { correct: 'compañero', label: 'compañero' },
+  creia: { correct: 'creía', label: 'creía' },
+  demostro: { correct: 'demostró', label: 'demostró' },
+  desafio: { correct: 'desafío', label: 'desafío' },
+  dramatico: { correct: 'dramático', label: 'dramático' },
+  electronico: { correct: 'electrónico', label: 'electrónico' },
+  electronicos: { correct: 'electrónicos', label: 'electrónicos' },
+  ensena: { correct: 'enseña', label: 'enseña' },
+  ensenar: { correct: 'enseñar', label: 'enseñar' },
+  esqui: { correct: 'esquí', label: 'esquí' },
+  exigio: { correct: 'exigió', label: 'exigió' },
+  extrana: { correct: 'extraña', label: 'extraña' },
+  extrano: { correct: 'extraño', label: 'extraño' },
+  frio: { correct: 'frío', label: 'frío' },
+  futbol: { correct: 'fútbol', label: 'fútbol' },
+  gustaria: { correct: 'gustaría', label: 'gustaría' },
+  higienico: { correct: 'higiénico', label: 'higiénico' },
+  jardin: { correct: 'jardín', label: 'jardín' },
+  lagrima: { correct: 'lágrima', label: 'lágrima' },
+  lena: { correct: 'leña', label: 'leña' },
+  mayoria: { correct: 'mayoría', label: 'mayoría' },
+  mecanico: { correct: 'mecánico', label: 'mecánico' },
+  montanas: { correct: 'montañas', label: 'montañas' },
+  pais: { correct: 'país', label: 'país' },
+  pequenos: { correct: 'pequeños', label: 'pequeños' },
+  pidio: { correct: 'pidió', label: 'pidió' },
+  reune: { correct: 'reúne', label: 'reúne' },
+  reunion: { correct: 'reunión', label: 'reunión' },
+  sabados: { correct: 'sábados', label: 'sábados' },
+  sofa: { correct: 'sofá', label: 'sofá' },
+  sueter: { correct: 'suéter', label: 'suéter' },
+  tenia: { correct: 'tenía', label: 'tenía' }
 };
 
 export const ES_AMBIGUOUS_WORDS = {
@@ -496,9 +651,329 @@ export const ES_AMBIGUOUS_WORDS = {
   cuantos: 'cuantos ("as many as") OR "cuántos" ("how many", question) — review manually',
   esta: 'esta ("this", fem.) OR "está" ("is/he-she-it-is") — review manually',
   estan: 'estan (rare) OR "están" ("they/you-pl are") — review manually',
-  mas: 'mas ("but", literary) OR "más" ("more") — review manually',
+  saludo:
+    'saludo ("I greet"/"greeting") OR "saludó" ("he/she greeted") — review manually',
   practico: 'practico ("I practice") OR "práctico" ("practical") — review manually'
 };
+
+// ── Context resolvers for ambiguous words ───────────────────────────────────
+//
+// The *_AMBIGUOUS_WORDS lists flag words that are valid both with and without
+// a diacritic. Many occurrences are settled by grammar alone, so each
+// resolver below returns true when the surrounding words show the unaccented
+// form is the correct one — that occurrence is then not reported. Rules are
+// linguistic (part of speech / sentence type), never per-entry. When in
+// doubt a resolver returns false, so the word stays flagged for manual review.
+//
+// ctx = { toks: [{ word, lower, index }], i, text, field }
+
+// Norwegian "far" = "father" after a possessive/article; "får" = "gets" is a
+// verb that follows a subject, not a determiner.
+const NO_FAR_NOUN_PRECEDERS = new Set([
+  'min', 'din', 'sin', 'vår', 'hans', 'hennes', 'deres', 'en', 'hver', 'ens', 'felles'
+]);
+
+// ── Shared helpers for the resolvers below ────────────────────────────────
+
+/** Nearest non-space character before `index` ('' at the start of the text). */
+function charBefore(text, index) {
+  let k = index - 1;
+  while (k >= 0 && /\s/.test(text[k])) k--;
+  return k >= 0 ? text[k] : '';
+}
+
+/** True when the token at `index` opens a sentence/quote/dialogue line. */
+function isSentenceInitial(text, index) {
+  return /^(|[.!?¿¡:"“«\-–—])$/.test(charBefore(text, index));
+}
+
+/** A bare headword ("que", "schon") has no sentence of its own to judge by, so
+ * judge it by how the entry's own example uses the same word. */
+function headwordMatchesExample(word, ctx, exampleField, resolve) {
+  const { entry, viaHeadword } = ctx;
+  if (viaHeadword || !entry || !entry[exampleField]) return false;
+  const exToks = tokensWithIndex(entry[exampleField]);
+  const j = exToks.findIndex((t) => t.lower === word);
+  if (j < 0) return false;
+  return resolve(word, {
+    toks: exToks,
+    i: j,
+    text: entry[exampleField],
+    field: exampleField,
+    entry,
+    viaHeadword: true
+  });
+}
+
+// ── Norwegian resolvers ───────────────────────────────────────────────
+
+const NO_SUBJECT_PRONOUNS = new Set([
+  'jeg', 'du', 'han', 'hun', 'den', 'det', 'vi', 'dere', 'de', 'man', 'hen', 'som', 'hvem', 'hva'
+]);
+const NO_COMMON_FINITE_VERBS = new Set([
+  'går', 'kan', 'vil', 'skal', 'må', 'er', 'har', 'ble', 'kom', 'fikk', 'tar', 'ser', 'gjør'
+]);
+// Words after which a verb must be in the infinitive ("gå"), never past ("ga").
+const NO_INFINITIVE_TRIGGERS = new Set([
+  'å', 'kan', 'skal', 'vil', 'må', 'bør', 'ville', 'kunne', 'skulle', 'måtte', 'burde', 'la',
+  'lar', 'lot'
+]);
+const NO_MODALS = new Set([
+  'kan', 'skal', 'vil', 'må', 'bør', 'ville', 'kunne', 'skulle', 'måtte', 'burde'
+]);
+const NO_SKIPPED_ADVERBS = new Set([
+  'ikke', 'aldri', 'bare', 'alltid', 'ofte', 'også', 'snart', 'nå', 'gjerne', 'sikkert'
+]);
+// Extra adverbs that can sit between a subject and "sa" (only used by resolveNoSa).
+const NO_SA_EXTRA_ADVERBS = new Set(['nettopp', 'først', 'akkurat', 'allerede', 'da']);
+const NO_FAR_PREDICATE_VERBS = new Set(['bli', 'blir', 'ble', 'vært', 'er', 'var']);
+const NO_VARE_NOUN_PRECEDERS = new Set([
+  'ta', 'tar', 'tok', 'tatt', 'en', 'noen', 'hver', 'denne', 'hele', 'ny'
+]);
+
+export function resolveNO(word, ctx) {
+  if (word === 'far') return resolveNoFar(ctx);
+  if (word === 'fore') return resolveNoFore(ctx);
+  if (word === 'fole') return resolveNoFole(ctx);
+  if (word === 'ga') return resolveNoGa(ctx);
+  if (word === 'sa') return resolveNoSa(ctx);
+  if (word === 'vare') return resolveNoVare(ctx);
+  return false;
+}
+
+// "fore" in "ha (noe) fore" (= have planned) is a real word; "føre" (to lead)
+// is not preceded by a form of "ha". Only resolve when "ha" is close by.
+const NO_HA_FORMS = new Set(['ha', 'har', 'hadde', 'hatt']);
+function resolveNoFore({ toks, i }) {
+  for (let j = Math.max(0, i - 3); j < i; j++) {
+    if (NO_HA_FORMS.has(toks[j].lower)) return true;
+  }
+  return false;
+}
+
+// "fole" (foal) follows an article/adjective ("en fole", "en ung fole") or is a
+// gendered headword ("fole (en)"); "føle" (to feel) is a verb.
+const NO_FOLE_NOUN_PRECEDERS = new Set(['en', 'ei', 'et', 'liten', 'ung', 'den', 'hver']);
+function resolveNoFole({ toks, i, text, field }) {
+  const prev = toks[i - 1]?.lower;
+  if (prev && NO_FOLE_NOUN_PRECEDERS.has(prev)) return true;
+  if ((field === 'norsk' || field === 'lemma') && i === 0 && /\((en|ei|en\/ei)\)/i.test(text)) {
+    return true;
+  }
+  return false;
+}
+
+// "ga" (gave) is correct as a finite past verb; "gå" (go) is required after
+// å/modals ("kan gå", "kan du gå") and in imperatives ("Gå hjem!").
+function resolveNoGa({ toks, i, text }) {
+  if (toks.length === 1 || isSentenceInitial(text, toks[i].index)) return false;
+  let j = i - 1;
+  while (j >= 0 && NO_SKIPPED_ADVERBS.has(toks[j].lower)) j--;
+  const p = toks[j]?.lower;
+  if (!p || NO_INFINITIVE_TRIGGERS.has(p)) return false;
+  if (NO_SUBJECT_PRONOUNS.has(p) && NO_MODALS.has(toks[j - 1]?.lower)) return false;
+  return true;
+}
+
+// "sa" (said) follows its subject ("han sa", "det man sa", "hva sa du"), leads
+// "at"-clauses, or opens a speech tag ("…, sa læreren"). "så" (so/then) does not.
+function resolveNoSa({ toks, i, text }) {
+  if (toks.length === 1) return false;
+  // Skip adverbs between subject and verb ("det man nettopp sa", "man sa først").
+  let j = i - 1;
+  while (j >= 0 && (NO_SKIPPED_ADVERBS.has(toks[j].lower) || NO_SA_EXTRA_ADVERBS.has(toks[j].lower))) j--;
+  const prev = toks[j]?.lower;
+  const next = toks[i + 1]?.lower;
+  if (prev && NO_SUBJECT_PRONOUNS.has(prev)) return true;
+  if (next === 'at' || next === 'ja' || next === 'nei') return true;
+  if (
+    charBefore(text, toks[i].index) === ',' &&
+    next &&
+    !NO_SUBJECT_PRONOUNS.has(next) &&
+    !NO_COMMON_FINITE_VERBS.has(next)
+  ) {
+    return true;
+  }
+  return false;
+}
+
+// "vare" (goods; "ta vare på" = take care of) vs "våre" (our) / "være" (be).
+function resolveNoVare({ toks, i }) {
+  const prev = toks[i - 1]?.lower;
+  return !!prev && NO_VARE_NOUN_PRECEDERS.has(prev);
+}
+
+function resolveNoFar({ toks, i, text, field, entry }) {
+  const prev = toks[i - 1]?.lower;
+  // One-word definition "far" of a masculine/feminine entry ("fatter (en)") —
+  // "sheep" would be neuter ("et får"), so this can only be "father".
+  if (
+    field === 'definition' &&
+    toks.length === 1 &&
+    /\((en|ei|en\/ei)\)/i.test(entry?.norsk || '')
+  ) {
+    return true;
+  }
+  if (prev && NO_FAR_NOUN_PRECEDERS.has(prev)) return true;
+  // "mor og far" / "mor, far og barn" — coordinated kinship nouns.
+  if (prev === 'mor') return true;
+  // "bli/er far" — predicate noun ("bli far til lam"); sheep would need "et får".
+  if (prev && NO_FAR_PREDICATE_VERBS.has(prev)) return true;
+  if (prev === 'og' && toks[i - 2]?.lower === 'mor') return true;
+  // Headword "far (en)": masculine noun marker → "father" ("sheep" is "et får").
+  if ((field === 'norsk' || field === 'lemma') && i === 0 && /\((en|ei|en\/ei)\)/i.test(text)) {
+    return true;
+  }
+  // Bare "lemma" is a copy of "norsk" without the gender marker — use it.
+  if (field === 'lemma' && toks.length === 1 && /\((en|ei|en\/ei)\)/i.test(entry?.norsk || '')) {
+    return true;
+  }
+  return false;
+}
+
+// German "wurde" (past of "werden") vs "würde" (conditional). The conditional
+// is signalled by a conditional/wish cue in the same sentence.
+const DE_CONDITIONAL_CUES = new Set([
+  'wenn', 'falls', 'ob', 'gern', 'gerne', 'lieber', 'sonst', 'vielleicht', 'stelle'
+]);
+
+const DE_SUBJECT_PRONOUNS = new Set(['ich', 'du', 'er', 'sie', 'es', 'wir', 'ihr', 'man']);
+// "fuhren" (drove) is followed by a direction/means ("fuhren durch den Tunnel");
+// "führen" (lead) takes an object or "zu" — "zu/zum/zur" is deliberately absent
+// because both verbs fit there.
+const DE_MOTION_FOLLOWERS = new Set([
+  'durch', 'nach', 'in', 'ins', 'mit', 'über', 'am', 'an', 'auf', 'aus', 'bis', 'los', 'ab',
+  'weg', 'zurück', 'hinaus', 'hinein', 'vorbei', 'herum'
+]);
+
+// Direction words that settle "fuhren" (drove) when they sit anywhere near it in
+// the clause ("fuhren Jetski entlang des Strandes", "fuhren aufs Geratewohl
+// dorthin"). "zu/zur/zum" are deliberately absent: "führen zu(r)" is common.
+const DE_FUHREN_DIRECTION_CUES = new Set(['entlang', 'dorthin', 'dahin', 'aufs']);
+
+export function resolveDE(word, ctx) {
+  const { toks, i, text } = ctx;
+  // Lowercase "nahe" is the adjective/adverb; only a capitalised "Nahe" could be a
+  // degraded noun "Nähe".
+  if (word === 'nahe') return toks[i].word === 'nahe';
+  if (word === 'schon') {
+    if (toks.length === 1) return headwordMatchesExample(word, ctx, 'example_german', resolveDE);
+    // "Bist du schon fertig?" — "schon" (already) right after a subject pronoun.
+    return DE_SUBJECT_PRONOUNS.has(toks[i - 1]?.lower);
+  }
+  if (word === 'fuhren') {
+    if (toks.length <= 1) return false;
+    // Allow an inverted subject pronoun: "fuhren wir nach Spanien".
+    let k = i + 1;
+    if (DE_SUBJECT_PRONOUNS.has(toks[k]?.lower)) k++;
+    if (DE_MOTION_FOLLOWERS.has(toks[k]?.lower)) return true;
+    for (let d = -4; d <= 4; d++) {
+      if (d !== 0 && DE_FUHREN_DIRECTION_CUES.has(toks[i + d]?.lower)) return true;
+    }
+    return false;
+  }
+  if (word === 'wurde' || word === 'konnte') {
+    if (toks.length === 1) return false;
+    // Past tense unless a conditional cue, or a sentence-initial (question) position.
+    if (isSentenceInitial(text, toks[i].index)) return false;
+    // "stelle" only counts as a cue when it is the lowercase verb ("ich stelle mir
+    // vor"), not the capitalised noun "Stelle" (job/position).
+    return !toks.some(
+      (t) => DE_CONDITIONAL_CUES.has(t.lower) && !(t.lower === 'stelle' && t.word !== 'stelle')
+    );
+  }
+  return false;
+}
+
+// Spanish interrogatives/exclamatives (que, como, cuando, …) need an accent
+// only when they ask or exclaim; as conjunctions/relatives they must not have
+// one. So they are only worth flagging inside ¿…? / ¡…! (at the start of the
+// clause or after a preposition) or after an indirect-question verb.
+const ES_INTERROGATIVES = new Set([
+  'que', 'como', 'donde', 'cuando', 'quien', 'cuanto', 'cuantos'
+]);
+const ES_PREPOSITIONS = new Set([
+  'a', 'de', 'en', 'por', 'para', 'con', 'desde', 'hasta', 'sobre', 'hacia', 'entre'
+]);
+const ES_INDIRECT_TRIGGERS = new Set([
+  'sé', 'sabes', 'sabe', 'saber', 'saben', 'sabemos', 'pregunto', 'preguntas', 'pregunta',
+  'preguntar', 'dime', 'dígame', 'explica', 'explícame', 'explicar', 'entiendo', 'entiendes',
+  'entender', 'depende', 'averigua', 'imagino'
+]);
+// "¡Qué bien!" (exclamative, accent) vs "¡Que duermas bien!" (optative "que", no accent).
+const ES_EXCLAMATIVE_COMPLEMENTS = new Set([
+  'bien', 'mal', 'bonito', 'bonita', 'lindo', 'linda', 'guay', 'rico', 'rica', 'bueno', 'buena',
+  'pena', 'lástima', 'día', 'suerte', 'sorpresa', 'alegría', 'calor', 'frío', 'rápido',
+  'fácil', 'difícil', 'horror', 'vergüenza', 'barbaridad', 'pasada', 'ganas', 'gusto'
+]);
+// "está" (verb) is followed by an adjective/adverb/preposition/gerund; "esta"
+// (demonstrative) by a noun.
+const ES_ESTA_VERB_FOLLOWERS = new Set([
+  'en', 'a', 'de', 'aquí', 'allí', 'ahí', 'muy', 'bien', 'mal', 'ya', 'no', 'tan', 'más',
+  'cerca', 'lejos', 'listo', 'lista', 'cansado', 'cansada', 'ocupado', 'ocupada', 'cerrado',
+  'cerrada', 'abierto', 'abierta', 'enfermo', 'enferma', 'contento', 'contenta', 'triste',
+  'feliz', 'libre', 'lleno', 'llena', 'vacío', 'vacía', 'preocupado', 'preocupada',
+  'enfadado', 'enfadada', 'casado', 'casada', 'sentado', 'sentada', 'limpio', 'limpia',
+  'sucio', 'sucia', 'caliente', 'fría', 'frio', 'rota', 'roto', 'dormido', 'dormida'
+]);
+const ES_DEMONSTRATIVE_LISTING = new Set(['este', 'esto', 'ese', 'esa', 'eso']);
+const ES_NOUN_DETERMINERS = new Set([
+  'un', 'el', 'mi', 'tu', 'su', 'nuestro', 'este', 'ese', 'otro', 'ningún'
+]);
+
+// "antes de que", "a pesar de que"… are conjunction locutions (no accent), and
+// "de que" + article ("asegurarte de que las puertas") is a conjunction too —
+// an interrogative "qué" is followed by a noun/verb, not an article.
+const ES_DE_QUE_LEADERS = new Set(['antes', 'después', 'pesar', 'tal', 'fin']);
+const ES_ARTICLES = new Set(['el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas']);
+
+/** Finds the ¿…? or ¡…! span containing `index`, if any. */
+function esSpanAt(text, index) {
+  for (const m of text.matchAll(/[¿¡][^?!¿¡]*[?!]/gu)) {
+    if (index >= m.index && index < m.index + m[0].length) {
+      return { open: m[0][0], start: m.index };
+    }
+  }
+  return null;
+}
+
+export function resolveES(word, ctx) {
+  const { toks, i, text } = ctx;
+  // A lone word is a headword/translation with no sentence of its own —
+  // judge it by how the entry's example uses the same word, else keep it flagged.
+  if (toks.length === 1) return headwordMatchesExample(word, ctx, 'example_spanish', resolveES);
+  const prev = toks[i - 1]?.lower;
+  const next = toks[i + 1]?.lower;
+
+  // "un saludo" (a greeting) vs "saludó" (greeted); "saludo" after a determiner is the noun.
+  if (word === 'saludo') return ES_NOUN_DETERMINERS.has(prev);
+
+  if (word === 'esta') {
+    if (!next) return toks.some((t) => ES_DEMONSTRATIVE_LISTING.has(t.lower));
+    if (ES_ESTA_VERB_FOLLOWERS.has(next) || /(ando|iendo|yendo)$/.test(next)) return false;
+    return true; // followed by a noun → demonstrative "esta"
+  }
+
+  if (!ES_INTERROGATIVES.has(word)) return false;
+
+  if (word === 'que' && prev === 'de') {
+    if (ES_DE_QUE_LEADERS.has(toks[i - 2]?.lower)) return true;
+    if (ES_ARTICLES.has(next)) return true;
+  }
+
+  const span = esSpanAt(text, toks[i].index);
+  const isFirstInSpan = span ? !prev || toks[i - 1].index < span.start : false;
+
+  if (span?.open === '¿') {
+    return !(isFirstInSpan || ES_PREPOSITIONS.has(prev));
+  }
+  if (span?.open === '¡') {
+    if (word === 'que') return !(isFirstInSpan && ES_EXCLAMATIVE_COMPLEMENTS.has(next));
+    return !(isFirstInSpan || ES_PREPOSITIONS.has(prev));
+  }
+  // Outside any question/exclamation: only an indirect question needs the accent.
+  return !(prev && ES_INDIRECT_TRIGGERS.has(prev));
+}
 
 /** Spanish: á/é/í/ó/ú/ñ → single-char (NFD strip handles all of these). */
 export function degradeES(word) {
@@ -521,8 +996,34 @@ export function degradeES(word) {
 export const WORD_RE = /(?<![\p{N}])[\p{L}']+(?![\p{N}])/gu;
 export const CHUNK_RE = /(?<![\p{N}])[\p{L}']+(?![\p{N}])|[^\p{L}']+/gu;
 
+// Spelled-out letter sequences such as "A-N-N-A" or "P-E-T-E-R" (3+ single
+// letters joined by hyphens) are spelling exercises, not words — each letter
+// would otherwise tokenize as a bare "a"/"e"/… and collide with degraded
+// forms ("a" → "å"). Excluded from tokenizing AND from --fix rewriting.
+const SPELLED_OUT_SOURCE =
+  String.raw`(?:(?<![\p{L}\p{N}-])\p{L}(?:-\p{L}){2,}(?![\p{L}\p{N}-]))|(?:(?<![\p{L}\p{N}-])\p{Lu}(?=-\p{L}{2,}))`;
+// The second alternative masks a lone capital letter used as a prefix in a hyphen
+// compound ("A-menneske", "T-skjorte", "U-Bahn") — that letter is a label, not the
+// word "a"/"å".
+const SPELLED_OUT_RE = new RegExp(SPELLED_OUT_SOURCE, 'gu');
+const SPELLED_OUT_SPLIT_RE = new RegExp(`(${SPELLED_OUT_SOURCE})`, 'gu');
+
+/** Blanks out spelled-out letter sequences (same length, so indices stay valid). */
+function maskSpelledOut(text) {
+  return (text || '').replace(SPELLED_OUT_RE, (m) => ' '.repeat(m.length));
+}
+
+/** Tokens with their lowercase form and character index in `text`. */
+export function tokensWithIndex(text) {
+  return [...maskSpelledOut(text).matchAll(WORD_RE)].map((m) => ({
+    word: m[0],
+    lower: m[0].toLowerCase(),
+    index: m.index
+  }));
+}
+
 export function tokens(text) {
-  return (text || '').match(WORD_RE) || [];
+  return tokensWithIndex(text).map((t) => t.word);
 }
 
 /** Strip a trailing gender/article parenthetical for German/Spanish
@@ -578,17 +1079,25 @@ export function matchCase(original, replacement) {
  * correct form. Case of the original token is preserved. */
 export function fixText(text, headwordDegradedForms, headwordCorrect, wordMap) {
   if (!text) return text;
-  return text.replace(CHUNK_RE, (chunk) => {
-    if (!/\p{L}/u.test(chunk)) return chunk;
-    const lower = chunk.toLowerCase();
-    if (headwordDegradedForms && headwordDegradedForms.has(lower)) {
-      return matchCase(chunk, headwordCorrect);
-    }
-    if (Object.prototype.hasOwnProperty.call(wordMap, lower)) {
-      return matchCase(chunk, wordMap[lower].correct);
-    }
-    return chunk;
-  });
+  // split() with a capture group puts spelled-out sequences at odd indices;
+  // leave those untouched.
+  return text
+    .split(SPELLED_OUT_SPLIT_RE)
+    .map((part, idx) => {
+      if (idx % 2 === 1) return part;
+      return part.replace(CHUNK_RE, (chunk) => {
+        if (!/\p{L}/u.test(chunk)) return chunk;
+        const lower = chunk.toLowerCase();
+        if (headwordDegradedForms && headwordDegradedForms.has(lower)) {
+          return matchCase(chunk, headwordCorrect);
+        }
+        if (Object.prototype.hasOwnProperty.call(wordMap, lower)) {
+          return matchCase(chunk, wordMap[lower].correct);
+        }
+        return chunk;
+      });
+    })
+    .join('');
 }
 
 /**
@@ -615,6 +1124,8 @@ export function checkLanguage({
   bareWord,
   wordMap,
   ambiguousWords,
+  resolveAmbiguous = null,
+  entry = null,
   exampleField,
   exampleValue
 }) {
@@ -631,6 +1142,11 @@ export function checkLanguage({
   for (const alt of splitTranslationAlternatives(headword)) {
     const word = bareWord(alt);
     if (!word || !specialChars.test(word)) continue;
+    // If the correctly-spelled headword already appears in the example, a
+    // token matching its degraded form is a different, legitimate word
+    // (e.g. headword "hår" with example "Hun har langt hår." — "har" is
+    // the verb "has"). Not a degradation.
+    if (exampleTokensLower.has(word.toLowerCase())) continue;
     const degradedForms = degrade(word);
     for (const form of degradedForms) {
       if (exampleTokensLower.has(form)) {
@@ -647,7 +1163,9 @@ export function checkLanguage({
 
   for (const { name, value } of fields) {
     if (!value) continue;
-    for (const tok of tokens(value).map((t) => t.toLowerCase())) {
+    const toks = tokensWithIndex(value);
+    for (let i = 0; i < toks.length; i++) {
+      const tok = toks[i].lower;
       if (Object.prototype.hasOwnProperty.call(wordMap, tok)) {
         issues.push({
           kind: 'common-word',
@@ -655,6 +1173,10 @@ export function checkLanguage({
           detail: `"${name}" contains "${tok}" (likely degraded "${wordMap[tok].label}")`
         });
       } else if (Object.prototype.hasOwnProperty.call(ambiguousWords, tok)) {
+        // Grammatical context can settle the ambiguity (see resolveNO/DE/ES).
+        if (resolveAmbiguous && resolveAmbiguous(tok, { toks, i, text: value, field: name, entry })) {
+          continue;
+        }
         ambiguous.push({
           kind: 'ambiguous',
           field: name,
@@ -767,6 +1289,222 @@ export function fixGermanBigrams(text) {
     result = result.replace(rule.re, rule.fix);
   }
   return result;
+}
+
+// ── Spanish -ción / -sión endings ──────────────────────────────────────────────────────
+//
+// Every Spanish word ending in "-cion"/"-sion" (singular) is really "-ción"/
+// "-sión" — there are no legitimate unaccented ones, so unlike the word maps
+// this needs no per-word list and also catches words nobody has listed yet.
+// Plurals ("-ciones") are correct as written and don't match.
+const ES_SUFFIX_RE = /(ci|si)on$/;
+
+export function findSpanishSuffixIssues(text, fieldName, wordMap = {}) {
+  const issues = [];
+  if (!text) return issues;
+  for (const tok of tokens(text)) {
+    // Lowercase-ending words only (an ALL-CAPS word can't be told apart safely).
+    if (!ES_SUFFIX_RE.test(tok)) continue;
+    if (Object.prototype.hasOwnProperty.call(wordMap, tok.toLowerCase())) continue; // map already reports it
+    issues.push({
+      kind: 'suffix',
+      field: fieldName,
+      detail: `"${fieldName}" contains "${tok}" (unaccented ending, likely "${tok.replace(ES_SUFFIX_RE, '$1ón')}")`
+    });
+  }
+  return issues;
+}
+
+export function fixSpanishSuffixes(text) {
+  if (!text) return text;
+  return text
+    .split(SPELLED_OUT_SPLIT_RE)
+    .map((part, idx) =>
+      idx % 2 === 1
+        ? part
+        : part.replace(WORD_RE, (w) => (ES_SUFFIX_RE.test(w) ? w.replace(ES_SUFFIX_RE, '$1ón') : w))
+    )
+    .join('');
+}
+
+// ── German ue/oe/ae digraphs ──────────────────────────────────────────────────────
+//
+// Generation sometimes writes ü/ö/ä as ue/oe/ae ("Buerger", "Groenland"). Many
+// real German words legitimately contain those letter pairs, so a word is only
+// flagged when none of the exclusions below apply. The (?<![eaq]) guard skips
+// "eue"/"aue"/"que" (neue, Feuer, Bauer, Queue). The report lists every hit, so
+// check the --fix diff for anything that slips through before committing.
+const DE_DIGRAPH_RE = /(?<![eaqäöü])ue|oe|ae/gi;
+const DE_DIGRAPH_LEGIT_WORDS = new Set([
+  'influencer', 'influencerin', 'influencern', 'baguette', 'baguettes', 'osloer', 'aerobic',
+  'tue', 'statue', 'statuen', 'poet', 'poeten', 'poesie', 'poetisch', 'poetischer',
+  'poetische', 'dominoeffekt', 'elektroenzephalogramm', 'wichtigtuerisch', 'israel',
+  'michael', 'raphael', 'goethe', 'revue', 'avenue', 'venue', 'queue', 'boeing', 'joe',
+  'zoe', 'chloe', 'joel', 'noel'
+]);
+// Legitimate substrings: -(t|x|d|n|s)uell (aktuell, sexuell, individuell, manuell,
+// visuell), "zu" + e-prefix verbs (zuerst, zuerkennen, aufrechtzuerhalten,
+// weiterzuentwickeln, zueinander), Laestadius/Laestadianismus (proper name), and
+// compounds where one part ends in a/o and the next starts with e (Klima+emissionen,
+// Netto+einkommen, Radio+empfänger), plus the "aero" prefix.
+const DE_DIGRAPH_LEGIT_PARTS =
+  /[txdns]uell|zuer(?:st|kenn|halt|kannt)|zuent|zuein|laestadi|(?:klima|netto|brutto|radio|video|audio|foto|photo|stereo)e|^aero/;
+
+function isDeDigraphCandidate(lower) {
+  DE_DIGRAPH_RE.lastIndex = 0;
+  const has = DE_DIGRAPH_RE.test(lower);
+  DE_DIGRAPH_RE.lastIndex = 0;
+  if (!has) return false;
+  if (DE_DIGRAPH_LEGIT_WORDS.has(lower)) return false;
+  return !DE_DIGRAPH_LEGIT_PARTS.test(lower);
+}
+
+const DE_DIGRAPH_TO_UMLAUT = { ue: 'ü', oe: 'ö', ae: 'ä' };
+
+function fixDeDigraphWord(word) {
+  return word.replace(DE_DIGRAPH_RE, (m) => {
+    const u = DE_DIGRAPH_TO_UMLAUT[m.toLowerCase()];
+    return m[0] === m[0].toUpperCase() ? u.toUpperCase() : u;
+  });
+}
+
+export function findGermanDigraphIssues(text, fieldName, wordMap = {}) {
+  const issues = [];
+  if (!text) return issues;
+  for (const tok of tokens(text)) {
+    const lower = tok.toLowerCase();
+    if (!isDeDigraphCandidate(lower)) continue;
+    if (Object.prototype.hasOwnProperty.call(wordMap, lower)) continue; // map already reports it
+    issues.push({
+      kind: 'digraph',
+      field: fieldName,
+      detail: `"${fieldName}" contains "${tok}" (ue/oe/ae digraph, likely "${fixDeDigraphWord(tok)}")`
+    });
+  }
+  return issues;
+}
+
+export function fixGermanDigraphs(text, wordMap = {}) {
+  if (!text) return text;
+  return text
+    .split(SPELLED_OUT_SPLIT_RE)
+    .map((part, idx) =>
+      idx % 2 === 1
+        ? part
+        : part.replace(WORD_RE, (w) => {
+            const lower = w.toLowerCase();
+            if (!isDeDigraphCandidate(lower)) return w;
+            if (Object.prototype.hasOwnProperty.call(wordMap, lower)) return w;
+            return fixDeDigraphWord(w);
+          })
+    )
+    .join('');
+}
+
+// ── German ss → ß (long-vowel "ss" written for "ß") ──────────────────────────────────────────
+//
+// Standard German (as used elsewhere in the data, e.g. "Straße") writes ß after a
+// long vowel; generation sometimes writes "ss" ("sass", "gross", "Fussball").
+// "ss" can't be turned into "ß" in general (dass, muss, bisschen, Schloss, Riss,
+// Masse are correct), so this only rewrites words that START with a stem that is
+// always ß, plus a few exact forms. Stems whose unaccented form is ambiguous with an
+// umlaut word (größer/großer, äußere/außer) are skipped and left for manual review.
+const DE_ESZETT_STEMS = [
+  ['ausserst', 'äußerst'],
+  ['massnahme', 'maßnahme'],
+  ['schliess', 'schließ'],
+  ['fliess', 'fließ'],
+  ['geniess', 'genieß'],
+  ['schiess', 'schieß'],
+  ['gross', 'groß'],
+  ['strass', 'straß'],
+  ['spass', 'spaß'],
+  ['heiss', 'heiß'],
+  ['weiss', 'weiß'],
+  ['stoss', 'stoß'],
+  ['reiss', 'reiß'],
+  ['beiss', 'beiß'],
+  ['giess', 'gieß'],
+  ['fuss', 'fuß'],
+  ['ausser', 'außer']
+];
+const DE_ESZETT_EXACT = { sass: 'saß', sassen: 'saßen', bloss: 'bloß', gruss: 'gruß' };
+// Words that are correct with "ss" or whose umlaut form is ambiguous — never rewritten.
+const DE_ESZETT_SKIP =
+  /^(?:gross(?:er|ere|eren|erem|eres|te|ten|tem|ter|tes|ist\w*)|ausser(?:e|en|em|er|es|lich\w*|ung\w*|ste\w*)|fussel\w*|strass)$/;
+
+function eszettFix(word) {
+  if (word.length > 1 && word === word.toUpperCase()) return null;
+  const lower = word.toLowerCase();
+  if (DE_ESZETT_SKIP.test(lower)) return null;
+  // Capitalised "Grosse/Grossen" may be the noun "Größe(n)" — leave for review.
+  if (/^gross(?:e|en)$/.test(lower) && word[0] !== lower[0]) return null;
+  if (Object.prototype.hasOwnProperty.call(DE_ESZETT_EXACT, lower)) {
+    return matchCase(word, DE_ESZETT_EXACT[lower]);
+  }
+  for (const [stem, rep] of DE_ESZETT_STEMS) {
+    if (lower.startsWith(stem)) {
+      return matchCase(word.slice(0, stem.length), rep) + word.slice(stem.length);
+    }
+  }
+  // "schliess" is always "schließ" inside prefixed verbs/adjectives too
+  // ("abzuschliessen", "einschliesslich", "anschliessend").
+  const at = lower.indexOf('schliess');
+  if (at > 0) return word.slice(0, at) + 'schließ' + word.slice(at + 'schliess'.length);
+  return null;
+}
+
+export function findGermanEszettIssues(text, fieldName, wordMap = {}) {
+  const issues = [];
+  if (!text) return issues;
+  for (const tok of tokens(text)) {
+    const fixed = eszettFix(tok);
+    if (!fixed) continue;
+    if (Object.prototype.hasOwnProperty.call(wordMap, tok.toLowerCase())) continue; // map reports it
+    issues.push({
+      kind: 'eszett',
+      field: fieldName,
+      detail: `"${fieldName}" contains "${tok}" ("ss" written for "ß", likely "${fixed}")`
+    });
+  }
+  return issues;
+}
+
+export function fixGermanEszett(text, wordMap = {}) {
+  if (!text) return text;
+  return text
+    .split(SPELLED_OUT_SPLIT_RE)
+    .map((part, idx) =>
+      idx % 2 === 1
+        ? part
+        : part.replace(WORD_RE, (w) => {
+            if (Object.prototype.hasOwnProperty.call(wordMap, w.toLowerCase())) return w;
+            return eszettFix(w) || w;
+          })
+    )
+    .join('');
+}
+
+// ── Mixed-script (homoglyph) tokens ──────────────────────────────────────────────────────
+//
+// A word that mixes Latin and Cyrillic letters (e.g. a Cyrillic "е" typed inside
+// "Wuerzе") looks fine on screen but never matches any word list. Reported for
+// manual fixing only — the right replacement is always the Latin letter, but
+// that should be a deliberate edit.
+export function findMixedScriptIssues(text, fieldName) {
+  const out = [];
+  if (!text) return out;
+  for (const m of text.matchAll(/[\p{L}']+/gu)) {
+    const w = m[0];
+    if (/\p{Script=Cyrillic}/u.test(w) && /\p{Script=Latin}/u.test(w)) {
+      out.push({
+        kind: 'script',
+        field: fieldName,
+        detail: `"${fieldName}" contains "${w}", which mixes Latin and Cyrillic letters (homoglyph) — fix manually`
+      });
+    }
+  }
+  return out;
 }
 
 export function fixSpanishPunctuation(exampleText) {
