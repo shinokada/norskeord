@@ -15,6 +15,7 @@ scripts/*.txt
 # Generated output directories
 scripts/output/
 scripts/outputs/
+scripts/audit/*.md
 
 # OS
 .DS_Store
@@ -35,6 +36,8 @@ vite.config.ts.timestamp-*
 
 # vite-plugin-pwa
 dev-dist/
+
+# Supabase
 supabase/.temp
 
 # Paraglide
@@ -42,19 +45,10 @@ src/lib/paraglide
 src/paraglide
 project.inlang/cache/
 
-# drafts — working files only, never tracked (see ai-docs/implementation/data-protection.md)
-draft/
-
-ai-docs/
-dev-docs/
-ceci-notes/
-cefr/
-grammar-sample/
-norskprove/
-oral/
-# ...but the Norskprøven oral practice route is real source code, not a draft.
-!src/routes/norskproven/*/oral/
-vocab/
-
-# audit/*.md
-scripts/audit/*.md
+# Private working files — symlinks into ../norskeord-private
+# (see ai-docs/implementation/data-protection.md)
+/draft
+/ai-docs
+/dev-docs
+# data-rules/ itself is tracked (sense-review.json); only the .md rule files are private symlinks
+/data-rules/*.md
