@@ -58,3 +58,4 @@ vocab/
 
 # audit/*.md
 scripts/audit/*.md
+/data-rules/*.md
