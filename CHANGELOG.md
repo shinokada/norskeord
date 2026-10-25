@@ -1,5 +1,13 @@
 # norske-flashcard
 
+## 2.114.2
+
+### Patch Changes
+
+- - **Chores**
+    - Updated which private working files and audit documents are excluded from version control.
+    - Removed internal reference documents covering content guidelines, vocabulary classification, and access policies. These changes do not alter user-facing app functionality.
+
 ## 2.114.1
 
 ### Patch Changes
