@@ -1175,6 +1175,16 @@ const ES_ESTA_TIME_NOUNS = new Set([
 // noun follows. Nouns are recognised by suffix or by this short list; any other follower
 // ("Para ella esta claro") is treated as the verb, so the accent is still required.
 const ES_ESTA_NOUN_SUFFIX = /(ción|sión|dad|tad|tud|ez|eza|ura|ncia|umbre|ie)$/;
+// Feminine adjectives with a noun-like suffix ("está segura/oscura") are verb contexts.
+const ES_ESTA_SUFFIX_ADJECTIVES = new Set([
+  'segura',
+  'insegura',
+  'oscura',
+  'pura',
+  'dura',
+  'madura',
+  'inmadura'
+]);
 const ES_ESTA_NOUNS = new Set([
   'idea',
   'persona',
@@ -1195,7 +1205,8 @@ const ES_ESTA_NOUNS = new Set([
   'regla',
   'oferta'
 ]);
-const esLooksLikeNoun = (w) => ES_ESTA_NOUNS.has(w) || ES_ESTA_NOUN_SUFFIX.test(w);
+const esLooksLikeNoun = (w) =>
+  ES_ESTA_NOUNS.has(w) || (!ES_ESTA_SUFFIX_ADJECTIVES.has(w) && ES_ESTA_NOUN_SUFFIX.test(w));
 
 /** Finds the ¿…? or ¡…! span containing `index`, if any. */
 function esSpanAt(text, index) {

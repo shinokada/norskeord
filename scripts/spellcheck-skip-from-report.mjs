@@ -12,21 +12,22 @@
  * Example:
  *   node scripts/spellcheck-skip-from-report.mjs scripts/audit/spellcheck-2026-10-25T04-00-00.md german --exclude=kappetes
  *
- * Words in --exclude stay out of the skip list, so they keep showing up in the next report.
+ * Words in --exclude stay out of the skip list (and are removed from it if already there),
+ * so they keep showing up in the next report.
  */
 import fs from 'node:fs';
 import path from 'node:path';
 
 const args = process.argv.slice(2);
 const flags = args.filter((a) => a.startsWith('--'));
-const [reportPath, language] = args.filter((a) => !a.startsWith('--'));
+const [reportPath, languageArg] = args.filter((a) => !a.startsWith('--'));
 const dry = flags.includes('--dry');
 const excludeFlag = flags.find((f) => f.startsWith('--exclude='));
 const exclude = new Set(
   excludeFlag ? excludeFlag.slice('--exclude='.length).split(',').filter(Boolean) : []
 );
 
-if (!reportPath || !language) {
+if (!reportPath || !languageArg) {
   console.error(
     'Usage: node scripts/spellcheck-skip-from-report.mjs <report.md> <language> [--exclude=a,b] [--dry]'
   );
@@ -34,6 +35,14 @@ if (!reportPath || !language) {
 }
 
 const skipPath = path.join('scripts', 'audit', 'spellcheck-skip.json');
+const skip = JSON.parse(fs.readFileSync(skipPath, 'utf8'));
+
+// Skip-list keys are lowercase (e.g. "german"); accept "German" but only existing keys.
+const language = languageArg.toLowerCase();
+if (!Object.prototype.hasOwnProperty.call(skip, language)) {
+  console.error(`Unknown language "${languageArg}". Expected one of: ${Object.keys(skip).join(', ')}`);
+  process.exit(1);
+}
 const heading = '## ' + language[0].toUpperCase() + language.slice(1);
 
 const report = fs.readFileSync(reportPath, 'utf8');
@@ -46,8 +55,13 @@ const next = report.indexOf('\n## ', start + heading.length);
 const section = report.slice(start, next === -1 ? undefined : next);
 
 const found = [...section.matchAll(/^- `([^`]+)` \(\d+x\)/gm)].map((m) => m[1]);
-const skip = JSON.parse(fs.readFileSync(skipPath, 'utf8'));
-const current = new Set(skip[language] ?? []);
+const current = new Set(skip[language]);
+
+// Excluded words must not stay suppressed, even if already in the skip list.
+const removed = [];
+for (const word of exclude) {
+  if (current.delete(word)) removed.push(word);
+}
 
 const added = [];
 for (const word of found) {
@@ -62,7 +76,7 @@ const sorted = [...current].sort(
 skip[language] = sorted;
 
 console.log(
-  `${language}: ${found.length} words in report, ${exclude.size} excluded, ${added.length} added, ${sorted.length} in skip list now`
+  `${language}: ${found.length} words in report, ${exclude.size} excluded, ${added.length} added, ${removed.length} removed, ${sorted.length} in skip list now`
 );
 
 if (dry) {
@@ -74,6 +88,14 @@ if (dry) {
         `  ${JSON.stringify(lang)}: [${words.map((w) => JSON.stringify(w)).join(', ')}]`
     )
     .join(',\n');
-  fs.writeFileSync(skipPath, `{\n${body}\n}\n`);
+  // Atomic update: write a temp file in the same directory, then rename over the target.
+  const tmpPath = `${skipPath}.${process.pid}.tmp`;
+  try {
+    fs.writeFileSync(tmpPath, `{\n${body}\n}\n`);
+    fs.renameSync(tmpPath, skipPath);
+  } catch (err) {
+    fs.rmSync(tmpPath, { force: true });
+    throw err;
+  }
   console.log(`Wrote ${skipPath}`);
 }
