@@ -50,4 +50,5 @@ project.inlang/cache/
 /draft
 /ai-docs
 /dev-docs
+# data-rules/ itself is tracked (sense-review.json); only the .md rule files are private symlinks
 /data-rules/*.md
