@@ -581,9 +581,7 @@
         </label>
 
         <label class="col-span-2 text-sm">
-          <span class="block font-medium dark:text-gray-200"
-            >Definition (Norwegian, optional)</span
-          >
+          <span class="block font-medium dark:text-gray-200">Definition (Norwegian, optional)</span>
           <input
             type="text"
             bind:value={modal.entry.definition}
