@@ -345,7 +345,10 @@ function findIntra(items) {
       all.some((b) => b !== a && (!a.sense || !b.sense || a.sense === b.sense))
     );
     if (kept.length < 2) continue;
-    const key = kept.map((i) => i.uid).sort().join('|');
+    const key = kept
+      .map((i) => i.uid)
+      .sort()
+      .join('|');
     if (!groups.has(key)) groups.set(key, { items: kept, texts: [] });
     groups.get(key).texts.push(text);
   }

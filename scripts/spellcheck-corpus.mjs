@@ -166,7 +166,9 @@ for (const kind of KINDS) {
 }
 
 if (entries.length === 0) {
-  console.error(`No corpus entries loaded from ${DATA_DIR} (expected vocab-*.json / uttrykk-*.json).`);
+  console.error(
+    `No corpus entries loaded from ${DATA_DIR} (expected vocab-*.json / uttrykk-*.json).`
+  );
   process.exit(1);
 }
 
@@ -232,9 +234,17 @@ for (const [lang, cfg] of Object.entries(LANGUAGES)) {
   );
   const title = lang[0].toUpperCase() + lang.slice(1);
   report.push(`## ${title}: ${unknown.size} unknown words\n`);
-  report.push(`### Diacritic suggestion (${diacritic.length})\n` + (diacritic.join('\n') || '(none)') + '\n');
-  report.push(`### Rare unknown, 1–${RARE_MAX} uses (${rare.length})\n` + (rare.join('\n') || '(none)') + '\n');
-  report.push(`### Frequent unknown, 3+ uses (${frequent.length})\n` + (frequent.join('\n') || '(none)') + '\n');
+  report.push(
+    `### Diacritic suggestion (${diacritic.length})\n` + (diacritic.join('\n') || '(none)') + '\n'
+  );
+  report.push(
+    `### Rare unknown, 1–${RARE_MAX} uses (${rare.length})\n` + (rare.join('\n') || '(none)') + '\n'
+  );
+  report.push(
+    `### Frequent unknown, 3+ uses (${frequent.length})\n` +
+      (frequent.join('\n') || '(none)') +
+      '\n'
+  );
 }
 
 const stamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);

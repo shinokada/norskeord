@@ -49,18 +49,15 @@ const KINDS = ['vocab', 'uttrykk'];
 const LANGUAGES = {
   norwegian: {
     fields: ['norsk', 'lemma', 'example', 'definition'],
-    degrade: (w) =>
-      w.replace(/å/g, 'a').replace(/ø/g, 'o').replace(/æ/g, 'ae')
+    degrade: (w) => w.replace(/å/g, 'a').replace(/ø/g, 'o').replace(/æ/g, 'ae')
   },
   german: {
     fields: ['german', 'example_german'],
-    degrade: (w) =>
-      w.replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/ü/g, 'u').replace(/ß/g, 'ss')
+    degrade: (w) => w.replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/ü/g, 'u').replace(/ß/g, 'ss')
   },
   spanish: {
     fields: ['spanish', 'example_spanish'],
-    degrade: (w) =>
-      w.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    degrade: (w) => w.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
   }
 };
 
@@ -110,7 +107,8 @@ for (const [lang, cfg] of Object.entries(LANGUAGES)) {
     for (const field of cfg.fields) {
       const raw = item[field];
       if (typeof raw !== 'string') continue;
-      if (/\p{M}/u.test(raw)) decomposed.push(`${item.id} (${file}) | ${field}: ${raw.slice(0, 70)}`);
+      if (/\p{M}/u.test(raw))
+        decomposed.push(`${item.id} (${file}) | ${field}: ${raw.slice(0, 70)}`);
       const text = raw.normalize('NFC');
       for (const m of text.matchAll(WORD)) {
         const w = m[0].toLowerCase();
@@ -155,8 +153,12 @@ for (const [lang, cfg] of Object.entries(LANGUAGES)) {
     else frequent++;
   }
 
-  summary.push(`${lang}: ${likely.length} likely, ${look.length} to look at (${frequent} frequent bare words ignored)`);
-  report.push(`## ${lang[0].toUpperCase() + lang.slice(1)}: ${likely.length} likely errors, ${look.length} need a look\n`);
+  summary.push(
+    `${lang}: ${likely.length} likely, ${look.length} to look at (${frequent} frequent bare words ignored)`
+  );
+  report.push(
+    `## ${lang[0].toUpperCase() + lang.slice(1)}: ${likely.length} likely errors, ${look.length} need a look\n`
+  );
   report.push('### Likely errors\n' + (likely.join('\n') || '(none)') + '\n');
   report.push('### Need a look\n' + (look.join('\n') || '(none)') + '\n');
 }
@@ -167,7 +169,8 @@ if (decomposed.length) {
     `## Decomposed Unicode (NFD): ${decomposed.length} fields\n\n` +
       'These look correct on screen but store the letter as base + combining mark. ' +
       'Normalize to NFC.\n\n' +
-      decomposed.map((d) => `- ${d}`).join('\n') + '\n'
+      decomposed.map((d) => `- ${d}`).join('\n') +
+      '\n'
   );
 }
 

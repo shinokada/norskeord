@@ -22,11 +22,15 @@ const flags = args.filter((a) => a.startsWith('--'));
 const [reportPath, language] = args.filter((a) => !a.startsWith('--'));
 const dry = flags.includes('--dry');
 const excludeFlag = flags.find((f) => f.startsWith('--exclude='));
-const exclude = new Set(excludeFlag ? excludeFlag.slice('--exclude='.length).split(',').filter(Boolean) : []);
+const exclude = new Set(
+  excludeFlag ? excludeFlag.slice('--exclude='.length).split(',').filter(Boolean) : []
+);
 
 if (!reportPath || !language) {
-	console.error('Usage: node scripts/spellcheck-skip-from-report.mjs <report.md> <language> [--exclude=a,b] [--dry]');
-	process.exit(1);
+  console.error(
+    'Usage: node scripts/spellcheck-skip-from-report.mjs <report.md> <language> [--exclude=a,b] [--dry]'
+  );
+  process.exit(1);
 }
 
 const skipPath = path.join('scripts', 'audit', 'spellcheck-skip.json');
@@ -35,8 +39,8 @@ const heading = '## ' + language[0].toUpperCase() + language.slice(1);
 const report = fs.readFileSync(reportPath, 'utf8');
 const start = report.indexOf(heading);
 if (start === -1) {
-	console.error(`Section "${heading}" not found in ${reportPath}`);
-	process.exit(1);
+  console.error(`Section "${heading}" not found in ${reportPath}`);
+  process.exit(1);
 }
 const next = report.indexOf('\n## ', start + heading.length);
 const section = report.slice(start, next === -1 ? undefined : next);
@@ -47,26 +51,29 @@ const current = new Set(skip[language] ?? []);
 
 const added = [];
 for (const word of found) {
-	if (exclude.has(word) || current.has(word)) continue;
-	current.add(word);
-	added.push(word);
+  if (exclude.has(word) || current.has(word)) continue;
+  current.add(word);
+  added.push(word);
 }
 
 const sorted = [...current].sort(
-	(a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }) || a.localeCompare(b)
+  (a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }) || a.localeCompare(b)
 );
 skip[language] = sorted;
 
 console.log(
-	`${language}: ${found.length} words in report, ${exclude.size} excluded, ${added.length} added, ${sorted.length} in skip list now`
+  `${language}: ${found.length} words in report, ${exclude.size} excluded, ${added.length} added, ${sorted.length} in skip list now`
 );
 
 if (dry) {
-	console.log('Dry run, nothing written.');
+  console.log('Dry run, nothing written.');
 } else {
-	const body = Object.entries(skip)
-		.map(([lang, words]) => `  ${JSON.stringify(lang)}: [${words.map((w) => JSON.stringify(w)).join(', ')}]`)
-		.join(',\n');
-	fs.writeFileSync(skipPath, `{\n${body}\n}\n`);
-	console.log(`Wrote ${skipPath}`);
+  const body = Object.entries(skip)
+    .map(
+      ([lang, words]) =>
+        `  ${JSON.stringify(lang)}: [${words.map((w) => JSON.stringify(w)).join(', ')}]`
+    )
+    .join(',\n');
+  fs.writeFileSync(skipPath, `{\n${body}\n}\n`);
+  console.log(`Wrote ${skipPath}`);
 }

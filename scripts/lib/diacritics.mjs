@@ -651,8 +651,7 @@ export const ES_AMBIGUOUS_WORDS = {
   cuantos: 'cuantos ("as many as") OR "cuántos" ("how many", question) — review manually',
   esta: 'esta ("this", fem.) OR "está" ("is/he-she-it-is") — review manually',
   estan: 'estan (rare) OR "están" ("they/you-pl are") — review manually',
-  saludo:
-    'saludo ("I greet"/"greeting") OR "saludó" ("he/she greeted") — review manually',
+  saludo: 'saludo ("I greet"/"greeting") OR "saludó" ("he/she greeted") — review manually',
   practico: 'practico ("I practice") OR "práctico" ("practical") — review manually'
 };
 
@@ -670,7 +669,17 @@ export const ES_AMBIGUOUS_WORDS = {
 // Norwegian "far" = "father" after a possessive/article; "får" = "gets" is a
 // verb that follows a subject, not a determiner.
 const NO_FAR_NOUN_PRECEDERS = new Set([
-  'min', 'din', 'sin', 'vår', 'hans', 'hennes', 'deres', 'en', 'hver', 'ens', 'felles'
+  'min',
+  'din',
+  'sin',
+  'vår',
+  'hans',
+  'hennes',
+  'deres',
+  'en',
+  'hver',
+  'ens',
+  'felles'
 ]);
 
 // ── Shared helpers for the resolvers below ────────────────────────────────
@@ -708,27 +717,91 @@ function headwordMatchesExample(word, ctx, exampleField, resolve) {
 // ── Norwegian resolvers ───────────────────────────────────────────────
 
 const NO_SUBJECT_PRONOUNS = new Set([
-  'jeg', 'du', 'han', 'hun', 'den', 'det', 'vi', 'dere', 'de', 'man', 'hen', 'som', 'hvem', 'hva'
+  'jeg',
+  'du',
+  'han',
+  'hun',
+  'den',
+  'det',
+  'vi',
+  'dere',
+  'de',
+  'man',
+  'hen',
+  'som',
+  'hvem',
+  'hva'
 ]);
 const NO_COMMON_FINITE_VERBS = new Set([
-  'går', 'kan', 'vil', 'skal', 'må', 'er', 'har', 'ble', 'kom', 'fikk', 'tar', 'ser', 'gjør'
+  'går',
+  'kan',
+  'vil',
+  'skal',
+  'må',
+  'er',
+  'har',
+  'ble',
+  'kom',
+  'fikk',
+  'tar',
+  'ser',
+  'gjør'
 ]);
 // Words after which a verb must be in the infinitive ("gå"), never past ("ga").
 const NO_INFINITIVE_TRIGGERS = new Set([
-  'å', 'kan', 'skal', 'vil', 'må', 'bør', 'ville', 'kunne', 'skulle', 'måtte', 'burde', 'la',
-  'lar', 'lot'
+  'å',
+  'kan',
+  'skal',
+  'vil',
+  'må',
+  'bør',
+  'ville',
+  'kunne',
+  'skulle',
+  'måtte',
+  'burde',
+  'la',
+  'lar',
+  'lot'
 ]);
 const NO_MODALS = new Set([
-  'kan', 'skal', 'vil', 'må', 'bør', 'ville', 'kunne', 'skulle', 'måtte', 'burde'
+  'kan',
+  'skal',
+  'vil',
+  'må',
+  'bør',
+  'ville',
+  'kunne',
+  'skulle',
+  'måtte',
+  'burde'
 ]);
 const NO_SKIPPED_ADVERBS = new Set([
-  'ikke', 'aldri', 'bare', 'alltid', 'ofte', 'også', 'snart', 'nå', 'gjerne', 'sikkert'
+  'ikke',
+  'aldri',
+  'bare',
+  'alltid',
+  'ofte',
+  'også',
+  'snart',
+  'nå',
+  'gjerne',
+  'sikkert'
 ]);
 // Extra adverbs that can sit between a subject and "sa" (only used by resolveNoSa).
 const NO_SA_EXTRA_ADVERBS = new Set(['nettopp', 'først', 'akkurat', 'allerede', 'da']);
 const NO_FAR_PREDICATE_VERBS = new Set(['bli', 'blir', 'ble', 'vært', 'er', 'var']);
 const NO_VARE_NOUN_PRECEDERS = new Set([
-  'ta', 'tar', 'tok', 'tatt', 'en', 'noen', 'hver', 'denne', 'hele', 'ny'
+  'ta',
+  'tar',
+  'tok',
+  'tatt',
+  'en',
+  'noen',
+  'hver',
+  'denne',
+  'hele',
+  'ny'
 ]);
 
 export function resolveNO(word, ctx) {
@@ -781,7 +854,11 @@ function resolveNoSa({ toks, i, text }) {
   if (toks.length === 1) return false;
   // Skip adverbs between subject and verb ("det man nettopp sa", "man sa først").
   let j = i - 1;
-  while (j >= 0 && (NO_SKIPPED_ADVERBS.has(toks[j].lower) || NO_SA_EXTRA_ADVERBS.has(toks[j].lower))) j--;
+  while (
+    j >= 0 &&
+    (NO_SKIPPED_ADVERBS.has(toks[j].lower) || NO_SA_EXTRA_ADVERBS.has(toks[j].lower))
+  )
+    j--;
   const prev = toks[j]?.lower;
   const next = toks[i + 1]?.lower;
   if (prev && NO_SUBJECT_PRONOUNS.has(prev)) return true;
@@ -834,7 +911,15 @@ function resolveNoFar({ toks, i, text, field, entry }) {
 // German "wurde" (past of "werden") vs "würde" (conditional). The conditional
 // is signalled by a conditional/wish cue in the same sentence.
 const DE_CONDITIONAL_CUES = new Set([
-  'wenn', 'falls', 'ob', 'gern', 'gerne', 'lieber', 'sonst', 'vielleicht', 'stelle'
+  'wenn',
+  'falls',
+  'ob',
+  'gern',
+  'gerne',
+  'lieber',
+  'sonst',
+  'vielleicht',
+  'stelle'
 ]);
 
 const DE_SUBJECT_PRONOUNS = new Set(['ich', 'du', 'er', 'sie', 'es', 'wir', 'ihr', 'man']);
@@ -842,8 +927,25 @@ const DE_SUBJECT_PRONOUNS = new Set(['ich', 'du', 'er', 'sie', 'es', 'wir', 'ihr
 // "führen" (lead) takes an object or "zu" — "zu/zum/zur" is deliberately absent
 // because both verbs fit there.
 const DE_MOTION_FOLLOWERS = new Set([
-  'durch', 'nach', 'in', 'ins', 'mit', 'über', 'am', 'an', 'auf', 'aus', 'bis', 'los', 'ab',
-  'weg', 'zurück', 'hinaus', 'hinein', 'vorbei', 'herum'
+  'durch',
+  'nach',
+  'in',
+  'ins',
+  'mit',
+  'über',
+  'am',
+  'an',
+  'auf',
+  'aus',
+  'bis',
+  'los',
+  'ab',
+  'weg',
+  'zurück',
+  'hinaus',
+  'hinein',
+  'vorbei',
+  'herum'
 ]);
 
 // Direction words that settle "fuhren" (drove) when they sit anywhere near it in
@@ -889,36 +991,145 @@ export function resolveDE(word, ctx) {
 // only when they ask or exclaim; as conjunctions/relatives they must not have
 // one. So they are only worth flagging inside ¿…? / ¡…! (at the start of the
 // clause or after a preposition) or after an indirect-question verb.
-const ES_INTERROGATIVES = new Set([
-  'que', 'como', 'donde', 'cuando', 'quien', 'cuanto', 'cuantos'
-]);
+const ES_INTERROGATIVES = new Set(['que', 'como', 'donde', 'cuando', 'quien', 'cuanto', 'cuantos']);
 const ES_PREPOSITIONS = new Set([
-  'a', 'de', 'en', 'por', 'para', 'con', 'desde', 'hasta', 'sobre', 'hacia', 'entre'
+  'a',
+  'de',
+  'en',
+  'por',
+  'para',
+  'con',
+  'desde',
+  'hasta',
+  'sobre',
+  'hacia',
+  'entre'
 ]);
 const ES_INDIRECT_TRIGGERS = new Set([
-  'sé', 'sabes', 'sabe', 'saber', 'saben', 'sabemos', 'pregunto', 'preguntas', 'pregunta',
-  'preguntar', 'dime', 'dígame', 'explica', 'explícame', 'explicar', 'entiendo', 'entiendes',
-  'entender', 'depende', 'averigua', 'imagino'
+  'sé',
+  'sabes',
+  'sabe',
+  'saber',
+  'saben',
+  'sabemos',
+  'pregunto',
+  'preguntas',
+  'pregunta',
+  'preguntar',
+  'dime',
+  'dígame',
+  'explica',
+  'explícame',
+  'explicar',
+  'entiendo',
+  'entiendes',
+  'entender',
+  'depende',
+  'averigua',
+  'imagino'
 ]);
 // "¡Qué bien!" (exclamative, accent) vs "¡Que duermas bien!" (optative "que", no accent).
 const ES_EXCLAMATIVE_COMPLEMENTS = new Set([
-  'bien', 'mal', 'bonito', 'bonita', 'lindo', 'linda', 'guay', 'rico', 'rica', 'bueno', 'buena',
-  'pena', 'lástima', 'día', 'suerte', 'sorpresa', 'alegría', 'calor', 'frío', 'rápido',
-  'fácil', 'difícil', 'horror', 'vergüenza', 'barbaridad', 'pasada', 'ganas', 'gusto'
+  'bien',
+  'mal',
+  'bonito',
+  'bonita',
+  'lindo',
+  'linda',
+  'guay',
+  'rico',
+  'rica',
+  'bueno',
+  'buena',
+  'pena',
+  'lástima',
+  'día',
+  'suerte',
+  'sorpresa',
+  'alegría',
+  'calor',
+  'frío',
+  'rápido',
+  'fácil',
+  'difícil',
+  'horror',
+  'vergüenza',
+  'barbaridad',
+  'pasada',
+  'ganas',
+  'gusto'
 ]);
 // "está" (verb) is followed by an adjective/adverb/preposition/gerund; "esta"
 // (demonstrative) by a noun.
 const ES_ESTA_VERB_FOLLOWERS = new Set([
-  'en', 'a', 'de', 'aquí', 'allí', 'ahí', 'muy', 'bien', 'mal', 'ya', 'no', 'tan', 'más',
-  'cerca', 'lejos', 'listo', 'lista', 'cansado', 'cansada', 'ocupado', 'ocupada', 'cerrado',
-  'cerrada', 'abierto', 'abierta', 'enfermo', 'enferma', 'contento', 'contenta', 'triste',
-  'feliz', 'libre', 'lleno', 'llena', 'vacío', 'vacía', 'preocupado', 'preocupada',
-  'enfadado', 'enfadada', 'casado', 'casada', 'sentado', 'sentada', 'limpio', 'limpia',
-  'sucio', 'sucia', 'caliente', 'fría', 'frio', 'rota', 'roto', 'dormido', 'dormida'
+  'en',
+  'a',
+  'de',
+  'aquí',
+  'allí',
+  'ahí',
+  'muy',
+  'bien',
+  'mal',
+  'ya',
+  'no',
+  'tan',
+  'más',
+  'cerca',
+  'lejos',
+  'listo',
+  'lista',
+  'cansado',
+  'cansada',
+  'ocupado',
+  'ocupada',
+  'cerrado',
+  'cerrada',
+  'abierto',
+  'abierta',
+  'enfermo',
+  'enferma',
+  'contento',
+  'contenta',
+  'triste',
+  'feliz',
+  'libre',
+  'lleno',
+  'llena',
+  'vacío',
+  'vacía',
+  'preocupado',
+  'preocupada',
+  'enfadado',
+  'enfadada',
+  'casado',
+  'casada',
+  'sentado',
+  'sentada',
+  'limpio',
+  'limpia',
+  'sucio',
+  'sucia',
+  'caliente',
+  'fría',
+  'frio',
+  'rota',
+  'roto',
+  'dormido',
+  'dormida'
 ]);
 const ES_DEMONSTRATIVE_LISTING = new Set(['este', 'esto', 'ese', 'esa', 'eso']);
 const ES_NOUN_DETERMINERS = new Set([
-  'un', 'el', 'mi', 'tu', 'su', 'nuestro', 'este', 'ese', 'otro', 'ningún'
+  'un',
+  'el',
+  'mi',
+  'tu',
+  'su',
+  'nuestro',
+  'este',
+  'ese',
+  'otro',
+  'ningún'
 ]);
 
 // "antes de que", "a pesar de que"… are conjunction locutions (no accent), and
@@ -933,13 +1144,31 @@ const ES_ARTICLES = new Set(['el', 'la', 'los', 'las', 'un', 'una', 'unos', 'una
 // is not in ES_ESTA_VERB_FOLLOWERS.
 const ES_ESTA_SUBJECT_PRONOUNS = new Set(['ella', 'él', 'usted', 'ello']);
 const ES_ESTA_SUBJECT_DETERMINERS = new Set([
-  ...ES_ARTICLES, 'mi', 'mis', 'tu', 'tus', 'su', 'sus', 'nuestro', 'nuestra', 'nuestros', 'nuestras'
+  ...ES_ARTICLES,
+  'mi',
+  'mis',
+  'tu',
+  'tus',
+  'su',
+  'sus',
+  'nuestro',
+  'nuestra',
+  'nuestros',
+  'nuestras'
 ]);
 // "un poco esta imagen": the article belongs to a quantifier, not to a subject noun.
 const ES_ESTA_QUANTIFIERS = new Set(['poco', 'mucho']);
 // "esta noche/semana/…" is always the demonstrative, wherever it sits in the clause.
 const ES_ESTA_TIME_NOUNS = new Set([
-  'noche', 'semana', 'tarde', 'mañana', 'vez', 'mes', 'año', 'temporada', 'época'
+  'noche',
+  'semana',
+  'tarde',
+  'mañana',
+  'vez',
+  'mes',
+  'año',
+  'temporada',
+  'época'
 ]);
 
 // "Para ella esta decisión": after preposition + pronoun, "esta" is the demonstrative when a
@@ -947,8 +1176,24 @@ const ES_ESTA_TIME_NOUNS = new Set([
 // ("Para ella esta claro") is treated as the verb, so the accent is still required.
 const ES_ESTA_NOUN_SUFFIX = /(ción|sión|dad|tad|tud|ez|eza|ura|ncia|umbre|ie)$/;
 const ES_ESTA_NOUNS = new Set([
-  'idea', 'persona', 'cosa', 'forma', 'manera', 'casa', 'opción', 'pregunta', 'respuesta',
-  'situación', 'vez', 'parte', 'gente', 'ciudad', 'calle', 'historia', 'regla', 'oferta'
+  'idea',
+  'persona',
+  'cosa',
+  'forma',
+  'manera',
+  'casa',
+  'opción',
+  'pregunta',
+  'respuesta',
+  'situación',
+  'vez',
+  'parte',
+  'gente',
+  'ciudad',
+  'calle',
+  'historia',
+  'regla',
+  'oferta'
 ]);
 const esLooksLikeNoun = (w) => ES_ESTA_NOUNS.has(w) || ES_ESTA_NOUN_SUFFIX.test(w);
 
@@ -1037,8 +1282,7 @@ export const CHUNK_RE = /(?<![\p{N}])[\p{L}']+(?![\p{N}])|[^\p{L}']+/gu;
 // letters joined by hyphens) are spelling exercises, not words — each letter
 // would otherwise tokenize as a bare "a"/"e"/… and collide with degraded
 // forms ("a" → "å"). Excluded from tokenizing AND from --fix rewriting.
-const SPELLED_OUT_SOURCE =
-  String.raw`(?:(?<![\p{L}\p{N}-])\p{L}(?:-\p{L}){2,}(?![\p{L}\p{N}-]))|(?:(?<![\p{L}\p{N}-])\p{Lu}(?=-\p{L}{2,}))`;
+const SPELLED_OUT_SOURCE = String.raw`(?:(?<![\p{L}\p{N}-])\p{L}(?:-\p{L}){2,}(?![\p{L}\p{N}-]))|(?:(?<![\p{L}\p{N}-])\p{Lu}(?=-\p{L}{2,}))`;
 // The second alternative masks a lone capital letter used as a prefix in a hyphen
 // compound ("A-menneske", "T-skjorte", "U-Bahn") — that letter is a label, not the
 // word "a"/"å".
@@ -1211,7 +1455,10 @@ export function checkLanguage({
         });
       } else if (Object.prototype.hasOwnProperty.call(ambiguousWords, tok)) {
         // Grammatical context can settle the ambiguity (see resolveNO/DE/ES).
-        if (resolveAmbiguous && resolveAmbiguous(tok, { toks, i, text: value, field: name, entry })) {
+        if (
+          resolveAmbiguous &&
+          resolveAmbiguous(tok, { toks, i, text: value, field: name, entry })
+        ) {
           continue;
         }
         ambiguous.push({
@@ -1373,11 +1620,39 @@ export function fixSpanishSuffixes(text) {
 // check the --fix diff for anything that slips through before committing.
 const DE_DIGRAPH_RE = /(?<![eaqäöü])ue|oe|ae/gi;
 const DE_DIGRAPH_LEGIT_WORDS = new Set([
-  'influencer', 'influencerin', 'influencern', 'baguette', 'baguettes', 'osloer', 'aerobic',
-  'tue', 'statue', 'statuen', 'poet', 'poeten', 'poesie', 'poetisch', 'poetischer',
-  'poetische', 'dominoeffekt', 'elektroenzephalogramm', 'wichtigtuerisch', 'israel',
-  'michael', 'raphael', 'goethe', 'revue', 'avenue', 'venue', 'queue', 'boeing', 'joe',
-  'zoe', 'chloe', 'joel', 'noel'
+  'influencer',
+  'influencerin',
+  'influencern',
+  'baguette',
+  'baguettes',
+  'osloer',
+  'aerobic',
+  'tue',
+  'statue',
+  'statuen',
+  'poet',
+  'poeten',
+  'poesie',
+  'poetisch',
+  'poetischer',
+  'poetische',
+  'dominoeffekt',
+  'elektroenzephalogramm',
+  'wichtigtuerisch',
+  'israel',
+  'michael',
+  'raphael',
+  'goethe',
+  'revue',
+  'avenue',
+  'venue',
+  'queue',
+  'boeing',
+  'joe',
+  'zoe',
+  'chloe',
+  'joel',
+  'noel'
 ]);
 // Legitimate substrings: -(t|x|d|n|s)uell (aktuell, sexuell, individuell, manuell,
 // visuell), "zu" + e-prefix verbs (zuerst, zuerkennen, aufrechtzuerhalten,
