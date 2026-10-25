@@ -1,5 +1,16 @@
 # norske-flashcard
 
+## 2.114.1
+
+### Patch Changes
+
+- - **Bug Fixes**
+    - Improved detection and correction of diacritic and spelling inconsistencies in Norwegian, German, and Spanish content.
+    - Better recognition of valid unaccented words and context-dependent spellings helps avoid incorrect corrections.
+  - **Improvements**
+    - Expanded checks for Spanish suffixes, German spelling patterns, and mixed Latin/Cyrillic characters.
+    - Broader spelling review coverage highlights likely errors and words that may need manual review.
+
 ## 2.114.0
 
 ### Minor Changes
