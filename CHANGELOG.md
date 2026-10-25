@@ -1,5 +1,14 @@
 # norske-flashcard
 
+## 2.115.0
+
+### Minor Changes
+
+- - 174 new uttrykk
+  - **Style**
+    - The definition field label now appears on a single line. Its wording and the surrounding form behavior remain unchanged.
+    - This is a presentation-only adjustment; no changes to how the form works are described. No other end-user-visible changes were specified.
+
 ## 2.114.2
 
 ### Patch Changes
