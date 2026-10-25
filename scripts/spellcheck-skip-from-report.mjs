@@ -40,7 +40,9 @@ const skip = JSON.parse(fs.readFileSync(skipPath, 'utf8'));
 // Skip-list keys are lowercase (e.g. "german"); accept "German" but only existing keys.
 const language = languageArg.toLowerCase();
 if (!Object.prototype.hasOwnProperty.call(skip, language)) {
-  console.error(`Unknown language "${languageArg}". Expected one of: ${Object.keys(skip).join(', ')}`);
+  console.error(
+    `Unknown language "${languageArg}". Expected one of: ${Object.keys(skip).join(', ')}`
+  );
   process.exit(1);
 }
 const heading = '## ' + language[0].toUpperCase() + language.slice(1);
