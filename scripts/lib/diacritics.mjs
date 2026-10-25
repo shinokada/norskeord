@@ -942,6 +942,16 @@ const ES_ESTA_TIME_NOUNS = new Set([
   'noche', 'semana', 'tarde', 'mañana', 'vez', 'mes', 'año', 'temporada', 'época'
 ]);
 
+// "Para ella esta decisión": after preposition + pronoun, "esta" is the demonstrative when a
+// noun follows. Nouns are recognised by suffix or by this short list; any other follower
+// ("Para ella esta claro") is treated as the verb, so the accent is still required.
+const ES_ESTA_NOUN_SUFFIX = /(ción|sión|dad|tad|tud|ez|eza|ura|ncia|umbre|ie)$/;
+const ES_ESTA_NOUNS = new Set([
+  'idea', 'persona', 'cosa', 'forma', 'manera', 'casa', 'opción', 'pregunta', 'respuesta',
+  'situación', 'vez', 'parte', 'gente', 'ciudad', 'calle', 'historia', 'regla', 'oferta'
+]);
+const esLooksLikeNoun = (w) => ES_ESTA_NOUNS.has(w) || ES_ESTA_NOUN_SUFFIX.test(w);
+
 /** Finds the ¿…? or ¡…! span containing `index`, if any. */
 function esSpanAt(text, index) {
   for (const m of text.matchAll(/[¿¡][^?!¿¡]*[?!]/gu)) {
@@ -967,7 +977,9 @@ export function resolveES(word, ctx) {
     if (!next) return toks.some((t) => ES_DEMONSTRATIVE_LISTING.has(t.lower));
     if (ES_ESTA_VERB_FOLLOWERS.has(next) || /(ando|iendo|yendo)$/.test(next)) return false;
     if (ES_ESTA_TIME_NOUNS.has(next)) return true;
-    if (ES_ESTA_SUBJECT_PRONOUNS.has(prev)) return false;
+    if (ES_ESTA_SUBJECT_PRONOUNS.has(prev)) {
+      return ES_PREPOSITIONS.has(toks[i - 2]?.lower) && esLooksLikeNoun(next);
+    }
     if (
       prev &&
       !ES_PREPOSITIONS.has(prev) &&

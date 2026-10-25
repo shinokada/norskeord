@@ -152,12 +152,22 @@ async function loadSpell(pkg) {
 const skipFile = join(__dirname, 'audit', 'spellcheck-skip.json');
 const SKIP = existsSync(skipFile) ? JSON.parse(readFileSync(skipFile, 'utf8')) : {};
 
+if (!existsSync(DATA_DIR)) {
+  console.error(`Data directory not found: ${DATA_DIR}`);
+  process.exit(1);
+}
+
 const entries = [];
 for (const kind of KINDS) {
   for (const level of LEVELS) {
     const name = `${kind}-${level}`;
     for (const item of loadItems(join(DATA_DIR, `${name}.json`))) entries.push({ item, name });
   }
+}
+
+if (entries.length === 0) {
+  console.error(`No corpus entries loaded from ${DATA_DIR} (expected vocab-*.json / uttrykk-*.json).`);
+  process.exit(1);
 }
 
 const WORD = /\p{L}+/gu;
@@ -199,8 +209,15 @@ for (const [lang, cfg] of Object.entries(LANGUAGES)) {
   const frequent = [];
   for (const [w, u] of [...unknown].sort(([a], [b]) => a.localeCompare(b))) {
     const lowerWord = w.toLowerCase();
+    // report the spelling the dictionary accepted (e.g. German noun `Glück`, not `glück`)
     const diac = restoreCandidates(w, lang)
-      .filter((c) => c !== lowerWord && (spell.correct(c) || spell.correct(c[0].toUpperCase() + c.slice(1))))
+      .filter((c) => c !== lowerWord)
+      .map((c) => {
+        if (spell.correct(c)) return c;
+        const cap = c[0].toUpperCase() + c.slice(1);
+        return spell.correct(cap) ? cap : null;
+      })
+      .filter(Boolean)
       .slice(0, 5);
     const line = `- \`${w}\` (${u.count}x)${diac.length ? ' → ' + diac.map((s) => `\`${s}\``).join(', ') : ''}`;
     const block = [line, ...u.rows.map((r) => `  - ${r}`)].join('\n');
