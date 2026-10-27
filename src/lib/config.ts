@@ -245,8 +245,19 @@ export const UTTRYKK_FUNCTIONAL_THEMES = [
   // 'idioms' itself stays above (A2 still uses it, free there).
   'state-idioms',
   'light-verb-idioms',
-  'figurative-idioms',
-  'general-fixed-expressions'
+  'general-fixed-expressions',
+  // Added by scripts/split-b2-figurative-idioms.mjs — B2's 339 former
+  // 'figurative-idioms' entries were split into these 9 groups (imagery for
+  // animals/body, meaning for the rest).
+  'animal-idioms',
+  'body-idioms',
+  'money-and-cost',
+  'success-and-failure',
+  'effort-and-work',
+  'communication-and-thinking',
+  'emotions-and-attitudes',
+  'social-and-conflict',
+  'timing-and-change'
 ] as const;
 
 /** Catch-all for entries that don't cleanly fit a topical or functional theme. */
