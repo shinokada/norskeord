@@ -206,7 +206,24 @@ export const CATEGORIES_BY_LEVEL = {
     // Plus-only via the generated PLUS_CATEGORIES.
     'interpersonal-conflict-expressions',
     'abstract-action-idioms',
-    'abstract-circumstance-expressions'
+    'abstract-circumstance-expressions',
+    // Added by scripts/split-c-uttrykk-large-groups.mjs — uttrykk-only slugs
+    // (no vocab-c.json content) that the 4 oversized C uttrykk groups
+    // (conflict x2, abstract-action-idioms, behavioral-idioms) and the 27
+    // non-ordtak `proverbs` entries were split into. All Plus-only via the
+    // generated PLUS_CATEGORIES.
+    'success-and-failure',
+    'reprimand-and-insult',
+    'power-and-confrontation',
+    'character-and-attitude',
+    'deception-and-secrets',
+    'judgement-and-understanding',
+    'cooperation-and-relationships',
+    'activity-and-idleness',
+    'timing-and-change',
+    'composure-and-temper',
+    'wisdom-and-lessons',
+    'boasting-and-pride'
   ]
 } as const satisfies Record<CEFRLevel, readonly string[]>;
 
@@ -245,8 +262,19 @@ export const UTTRYKK_FUNCTIONAL_THEMES = [
   // 'idioms' itself stays above (A2 still uses it, free there).
   'state-idioms',
   'light-verb-idioms',
-  'figurative-idioms',
-  'general-fixed-expressions'
+  'general-fixed-expressions',
+  // Added by scripts/split-b2-figurative-idioms.mjs — B2's 339 former
+  // 'figurative-idioms' entries were split into these 9 groups (imagery for
+  // animals/body, meaning for the rest).
+  'animal-idioms',
+  'body-idioms',
+  'money-and-cost',
+  'success-and-failure',
+  'effort-and-work',
+  'communication-and-thinking',
+  'emotions-and-attitudes',
+  'social-and-conflict',
+  'timing-and-change'
 ] as const;
 
 /** Catch-all for entries that don't cleanly fit a topical or functional theme. */
