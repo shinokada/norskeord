@@ -206,7 +206,24 @@ export const CATEGORIES_BY_LEVEL = {
     // Plus-only via the generated PLUS_CATEGORIES.
     'interpersonal-conflict-expressions',
     'abstract-action-idioms',
-    'abstract-circumstance-expressions'
+    'abstract-circumstance-expressions',
+    // Added by scripts/split-c-uttrykk-large-groups.mjs — uttrykk-only slugs
+    // (no vocab-c.json content) that the 4 oversized C uttrykk groups
+    // (conflict x2, abstract-action-idioms, behavioral-idioms) and the 27
+    // non-ordtak `proverbs` entries were split into. All Plus-only via the
+    // generated PLUS_CATEGORIES.
+    'success-and-failure',
+    'reprimand-and-insult',
+    'power-and-confrontation',
+    'character-and-attitude',
+    'deception-and-secrets',
+    'judgement-and-understanding',
+    'cooperation-and-relationships',
+    'activity-and-idleness',
+    'timing-and-change',
+    'composure-and-temper',
+    'wisdom-and-lessons',
+    'boasting-and-pride'
   ]
 } as const satisfies Record<CEFRLevel, readonly string[]>;
 
