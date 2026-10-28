@@ -113,7 +113,8 @@ export const SUBSTANTIV_RULES: Record<string, GrammarRule> = {
       'Norwegian genitive adds -s directly to the noun or name with NO apostrophe: ' +
       'Eriks bil, Annes jobb, barnets leker. ' +
       'An apostrophe before -s is an English habit — never use it in Norwegian: ' +
-      'Erik’s → Eriks. The noun that follows a genitive -s is in the INDEFINITE form: ' +
+      'Erik’s → Eriks. If the name or noun already ends in -s, -x or -z, add only an apostrophe: ' +
+      'Niklas’ bok, Hans’ bil, Max’ bil (not "Niklass bok" or "Niklas’s bok"). The noun that follows a genitive -s is in the INDEFINITE form: ' +
       '"Petters jente" (not "Petters jenta"). But if an adjective comes between the genitive ' +
       'and the noun, that adjective takes the DEFINITE form: "Petters store jente" ' +
       '(not "Petters stor jente"). A genitive -s also expresses DURATION when attached to a ' +
@@ -137,6 +138,7 @@ export const SUBSTANTIV_RULES: Record<string, GrammarRule> = {
     explanationNb:
       'Norsk genitiv legger -s direkte til substantivet eller navnet UTEN apostrof: Eriks bil, Annes jobb, barnets leker.\n\n' +
       'Apostrof før -s er en engelsk vane — bruk den aldri på norsk: Erik’s → Eriks.\n\n' +
+      'Hvis navnet eller substantivet allerede ender på -s, -x eller -z, settes bare apostrof: Niklas’ bok, Hans’ bil, Max’ bil (ikke "Niklass bok" eller "Niklas’s bok").\n\n' +
       'Substantivet etter genitiv-s står i UBESTEMT form: "Petters jente" (ikke "Petters jenta"). ' +
       'Men hvis det står et adjektiv imellom genitiven og substantivet, skal adjektivet stå i ' +
       'BESTEMT form: "Petters store jente" (ikke "Petters stor jente").\n\n' +
