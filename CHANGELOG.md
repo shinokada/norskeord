@@ -1,5 +1,12 @@
 # norske-flashcard
 
+## 2.115.1
+
+### Patch Changes
+
+- - **Documentation**
+    - Updated noun possessive explanations to clarify that names and nouns ending in **-s, -x, or -z** take only an apostrophe, with examples of correct and incorrect forms. The Norwegian explanation now includes the same rule.
+
 ## 2.115.0
 
 ### Minor Changes
