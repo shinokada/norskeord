@@ -295,6 +295,10 @@
       }
       // Every answer, of every question type, counts towards the quiz stats.
       quizStats = await recordQuizAnswer(current.entry, correct, quizStats, userId);
+    } catch (error) {
+      // A failed write must not block the learner or leave the question retryable: the
+      // result above is already counted, so retrying would count it twice. Log and carry on.
+      console.error('Could not save quiz answer', error);
     } finally {
       answering = false;
     }

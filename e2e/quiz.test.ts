@@ -509,3 +509,48 @@ test('Enter in a typed answer shows the feedback instead of skipping to the next
   await expect(nextButton).toBeVisible();
   await expect(page.getByText(counter.trim())).toBeVisible();
 });
+
+// ===========================================================================
+// Regression: a failed progress write must not leave the question stuck
+// ===========================================================================
+
+test('a typed answer still reveals the feedback when the progress write fails', async ({
+  page
+}) => {
+  test.setTimeout(30000);
+  // Free user: saveProgress writes `progress-` keys to localStorage. Make that throw (quota or
+  // private mode). The answer is already counted, so the quiz must reveal it and carry on
+  // instead of staying on the question, where a retry would count it twice.
+  await page.addInitScript(() => {
+    const original = Storage.prototype.setItem;
+    Storage.prototype.setItem = function (key: string, value: string) {
+      if (String(key).startsWith('progress-')) throw new Error('QuotaExceededError');
+      return original.call(this, key, value);
+    };
+  });
+  await page.goto('/quiz');
+  await page.getByRole('button', { name: /greetings/i }).click();
+  await page.getByRole('button', { name: /start quiz/i }).click();
+  await expect(page.getByText(/question 1 of|spørsmål 1 av/i)).toBeVisible({ timeout: 10000 });
+
+  const input = page.getByRole('textbox');
+  const nextButton = page.locator('button.bg-indigo-600').filter({
+    hasText: /next|see results|neste|se resultater/i
+  });
+
+  // Multiple-choice answers write no progress, so they are unaffected. Click through them
+  // until a typed question shows.
+  for (let i = 0; i < 6 && !(await input.isVisible().catch(() => false)); i++) {
+    await page.getByRole('button', { name: /^A\b/ }).click();
+    await nextButton.click();
+    await expect(
+      page.getByText(new RegExp(`(question|spørsmål) ${i + 2} (of|av)`, 'i'))
+    ).toBeVisible();
+  }
+  await expect(input).toBeVisible();
+
+  await input.fill('test');
+  await input.press('Enter');
+
+  await expect(nextButton).toBeVisible();
+});

@@ -68,17 +68,22 @@ export async function loadQuizStats(userId?: string | null): Promise<QuizStatsMa
     return map;
   }
 
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (!key?.startsWith(QUIZ_LS_PREFIX)) continue;
-    try {
-      const raw = localStorage.getItem(key);
-      if (!raw) continue;
-      const parsed: unknown = JSON.parse(raw);
-      if (isQuizStat(parsed)) map[key.slice(QUIZ_LS_PREFIX.length)] = parsed;
-    } catch {
-      // Ignore malformed entries
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!key?.startsWith(QUIZ_LS_PREFIX)) continue;
+      try {
+        const raw = localStorage.getItem(key);
+        if (!raw) continue;
+        const parsed: unknown = JSON.parse(raw);
+        if (isQuizStat(parsed)) map[key.slice(QUIZ_LS_PREFIX.length)] = parsed;
+      } catch {
+        // Ignore malformed entries
+      }
     }
+  } catch (error) {
+    // Blocked or unavailable storage (for example a SecurityError): return what we have
+    console.error('loadQuizStats: localStorage unavailable', error);
   }
   return map;
 }

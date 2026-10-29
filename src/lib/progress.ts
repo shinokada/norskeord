@@ -95,6 +95,21 @@ export function clearUserProgress(): void {
   keysToRemove.forEach((k) => localStorage.removeItem(k));
 }
 
+/**
+ * Removes only the local vocab/uttrykk `progress-` keys. Used by the free to Plus sync, which
+ * discards them after a migration or when the cloud already has progress, but must leave
+ * the `grammar-` and `quiz-stats-` keys alone: those are removed by their own migrations
+ * only after a successful upsert, so a failed one can be retried on the next login.
+ */
+export function clearLocalVocabularyProgress(): void {
+  const keysToRemove: string[] = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key?.startsWith(LS_PREFIX)) keysToRemove.push(key);
+  }
+  keysToRemove.forEach((k) => localStorage.removeItem(k));
+}
+
 const RATING_MAP: Record<FSRSRating, Grade> = {
   again: Rating.Again,
   hard: Rating.Hard,
@@ -202,23 +217,28 @@ async function remapStaleKeys(
  */
 export async function loadProgressMap(): Promise<Record<string, CardProgress>> {
   const map: Record<string, CardProgress> = {};
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (key?.startsWith(LS_PREFIX)) {
-      try {
-        const raw = localStorage.getItem(key);
-        if (raw) {
-          const parsed = JSON.parse(raw) as CardProgress;
-          parsed.fsrs.due = new Date(parsed.fsrs.due);
-          if (parsed.fsrs.last_review) {
-            parsed.fsrs.last_review = new Date(parsed.fsrs.last_review);
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith(LS_PREFIX)) {
+        try {
+          const raw = localStorage.getItem(key);
+          if (raw) {
+            const parsed = JSON.parse(raw) as CardProgress;
+            parsed.fsrs.due = new Date(parsed.fsrs.due);
+            if (parsed.fsrs.last_review) {
+              parsed.fsrs.last_review = new Date(parsed.fsrs.last_review);
+            }
+            map[key.slice(LS_PREFIX.length)] = parsed;
           }
-          map[key.slice(LS_PREFIX.length)] = parsed;
+        } catch {
+          // Ignore malformed entries
         }
-      } catch {
-        // Ignore malformed entries
       }
     }
+  } catch (error) {
+    // Blocked or unavailable storage (for example a SecurityError): return what we have
+    console.error('loadProgressMap: localStorage unavailable', error);
   }
   return remapStaleKeys(map);
 }
@@ -548,23 +568,28 @@ function fromGrammarRow(row: GrammarProgressRow): CardProgress {
  */
 export function loadGrammarProgressMap(): Record<string, CardProgress> {
   const map: Record<string, CardProgress> = {};
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (key?.startsWith(GRAMMAR_LS_PREFIX)) {
-      try {
-        const raw = localStorage.getItem(key);
-        if (raw) {
-          const parsed = JSON.parse(raw) as CardProgress;
-          parsed.fsrs.due = new Date(parsed.fsrs.due);
-          if (parsed.fsrs.last_review) {
-            parsed.fsrs.last_review = new Date(parsed.fsrs.last_review);
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith(GRAMMAR_LS_PREFIX)) {
+        try {
+          const raw = localStorage.getItem(key);
+          if (raw) {
+            const parsed = JSON.parse(raw) as CardProgress;
+            parsed.fsrs.due = new Date(parsed.fsrs.due);
+            if (parsed.fsrs.last_review) {
+              parsed.fsrs.last_review = new Date(parsed.fsrs.last_review);
+            }
+            map[key.slice(GRAMMAR_LS_PREFIX.length)] = parsed;
           }
-          map[key.slice(GRAMMAR_LS_PREFIX.length)] = parsed;
+        } catch {
+          // Ignore malformed entries
         }
-      } catch {
-        // Ignore malformed entries
       }
     }
+  } catch (error) {
+    // Blocked or unavailable storage (for example a SecurityError): return what we have
+    console.error('loadGrammarProgressMap: localStorage unavailable', error);
   }
   return map;
 }
@@ -953,7 +978,7 @@ export async function migrateLocalProgressToSupabase(
     .upsert(rows, { onConflict: 'user_id,vocab_id' });
 
   if (!error) {
-    clearUserProgress(); // remove progress-* keys from localStorage
+    clearLocalVocabularyProgress(); // remove progress-* keys only; grammar and quiz keep their own retry
   }
 }
 

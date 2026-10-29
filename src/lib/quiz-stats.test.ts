@@ -138,6 +138,40 @@ describe('loadQuizStats (localStorage)', () => {
     });
     expect(await loadQuizStats(null)).toEqual({});
   });
+
+  it('returns what it has read so far when scanning localStorage throws part-way', async () => {
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    const good = JSON.stringify({
+      attempts: 2,
+      correct: 1,
+      lastAttempt: '2026-10-28T10:00:00Z'
+    });
+    vi.stubGlobal('localStorage', {
+      length: 2,
+      key: (i: number) => {
+        if (i === 0) return QUIZ_LS_PREFIX + 'w-1';
+        throw new Error('SecurityError');
+      },
+      getItem: () => good
+    });
+
+    expect(await loadQuizStats(null)).toEqual({
+      'w-1': { attempts: 2, correct: 1, lastAttempt: '2026-10-28T10:00:00Z' }
+    });
+  });
+
+  it('returns an empty map, without throwing, when localStorage is unavailable', async () => {
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.stubGlobal('localStorage', {
+      get length(): number {
+        throw new Error('SecurityError');
+      },
+      key: () => null,
+      getItem: () => null
+    });
+
+    await expect(loadQuizStats(null)).resolves.toEqual({});
+  });
 });
 
 // ── Plus (Supabase) ──────────────────────────────────────────────────────────

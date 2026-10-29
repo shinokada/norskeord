@@ -4,7 +4,7 @@
   import { setLocale } from '$lib/paraglide/runtime';
   import * as m from '$lib/paraglide/messages.js';
   import {
-    clearUserProgress,
+    clearLocalVocabularyProgress,
     loadProgressMapFromSupabase,
     migrateLocalGrammarProgressToSupabase,
     migrateLocalProgressToSupabase
@@ -24,15 +24,17 @@
     // One-time migration: free → Plus upgrade
     if (isPlus && userId) {
       const supabaseMap = await loadProgressMapFromSupabase(userId);
+      // Quiz stats and grammar progress first, in both branches: each removes its local keys
+      // only after a successful upsert, so a failed attempt is retried on the next login.
+      // migrateLocalProgressToSupabase must not clear them (it only clears `progress-` keys),
+      // and it returns early for a learner with no vocab progress.
+      await migrateLocalQuizStatsToSupabase(userId);
+      await migrateLocalGrammarProgressToSupabase(userId);
       if (Object.keys(supabaseMap).length === 0) {
-        // Quiz stats and grammar progress first: migrateLocalProgressToSupabase ends in
-        // clearUserProgress(), which deletes their local keys, and it returns early for a
-        // learner with no vocab progress.
-        await migrateLocalQuizStatsToSupabase(userId);
-        await migrateLocalGrammarProgressToSupabase(userId);
         await migrateLocalProgressToSupabase(userId);
       } else {
-        clearUserProgress();
+        // The cloud already has vocab progress: the local `progress-` keys are stale.
+        clearLocalVocabularyProgress();
       }
     }
 
