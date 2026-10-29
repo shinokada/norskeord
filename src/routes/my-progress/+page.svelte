@@ -28,9 +28,16 @@
     progressBucket
   } from '$lib/stats';
   import { buildGrammarProgress } from '$lib/grammar/progress';
+  import {
+    loadQuizStats,
+    summariseQuizStats,
+    quizAccuracy,
+    type QuizStatsMap
+  } from '$lib/quiz-stats';
   import LevelStatRows from '$lib/components/LevelStatRows.svelte';
   import ContentTypeSummary from '$lib/components/ContentTypeSummary.svelte';
   import ProgressHubCard from '$lib/components/ProgressHubCard.svelte';
+  import QuizStatsPanel from '$lib/components/QuizStatsPanel.svelte';
   import ActivityChart from '$lib/components/ActivityChart.svelte';
   import DueBadge from '$lib/components/DueBadge.svelte';
 
@@ -39,6 +46,9 @@
   // Grammar progress is a separate store (keyed by question id). The level/category
   // fields on these CardProgress entries carry the CEFR level and the topic.
   let grammarMap = $state<Record<string, CardProgress>>({});
+  // Quiz stats (attempts / correct per word) are a third store, separate from FSRS state
+  // (quiz-progress.md). They have no schedule, so they never feed a due count.
+  let quizStats = $state<QuizStatsMap>({});
   let confirmReset = $state(false);
   let resetting = $state(false);
   let mounted = $state(false);
@@ -71,6 +81,10 @@
     buildGrammarProgress(grammarMap, new Date(), isPlus ? undefined : isFreeGrammarTopic)
   );
   const grammarSeen = $derived(grammarProgress.overall.seen);
+
+  // Quiz totals and per-level breakdown, with levels resolved live from each id.
+  const quizSummary = $derived(summariseQuizStats(quizStats, (id) => resolveEntry(id)?.level));
+  const quizCardAccuracy = $derived(quizAccuracy(quizSummary.total));
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
 
@@ -212,10 +226,10 @@
   const totalDueToday = $derived(vocabDue + uttrykkDue + grammarDue);
 
   // ── Content-type tabs (my-progress-update.md) ───────────────────────────────
-  // The three hub cards are the tabs. Restored in onMount: ?tab= wins, then the
+  // The four hub cards are the tabs. Restored in onMount: ?tab= wins, then the
   // last-used tab from localStorage, then 'vocab'.
-  type ProgressTab = 'vocab' | 'uttrykk' | 'grammar';
-  const PROGRESS_TABS: readonly ProgressTab[] = ['vocab', 'uttrykk', 'grammar'];
+  type ProgressTab = 'vocab' | 'uttrykk' | 'grammar' | 'quiz';
+  const PROGRESS_TABS: readonly ProgressTab[] = ['vocab', 'uttrykk', 'grammar', 'quiz'];
   const ACTIVE_TAB_KEY = 'stats-active-tab';
   const PANEL_ID = 'progress-panel';
 
@@ -282,7 +296,8 @@
 
   // Due per level for the level-tab badges: only the active tab's content type,
   // so the badge matches what the panel below shows. Per-type totals stay on
-  // the cards, and totalDueToday stays the combined number.
+  // the cards, and totalDueToday stays the combined number. Quiz has no schedule, so its
+  // tab never shows a due badge.
   const dueByLevel = $derived<Record<CEFRLevel, number>>(
     Object.fromEntries(
       levels.map((lvl) => [
@@ -291,16 +306,30 @@
           ? (vocabLevelStats.find((s) => s.level === lvl)?.due ?? 0)
           : activeTab === 'uttrykk'
             ? (uttrykkLevelStats.find((s) => s.level === lvl)?.due ?? 0)
-            : grammarProgress.byLevel[lvl].due
+            : activeTab === 'grammar'
+              ? grammarProgress.byLevel[lvl].due
+              : 0
       ])
     ) as Record<CEFRLevel, number>
   );
 
   const activeTabDue = $derived(
-    activeTab === 'vocab' ? vocabDue : activeTab === 'uttrykk' ? uttrykkDue : grammarDue
+    activeTab === 'vocab'
+      ? vocabDue
+      : activeTab === 'uttrykk'
+        ? uttrykkDue
+        : activeTab === 'grammar'
+          ? grammarDue
+          : 0
   );
   const activeTabIcon = $derived(
-    activeTab === 'vocab' ? '📖' : activeTab === 'uttrykk' ? '💬' : '📐'
+    activeTab === 'vocab'
+      ? '📖'
+      : activeTab === 'uttrykk'
+        ? '💬'
+        : activeTab === 'grammar'
+          ? '📐'
+          : '🧠'
   );
   // The button studies the selected level only (the badge next to it shows the same
   // number); the secondary link below studies every level's due cards. Both /review and
@@ -474,6 +503,9 @@
       progressMap = await loadProgressMap();
       grammarMap = loadGrammarProgressMap();
     }
+    // Quiz stats live in their own store; loadQuizStats never throws (a missing table or
+    // bad localStorage entry yields an empty map).
+    quizStats = await loadQuizStats(isPlus && userId ? userId : null);
     mounted = true;
 
     // Restore the active level tab, or default to where cefrEstimate (just
@@ -546,14 +578,15 @@
     try {
       const userId = page.data.user?.id as string | undefined;
       if (userId && isPlus) {
-        // Plus: Supabase is the only store — wipe vocab + grammar + study days
+        // Plus: Supabase is the only store — wipe vocab + grammar + quiz + study days
         await resetProgressInSupabase(userId);
       } else {
-        // Guest / free: wipe localStorage (clears both progress- and grammar- keys)
+        // Guest / free: wipe localStorage (clears the progress-, grammar- and quiz-stats- keys)
         clearUserProgress();
       }
       progressMap = {};
       grammarMap = {};
+      quizStats = {};
       activityCells = buildActivityGrid({}, 26);
       streak = 0;
     } finally {
@@ -604,7 +637,7 @@
 
   {#if !mounted}
     <p class="text-gray-600 dark:text-gray-300">{m.stats_loading()}</p>
-  {:else if totalSeen === 0 && grammarSeen === 0}
+  {:else if totalSeen === 0 && grammarSeen === 0 && quizSummary.total.answered === 0}
     <!-- Empty state -->
     <div
       class="rounded-xl border border-gray-200 bg-white p-10 text-center shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
@@ -620,8 +653,9 @@
       </a>
     </div>
   {:else}
-    <!-- Hub: three cards that act as the content-type tabs (my-progress-update.md).
-         Study-due buttons and the grammar detail link live in the panel header. -->
+    <!-- Hub: four cards that act as the content-type tabs (my-progress-update.md,
+         quiz-progress.md). Study-due buttons, the grammar detail link and "Start quiz"
+         live in the panel header. Two columns below sm so four cards fit a phone. -->
     <div class="mb-6">
       <p class="mb-3 text-sm text-gray-600 dark:text-gray-300">
         {m.stats_due_today()}:
@@ -632,7 +666,7 @@
         >
       </p>
       <div
-        class="grid grid-cols-3 gap-2 sm:gap-4"
+        class="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-4"
         role="tablist"
         aria-label={m.stats_content_type_tabs()}
       >
@@ -670,6 +704,18 @@
           due={grammarDue}
           active={activeTab === 'grammar'}
           onSelect={() => setActiveTab('grammar')}
+          onKeydown={onProgressTabKeydown}
+        />
+        <ProgressHubCard
+          id="tab-quiz"
+          panelId={PANEL_ID}
+          icon="🧠"
+          title={m.stats_quiz_heading()}
+          primary={quizCardAccuracy === null ? '–' : `${quizCardAccuracy}%`}
+          primaryLabel={m.stats_quiz_accuracy_label()}
+          secondary={m.stats_quiz_answered_count({ count: quizSummary.total.answered })}
+          active={activeTab === 'quiz'}
+          onSelect={() => setActiveTab('quiz')}
           onKeydown={onProgressTabKeydown}
         />
       </div>
@@ -717,11 +763,22 @@
               ? m.stats_vocabulary_heading()
               : activeTab === 'uttrykk'
                 ? m.stats_uttrykk_heading()
-                : m.stats_grammar_heading()}
+                : activeTab === 'grammar'
+                  ? m.stats_grammar_heading()
+                  : m.stats_quiz_heading()}
           </h2>
           <DueBadge count={dueByLevel[activeLevel]} />
         </div>
         <div class="flex flex-wrap items-center gap-3">
+          {#if activeTab === 'quiz'}
+            <a
+              href="/quiz?level={encodeURIComponent(activeLevel)}"
+              class="flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none"
+            >
+              <span aria-hidden="true">🧠</span>
+              {m.quiz_start()}
+            </a>
+          {/if}
           {#if activeTab === 'grammar'}
             <a
               href="/my-progress/grammar"
@@ -823,6 +880,9 @@
         {/if}
 
         <!-- ── Content panel: Grammar (closes the panel) ─────────────────────────────────────────────── -->
+      {:else if activeTab === 'quiz'}
+        <!-- Content panel: Quiz. The Grammar comment above labels the last branch below. -->
+        <QuizStatsPanel summary={quizSummary.byLevel[activeLevel]} />
       {:else}
         <div
           class="mb-3 grid grid-cols-3 divide-x divide-gray-100 overflow-hidden rounded-xl border border-gray-200 dark:divide-white/10 dark:border-white/10"

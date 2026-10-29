@@ -139,8 +139,10 @@ test('Try again on a small, fully-answered category still starts a full session'
 }) => {
   test.setTimeout(60000);
   await injectPlusPlan(page);
-  // A1 greetings is small (8 entries); a limit of 10 exceeds the pool, so every
-  // card has progress after the first run and none is due.
+  // A1 greetings is small (8 entries); a limit of 10 exceeds the pool. Only fill-in and
+  // typed answers write progress now (multiple choice does not, quiz-progress.md Phase 1),
+  // so the second session mixes new and answered cards. The empty-pool top-up itself is
+  // unit-tested in quiz.test.ts (buildQuizSession); this guards that Try again starts a session.
   await page.goto('/quiz?level=a1&category=greetings');
   await page.evaluate(() => localStorage.setItem('vocab-quiz-limit', '10'));
   await page.reload();
@@ -159,12 +161,56 @@ test('Try again on a small, fully-answered category still starts a full session'
 // FSRS / localStorage
 // ===========================================================================
 
-test('answering a question writes progress to localStorage', async ({ page }) => {
+test('a multiple-choice answer on a new word does not write flashcard progress', async ({
+  page
+}) => {
+  // quiz-progress.md Phase 1: multiple choice is guessable, so it must not create a
+  // progress row for a word the learner has never seen. Question 1 is always multiple choice.
   await injectPlusPlan(page);
   await page.goto('/quiz');
   await page.getByRole('button', { name: /start quiz/i }).click();
+  await expect(page.getByText(/question 1 of|spørsmål 1 av/i)).toBeVisible({ timeout: 10000 });
 
-  await answerAndAdvance(page);
+  await page.getByRole('button', { name: /^A\b/ }).click();
+  // The reveal state is entered after the answer has been processed.
+  await expect(
+    page.locator('button.bg-indigo-600').filter({
+      hasText: /next|see results|neste|se resultater/i
+    })
+  ).toBeVisible();
+
+  const keys = await page.evaluate(() =>
+    Object.keys(localStorage).filter((k) => k.startsWith('progress-'))
+  );
+  expect(keys).toHaveLength(0);
+});
+
+test('a typed answer writes progress to localStorage', async ({ page }) => {
+  // Fill-in and type-the-answer questions are recall, so they still feed the flashcard schedule.
+  test.setTimeout(30000);
+  await injectPlusPlan(page);
+  await page.goto('/quiz');
+  await page.getByRole('button', { name: /start quiz/i }).click();
+  await expect(page.getByText(/question 1 of|spørsmål 1 av/i)).toBeVisible({ timeout: 10000 });
+
+  const input = page.getByRole('textbox');
+  const nextButton = page.locator('button.bg-indigo-600').filter({
+    hasText: /next|see results|neste|se resultater/i
+  });
+
+  // Multiple-choice questions come first; answer them until a typed one shows.
+  for (let i = 0; i < 6 && !(await input.isVisible().catch(() => false)); i++) {
+    await page.getByRole('button', { name: /^A\b/ }).click();
+    await nextButton.click();
+    await expect(
+      page.getByText(new RegExp(`(question|spørsmål) ${i + 2} (of|av)`, 'i'))
+    ).toBeVisible();
+  }
+  await expect(input).toBeVisible();
+
+  await input.fill('test');
+  await input.press('Enter');
+  await expect(nextButton).toBeVisible();
 
   const keys = await page.evaluate(() =>
     Object.keys(localStorage).filter((k) => k.startsWith('progress-'))
@@ -462,4 +508,49 @@ test('Enter in a typed answer shows the feedback instead of skipping to the next
   // The feedback for this question is on screen: the Next button, and the same counter.
   await expect(nextButton).toBeVisible();
   await expect(page.getByText(counter.trim())).toBeVisible();
+});
+
+// ===========================================================================
+// Regression: a failed progress write must not leave the question stuck
+// ===========================================================================
+
+test('a typed answer still reveals the feedback when the progress write fails', async ({
+  page
+}) => {
+  test.setTimeout(30000);
+  // Free user: saveProgress writes `progress-` keys to localStorage. Make that throw (quota or
+  // private mode). The answer is already counted, so the quiz must reveal it and carry on
+  // instead of staying on the question, where a retry would count it twice.
+  await page.addInitScript(() => {
+    const original = Storage.prototype.setItem;
+    Storage.prototype.setItem = function (key: string, value: string) {
+      if (String(key).startsWith('progress-')) throw new Error('QuotaExceededError');
+      return original.call(this, key, value);
+    };
+  });
+  await page.goto('/quiz');
+  await page.getByRole('button', { name: /greetings/i }).click();
+  await page.getByRole('button', { name: /start quiz/i }).click();
+  await expect(page.getByText(/question 1 of|spørsmål 1 av/i)).toBeVisible({ timeout: 10000 });
+
+  const input = page.getByRole('textbox');
+  const nextButton = page.locator('button.bg-indigo-600').filter({
+    hasText: /next|see results|neste|se resultater/i
+  });
+
+  // Multiple-choice answers write no progress, so they are unaffected. Click through them
+  // until a typed question shows.
+  for (let i = 0; i < 6 && !(await input.isVisible().catch(() => false)); i++) {
+    await page.getByRole('button', { name: /^A\b/ }).click();
+    await nextButton.click();
+    await expect(
+      page.getByText(new RegExp(`(question|spørsmål) ${i + 2} (of|av)`, 'i'))
+    ).toBeVisible();
+  }
+  await expect(input).toBeVisible();
+
+  await input.fill('test');
+  await input.press('Enter');
+
+  await expect(nextButton).toBeVisible();
 });

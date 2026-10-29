@@ -66,16 +66,46 @@ export const LS_PREFIX = 'progress-';
 export const GRAMMAR_LS_PREFIX = 'grammar-';
 
 /**
+ * localStorage prefix for quiz stats (guest/free users): per-word attempts and correct
+ * answers, not FSRS state (see quiz-stats.ts). Distinct from LS_PREFIX and
+ * GRAMMAR_LS_PREFIX so no progress loader picks up quiz keys. Plus users persist quiz
+ * stats to the quiz_progress table instead.
+ */
+export const QUIZ_LS_PREFIX = 'quiz-stats-';
+
+/**
  * Removes all progress keys for guest/free users from localStorage.
  * Called on logout so the next person who opens the browser sees no progress.
  */
 export function clearUserProgress(): void {
-  // Guest/free users store vocab keys as 'progress-<vocabId>' and grammar
-  // keys as 'grammar-<questionId>'. (Plus users no longer use localStorage at all.)
+  // Guest/free users store vocab keys as 'progress-<vocabId>', grammar keys as
+  // 'grammar-<questionId>' and quiz stats as 'quiz-stats-<vocabId>'. (Plus users no
+  // longer use localStorage at all.)
   const keysToRemove: string[] = [];
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    if (key?.startsWith(LS_PREFIX) || key?.startsWith(GRAMMAR_LS_PREFIX)) keysToRemove.push(key);
+    if (
+      key?.startsWith(LS_PREFIX) ||
+      key?.startsWith(GRAMMAR_LS_PREFIX) ||
+      key?.startsWith(QUIZ_LS_PREFIX)
+    ) {
+      keysToRemove.push(key);
+    }
+  }
+  keysToRemove.forEach((k) => localStorage.removeItem(k));
+}
+
+/**
+ * Removes only the local vocab/uttrykk `progress-` keys. Used by the free to Plus sync, which
+ * discards them after a migration or when the cloud already has progress, but must leave
+ * the `grammar-` and `quiz-stats-` keys alone: those are removed by their own migrations
+ * only after a successful upsert, so a failed one can be retried on the next login.
+ */
+export function clearLocalVocabularyProgress(): void {
+  const keysToRemove: string[] = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key?.startsWith(LS_PREFIX)) keysToRemove.push(key);
   }
   keysToRemove.forEach((k) => localStorage.removeItem(k));
 }
@@ -187,23 +217,28 @@ async function remapStaleKeys(
  */
 export async function loadProgressMap(): Promise<Record<string, CardProgress>> {
   const map: Record<string, CardProgress> = {};
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (key?.startsWith(LS_PREFIX)) {
-      try {
-        const raw = localStorage.getItem(key);
-        if (raw) {
-          const parsed = JSON.parse(raw) as CardProgress;
-          parsed.fsrs.due = new Date(parsed.fsrs.due);
-          if (parsed.fsrs.last_review) {
-            parsed.fsrs.last_review = new Date(parsed.fsrs.last_review);
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith(LS_PREFIX)) {
+        try {
+          const raw = localStorage.getItem(key);
+          if (raw) {
+            const parsed = JSON.parse(raw) as CardProgress;
+            parsed.fsrs.due = new Date(parsed.fsrs.due);
+            if (parsed.fsrs.last_review) {
+              parsed.fsrs.last_review = new Date(parsed.fsrs.last_review);
+            }
+            map[key.slice(LS_PREFIX.length)] = parsed;
           }
-          map[key.slice(LS_PREFIX.length)] = parsed;
+        } catch {
+          // Ignore malformed entries
         }
-      } catch {
-        // Ignore malformed entries
       }
     }
+  } catch (error) {
+    // Blocked or unavailable storage (for example a SecurityError): return what we have
+    console.error('loadProgressMap: localStorage unavailable', error);
   }
   return remapStaleKeys(map);
 }
@@ -291,22 +326,77 @@ function rowKey(row: ProgressRow): string {
 // ── Supabase — Plus users ────────────────────────────────────────────────────
 
 /**
+ * Rows per request. Supabase caps a response at the project's `max_rows` (1,000 by default,
+ * configurable), and a capped response carries no error: without pagination a Plus user
+ * with more rows than that silently gets a truncated map. fetchAllProgressRows advances by
+ * the number of rows actually returned and stops only on an empty page, so it stays correct
+ * even if the project limit is lower than this.
+ */
+const PROGRESS_PAGE_SIZE = 1000;
+/** Safety stop against a runaway loop: 100 pages is 100,000 rows at the default limit. */
+const PROGRESS_MAX_PAGES = 100;
+
+/**
+ * Every row of one of a user's progress tables, or `null` when any page failed: never a
+ * partial list. Pages are ordered by the table's per-user unique key, so the ranges do not
+ * overlap or skip. Never throws.
+ */
+async function fetchAllProgressRows<T>(
+  table: 'card_progress' | 'grammar_progress',
+  orderColumn: 'vocab_id' | 'question_id',
+  userId: string
+): Promise<T[] | null> {
+  const rows: T[] = [];
+  try {
+    for (let page = 0; page < PROGRESS_MAX_PAGES; page++) {
+      const { data, error } = await supabase
+        .from(table)
+        .select('*')
+        .eq('user_id', userId)
+        .order(orderColumn, { ascending: true })
+        .range(rows.length, rows.length + PROGRESS_PAGE_SIZE - 1);
+      if (error || !data) {
+        console.error(`fetchAllProgressRows: ${table} select failed`, error);
+        return null;
+      }
+      if (data.length === 0) return rows;
+      rows.push(...(data as T[]));
+    }
+    console.error(`fetchAllProgressRows: ${table} stopped after the page limit`);
+    return null;
+  } catch (error) {
+    console.error(`fetchAllProgressRows: ${table} select threw`, error);
+    return null;
+  }
+}
+
+/**
+ * Like loadProgressMapFromSupabase, but a failed read yields `null` instead of `{}`, so a
+ * caller that is about to decide something from "the cloud has no progress" can tell that
+ * from "the read failed" (auth/sync, via syncLocalProgressToPlus). Never throws.
+ */
+export async function loadProgressMapFromSupabaseOrNull(
+  userId: string
+): Promise<Record<string, CardProgress> | null> {
+  const rows = await fetchAllProgressRows<ProgressRow>('card_progress', 'vocab_id', userId);
+  if (!rows) return null;
+
+  const map: Record<string, CardProgress> = {};
+  for (const row of rows) {
+    map[rowKey(row)] = fromRow(row);
+  }
+  return map;
+}
+
+/**
  * Fetches all card_progress rows for a Plus user and returns them as a
- * CardProgress map keyed by vocab_id.
- * Called on mount for Plus users instead of loadProgressMap.
+ * CardProgress map keyed by vocab_id. Reads every page (see fetchAllProgressRows).
+ * Called on mount for Plus users instead of loadProgressMap. A failed read returns {}.
  */
 export async function loadProgressMapFromSupabase(
   userId: string
 ): Promise<Record<string, CardProgress>> {
-  const { data, error } = await supabase.from('card_progress').select('*').eq('user_id', userId);
-
-  if (error || !data) return {};
-
-  const map: Record<string, CardProgress> = {};
-  for (const row of data as ProgressRow[]) {
-    map[rowKey(row)] = fromRow(row);
-  }
-  return map;
+  return (await loadProgressMapFromSupabaseOrNull(userId)) ?? {};
 }
 
 /**
@@ -338,14 +428,15 @@ async function saveProgressToSupabase(
 }
 
 /**
- * Deletes all card_progress, grammar_progress and study_days rows for a user
- * from Supabase. Called when a Plus user resets their progress from the stats
+ * Deletes all card_progress, grammar_progress, quiz_progress and study_days rows for a
+ * user from Supabase. Called when a Plus user resets their progress from the stats
  * page.
  */
 export async function resetProgressInSupabase(userId: string): Promise<void> {
   const results = await Promise.all([
     supabase.from('card_progress').delete().eq('user_id', userId),
     supabase.from('grammar_progress').delete().eq('user_id', userId),
+    supabase.from('quiz_progress').delete().eq('user_id', userId),
     supabase.from('study_days').delete().eq('user_id', userId)
   ]);
   for (const { error } of results) {
@@ -532,40 +623,49 @@ function fromGrammarRow(row: GrammarProgressRow): CardProgress {
  */
 export function loadGrammarProgressMap(): Record<string, CardProgress> {
   const map: Record<string, CardProgress> = {};
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (key?.startsWith(GRAMMAR_LS_PREFIX)) {
-      try {
-        const raw = localStorage.getItem(key);
-        if (raw) {
-          const parsed = JSON.parse(raw) as CardProgress;
-          parsed.fsrs.due = new Date(parsed.fsrs.due);
-          if (parsed.fsrs.last_review) {
-            parsed.fsrs.last_review = new Date(parsed.fsrs.last_review);
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith(GRAMMAR_LS_PREFIX)) {
+        try {
+          const raw = localStorage.getItem(key);
+          if (raw) {
+            const parsed = JSON.parse(raw) as CardProgress;
+            parsed.fsrs.due = new Date(parsed.fsrs.due);
+            if (parsed.fsrs.last_review) {
+              parsed.fsrs.last_review = new Date(parsed.fsrs.last_review);
+            }
+            map[key.slice(GRAMMAR_LS_PREFIX.length)] = parsed;
           }
-          map[key.slice(GRAMMAR_LS_PREFIX.length)] = parsed;
+        } catch {
+          // Ignore malformed entries
         }
-      } catch {
-        // Ignore malformed entries
       }
     }
+  } catch (error) {
+    // Blocked or unavailable storage (for example a SecurityError): return what we have
+    console.error('loadGrammarProgressMap: localStorage unavailable', error);
   }
   return map;
 }
 
 /**
- * Fetches all grammar_progress rows for a Plus user, keyed by question_id.
- * Called on mount for Plus users instead of loadGrammarProgressMap.
+ * Fetches all grammar_progress rows for a Plus user, keyed by question_id. Reads every page
+ * (see fetchAllProgressRows). Called on mount for Plus users instead of
+ * loadGrammarProgressMap. A failed read returns {}.
  */
 export async function loadGrammarProgressFromSupabase(
   userId: string
 ): Promise<Record<string, CardProgress>> {
-  const { data, error } = await supabase.from('grammar_progress').select('*').eq('user_id', userId);
-
-  if (error || !data) return {};
+  const rows = await fetchAllProgressRows<GrammarProgressRow>(
+    'grammar_progress',
+    'question_id',
+    userId
+  );
+  if (!rows) return {};
 
   const map: Record<string, CardProgress> = {};
-  for (const row of data as GrammarProgressRow[]) {
+  for (const row of rows) {
     map[row.question_id] = fromGrammarRow(row);
   }
   return map;
@@ -937,7 +1037,61 @@ export async function migrateLocalProgressToSupabase(
     .upsert(rows, { onConflict: 'user_id,vocab_id' });
 
   if (!error) {
-    clearUserProgress(); // remove progress-* keys from localStorage
+    clearLocalVocabularyProgress(); // remove progress-* keys only; grammar and quiz keep their own retry
+  }
+}
+
+/**
+ * Copies a free user's local grammar progress into grammar_progress when they upgrade to
+ * Plus. migrateLocalProgressToSupabase only handles vocab, and its clearUserProgress() call
+ * deletes the local `grammar-` keys, so without this a free user lost all grammar progress
+ * on upgrading. Call it before that function (see auth/sync).
+ *
+ * Rows already in the cloud win (`ignoreDuplicates`): FSRS state cannot be merged, and the
+ * caller only runs this for a fresh upgrade anyway. The stored level and topic are a
+ * snapshot; the app resolves both live from the question id, so they only need to be
+ * present. Local keys are removed only after the upsert succeeds, so a failed attempt can
+ * be retried. Never throws: a failure is logged and the local progress stays put.
+ */
+export async function migrateLocalGrammarProgressToSupabase(userId: string): Promise<void> {
+  try {
+    const localMap = loadGrammarProgressMap();
+    const ids = Object.keys(localMap);
+    if (ids.length === 0) return;
+
+    const rows = ids.map((id) => {
+      const p = localMap[id];
+      return {
+        user_id: userId,
+        question_id: id,
+        topic: p.category as unknown as string,
+        cefr: p.level,
+        due: new Date(p.fsrs.due).toISOString(),
+        stability: p.fsrs.stability,
+        difficulty: p.fsrs.difficulty,
+        elapsed_days: p.fsrs.elapsed_days,
+        scheduled_days: p.fsrs.scheduled_days,
+        learning_steps: p.fsrs.learning_steps,
+        reps: p.fsrs.reps,
+        lapses: p.fsrs.lapses,
+        state: p.fsrs.state,
+        last_review: p.fsrs.last_review ? new Date(p.fsrs.last_review).toISOString() : null,
+        seen_count: p.seenCount,
+        last_seen: p.lastSeen
+      };
+    });
+
+    const { error } = await supabase
+      .from('grammar_progress')
+      .upsert(rows, { onConflict: 'user_id,question_id', ignoreDuplicates: true });
+    if (error) {
+      console.error('migrateLocalGrammarProgressToSupabase: upsert failed', error);
+      return;
+    }
+
+    for (const id of ids) localStorage.removeItem(GRAMMAR_LS_PREFIX + id);
+  } catch (error) {
+    console.error('migrateLocalGrammarProgressToSupabase: failed', error);
   }
 }
 

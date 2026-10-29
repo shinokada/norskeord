@@ -981,5 +981,13 @@
   "quiz_start_load_error": "No se pudieron cargar las preguntas del quiz. Inténtalo de nuevo.",
   "level_nav_go_to": "Ir a {level} ({name})",
   "level_nav_label": "Navegación de niveles",
-  "grammar_save_failed": "No se pudo guardar tu progreso. Puedes seguir practicando, pero podría perderse si recargas la página."
+  "grammar_save_failed": "No se pudo guardar tu progreso. Puedes seguir practicando, pero podría perderse si recargas la página.",
+  "stats_quiz_heading": "Quiz",
+  "stats_quiz_accuracy_label": "Precisión",
+  "stats_quiz_answered_label": "Preguntas respondidas",
+  "stats_quiz_answered_count": "{count} respondidas",
+  "stats_quiz_words_label": "Palabras practicadas",
+  "stats_quiz_min_hint": "La precisión aparece tras {count} respuestas.",
+  "stats_quiz_empty_heading": "Aún no hay respuestas de quiz",
+  "stats_quiz_empty_body": "Haz un quiz de este nivel para ver aquí tus resultados."
 }

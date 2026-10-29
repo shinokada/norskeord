@@ -3,11 +3,7 @@
   import { onMount } from 'svelte';
   import { setLocale } from '$lib/paraglide/runtime';
   import * as m from '$lib/paraglide/messages.js';
-  import {
-    clearUserProgress,
-    loadProgressMapFromSupabase,
-    migrateLocalProgressToSupabase
-  } from '$lib/progress';
+  import { syncLocalProgressToPlus } from '$lib/plus-sync';
   import { validFlashcardPathPattern } from '$lib/utils';
 
   onMount(async () => {
@@ -19,14 +15,9 @@
     const isPlus = (page.data.plan as 'free' | 'plus') === 'plus';
     const profile = page.data.profile;
 
-    // One-time migration: free → Plus upgrade
+    // One-time migration: free → Plus upgrade (see syncLocalProgressToPlus)
     if (isPlus && userId) {
-      const supabaseMap = await loadProgressMapFromSupabase(userId);
-      if (Object.keys(supabaseMap).length === 0) {
-        await migrateLocalProgressToSupabase(userId);
-      } else {
-        clearUserProgress();
-      }
+      await syncLocalProgressToPlus(userId);
     }
 
     // Seed localStorage from profile preferences

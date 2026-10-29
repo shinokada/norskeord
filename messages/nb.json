@@ -981,5 +981,13 @@
   "quiz_start_load_error": "Kunne ikke laste quizspørsmålene. Prøv igjen.",
   "level_nav_go_to": "Gå til {level} ({name})",
   "level_nav_label": "Nivånavigasjon",
-  "grammar_save_failed": "Fremgangen din kunne ikke lagres. Du kan fortsette å øve, men den kan gå tapt hvis du laster siden på nytt."
+  "grammar_save_failed": "Fremgangen din kunne ikke lagres. Du kan fortsette å øve, men den kan gå tapt hvis du laster siden på nytt.",
+  "stats_quiz_heading": "Quiz",
+  "stats_quiz_accuracy_label": "Treffprosent",
+  "stats_quiz_answered_label": "Besvarte spørsmål",
+  "stats_quiz_answered_count": "{count} besvart",
+  "stats_quiz_words_label": "Ord quizet",
+  "stats_quiz_min_hint": "Treffprosent vises etter {count} svar.",
+  "stats_quiz_empty_heading": "Ingen quizsvar ennå",
+  "stats_quiz_empty_body": "Ta en quiz på dette nivået for å se resultatene dine her."
 }

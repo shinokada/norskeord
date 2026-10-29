@@ -151,6 +151,16 @@ CREATE TABLE public.content_usage (
   CONSTRAINT content_usage_pkey PRIMARY KEY (user_id, day, endpoint),
   CONSTRAINT content_usage_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
+CREATE TABLE public.quiz_progress (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL,
+  vocab_id text NOT NULL,
+  attempts integer NOT NULL DEFAULT 0,
+  correct integer NOT NULL DEFAULT 0,
+  last_attempt timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT quiz_progress_pkey PRIMARY KEY (id),
+  CONSTRAINT quiz_progress_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
 
 -- NOTE: Functions are not exported by Supabase's schema dump tool.
 -- Manually maintained. See ./current-functions.sql for Functions

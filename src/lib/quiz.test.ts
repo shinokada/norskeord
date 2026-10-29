@@ -6,7 +6,8 @@ import {
   buildTypeQuestion,
   buildQuizSession,
   levenshtein,
-  bareLemma
+  bareLemma,
+  fsrsRatingToWrite
 } from './quiz';
 import type { VocabEntry, CardProgress } from '$lib/types';
 import { vocabKey } from '$lib/progress';
@@ -605,5 +606,34 @@ describe('buildQuizSession', () => {
     for (const q of session) {
       expect(POOL).toContain(q.entry);
     }
+  });
+});
+
+// ── fsrsRatingToWrite (quiz-progress.md, Phase 1) ─────────────────────────────
+
+describe('fsrsRatingToWrite', () => {
+  describe('multiple choice (guessable)', () => {
+    it('writes nothing for a correct answer on an unseen card', () => {
+      expect(fsrsRatingToWrite('mc', 'good', false)).toBeNull();
+    });
+
+    it('writes nothing for a correct answer on a seen card', () => {
+      expect(fsrsRatingToWrite('mc', 'good', true)).toBeNull();
+    });
+
+    it('rates a wrong answer as again when the card already has progress', () => {
+      expect(fsrsRatingToWrite('mc', 'again', true)).toBe('again');
+    });
+
+    it('never creates progress for an unseen card, even on a wrong answer', () => {
+      expect(fsrsRatingToWrite('mc', 'again', false)).toBeNull();
+    });
+  });
+
+  describe.each(['fill', 'type'] as const)('%s (recall)', (type) => {
+    it.each(['good', 'hard', 'again'] as const)('writes the %s rating as is', (rating) => {
+      expect(fsrsRatingToWrite(type, rating, true)).toBe(rating);
+      expect(fsrsRatingToWrite(type, rating, false)).toBe(rating);
+    });
   });
 });
