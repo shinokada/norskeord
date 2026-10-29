@@ -7,7 +7,8 @@
     loadProgressMapFromSupabase,
     loadGrammarProgressMap,
     loadGrammarProgressFromSupabase,
-    getStreakFromLocalStorage,
+    getStreakFromStudyDays,
+    buildLocalStudyDays,
     loadStudyDays,
     buildActivityGrid,
     resetProgressInSupabase,
@@ -554,18 +555,11 @@
       }
       streak = s;
     } else {
-      // Free/guest: derive streak + activity from vocab AND grammar reviews so
-      // grammar-only practice still counts. Keys don't collide (norsk vs id).
-      const combined = { ...progressMap, ...grammarMap };
-      streak = getStreakFromLocalStorage(combined);
-      const localStudyDays: Record<string, number> = {};
-      for (const p of Object.values(combined)) {
-        if (p.lastSeen) {
-          const d = new Date(p.lastSeen);
-          const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-          localStudyDays[key] = (localStudyDays[key] ?? 0) + 1;
-        }
-      }
+      // Free/guest: derive streak + activity from vocab, grammar AND quiz activity, so a
+      // grammar-only or multiple-choice-only session still counts. There is no study_days
+      // table for these users; see buildLocalStudyDays.
+      const localStudyDays = buildLocalStudyDays(progressMap, grammarMap, quizStats);
+      streak = getStreakFromStudyDays(localStudyDays);
       activityCells = buildActivityGrid(localStudyDays, 26);
     }
 

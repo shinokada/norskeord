@@ -64,6 +64,11 @@
     },
     {
       id: 11,
+      question: m.guide_faq_quiz_q(),
+      answer: m.guide_faq_quiz_a()
+    },
+    {
+      id: 12,
       question: m.guide_faq_contact_q(),
       answer: m.guide_faq_contact_a(),
       cta: {
