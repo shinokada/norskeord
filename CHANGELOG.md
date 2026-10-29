@@ -1,5 +1,14 @@
 # norske-flashcard
 
+## 2.116.1
+
+### Patch Changes
+
+- - **Documentation**
+    - Added FAQ guidance in English, German, Spanish, Norwegian, and Ukrainian explaining quiz statistics, flashcard scheduling, study streaks, and Plus syncing across devices.
+  - **Bug Fixes**
+    - Quiz and grammar activity now contributes to study streaks for guest and free users, alongside vocabulary activity.
+
 ## 2.116.0
 
 ### Minor Changes
