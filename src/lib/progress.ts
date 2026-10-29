@@ -839,20 +839,54 @@ export function todayLocalDate(): string {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
+/** Local-timezone YYYY-MM-DD for an ISO timestamp, or null when it does not parse. */
+function localDateKey(iso: string): string | null {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return null;
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
 /**
- * Counts the current streak from localStorage lastSeen values.
- * Used for guest/free users only.
+ * Per-day activity counts for guest/free users, derived from what is already in
+ * localStorage: `lastSeen` on vocab and grammar progress, and `lastAttempt` on quiz stats.
+ * Free and guest users have no study_days table, so this is their only source for the
+ * streak and the activity chart. Quiz stats are included because every quiz answer writes
+ * `lastAttempt`, including multiple-choice answers that write no FSRS progress.
+ *
+ * One (item, day) pair counts once: a typed quiz answer writes both `lastSeen` and
+ * `lastAttempt` for the same word, and must not count twice. Grammar ids are prefixed
+ * so they can never collide with a vocab id. Unparseable timestamps are skipped.
+ *
+ * `quizStats` is typed structurally: quiz-stats.ts imports from this file.
  */
-export function getStreakFromLocalStorage(progressMap: Record<string, CardProgress>): number {
-  const studiedDates = new Set<string>();
-  for (const p of Object.values(progressMap)) {
-    if (p.lastSeen) {
-      const d = new Date(p.lastSeen);
-      studiedDates.add(
-        `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
-      );
-    }
-  }
+export function buildLocalStudyDays(
+  progressMap: Record<string, CardProgress>,
+  grammarMap: Record<string, CardProgress> = {},
+  quizStats: Record<string, { lastAttempt: string }> = {}
+): Record<string, number> {
+  const days: Record<string, number> = {};
+  const counted = new Set<string>();
+  const add = (id: string, iso: string | undefined) => {
+    if (!iso) return;
+    const day = localDateKey(iso);
+    if (!day) return;
+    const pair = `${id}|${day}`;
+    if (counted.has(pair)) return;
+    counted.add(pair);
+    days[day] = (days[day] ?? 0) + 1;
+  };
+  for (const [id, p] of Object.entries(progressMap)) add(id, p.lastSeen);
+  for (const [id, p] of Object.entries(grammarMap)) add(`grammar:${id}`, p.lastSeen);
+  for (const [id, s] of Object.entries(quizStats)) add(id, s.lastAttempt);
+  return days;
+}
+
+/**
+ * Counts the current streak from a per-day activity map (see buildLocalStudyDays).
+ * Today may still be empty: counting then starts from yesterday.
+ */
+export function getStreakFromStudyDays(days: Record<string, number>): number {
+  const studiedDates = new Set(Object.keys(days).filter((k) => days[k] > 0));
 
   let streak = 0;
   const cursor = new Date();
