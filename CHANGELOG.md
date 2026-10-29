@@ -1,5 +1,17 @@
 # norske-flashcard
 
+## 2.116.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added a Quiz tab to the progress page with answered-question, practiced-word, and accuracy statistics, including breakdowns by level.
+    - Accuracy appears after at least 10 answers. Empty states and links to start a quiz are available, and quiz results link back to the tab.
+  - **Improvements**
+    - Quiz statistics are saved separately from study progress, included when progress is reset, and carried over with grammar progress when syncing.
+  - **Bug Fixes**
+    - Multiple-choice answers no longer change flashcard progress when correct or when a card has not been studied. Saving failures no longer prevent quiz feedback from appearing.
+
 ## 2.115.1
 
 ### Patch Changes
