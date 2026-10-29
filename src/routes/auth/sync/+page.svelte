@@ -3,13 +3,7 @@
   import { onMount } from 'svelte';
   import { setLocale } from '$lib/paraglide/runtime';
   import * as m from '$lib/paraglide/messages.js';
-  import {
-    clearLocalVocabularyProgress,
-    loadProgressMapFromSupabase,
-    migrateLocalGrammarProgressToSupabase,
-    migrateLocalProgressToSupabase
-  } from '$lib/progress';
-  import { migrateLocalQuizStatsToSupabase } from '$lib/quiz-stats';
+  import { syncLocalProgressToPlus } from '$lib/plus-sync';
   import { validFlashcardPathPattern } from '$lib/utils';
 
   onMount(async () => {
@@ -21,21 +15,9 @@
     const isPlus = (page.data.plan as 'free' | 'plus') === 'plus';
     const profile = page.data.profile;
 
-    // One-time migration: free → Plus upgrade
+    // One-time migration: free → Plus upgrade (see syncLocalProgressToPlus)
     if (isPlus && userId) {
-      const supabaseMap = await loadProgressMapFromSupabase(userId);
-      // Quiz stats and grammar progress first, in both branches: each removes its local keys
-      // only after a successful upsert, so a failed attempt is retried on the next login.
-      // migrateLocalProgressToSupabase must not clear them (it only clears `progress-` keys),
-      // and it returns early for a learner with no vocab progress.
-      await migrateLocalQuizStatsToSupabase(userId);
-      await migrateLocalGrammarProgressToSupabase(userId);
-      if (Object.keys(supabaseMap).length === 0) {
-        await migrateLocalProgressToSupabase(userId);
-      } else {
-        // The cloud already has vocab progress: the local `progress-` keys are stale.
-        clearLocalVocabularyProgress();
-      }
+      await syncLocalProgressToPlus(userId);
     }
 
     // Seed localStorage from profile preferences

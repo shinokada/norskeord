@@ -39,6 +39,59 @@ function isQuizStat(value: unknown): value is QuizStat {
 }
 
 /**
+ * Rows per request. Supabase caps a response at the project's `max_rows` (1,000 by default,
+ * configurable), and a capped response carries no error. fetchQuizProgressRows therefore
+ * advances by the number of rows actually returned and stops only on an empty page, so it
+ * stays correct even if the project limit is lower than this.
+ */
+const QUIZ_PAGE_SIZE = 1000;
+/** Safety stop against a runaway loop: 100 pages is 100,000 rows at the default limit. */
+const QUIZ_MAX_PAGES = 100;
+
+/**
+ * Every quiz_progress row of a user, or `null` when any page failed. Never a partial list:
+ * callers write absolute counts computed from what this returns, so a truncated list would
+ * overwrite the counts of the words it left out. Pages are ordered by vocab_id, which is
+ * unique per user, so the ranges do not overlap or skip. Never throws.
+ */
+async function fetchQuizProgressRows(userId: string): Promise<QuizProgressRow[] | null> {
+  const rows: QuizProgressRow[] = [];
+  try {
+    for (let page = 0; page < QUIZ_MAX_PAGES; page++) {
+      const { data, error } = await supabase
+        .from('quiz_progress')
+        .select('vocab_id, attempts, correct, last_attempt')
+        .eq('user_id', userId)
+        .order('vocab_id', { ascending: true })
+        .range(rows.length, rows.length + QUIZ_PAGE_SIZE - 1);
+      if (error || !data) {
+        console.error('fetchQuizProgressRows: select failed', error);
+        return null;
+      }
+      if (data.length === 0) return rows;
+      rows.push(...(data as QuizProgressRow[]));
+    }
+    console.error('fetchQuizProgressRows: stopped after the page limit');
+    return null;
+  } catch (error) {
+    console.error('fetchQuizProgressRows: select threw', error);
+    return null;
+  }
+}
+
+function rowsToMap(rows: QuizProgressRow[]): QuizStatsMap {
+  const map: QuizStatsMap = {};
+  for (const row of rows) {
+    map[row.vocab_id] = {
+      attempts: row.attempts,
+      correct: row.correct,
+      lastAttempt: row.last_attempt
+    };
+  }
+  return map;
+}
+
+/**
  * Loads the quiz stats map. Plus users (userId present) read quiz_progress; guest/free
  * users read localStorage. Never throws: a failed or missing table yields an empty map.
  */
@@ -46,26 +99,8 @@ export async function loadQuizStats(userId?: string | null): Promise<QuizStatsMa
   const map: QuizStatsMap = {};
 
   if (userId) {
-    try {
-      const { data, error } = await supabase
-        .from('quiz_progress')
-        .select('vocab_id, attempts, correct, last_attempt')
-        .eq('user_id', userId);
-      if (error || !data) {
-        if (error) console.error('loadQuizStats: select failed', error);
-        return map;
-      }
-      for (const row of data as QuizProgressRow[]) {
-        map[row.vocab_id] = {
-          attempts: row.attempts,
-          correct: row.correct,
-          lastAttempt: row.last_attempt
-        };
-      }
-    } catch (error) {
-      console.error('loadQuizStats: select threw', error);
-    }
-    return map;
+    const rows = await fetchQuizProgressRows(userId);
+    return rows ? rowsToMap(rows) : map;
   }
 
   try {
@@ -99,28 +134,8 @@ export async function loadQuizStats(userId?: string | null): Promise<QuizStatsMa
 export async function loadQuizStatsOrNull(userId?: string | null): Promise<QuizStatsMap | null> {
   if (!userId) return loadQuizStats(null);
 
-  const map: QuizStatsMap = {};
-  try {
-    const { data, error } = await supabase
-      .from('quiz_progress')
-      .select('vocab_id, attempts, correct, last_attempt')
-      .eq('user_id', userId);
-    if (error || !data) {
-      console.error('loadQuizStatsOrNull: select failed', error);
-      return null;
-    }
-    for (const row of data as QuizProgressRow[]) {
-      map[row.vocab_id] = {
-        attempts: row.attempts,
-        correct: row.correct,
-        lastAttempt: row.last_attempt
-      };
-    }
-    return map;
-  } catch (error) {
-    console.error('loadQuizStatsOrNull: select threw', error);
-    return null;
-  }
+  const rows = await fetchQuizProgressRows(userId);
+  return rows ? rowsToMap(rows) : null;
 }
 
 /**
@@ -256,18 +271,15 @@ export async function migrateLocalQuizStatsToSupabase(userId: string): Promise<v
     const ids = Object.keys(local);
     if (ids.length === 0) return;
 
-    // Not loadQuizStats(userId): that returns {} on error, and merging onto an empty map
-    // would overwrite the cloud counts.
-    const { data, error: selectError } = await supabase
-      .from('quiz_progress')
-      .select('vocab_id, attempts, correct, last_attempt')
-      .eq('user_id', userId);
-    if (selectError || !data) {
-      console.error('migrateLocalQuizStatsToSupabase: select failed', selectError);
+    // Every remote row, or null on any failure: merging onto an empty or partial view of the
+    // cloud counts would overwrite them.
+    const remoteRows = await fetchQuizProgressRows(userId);
+    if (!remoteRows) {
+      console.error('migrateLocalQuizStatsToSupabase: could not load the cloud rows');
       return;
     }
     const remote: Record<string, QuizProgressRow> = {};
-    for (const row of data as QuizProgressRow[]) remote[row.vocab_id] = row;
+    for (const row of remoteRows) remote[row.vocab_id] = row;
 
     const rows = ids.map((id) => {
       const l = local[id];

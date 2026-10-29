@@ -239,6 +239,10 @@
 
   async function submitAnswer(userAnswer: string | number) {
     if (!current || quizState !== 'questioning' || answering) return;
+    // The writes below await, and the learner can press Back (goToIdle) or start another
+    // quiz meanwhile, which replaces `questions`. Keep this submission bound to its own
+    // question: write for it, and reveal only if it is still the question on screen.
+    const answered = current;
 
     let rating: FSRSRating;
     let correct: boolean;
@@ -309,7 +313,7 @@
       // the stats map has loaded (see quizStatsLoaded).
       if (quizStatsLoaded) {
         try {
-          quizStats = await recordQuizAnswer(current.entry, correct, quizStats, userId);
+          quizStats = await recordQuizAnswer(answered.entry, correct, quizStats, userId);
         } catch (error) {
           console.error('Could not save quiz stats', error);
         }
@@ -321,6 +325,8 @@
       // result above is already counted, so retrying would count it twice.
       answering = false;
     }
+    // The session may have ended or been replaced during the awaits above.
+    if (current !== answered || quizState !== 'questioning') return;
     quizState = 'revealing';
   }
 

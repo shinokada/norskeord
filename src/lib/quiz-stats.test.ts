@@ -6,6 +6,7 @@ vi.mock('$lib/supabase', () => ({ supabase: { from: vi.fn() } }));
 
 import { supabase } from '$lib/supabase';
 import { QUIZ_LS_PREFIX } from './progress';
+import { mockQuizSelect } from './test-utils/quiz-select';
 import {
   loadQuizStats,
   recordQuizAnswer,
@@ -213,29 +214,68 @@ describe('recordQuizAnswer (Supabase)', () => {
 
 describe('loadQuizStats (Supabase)', () => {
   it('maps rows to stats keyed by vocab_id', async () => {
-    const eq = vi.fn().mockResolvedValue({
-      data: [
-        { vocab_id: 'w-000001', attempts: 4, correct: 3, last_attempt: '2026-10-28T10:00:00Z' }
-      ],
-      error: null
-    });
-    const select = vi.fn().mockReturnValue({ eq });
-    vi.mocked(supabase.from).mockReturnValue({ select } as never);
+    const cloud = mockQuizSelect([
+      {
+        data: [
+          { vocab_id: 'w-000001', attempts: 4, correct: 3, last_attempt: '2026-10-28T10:00:00Z' }
+        ]
+      }
+    ]);
+    vi.mocked(supabase.from).mockReturnValue({ select: cloud.select } as never);
 
     const map = await loadQuizStats('user-1');
 
     expect(supabase.from).toHaveBeenCalledWith('quiz_progress');
-    expect(eq).toHaveBeenCalledWith('user_id', 'user-1');
+    expect(cloud.eq).toHaveBeenCalledWith('user_id', 'user-1');
+    expect(cloud.order).toHaveBeenCalledWith('vocab_id', { ascending: true });
     expect(map).toEqual({
       'w-000001': { attempts: 4, correct: 3, lastAttempt: '2026-10-28T10:00:00Z' }
     });
   });
 
+  it('reads every page, advancing by the rows returned, until an empty page', async () => {
+    const row = (id: string) => ({
+      vocab_id: id,
+      attempts: 1,
+      correct: 1,
+      last_attempt: '2026-10-28T10:00:00Z'
+    });
+    // Pages smaller than the page size: a project max_rows below 1,000 must not end the loop.
+    const cloud = mockQuizSelect([
+      { data: [row('w-000001'), row('w-000002')] },
+      { data: [row('w-000003')] }
+    ]);
+    vi.mocked(supabase.from).mockReturnValue({ select: cloud.select } as never);
+
+    const map = await loadQuizStats('user-1');
+
+    expect(Object.keys(map).sort()).toEqual(['w-000001', 'w-000002', 'w-000003']);
+    expect(cloud.range.mock.calls).toEqual([
+      [0, 999],
+      [2, 1001],
+      [3, 1002]
+    ]);
+  });
+
+  it('returns an empty map, not a partial one, when a later page fails', async () => {
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    const cloud = mockQuizSelect([
+      {
+        data: [
+          { vocab_id: 'w-000001', attempts: 1, correct: 1, last_attempt: '2026-10-28T10:00:00Z' }
+        ]
+      },
+      { data: null, error: { message: 'boom' } }
+    ]);
+    vi.mocked(supabase.from).mockReturnValue({ select: cloud.select } as never);
+
+    expect(await loadQuizStats('user-1')).toEqual({});
+  });
+
   it('returns an empty map when the query errors', async () => {
     vi.spyOn(console, 'error').mockImplementation(() => {});
-    const eq = vi.fn().mockResolvedValue({ data: null, error: { message: 'boom' } });
-    const select = vi.fn().mockReturnValue({ eq });
-    vi.mocked(supabase.from).mockReturnValue({ select } as never);
+    const cloud = mockQuizSelect([{ data: null, error: { message: 'boom' } }]);
+    vi.mocked(supabase.from).mockReturnValue({ select: cloud.select } as never);
 
     expect(await loadQuizStats('user-1')).toEqual({});
   });
@@ -320,17 +360,16 @@ describe('migrateLocalQuizStatsToSupabase', () => {
     store[QUIZ_LS_PREFIX + id] = JSON.stringify({ attempts, correct, lastAttempt: at });
   };
 
-  /** select() resolves with `remote` rows; upsert() resolves with `upsertError`. */
+  /** The cloud read returns `remote` rows (one page); upsert() resolves with `upsertError`. */
   function mockCloud(
     remote: unknown[] | null,
     selectError: unknown = null,
     upsertError: unknown = null
   ) {
-    const eq = vi.fn().mockResolvedValue({ data: remote, error: selectError });
-    const select = vi.fn().mockReturnValue({ eq });
+    const sel = mockQuizSelect([{ data: remote, error: selectError }]);
     const upsert = vi.fn().mockResolvedValue({ error: upsertError });
-    vi.mocked(supabase.from).mockReturnValue({ select, upsert } as never);
-    return { select, eq, upsert };
+    vi.mocked(supabase.from).mockReturnValue({ select: sel.select, upsert } as never);
+    return { ...sel, upsert };
   }
 
   it('does nothing when there are no local quiz stats', async () => {
@@ -386,6 +425,51 @@ describe('migrateLocalQuizStatsToSupabase', () => {
     ]);
     // correct <= attempts must still hold after the sum (the table has a check constraint).
     expect(rows[0].correct).toBeLessThanOrEqual(rows[0].attempts);
+  });
+
+  it('merges against cloud rows from every page, not just the first', async () => {
+    seedLocal('w-2', 1, 1, '2026-10-01T10:00:00Z');
+    const sel = mockQuizSelect([
+      {
+        data: [{ vocab_id: 'w-1', attempts: 5, correct: 5, last_attempt: '2026-10-02T10:00:00Z' }]
+      },
+      {
+        data: [{ vocab_id: 'w-2', attempts: 7, correct: 4, last_attempt: '2026-10-03T10:00:00Z' }]
+      }
+    ]);
+    const upsert = vi.fn().mockResolvedValue({ error: null });
+    vi.mocked(supabase.from).mockReturnValue({ select: sel.select, upsert } as never);
+
+    await migrateLocalQuizStatsToSupabase('user-1');
+
+    // w-2 only exists on the second page: its cloud counts must be added, not overwritten.
+    expect(upsert.mock.calls[0][0]).toEqual([
+      {
+        user_id: 'user-1',
+        vocab_id: 'w-2',
+        attempts: 8,
+        correct: 5,
+        last_attempt: '2026-10-03T10:00:00Z'
+      }
+    ]);
+  });
+
+  it('keeps the local stats and does not upsert when a later cloud page fails', async () => {
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    seedLocal('w-2', 1, 1);
+    const sel = mockQuizSelect([
+      {
+        data: [{ vocab_id: 'w-1', attempts: 5, correct: 5, last_attempt: '2026-10-02T10:00:00Z' }]
+      },
+      { data: null, error: { message: 'boom' } }
+    ]);
+    const upsert = vi.fn().mockResolvedValue({ error: null });
+    vi.mocked(supabase.from).mockReturnValue({ select: sel.select, upsert } as never);
+
+    await migrateLocalQuizStatsToSupabase('user-1');
+
+    expect(upsert).not.toHaveBeenCalled();
+    expect(Object.keys(store)).toEqual([QUIZ_LS_PREFIX + 'w-2']);
   });
 
   it('keeps the local stats when the cloud read fails, and does not upsert', async () => {

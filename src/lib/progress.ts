@@ -326,22 +326,77 @@ function rowKey(row: ProgressRow): string {
 // ── Supabase — Plus users ────────────────────────────────────────────────────
 
 /**
+ * Rows per request. Supabase caps a response at the project's `max_rows` (1,000 by default,
+ * configurable), and a capped response carries no error: without pagination a Plus user
+ * with more rows than that silently gets a truncated map. fetchAllProgressRows advances by
+ * the number of rows actually returned and stops only on an empty page, so it stays correct
+ * even if the project limit is lower than this.
+ */
+const PROGRESS_PAGE_SIZE = 1000;
+/** Safety stop against a runaway loop: 100 pages is 100,000 rows at the default limit. */
+const PROGRESS_MAX_PAGES = 100;
+
+/**
+ * Every row of one of a user's progress tables, or `null` when any page failed: never a
+ * partial list. Pages are ordered by the table's per-user unique key, so the ranges do not
+ * overlap or skip. Never throws.
+ */
+async function fetchAllProgressRows<T>(
+  table: 'card_progress' | 'grammar_progress',
+  orderColumn: 'vocab_id' | 'question_id',
+  userId: string
+): Promise<T[] | null> {
+  const rows: T[] = [];
+  try {
+    for (let page = 0; page < PROGRESS_MAX_PAGES; page++) {
+      const { data, error } = await supabase
+        .from(table)
+        .select('*')
+        .eq('user_id', userId)
+        .order(orderColumn, { ascending: true })
+        .range(rows.length, rows.length + PROGRESS_PAGE_SIZE - 1);
+      if (error || !data) {
+        console.error(`fetchAllProgressRows: ${table} select failed`, error);
+        return null;
+      }
+      if (data.length === 0) return rows;
+      rows.push(...(data as T[]));
+    }
+    console.error(`fetchAllProgressRows: ${table} stopped after the page limit`);
+    return null;
+  } catch (error) {
+    console.error(`fetchAllProgressRows: ${table} select threw`, error);
+    return null;
+  }
+}
+
+/**
+ * Like loadProgressMapFromSupabase, but a failed read yields `null` instead of `{}`, so a
+ * caller that is about to decide something from "the cloud has no progress" can tell that
+ * from "the read failed" (auth/sync, via syncLocalProgressToPlus). Never throws.
+ */
+export async function loadProgressMapFromSupabaseOrNull(
+  userId: string
+): Promise<Record<string, CardProgress> | null> {
+  const rows = await fetchAllProgressRows<ProgressRow>('card_progress', 'vocab_id', userId);
+  if (!rows) return null;
+
+  const map: Record<string, CardProgress> = {};
+  for (const row of rows) {
+    map[rowKey(row)] = fromRow(row);
+  }
+  return map;
+}
+
+/**
  * Fetches all card_progress rows for a Plus user and returns them as a
- * CardProgress map keyed by vocab_id.
- * Called on mount for Plus users instead of loadProgressMap.
+ * CardProgress map keyed by vocab_id. Reads every page (see fetchAllProgressRows).
+ * Called on mount for Plus users instead of loadProgressMap. A failed read returns {}.
  */
 export async function loadProgressMapFromSupabase(
   userId: string
 ): Promise<Record<string, CardProgress>> {
-  const { data, error } = await supabase.from('card_progress').select('*').eq('user_id', userId);
-
-  if (error || !data) return {};
-
-  const map: Record<string, CardProgress> = {};
-  for (const row of data as ProgressRow[]) {
-    map[rowKey(row)] = fromRow(row);
-  }
-  return map;
+  return (await loadProgressMapFromSupabaseOrNull(userId)) ?? {};
 }
 
 /**
@@ -595,18 +650,22 @@ export function loadGrammarProgressMap(): Record<string, CardProgress> {
 }
 
 /**
- * Fetches all grammar_progress rows for a Plus user, keyed by question_id.
- * Called on mount for Plus users instead of loadGrammarProgressMap.
+ * Fetches all grammar_progress rows for a Plus user, keyed by question_id. Reads every page
+ * (see fetchAllProgressRows). Called on mount for Plus users instead of
+ * loadGrammarProgressMap. A failed read returns {}.
  */
 export async function loadGrammarProgressFromSupabase(
   userId: string
 ): Promise<Record<string, CardProgress>> {
-  const { data, error } = await supabase.from('grammar_progress').select('*').eq('user_id', userId);
-
-  if (error || !data) return {};
+  const rows = await fetchAllProgressRows<GrammarProgressRow>(
+    'grammar_progress',
+    'question_id',
+    userId
+  );
+  if (!rows) return {};
 
   const map: Record<string, CardProgress> = {};
-  for (const row of data as GrammarProgressRow[]) {
+  for (const row of rows) {
     map[row.question_id] = fromGrammarRow(row);
   }
   return map;

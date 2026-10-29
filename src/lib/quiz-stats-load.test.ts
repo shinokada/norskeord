@@ -4,6 +4,7 @@ vi.mock('$lib/supabase', () => ({ supabase: { from: vi.fn() } }));
 
 import { supabase } from '$lib/supabase';
 import { QUIZ_LS_PREFIX } from './progress';
+import { mockQuizSelect } from './test-utils/quiz-select';
 import { loadQuizStatsOrNull } from './quiz-stats';
 
 // The quiz page records a stat only after loadQuizStatsOrNull returned a map. For a Plus
@@ -31,17 +32,17 @@ beforeEach(() => {
   vi.spyOn(console, 'error').mockImplementation(() => {});
 });
 
-function mockSelect(result: unknown) {
-  const eq = vi.fn().mockResolvedValue(result);
-  vi.mocked(supabase.from).mockReturnValue({
-    select: vi.fn().mockReturnValue({ eq })
-  } as never);
+function mockSelect(result: { data: unknown[] | null; error: unknown }) {
+  const sel = mockQuizSelect([result]);
+  vi.mocked(supabase.from).mockReturnValue({ select: sel.select } as never);
 }
 
 describe('loadQuizStatsOrNull (Plus)', () => {
   it('returns the cloud stats keyed by vocab id', async () => {
     mockSelect({
-      data: [{ vocab_id: 'w-000001', attempts: 4, correct: 3, last_attempt: '2026-10-28T10:00:00Z' }],
+      data: [
+        { vocab_id: 'w-000001', attempts: 4, correct: 3, last_attempt: '2026-10-28T10:00:00Z' }
+      ],
       error: null
     });
 
@@ -57,6 +58,20 @@ describe('loadQuizStatsOrNull (Plus)', () => {
 
   it('returns null when the select reports an error', async () => {
     mockSelect({ data: null, error: { message: 'boom' } });
+    expect(await loadQuizStatsOrNull('user-1')).toBeNull();
+  });
+
+  it('returns null when a later page fails, never a partial map', async () => {
+    const sel = mockQuizSelect([
+      {
+        data: [
+          { vocab_id: 'w-000001', attempts: 1, correct: 1, last_attempt: '2026-10-28T10:00:00Z' }
+        ]
+      },
+      { data: null, error: { message: 'boom' } }
+    ]);
+    vi.mocked(supabase.from).mockReturnValue({ select: sel.select } as never);
+
     expect(await loadQuizStatsOrNull('user-1')).toBeNull();
   });
 
