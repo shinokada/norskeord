@@ -89,6 +89,41 @@ export async function loadQuizStats(userId?: string | null): Promise<QuizStatsMa
 }
 
 /**
+ * Like loadQuizStats, but a Plus user's failed select yields `null` instead of an empty
+ * map, so a caller that is about to write counts can tell "no history" from "could not
+ * load". recordQuizAnswer upserts absolute counts computed from the map it is given: an
+ * empty map after a failed load would overwrite the word's cloud counts with 1.
+ * Guest/free users always get a map (localStorage reads do not fail this way).
+ * Never throws.
+ */
+export async function loadQuizStatsOrNull(userId?: string | null): Promise<QuizStatsMap | null> {
+  if (!userId) return loadQuizStats(null);
+
+  const map: QuizStatsMap = {};
+  try {
+    const { data, error } = await supabase
+      .from('quiz_progress')
+      .select('vocab_id, attempts, correct, last_attempt')
+      .eq('user_id', userId);
+    if (error || !data) {
+      console.error('loadQuizStatsOrNull: select failed', error);
+      return null;
+    }
+    for (const row of data as QuizProgressRow[]) {
+      map[row.vocab_id] = {
+        attempts: row.attempts,
+        correct: row.correct,
+        lastAttempt: row.last_attempt
+      };
+    }
+    return map;
+  } catch (error) {
+    console.error('loadQuizStatsOrNull: select threw', error);
+    return null;
+  }
+}
+
+/**
  * Records one quiz answer for `entry` and returns the updated map. The new counts are
  * computed from the in-memory `map` (as saveProgress does with its progress map), so
  * load the map before the first answer of a session.

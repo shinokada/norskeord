@@ -22,7 +22,7 @@
     recordStudyDay,
     vocabKey
   } from '$lib/progress';
-  import { loadQuizStats, recordQuizAnswer, type QuizStatsMap } from '$lib/quiz-stats';
+  import { loadQuizStatsOrNull, recordQuizAnswer, type QuizStatsMap } from '$lib/quiz-stats';
   import type { FSRSRating, CardProgress, FlashcardLanguage, VocabEntry } from '$lib/types';
   import { isFreeQuizCategory } from '$lib/access';
   import { quizPoolSize, type QuizCategoryCount, type QuizPayload } from '$lib/quiz-gate';
@@ -55,6 +55,10 @@
   let answering = false;
   // Per-word attempts/correct for the Quiz tab on /my-progress (quiz-progress.md, Phase 2).
   let quizStats: QuizStatsMap = $state({});
+  // Set only after the stats map loaded successfully. recordQuizAnswer upserts absolute counts
+  // computed from quizStats, so recording before the load (or after a failed one) would start
+  // the word's count from zero and overwrite the cloud row. Plain variable: nothing renders it.
+  let quizStatsLoaded = false;
   let correctCount = $state(0);
   let results: QuizResult[] = $state([]);
   let inputRef: HTMLInputElement | null = $state(null);
@@ -165,8 +169,10 @@
           progressMap = map;
         });
       }
-      loadQuizStats(isPlus ? (page.data.user?.id ?? null) : null).then((map) => {
+      loadQuizStatsOrNull(isPlus ? (page.data.user?.id ?? null) : null).then((map) => {
+        if (!map) return; // load failed: stay unloaded so no answer overwrites cloud counts
         quizStats = map;
+        quizStatsLoaded = true;
       });
     }
     window.addEventListener('quiz:reset', handleQuizReset);
@@ -273,33 +279,46 @@
     // to 'revealing', so a second click or key press in that window must not count twice.
     answering = true;
     try {
-      // quiz-progress.md Phase 1: multiple choice is guessable, so it writes to the shared
-      // flashcard schedule only when fsrsRatingToWrite allows it.
-      const toWrite = fsrsRatingToWrite(
-        current.type,
-        rating,
-        !!progressMap[vocabKey(current.entry)]
-      );
-      if (toWrite) {
-        progressMap = await saveProgress(
-          current.entry,
-          toWrite,
-          progressMap,
-          userId,
-          fsrsRetention
+      // The progress write and the stats write fail independently: a rejected saveProgress
+      // must not skip the stats write, and neither blocks revealing the answer.
+      try {
+        // quiz-progress.md Phase 1: multiple choice is guessable, so it writes to the shared
+        // flashcard schedule only when fsrsRatingToWrite allows it.
+        const toWrite = fsrsRatingToWrite(
+          current.type,
+          rating,
+          !!progressMap[vocabKey(current.entry)]
         );
-      } else if (userId) {
-        // saveProgress is what records the study day, so a multiple-choice answer that
-        // skips it must record the day itself or the streak would regress.
-        void recordStudyDay(userId);
+        if (toWrite) {
+          progressMap = await saveProgress(
+            current.entry,
+            toWrite,
+            progressMap,
+            userId,
+            fsrsRetention
+          );
+        } else if (userId) {
+          // saveProgress is what records the study day, so a multiple-choice answer that
+          // skips it must record the day itself or the streak would regress.
+          void recordStudyDay(userId);
+        }
+      } catch (error) {
+        console.error('Could not save quiz progress', error);
       }
-      // Every answer, of every question type, counts towards the quiz stats.
-      quizStats = await recordQuizAnswer(current.entry, correct, quizStats, userId);
-    } catch (error) {
-      // A failed write must not block the learner or leave the question retryable: the
-      // result above is already counted, so retrying would count it twice. Log and carry on.
-      console.error('Could not save quiz answer', error);
+      // Every answer, of every question type, counts towards the quiz stats, but only once
+      // the stats map has loaded (see quizStatsLoaded).
+      if (quizStatsLoaded) {
+        try {
+          quizStats = await recordQuizAnswer(current.entry, correct, quizStats, userId);
+        } catch (error) {
+          console.error('Could not save quiz stats', error);
+        }
+      } else {
+        console.warn('Quiz stats not loaded yet; this answer is not counted in the stats');
+      }
     } finally {
+      // A failed write must not block the learner or leave the question retryable: the
+      // result above is already counted, so retrying would count it twice.
       answering = false;
     }
     quizState = 'revealing';
