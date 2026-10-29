@@ -1,4 +1,4 @@
-import type { VocabEntry, CardProgress, FlashcardLanguage } from '$lib/types';
+import type { VocabEntry, CardProgress, FlashcardLanguage, FSRSRating } from '$lib/types';
 import { getTranslation } from '$lib/vocab-helpers';
 import { vocabKey } from '$lib/progress';
 import { spaceSiblings } from '$lib/sibling-spacing';
@@ -194,6 +194,26 @@ export interface TypeAnswerQuestion {
 }
 
 export type QuizQuestion = MultipleChoiceQuestion | FillBlankQuestion | TypeAnswerQuestion;
+
+/**
+ * The FSRS rating a quiz answer should write to the shared flashcard schedule,
+ * or `null` when it should not touch the schedule at all (quiz-progress.md, Phase 1).
+ *
+ * Fill-in and type-the-answer questions need recall, so their rating is written
+ * as is. Multiple choice is guessable (a guess is right 1 time in 4), so a correct
+ * answer is weak evidence and writes nothing: it would otherwise create a progress
+ * row for an unseen word and push seen words further out. A wrong answer is strong
+ * evidence of forgetting, so it still rates `again`, but only for a card that
+ * already has a progress row. It never creates one.
+ */
+export function fsrsRatingToWrite(
+  type: QuizQuestion['type'],
+  rating: FSRSRating,
+  hasProgress: boolean
+): FSRSRating | null {
+  if (type !== 'mc') return rating;
+  return rating === 'again' && hasProgress ? 'again' : null;
+}
 
 // ── Question builders ─────────────────────────────────────────────────────────
 

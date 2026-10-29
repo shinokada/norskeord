@@ -66,16 +66,31 @@ export const LS_PREFIX = 'progress-';
 export const GRAMMAR_LS_PREFIX = 'grammar-';
 
 /**
+ * localStorage prefix for quiz stats (guest/free users): per-word attempts and correct
+ * answers, not FSRS state (see quiz-stats.ts). Distinct from LS_PREFIX and
+ * GRAMMAR_LS_PREFIX so no progress loader picks up quiz keys. Plus users persist quiz
+ * stats to the quiz_progress table instead.
+ */
+export const QUIZ_LS_PREFIX = 'quiz-stats-';
+
+/**
  * Removes all progress keys for guest/free users from localStorage.
  * Called on logout so the next person who opens the browser sees no progress.
  */
 export function clearUserProgress(): void {
-  // Guest/free users store vocab keys as 'progress-<vocabId>' and grammar
-  // keys as 'grammar-<questionId>'. (Plus users no longer use localStorage at all.)
+  // Guest/free users store vocab keys as 'progress-<vocabId>', grammar keys as
+  // 'grammar-<questionId>' and quiz stats as 'quiz-stats-<vocabId>'. (Plus users no
+  // longer use localStorage at all.)
   const keysToRemove: string[] = [];
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
-    if (key?.startsWith(LS_PREFIX) || key?.startsWith(GRAMMAR_LS_PREFIX)) keysToRemove.push(key);
+    if (
+      key?.startsWith(LS_PREFIX) ||
+      key?.startsWith(GRAMMAR_LS_PREFIX) ||
+      key?.startsWith(QUIZ_LS_PREFIX)
+    ) {
+      keysToRemove.push(key);
+    }
   }
   keysToRemove.forEach((k) => localStorage.removeItem(k));
 }
@@ -338,14 +353,15 @@ async function saveProgressToSupabase(
 }
 
 /**
- * Deletes all card_progress, grammar_progress and study_days rows for a user
- * from Supabase. Called when a Plus user resets their progress from the stats
+ * Deletes all card_progress, grammar_progress, quiz_progress and study_days rows for a
+ * user from Supabase. Called when a Plus user resets their progress from the stats
  * page.
  */
 export async function resetProgressInSupabase(userId: string): Promise<void> {
   const results = await Promise.all([
     supabase.from('card_progress').delete().eq('user_id', userId),
     supabase.from('grammar_progress').delete().eq('user_id', userId),
+    supabase.from('quiz_progress').delete().eq('user_id', userId),
     supabase.from('study_days').delete().eq('user_id', userId)
   ]);
   for (const { error } of results) {
@@ -938,6 +954,60 @@ export async function migrateLocalProgressToSupabase(
 
   if (!error) {
     clearUserProgress(); // remove progress-* keys from localStorage
+  }
+}
+
+/**
+ * Copies a free user's local grammar progress into grammar_progress when they upgrade to
+ * Plus. migrateLocalProgressToSupabase only handles vocab, and its clearUserProgress() call
+ * deletes the local `grammar-` keys, so without this a free user lost all grammar progress
+ * on upgrading. Call it before that function (see auth/sync).
+ *
+ * Rows already in the cloud win (`ignoreDuplicates`): FSRS state cannot be merged, and the
+ * caller only runs this for a fresh upgrade anyway. The stored level and topic are a
+ * snapshot; the app resolves both live from the question id, so they only need to be
+ * present. Local keys are removed only after the upsert succeeds, so a failed attempt can
+ * be retried. Never throws: a failure is logged and the local progress stays put.
+ */
+export async function migrateLocalGrammarProgressToSupabase(userId: string): Promise<void> {
+  try {
+    const localMap = loadGrammarProgressMap();
+    const ids = Object.keys(localMap);
+    if (ids.length === 0) return;
+
+    const rows = ids.map((id) => {
+      const p = localMap[id];
+      return {
+        user_id: userId,
+        question_id: id,
+        topic: p.category as unknown as string,
+        cefr: p.level,
+        due: new Date(p.fsrs.due).toISOString(),
+        stability: p.fsrs.stability,
+        difficulty: p.fsrs.difficulty,
+        elapsed_days: p.fsrs.elapsed_days,
+        scheduled_days: p.fsrs.scheduled_days,
+        learning_steps: p.fsrs.learning_steps,
+        reps: p.fsrs.reps,
+        lapses: p.fsrs.lapses,
+        state: p.fsrs.state,
+        last_review: p.fsrs.last_review ? new Date(p.fsrs.last_review).toISOString() : null,
+        seen_count: p.seenCount,
+        last_seen: p.lastSeen
+      };
+    });
+
+    const { error } = await supabase
+      .from('grammar_progress')
+      .upsert(rows, { onConflict: 'user_id,question_id', ignoreDuplicates: true });
+    if (error) {
+      console.error('migrateLocalGrammarProgressToSupabase: upsert failed', error);
+      return;
+    }
+
+    for (const id of ids) localStorage.removeItem(GRAMMAR_LS_PREFIX + id);
+  } catch (error) {
+    console.error('migrateLocalGrammarProgressToSupabase: failed', error);
   }
 }
 

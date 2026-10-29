@@ -981,5 +981,13 @@
   "quiz_start_load_error": "Die Quizfragen konnten nicht geladen werden. Bitte versuche es erneut.",
   "level_nav_go_to": "Zu {level} ({name})",
   "level_nav_label": "Niveaunavigation",
-  "grammar_save_failed": "Dein Fortschritt konnte nicht gespeichert werden. Du kannst weiter üben, er geht aber möglicherweise verloren, wenn du die Seite neu lädst."
+  "grammar_save_failed": "Dein Fortschritt konnte nicht gespeichert werden. Du kannst weiter üben, er geht aber möglicherweise verloren, wenn du die Seite neu lädst.",
+  "stats_quiz_heading": "Quiz",
+  "stats_quiz_accuracy_label": "Trefferquote",
+  "stats_quiz_answered_label": "Beantwortete Fragen",
+  "stats_quiz_answered_count": "{count} beantwortet",
+  "stats_quiz_words_label": "Geübte Wörter",
+  "stats_quiz_min_hint": "Die Trefferquote erscheint nach {count} Antworten.",
+  "stats_quiz_empty_heading": "Noch keine Quiz-Antworten",
+  "stats_quiz_empty_body": "Mach ein Quiz auf diesem Niveau, um hier deine Ergebnisse zu sehen."
 }

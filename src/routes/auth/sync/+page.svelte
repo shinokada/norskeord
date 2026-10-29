@@ -6,8 +6,10 @@
   import {
     clearUserProgress,
     loadProgressMapFromSupabase,
+    migrateLocalGrammarProgressToSupabase,
     migrateLocalProgressToSupabase
   } from '$lib/progress';
+  import { migrateLocalQuizStatsToSupabase } from '$lib/quiz-stats';
   import { validFlashcardPathPattern } from '$lib/utils';
 
   onMount(async () => {
@@ -23,6 +25,11 @@
     if (isPlus && userId) {
       const supabaseMap = await loadProgressMapFromSupabase(userId);
       if (Object.keys(supabaseMap).length === 0) {
+        // Quiz stats and grammar progress first: migrateLocalProgressToSupabase ends in
+        // clearUserProgress(), which deletes their local keys, and it returns early for a
+        // learner with no vocab progress.
+        await migrateLocalQuizStatsToSupabase(userId);
+        await migrateLocalGrammarProgressToSupabase(userId);
         await migrateLocalProgressToSupabase(userId);
       } else {
         clearUserProgress();

@@ -19,9 +19,18 @@
   interface Props {
     icon: string;
     title: string;
-    seen: number;
-    mastered: number;
-    due: number;
+    seen?: number;
+    mastered?: number;
+    due?: number;
+    /**
+     * Quiz card (quiz-progress.md, Phase 3): a main figure, its label and an optional
+     * secondary line. When `primary` is set these replace the due / seen / mastered
+     * block, since quiz has no due count. The secondary line shows from `sm` up, like
+     * seen / mastered on the other cards.
+     */
+    primary?: string;
+    primaryLabel?: string;
+    secondary?: string;
     active: boolean;
     onSelect: () => void;
     /** Arrow / Home / End handling, owned by the page so it can move focus between the sibling tabs. */
@@ -32,8 +41,21 @@
     panelId: string;
   }
 
-  let { icon, title, seen, mastered, due, active, onSelect, onKeydown, id, panelId }: Props =
-    $props();
+  let {
+    icon,
+    title,
+    seen = 0,
+    mastered = 0,
+    due = 0,
+    primary,
+    primaryLabel,
+    secondary,
+    active,
+    onSelect,
+    onKeydown,
+    id,
+    panelId
+  }: Props = $props();
 </script>
 
 <button
@@ -56,25 +78,36 @@
     <span class="truncate">{title}</span>
   </span>
 
-  <!-- Due count: always visible, including on mobile -->
-  <span class="mt-2 flex items-baseline gap-1">
-    <span
-      class="text-xl font-bold sm:text-2xl {due > 0
-        ? 'text-red-600 dark:text-red-400'
-        : 'text-gray-400 dark:text-gray-500'}">{due}</span
-    >
-    <span class="text-xs text-gray-500 dark:text-gray-300">{m.stats_due_today_short()}</span>
-  </span>
+  {#if primary !== undefined}
+    <!-- Quiz card: accuracy (or "–" until there are enough answers) + answered count -->
+    <span class="mt-2 flex items-baseline gap-1">
+      <span class="text-xl font-bold text-gray-800 sm:text-2xl dark:text-white">{primary}</span>
+      <span class="text-xs text-gray-500 dark:text-gray-300">{primaryLabel}</span>
+    </span>
+    {#if secondary}
+      <span class="mt-2 hidden text-xs text-gray-500 sm:flex dark:text-gray-300">{secondary}</span>
+    {/if}
+  {:else}
+    <!-- Due count: always visible, including on mobile -->
+    <span class="mt-2 flex items-baseline gap-1">
+      <span
+        class="text-xl font-bold sm:text-2xl {due > 0
+          ? 'text-red-600 dark:text-red-400'
+          : 'text-gray-400 dark:text-gray-500'}">{due}</span
+      >
+      <span class="text-xs text-gray-500 dark:text-gray-300">{m.stats_due_today_short()}</span>
+    </span>
 
-  <!-- Seen / mastered: sm and up -->
-  <span class="mt-2 hidden gap-4 text-xs text-gray-500 sm:flex dark:text-gray-300">
-    <span
-      ><span class="font-semibold text-gray-800 dark:text-white">{seen}</span>
-      {m.stats_seen()}</span
-    >
-    <span
-      ><span class="font-semibold text-green-600 dark:text-green-400">{mastered}</span>
-      {m.stats_grammar_mastered()}</span
-    >
-  </span>
+    <!-- Seen / mastered: sm and up -->
+    <span class="mt-2 hidden gap-4 text-xs text-gray-500 sm:flex dark:text-gray-300">
+      <span
+        ><span class="font-semibold text-gray-800 dark:text-white">{seen}</span>
+        {m.stats_seen()}</span
+      >
+      <span
+        ><span class="font-semibold text-green-600 dark:text-green-400">{mastered}</span>
+        {m.stats_grammar_mastered()}</span
+      >
+    </span>
+  {/if}
 </button>

@@ -8,7 +8,9 @@ import {
   previewIntervals,
   getFsrs,
   LS_PREFIX,
-  GRAMMAR_LS_PREFIX
+  GRAMMAR_LS_PREFIX,
+  QUIZ_LS_PREFIX,
+  clearUserProgress
 } from './progress';
 import type { VocabEntry, GrammarQuestion } from '$lib/types';
 
@@ -345,5 +347,36 @@ describe('previewIntervals', () => {
     const result = previewIntervals(map[KEY], now);
     // "easy" on a mature card should be days or months
     expect(result.easy).toMatch(/^\d+(d|mo)$/);
+  });
+});
+
+// ── clearUserProgress ─────────────────────────────────────────────────────────
+
+describe('clearUserProgress', () => {
+  it('removes vocab, grammar and quiz-stats keys and leaves other keys alone', () => {
+    store[LS_PREFIX + 'w-000001'] = '{}';
+    store[GRAMMAR_LS_PREFIX + 'g-1'] = '{}';
+    store[QUIZ_LS_PREFIX + 'w-000001'] = '{}';
+    store['vocab-quiz-limit'] = '15';
+
+    clearUserProgress();
+
+    expect(Object.keys(store)).toEqual(['vocab-quiz-limit']);
+  });
+
+  it('keeps the quiz-stats prefix distinct from the other progress prefixes', () => {
+    expect(QUIZ_LS_PREFIX).not.toBe(LS_PREFIX);
+    expect(QUIZ_LS_PREFIX).not.toBe(GRAMMAR_LS_PREFIX);
+    expect(QUIZ_LS_PREFIX.startsWith(LS_PREFIX)).toBe(false);
+    expect(QUIZ_LS_PREFIX.startsWith(GRAMMAR_LS_PREFIX)).toBe(false);
+  });
+
+  it('does not let loadProgressMap pick up quiz-stats keys', async () => {
+    store[QUIZ_LS_PREFIX + 'w-000001'] = JSON.stringify({
+      attempts: 2,
+      correct: 1,
+      lastAttempt: new Date().toISOString()
+    });
+    expect(await loadProgressMap()).toEqual({});
   });
 });

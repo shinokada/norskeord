@@ -129,6 +129,7 @@ test.describe('/my-progress page — content-type tabs', () => {
     await expect(page.locator('#tab-vocab')).toHaveAttribute('tabindex', '0');
     await expect(page.locator('#tab-uttrykk')).toHaveAttribute('tabindex', '-1');
     await expect(page.locator('#tab-grammar')).toHaveAttribute('tabindex', '-1');
+    await expect(page.locator('#tab-quiz')).toHaveAttribute('tabindex', '-1');
   });
 
   test('arrow keys, Home and End move selection and focus between the cards', async ({ page }) => {
@@ -136,6 +137,7 @@ test.describe('/my-progress page — content-type tabs', () => {
     const vocab = page.locator('#tab-vocab');
     const uttrykk = page.locator('#tab-uttrykk');
     const grammar = page.locator('#tab-grammar');
+    const quiz = page.locator('#tab-quiz');
 
     await vocab.focus();
     await page.keyboard.press('ArrowRight');
@@ -144,17 +146,23 @@ test.describe('/my-progress page — content-type tabs', () => {
     await expect(uttrykk).toHaveAttribute('tabindex', '0');
     await expect(vocab).toHaveAttribute('tabindex', '-1');
 
-    await page.keyboard.press('End');
+    await page.keyboard.press('ArrowRight');
     await expect(grammar).toBeFocused();
     await expect(grammar).toHaveAttribute('aria-selected', 'true');
     // The panel followed the selection: the grammar-only link is now shown.
     await expect(page.locator('a[href="/my-progress/grammar"]')).toBeVisible();
 
+    // End jumps to the last tab (Quiz), where the grammar-only link is gone again.
+    await page.keyboard.press('End');
+    await expect(quiz).toBeFocused();
+    await expect(quiz).toHaveAttribute('aria-selected', 'true');
+    await expect(page.locator('a[href="/my-progress/grammar"]')).toHaveCount(0);
+
     // Right wraps from the last tab to the first, Left wraps back.
     await page.keyboard.press('ArrowRight');
     await expect(vocab).toBeFocused();
     await page.keyboard.press('ArrowLeft');
-    await expect(grammar).toBeFocused();
+    await expect(quiz).toBeFocused();
 
     await page.keyboard.press('Home');
     await expect(vocab).toBeFocused();
@@ -179,5 +187,105 @@ test.describe('/my-progress page — unresolved progress ids', () => {
     await expect(page.getByText('No cards reviewed yet')).toBeVisible();
     await expect(page.getByRole('link', { name: 'Start studying' })).toBeVisible();
     await expect(page.getByRole('tablist', { name: 'Content type' })).not.toBeVisible();
+  });
+});
+
+// quiz-progress.md Phase 3: the Quiz tab shows per-word quiz stats from their own store
+// ('quiz-stats-<vocab id>' in localStorage for guest/free users), never due counts.
+const QUIZ_STAT_KEY = 'quiz-stats-w-000001';
+const quizStatValue = (attempts: number, correct: number) =>
+  JSON.stringify({ attempts, correct, lastAttempt: new Date().toISOString() });
+
+test.describe('/my-progress page — Quiz tab', () => {
+  test('shows the empty state and a Start quiz link when nothing has been quizzed', async ({
+    page
+  }) => {
+    await page.addInitScript(({ key, value }) => localStorage.setItem(key, value), {
+      key: SEED_KEY,
+      value: SEED_VALUE
+    });
+    await page.goto('/my-progress?tab=quiz');
+
+    await expect(page.locator('#tab-quiz')).toHaveAttribute('aria-selected', 'true');
+    await expect(page.getByTestId('quiz-stats-empty')).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Start quiz' })).toHaveAttribute(
+      'href',
+      /^\/quiz\?level=(A1|A2|B1|B2|C)$/
+    );
+    // Quiz has no schedule: no "Study due now" button on this tab.
+    await expect(page.getByRole('link', { name: 'Study due now' })).toHaveCount(0);
+  });
+
+  test('shows accuracy, answers and words once there are enough answers', async ({ page }) => {
+    await page.addInitScript(
+      ({ progressKey, progressValue, quizKey, quizValue }) => {
+        localStorage.setItem(progressKey, progressValue);
+        localStorage.setItem(quizKey, quizValue);
+      },
+      {
+        progressKey: SEED_KEY,
+        progressValue: SEED_VALUE,
+        quizKey: QUIZ_STAT_KEY,
+        quizValue: quizStatValue(12, 9)
+      }
+    );
+    await page.goto('/my-progress?tab=quiz');
+    // w-000001 is an A1 entry, so its stats count under A1.
+    await page.getByRole('tab', { name: 'A1', exact: true }).click();
+
+    await expect(page.getByTestId('quiz-stat-answered')).toHaveText('12');
+    await expect(page.getByTestId('quiz-stat-accuracy')).toHaveText('75%');
+    await expect(page.getByTestId('quiz-stat-words')).toHaveText('1');
+    // The hub card carries the same accuracy.
+    await expect(page.locator('#tab-quiz')).toContainText('75%');
+  });
+
+  test('shows "–" instead of an accuracy below 10 answers', async ({ page }) => {
+    await page.addInitScript(
+      ({ progressKey, progressValue, quizKey, quizValue }) => {
+        localStorage.setItem(progressKey, progressValue);
+        localStorage.setItem(quizKey, quizValue);
+      },
+      {
+        progressKey: SEED_KEY,
+        progressValue: SEED_VALUE,
+        quizKey: QUIZ_STAT_KEY,
+        quizValue: quizStatValue(4, 4)
+      }
+    );
+    await page.goto('/my-progress?tab=quiz');
+    await page.getByRole('tab', { name: 'A1', exact: true }).click();
+
+    await expect(page.getByTestId('quiz-stat-answered')).toHaveText('4');
+    await expect(page.getByTestId('quiz-stat-accuracy')).toHaveText('–');
+    await expect(page.locator('#tab-quiz')).not.toContainText('100%');
+  });
+
+  test('a learner who has only taken quizzes still gets the tabs, not the empty state', async ({
+    page
+  }) => {
+    // No progress- key: multiple-choice answers no longer create flashcard progress.
+    await page.addInitScript(({ key, value }) => localStorage.setItem(key, value), {
+      key: QUIZ_STAT_KEY,
+      value: quizStatValue(3, 2)
+    });
+    await page.goto('/my-progress?tab=quiz');
+
+    await expect(page.locator('#tab-quiz')).toHaveAttribute('aria-selected', 'true');
+    await expect(page.getByText('No cards reviewed yet')).not.toBeVisible();
+  });
+
+  test('opens from the card, updates the URL and survives a reload', async ({ page }) => {
+    await page.addInitScript(({ key, value }) => localStorage.setItem(key, value), {
+      key: SEED_KEY,
+      value: SEED_VALUE
+    });
+    await page.goto('/my-progress');
+    await page.locator('#tab-quiz').click();
+    await expect(page.locator('#tab-quiz')).toHaveAttribute('aria-selected', 'true');
+    await expect(page).toHaveURL(/[?&]tab=quiz(&|$)/);
+
+    await page.reload();
+    await expect(page.locator('#tab-quiz')).toHaveAttribute('aria-selected', 'true');
   });
 });

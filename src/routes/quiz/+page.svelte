@@ -9,12 +9,20 @@
     bareLemma,
     isMonolingualLevel,
     isB1MonolingualEligible,
+    fsrsRatingToWrite,
     type QuizQuestion,
     type MultipleChoiceQuestion,
     type FillBlankQuestion,
     type TypeAnswerQuestion
   } from '$lib/quiz';
-  import { loadProgressMap, loadProgressMapFromSupabase, saveProgress } from '$lib/progress';
+  import {
+    loadProgressMap,
+    loadProgressMapFromSupabase,
+    saveProgress,
+    recordStudyDay,
+    vocabKey
+  } from '$lib/progress';
+  import { loadQuizStats, recordQuizAnswer, type QuizStatsMap } from '$lib/quiz-stats';
   import type { FSRSRating, CardProgress, FlashcardLanguage, VocabEntry } from '$lib/types';
   import { isFreeQuizCategory } from '$lib/access';
   import { quizPoolSize, type QuizCategoryCount, type QuizPayload } from '$lib/quiz-gate';
@@ -43,6 +51,10 @@
   let typedAnswer = $state(''); // fill / type
   let isCorrect: boolean | null = $state(null);
   let progressMap: Record<string, CardProgress> = $state({});
+  // True while submitAnswer is saving; blocks a second submit of the same question.
+  let answering = false;
+  // Per-word attempts/correct for the Quiz tab on /my-progress (quiz-progress.md, Phase 2).
+  let quizStats: QuizStatsMap = $state({});
   let correctCount = $state(0);
   let results: QuizResult[] = $state([]);
   let inputRef: HTMLInputElement | null = $state(null);
@@ -62,6 +74,9 @@
 
   let isPlus = $derived(page.data.plan === 'plus');
   let userId = $derived(isPlus ? (page.data.user?.id ?? null) : null);
+  // FSRS review-intensity preset from the layout data (0.8/0.9/0.95, null = default). Same
+  // source as VocabFlashcardPage; saveProgress() ignores it when userId is null.
+  let fsrsRetention = $derived((page.data.fsrsRetention as number | null | undefined) ?? null);
 
   // The picker is built from per-level, per-category counts (no entry content). The
   // entries of a session come from POST /api/quiz-entries when the user clicks Start
@@ -150,6 +165,9 @@
           progressMap = map;
         });
       }
+      loadQuizStats(isPlus ? (page.data.user?.id ?? null) : null).then((map) => {
+        quizStats = map;
+      });
     }
     window.addEventListener('quiz:reset', handleQuizReset);
     return () => {
@@ -214,7 +232,7 @@
   }
 
   async function submitAnswer(userAnswer: string | number) {
-    if (!current || quizState !== 'questioning') return;
+    if (!current || quizState !== 'questioning' || answering) return;
 
     let rating: FSRSRating;
     let correct: boolean;
@@ -251,13 +269,41 @@
     if (correct) correctCount++;
     isCorrect = correct;
     results = [...results, { question: current, correct, userAnswer: answerStr }];
-    progressMap = await saveProgress(current.entry, rating, progressMap, userId);
+    // The writes below await (a network round trip for Plus users) before the state flips
+    // to 'revealing', so a second click or key press in that window must not count twice.
+    answering = true;
+    try {
+      // quiz-progress.md Phase 1: multiple choice is guessable, so it writes to the shared
+      // flashcard schedule only when fsrsRatingToWrite allows it.
+      const toWrite = fsrsRatingToWrite(
+        current.type,
+        rating,
+        !!progressMap[vocabKey(current.entry)]
+      );
+      if (toWrite) {
+        progressMap = await saveProgress(
+          current.entry,
+          toWrite,
+          progressMap,
+          userId,
+          fsrsRetention
+        );
+      } else if (userId) {
+        // saveProgress is what records the study day, so a multiple-choice answer that
+        // skips it must record the day itself or the streak would regress.
+        void recordStudyDay(userId);
+      }
+      // Every answer, of every question type, counts towards the quiz stats.
+      quizStats = await recordQuizAnswer(current.entry, correct, quizStats, userId);
+    } finally {
+      answering = false;
+    }
     quizState = 'revealing';
   }
 
   async function markEasy() {
     if (!current || quizState !== 'revealing') return;
-    progressMap = await saveProgress(current.entry, 'easy', progressMap, userId);
+    progressMap = await saveProgress(current.entry, 'easy', progressMap, userId, fsrsRetention);
     // Show a brief confirmation toast
     showToast = true;
     if (toastTimer) clearTimeout(toastTimer);
@@ -961,6 +1007,14 @@
         >
           {m.quiz_restart()}
         </button>
+        <!-- Same link as the flashcard completion screen, opening the Quiz tab. -->
+        <a
+          href="/my-progress?tab=quiz"
+          data-testid="quiz-view-progress"
+          class="inline-flex items-center px-2 text-sm font-medium text-indigo-600 underline underline-offset-2 hover:text-indigo-800 dark:text-indigo-300 dark:hover:text-indigo-100"
+        >
+          {m.flashcard_view_stats()}
+        </a>
       </div>
       {#if startError}
         <p role="alert" class="mt-3 text-sm text-red-700 dark:text-red-400">
