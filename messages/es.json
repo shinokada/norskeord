@@ -655,6 +655,8 @@
   "guide_faq_intensity_a": "Cambia qué tan espaciados están todos tus repasos. Relajado repasa con menos frecuencia, Intensivo repasa más seguido para una retención más fuerte. Cámbialo en Perfil → Preferencias.",
   "guide_faq_download_q": "¿Cómo descargo mi informe de progreso?",
   "guide_faq_download_a": "Ve a Perfil → Cuenta y haz clic en Descargar informe de progreso. Esto exporta todo el historial de tus tarjetas en un archivo que puedes guardar o compartir.",
+  "guide_faq_quiz_q": "¿Qué muestra la pestaña Quiz en Mi progreso?",
+  "guide_faq_quiz_a": "Muestra cuántas preguntas del quiz has respondido y tu porcentaje de aciertos. Es un registro sencillo, así que no hay un contador de «pendientes hoy» para el quiz. Las respuestas de opción múltiple no añaden palabras nuevas al calendario de repaso de tus tarjetas, porque adivinar dice poco de lo que has aprendido; las respuestas que escribes tú sí lo hacen. Cada sesión de quiz cuenta como un día de estudio para tu racha. Con Plus, tus estadísticas del quiz se sincronizan entre dispositivos.",
   "guide_faq_contact_q": "Tengo una pregunta — ¿cómo puedo contactar?",
   "contact_page_title": "Contactar con soporte",
   "contact_heading": "Contactar con soporte",

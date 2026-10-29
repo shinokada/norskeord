@@ -658,6 +658,8 @@
   "guide_faq_intensity_a": "It shifts how far apart all your reviews are spaced. Relaxed reviews less often, Intensive reviews more often, for stronger retention. Change it in Profile → Preferences.",
   "guide_faq_download_q": "How do I download my progress report?",
   "guide_faq_download_a": "Go to Profile → Account and click Download Progress report. This exports all your card history as a file you can save or share.",
+  "guide_faq_quiz_q": "What does the Quiz tab in My progress show?",
+  "guide_faq_quiz_a": "It shows how many quiz questions you've answered and your accuracy. It's a simple record, so there's no \"due today\" count for it. Multiple-choice answers don't add new words to your flashcard schedule, because guessing says little about what you've learned. Typed answers still do. Any quiz session counts as a study day for your streak. With Plus, your quiz stats sync across devices.",
   "guide_faq_contact_q": "I have a question — how can I get in touch?",
   "contact_page_title": "Contact support",
   "contact_heading": "Contact support",
