@@ -1,5 +1,13 @@
 # norske-flashcard
 
+## 2.116.2
+
+### Patch Changes
+
+- - **Style**
+    - Homepage hero and feature-section headings now use the Norse font. Learning-page hero and section headings—including Vocabulary, Uttrykk, Grammar, Quiz, Norskprøven, and blog headings—also use it.
+    - General heading styles and the Progress Hub card title no longer use the Norse font. Other typography and layout styles remain unchanged.
+
 ## 2.116.1
 
 ### Patch Changes
