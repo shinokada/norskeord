@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import * as m from '$lib/paraglide/messages.js';
 
-  let { data } = $props<{ data: { destination: string } }>();
+  let { data }: { data: { destination: string } } = $props();
 
   // The Lemon Squeezy webhook is async, so the plan can still read "free" for a
   // few seconds after payment. Wait until /api/plan says Plus before enabling

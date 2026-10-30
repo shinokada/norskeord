@@ -5,7 +5,7 @@
   import { safeNext } from '$lib/safe-next';
 
   // Server-provided auth/plan state
-  let { data } = $props<{ data: { isLoggedIn: boolean; isPlus: boolean } }>();
+  let { data }: { data: { isLoggedIn: boolean; isPlus: boolean } } = $props();
 
   // Billing interval toggle
   let billingInterval = $state<'month' | 'year'>('month');

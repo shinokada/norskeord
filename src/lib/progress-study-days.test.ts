@@ -1,9 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
-import {
-  buildLocalStudyDays,
-  getStreakFromStudyDays,
-  todayLocalDate
-} from './progress';
+import { buildLocalStudyDays, getStreakFromStudyDays, todayLocalDate } from './progress';
 import type { CardProgress } from '$lib/types';
 
 // progress.ts imports the Supabase client; these tests never touch it.

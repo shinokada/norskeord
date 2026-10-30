@@ -72,7 +72,7 @@
     : 'border-gray-200 bg-white hover:border-gray-400 dark:border-white/10 dark:bg-indigo-950/60 dark:hover:border-white/30'}"
 >
   <span
-    class="font-norse flex items-center gap-1.5 text-sm font-bold text-gray-900 sm:text-lg dark:text-white"
+    class="flex items-center gap-1.5 text-sm font-bold text-gray-900 sm:text-lg dark:text-white"
   >
     <span aria-hidden="true">{icon}</span>
     <span class="truncate">{title}</span>
