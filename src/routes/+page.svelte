@@ -189,7 +189,7 @@
   ></div>
 
   <div class="relative mx-auto max-w-2xl">
-    <h1 class="mt-0 mb-4 text-4xl leading-tight font-extrabold text-white sm:text-5xl">
+    <h1 class="font-norse mt-0 mb-4 text-4xl leading-tight font-extrabold text-white sm:text-5xl">
       {m.home_hero_heading()} <span class="text-indigo-300">{m.home_hero_heading_highlight()}</span>
     </h1>
 
@@ -272,7 +272,7 @@
 
 <!-- ── Feature showcase ─────────────────────────────────────────────────── -->
 <div class="mb-14">
-  <h2 class="mb-6 text-center font-bold dark:text-white">
+  <h2 class="font-norse mb-6 text-center font-bold dark:text-white">
     {m.home_features_heading()}
   </h2>
   <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -292,7 +292,7 @@
 
 <!-- ── Level summary cards ──────────────────────────────────────────────── -->
 <div class="mb-12">
-  <h2 class="mb-6 text-center font-bold dark:text-white">
+  <h2 class="font-norse mb-6 text-center font-bold dark:text-white">
     {m.home_levels_heading()}
   </h2>
   <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
