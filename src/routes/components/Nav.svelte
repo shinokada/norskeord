@@ -41,7 +41,7 @@
   import { onMount } from 'svelte';
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
-  import { clearUserProgress } from '$lib/progress';
+  import { parkForLogout } from '$lib/parked-progress';
   import Search from '$lib/components/Search.svelte';
 
   const sidebarUi = uiHelpers();
@@ -58,8 +58,10 @@
   const effectiveUser = $derived(user ?? authStore.user);
 
   async function logout() {
-    const userId = effectiveUser?.id;
-    if (userId) clearUserProgress();
+    // Park this account's local progress instead of deleting it: leftovers of a failed free to
+    // Plus migration and a free user's progress come back at the next login of the same
+    // account, and nobody else can read them (ai-docs/implementation/logout-progress-parking.md).
+    parkForLogout(effectiveUser?.id);
     authStore.reset();
     avatarDropdownOpen = false;
     await fetch('/auth/logout', { method: 'POST' });

@@ -1,6 +1,8 @@
 <script lang="ts">
   import { enhance } from '$app/forms';
+  import { page } from '$app/state';
   import * as m from '$lib/paraglide/messages.js';
+  import { discardAccountProgress } from '$lib/parked-progress';
 
   let deleting = $state(false);
   let confirmed = $state(false);
@@ -44,6 +46,11 @@
           errorMsg = '';
           return async ({ result, update }) => {
             deleting = false;
+            if (result.type === 'redirect' && result.location.includes('deleted=1')) {
+              // The account is gone (the action redirects to /?deleted=1). Remove its progress
+              // from this device so the next visitor or login does not adopt it.
+              discardAccountProgress(page.data.user?.id as string | undefined);
+            }
             if (result.type === 'failure') {
               errorMsg = (result.data?.message as string) ?? m.profile_error_generic();
               confirmed = false;

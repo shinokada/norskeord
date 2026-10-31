@@ -282,13 +282,14 @@ export function recordQuizAnswer(
 
 /**
  * Copies a free user's local quiz stats into quiz_progress when they upgrade to Plus.
- * Call it before `clearUserProgress()`, which would otherwise delete the local keys
- * (see auth/sync). It is separate from migrateLocalProgressToSupabase because a
- * quiz-only learner has no `progress-` keys, so that function returns early for them.
+ * Call it from the login sync (see plus-sync.ts). It is separate from
+ * migrateLocalProgressToSupabase because a quiz-only learner has no `progress-` keys, so that
+ * function returns early for them, and because that function clears only the `progress-` keys.
  *
  * Counts are added to any existing row, since the local answers and the cloud answers
  * are different events. The local keys are removed only after the upsert succeeds, so
- * a failed attempt can be retried and a successful one can never be counted twice.
+ * a failed attempt can be retried (logout parks the leftovers, the next login restores them
+ * first: parked-progress.ts) and a successful one can never be counted twice.
  * Never throws: a failure is logged and the local stats stay where they are.
  */
 export function migrateLocalQuizStatsToSupabase(userId: string): Promise<void> {

@@ -15,6 +15,7 @@
     clearUserProgress
   } from '$lib/progress';
   import type { ActivityCell } from '$lib/progress';
+  import { purgeParkedProgress } from '$lib/parked-progress';
   import { CATEGORIES_BY_LEVEL } from '$lib/config';
   import { resolveEntry, type ResolvedEntry } from '$lib/content-lookup';
   import { filterProgressForPlan, freeGrammarRows, freeStatRows } from '$lib/free-progress';
@@ -601,9 +602,16 @@
       if (userId && isPlus) {
         // Plus: Supabase is the only store — wipe vocab + grammar + quiz + study days
         await resetProgressInSupabase(userId);
-      } else {
-        // Guest / free: wipe localStorage (clears the progress-, grammar- and quiz-stats- keys)
+        // Also clear leftovers of a failed migration (live keys and parked blobs), or the next
+        // login would upload the old progress again. resetProgressInSupabase logs a failed
+        // delete and never throws, so this runs either way; the user asked for a full reset.
         clearUserProgress();
+        purgeParkedProgress(userId);
+      } else {
+        // Guest / free: wipe localStorage (clears the progress-, grammar-, quiz-stats- and
+        // cloze-stats- keys), plus this account's parked blobs when signed in
+        clearUserProgress();
+        if (userId) purgeParkedProgress(userId);
       }
       progressMap = {};
       grammarMap = {};

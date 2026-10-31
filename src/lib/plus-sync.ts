@@ -12,8 +12,11 @@ import { migrateLocalClozeStatsToSupabase, migrateLocalQuizStatsToSupabase } fro
  *
  * - Quiz stats, Sentences (cloze) stats and grammar progress are migrated first, in every
  *   case. Each removes its local keys only after a successful upsert, so a failed attempt is
- *   retried on the next login. migrateLocalProgressToSupabase must not clear them (it only
- *   clears `progress-` keys), and it returns early for a learner with no vocab progress.
+ *   retried on the next login: logout parks the leftover keys per account and `adoptLiveProgress`
+ *   (parked-progress.ts, called by auth/sync just before this function) restores them first, so
+ *   the retry also happens after an explicit logout. migrateLocalProgressToSupabase must not clear
+ *   them (it only clears `progress-` keys), and it returns early for a learner with no vocab
+ *   progress.
  * - Vocab/uttrykk `progress-` keys depend on what the cloud holds:
  *   - empty cloud: a fresh upgrade, so the local progress is copied up;
  *   - progress already in the cloud: the local keys are stale and are discarded;

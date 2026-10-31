@@ -83,7 +83,9 @@ export const CLOZE_LS_PREFIX = 'cloze-stats-';
 
 /**
  * Removes all progress keys for guest/free users from localStorage.
- * Called on logout so the next person who opens the browser sees no progress.
+ * Used by the progress reset on /my-progress and by account deletion (see parked-progress.ts,
+ * `discardAccountProgress`). Logout does NOT call it: logout parks the keys per account instead
+ * (`parkForLogout`), so a failed Plus migration or a free user's progress is not lost.
  */
 export function clearUserProgress(): void {
   // Guest/free users store vocab keys as 'progress-<vocabId>', grammar keys as
@@ -108,7 +110,8 @@ export function clearUserProgress(): void {
  * Removes only the local vocab/uttrykk `progress-` keys. Used by the free to Plus sync, which
  * discards them after a migration or when the cloud already has progress, but must leave
  * the `grammar-`, `quiz-stats-` and `cloze-stats-` keys alone: those are removed by their own
- * migrations only after a successful upsert, so a failed one can be retried on the next login.
+ * migrations only after a successful upsert, so a failed one can be retried on the next login
+ * (the keys survive a logout because logout parks them and the next login restores them).
  */
 export function clearLocalVocabularyProgress(): void {
   const keysToRemove: string[] = [];
@@ -1087,15 +1090,16 @@ export async function migrateLocalProgressToSupabase(
 
 /**
  * Copies a free user's local grammar progress into grammar_progress when they upgrade to
- * Plus. migrateLocalProgressToSupabase only handles vocab, and its clearUserProgress() call
- * deletes the local `grammar-` keys, so without this a free user lost all grammar progress
- * on upgrading. Call it before that function (see auth/sync).
+ * Plus. migrateLocalProgressToSupabase only handles vocab and clears only the `progress-` keys
+ * (clearLocalVocabularyProgress), so without this a free user lost all grammar progress on
+ * upgrading. Call it before that function (see plus-sync.ts).
  *
  * Rows already in the cloud win (`ignoreDuplicates`): FSRS state cannot be merged, and the
  * caller only runs this for a fresh upgrade anyway. The stored level and topic are a
  * snapshot; the app resolves both live from the question id, so they only need to be
  * present. Local keys are removed only after the upsert succeeds, so a failed attempt can
- * be retried. Never throws: a failure is logged and the local progress stays put.
+ * be retried: logout parks the leftovers and the next login restores them before the retry
+ * (parked-progress.ts). Never throws: a failure is logged and the local progress stays put.
  */
 export async function migrateLocalGrammarProgressToSupabase(userId: string): Promise<void> {
   try {

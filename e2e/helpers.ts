@@ -120,18 +120,29 @@ export async function injectPlusPlan(page: Page) {
  * `plan` alone, so a locked page still renders the teaser. Unlike the helpers
  * above it does not set the Norwegian locale, so assertions use English copy.
  * Only the HTML is patched: the server still sees no real session.
+ *
+ * A faked user has no profile row, so the layout shows the onboarding dialog, which covers the
+ * page and blocks clicks. Pass `{ onboardingDone: true }` to patch the flag so the dialog stays
+ * closed. It is opt-in so tests that rely on the default page are unchanged.
  */
-export async function injectLoggedInFreeUser(page: Page) {
+export async function injectLoggedInFreeUser(
+  page: Page,
+  options: { onboardingDone?: boolean } = {}
+) {
   await page.route('**', async (route) => {
     const request = route.request();
     if (request.resourceType() === 'document') {
       try {
         const response = await fetchWithRetry(route);
         const body = await response.text();
-        const patched = body.replace(
+        let patched = body.replace(
           /user:null/,
           'user:{id:"00000000-0000-0000-0000-000000000001",email:"test@example.com",app_metadata:{},user_metadata:{},aud:"authenticated",created_at:"2024-01-01T00:00:00Z"}'
         );
+        if (options.onboardingDone) {
+          // `!1` is how devalue may write false in inlined data.
+          patched = patched.replace(/onboardingDone:(?:false|!1)/, 'onboardingDone:true');
+        }
         await route.fulfill({
           status: response.status(),
           headers: response.headers(),
