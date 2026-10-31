@@ -126,25 +126,35 @@ describe('cloze sidecars match the content files', () => {
 });
 
 describe('the generator reproduces the committed files', () => {
-  it('writes identical sidecars and counts (so the committed ones are not stale)', () => {
-    const root = fileURLToPath(new URL('../../', import.meta.url));
-    const dataDir = join(root, 'src/lib/data');
-    const tmp = mkdtempSync(join(tmpdir(), 'cloze-'));
-    try {
-      const run = spawnSync('node', [join(root, 'scripts/build-cloze-sidecars.mjs')], {
-        encoding: 'utf-8',
-        env: { ...process.env, CLOZE_OUT_DIR: join(tmp, 'out'), CLOZE_REPORT_DIR: join(tmp, 'rep') }
-      });
-      expect(run.status, run.stderr).toBe(0);
-      const files = readdirSync(join(tmp, 'out')).filter((f) => f.startsWith('cloze-'));
-      expect(files.length).toBe(11);
-      for (const f of files) {
-        expect(readFileSync(join(tmp, 'out', f), 'utf-8'), `${f}. ${HOW_TO_FIX}`).toBe(
-          readFileSync(join(dataDir, f), 'utf-8')
-        );
+  it(
+    'writes identical sidecars and counts (so the committed ones are not stale)',
+    { timeout: 90_000 },
+    () => {
+      const root = fileURLToPath(new URL('../../', import.meta.url));
+      const dataDir = join(root, 'src/lib/data');
+      const tmp = mkdtempSync(join(tmpdir(), 'cloze-'));
+      try {
+        // A finite timeout, so a slow or non-terminating generator cannot block the worker.
+        const run = spawnSync(process.execPath, [join(root, 'scripts/build-cloze-sidecars.mjs')], {
+          encoding: 'utf-8',
+          timeout: 60_000,
+          env: {
+            ...process.env,
+            CLOZE_OUT_DIR: join(tmp, 'out'),
+            CLOZE_REPORT_DIR: join(tmp, 'rep')
+          }
+        });
+        expect(run.status, run.error?.message ?? run.stderr).toBe(0);
+        const files = readdirSync(join(tmp, 'out')).filter((f) => f.startsWith('cloze-'));
+        expect(files.length).toBe(11);
+        for (const f of files) {
+          expect(readFileSync(join(tmp, 'out', f), 'utf-8'), `${f}. ${HOW_TO_FIX}`).toBe(
+            readFileSync(join(dataDir, f), 'utf-8')
+          );
+        }
+      } finally {
+        rmSync(tmp, { recursive: true, force: true });
       }
-    } finally {
-      rmSync(tmp, { recursive: true, force: true });
     }
-  });
+  );
 });

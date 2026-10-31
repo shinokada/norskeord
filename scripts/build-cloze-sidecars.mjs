@@ -209,8 +209,11 @@ for (const [id, o] of Object.entries(overrides)) {
   for (const k of Object.keys(o)) {
     if (!OVERRIDE_KEYS.has(k)) errors.push(`cloze-overrides.json: ${id} has unknown key "${k}"`);
   }
-  if (o.skip === undefined && typeof o.answer !== 'string') {
-    errors.push(`cloze-overrides.json: ${id} needs "answer" (string) or "skip": true`);
+  if (o.skip === undefined && (typeof o.answer !== 'string' || o.answer === '')) {
+    errors.push(`cloze-overrides.json: ${id} needs "answer" (non-empty string) or "skip": true`);
+  }
+  if (o.nth !== undefined && !(Number.isInteger(o.nth) && o.nth >= 0)) {
+    errors.push(`cloze-overrides.json: ${id} "nth" must be an integer >= 0`);
   }
 }
 
@@ -256,8 +259,10 @@ function matchEntry(entry, type) {
   const ov = overrides[entry.id];
 
   if (ov?.skip) return { reason: 'skip-override' };
-  if (ov && typeof ov.answer === 'string') {
-    const nth = Number.isInteger(ov.nth) ? ov.nth : 0;
+  // An empty answer or a negative nth was already reported by the override validation above;
+  // it must not reach the loop below (indexOf('') never returns -1, so the loop would hang).
+  if (ov && typeof ov.answer === 'string' && ov.answer !== '') {
+    const nth = Number.isInteger(ov.nth) && ov.nth >= 0 ? ov.nth : 0;
     const positions = [];
     let from = 0;
     for (;;) {
