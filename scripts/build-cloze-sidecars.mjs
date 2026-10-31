@@ -209,7 +209,7 @@ for (const [id, o] of Object.entries(overrides)) {
   for (const k of Object.keys(o)) {
     if (!OVERRIDE_KEYS.has(k)) errors.push(`cloze-overrides.json: ${id} has unknown key "${k}"`);
   }
-  if (o.skip === undefined && (typeof o.answer !== 'string' || o.answer === '')) {
+  if (o.skip !== true && (typeof o.answer !== 'string' || o.answer === '')) {
     errors.push(`cloze-overrides.json: ${id} needs "answer" (non-empty string) or "skip": true`);
   }
   if (o.nth !== undefined && !(Number.isInteger(o.nth) && o.nth >= 0)) {
