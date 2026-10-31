@@ -23,6 +23,7 @@
     upgradeClickParams
   } from '$lib/analytics';
   import type { FlashcardLanguage } from '$lib/types';
+  import { purgeExpiredParkedProgress } from '$lib/parked-progress';
 
   let { children, data } = $props();
 
@@ -66,6 +67,10 @@
       /* storage blocked: skip the event rather than fire it on every page */
     }
   });
+
+  // Delete parked progress older than 90 days on every visit, not only at login and logout, so
+  // the privacy page's retention statement holds for a browser that nobody logs in or out of.
+  onMount(() => purgeExpiredParkedProgress());
 
   // Prevent horizontal swipe-to-pan on Android PWA.
   onMount(() => {

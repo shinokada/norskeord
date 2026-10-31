@@ -4,6 +4,7 @@
   import { setLocale } from '$lib/paraglide/runtime';
   import * as m from '$lib/paraglide/messages.js';
   import { syncLocalProgressToPlus } from '$lib/plus-sync';
+  import { adoptLiveProgress } from '$lib/parked-progress';
   import { validFlashcardPathPattern } from '$lib/utils';
 
   onMount(async () => {
@@ -14,6 +15,18 @@
     const userId = page.data.user?.id;
     const isPlus = (page.data.plan as 'free' | 'plus') === 'plus';
     const profile = page.data.profile;
+
+    // Every login (free and Plus): bring back this account's progress parked at logout and
+    // record it as the owner of the live keys. Must run before syncLocalProgressToPlus so the
+    // retry sees the restored keys (ai-docs/implementation/logout-progress-parking.md).
+    if (userId) {
+      try {
+        adoptLiveProgress(userId);
+      } catch (error) {
+        // Must not block the redirect after login
+        console.error('auth/sync: could not restore parked progress', error);
+      }
+    }
 
     // One-time migration: free → Plus upgrade (see syncLocalProgressToPlus)
     if (isPlus && userId) {

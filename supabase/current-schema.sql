@@ -161,6 +161,16 @@ CREATE TABLE public.quiz_progress (
   CONSTRAINT quiz_progress_pkey PRIMARY KEY (id),
   CONSTRAINT quiz_progress_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
+CREATE TABLE public.cloze_progress (
+  id uuid NOT NULL DEFAULT gen_random_uuid(),
+  user_id uuid NOT NULL,
+  vocab_id text NOT NULL,
+  attempts integer NOT NULL DEFAULT 0,
+  correct integer NOT NULL DEFAULT 0,
+  last_attempt timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT cloze_progress_pkey PRIMARY KEY (id),
+  CONSTRAINT cloze_progress_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
 
 -- NOTE: Functions are not exported by Supabase's schema dump tool.
 -- Manually maintained. See ./current-functions.sql for Functions

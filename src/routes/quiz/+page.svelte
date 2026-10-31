@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, untrack } from 'svelte';
+  import { onMount, tick, untrack } from 'svelte';
   import { browser } from '$app/environment';
   import { page } from '$app/state';
   import SpeakButton from '$lib/SpeakButton.svelte';
@@ -16,16 +16,35 @@
     type TypeAnswerQuestion
   } from '$lib/quiz';
   import {
+    buildClozeSession,
+    clozeCountsAsCorrect,
+    clozeRatingToWrite,
+    gradeClozeAnswer,
+    type ClozeOutcome,
+    type ClozeQuestion
+  } from '$lib/cloze';
+  import {
     loadProgressMap,
     loadProgressMapFromSupabase,
     saveProgress,
     recordStudyDay,
     vocabKey
   } from '$lib/progress';
-  import { loadQuizStatsOrNull, recordQuizAnswer, type QuizStatsMap } from '$lib/quiz-stats';
+  import {
+    loadClozeStatsOrNull,
+    loadQuizStatsOrNull,
+    recordClozeAnswer,
+    recordQuizAnswer,
+    type QuizStatsMap
+  } from '$lib/quiz-stats';
   import type { FSRSRating, CardProgress, FlashcardLanguage, VocabEntry } from '$lib/types';
   import { isFreeQuizCategory } from '$lib/access';
-  import { quizPoolSize, type QuizCategoryCount, type QuizPayload } from '$lib/quiz-gate';
+  import {
+    quizPoolSize,
+    type ClozePayload,
+    type QuizCategoryCount,
+    type QuizPayload
+  } from '$lib/quiz-gate';
   import { languageStore } from '$lib/stores/language.svelte';
   import { getTranslation, getExampleTranslation, categoryLabel } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages';
@@ -35,9 +54,17 @@
   // Types
 
   type QuizState = 'idle' | 'questioning' | 'revealing' | 'summary';
+  type QuizMode = 'words' | 'sentences';
+  const QUIZ_MODE_KEY = 'quiz-mode';
+  const MODES: QuizMode[] = ['words', 'sentences'];
+
+  // A session holds either Words questions or Sentences (cloze) questions, never both.
+  // ClozeQuestion lives in cloze.ts, not in QuizQuestion, so quiz.ts stays unchanged
+  // (ai-docs/implementation/cloze-quiz.md, Decisions).
+  type SessionQuestion = QuizQuestion | ClozeQuestion;
 
   interface QuizResult {
-    question: QuizQuestion;
+    question: SessionQuestion;
     correct: boolean;
     userAnswer: string;
   }
@@ -45,7 +72,10 @@
   // State
 
   let quizState: QuizState = $state('idle');
-  let questions: QuizQuestion[] = $state([]);
+  // Words or Sentences. ?mode= (validated by the load function) wins; otherwise the saved
+  // choice is restored on mount.
+  let mode: QuizMode = $state(untrack(() => data.mode));
+  let questions: SessionQuestion[] = $state([]);
   let currentIndex = $state(0);
   let selectedOption: number | null = $state(null); // MC only
   let typedAnswer = $state(''); // fill / type
@@ -59,6 +89,12 @@
   // computed from quizStats, so recording before the load (or after a failed one) would start
   // the word's count from zero and overwrite the cloud row. Plain variable: nothing renders it.
   let quizStatsLoaded = false;
+  // The same for the Sentences stats (cloze_progress / cloze-stats- keys). A missing
+  // cloze_progress table makes the load fail, so answers are then simply not counted.
+  let clozeStats: QuizStatsMap = $state({});
+  let clozeStatsLoaded = false;
+  // How the last Sentences answer was graded; drives the reveal text.
+  let clozeOutcome: ClozeOutcome | null = $state(null);
   let correctCount = $state(0);
   let results: QuizResult[] = $state([]);
   let inputRef: HTMLInputElement | null = $state(null);
@@ -86,7 +122,10 @@
   // entries of a session come from POST /api/quiz-entries when the user clicks Start
   // (ai-docs/implementation/quiz-server-gating.md).
   const ALL_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'];
-  let counts = $derived(data.categories as QuizCategoryCount[]);
+  // Sentences mode counts only entries that have a cloze item (cloze-counts.json), same shape.
+  let counts = $derived(
+    (mode === 'sentences' ? data.clozeCategories : data.categories) as QuizCategoryCount[]
+  );
   let availableLevels = $derived(ALL_LEVELS.filter((l) => counts.some((c) => c.level === l)));
   // Categories of the selected level that have at least one quizable entry.
   let availableCategories = $derived.by(() => {
@@ -137,7 +176,7 @@
   // Fetched pools by level and category. The plan cannot change without a page load,
   // so a restart reuses the result instead of asking the server again.
   // A plain object, not a Map: nothing renders from it, so it needs no reactivity.
-  const payloadCache: Record<string, QuizPayload> = {};
+  const payloadCache: Record<string, QuizPayload | ClozePayload> = {};
 
   // Phase 1 (ai-docs/implementation/quiz-i18n-and-categories.md): quiz
   // translation language reuses the same `languageStore` flashcards already
@@ -174,6 +213,25 @@
         quizStats = map;
         quizStatsLoaded = true;
       });
+      loadClozeStatsOrNull(isPlus ? (page.data.user?.id ?? null) : null).then((map) => {
+        if (!map) return; // same rule; also the case while cloze_progress does not exist
+        clozeStats = map;
+        clozeStatsLoaded = true;
+      });
+      // No ?mode= in the URL: restore the saved choice. An explicit ?mode= always wins.
+      if (!page.url.searchParams.has('mode')) {
+        try {
+          if (localStorage.getItem(QUIZ_MODE_KEY) === 'sentences') {
+            mode = 'sentences';
+            // A ?category= from the URL may not exist in the Sentences counts.
+            if (selectedCategory && !availableCategories.includes(selectedCategory)) {
+              selectedCategory = '';
+            }
+          }
+        } catch {
+          // Storage blocked: stay on Words
+        }
+      }
     }
     window.addEventListener('quiz:reset', handleQuizReset);
     return () => {
@@ -184,39 +242,83 @@
 
   // Quiz control
 
-  async function loadPayload(): Promise<QuizPayload> {
-    const key = `${selectedLevel}|${selectedCategory}`;
+  // The payload shape depends on the mode: { entries, distractors } for Words, { entries, cloze }
+  // for Sentences. The cache key includes the mode, so a cached payload always matches it.
+  async function loadPayload(requestMode: QuizMode): Promise<QuizPayload | ClozePayload> {
+    const key = `${requestMode}|${selectedLevel}|${selectedCategory}`;
     const cached = payloadCache[key];
     if (cached) return cached;
     const res = await fetch('/api/quiz-entries', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ level: selectedLevel, category: selectedCategory || undefined })
+      // Words requests are sent exactly as before; only Sentences adds a mode.
+      body: JSON.stringify({
+        level: selectedLevel,
+        category: selectedCategory || undefined,
+        ...(requestMode === 'sentences' ? { mode: requestMode } : {})
+      })
     });
     if (!res.ok) throw new Error(`quiz-entries responded ${res.status}`);
-    const payload = (await res.json()) as QuizPayload;
+    const payload = (await res.json()) as QuizPayload | ClozePayload;
     payloadCache[key] = payload;
     return payload;
+  }
+
+  function setMode(next: QuizMode) {
+    if (next === mode) return;
+    mode = next;
+    // The category lists differ per mode, so a chosen category may not exist in the other.
+    selectedCategory = '';
+    startError = false;
+    try {
+      localStorage.setItem(QUIZ_MODE_KEY, next);
+    } catch {
+      // Storage blocked: the choice only lasts for this visit
+    }
+  }
+
+  // Two radios, so any arrow key moves to the other one (radiogroup keyboard pattern).
+  async function handleModeKeyDown(e: KeyboardEvent) {
+    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.key)) return;
+    e.preventDefault();
+    setMode(mode === 'words' ? 'sentences' : 'words');
+    await tick();
+    document
+      .querySelector<HTMLElement>('[data-testid^="quiz-mode-"][aria-checked="true"]')
+      ?.focus();
   }
 
   async function startQuiz() {
     if (starting) return;
     starting = true;
     startError = false;
+    // The mode could change while the request is in flight; this start belongs to the one
+    // it began with.
+    const startMode = mode;
     try {
-      const { entries, distractors } = await loadPayload();
+      const payload = await loadPayload(startMode);
+      const { entries } = payload;
       if (entries.length === 0) return;
       // Read quiz limit from localStorage (set via Preferences). 'default' or
       // missing → 10. Cap to available entries.
       const raw = browser ? (localStorage.getItem('vocab-quiz-limit') ?? 'default') : 'default';
       const quizCount = raw === 'default' ? 10 : Math.max(1, parseInt(raw, 10) || 10);
-      const session = buildQuizSession(
-        entries,
-        [...entries, ...distractors],
-        progressMap,
-        quizCount,
-        quizLanguage
-      );
+      const session: SessionQuestion[] =
+        startMode === 'sentences'
+          ? buildClozeSession(
+              entries,
+              (payload as ClozePayload).cloze,
+              progressMap,
+              quizCount,
+              quizLanguage
+            )
+          : buildQuizSession(
+              entries,
+              [...entries, ...(payload as QuizPayload).distractors],
+              progressMap,
+              quizCount,
+              quizLanguage
+            );
       // Never enter the questioning state with no `current` question.
       if (session.length === 0) return;
       pool = entries;
@@ -247,14 +349,28 @@
     let rating: FSRSRating;
     let correct: boolean;
     let answerStr: string;
+    let outcome: ClozeOutcome | null = null;
 
-    if (current.type === 'mc') {
+    if (current.type === 'cloze') {
+      // Sentences: typed answer, graded in the order exact, wrong form, typo, wrong.
+      answerStr = (userAnswer as string).trim();
+      outcome = gradeClozeAnswer(
+        answerStr,
+        current.answer,
+        current.baseForms,
+        current.alternatives,
+        current.wrongGenderForms
+      );
+      rating = clozeRatingToWrite(outcome);
+      correct = clozeCountsAsCorrect(outcome);
+      typedAnswer = answerStr;
+    } else if (current.type === 'mc') {
       const q = current as MultipleChoiceQuestion;
       correct = userAnswer === q.correctIndex;
       selectedOption = userAnswer as number;
       answerStr = q.options[userAnswer as number] ?? '';
       rating = correct ? 'good' : 'again';
-    } else {
+    } else if (current.type === 'fill' || current.type === 'type') {
       const q = current as FillBlankQuestion | TypeAnswerQuestion;
       answerStr = (userAnswer as string).trim();
       // Normalise the same way the expected answer was built (bareLemma
@@ -274,10 +390,15 @@
         rating = 'again';
       }
       typedAnswer = answerStr;
+    } else {
+      // Exhaustive: pnpm check fails here if a new question type is added and not handled.
+      const unhandled: never = current;
+      throw new Error(`Unhandled quiz question type: ${JSON.stringify(unhandled)}`);
     }
 
     if (correct) correctCount++;
     isCorrect = correct;
+    clozeOutcome = outcome;
     results = [...results, { question: current, correct, userAnswer: answerStr }];
     // The writes below await (a network round trip for Plus users) before the state flips
     // to 'revealing', so a second click or key press in that window must not count twice.
@@ -286,16 +407,16 @@
       // The progress write and the stats write fail independently: a rejected saveProgress
       // must not skip the stats write, and neither blocks revealing the answer.
       try {
-        // quiz-progress.md Phase 1: multiple choice is guessable, so it writes to the shared
-        // flashcard schedule only when fsrsRatingToWrite allows it.
-        const toWrite = fsrsRatingToWrite(
-          current.type,
-          rating,
-          !!progressMap[vocabKey(current.entry)]
-        );
+        // Sentences: a typed answer is recall evidence, so every outcome writes its rating.
+        // Words: multiple choice is guessable, so fsrsRatingToWrite decides (quiz-progress.md,
+        // Phase 1): it writes to the shared flashcard schedule only when it allows it.
+        const toWrite =
+          answered.type === 'cloze'
+            ? rating
+            : fsrsRatingToWrite(answered.type, rating, !!progressMap[vocabKey(answered.entry)]);
         if (toWrite) {
           progressMap = await saveProgress(
-            current.entry,
+            answered.entry,
             toWrite,
             progressMap,
             userId,
@@ -309,9 +430,19 @@
       } catch (error) {
         console.error('Could not save quiz progress', error);
       }
-      // Every answer, of every question type, counts towards the quiz stats, but only once
-      // the stats map has loaded (see quizStatsLoaded).
-      if (quizStatsLoaded) {
+      // Every answer, of every question type, counts towards the stats of its own mode, but
+      // only once that stats map has loaded (see quizStatsLoaded and clozeStatsLoaded).
+      if (answered.type === 'cloze') {
+        if (clozeStatsLoaded) {
+          try {
+            clozeStats = await recordClozeAnswer(answered.entry, correct, clozeStats, userId);
+          } catch (error) {
+            console.error('Could not save sentence stats', error);
+          }
+        } else {
+          console.warn('Sentence stats not loaded yet; this answer is not counted in the stats');
+        }
+      } else if (quizStatsLoaded) {
         try {
           quizStats = await recordQuizAnswer(answered.entry, correct, quizStats, userId);
         } catch (error) {
@@ -454,6 +585,43 @@
   </title>
 </svelte:head>
 
+<!-- Words | Sentences switch, shared by the start screen and the summary screen. Two buttons
+     built as a radiogroup: the selected one is the tab stop, arrow keys move between them. -->
+{#snippet modeControl()}
+  <div>
+    <span
+      id="quiz-mode-label"
+      class="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300"
+    >
+      {m.quiz_mode_label()}
+    </span>
+    <div
+      role="radiogroup"
+      aria-labelledby="quiz-mode-label"
+      data-testid="quiz-mode"
+      class="inline-flex overflow-hidden rounded-lg border border-gray-300 dark:border-gray-600"
+    >
+      {#each MODES as option (option)}
+        <button
+          type="button"
+          role="radio"
+          aria-checked={mode === option}
+          tabindex={mode === option ? 0 : -1}
+          data-testid="quiz-mode-{option}"
+          onclick={() => setMode(option)}
+          onkeydown={handleModeKeyDown}
+          class="px-4 py-2 text-sm font-medium transition-colors focus:ring-2 focus:ring-indigo-300 focus:outline-none focus:ring-inset
+            {mode === option
+            ? 'bg-indigo-600 text-white dark:bg-indigo-500'
+            : 'bg-white text-gray-600 hover:bg-indigo-50 dark:bg-indigo-950/60 dark:text-gray-300 dark:hover:bg-indigo-900/30'}"
+        >
+          {option === 'words' ? m.quiz_mode_words() : m.quiz_mode_sentences()}
+        </button>
+      {/each}
+    </div>
+  </div>
+{/snippet}
+
 <!-- "Mark as easy" confirmation toast (fixed, bottom-centre) -->
 {#if showToast}
   <div class="fixed bottom-6 left-1/2 z-50 -translate-x-1/2" role="status" aria-live="polite">
@@ -497,6 +665,7 @@
       </p>
 
       <div class="mb-8 space-y-4 text-left">
+        {@render modeControl()}
         <!-- Level -->
         <div>
           <label
@@ -628,7 +797,66 @@
     <div
       class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-indigo-950/60"
     >
-      {#if current.type === 'mc'}
+      {#if current.type === 'cloze'}
+        {@const q = current as ClozeQuestion}
+        <p
+          class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-300"
+        >
+          {m.quiz_cloze_prompt()}
+        </p>
+        <!-- The sentence with an input where the word was. The base form is deliberately not
+             shown (cloze-quiz.md, Hints): it would give an exact match away. -->
+        <p
+          data-testid="cloze-sentence"
+          class="mb-3 text-lg leading-10 font-medium text-gray-900 dark:text-white"
+        >
+          {q.before}<input
+            bind:this={inputRef}
+            type="text"
+            bind:value={typedAnswer}
+            aria-label={m.quiz_cloze_input_label()}
+            placeholder={m.quiz_cloze_placeholder()}
+            data-testid="cloze-input"
+            autocomplete="off"
+            autocapitalize="off"
+            spellcheck="false"
+            onkeydown={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault();
+                submitAnswer(typedAnswer);
+              }
+            }}
+            class="mx-1 w-40 rounded-lg border border-gray-300 px-3 py-1 text-base text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
+          />{q.after}
+        </p>
+        {#if q.sentenceHint}
+          <p
+            data-testid="cloze-sentence-hint"
+            class="mb-1 text-sm text-indigo-500 dark:text-indigo-400"
+          >
+            {q.sentenceHint}
+          </p>
+        {/if}
+        <p data-testid="cloze-word-hint" class="mb-6 text-sm text-gray-600 dark:text-gray-300">
+          {q.wordHint}
+        </p>
+        <div class="flex gap-2">
+          <button
+            type="button"
+            onclick={() => submitAnswer(typedAnswer)}
+            class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none"
+          >
+            {m.quiz_check()}
+          </button>
+          <button
+            type="button"
+            onclick={() => submitAnswer('')}
+            class="px-2 text-xs text-gray-400 hover:text-gray-600 hover:underline dark:hover:text-gray-300"
+          >
+            {m.quiz_skip()}
+          </button>
+        </div>
+      {:else if current.type === 'mc'}
         {@const q = current as MultipleChoiceQuestion}
         <p
           class="mb-3 text-xs font-semibold tracking-wide text-gray-400 uppercase dark:text-gray-300"
@@ -780,14 +1008,40 @@
       <div class="mb-4 flex items-center gap-2">
         {#if isCorrect}
           <span class="text-2xl">✓</span>
-          <span class="font-semibold text-green-700 dark:text-green-300">{m.quiz_correct()}</span>
+          <span class="font-semibold text-green-700 dark:text-green-300">
+            {m.quiz_correct()}
+          </span>
         {:else}
           <span class="text-2xl">✗</span>
-          <span class="font-semibold text-red-700 dark:text-red-300">{m.quiz_incorrect()}</span>
+          <span class="font-semibold text-red-700 dark:text-red-300">
+            {clozeOutcome === 'wrongForm' ? m.quiz_cloze_wrong_form() : m.quiz_incorrect()}
+          </span>
         {/if}
       </div>
 
-      {#if current.type === 'mc'}
+      {#if current.type === 'cloze'}
+        {@const q = current as ClozeQuestion}
+        <!-- The sentence form is shown only for a wrong answer; a correct one is highlighted below. -->
+        {#if clozeOutcome !== 'correct'}
+          <p
+            class="mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400"
+          >
+            {m.quiz_correct_answer()}
+          </p>
+          <p
+            data-testid="cloze-answer"
+            class="mb-4 text-xl font-bold text-gray-800 dark:text-white"
+          >
+            {q.answer}
+          </p>
+          {#if typedAnswer}
+            <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
+              {m.quiz_you_wrote()}
+              <span class="font-medium text-gray-700 dark:text-gray-200">{typedAnswer}</span>
+            </p>
+          {/if}
+        {/if}
+      {:else if current.type === 'mc'}
         {@const q = current as MultipleChoiceQuestion}
         <div class="mb-4 space-y-2">
           {#each q.options as option, i (i)}
@@ -856,7 +1110,15 @@
       <!-- Example sentence with its own separate Pronounce sentence button -->
       <div class="rounded-lg bg-white/60 px-4 py-3 dark:bg-indigo-950/60">
         <p class="text-sm text-gray-700 italic dark:text-gray-300">
-          {current.entry.example}
+          {#if current.type === 'cloze'}
+            {current.before}<mark
+              data-testid="cloze-highlight"
+              class="rounded bg-indigo-100 px-1 font-semibold text-indigo-900 not-italic dark:bg-indigo-800/50 dark:text-indigo-100"
+              >{current.answer}</mark
+            >{current.after}
+          {:else}
+            {current.entry.example}
+          {/if}
         </p>
         {#if !entryIsMonolingual(current.entry)}
           <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
@@ -870,7 +1132,7 @@
 
       <!-- Actions row -->
       <div class="mt-5 flex items-center justify-between">
-        {#if isCorrect}
+        {#if isCorrect && current.type !== 'cloze'}
           <button
             type="button"
             onclick={markEasy}
@@ -943,7 +1205,9 @@
                 ? m.quiz_type_mc()
                 : result.question.type === 'fill'
                   ? m.quiz_type_fill()
-                  : m.quiz_type_type()}
+                  : result.question.type === 'cloze'
+                    ? m.quiz_type_cloze()
+                    : m.quiz_type_type()}
             </span>
           </div>
         {/each}
@@ -954,6 +1218,7 @@
         <p class="text-sm font-medium text-gray-600 dark:text-gray-300">
           {m.quiz_next_settings_heading()}
         </p>
+        {@render modeControl()}
         <!-- Level -->
         <div>
           <label

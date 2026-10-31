@@ -1,5 +1,5 @@
 /**
- * POST /api/quiz-entries   body: { level: CEFRLevel, category?: string }
+ * POST /api/quiz-entries   body: { level: CEFRLevel, category?: string, mode?: 'words' | 'sentences' }
  *
  * Phase 3 of ai-docs/implementation/quiz-server-gating.md. The quiz used to import
  * every vocab and uttrykk file in the browser and gate them in the page, so every
@@ -12,13 +12,18 @@
  * locked word is never offered as an option. The plan comes from `locals.plan`
  * (hooks.server.ts), never from the body.
  *
- * Response: { entries, distractors }, `Cache-Control: private, no-store` because the
- * payload differs by plan.
+ * `mode` (cloze-quiz.md, Phase 2) defaults to 'words'; any other value than 'words' or
+ * 'sentences' is a 400. In 'sentences' mode the same gate runs through
+ * `selectClozeEntries`: only entries that have a cloze item are returned, together with
+ * that item, and there are no distractors (the answers are typed).
+ *
+ * Response: words { entries, distractors }, sentences { entries, cloze }.
+ * `Cache-Control: private, no-store` because the payload differs by plan.
  */
 
 import type { RequestHandler } from './$types';
-import { selectQuizEntries } from '$lib/quiz-gate';
-import { isQuizLevel, loadQuizSources } from '$lib/server/quiz-sources';
+import { selectClozeEntries, selectQuizEntries } from '$lib/quiz-gate';
+import { isQuizLevel, loadClozeSources, loadQuizSources } from '$lib/server/quiz-sources';
 import { recordContentUsage, shouldBlock, rateLimitedResponse } from '$lib/server/content-usage';
 
 const MAX_CATEGORY_LENGTH = 100;
@@ -35,7 +40,11 @@ export const POST: RequestHandler = async ({ request, locals }) => {
     return new Response('Invalid JSON', { status: 400, headers: NO_STORE });
   }
 
-  const { level, category } = (body ?? {}) as { level?: unknown; category?: unknown };
+  const { level, category, mode } = (body ?? {}) as {
+    level?: unknown;
+    category?: unknown;
+    mode?: unknown;
+  };
   if (!isQuizLevel(level)) {
     return new Response('level must be one of A1, A2, B1, B2, C', {
       status: 400,
@@ -48,16 +57,28 @@ export const POST: RequestHandler = async ({ request, locals }) => {
   ) {
     return new Response('category must be a short string', { status: 400, headers: NO_STORE });
   }
+  if (mode !== undefined && mode !== 'words' && mode !== 'sentences') {
+    return new Response("mode must be 'words' or 'sentences'", { status: 400, headers: NO_STORE });
+  }
 
   const sources = await loadQuizSources([level]);
-  const result = selectQuizEntries(sources, level, category || undefined, isPlus);
+  const result =
+    mode === 'sentences'
+      ? selectClozeEntries(
+          sources,
+          await loadClozeSources([level]),
+          level,
+          category || undefined,
+          isPlus
+        )
+      : selectQuizEntries(sources, level, category || undefined, isPlus);
 
   // Plus calls are counted (content-scraping-hardening.md, Phase 1); log-only for now.
   const usage = await recordContentUsage({
     userId: locals.user?.id,
     plan: locals.plan,
     endpoint: 'quiz-entries',
-    entries: result.entries.length + result.distractors.length
+    entries: result.entries.length + ('distractors' in result ? result.distractors.length : 0)
   });
   if (shouldBlock(usage)) return rateLimitedResponse();
 

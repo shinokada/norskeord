@@ -18,6 +18,7 @@
     "build": "pnpm stats && pnpm grammar:split && pnpm content:index && vite build",
     "grammar:split": "node scripts/build-grammar-level-index.mjs",
     "content:index": "node scripts/build-content-index.mjs",
+    "cloze:build": "node scripts/build-cloze-sidecars.mjs",
     "preview": "vite preview",
     "prepare": "svelte-kit sync || echo ''",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
