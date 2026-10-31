@@ -10,7 +10,7 @@ describe('resetProgressInSupabase', () => {
     vi.mocked(supabase.from).mockReset();
   });
 
-  it('deletes the user rows from every progress table, quiz_progress included', async () => {
+  it('deletes the user rows from every progress table, quiz and cloze progress included', async () => {
     const eq = vi.fn().mockResolvedValue({ error: null });
     const del = vi.fn().mockReturnValue({ eq });
     vi.mocked(supabase.from).mockReturnValue({ delete: del } as never);
@@ -20,11 +20,12 @@ describe('resetProgressInSupabase', () => {
     const tables = vi.mocked(supabase.from).mock.calls.map(([table]) => table);
     expect(tables.sort()).toEqual([
       'card_progress',
+      'cloze_progress',
       'grammar_progress',
       'quiz_progress',
       'study_days'
     ]);
-    expect(eq).toHaveBeenCalledTimes(4);
+    expect(eq).toHaveBeenCalledTimes(5);
     for (const call of eq.mock.calls) expect(call).toEqual(['user_id', 'user-1']);
   });
 

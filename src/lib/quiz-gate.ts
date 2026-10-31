@@ -162,3 +162,62 @@ export function selectQuizEntries(
   const distractors = category ? accessible.filter((e) => !inPool.has(e)) : [];
   return { entries, distractors };
 }
+
+// ── Sentences (typed cloze) payload ────────────────────────────────────────────────────────────
+// ai-docs/implementation/cloze-quiz.md, Phase 2. Declared here, not imported from
+// `$lib/cloze`, for the same reason `isQuizableEntry` is repeated above: `$lib/cloze`
+// imports `$lib/quiz`, which pulls in the Supabase client.
+
+/** One sidecar item: `before + answer + after` is the entry's `example`. */
+export interface ClozeItemData {
+  before: string;
+  answer: string;
+  after: string;
+}
+
+/** The cloze sidecar of one level and type, keyed by entry id. */
+export interface ClozeSource {
+  level: CEFRLevel;
+  type: QuizEntryType;
+  items: Readonly<Record<string, ClozeItemData>>;
+}
+
+/** What a Sentences session needs: the entries to quiz on and the blank for each. */
+export interface ClozePayload {
+  entries: VocabEntry[];
+  cloze: Record<string, ClozeItemData>;
+}
+
+/**
+ * The payload for one Sentences session: the entries `selectQuizEntries` allows for this
+ * plan, level and category, kept only when a sidecar item exists and still rebuilds the
+ * entry's example (a stale item is dropped, never sent). `cloze` holds exactly the items
+ * of the returned entries. No distractors: Sentences questions are typed.
+ *
+ * The gate is the Words one on purpose, so a locked entry (Plus-only category, A2 to B2
+ * uttrykk for free callers) is never returned and `quizPoolSize` over `cloze-counts.json`
+ * equals `entries.length`.
+ */
+export function selectClozeEntries(
+  sources: readonly QuizSource[],
+  clozeSources: readonly ClozeSource[],
+  level: CEFRLevel,
+  category: string | undefined,
+  isPlus: boolean
+): ClozePayload {
+  const items = new Map<string, ClozeItemData>();
+  for (const source of clozeSources) {
+    if (source.level !== level) continue;
+    for (const [id, item] of Object.entries(source.items)) items.set(id, item);
+  }
+
+  const entries: VocabEntry[] = [];
+  const cloze: Record<string, ClozeItemData> = {};
+  for (const e of selectQuizEntries(sources, level, category, isPlus).entries) {
+    const item = items.get(e.id);
+    if (!item || item.before + item.answer + item.after !== e.example) continue;
+    entries.push(e);
+    cloze[e.id] = item;
+  }
+  return { entries, cloze };
+}

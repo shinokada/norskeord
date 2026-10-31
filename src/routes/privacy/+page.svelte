@@ -8,7 +8,7 @@
 
 <div class="mx-auto max-w-3xl px-4 py-10 text-left">
   <h1 class="mb-2">Privacy Policy</h1>
-  <p class="mb-8 text-gray-600 dark:text-gray-300">Last updated: 12 October 2026</p>
+  <p class="mb-8 text-gray-600 dark:text-gray-300">Last updated: 31 October 2026</p>
 
   <div class="space-y-4 text-base text-gray-700 dark:text-gray-300">
     <p>
@@ -98,6 +98,13 @@
       We use cookies and local storage to keep you logged in, remember your language and login step,
       and keep the site working. Analytics may set its own cookies. You can block or delete cookies
       in your browser; some features, such as staying logged in, then stop working.
+    </p>
+    <p>
+      Study progress you create without being synced to the cloud is kept in your browser's local
+      storage. When you log out it is not deleted: it is set aside under your account on that device
+      and restored when you log in again. Other accounts and guests on the same browser cannot see
+      it in the app. It is deleted automatically after 90 days, and when you reset your progress or
+      delete your account.
     </p>
 
     <h2 class="mt-8">How long we keep it</h2>

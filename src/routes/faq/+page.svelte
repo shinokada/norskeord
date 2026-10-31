@@ -69,6 +69,15 @@
     },
     {
       id: 12,
+      question: m.guide_faq_logout_q(),
+      answer: m.guide_faq_logout_a(),
+      cta: {
+        href: '/privacy',
+        text: m.guide_faq_logout_cta()
+      }
+    },
+    {
+      id: 13,
       question: m.guide_faq_contact_q(),
       answer: m.guide_faq_contact_a(),
       cta: {

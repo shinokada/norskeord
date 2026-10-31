@@ -1,5 +1,5 @@
 import type { PageServerLoad } from './$types';
-import { getQuizCategoryCounts } from '$lib/server/quiz-sources';
+import { getClozeCategoryCounts, getQuizCategoryCounts } from '$lib/server/quiz-sources';
 
 export const ssr = false;
 
@@ -13,6 +13,10 @@ export const ssr = false;
 //
 // Whether a category is free is decided in the page from the counts and the access
 // config (`quizPoolSize`), not from content.
+//
+// cloze-quiz.md, Phase 2: also returns `clozeCategories` (cloze-able entries per level and
+// category, same shape, no content) for the Sentences picker, and the validated `mode`
+// from ?mode= (anything but 'sentences' means 'words').
 
 export const load: PageServerLoad = async ({ url, parent }) => {
   const { currentLevel } = await parent();
@@ -27,8 +31,13 @@ export const load: PageServerLoad = async ({ url, parent }) => {
   const rawLevel = levelParam ?? profileLevel;
   const validLevel = rawLevel && allLevels.includes(rawLevel) ? rawLevel : null;
 
+  const mode: 'words' | 'sentences' =
+    url.searchParams.get('mode') === 'sentences' ? 'sentences' : 'words';
+
   return {
     categories: await getQuizCategoryCounts(),
+    clozeCategories: await getClozeCategoryCounts(),
+    mode,
     // Pass back the validated/normalised params so the page can pre-select
     // the picker without re-reading the URL.
     // `level` reflects the URL param first; falls back to profile target_level.
