@@ -1,5 +1,18 @@
 # norske-flashcard
 
+## 2.117.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added a Sentences quiz mode with fill-in-the-blank questions, hints, answer feedback, and separate progress tracking.
+    - Switch between Words and Sentences; your selection is remembered, and keyboard navigation is supported.
+    - View sentence-practice statistics by category on the Quiz tab, with links to practice.
+    - Free users can practice sentences at A1; higher-level access shows an upgrade prompt.
+    - Unsynced study progress is set aside on logout and restored after login on the same device. Parked progress older than 90 days is cleared when the app is next opened, and is also cleared after a progress reset or account deletion.
+  - **Documentation**
+    - Added translations and updated FAQ and privacy information in English, German, Spanish, Norwegian, and Ukrainian.
+
 ## 2.116.2
 
 ### Patch Changes
