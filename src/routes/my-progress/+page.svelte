@@ -15,7 +15,7 @@
     clearUserProgress
   } from '$lib/progress';
   import type { ActivityCell } from '$lib/progress';
-  import { purgeParkedProgress } from '$lib/parked-progress';
+  import { getLiveOwner, purgeParkedProgress } from '$lib/parked-progress';
   import { CATEGORIES_BY_LEVEL } from '$lib/config';
   import { resolveEntry, type ResolvedEntry } from '$lib/content-lookup';
   import { filterProgressForPlan, freeGrammarRows, freeStatRows } from '$lib/free-progress';
@@ -599,6 +599,16 @@
     resetting = true;
     try {
       const userId = page.data.user?.id as string | undefined;
+      // The page can be stale: another tab may have logged out and logged in as someone else, so
+      // the live keys now belong to that account. Reset nothing in that case (not Supabase, not
+      // localStorage) and reload so the page shows the current session. A free user has no server
+      // copy, so wiping another account's live keys cannot be undone. Signed-in pages only: a
+      // guest page may legitimately show keys whose owner marker is a session that expired.
+      const liveOwner = getLiveOwner();
+      if (userId && liveOwner && liveOwner !== userId) {
+        location.reload();
+        return;
+      }
       if (userId && isPlus) {
         // Plus: Supabase is the only store — wipe vocab + grammar + quiz + study days
         await resetProgressInSupabase(userId);
