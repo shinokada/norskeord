@@ -103,8 +103,9 @@
       Study progress you create without being synced to the cloud is kept in your browser's local
       storage. When you log out it is not deleted: it is set aside under your account on that device
       and restored when you log in again. Other accounts and guests on the same browser cannot see
-      it in the app. Anything older than 90 days is deleted the next time you open norskeord in that
-      browser. It is also deleted when you reset your progress or delete your account.
+      it in the app. Parked progress that has stayed set aside for more than 90 days is deleted the
+      next time you open norskeord in that browser. It is also deleted when you reset your progress
+      or delete your account.
     </p>
 
     <h2 class="mt-8">How long we keep it</h2>
