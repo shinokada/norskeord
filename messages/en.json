@@ -1,5 +1,13 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "quiz_mode_label": "Mode",
+  "quiz_mode_words": "Words",
+  "quiz_mode_sentences": "Sentences",
+  "quiz_cloze_prompt": "Type the missing word",
+  "quiz_cloze_placeholder": "Missing word",
+  "quiz_cloze_input_label": "Missing word in the sentence",
+  "quiz_cloze_wrong_form": "Right word, wrong form",
+  "quiz_type_cloze": "Sentence",
   "guide_faq_uttrykk_q": "What is an uttrykk?",
   "guide_faq_uttrykk_a": "An uttrykk (Norwegian for \"expression\") is a fixed phrase you learn as a whole, not word by word. There are three kinds: idioms, whose meaning isn't in the words (ha is i magen means to stay calm); ordtak, or proverbs (Morgenstund har gull i munn); and everyday formulas such as greetings, polite phrases and set sentences (god morgen, vær så snill). Single words, and fixed phrases that work like one word (i går, ved siden av), count as vocabulary instead.",
   "stats_study_all_due": "Study all due ({count})",
@@ -990,6 +998,14 @@
   "stats_quiz_answered_count": "{count} answered",
   "stats_quiz_words_label": "Words quizzed",
   "stats_quiz_min_hint": "Accuracy appears after {count} answers.",
+  "stats_sentences_heading": "Sentences",
+  "stats_sentences_practice": "Practice sentences",
+  "stats_sentences_count": "{count} of {total} sentences",
+  "stats_sentences_legend_mastered": "Mastered in context",
+  "stats_sentences_legend_practiced": "Practiced",
+  "stats_sentences_legend_new": "Not practiced yet",
+  "stats_sentences_empty_heading": "No sentence answers yet",
+  "stats_sentences_empty_body": "Practice sentences at this level to see your results here.",
   "stats_quiz_empty_heading": "No quiz answers yet",
   "stats_quiz_empty_body": "Take a quiz at this level to see your results here."
 }

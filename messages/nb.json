@@ -1,5 +1,13 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "quiz_mode_label": "Modus",
+  "quiz_mode_words": "Ord",
+  "quiz_mode_sentences": "Setninger",
+  "quiz_cloze_prompt": "Skriv inn det manglende ordet",
+  "quiz_cloze_placeholder": "Manglende ord",
+  "quiz_cloze_input_label": "Manglende ord i setningen",
+  "quiz_cloze_wrong_form": "Riktig ord, feil form",
+  "quiz_type_cloze": "Setning",
   "guide_faq_uttrykk_q": "Hva er et uttrykk?",
   "guide_faq_uttrykk_a": "Et uttrykk er en fast frase som du lærer som en helhet, ikke ord for ord. Det finnes tre typer: idiomer, der betydningen ikke ligger i ordene (ha is i magen betyr å holde seg rolig); ordtak (Morgenstund har gull i munn); og hverdagsformler som hilsener, høflige fraser og faste setninger (god morgen, vær så snill). Enkeltord og faste fraser som fungerer som ett ord (i går, ved siden av) regnes som vokabular i stedet.",
   "stats_study_all_due": "Repeter alle forfalte ({count})",
@@ -990,6 +998,14 @@
   "stats_quiz_answered_count": "{count} besvart",
   "stats_quiz_words_label": "Ord quizet",
   "stats_quiz_min_hint": "Treffprosent vises etter {count} svar.",
+  "stats_sentences_heading": "Setninger",
+  "stats_sentences_practice": "Øv på setninger",
+  "stats_sentences_count": "{count} av {total} setninger",
+  "stats_sentences_legend_mastered": "Mestret i kontekst",
+  "stats_sentences_legend_practiced": "Øvd",
+  "stats_sentences_legend_new": "Ikke øvd ennå",
+  "stats_sentences_empty_heading": "Ingen setningssvar ennå",
+  "stats_sentences_empty_body": "Øv på setninger på dette nivået for å se resultatene her.",
   "stats_quiz_empty_heading": "Ingen quizsvar ennå",
   "stats_quiz_empty_body": "Ta en quiz på dette nivået for å se resultatene dine her."
 }

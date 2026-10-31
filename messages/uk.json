@@ -1,5 +1,13 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "quiz_mode_label": "Режим",
+  "quiz_mode_words": "Слова",
+  "quiz_mode_sentences": "Речення",
+  "quiz_cloze_prompt": "Введіть пропущене слово",
+  "quiz_cloze_placeholder": "Пропущене слово",
+  "quiz_cloze_input_label": "Пропущене слово в реченні",
+  "quiz_cloze_wrong_form": "Правильне слово, неправильна форма",
+  "quiz_type_cloze": "Речення",
   "guide_faq_uttrykk_q": "Що таке uttrykk?",
   "guide_faq_uttrykk_a": "Uttrykk (норв. «вираз») — це стале словосполучення, яке вивчають цілком, а не слово за словом. Є три види: ідіоми, значення яких не випливає з окремих слів (ha is i magen означає зберігати спокій); ordtak, тобто прислів’я (Morgenstund har gull i munn); і щоденні формули, як-от вітання, ввічливі звороти та готові речення (god morgen, vær så snill). Окремі слова та сталі звороти, що працюють як одне слово (i går, ved siden av), натомість належать до лексики.",
   "stats_study_all_due": "Вивчити всі до повторення ({count})",
@@ -990,6 +998,14 @@
   "stats_quiz_answered_count": "{count} відповідей",
   "stats_quiz_words_label": "Слів у вікторинах",
   "stats_quiz_min_hint": "Точність з’явиться після {count} відповідей.",
+  "stats_sentences_heading": "Речення",
+  "stats_sentences_practice": "Практикувати речення",
+  "stats_sentences_count": "{count} з {total} речень",
+  "stats_sentences_legend_mastered": "Засвоєно в контексті",
+  "stats_sentences_legend_practiced": "Опрацьовано",
+  "stats_sentences_legend_new": "Ще не опрацьовано",
+  "stats_sentences_empty_heading": "Відповідей на речення ще немає",
+  "stats_sentences_empty_body": "Попрактикуйте речення цього рівня, щоб побачити тут результати.",
   "stats_quiz_empty_heading": "Відповідей на вікторини ще немає",
   "stats_quiz_empty_body": "Пройдіть вікторину цього рівня, щоб побачити результати тут."
 }

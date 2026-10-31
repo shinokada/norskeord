@@ -1,5 +1,13 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "quiz_mode_label": "Modo",
+  "quiz_mode_words": "Palabras",
+  "quiz_mode_sentences": "Frases",
+  "quiz_cloze_prompt": "Escribe la palabra que falta",
+  "quiz_cloze_placeholder": "Palabra que falta",
+  "quiz_cloze_input_label": "Palabra que falta en la frase",
+  "quiz_cloze_wrong_form": "Palabra correcta, forma incorrecta",
+  "quiz_type_cloze": "Frase",
   "guide_faq_uttrykk_q": "¿Qué es un uttrykk?",
   "guide_faq_uttrykk_a": "Un uttrykk (en noruego, «expresión») es una frase fija que se aprende como un todo, no palabra por palabra. Hay tres tipos: modismos, cuyo significado no está en las palabras (ha is i magen significa mantener la calma); ordtak, o refranes (Morgenstund har gull i munn); y fórmulas cotidianas como saludos, frases de cortesía y oraciones fijas (god morgen, vær så snill). Las palabras sueltas y las frases fijas que funcionan como una sola palabra (i går, ved siden av) cuentan en cambio como vocabulario.",
   "stats_study_all_due": "Estudiar todo lo pendiente ({count})",
@@ -990,6 +998,14 @@
   "stats_quiz_answered_count": "{count} respondidas",
   "stats_quiz_words_label": "Palabras practicadas",
   "stats_quiz_min_hint": "La precisión aparece tras {count} respuestas.",
+  "stats_sentences_heading": "Frases",
+  "stats_sentences_practice": "Practicar frases",
+  "stats_sentences_count": "{count} de {total} frases",
+  "stats_sentences_legend_mastered": "Dominadas en contexto",
+  "stats_sentences_legend_practiced": "Practicadas",
+  "stats_sentences_legend_new": "Aún sin practicar",
+  "stats_sentences_empty_heading": "Aún no hay respuestas de frases",
+  "stats_sentences_empty_body": "Practica frases de este nivel para ver aquí tus resultados.",
   "stats_quiz_empty_heading": "Aún no hay respuestas de quiz",
   "stats_quiz_empty_body": "Haz un quiz de este nivel para ver aquí tus resultados."
 }

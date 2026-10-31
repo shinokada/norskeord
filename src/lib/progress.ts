@@ -74,20 +74,29 @@ export const GRAMMAR_LS_PREFIX = 'grammar-';
 export const QUIZ_LS_PREFIX = 'quiz-stats-';
 
 /**
+ * localStorage prefix for Sentences (cloze) quiz stats (guest/free users): the same counts as
+ * the quiz stats, kept in a store of their own (see quiz-stats.ts and
+ * ai-docs/implementation/cloze-quiz.md). Does not collide with QUIZ_LS_PREFIX, LS_PREFIX or
+ * GRAMMAR_LS_PREFIX. Plus users persist these to the cloze_progress table instead.
+ */
+export const CLOZE_LS_PREFIX = 'cloze-stats-';
+
+/**
  * Removes all progress keys for guest/free users from localStorage.
  * Called on logout so the next person who opens the browser sees no progress.
  */
 export function clearUserProgress(): void {
   // Guest/free users store vocab keys as 'progress-<vocabId>', grammar keys as
-  // 'grammar-<questionId>' and quiz stats as 'quiz-stats-<vocabId>'. (Plus users no
-  // longer use localStorage at all.)
+  // 'grammar-<questionId>', quiz stats as 'quiz-stats-<vocabId>' and Sentences stats as
+  // 'cloze-stats-<vocabId>'. (Plus users no longer use localStorage at all.)
   const keysToRemove: string[] = [];
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     if (
       key?.startsWith(LS_PREFIX) ||
       key?.startsWith(GRAMMAR_LS_PREFIX) ||
-      key?.startsWith(QUIZ_LS_PREFIX)
+      key?.startsWith(QUIZ_LS_PREFIX) ||
+      key?.startsWith(CLOZE_LS_PREFIX)
     ) {
       keysToRemove.push(key);
     }
@@ -98,8 +107,8 @@ export function clearUserProgress(): void {
 /**
  * Removes only the local vocab/uttrykk `progress-` keys. Used by the free to Plus sync, which
  * discards them after a migration or when the cloud already has progress, but must leave
- * the `grammar-` and `quiz-stats-` keys alone: those are removed by their own migrations
- * only after a successful upsert, so a failed one can be retried on the next login.
+ * the `grammar-`, `quiz-stats-` and `cloze-stats-` keys alone: those are removed by their own
+ * migrations only after a successful upsert, so a failed one can be retried on the next login.
  */
 export function clearLocalVocabularyProgress(): void {
   const keysToRemove: string[] = [];
@@ -428,8 +437,8 @@ async function saveProgressToSupabase(
 }
 
 /**
- * Deletes all card_progress, grammar_progress, quiz_progress and study_days rows for a
- * user from Supabase. Called when a Plus user resets their progress from the stats
+ * Deletes all card_progress, grammar_progress, quiz_progress, cloze_progress and study_days
+ * rows for a user from Supabase. Called when a Plus user resets their progress from the stats
  * page.
  */
 export async function resetProgressInSupabase(userId: string): Promise<void> {
@@ -437,6 +446,7 @@ export async function resetProgressInSupabase(userId: string): Promise<void> {
     supabase.from('card_progress').delete().eq('user_id', userId),
     supabase.from('grammar_progress').delete().eq('user_id', userId),
     supabase.from('quiz_progress').delete().eq('user_id', userId),
+    supabase.from('cloze_progress').delete().eq('user_id', userId),
     supabase.from('study_days').delete().eq('user_id', userId)
   ]);
   for (const { error } of results) {

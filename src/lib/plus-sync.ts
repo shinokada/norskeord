@@ -4,16 +4,16 @@ import {
   migrateLocalGrammarProgressToSupabase,
   migrateLocalProgressToSupabase
 } from './progress';
-import { migrateLocalQuizStatsToSupabase } from './quiz-stats';
+import { migrateLocalClozeStatsToSupabase, migrateLocalQuizStatsToSupabase } from './quiz-stats';
 
 /**
  * What a Plus user's login (auth/sync) does with progress left in localStorage from when
  * they were a guest or free user. Never throws, so it cannot break login.
  *
- * - Quiz stats and grammar progress are migrated first, in every case. Each removes its
- *   local keys only after a successful upsert, so a failed attempt is retried on the next
- *   login. migrateLocalProgressToSupabase must not clear them (it only clears `progress-`
- *   keys), and it returns early for a learner with no vocab progress.
+ * - Quiz stats, Sentences (cloze) stats and grammar progress are migrated first, in every
+ *   case. Each removes its local keys only after a successful upsert, so a failed attempt is
+ *   retried on the next login. migrateLocalProgressToSupabase must not clear them (it only
+ *   clears `progress-` keys), and it returns early for a learner with no vocab progress.
  * - Vocab/uttrykk `progress-` keys depend on what the cloud holds:
  *   - empty cloud: a fresh upgrade, so the local progress is copied up;
  *   - progress already in the cloud: the local keys are stale and are discarded;
@@ -25,6 +25,7 @@ export async function syncLocalProgressToPlus(userId: string): Promise<void> {
   const cloudVocab = await loadProgressMapFromSupabaseOrNull(userId);
 
   await migrateLocalQuizStatsToSupabase(userId);
+  await migrateLocalClozeStatsToSupabase(userId);
   await migrateLocalGrammarProgressToSupabase(userId);
 
   if (cloudVocab === null) {

@@ -1,5 +1,13 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "quiz_mode_label": "Modus",
+  "quiz_mode_words": "Wörter",
+  "quiz_mode_sentences": "Sätze",
+  "quiz_cloze_prompt": "Tippe das fehlende Wort",
+  "quiz_cloze_placeholder": "Fehlendes Wort",
+  "quiz_cloze_input_label": "Fehlendes Wort im Satz",
+  "quiz_cloze_wrong_form": "Richtiges Wort, falsche Form",
+  "quiz_type_cloze": "Satz",
   "guide_faq_uttrykk_q": "Was ist ein Uttrykk?",
   "guide_faq_uttrykk_a": "Ein Uttrykk (norwegisch für „Ausdruck“) ist eine feste Wendung, die man als Ganzes lernt und nicht Wort für Wort. Es gibt drei Arten: Idiome, deren Bedeutung nicht in den einzelnen Wörtern steckt (ha is i magen heißt ruhig bleiben); Ordtak, also Sprichwörter (Morgenstund har gull i munn); und Alltagsformeln wie Grüße, höfliche Wendungen und feste Sätze (god morgen, vær så snill). Einzelwörter und feste Wendungen, die wie ein Wort funktionieren (i går, ved siden av), zählen stattdessen zum Vokabular.",
   "stats_study_all_due": "Alle fälligen lernen ({count})",
@@ -990,6 +998,14 @@
   "stats_quiz_answered_count": "{count} beantwortet",
   "stats_quiz_words_label": "Geübte Wörter",
   "stats_quiz_min_hint": "Die Trefferquote erscheint nach {count} Antworten.",
+  "stats_sentences_heading": "Sätze",
+  "stats_sentences_practice": "Sätze üben",
+  "stats_sentences_count": "{count} von {total} Sätzen",
+  "stats_sentences_legend_mastered": "Im Kontext gemeistert",
+  "stats_sentences_legend_practiced": "Geübt",
+  "stats_sentences_legend_new": "Noch nicht geübt",
+  "stats_sentences_empty_heading": "Noch keine Satzantworten",
+  "stats_sentences_empty_body": "Übe Sätze auf diesem Niveau, um hier deine Ergebnisse zu sehen.",
   "stats_quiz_empty_heading": "Noch keine Quiz-Antworten",
   "stats_quiz_empty_body": "Mach ein Quiz auf diesem Niveau, um hier deine Ergebnisse zu sehen."
 }

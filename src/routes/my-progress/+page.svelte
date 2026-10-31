@@ -30,12 +30,19 @@
   } from '$lib/stats';
   import { buildGrammarProgress } from '$lib/grammar/progress';
   import {
+    loadClozeStats,
     loadQuizStats,
+    summariseClozeStats,
     summariseQuizStats,
     quizAccuracy,
     type QuizStatsMap
   } from '$lib/quiz-stats';
+  import { clozeStatRowsForLevel } from '$lib/cloze-stats';
+  import type { QuizCategoryCount } from '$lib/quiz-gate';
+  // Counts only (level, category, vocab, uttrykk), no content, so it is safe in the client.
+  import clozeCounts from '$lib/data/cloze-counts.json';
   import LevelStatRows from '$lib/components/LevelStatRows.svelte';
+  import ClozeStatsPanel from '$lib/components/ClozeStatsPanel.svelte';
   import ContentTypeSummary from '$lib/components/ContentTypeSummary.svelte';
   import ProgressHubCard from '$lib/components/ProgressHubCard.svelte';
   import QuizStatsPanel from '$lib/components/QuizStatsPanel.svelte';
@@ -50,6 +57,9 @@
   // Quiz stats (attempts / correct per word) are a third store, separate from FSRS state
   // (quiz-progress.md). They have no schedule, so they never feed a due count.
   let quizStats = $state<QuizStatsMap>({});
+  // Sentences stats (cloze_progress / `cloze-stats-` keys): the same counts, a separate store
+  // (cloze-quiz.md, Phase 3). They feed only the Sentences section of the Quiz tab.
+  let clozeStats = $state<QuizStatsMap>({});
   let confirmReset = $state(false);
   let resetting = $state(false);
   let mounted = $state(false);
@@ -86,6 +96,9 @@
   // Quiz totals and per-level breakdown, with levels resolved live from each id.
   const quizSummary = $derived(summariseQuizStats(quizStats, (id) => resolveEntry(id)?.level));
   const quizCardAccuracy = $derived(quizAccuracy(quizSummary.total));
+
+  // Sentences totals and per-level breakdown, resolved the same way (live level per id).
+  const clozeSummary = $derived(summariseClozeStats(clozeStats, (id) => resolveEntry(id)?.level));
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
 
@@ -381,6 +394,18 @@
     freeGrammarRows(grammarTopicStatsForLevel(activeLevel, grammarMap, isNb), activeLevel, isPlus)
   );
 
+  // Sentences bars for the active level (Quiz tab): totals from cloze-counts.json, limited to
+  // what a free user's plan reaches; practiced / mastered from the Sentences stats.
+  const clozeRowsForActiveLevel = $derived(
+    clozeStatRowsForLevel(
+      activeLevel,
+      clozeStats,
+      clozeCounts as unknown as QuizCategoryCount[],
+      isPlus,
+      resolveEntry
+    )
+  );
+
   // Free-tier per-level summary cards — the vocabLevelStats/uttrykkLevelStats
   // arrays always have one entry per level (buildLevelStats maps over all
   // five unconditionally), so these lookups always resolve.
@@ -507,6 +532,8 @@
     // Quiz stats live in their own store; loadQuizStats never throws (a missing table or
     // bad localStorage entry yields an empty map).
     quizStats = await loadQuizStats(isPlus && userId ? userId : null);
+    // Same for the Sentences stats: never throws, a missing cloze_progress table gives {}.
+    clozeStats = await loadClozeStats(isPlus && userId ? userId : null);
     mounted = true;
 
     // Restore the active level tab, or default to where cefrEstimate (just
@@ -581,6 +608,7 @@
       progressMap = {};
       grammarMap = {};
       quizStats = {};
+      clozeStats = {};
       activityCells = buildActivityGrid({}, 26);
       streak = 0;
     } finally {
@@ -631,7 +659,7 @@
 
   {#if !mounted}
     <p class="text-gray-600 dark:text-gray-300">{m.stats_loading()}</p>
-  {:else if totalSeen === 0 && grammarSeen === 0 && quizSummary.total.answered === 0}
+  {:else if totalSeen === 0 && grammarSeen === 0 && quizSummary.total.answered === 0 && clozeSummary.total.answered === 0}
     <!-- Empty state -->
     <div
       class="rounded-xl border border-gray-200 bg-white p-10 text-center shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
@@ -877,6 +905,32 @@
       {:else if activeTab === 'quiz'}
         <!-- Content panel: Quiz. The Grammar comment above labels the last branch below. -->
         <QuizStatsPanel summary={quizSummary.byLevel[activeLevel]} />
+        <!-- Sentences (cloze-quiz.md, Phase 5): its own counts and per-category bars. -->
+        <ClozeStatsPanel
+          summary={clozeSummary.byLevel[activeLevel]}
+          rows={clozeRowsForActiveLevel}
+          levelColor={levelColors[activeLevel]}
+          practiceHref="/quiz?mode=sentences&level={encodeURIComponent(activeLevel)}"
+        />
+        {#if !isPlus && activeLevel !== 'A1'}
+          <div
+            data-testid="cloze-plus-upsell"
+            class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
+          >
+            <p class="font-semibold text-orange-700 dark:text-orange-300">
+              ⭐ {m.stats_plus_category_heading()}
+            </p>
+            <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
+              {m.stats_plus_category_body()}
+            </p>
+            <a
+              href="/plus"
+              class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
+            >
+              {m.stats_plus_upgrade()}
+            </a>
+          </div>
+        {/if}
       {:else}
         <div
           class="mb-3 grid grid-cols-3 divide-x divide-gray-100 overflow-hidden rounded-xl border border-gray-200 dark:divide-white/10 dark:border-white/10"
