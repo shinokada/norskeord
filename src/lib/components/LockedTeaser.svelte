@@ -8,6 +8,7 @@
    */
   import { page } from '$app/state';
   import { Flashcard } from '$lib';
+  import TrialButton from '$lib/components/TrialButton.svelte';
   import { trackEvent, LOCKED_LOGIN_CLICK_EVENT } from '$lib/analytics';
   import * as m from '$lib/paraglide/messages.js';
 
@@ -89,7 +90,7 @@
 
     <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 px-4 text-center">
       <p class="text-lg font-semibold text-gray-900 dark:text-white">
-        {m.teaser_heading({ category: categoryName })}
+        {m.teaser_heading()}
       </p>
       <p class="text-sm text-gray-700 dark:text-gray-200">
         {m.teaser_benefit({ count: totalCount })}
@@ -101,6 +102,10 @@
         >
           {m.teaser_get_plus()}
         </a>
+        <!-- Free trial for an eligible signed-in user (ai-docs/implementation/free-trial.md). -->
+        {#if page.data.trialEligible}
+          <TrialButton variant="secondary" showNote={false} />
+        {/if}
         {#if !email}
           <a
             href={loginHref}

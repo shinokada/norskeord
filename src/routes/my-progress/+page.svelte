@@ -49,6 +49,7 @@
   import QuizStatsPanel from '$lib/components/QuizStatsPanel.svelte';
   import ActivityChart from '$lib/components/ActivityChart.svelte';
   import DueBadge from '$lib/components/DueBadge.svelte';
+  import TrialEndedNotice from '$lib/components/TrialEndedNotice.svelte';
 
   // ── State ────────────────────────────────────────────────────────────────────
   let progressMap = $state<Record<string, CardProgress>>({});
@@ -674,6 +675,9 @@
       </button>
     {/if}
   </div>
+
+  <!-- End of a Plus trial: the page looks empty for this user, so say why (free-trial.md). -->
+  <TrialEndedNotice variant="note" />
 
   {#if !mounted}
     <p class="text-gray-600 dark:text-gray-300">{m.stats_loading()}</p>
