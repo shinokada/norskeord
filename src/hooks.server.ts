@@ -107,11 +107,18 @@ const originalHandle: Handle = async ({ event, resolve }) => {
     event.locals.user = user ?? null;
 
     if (user) {
-      const { data } = await supabase
+      const { data, error } = await supabase
         .from('subscriptions')
         .select('plan, status, valid_until, trial_started_at, lemon_squeezy_subscription_id')
         .eq('user_id', user.id)
         .maybeSingle();
+
+      if (error) {
+        // Keep failing closed (the plan stays 'free' below), but make the failure visible:
+        // a schema mismatch (e.g. migration 034 not applied yet), a timeout or an RLS mistake
+        // would otherwise silently downgrade paying users. Log the code and message only.
+        console.error('[hooks] subscriptions query failed:', error.code, error.message);
+      }
 
       // Defensive fallback: don't trust `plan` alone.
       // - 'active' subscriptions don't depend on valid_until at all.
