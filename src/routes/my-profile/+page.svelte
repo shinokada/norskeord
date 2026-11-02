@@ -16,12 +16,11 @@
   // Which fields are empty — passed to sections so they can render red labels.
   // native_language and country were removed in migration 020 (decision 9 in
   // ai-docs/implementation/new-languages.md). study_goals is no longer
-  // collected during onboarding either, so only display_name and
-  // current_level are tracked here.
+  // collected during onboarding either, so only current_level is tracked here (display_name is
+  // optional: when empty the UI uses the account email).
   const missingFields = $derived.by(() => {
     if (!showNudge) return [] as string[];
     const missing: string[] = [];
-    if (!data.profile?.display_name) missing.push('display_name');
     if (!data.profile?.current_level) missing.push('current_level');
     return missing;
   });

@@ -8,10 +8,10 @@
   // native_language and country were removed in migration 020 (decision 9 in
   // ai-docs/implementation/new-languages.md). study_goals is no longer
   // collected during onboarding either — nothing downstream uses it yet, so
-  // only display_name and current_level are tracked here.
+  // only current_level is tracked here (display_name is optional: when empty the UI uses the
+  // account email).
   const missingFields = $derived.by(() => {
     const missing: string[] = [];
-    if (!profile?.display_name) missing.push('display_name');
     if (!profile?.current_level) missing.push('current_level');
     return missing;
   });
@@ -60,9 +60,6 @@
         })}
       </p>
       <p class="mt-2 text-xs text-amber-700 dark:text-amber-400">
-        {#if missingFields.includes('display_name')}
-          <span class="block">• {m.onboarding_nudge_missing_name()}</span>
-        {/if}
         {#if missingFields.includes('current_level')}
           <span class="block">• {m.onboarding_nudge_missing_level()}</span>
         {/if}
