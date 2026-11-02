@@ -43,6 +43,7 @@
   import { localeStore } from '$lib/localeStore.svelte';
   import { parkForLogout } from '$lib/parked-progress';
   import Search from '$lib/components/Search.svelte';
+  import { trialView } from '$lib/stores/trial.svelte';
 
   const sidebarUi = uiHelpers();
   const closeDemoSidebar = sidebarUi.close;
@@ -301,6 +302,16 @@
       >
         {m.nav_plus_badge()}
       </a>
+    {:else if effectiveUser && trialView.state === 'active'}
+      <!-- Trial countdown (ai-docs/implementation/free-trial.md). Hidden below sm, like the badge
+           above: on a phone the sidebar item shows it. -->
+      <a
+        href="/plus?ref=trial-nav"
+        class="hidden rounded-lg border border-indigo-300 bg-indigo-50 px-3 py-1.5 text-xs font-semibold text-indigo-700 hover:bg-indigo-100 sm:inline-block dark:border-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-200 dark:hover:bg-indigo-900/50"
+        data-testid="trial-badge"
+      >
+        {trialView.badgeLabel}
+      </a>
     {/if}
     <DarkMode class="inline-block hover:text-gray-900 dark:text-gray-200 dark:hover:text-white" />
     <SidebarButton onclick={sidebarUi.toggle} />
@@ -393,6 +404,17 @@
     <!-- Account (top) -->
     <SidebarGroup>
       {#if effectiveUser}
+        <!-- Trial countdown at the top of the sidebar: the Nav badge is hidden on a phone
+             (ai-docs/implementation/free-trial.md). -->
+        {#if trialView.state === 'active'}
+          <SidebarItem label={trialView.badgeLabel} href="/plus?ref=trial-nav">
+            {#snippet icon()}
+              <PlusOutline
+                class="h-5 w-5 text-indigo-600 transition duration-75 dark:text-indigo-300"
+              />
+            {/snippet}
+          </SidebarItem>
+        {/if}
         <SidebarItem
           label={showOnboardingNudge ? m.onboarding_nudge_profile_label() : m.nav_my_profile()}
           href="/my-profile"

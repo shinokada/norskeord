@@ -3,6 +3,7 @@
   import * as m from '$lib/paraglide/messages.js';
   import { subscribeToPush, unsubscribeFromPush } from '$lib/push';
   import Toggle from '$lib/components/ui/Toggle.svelte';
+  import { trialDaysLeft } from '$lib/trial';
 
   let {
     profile,
@@ -43,6 +44,10 @@
   // when access ends. Same value, different label depending on status.
   const renewsAt = $derived(formatDate(validUntil));
   const endsAt = $derived(formatDate(validUntil));
+
+  // A trial row has status 'trial' (ai-docs/implementation/free-trial.md). It has no Lemon
+  // Squeezy subscription, so there is no renewal date and no billing link.
+  const trialDays = $derived(trialDaysLeft(validUntil));
 
   // Checkout
   let checkoutLoading = $state(false);
@@ -130,6 +135,37 @@
         <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
           {m.profile_sub_plan_free()}
         </p>
+      </div>
+      <button
+        type="button"
+        onclick={handleCheckout}
+        disabled={checkoutLoading}
+        class="inline-block rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 disabled:opacity-50"
+      >
+        {checkoutLoading ? m.plus_activating() : m.profile_sub_upgrade_cta()}
+      </button>
+    </div>
+    {#if checkoutError}
+      <p class="mt-2 text-xs text-red-500">{checkoutError}</p>
+    {/if}
+  {:else if status === 'trial'}
+    <!-- Free trial: Plus until valid_until, no payment yet. Subscribing starts a paid period today. -->
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div class="space-y-1">
+        <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
+          {m.profile_sub_trial_plan()}
+        </p>
+        {#if endsAt}
+          <p class="text-sm text-gray-600 dark:text-gray-300">
+            {m.profile_sub_trial_ends({ date: endsAt })}
+          </p>
+        {/if}
+        <p class="text-sm font-semibold text-indigo-600 dark:text-indigo-400">
+          {trialDays <= 1
+            ? m.profile_sub_trial_last_day()
+            : m.profile_sub_trial_days({ count: trialDays })}
+        </p>
+        <p class="text-xs text-gray-600 dark:text-gray-300">{m.profile_sub_trial_note()}</p>
       </div>
       <button
         type="button"

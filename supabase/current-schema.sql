@@ -30,8 +30,9 @@ CREATE TABLE public.subscriptions (
   lemon_squeezy_customer_id text,
   lemon_squeezy_subscription_id text,
   lemon_squeezy_order_id text,
-  status text NOT NULL DEFAULT 'inactive'::text CHECK (status = ANY (ARRAY['active'::text, 'cancelled'::text, 'expired'::text, 'inactive'::text, 'past_due'::text])),
+  status text NOT NULL DEFAULT 'inactive'::text CHECK (status = ANY (ARRAY['active'::text, 'cancelled'::text, 'expired'::text, 'inactive'::text, 'past_due'::text, 'trial'::text])),
   ls_event_at timestamp with time zone,
+  trial_started_at timestamp with time zone,
   CONSTRAINT subscriptions_pkey PRIMARY KEY (user_id),
   CONSTRAINT subscriptions_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
 );
@@ -170,6 +171,11 @@ CREATE TABLE public.cloze_progress (
   last_attempt timestamp with time zone NOT NULL DEFAULT now(),
   CONSTRAINT cloze_progress_pkey PRIMARY KEY (id),
   CONSTRAINT cloze_progress_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id)
+);
+CREATE TABLE public.trial_claims (
+  email_key text NOT NULL,
+  claimed_at timestamp with time zone NOT NULL DEFAULT now(),
+  CONSTRAINT trial_claims_pkey PRIMARY KEY (email_key)
 );
 
 -- NOTE: Functions are not exported by Supabase's schema dump tool.

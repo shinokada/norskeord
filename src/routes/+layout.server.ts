@@ -96,6 +96,8 @@ export const load = async ({ url, locals, request }) => {
     ANALYTICS_ID_LANGUAGE_APP,
     user: locals.user,
     plan: locals.plan,
+    trialEndsAt: locals.trialEndsAt,
+    trialEligible: locals.trialEligible,
     displayName,
     currentLevel,
     sessionLimit,

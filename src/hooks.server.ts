@@ -4,6 +4,7 @@ import { paraglideMiddleware } from '$lib/paraglide/server';
 import { createSupabaseServerClient } from '$lib/server/supabase';
 import { isCacheExcluded } from '$lib/server/edge-cache';
 import { hasSupabaseSession } from '$lib/server/supabase-session';
+import { deriveTrialFlags } from '$lib/trial';
 import { legacyGrammarRedirect } from '$lib/grammar/legacy-redirects';
 import type { Handle } from '@sveltejs/kit';
 // hooks.server.ts
@@ -20,6 +21,8 @@ const SUPABASE_AUTH_COOKIE = `sb-${projectRef}-auth-token`;
  *   - locals.supabase  — authenticated server client for this request
  *   - locals.user      — the authenticated User object, or null
  *   - locals.plan      — 'plus' | 'free' (read from subscriptions table)
+ *   - locals.trialEndsAt / locals.trialEligible — the 30-day trial flags
+ *     (ai-docs/implementation/free-trial.md); they do not change locals.plan
  *
  * Optimisation: if no auth cookie is present the Supabase network calls are
  * skipped entirely and we set Cache-Control on the response so Vercel's edge
@@ -104,11 +107,18 @@ const originalHandle: Handle = async ({ event, resolve }) => {
     event.locals.user = user ?? null;
 
     if (user) {
-      const { data } = await supabase
+      const { data, error } = await supabase
         .from('subscriptions')
-        .select('plan, status, valid_until')
+        .select('plan, status, valid_until, trial_started_at, lemon_squeezy_subscription_id')
         .eq('user_id', user.id)
         .maybeSingle();
+
+      if (error) {
+        // Keep failing closed (the plan stays 'free' below), but make the failure visible:
+        // a schema mismatch (e.g. migration 034 not applied yet), a timeout or an RLS mistake
+        // would otherwise silently downgrade paying users. Log the code and message only.
+        console.error('[hooks] subscriptions query failed:', error.code, error.message);
+      }
 
       // Defensive fallback: don't trust `plan` alone.
       // - 'active' subscriptions don't depend on valid_until at all.
@@ -123,13 +133,22 @@ const originalHandle: Handle = async ({ event, resolve }) => {
         ? false
         : !data?.valid_until || new Date(data.valid_until) < new Date();
       event.locals.plan = !isExpired && data?.plan === 'plus' ? 'plus' : 'free';
+
+      // Trial flags come from the same row: no extra query.
+      const trial = deriveTrialFlags(data, event.locals.plan, true);
+      event.locals.trialEndsAt = trial.trialEndsAt;
+      event.locals.trialEligible = trial.trialEligible;
     } else {
       event.locals.plan = 'free';
+      event.locals.trialEndsAt = null;
+      event.locals.trialEligible = false;
     }
   } else {
     // No session cookie — skip all Supabase network calls.
     event.locals.user = null;
     event.locals.plan = 'free';
+    event.locals.trialEndsAt = null;
+    event.locals.trialEligible = false;
   }
 
   const response = await resolve(event, {

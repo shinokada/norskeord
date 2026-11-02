@@ -94,6 +94,63 @@ GRANT EXECUTE ON FUNCTION public.upsert_subscription_if_newer
   (uuid, text, text, text, timestamptz, text, text, text, timestamptz)
   TO service_role;
 
+-- ── start_trial ───────────────────────────────────────────────────────────────
+-- Starts the 30-day Plus trial (plan 'plus', status 'trial', valid_until = now + p_days)
+-- and returns the end date, or NULL when the email or the account is not allowed a trial.
+-- p_email_key is an HMAC-SHA-256 of the normalised email (src/lib/server/trial-email.ts),
+-- stored in trial_claims, which has no user_id so a claim survives account deletion.
+-- The claim is made first and given back if the account is not eligible (had a trial,
+-- has paid, or is Plus right now: the same rule as hooks.server.ts).
+-- Called from POST /api/trial/start with the service role client.
+-- SET search_path = '' prevents search_path injection (Supabase linter 0011).
+-- Only service_role may call it: SECURITY DEFINER with a raw p_user_id parameter.
+-- Deployed via: Supabase Dashboard → SQL Editor (034)
+
+CREATE OR REPLACE FUNCTION public.start_trial(
+  p_user_id uuid,
+  p_email_key text,
+  p_days int DEFAULT 30
+)
+RETURNS timestamptz
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = ''
+AS $$
+DECLARE
+  v_ends timestamptz;
+  v_claimed text;
+BEGIN
+  INSERT INTO public.trial_claims (email_key) VALUES (p_email_key)
+  ON CONFLICT (email_key) DO NOTHING
+  RETURNING email_key INTO v_claimed;
+  IF v_claimed IS NULL THEN
+    RETURN NULL;  -- this email already had a trial
+  END IF;
+
+  INSERT INTO public.subscriptions (user_id, plan, status, valid_until, trial_started_at)
+  VALUES (p_user_id, 'plus', 'trial', now() + make_interval(days => p_days), now())
+  ON CONFLICT (user_id) DO UPDATE SET
+    plan = 'plus',
+    status = 'trial',
+    valid_until = now() + make_interval(days => p_days),
+    trial_started_at = now()
+  WHERE public.subscriptions.trial_started_at IS NULL            -- never had a trial
+    AND public.subscriptions.lemon_squeezy_subscription_id IS NULL -- never paid
+    AND NOT (public.subscriptions.plan = 'plus'                  -- not Plus right now
+             AND (public.subscriptions.status = 'active'
+                  OR coalesce(public.subscriptions.valid_until > now(), false)))
+  RETURNING valid_until INTO v_ends;
+
+  IF v_ends IS NULL THEN
+    DELETE FROM public.trial_claims WHERE email_key = p_email_key;
+  END IF;
+  RETURN v_ends;
+END;
+$$;
+
+REVOKE EXECUTE ON FUNCTION public.start_trial(uuid, text, int) FROM PUBLIC, anon, authenticated;
+GRANT EXECUTE ON FUNCTION public.start_trial(uuid, text, int) TO service_role;
+
 -- ── get_welcome_sequence_candidates ──────────────────────────────────────────
 -- Returns users who signed up ~24 hours ago and haven't received a welcome
 -- sequence email yet. Called by the welcome-sequence Edge Function / cron.
@@ -140,6 +197,26 @@ SELECT cron.schedule(
       headers := '{"Content-Type": "application/json"}'::jsonb,
       body    := '{}'::jsonb
     );
+  $$
+);
+
+-- ── pg_cron: cleanup-trial-claims ─────────────────────────────────────────────
+-- Deletes trial claims older than 12 months (free-trial.md, decision 10), so the email
+-- hash is not kept for ever. The account's own trial_started_at stays on its
+-- subscriptions row, so only a NEW account with the same email can get another trial.
+-- Runs monthly, on the 1st at 04:00 UTC.
+--
+-- To deploy: Supabase Dashboard → Integrations → Cron → + New cron job
+--   Name:     cleanup-trial-claims
+--   Schedule: 0 4 1 * *
+--   Command:  paste the DELETE statement below
+
+SELECT cron.schedule(
+  'cleanup-trial-claims',
+  '0 4 1 * *',
+  $$
+    DELETE FROM public.trial_claims
+    WHERE claimed_at < now() - interval '12 months';
   $$
 );
 

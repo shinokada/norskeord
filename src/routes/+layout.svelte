@@ -9,6 +9,8 @@
   import Nav from './components/Nav.svelte';
   import Footer from './components/Footer.svelte';
   import InAppBrowserBanner from './components/InAppBrowserBanner.svelte';
+  import TrialBanner from '$lib/components/TrialBanner.svelte';
+  import TrialEndedNotice from '$lib/components/TrialEndedNotice.svelte';
   import OnboardingSlides from '$lib/components/OnboardingSlides.svelte';
   import Toast from '$lib/components/ui/Toast.svelte';
   import { validFlashcardPathPattern } from '$lib/utils';
@@ -130,6 +132,8 @@
   {/if}
 
   <Nav />
+  <TrialBanner />
+  <TrialEndedNotice />
 
   <section class="border-b border-gray-300 px-4 pb-8 dark:border-gray-600">
     <div class="mx-auto max-w-7xl text-center">{@render children()}</div>

@@ -8,7 +8,7 @@
 
 <div class="mx-auto max-w-3xl px-4 py-10 text-left">
   <h1 class="mb-2">Terms of Service</h1>
-  <p class="mb-8 text-gray-600 dark:text-gray-300">Last updated: 10 October 2026</p>
+  <p class="mb-8 text-gray-600 dark:text-gray-300">Last updated: 1 November 2026</p>
 
   <div class="space-y-4 text-base text-gray-700 dark:text-gray-300">
     <p>
@@ -42,6 +42,13 @@
       </li>
       <li>Payments are processed by our payment provider, Lemon Squeezy.</li>
       <li>
+        Each account can have one free Plus trial of 30 days. It needs no payment card, costs
+        nothing and ends by itself: we never charge you when it ends. You can subscribe at any time
+        during the trial. The subscription then starts on the day you pay, and unused trial days are
+        not added. We may refuse a trial for an account or email address that has already had one,
+        or that has paid for Plus before.
+      </li>
+      <li>
         You can cancel at any time. After you cancel, Plus stays active until the end of the period
         you have paid for.
       </li>
@@ -56,6 +63,10 @@
     <ul class="list-disc space-y-1 pl-6">
       <li>Do not copy, scrape or redistribute Norskeord content in bulk, or sell it.</li>
       <li>Do not try to get around the paywall, login or security measures.</li>
+      <li>
+        Do not create several accounts, or use disposable email addresses, to get more than one free
+        trial.
+      </li>
       <li>Do not interfere with or overload the service, or use it for anything unlawful.</li>
     </ul>
 

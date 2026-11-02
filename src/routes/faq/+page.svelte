@@ -13,6 +13,11 @@
       }
     },
     {
+      id: 14,
+      question: m.guide_faq_trial_q(),
+      answer: m.guide_faq_trial_a()
+    },
+    {
       id: 2,
       question: m.guide_faq_norskproven_q(),
       answer: m.guide_faq_norskproven_a()

@@ -5,10 +5,11 @@
 // through `window.gtag` directly. Where GA is not loaded (dev, a blocker, e2e) `gtag` is
 // undefined and every call is a no-op, so analytics can never break the app.
 //
-// Two events are tracked, both meant to be marked as key events in GA4:
+// Three events are tracked, all meant to be marked as key events in GA4:
 //   upgrade_click  a click on any link to /plus. `ref` is the link's own ?ref= value, so one
 //                  listener covers every upgrade entry point (category-lock, grammar-topic-lock, ...).
 //   login          the user id seen on this device changed from "none or another user" to a signed-in user.
+//   trial_start    the free Plus trial started (ai-docs/implementation/free-trial.md, Phase 6).
 
 declare global {
   interface Window {
@@ -18,6 +19,8 @@ declare global {
 
 export const UPGRADE_CLICK_EVENT = 'upgrade_click';
 export const LOGIN_EVENT = 'login';
+/** The free Plus trial started. Sent before the full page load that follows, so use a beacon. */
+export const TRIAL_START_EVENT = 'trial_start';
 /** The "Already Plus? Log in" link on a locked category page (locked-teaser-social-login.md, Phase 3). */
 export const LOCKED_LOGIN_CLICK_EVENT = 'locked_login_click';
 /** localStorage key holding the last user id seen on this device ('' when signed out). */

@@ -3,9 +3,27 @@
   import { page } from '$app/state';
   import * as m from '$lib/paraglide/messages.js';
   import { safeNext } from '$lib/safe-next';
+  import { getLocale } from '$lib/paraglide/runtime';
+  import TrialButton from '$lib/components/TrialButton.svelte';
 
   // Server-provided auth/plan state
-  let { data }: { data: { isLoggedIn: boolean; isPlus: boolean } } = $props();
+  let {
+    data
+  }: {
+    data: {
+      isLoggedIn: boolean;
+      isPlus: boolean;
+      isTrial: boolean;
+      trialEndsAt: string | null;
+      trialEligible: boolean;
+    };
+  } = $props();
+
+  // A trial user is Plus, but can still subscribe: the pricing block stays visible for them.
+  const canSubscribe = $derived(!data.isPlus || data.isTrial);
+
+  // The trial end date, formatted in the browser (the server's time zone is not the user's).
+  let trialEndText = $state('');
 
   // Billing interval toggle
   let billingInterval = $state<'month' | 'year'>('month');
@@ -22,7 +40,7 @@
   // cover it with a spinner so the visitor never sees the pricing page flash by.
   // Rendered on the server too, so there is no flash. An error brings the page back.
   const autoCheckout = $derived(
-    data.isLoggedIn && !data.isPlus && page.url.searchParams.get('checkout') === '1'
+    data.isLoggedIn && canSubscribe && page.url.searchParams.get('checkout') === '1'
   );
   const showRedirecting = $derived(autoCheckout && !checkoutError);
 
@@ -39,13 +57,25 @@
     const intervalParam = page.url.searchParams.get('interval');
     if (intervalParam === 'year') billingInterval = 'year';
 
-    if (page.url.searchParams.get('checkout') === '1' && data.isLoggedIn && !data.isPlus) {
+    if (data.trialEndsAt) {
+      trialEndText = new Date(data.trialEndsAt).toLocaleDateString(getLocale(), {
+        dateStyle: 'long'
+      });
+    }
+
+    if (page.url.searchParams.get('checkout') === '1' && data.isLoggedIn && canSubscribe) {
       handleCheckout();
     }
   });
 
   // Build the login URL carrying checkout intent (interval and the page to return to)
   const loginHref = $derived.by(() => `/auth/login?next=${encodeURIComponent(returnUrl())}`);
+
+  // A guest who wants the free trial logs in and comes back to /plus (the page to return to is
+  // kept). The trial does not start by itself: the button shows after login.
+  const trialLoginHref = $derived(
+    `/auth/login?next=${encodeURIComponent(nextPath ? `/plus?next=${encodeURIComponent(nextPath)}` : '/plus')}`
+  );
 
   type TableCell = { value: string; yes: boolean; soon?: boolean };
   type TableRow = { feature: string; free: TableCell; pro: TableCell };
@@ -215,7 +245,7 @@
     id="upgrade"
     class="mb-10 rounded-2xl border border-indigo-200 bg-indigo-50 p-8 text-center dark:border-indigo-800 dark:bg-indigo-900/20"
   >
-    {#if data.isPlus}
+    {#if data.isPlus && !data.isTrial}
       <!-- Already a Plus member — direct to My Profile for subscription management -->
       <p class="text-lg font-semibold dark:text-white">{m.plus_member_status()}</p>
       <a
@@ -225,6 +255,32 @@
         {m.plus_manage_subscription()}
       </a>
     {:else}
+      <!-- A trial user can subscribe at any time; the paid period starts on the day of payment. -->
+      {#if data.isTrial && trialEndText}
+        <p
+          class="mb-6 border-b border-indigo-200 pb-6 text-base font-medium text-gray-700 dark:border-indigo-800 dark:text-gray-200"
+        >
+          {m.trial_plus_page_line({ date: trialEndText })}
+        </p>
+      {/if}
+
+      <!-- ── Free trial (ai-docs/implementation/free-trial.md) ── -->
+      {#if data.trialEligible}
+        <div class="mb-6 border-b border-indigo-200 pb-6 dark:border-indigo-800">
+          <TrialButton next={nextPath} />
+        </div>
+      {:else if !data.isLoggedIn}
+        <div class="mb-6 border-b border-indigo-200 pb-6 dark:border-indigo-800">
+          <a
+            href={trialLoginHref}
+            class="inline-block rounded-lg border border-indigo-300 bg-white px-6 py-2.5 text-sm font-semibold text-indigo-700 hover:bg-indigo-50 dark:border-indigo-700 dark:bg-transparent dark:text-indigo-300 dark:hover:bg-indigo-900/30"
+          >
+            {m.trial_login_cta()}
+          </a>
+          <p class="mt-1.5 text-sm text-gray-600 dark:text-gray-300">{m.trial_start_note()}</p>
+        </div>
+      {/if}
+
       <!-- ── Billing interval toggle ── -->
       <div class="mx-auto mb-6 w-full max-w-sm space-y-2">
         <button

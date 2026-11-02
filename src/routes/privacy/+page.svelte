@@ -8,7 +8,7 @@
 
 <div class="mx-auto max-w-3xl px-4 py-10 text-left">
   <h1 class="mb-2">Privacy Policy</h1>
-  <p class="mb-8 text-gray-600 dark:text-gray-300">Last updated: 31 October 2026</p>
+  <p class="mb-8 text-gray-600 dark:text-gray-300">Last updated: 1 November 2026</p>
 
   <div class="space-y-4 text-base text-gray-700 dark:text-gray-300">
     <p>
@@ -40,6 +40,12 @@
         date. Payments are handled by our payment provider; we do not receive or store your card number.
       </li>
       <li>
+        <strong>Free trial record.</strong> If you start the free Plus trial, we keep the start date on
+        your account. To stop repeated free trials, we also keep a one-way, keyed hash of your email address
+        (not the address itself) for 12 months, also after you delete your account. We use it for nothing
+        else.
+      </li>
+      <li>
         <strong>Emails and reminders.</strong> We send login codes, and may send study reminders and welcome
         emails. Emails include an unsubscribe option where it applies.
       </li>
@@ -59,6 +65,10 @@
     <h2 class="mt-8">Why we use it</h2>
     <ul class="list-disc space-y-1 pl-6">
       <li>To provide your account, login and the learning features you ask for (contract).</li>
+      <li>
+        To stop repeated free trials by the same person, for example after deleting an account
+        (legitimate interest).
+      </li>
       <li>To process payments and keep your Plus access correct (contract, legal obligation).</li>
       <li>
         To keep the service secure and prevent abuse such as bots or bulk copying of content
@@ -113,6 +123,11 @@
       We keep your account data while your account exists. Billing records may be kept longer where
       the law requires. When you ask us to delete your account, we delete your personal data, except
       what we must keep by law.
+    </p>
+    <p>
+      One further exception is the free-trial hash described above. It is kept for 12 months, also
+      after your account is deleted, and then deleted automatically. The trial start date is part of
+      your account data and is deleted with the account.
     </p>
     <p>
       Technical and usage data (such as IP address, browser information and pages visited) is kept

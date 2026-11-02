@@ -1,4 +1,5 @@
 import type { PageServerLoad } from './$types';
+import { trialState } from '$lib/trial';
 import type { MetaProps } from 'runes-meta-tags';
 
 export const load: PageServerLoad = ({ locals, url }) => {
@@ -28,6 +29,11 @@ export const load: PageServerLoad = ({ locals, url }) => {
   return {
     pageMetaTags,
     isLoggedIn: locals.user !== null,
-    isPlus: locals.plan === 'plus'
+    isPlus: locals.plan === 'plus',
+    // A trial user is Plus, but still sees the pricing block (ai-docs/implementation/free-trial.md).
+    isTrial: trialState(locals.plan, locals.trialEndsAt) === 'active',
+    trialEndsAt: locals.trialEndsAt,
+    // The trial button shows to an eligible free user (ai-docs/implementation/free-trial.md).
+    trialEligible: locals.trialEligible
   };
 };
