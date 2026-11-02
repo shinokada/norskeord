@@ -1,5 +1,17 @@
 # norske-flashcard
 
+## 2.118.0
+
+### Minor Changes
+
+- - **New Features**
+    - Eligible users can start a free 30-day Norskeord Plus trial without entering payment details. The trial ends automatically unless they subscribe during the trial.
+    - Trial status, end date, and remaining time appear in relevant areas, with reminders as the trial nears its end.
+    - Trial information is available in the FAQ, and trial messaging is translated across supported languages.
+    - Updated teaser messaging to highlight unlocking everything with Plus.
+  - **Documentation**
+    - Updated the privacy policy and Plus terms with details about trial eligibility, data handling, and subscription timing.
+
 ## 2.117.0
 
 ### Minor Changes
