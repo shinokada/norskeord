@@ -50,6 +50,7 @@
   import ActivityChart from '$lib/components/ActivityChart.svelte';
   import DueBadge from '$lib/components/DueBadge.svelte';
   import TrialEndedNotice from '$lib/components/TrialEndedNotice.svelte';
+  import PlusUpsell from '$lib/components/PlusUpsell.svelte';
 
   // ── State ────────────────────────────────────────────────────────────────────
   let progressMap = $state<Record<string, CardProgress>>({});
@@ -868,22 +869,10 @@
           </div>
         {/if}
         {#if !isPlus && activeLevel !== 'A1'}
-          <div
-            class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
-          >
-            <p class="font-semibold text-orange-700 dark:text-orange-300">
-              ⭐ {m.stats_plus_category_heading()}
-            </p>
-            <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
-              {m.stats_plus_category_body()}
-            </p>
-            <a
-              href="/plus"
-              class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
-            >
-              {m.stats_plus_upgrade()}
-            </a>
-          </div>
+          <PlusUpsell
+            heading={m.stats_plus_category_heading()}
+            body={m.stats_plus_category_body()}
+          />
         {/if}
 
         <!-- ── Content panel: Uttrykk ──────────────────────────────────────────── -->
@@ -905,22 +894,7 @@
           </div>
         {/if}
         {#if !isPlus && activeLevel !== 'A1'}
-          <div
-            class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
-          >
-            <p class="font-semibold text-orange-700 dark:text-orange-300">
-              ⭐ {m.stats_plus_theme_heading()}
-            </p>
-            <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
-              {m.stats_plus_theme_body()}
-            </p>
-            <a
-              href="/plus"
-              class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
-            >
-              {m.stats_plus_upgrade()}
-            </a>
-          </div>
+          <PlusUpsell heading={m.stats_plus_theme_heading()} body={m.stats_plus_theme_body()} />
         {/if}
 
         <!-- ── Content panel: Grammar (closes the panel) ─────────────────────────────────────────────── -->
@@ -935,23 +909,11 @@
           practiceHref="/quiz?mode=sentences&level={encodeURIComponent(activeLevel)}"
         />
         {#if !isPlus && activeLevel !== 'A1'}
-          <div
-            data-testid="cloze-plus-upsell"
-            class="mb-8 rounded-xl border border-orange-200 bg-orange-50 px-6 py-5 dark:border-orange-800 dark:bg-orange-900/20"
-          >
-            <p class="font-semibold text-orange-700 dark:text-orange-300">
-              ⭐ {m.stats_plus_category_heading()}
-            </p>
-            <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
-              {m.stats_plus_category_body()}
-            </p>
-            <a
-              href="/plus"
-              class="mt-3 inline-block rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:bg-orange-400 dark:hover:bg-orange-500"
-            >
-              {m.stats_plus_upgrade()}
-            </a>
-          </div>
+          <PlusUpsell
+            testid="cloze-plus-upsell"
+            heading={m.stats_plus_category_heading()}
+            body={m.stats_plus_category_body()}
+          />
         {/if}
       {:else}
         <div
