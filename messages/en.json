@@ -9,6 +9,7 @@
   "trial_plus_page_line": "Your Plus trial ends on {date}. Subscribe to keep Plus: your subscription starts today.",
   "trial_nav_badge": "Trial: {count} days left",
   "trial_nav_badge_last": "Last day of your trial",
+  "trial_nav_try": "Try free",
   "trial_banner_text": "{count} days left in your Plus trial. Keep Plus: choose a plan.",
   "trial_banner_last": "Last day of your Plus trial. Keep Plus: choose a plan.",
   "trial_banner_cta": "Keep Plus",
