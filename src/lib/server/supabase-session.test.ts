@@ -1,5 +1,5 @@
-import { describe, it, expect } from 'vitest';
-import { hasSupabaseSession } from './supabase-session';
+import { describe, it, expect, vi } from 'vitest';
+import { clearSupabaseSessionCookies, hasSupabaseSession } from './supabase-session';
 
 const BASE = 'sb-abc123-auth-token';
 const jar = (...names: string[]) => ({
@@ -32,5 +32,30 @@ describe('hasSupabaseSession', () => {
 
   it('ignores a cookie with an empty value', () => {
     expect(hasSupabaseSession({ getAll: () => [{ name: BASE, value: '' }] }, BASE)).toBe(false);
+  });
+});
+
+describe('clearSupabaseSessionCookies', () => {
+  const run = (...names: string[]) => {
+    const del = vi.fn();
+    clearSupabaseSessionCookies({ ...jar(...names), delete: del });
+    return del;
+  };
+
+  it('deletes the session cookie and its chunks with path /', () => {
+    const del = run('locale', BASE, `${BASE}.0`, `${BASE}.1`);
+    expect(del).toHaveBeenCalledTimes(3);
+    expect(del).toHaveBeenCalledWith(BASE, { path: '/' });
+    expect(del).toHaveBeenCalledWith(`${BASE}.0`, { path: '/' });
+    expect(del).toHaveBeenCalledWith(`${BASE}.1`, { path: '/' });
+  });
+
+  it('leaves unrelated and look-alike cookies alone', () => {
+    const del = run('locale', 'theme', `${BASE}-code-verifier`, `${BASE}.x`, 'sb-abc123-other');
+    expect(del).not.toHaveBeenCalled();
+  });
+
+  it('does nothing without cookies', () => {
+    expect(run()).not.toHaveBeenCalled();
   });
 });
