@@ -97,6 +97,10 @@ export function deriveTrialFlags(
  * Whether a locked screen should offer the free trial. True for a signed-in user who can start
  * one (`trialEligible`) and for a signed-out visitor, who is sent to log in first and then comes
  * back. False for a signed-in user who already had a trial or paid. `data` is `page.data`.
+ *
+ * Do not use this on a prerendered page (home, guide, FAQ, ...): `page.data.user` is null there
+ * even for a signed-in user, so they would be treated as signed out. Nav and TrialButton fall
+ * back to the client `authStore` for that case; a CTA on such a page needs the same.
  */
 export function trialOffered(data: { user?: unknown; trialEligible?: unknown }): boolean {
   return !data.user || data.trialEligible === true;

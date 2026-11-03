@@ -3,6 +3,7 @@
   import { localeStore } from '$lib/localeStore.svelte';
   import { languageStore } from '$lib/stores/language.svelte';
   import { LANGUAGES, languageEntryForLocale } from '$lib/config';
+  import { DEFAULT_POST_LOGIN } from '$lib/post-login';
   import type { FlashcardLanguage } from '$lib/types';
 
   // Local open state — set to false to instantly close the modal without
@@ -81,7 +82,20 @@
     if (!canAdvance() || saving) return;
 
     if (current === 1) {
-      // The locale itself was already persisted by switchLocale().
+      // The interface language is saved when it is picked (switchLocale). Wait for that save;
+      // if it failed, try once more here, so "Next" also works as a retry.
+      saving = true;
+      error = null;
+      let localeOk = await localeSave;
+      if (!localeOk && pendingLocale) {
+        localeOk = await saveLocale(pendingLocale);
+        localeSave = Promise.resolve(localeOk);
+      }
+      saving = false;
+      if (!localeOk) {
+        error = m.onboarding_error_save();
+        return;
+      }
       if (!(await patch({ flashcard_language: flashcardLanguage }))) return;
       languageStore.set(flashcardLanguage);
       current = 2;
@@ -98,7 +112,14 @@
       });
       if (!ok) return;
       open = false;
-      window.location.href = levelHref(currentLevel);
+      // Only the default landing page (where login sends a new account) moves on to the chosen
+      // level. Anywhere else, e.g. the page a guest trial link brought them back to, stay there
+      // and reload so the layout picks up the finished onboarding.
+      if (window.location.pathname === DEFAULT_POST_LOGIN) {
+        window.location.href = levelHref(currentLevel);
+      } else {
+        window.location.reload();
+      }
     }
   }
 
@@ -107,19 +128,27 @@
   }
 
   // --- Locale switching (step 1) ---
-  async function switchLocale(code: string) {
+  // The save is chained, so quick taps on two languages reach the server in order, and the
+  // result is kept for next(): a failed save must stop step 1, as every other save does.
+  let localeSave: Promise<boolean> = Promise.resolve(true);
+  let pendingLocale: string | null = null;
+
+  function saveLocale(code: string): Promise<boolean> {
+    return fetch('/api/profile/language', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ locale: code })
+    })
+      .then((res) => res.ok)
+      .catch(() => false);
+  }
+
+  function switchLocale(code: string) {
     localeStore.set(code as typeof localeStore.current);
     // Keep the flashcard language in sync with the chosen language
     flashcardLanguage = defaultFlashcardLanguage(code);
-    try {
-      await fetch('/api/profile/language', {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ locale: code })
-      });
-    } catch {
-      // non-fatal
-    }
+    pendingLocale = code;
+    localeSave = localeSave.then(() => saveLocale(code));
   }
 </script>
 

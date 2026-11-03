@@ -1,5 +1,6 @@
 <script lang="ts">
   import { untrack } from 'svelte';
+  import { invalidateAll } from '$app/navigation';
   import type { Profile } from '$lib/server/profile';
   import { localeStore } from '$lib/localeStore.svelte';
   import { languageStore } from '$lib/stores/language.svelte';
@@ -135,12 +136,21 @@
     if (showExample) body.append('show_example', 'true');
     body.append('fsrs_retention', fsrsRetention);
 
+    let saved = false;
     try {
       const res = await fetch('?/updatePreferences', { method: 'POST', body });
       if (!res.ok) throw new Error();
+      saved = true;
       toast.show(m.profile_saved());
     } catch {
       toast.show(m.profile_error_generic(), 'error');
+    }
+
+    // Every save posts current_level, so the first save of any field creates the level. Reload
+    // the profile then, so OnboardingBanner sees it and can finish. Not on every autosave: this
+    // section saves on each change and invalidateAll() reruns all the load functions.
+    if (saved && !profile?.current_level && currentLevel) {
+      await invalidateAll().catch(() => {});
     }
   }
 
