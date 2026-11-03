@@ -19,6 +19,7 @@
   import * as m from '$lib/paraglide/messages.js';
   import { syncLocalProgressToPlus } from '$lib/plus-sync';
   import { TRIAL_START_EVENT, trackEvent } from '$lib/analytics';
+  import { authStore } from '$lib/stores/auth.svelte';
 
   interface Props {
     /** Same-origin path to load after the trial starts. Default: the current page. */
@@ -36,7 +37,11 @@
   let loading = $state(false);
   let errorKind = $state<'' | 'unavailable' | 'generic'>('');
 
-  const signedIn = $derived(!!page.data.user);
+  // Prerendered pages have no server user (page.data.user is null), so fall back to the client
+  // auth store, the same source Nav uses. Without it a signed-in user would see the login link
+  // here, and the progress sync after a trial start would be skipped.
+  const user = $derived(page.data.user ?? authStore.user);
+  const signedIn = $derived(!!user);
   const target = $derived(next || page.url.pathname + page.url.search);
   const loginHref = $derived(
     `/auth/login?next=${encodeURIComponent(loginNext || page.url.pathname + page.url.search)}`
@@ -73,7 +78,7 @@
       // because the full page load below would otherwise cancel the request.
       trackEvent(TRIAL_START_EVENT, { from_path: page.url.pathname, transport_type: 'beacon' });
 
-      const userId = page.data.user?.id;
+      const userId = user?.id;
       if (userId) {
         try {
           await syncLocalProgressToPlus(userId);

@@ -19,23 +19,25 @@
   const missingCount = $derived(missingFields.length);
   const allDone = $derived(missingCount === 0);
 
-  let dismissing = $state(false);
-
   // Auto-complete: if the user fills all fields via the profile page
-  // (not the slide flow), mark onboarding_done automatically.
+  // (not the slide flow), mark onboarding_done automatically. One attempt per page view: the
+  // flag is not reset on failure, otherwise a failing save would re-run this effect and resend
+  // the request forever. A reload tries again.
+  let attempted = false;
+
   $effect(() => {
-    if (allDone && !profile?.onboarding_done && !dismissing) {
-      dismissing = true;
+    if (allDone && !profile?.onboarding_done && !attempted) {
+      attempted = true;
       fetch('/api/profile/onboarding', {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ onboarding_done: true })
       })
-        .then(() => invalidateAll())
-        .catch(() => {})
-        .finally(() => {
-          dismissing = false;
-        });
+        .then((res) => {
+          // fetch resolves on 4xx/5xx too: only a saved flag is worth reloading the profile for.
+          if (res.ok) return invalidateAll();
+        })
+        .catch(() => {});
     }
   });
 </script>

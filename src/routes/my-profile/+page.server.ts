@@ -254,6 +254,14 @@ export const actions: Actions = {
       });
     }
 
+    // The user no longer exists: drop the session cookies too. 'local' only clears this browser's
+    // session and makes no API call, which would fail for a deleted user. Never blocks the redirect.
+    try {
+      await locals.supabase.auth.signOut({ scope: 'local' });
+    } catch (err) {
+      console.error('[delete-account] sign-out failed:', err);
+    }
+
     redirect(302, '/?deleted=1');
   },
 
