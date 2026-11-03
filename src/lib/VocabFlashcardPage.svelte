@@ -1165,13 +1165,17 @@
                   ? m.part_adverb()
                   : current.entry.part === 'pronoun'
                     ? m.part_pronoun()
-                    : current.entry.part === 'preposition'
-                      ? m.part_preposition()
-                      : current.entry.part === 'conjunction'
-                        ? m.part_conjunction()
-                        : current.entry.part === 'interjection'
-                          ? m.part_interjection()
-                          : m.part_phrase()}
+                    : current.entry.part === 'determiner'
+                      ? m.part_determiner()
+                      : current.entry.part === 'numeral'
+                        ? m.part_numeral()
+                        : current.entry.part === 'preposition'
+                          ? m.part_preposition()
+                          : current.entry.part === 'conjunction'
+                            ? m.part_conjunction()
+                            : current.entry.part === 'interjection'
+                              ? m.part_interjection()
+                              : m.part_phrase()}
         </span>
       {/if}
       <div class="flex-1">

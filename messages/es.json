@@ -151,6 +151,8 @@
   "part_conjunction": "Conjunción",
   "part_interjection": "Interjección",
   "part_phrase": "Frase",
+  "part_determiner": "Determinante",
+  "part_numeral": "Numeral",
   "stats_title": "Tu progreso",
   "stats_title_named": "Progreso de {name}",
   "stats_subtitle_guest": "El progreso se guarda en este dispositivo.",

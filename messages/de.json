@@ -151,6 +151,8 @@
   "part_conjunction": "Konjunktion",
   "part_interjection": "Interjektion",
   "part_phrase": "Phrase",
+  "part_determiner": "Determinativ",
+  "part_numeral": "Numerale",
   "stats_title": "Deine Fortschritte",
   "stats_title_named": "Fortschritte von {name}",
   "stats_subtitle_guest": "Fortschritte werden auf diesem Gerät gespeichert.",

@@ -151,6 +151,8 @@
   "part_conjunction": "Konjunksjon",
   "part_interjection": "Interjeksjon",
   "part_phrase": "Frase",
+  "part_determiner": "Determinativ",
+  "part_numeral": "Tallord",
   "stats_title": "Din fremgang",
   "stats_title_named": "{name}s fremgang",
   "stats_subtitle_guest": "Fremgangen lagres på denne enheten.",

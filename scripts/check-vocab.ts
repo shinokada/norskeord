@@ -94,6 +94,7 @@ const VALID_PARTS = new Set([
   'adjective',
   'adverb',
   'pronoun',
+  'determiner',
   'numeral',
   'preposition',
   'conjunction',

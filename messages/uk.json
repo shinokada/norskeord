@@ -151,6 +151,8 @@
   "part_conjunction": "Сполучник",
   "part_interjection": "Вигук",
   "part_phrase": "Фраза",
+  "part_determiner": "Детермінатив",
+  "part_numeral": "Числівник",
   "stats_title": "Ваш прогрес",
   "stats_title_named": "Прогрес {name}",
   "stats_subtitle_guest": "Прогрес збережено на цьому пристрої.",

@@ -15,6 +15,8 @@
     'adjective',
     'adverb',
     'pronoun',
+    'determiner',
+    'numeral',
     'preposition',
     'conjunction',
     'interjection',

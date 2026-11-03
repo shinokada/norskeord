@@ -150,6 +150,8 @@
   "part_conjunction": "Conjunction",
   "part_interjection": "Interjection",
   "part_phrase": "Phrase",
+  "part_determiner": "Determiner",
+  "part_numeral": "Numeral",
   "stats_title": "Your Progress",
   "stats_title_named": "{name}'s Progress",
   "stats_subtitle_guest": "Progress is saved to this device.",

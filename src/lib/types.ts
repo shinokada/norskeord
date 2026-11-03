@@ -10,6 +10,7 @@ export type PartOfSpeech =
   | 'adjective'
   | 'adverb'
   | 'pronoun'
+  | 'determiner'
   | 'numeral'
   | 'preposition'
   | 'conjunction'
