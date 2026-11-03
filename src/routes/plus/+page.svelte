@@ -73,8 +73,8 @@
 
   // A guest who wants the free trial logs in and comes back to /plus (the page to return to is
   // kept). The trial does not start by itself: the button shows after login.
-  const trialLoginHref = $derived(
-    `/auth/login?next=${encodeURIComponent(nextPath ? `/plus?next=${encodeURIComponent(nextPath)}` : '/plus')}`
+  const trialLoginNext = $derived(
+    nextPath ? `/plus?next=${encodeURIComponent(nextPath)}` : '/plus'
   );
 
   type TableCell = { value: string; yes: boolean; soon?: boolean };
@@ -264,23 +264,6 @@
         </p>
       {/if}
 
-      <!-- ── Free trial (ai-docs/implementation/free-trial.md) ── -->
-      {#if data.trialEligible}
-        <div class="mb-6 border-b border-indigo-200 pb-6 dark:border-indigo-800">
-          <TrialButton next={nextPath} />
-        </div>
-      {:else if !data.isLoggedIn}
-        <div class="mb-6 border-b border-indigo-200 pb-6 dark:border-indigo-800">
-          <a
-            href={trialLoginHref}
-            class="inline-block rounded-lg border border-indigo-300 bg-white px-6 py-2.5 text-sm font-semibold text-indigo-700 hover:bg-indigo-50 dark:border-indigo-700 dark:bg-transparent dark:text-indigo-300 dark:hover:bg-indigo-900/30"
-          >
-            {m.trial_login_cta()}
-          </a>
-          <p class="mt-1.5 text-sm text-gray-600 dark:text-gray-300">{m.trial_start_note()}</p>
-        </div>
-      {/if}
-
       <!-- ── Billing interval toggle ── -->
       <div class="mx-auto mb-6 w-full max-w-sm space-y-2">
         <button
@@ -382,7 +365,7 @@
           type="button"
           onclick={handleCheckout}
           disabled={checkoutLoading}
-          class="rounded-lg bg-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow hover:bg-indigo-700 disabled:opacity-50"
+          class="rounded-lg bg-orange-500 px-8 py-3 text-sm font-semibold text-white shadow hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none disabled:opacity-50"
         >
           {checkoutLoading
             ? m.plus_activating()
@@ -393,7 +376,7 @@
       {:else}
         <a
           href={loginHref}
-          class="inline-block rounded-lg bg-indigo-600 px-8 py-3 text-sm font-semibold text-white shadow hover:bg-indigo-700"
+          class="inline-block rounded-lg bg-orange-500 px-8 py-3 text-sm font-semibold text-white shadow hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none"
         >
           {m.plus_sign_in_to_upgrade()}
         </a>
@@ -401,6 +384,16 @@
 
       {#if checkoutError}
         <p class="mt-3 text-sm text-red-500">{checkoutError}</p>
+      {/if}
+
+      <!-- ── Free trial (ai-docs/implementation/free-trial.md) ──
+           Below the plans, as the outlined secondary: the page leads with pricing. Signed out:
+           a login link in the same style; after login the visitor is back here (with `next`
+           kept) and sees the button. -->
+      {#if data.trialEligible || !data.isLoggedIn}
+        <div class="mt-6 border-t border-indigo-200 pt-6 dark:border-indigo-800">
+          <TrialButton variant="secondary" next={nextPath} loginNext={trialLoginNext} />
+        </div>
       {/if}
     {/if}
   </div>

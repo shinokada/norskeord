@@ -569,7 +569,9 @@
       // study_days already counts grammar reviews (saveGrammarProgress calls
       // recordStudyDay), so no separate grammar handling is needed here.
       const studyDays = await loadStudyDays(userId);
-      activityCells = buildActivityGrid(studyDays, 26);
+      // 53 weeks (a year) for Plus: the chart shows all of it on a wide screen and 26 weeks
+      // on a narrow one (ActivityChart.svelte).
+      activityCells = buildActivityGrid(studyDays, 53);
       // Derive streak from study_days
       const studyDaySet = new Set(Object.keys(studyDays));
       let s = 0;
@@ -629,7 +631,7 @@
       grammarMap = {};
       quizStats = {};
       clozeStats = {};
-      activityCells = buildActivityGrid({}, 26);
+      activityCells = buildActivityGrid({}, isPlus ? 53 : 26);
       streak = 0;
     } finally {
       confirmReset = false;

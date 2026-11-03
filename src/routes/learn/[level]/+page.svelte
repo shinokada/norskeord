@@ -241,7 +241,7 @@
             : `/${data.level}/${cat.slug}`}
           class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
             {locked
-            ? 'border-gray-200 bg-white text-gray-500 opacity-60 dark:border-gray-700 dark:bg-indigo-950/40 dark:text-gray-400'
+            ? 'border-indigo-200 bg-white text-gray-600 hover:border-indigo-300 hover:text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-gray-300 dark:hover:border-indigo-500 dark:hover:text-indigo-300'
             : 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'}"
         >
           {categoryLabel(data.level, cat.slug)}{#if locked}
@@ -299,7 +299,7 @@
                   : `/${data.level}/uttrykk?theme=${t.theme}`}
                 class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
                   {themeLocked
-                  ? 'border-gray-200 bg-white text-gray-500 opacity-60 dark:border-gray-700 dark:bg-indigo-950/40 dark:text-gray-400'
+                  ? 'border-indigo-200 bg-white text-gray-600 hover:border-indigo-300 hover:text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-gray-300 dark:hover:border-indigo-500 dark:hover:text-indigo-300'
                   : 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'}"
               >
                 {categoryLabel(data.level, t.theme)} ({t.count}){#if themeLocked}
@@ -319,7 +319,7 @@
                   : `/${data.level}/uttrykk?theme=${UTTRYKK_OTHERS_THEME}`}
                 class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
                   {othersLocked
-                  ? 'border-gray-200 bg-white text-gray-500 opacity-60 dark:border-gray-700 dark:bg-indigo-950/40 dark:text-gray-400'
+                  ? 'border-indigo-200 bg-white text-gray-600 hover:border-indigo-300 hover:text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-gray-300 dark:hover:border-indigo-500 dark:hover:text-indigo-300'
                   : 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'}"
               >
                 Others ({uttrykkThemeGroups.othersCount}){#if othersLocked}
@@ -358,7 +358,7 @@
                 : `/${data.level}/${t.theme}?from=uttrykk`}
               class="inline-flex items-center gap-1 rounded-full border px-4 py-2 text-sm font-medium transition
                 {catLocked
-                ? 'border-gray-200 bg-white text-gray-500 opacity-60 dark:border-gray-700 dark:bg-indigo-950/40 dark:text-gray-400'
+                ? 'border-indigo-200 bg-white text-gray-600 hover:border-indigo-300 hover:text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-gray-300 dark:hover:border-indigo-500 dark:hover:text-indigo-300'
                 : 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'}"
             >
               {categoryLabel(data.level, t.theme)} ({t.count}){#if catLocked}
@@ -389,20 +389,14 @@
           {@const rule = GRAMMAR_RULES[t.topic]}
           {@const locked = !isPlus && !t.free}
           <a
-            href={locked
-              ? '/plus?ref=hub-grammar'
-              : `/grammar/${t.topic}?from=${data.level}&level=${data.levelUpper}`}
+            href={`/grammar/${t.topic}?from=${data.level}&level=${data.levelUpper}`}
             class="group flex flex-col rounded-2xl border p-4 text-left transition
               {locked
               ? 'border-gray-200 bg-white dark:border-gray-700 dark:bg-indigo-950/40'
               : 'border-gray-200 bg-white shadow-sm hover:shadow-md dark:border-white/10 dark:bg-indigo-950/60 dark:hover:bg-indigo-950/80'}"
           >
             <div class="mb-1 flex items-start justify-between gap-2">
-              <h3
-                class="text-sm font-semibold {locked
-                  ? 'opacity-60 '
-                  : ''}text-gray-800 dark:text-gray-100"
-              >
+              <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-100">
                 {rule ? rule.titleNb : t.topic}
               </h3>
               {#if locked}
@@ -424,11 +418,7 @@
                 {/each}
               </div>
             {/if}
-            <p
-              class="line-clamp-2 text-sm {locked
-                ? 'opacity-60 '
-                : ''}text-gray-600 dark:text-gray-300"
-            >
+            <p class="line-clamp-2 text-sm text-gray-600 dark:text-gray-300">
               {rule ? rule.explanationNb : ''}
             </p>
             <div class="mt-2 text-xs text-gray-600 dark:text-gray-300">{t.total} questions</div>

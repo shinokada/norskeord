@@ -1,5 +1,8 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "quiz_plus_only_count_trial": "+{count} med Plus, gratis i 30 dager →",
+  "grammar_plus_locked_title_trial": "Prøv alle grammatikkemnene gratis i 30 dager",
+  "teaser_heading_trial": "Prøv alle kortene gratis i 30 dager",
   "trial_start_cta": "Prøv Plus gratis i 30 dager",
   "trial_start_loading": "Starter prøveperioden…",
   "trial_start_note": "Du trenger ikke betalingskort. Prøveperioden avsluttes av seg selv etter 30 dager.",

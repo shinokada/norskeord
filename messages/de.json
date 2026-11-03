@@ -1,5 +1,8 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "quiz_plus_only_count_trial": "+{count} mit Plus, 30 Tage kostenlos →",
+  "grammar_plus_locked_title_trial": "Alle Grammatikthemen 30 Tage kostenlos testen",
+  "teaser_heading_trial": "Alle Karten 30 Tage kostenlos testen",
   "trial_start_cta": "Plus 30 Tage kostenlos testen",
   "trial_start_loading": "Testphase wird gestartet…",
   "trial_start_note": "Keine Karte nötig. Die Testphase endet nach 30 Tagen von selbst.",

@@ -1,5 +1,8 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "quiz_plus_only_count_trial": "+{count} з Plus, безкоштовно 30 днів →",
+  "grammar_plus_locked_title_trial": "Спробуйте всі теми граматики безкоштовно протягом 30 днів",
+  "teaser_heading_trial": "Спробуйте всі картки безкоштовно протягом 30 днів",
   "trial_start_cta": "Спробуйте Plus безкоштовно 30 днів",
   "trial_start_loading": "Запускаємо пробний період…",
   "trial_start_note": "Картка не потрібна. Пробний період завершується сам через 30 днів.",

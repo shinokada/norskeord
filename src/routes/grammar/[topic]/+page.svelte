@@ -4,7 +4,9 @@
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import TopicTabs from '$lib/components/grammar/TopicTabs.svelte';
   import TopicNav from '$lib/components/grammar/TopicNav.svelte';
+  import PlusCtas from '$lib/components/PlusCtas.svelte';
   import { chapterHref } from '$lib/grammar/overview';
+  import { trialOffered } from '$lib/trial';
   import {
     lockedFromCounts,
     parseTabParam,
@@ -156,19 +158,19 @@
       </section>
     {/if}
     <div
+      data-testid="topic-locked"
       class="rounded-2xl border border-amber-300 bg-amber-50 p-6 text-center shadow-sm dark:border-amber-700 dark:bg-amber-900/20"
     >
       <p class="mb-2 text-2xl" aria-hidden="true">🔒</p>
       <h2 class="mb-2 text-lg font-bold text-amber-800 dark:text-amber-200">
-        {m.grammar_plus_locked_title()}
+        {trialOffered(page.data)
+          ? m.grammar_plus_locked_title_trial()
+          : m.grammar_plus_locked_title()}
       </h2>
       <p class="mb-4 text-sm text-amber-700 dark:text-amber-300">{m.grammar_plus_locked_desc()}</p>
-      <a
-        href="/plus?ref=grammar-topic-lock"
-        class="inline-block rounded-lg bg-amber-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-amber-700 focus:ring-4 focus:ring-amber-300 focus:outline-none"
-      >
-        {m.grammar_plus_cta()}
-      </a>
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <PlusCtas href="/plus?ref=grammar-topic-lock" label={m.grammar_plus_cta()} />
+      </div>
     </div>
   {:else}
     <!-- Active level-scope indicator + escape hatch (only once real content

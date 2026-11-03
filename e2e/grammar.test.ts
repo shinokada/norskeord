@@ -108,8 +108,11 @@ test('free user sees Plus upsell on grammar index when locked topics exist', asy
   await page.goto('/grammar');
   // Wait for CSR hydration: the chapter map must be rendered first
   await expect(page.getByTestId('chapter-card').first()).toBeVisible({ timeout: 8000 });
-  // The upsell banner is a <p> tag with text like "7 more topics with Plus"
-  await expect(page.getByText(/\d+ more topics with Plus/i)).toBeVisible({ timeout: 5000 });
+  // The upsell banner heading depends on the visitor (trial headline for a signed-out
+  // visitor, "N more topics with Plus" otherwise), so assert the banner and its CTAs.
+  const upsell = page.getByTestId('grammar-upsell');
+  await expect(upsell).toBeVisible({ timeout: 5000 });
+  await expect(upsell.getByRole('link', { name: /get plus|få plus/i })).toBeVisible();
 });
 
 // ===========================================================================
@@ -302,7 +305,7 @@ test('free user on a Plus-only topic sees a teaser with level counts and the ups
   await expect(page.getByTestId('topic-teaser')).toBeVisible({ timeout: 8000 });
   await expect(page.getByTestId('topic-teaser-text')).not.toBeEmpty();
   await expect(page.getByTestId('topic-teaser-levels')).toContainText(/\d+/);
-  await expect(page.getByText(/This topic is a Plus feature|Plus-funksjon/i)).toBeVisible();
+  await expect(page.getByTestId('topic-locked')).toBeVisible();
   await expect(page.getByRole('link', { name: /get plus|få plus/i })).toBeVisible();
   await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toHaveCount(0);
 });
@@ -348,7 +351,7 @@ test('level chip hides chapters with no questions at that level and is forwarded
   // upsell banner is hidden while a filter is active.
   await page.getByRole('button', { name: 'A1', exact: true }).click();
   await expect.poll(() => cards.count()).toBeLessThan(all);
-  await expect(page.getByText(/\d+ more topics with Plus/i)).toHaveCount(0);
+  await expect(page.getByTestId('grammar-upsell')).toHaveCount(0);
   await expect(cards.first()).toHaveAttribute('href', /\?level=A1$/);
 
   // Deselecting restores the full map and plain links.
@@ -470,9 +473,7 @@ test("free user hitting a locked segment via ?level= sees the paywall, not the t
   // or a level-hub link that points at ?level=B1 must show the paywall for
   // a free user, instead of silently falling back to the free A1 questions.
   await page.goto('/grammar/noun-plurals?level=B1');
-  await expect(page.getByText(/This topic is a Plus feature|Plus-funksjon/i)).toBeVisible({
-    timeout: 8000
-  });
+  await expect(page.getByTestId('topic-locked')).toBeVisible({ timeout: 8000 });
   // Confirm it's genuinely the lock screen, not a session that happens to
   // also render some text — the question counter must not appear.
   await expect(page.getByText(/question \d+ of|spørsmål \d+ av/i)).toHaveCount(0);

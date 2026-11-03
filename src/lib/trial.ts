@@ -92,3 +92,12 @@ export function deriveTrialFlags(
       signedIn && plan === 'free' && !row?.trial_started_at && !row?.lemon_squeezy_subscription_id
   };
 }
+
+/**
+ * Whether a locked screen should offer the free trial. True for a signed-in user who can start
+ * one (`trialEligible`) and for a signed-out visitor, who is sent to log in first and then comes
+ * back. False for a signed-in user who already had a trial or paid. `data` is `page.data`.
+ */
+export function trialOffered(data: { user?: unknown; trialEligible?: unknown }): boolean {
+  return !data.user || data.trialEligible === true;
+}

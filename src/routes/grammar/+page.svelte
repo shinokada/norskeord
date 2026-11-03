@@ -16,6 +16,8 @@
   import ChapterCard from '$lib/components/grammar/ChapterCard.svelte';
   import TopicRow from '$lib/components/grammar/TopicRow.svelte';
   import StartHere from '$lib/components/grammar/StartHere.svelte';
+  import PlusCtas from '$lib/components/PlusCtas.svelte';
+  import { trialOffered } from '$lib/trial';
   import { localeStore } from '$lib/localeStore.svelte';
   import type { CardProgress, CEFRLevel } from '$lib/types';
   import * as m from '$lib/paraglide/messages';
@@ -209,20 +211,20 @@
   <!-- Upsell: one banner for free users while nothing is filtered -->
   {#if !isPlus && !isFiltering && lockedSegmentsCount > 0}
     <div
+      data-testid="grammar-upsell"
       class="mb-8 rounded-2xl border border-indigo-200 bg-indigo-50 p-5 dark:border-indigo-800 dark:bg-indigo-900/20"
     >
       <p class="mb-1 text-base font-semibold text-indigo-800 dark:text-indigo-200">
-        {m.grammar_more_topics_plus({ count: lockedSegmentsCount })}
+        {trialOffered(page.data)
+          ? m.grammar_plus_locked_title_trial()
+          : m.grammar_more_topics_plus({ count: lockedSegmentsCount })}
       </p>
       <p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
         {m.grammar_plus_upsell_text()}
       </p>
-      <a
-        href="/plus?ref=grammar-topics"
-        class="inline-block rounded-lg bg-indigo-600 px-5 py-2 text-sm font-semibold text-white hover:bg-indigo-700"
-      >
-        {m.grammar_plus_cta()}
-      </a>
+      <div class="flex flex-wrap items-center gap-3">
+        <PlusCtas href="/plus?ref=grammar-topics" label={m.grammar_plus_cta()} />
+      </div>
     </div>
   {/if}
 

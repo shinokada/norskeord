@@ -85,13 +85,17 @@ test.describe('Gate — free user redirect', () => {
     await expect(page.getByRole('link', { name: /Test 3 🔒/i }).first()).toBeVisible();
   });
 
-  test('free user clicking Test 2 pill is redirected to /plus', async ({ page }) => {
+  test('signed-out visitor clicking Test 2 pill goes to login and back to /norskproven', async ({
+    page
+  }) => {
     await page.goto('/norskproven');
-    await page
-      .getByRole('link', { name: /Test 2 🔒/i })
-      .first()
-      .click();
-    await expect(page).toHaveURL(/\/plus/);
+    const pill = page.getByRole('link', { name: /Test 2 🔒/i }).first();
+    await expect(pill).toHaveAttribute(
+      'href',
+      `/auth/login?next=${encodeURIComponent('/norskproven')}`
+    );
+    await pill.click();
+    await expect(page).toHaveURL(/\/auth\/login/);
   });
 
   test('/norskproven/1/reading/a2 is accessible to free users', async ({ page }) => {
