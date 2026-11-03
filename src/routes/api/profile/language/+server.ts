@@ -1,11 +1,12 @@
 /**
  * PATCH /api/profile/language
  *
- * Lightweight endpoint used by the nav language toggle to persist the chosen
- * UI language to the user's profile without triggering a full page reload or
- * the redirect side-effect that lives in the `updatePreferences` form action.
+ * Lightweight endpoint used by the nav language toggle and the onboarding language step to
+ * persist the chosen UI language to the user's profile without triggering a full page reload or
+ * the redirect side-effect that lives in the `updatePreferences` form action. Idempotent: saving
+ * the locale already stored is a no-op apart from `updated_at`.
  *
- * Body (JSON): { locale: 'en' | 'nb' }
+ * Body (JSON): { locale: <any `code` in LANGUAGES> }
  * Auth: requires a valid session cookie (locals.user).
  */
 import { json } from '@sveltejs/kit';

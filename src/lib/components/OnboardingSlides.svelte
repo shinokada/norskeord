@@ -1,3 +1,13 @@
+<script module lang="ts">
+  // Locale-save state lives at module scope, not in the component: switchLocale changes
+  // localeStore.current, which re-creates this component via the {#key} block in
+  // +layout.svelte. Instance state would reset and "Next" could advance while the save is
+  // pending or after it failed. Only written from browser event handlers, so nothing is shared
+  // between SSR requests.
+  let localeSave: Promise<boolean> = Promise.resolve(true);
+  let pendingLocale: string | null = null;
+</script>
+
 <script lang="ts">
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
@@ -83,13 +93,17 @@
 
     if (current === 1) {
       // The interface language is saved when it is picked (switchLocale). Wait for that save;
-      // if it failed, try once more here, so "Next" also works as a retry.
+      // if it failed, try once more here, so "Next" also works as a retry. If nothing was picked
+      // (the browser locale was already an offered language), save the current locale now so
+      // ui_language is never left unset.
       saving = true;
       error = null;
       let localeOk = await localeSave;
-      if (!localeOk && pendingLocale) {
-        localeOk = await saveLocale(pendingLocale);
+      if (!localeOk || !pendingLocale) {
+        const code = pendingLocale ?? localeStore.current;
+        localeOk = await saveLocale(code);
         localeSave = Promise.resolve(localeOk);
+        if (localeOk) pendingLocale = code;
       }
       saving = false;
       if (!localeOk) {
@@ -130,8 +144,7 @@
   // --- Locale switching (step 1) ---
   // The save is chained, so quick taps on two languages reach the server in order, and the
   // result is kept for next(): a failed save must stop step 1, as every other save does.
-  let localeSave: Promise<boolean> = Promise.resolve(true);
-  let pendingLocale: string | null = null;
+  // (localeSave and pendingLocale are declared in the module script above.)
 
   function saveLocale(code: string): Promise<boolean> {
     return fetch('/api/profile/language', {
