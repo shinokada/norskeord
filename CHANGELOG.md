@@ -1,5 +1,14 @@
 # norske-flashcard
 
+## 2.120.0
+
+### Minor Changes
+
+- - **New Features**
+    - When advancing to a question, the progress bar scrolls into view if it is outside the upper half of the screen. Scrolling respects reduced-motion preferences and is smooth otherwise.
+  - **Bug Fixes**
+    - Clarified Norwegian subordinate-clause word order, including subject–verb inversion in the following main clause and the placement of sentence adverbs in subordinate and main clauses.
+
 ## 2.119.1
 
 ### Patch Changes
