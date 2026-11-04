@@ -1,5 +1,19 @@
 # norske-flashcard
 
+## 2.119.0
+
+### Minor Changes
+
+- - **New Features**
+    - Trial offers are available from the homepage, navigation, and locked quiz, grammar, and practice-test content. Signed-out visitors can sign in and return to where they started.
+    - Free-tier progress sections include Plus upgrade options.
+    - Onboarding lets users choose an interface language, optionally provide a display name, and select a Norwegian level. The chosen language is also used for flashcards, and daily reminders are enabled upon completion.
+  - **Improvements**
+    - Account email appears when no display name is provided. Locked grammar cards link to their topics, and Plus users can view up to 53 weeks of activity on wide screens.
+    - Account deletion clears the session.
+  - **Localization**
+    - Added trial and onboarding messages in English, German, Spanish, Norwegian, and Ukrainian, plus labels for determiner and numeral vocabulary categories.
+
 ## 2.118.0
 
 ### Minor Changes
