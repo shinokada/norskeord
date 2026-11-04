@@ -134,13 +134,15 @@ export const HELSETNINGER_RULES: Record<string, GrammarRule> = {
     titleEn: 'A subordinate clause as the front field',
     titleNb: 'Leddsetning som setningens fundament',
     explanationEn:
-      "When a whole subordinate clause fills the sentence's front field, the main clause verb " +
-      'still comes second, but the resulting word order — and the placement of sentence ' +
-      'adverbials like jo/faktisk/egentlig inside the main clause — trips up even strong ' +
-      'learners: "Det handler om hva man egentlig mener man skal bygge opp skolen rundt."',
+      'When a whole subordinate clause fills the front field, the main clause that follows ' +
+      'has inverted word order: the verb comes before the subject. Inside the subordinate ' +
+      'clause, sentence adverbials like egentlig/faktisk/jo stand BEFORE the verb. In the main ' +
+      'clause they stand AFTER the verb and subject: "Selv om han egentlig er syk, går han faktisk på jobb."',
     explanationNb:
-      'Når en hel leddsetning fyller setningens fundamentplass, kommer hovedsetningens verb likevel på andreplass.\n\n' +
-      'Men den resulterende ordstillingen — og plasseringen av setningsadverbial som jo/faktisk/egentlig inne i hovedsetningen — snubler selv sterke innlærere: «Det handler om hva man egentlig mener man skal bygge opp skolen rundt.»'
+      'Når en leddsetning står først i setningen (i fundamentet), kommer hovedsetningen etter den med omvendt ordstilling: verbet står før subjektet, på andreplass.\n\n' +
+      '• **i leddsetningen** — subjekt, setningsadverbial, verb: «Selv om han **egentlig er** syk, …»\n' +
+      '• **i hovedsetningen** — verb, subjekt, setningsadverbial: «…, **går han faktisk** på jobb.»\n\n' +
+      'Setningsadverbial som «egentlig», «faktisk» og «jo» står altså foran verbet i leddsetningen, men etter verbet og subjektet i hovedsetningen.'
   },
 
   imperativ: {
