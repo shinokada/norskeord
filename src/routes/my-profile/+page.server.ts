@@ -3,6 +3,7 @@ import { SUPABASE_SERVICE_ROLE_KEY, LEMONSQUEEZY_API_KEY } from '$env/static/pri
 import { PUBLIC_SUPABASE_URL } from '$env/static/public';
 import { createClient } from '@supabase/supabase-js';
 import { getProfile, upsertProfile, deleteAccount } from '$lib/server/profile';
+import { clearSupabaseSessionCookies } from '$lib/server/supabase-session';
 import type { PageServerLoad, Actions } from './$types';
 import type { ProfileUpdate } from '$lib/server/profile';
 
@@ -202,7 +203,7 @@ export const actions: Actions = {
     return { success: true, action: 'updatePreferences' };
   },
 
-  deleteAccount: async ({ locals }) => {
+  deleteAccount: async ({ locals, cookies }) => {
     if (!locals.user) redirect(302, '/auth/login');
 
     const userId = locals.user.id;
@@ -253,6 +254,11 @@ export const actions: Actions = {
         message: 'Failed to delete account. Please try again or contact support.'
       });
     }
+
+    // The user no longer exists: drop the session cookies without a Supabase call. signOut()
+    // sends a logout request even for scope 'local', which could delay this redirect when the
+    // Auth service is slow. The hook's getUser() check already treats the old token as signed out.
+    clearSupabaseSessionCookies(cookies);
 
     redirect(302, '/?deleted=1');
   },

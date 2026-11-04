@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { TRIAL_DAYS, deriveTrialFlags, trialDaysLeft, trialState } from './trial';
+import { TRIAL_DAYS, deriveTrialFlags, trialDaysLeft, trialOffered, trialState } from './trial';
 
 const NOW = new Date('2026-11-10T12:00:00.000Z');
 const HOUR = 60 * 60 * 1000;
@@ -9,6 +9,22 @@ const at = (offsetMs: number) => new Date(NOW.getTime() + offsetMs).toISOString(
 describe('TRIAL_DAYS', () => {
   it('is 30', () => {
     expect(TRIAL_DAYS).toBe(30);
+  });
+});
+
+describe('trialOffered', () => {
+  it('offers the trial to a signed-out visitor', () => {
+    expect(trialOffered({ user: null, trialEligible: false })).toBe(true);
+    expect(trialOffered({})).toBe(true);
+  });
+
+  it('offers it to a signed-in user who can start one', () => {
+    expect(trialOffered({ user: { id: 'u1' }, trialEligible: true })).toBe(true);
+  });
+
+  it('does not offer it to a signed-in user who already had a trial or paid', () => {
+    expect(trialOffered({ user: { id: 'u1' }, trialEligible: false })).toBe(false);
+    expect(trialOffered({ user: { id: 'u1' } })).toBe(false);
   });
 });
 

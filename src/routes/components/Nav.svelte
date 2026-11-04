@@ -44,6 +44,7 @@
   import { parkForLogout } from '$lib/parked-progress';
   import Search from '$lib/components/Search.svelte';
   import { trialView } from '$lib/stores/trial.svelte';
+  import TrialModal from '$lib/components/TrialModal.svelte';
 
   const sidebarUi = uiHelpers();
   const closeDemoSidebar = sidebarUi.close;
@@ -77,6 +78,11 @@
 
   const levels = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
   const effectiveIsPlus = $derived(user ? isPlus : authStore.isPlus);
+  // Same flag the trial button uses (hooks.server.ts); authStore covers prerendered pages.
+  const trialEligible = $derived(
+    user ? page.data.trialEligible === true : authStore.trialEligible === true
+  );
+  let trialModalOpen = $state(false);
 
   // Language switcher
   let langDropdownOpen = $state(false);
@@ -296,12 +302,23 @@
       </Dropdown>
     {/if}
     {#if effectiveUser && !effectiveIsPlus}
-      <a
-        href="/plus"
-        class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
-      >
-        {m.nav_plus_badge()}
-      </a>
+      {#if trialEligible}
+        <button
+          type="button"
+          onclick={() => (trialModalOpen = true)}
+          class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
+        >
+          {m.trial_nav_try()}
+        </button>
+        <TrialModal bind:open={trialModalOpen} />
+      {:else}
+        <a
+          href="/plus"
+          class="hidden rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:inline-block"
+        >
+          {m.nav_plus_badge()}
+        </a>
+      {/if}
     {:else if effectiveUser && trialView.state === 'active'}
       <!-- Trial countdown (ai-docs/implementation/free-trial.md). Hidden below sm, like the badge
            above: on a phone the sidebar item shows it. -->

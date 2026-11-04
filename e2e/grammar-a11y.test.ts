@@ -18,9 +18,14 @@ test.describe('topic tabs (keyboard)', () => {
     await expect(rule).toHaveAttribute('tabindex', '0');
     await expect(practice).toHaveAttribute('tabindex', '-1');
 
-    await rule.focus();
-    await page.keyboard.press('ArrowRight');
-    await expect(practice).toHaveAttribute('aria-selected', 'true');
+    // The tabs are server-rendered, so the checks above already pass on the server HTML and a key
+    // press can land before hydration attaches the handler and do nothing. Retry until it takes
+    // effect.
+    await expect(async () => {
+      await rule.focus();
+      await page.keyboard.press('ArrowRight');
+      await expect(practice).toHaveAttribute('aria-selected', 'true', { timeout: 500 });
+    }).toPass({ timeout: 8000 });
     await expect(practice).toBeFocused();
     await expect(practice).toHaveAttribute('tabindex', '0');
     await expect(rule).toHaveAttribute('tabindex', '-1');

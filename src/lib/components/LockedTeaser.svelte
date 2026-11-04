@@ -8,8 +8,9 @@
    */
   import { page } from '$app/state';
   import { Flashcard } from '$lib';
-  import TrialButton from '$lib/components/TrialButton.svelte';
+  import PlusCtas from '$lib/components/PlusCtas.svelte';
   import { trackEvent, LOCKED_LOGIN_CLICK_EVENT } from '$lib/analytics';
+  import { trialOffered } from '$lib/trial';
   import * as m from '$lib/paraglide/messages.js';
 
   interface Props {
@@ -90,22 +91,13 @@
 
     <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 px-4 text-center">
       <p class="text-lg font-semibold text-gray-900 dark:text-white">
-        {m.teaser_heading()}
+        {trialOffered(page.data) ? m.teaser_heading_trial() : m.teaser_heading()}
       </p>
       <p class="text-sm text-gray-700 dark:text-gray-200">
         {m.teaser_benefit({ count: totalCount })}
       </p>
       <div class="flex flex-wrap items-center justify-center gap-3">
-        <a
-          href={plusHref}
-          class="rounded-lg bg-orange-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 focus:outline-none"
-        >
-          {m.teaser_get_plus()}
-        </a>
-        <!-- Free trial for an eligible signed-in user (ai-docs/implementation/free-trial.md). -->
-        {#if page.data.trialEligible}
-          <TrialButton variant="secondary" showNote={false} />
-        {/if}
+        <PlusCtas href={plusHref} />
         {#if !email}
           <a
             href={loginHref}

@@ -21,3 +21,21 @@ export function hasSupabaseSession(
     .getAll()
     .some((c) => c.value !== '' && (c.name === baseName || chunk.test(c.name)));
 }
+
+/** `sb-<ref>-auth-token`, optionally followed by a chunk index (`.0`, `.1`, ...). */
+const SESSION_COOKIE = /^sb-.+-auth-token(\.\d+)?$/;
+
+/**
+ * Deletes this request's Supabase auth cookies (the session and its chunks) without calling
+ * Supabase. For when the user no longer exists, so a sign-out request would only be a slow
+ * round trip: auth-js sends POST /logout even for `scope: 'local'`. Cookies are set with
+ * path '/' (see createSupabaseServerClient), so they are deleted with the same path.
+ */
+export function clearSupabaseSessionCookies(cookies: {
+  getAll(): CookieEntry[];
+  delete(name: string, options: { path: string }): void;
+}): void {
+  for (const { name } of cookies.getAll()) {
+    if (SESSION_COOKIE.test(name)) cookies.delete(name, { path: '/' });
+  }
+}

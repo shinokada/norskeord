@@ -3,6 +3,7 @@
   import { page } from '$app/state';
   import * as m from '$lib/paraglide/messages.js';
   import { discardAccountProgress } from '$lib/parked-progress';
+  import { authStore } from '$lib/stores/auth.svelte';
 
   let deleting = $state(false);
   let confirmed = $state(false);
@@ -19,8 +20,8 @@
     {m.profile_danger_subtitle()}
   </p>
 
-  <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
-    <div class="mb-3 sm:mb-0">
+  <div class="flex flex-col gap-4">
+    <div>
       <p class="text-sm font-medium text-gray-700 dark:text-gray-300">
         {m.profile_danger_delete_heading()}
       </p>
@@ -33,7 +34,7 @@
       <button
         type="button"
         onclick={() => (confirmed = true)}
-        class="shrink-0 rounded-lg border border-red-300 px-4 py-2 text-sm font-medium text-red-600 hover:bg-red-50 dark:border-red-800 dark:text-red-400 dark:hover:bg-red-900/20"
+        class="self-start rounded-lg border border-red-300 px-4 py-2 text-sm font-medium whitespace-nowrap text-red-600 hover:bg-red-50 dark:border-red-800 dark:text-red-400 dark:hover:bg-red-900/20"
       >
         {m.profile_danger_delete_button()}
       </button>
@@ -50,6 +51,9 @@
               // The account is gone (the action redirects to /?deleted=1). Remove its progress
               // from this device so the next visitor or login does not adopt it.
               discardAccountProgress(page.data.user?.id as string | undefined);
+              // Clear the client-side auth store too, otherwise Nav falls back to the deleted
+              // user (`page.data.user ?? authStore.user`) and keeps showing the avatar dropdown.
+              authStore.reset();
             }
             if (result.type === 'failure') {
               errorMsg = (result.data?.message as string) ?? m.profile_error_generic();
@@ -58,7 +62,7 @@
             await update();
           };
         }}
-        class="flex flex-col items-start gap-2 sm:items-end"
+        class="flex flex-col items-start gap-3"
       >
         <p class="text-sm font-medium text-red-600 dark:text-red-400">
           {m.profile_danger_confirm_question()}
@@ -67,14 +71,14 @@
           <button
             type="button"
             onclick={() => (confirmed = false)}
-            class="rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-white/10 dark:text-gray-300"
+            class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium whitespace-nowrap text-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-white/10"
           >
             {m.profile_cancel()}
           </button>
           <button
             type="submit"
             disabled={deleting}
-            class="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700 disabled:opacity-50"
+            class="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold whitespace-nowrap text-white hover:bg-red-700 disabled:opacity-50"
           >
             {deleting ? m.profile_danger_deleting() : m.profile_danger_confirm_yes()}
           </button>

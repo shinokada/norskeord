@@ -1,6 +1,9 @@
 <!--
   ActivityChart.svelte
-  26-week rolling 7-day activity grid + streak badge.
+  Rolling 7-day activity grid + streak badge. Shows 26 weeks; Plus users on a wide screen
+  (lg and up) see 53 weeks, a full year. The parent must pass cells that cover 53 weeks for
+  Plus users (buildActivityGrid(studyDays, 53)). Free users' activity is rebuilt from each
+  card's last-seen date, so a year of it would look emptier than it was: they stay at 26.
   Works for both free users (localStorage) and Plus users (Supabase study_days).
 -->
 <script lang="ts">
@@ -16,6 +19,14 @@
 
   let { cells, streak, loading = false, isPlus = true }: Props = $props();
 
+  const NARROW_WEEKS = 26;
+  const WIDE_WEEKS = 53;
+  // Tailwind's lg breakpoint. The window width is unknown on the server, so the first render
+  // uses the narrow grid (the chart is behind the loading state then anyway).
+  const WIDE_MIN_WIDTH = 1024;
+  let innerWidth = $state(0);
+  const weeks = $derived(isPlus && innerWidth >= WIDE_MIN_WIDTH ? WIDE_WEEKS : NARROW_WEEKS);
+
   const ROW_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
   interface GridColumn {
@@ -24,9 +35,9 @@
   }
 
   // $derived takes an expression directly — not a function wrapper
-  const grid: GridColumn[] = $derived(buildGrid(cells));
+  const grid: GridColumn[] = $derived(buildGrid(cells, weeks));
 
-  function buildGrid(inputCells: ActivityCell[]): GridColumn[] {
+  function buildGrid(inputCells: ActivityCell[], weekCount: number): GridColumn[] {
     if (!inputCells.length) return [];
 
     const buckets = new SvelteMap<string, ActivityCell>();
@@ -42,9 +53,9 @@
     const startOfThisWeek = new SvelteDate(today);
     startOfThisWeek.setDate(today.getDate() - (dayOfWeek - 1));
 
-    // Walk back 26 weeks from start of this week
+    // Walk back (weekCount - 1) weeks from the start of this week
     const startDate = new SvelteDate(startOfThisWeek);
-    startDate.setDate(startOfThisWeek.getDate() - 25 * 7);
+    startDate.setDate(startOfThisWeek.getDate() - (weekCount - 1) * 7);
 
     const columns: GridColumn[] = [];
     const cursor = new SvelteDate(startDate);
@@ -141,6 +152,8 @@
   const viewBoxHeight: number = $derived(TOP_LABEL_HEIGHT + NUM_ROWS * STEP);
   const svgHeight: number = $derived(viewBoxHeight);
 </script>
+
+<svelte:window bind:innerWidth />
 
 <div class="space-y-2">
   <!-- Streak badge + Plus teaser -->

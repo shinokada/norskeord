@@ -26,6 +26,8 @@
   import { State } from 'ts-fsrs';
   import { SvelteSet } from 'svelte/reactivity';
   import * as m from '$lib/paraglide/messages.js';
+  import PlusUpsell from '$lib/components/PlusUpsell.svelte';
+  import TrialModal from '$lib/components/TrialModal.svelte';
 
   interface CategoryNav {
     slug: string;
@@ -156,6 +158,17 @@
   let plan = $derived(page.data.plan as 'free' | 'plus');
   let isPlus = $derived(plan === 'plus');
   let isGuest = $derived(page.data.user === null);
+
+  // The locked "+N with Plus" link after the last free category (same three states as the quiz
+  // pill): a signed-in user with a trial available opens the trial offer in a modal, a guest goes
+  // to login and back here, anyone else goes to /plus.
+  let trialModalOpen = $state(false);
+  let trialAvailable = $derived(!!page.data.user && page.data.trialEligible === true);
+  let loginHref = $derived(
+    `/auth/login?next=${encodeURIComponent(page.url.pathname + page.url.search)}`
+  );
+  const lockedNavClass =
+    'inline-flex min-h-11 items-center gap-1 truncate rounded-lg px-2 py-2 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200';
 
   // Session limit from the layout server data (cross-device): a number, null = All cards,
   // or undefined for guests / no profile row, who use this device's localStorage value.
@@ -693,6 +706,9 @@
 </script>
 
 <div class="flex w-full flex-col items-center">
+  {#if trialAvailable}
+    <TrialModal bind:open={trialModalOpen} />
+  {/if}
   <!-- Category header: level label + i18n section name (e.g. "B1 · Vocabulary"). -->
   <div class="mt-10 mb-0.5 flex w-full items-center justify-center px-2">
     <h1 class="mb-0 text-center leading-tight">
@@ -728,12 +744,19 @@
           <span class="shrink-0">→</span>
         </a>
       {:else if nextLocked}
-        <a
-          href={nextLocked.href}
-          class="inline-flex min-h-11 items-center gap-1 truncate rounded-lg px-2 py-2 text-sm text-gray-500 transition hover:bg-gray-100 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-        >
-          {m.quiz_plus_only_count({ count: nextLocked.count })}
-        </a>
+        {#if trialAvailable}
+          <button type="button" onclick={() => (trialModalOpen = true)} class={lockedNavClass}>
+            {m.quiz_plus_only_count_trial({ count: nextLocked.count })}
+          </button>
+        {:else if isGuest}
+          <a href={loginHref} class={lockedNavClass}>
+            {m.quiz_plus_only_count_trial({ count: nextLocked.count })}
+          </a>
+        {:else}
+          <a href={nextLocked.href} class={lockedNavClass}>
+            {m.quiz_plus_only_count({ count: nextLocked.count })}
+          </a>
+        {/if}
       {/if}
     </div>
   </div>
@@ -817,24 +840,15 @@
     {m.flashcard_change_defaults()}
   </a>
 
-  <!-- 3-A: Plus upsell banner for free users (shown below controls) -->
+  <!-- 3-A: Plus upsell banner for free users (shown below controls). Leads with the free trial
+       where it can be started, like every other Plus box. -->
   {#if !isPlus && dueCount > 0}
-    <div
-      class="mt-3 w-full max-w-lg rounded-xl border border-orange-200 bg-orange-50 py-4 dark:border-orange-800 dark:bg-orange-900/20"
-    >
-      <p class="font-semibold text-orange-700 dark:text-orange-300">
-        {m.flashcard_plus_due_heading()}
-      </p>
-      <p class="mt-1 text-sm text-orange-600 dark:text-orange-400">
-        {m.flashcard_plus_due_body()}
-      </p>
-      <a
-        href="/plus"
-        class="mt-2 inline-block text-sm font-semibold text-orange-700 hover:underline dark:text-orange-300"
-      >
-        {m.flashcard_plus_upgrade()}
-      </a>
-    </div>
+    <PlusUpsell
+      class="mt-3 w-full max-w-lg text-left"
+      heading={m.flashcard_plus_due_heading()}
+      body={m.flashcard_plus_due_body()}
+      upgradeLabel={m.flashcard_plus_upgrade()}
+    />
   {/if}
 
   <!-- Counter row removed: counter merged into hint bar below -->
@@ -1151,13 +1165,17 @@
                   ? m.part_adverb()
                   : current.entry.part === 'pronoun'
                     ? m.part_pronoun()
-                    : current.entry.part === 'preposition'
-                      ? m.part_preposition()
-                      : current.entry.part === 'conjunction'
-                        ? m.part_conjunction()
-                        : current.entry.part === 'interjection'
-                          ? m.part_interjection()
-                          : m.part_phrase()}
+                    : current.entry.part === 'determiner'
+                      ? m.part_determiner()
+                      : current.entry.part === 'numeral'
+                        ? m.part_numeral()
+                        : current.entry.part === 'preposition'
+                          ? m.part_preposition()
+                          : current.entry.part === 'conjunction'
+                            ? m.part_conjunction()
+                            : current.entry.part === 'interjection'
+                              ? m.part_interjection()
+                              : m.part_phrase()}
         </span>
       {/if}
       <div class="flex-1">

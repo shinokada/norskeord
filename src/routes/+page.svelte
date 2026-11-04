@@ -206,10 +206,10 @@
           {m.home_hero_cta_free()}
         </a>
         <a
-          href="/plus"
+          href="/plus?ref=home-hero"
           class="rounded-xl border border-indigo-200/25 px-6 py-3 text-sm font-medium text-indigo-200/80 transition hover:border-indigo-200/50 hover:text-white"
         >
-          {m.home_hero_cta_plus()}
+          {m.trial_start_cta()}
         </a>
       {/if}
     </div>

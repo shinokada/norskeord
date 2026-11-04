@@ -4,9 +4,23 @@
   import { page } from '$app/state';
   import { isFreeTest, isPlusCategory } from '$lib/access';
   import { Tooltip } from 'flowbite-svelte';
+  import TrialModal from '$lib/components/TrialModal.svelte';
 
   const plan = $derived(page.data.plan);
   let isPlus = $derived(plan === 'plus');
+
+  // A locked practice test depends on the visitor (same three states as the quiz pill):
+  //  - signed in, trial available: opens the trial offer in a modal (the trial cannot be undone,
+  //    so the offer is shown before it starts)
+  //  - signed out: login, then back to this page
+  //  - signed in, trial used: /plus
+  let trialModalOpen = $state(false);
+  const trialAvailable = $derived(!!page.data.user && page.data.trialEligible === true);
+  const lockedTestHref = $derived(
+    page.data.user
+      ? '/plus?ref=practice-test-lock'
+      : `/auth/login?next=${encodeURIComponent(page.url.pathname + page.url.search)}`
+  );
 
   // ── Practice test grid (was /norskproven/practice) ─────────────────────────
   const practiceLevels = [
@@ -168,6 +182,8 @@
   }
 </script>
 
+<TrialModal bind:open={trialModalOpen} />
+
 <div class="mx-auto max-w-4xl px-4 py-10 text-left">
   <!-- ── Hero ─────────────────────────────────────────────────────────────────────────── -->
   <div class="mb-10">
@@ -229,11 +245,18 @@
                     <a
                       id={pillId}
                       href={locked
-                        ? '/plus?ref=practice-test-lock'
+                        ? lockedTestHref
                         : `/norskproven/${test}/${type.key}/${level.toLowerCase()}`}
+                      onclick={(e) => {
+                        // Without JS the link still goes to /plus.
+                        if (locked && trialAvailable) {
+                          e.preventDefault();
+                          trialModalOpen = true;
+                        }
+                      }}
                       class="rounded-lg border px-3 py-1 text-xs font-semibold transition-colors
                         {locked
-                        ? 'cursor-not-allowed border-gray-300 text-gray-400 opacity-50 dark:border-gray-600 dark:text-gray-500'
+                        ? 'border-indigo-200 text-gray-600 hover:border-indigo-300 hover:text-indigo-700 dark:border-indigo-800 dark:text-gray-300 dark:hover:border-indigo-500 dark:hover:text-indigo-300'
                         : color.pill}"
                     >
                       {m.norskproven_test_label({ n: test })}{locked ? ' 🔒' : ''}
@@ -274,7 +297,7 @@
             href="/{section.level.toLowerCase()}/{cat.slug}"
             class="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium transition
               {locked
-              ? 'border-gray-200 bg-gray-50 text-gray-400 hover:border-indigo-300 hover:text-indigo-600 dark:border-gray-700 dark:bg-indigo-950/30 dark:text-gray-500 dark:hover:border-indigo-500 dark:hover:text-indigo-300'
+              ? 'border-indigo-200 bg-white text-gray-600 hover:border-indigo-300 hover:text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-gray-300 dark:hover:border-indigo-500 dark:hover:text-indigo-300'
               : 'border-gray-200 bg-white text-gray-700 hover:border-indigo-300 hover:text-indigo-700 dark:border-gray-700 dark:bg-indigo-950/60 dark:text-gray-200 dark:hover:border-indigo-500 dark:hover:text-indigo-300'}"
             title={getCategoryNote(cat.noteKey)}
           >

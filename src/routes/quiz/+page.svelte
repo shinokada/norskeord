@@ -3,6 +3,7 @@
   import { browser } from '$app/environment';
   import { page } from '$app/state';
   import SpeakButton from '$lib/SpeakButton.svelte';
+  import TrialModal from '$lib/components/TrialModal.svelte';
   import {
     buildQuizSession,
     levenshtein,
@@ -113,6 +114,8 @@
   // Derived
 
   let isPlus = $derived(page.data.plan === 'plus');
+  // The "+N with Plus" pill opens this modal for a signed-in user who can start the free trial.
+  let trialModalOpen = $state(false);
   let userId = $derived(isPlus ? (page.data.user?.id ?? null) : null);
   // FSRS review-intensity preset from the layout data (0.8/0.9/0.95, null = default). Same
   // source as VocabFlashcardPage; saveProgress() ignores it when userId is null.
@@ -622,6 +625,41 @@
   </div>
 {/snippet}
 
+<!-- The "+N with Plus" pill after the free categories, shared by the start screen and the summary
+     screen. A signed-in user who can start the free trial gets the offer in a modal (the trial
+     cannot be undone, so it is shown before it starts); a signed-out visitor goes to log in and
+     comes back here; anyone else goes to /plus. -->
+{#snippet plusPill()}
+  {@const pillClass =
+    'rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-sm font-medium text-indigo-500 transition-colors hover:border-indigo-400 hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-400 dark:hover:border-indigo-600'}
+  {#if page.data.trialEligible}
+    <button
+      type="button"
+      onclick={() => (trialModalOpen = true)}
+      data-testid="quiz-plus-pill"
+      class="{pillClass} cursor-pointer"
+    >
+      {m.quiz_plus_only_count_trial({ count: plusOnlyCount })}
+    </button>
+  {:else if !page.data.user}
+    <a
+      href="/auth/login?next={encodeURIComponent(page.url.pathname + page.url.search)}"
+      data-testid="quiz-plus-pill"
+      class={pillClass}
+    >
+      {m.quiz_plus_only_count_trial({ count: plusOnlyCount })}
+    </a>
+  {:else}
+    <a href="/plus?ref=quiz-category-upsell" data-testid="quiz-plus-pill" class={pillClass}>
+      {m.quiz_plus_only_count({ count: plusOnlyCount })}
+    </a>
+  {/if}
+{/snippet}
+
+{#if page.data.trialEligible}
+  <TrialModal bind:open={trialModalOpen} />
+{/if}
+
 <!-- "Mark as easy" confirmation toast (fixed, bottom-centre) -->
 {#if showToast}
   <div class="fixed bottom-6 left-1/2 z-50 -translate-x-1/2" role="status" aria-live="polite">
@@ -729,12 +767,7 @@
                 </button>
               {/each}
               {#if plusOnlyCount > 0}
-                <a
-                  href="/plus?ref=quiz-category-upsell"
-                  class="rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-sm font-medium text-indigo-500 transition-colors hover:border-indigo-400 hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-400 dark:hover:border-indigo-600"
-                >
-                  {m.quiz_plus_only_count({ count: plusOnlyCount })}
-                </a>
+                {@render plusPill()}
               {/if}
             </div>
           {/if}
@@ -1279,12 +1312,7 @@
                 </button>
               {/each}
               {#if plusOnlyCount > 0}
-                <a
-                  href="/plus?ref=quiz-category-upsell"
-                  class="rounded-lg border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-sm font-medium text-indigo-500 transition-colors hover:border-indigo-400 hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-400 dark:hover:border-indigo-600"
-                >
-                  {m.quiz_plus_only_count({ count: plusOnlyCount })}
-                </a>
+                {@render plusPill()}
               {/if}
             </div>
           {/if}

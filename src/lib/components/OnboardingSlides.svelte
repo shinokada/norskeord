@@ -1,30 +1,42 @@
+<script module lang="ts">
+  // Locale-save state lives at module scope, not in the component: switchLocale changes
+  // localeStore.current, which re-creates this component via the {#key} block in
+  // +layout.svelte. Instance state would reset and "Next" could advance while the save is
+  // pending or after it failed. Only written from browser event handlers, so nothing is shared
+  // between SSR requests.
+  //   localeSave  - tail of the queue of PATCH /api/profile/language requests (always serialized)
+  //   savedLocale - the last locale that the server confirmed
+  let localeSave: Promise<boolean> = Promise.resolve(true);
+  let savedLocale: string | null = null;
+</script>
+
 <script lang="ts">
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
   import { languageStore } from '$lib/stores/language.svelte';
-  import { LANGUAGES, FLASHCARD_LANGUAGES, languageEntryForLocale } from '$lib/config';
+  import { LANGUAGES, languageEntryForLocale } from '$lib/config';
+  import { DEFAULT_POST_LOGIN } from '$lib/post-login';
   import type { FlashcardLanguage } from '$lib/types';
 
   // Local open state — set to false to instantly close the modal without
-  // waiting for invalidateAll() / goto() to re-run the layout load.
+  // waiting for the navigation / layout reload to finish.
   let open = $state(true);
 
-  // --- Slide definitions ---
-  // Slides 1–4 collect data; slide 5 is the completion screen and isn't
-  // counted in the step indicator (TOTAL stays 4).
-  type Slide = 1 | 2 | 3 | 4 | 5 | 6;
-  const TOTAL = 5;
+  // Three short steps: 1 language, 2 display name (optional), 3 Norwegian level.
+  // Finishing saves everything and goes straight to the chosen level page.
+  type Slide = 1 | 2 | 3;
+  const TOTAL = 3;
 
   // --- State ---
   let current = $state<Slide>(1);
   let saving = $state(false);
   let error = $state<string | null>(null);
 
-  // Slide 2
-  let displayName = $state('');
+  // Step 1 — the language of the interface AND of the flashcard translations.
+  // Norwegian is not offered here: a learner needs translations in their own language, and
+  // can still switch the interface to Norwegian from the top nav at any time.
+  const LANGUAGE_OPTIONS = Object.entries(LANGUAGES).filter(([key]) => key !== 'norwegian');
 
-  // Slide 3 — flashcard language
-  // Derived from the chosen UI locale by default; user can override on slide 3.
   function defaultFlashcardLanguage(localeCode: string): FlashcardLanguage {
     const entry = languageEntryForLocale(localeCode);
     const key = entry?.[0];
@@ -33,12 +45,11 @@
 
   let flashcardLanguage = $state<FlashcardLanguage>(defaultFlashcardLanguage(localeStore.current));
 
-  // Slide 4
-  let currentLevel = $state('');
-  let dailyReminder = $state(true);
+  // Step 2 — optional. Left empty, the UI falls back to the account email.
+  let displayName = $state('');
 
-  // Completion screen
-  let showAllLevels = $state(false);
+  // Step 3
+  let currentLevel = $state('');
 
   const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C'] as const;
 
@@ -48,16 +59,14 @@
 
   // --- Can advance? ---
   const canAdvance = $derived(() => {
-    if (current === 1) return true;
-    if (current === 2) return displayName.trim().length > 0;
-    if (current === 3) return true;
-    if (current === 4) return currentLevel.length > 0;
-    if (current === 5) return true; // reminder toggle — always valid
-    return false;
+    // A visitor whose browser locale is Norwegian has no option highlighted: they must pick one.
+    if (current === 1) return LANGUAGE_OPTIONS.some(([, l]) => l.code === localeStore.current);
+    if (current === 2) return true; // display name is optional
+    return currentLevel.length > 0;
   });
 
-  // --- PATCH helper ---
-  async function patch(payload: Record<string, unknown>) {
+  // --- PATCH helper --- returns true on success
+  async function patch(payload: Record<string, unknown>): Promise<boolean> {
     saving = true;
     error = null;
     try {
@@ -69,9 +78,12 @@
       if (!res.ok) {
         const body = await res.json().catch(() => ({}));
         error = body.message ?? m.onboarding_error_save();
+        return false;
       }
+      return true;
     } catch {
       error = m.onboarding_error_save();
+      return false;
     } finally {
       saving = false;
     }
@@ -79,41 +91,45 @@
 
   // --- Navigation ---
   async function next() {
-    if (!canAdvance()) return;
+    if (!canAdvance() || saving) return;
 
     if (current === 1) {
-      // Locale already persisted by switchLocale() on change — nothing extra to save here
+      // The interface language is saved when it is picked (switchLocale). Make sure the language
+      // on screen is the one stored on the profile: wait for every queued save, and if the last
+      // one failed, or nothing was picked (the browser locale was already an offered language),
+      // save it now through the same queue. A failed save stops step 1.
+      saving = true;
+      error = null;
+      const localeOk = await ensureLocaleSaved();
+      saving = false;
+      if (!localeOk) {
+        error = m.onboarding_error_save();
+        return;
+      }
+      if (!(await patch({ flashcard_language: flashcardLanguage }))) return;
+      languageStore.set(flashcardLanguage);
+      current = 2;
     } else if (current === 2) {
-      await patch({ display_name: displayName.trim() });
-    } else if (current === 3) {
-      await patch({ flashcard_language: flashcardLanguage });
-      if (!error) {
-        languageStore.set(flashcardLanguage);
-      }
-    } else if (current === 4) {
-      await patch({ current_level: currentLevel });
-      if (!error && current < TOTAL) {
-        current = (current + 1) as Slide;
-        return;
-      }
-    } else if (current === 5) {
-      const patchBody: Record<string, unknown> = {
-        daily_reminder_enabled: dailyReminder,
+      const name = displayName.trim();
+      if (name && !(await patch({ display_name: name }))) return;
+      current = 3;
+    } else {
+      // The daily email reminder is on for everyone; every email has an unsubscribe link.
+      const ok = await patch({
+        current_level: currentLevel,
+        daily_reminder_enabled: true,
         onboarding_done: true
-      };
-      // Nudge toward definition mode for B1+ users who chose a Norwegian UI
-      if (localeStore.current === 'nb' && currentLevel !== 'A1' && currentLevel !== 'A2') {
-        patchBody.card_direction = 'def_l1';
+      });
+      if (!ok) return;
+      open = false;
+      // Only the default landing page (where login sends a new account) moves on to the chosen
+      // level. Anywhere else, e.g. the page a guest trial link brought them back to, stay there
+      // and reload so the layout picks up the finished onboarding.
+      if (window.location.pathname === DEFAULT_POST_LOGIN) {
+        window.location.href = levelHref(currentLevel);
+      } else {
+        window.location.reload();
       }
-      await patch(patchBody);
-      if (!error) {
-        current = 6;
-        return;
-      }
-    }
-
-    if (!error && current < TOTAL) {
-      current = (current + 1) as Slide;
     }
   }
 
@@ -121,24 +137,52 @@
     if (current > 1) current = (current - 1) as Slide;
   }
 
-  function dismissCompletion() {
-    open = false;
+  // --- Locale switching (step 1) ---
+  // Every save goes through one queue, so quick taps on two languages (or a tap during the
+  // fallback save in next()) reach the server in order and an older save can never overwrite a
+  // newer one. (localeSave and savedLocale are declared in the module script above.)
+
+  function saveLocale(code: string): Promise<boolean> {
+    return fetch('/api/profile/language', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ locale: code })
+    })
+      .then((res) => res.ok)
+      .catch(() => false);
   }
 
-  // --- Locale switching (slide 1) ---
-  async function switchLocale(code: string) {
-    localeStore.set(code as typeof localeStore.current);
-    // Keep flashcard language in sync with the UI language default
-    flashcardLanguage = defaultFlashcardLanguage(code);
-    try {
-      await fetch('/api/profile/language', {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ locale: code })
-      });
-    } catch {
-      // non-fatal
+  function queueLocaleSave(code: string): Promise<boolean> {
+    const save = localeSave.then(async () => {
+      const ok = await saveLocale(code);
+      if (ok) savedLocale = code;
+      return ok;
+    });
+    localeSave = save;
+    return save;
+  }
+
+  // True once the language shown on screen is the one stored on the profile. Waits for the whole
+  // queue (a newer save may be added while waiting); if the stored language still differs, queues
+  // one more save for it. Never trusts state from an older save.
+  async function ensureLocaleSaved(): Promise<boolean> {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      let tail: Promise<boolean>;
+      do {
+        tail = localeSave;
+        await tail;
+      } while (tail !== localeSave);
+      if (savedLocale === localeStore.current) return true;
+      if (attempt === 0) queueLocaleSave(localeStore.current);
     }
+    return false;
+  }
+
+  function switchLocale(code: string) {
+    localeStore.set(code as typeof localeStore.current);
+    // Keep the flashcard language in sync with the chosen language
+    flashcardLanguage = defaultFlashcardLanguage(code);
+    queueLocaleSave(code);
   }
 </script>
 
@@ -152,42 +196,21 @@
     <div
       class="relative mx-4 max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white px-8 py-10 shadow-2xl dark:bg-gray-900"
     >
-      <!-- Close button (completion screen only) -->
-      {#if current === 6}
-        <button
-          type="button"
-          onclick={dismissCompletion}
-          aria-label={m.onboarding_close_aria_done()}
-          class="absolute top-4 right-4 rounded-full p-1.5 text-gray-700 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
-        >
-          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-      {/if}
+      <!-- Progress indicator -->
+      <div class="mt-4 mb-6 flex items-center gap-1.5">
+        {#each Array(TOTAL) as _, i (i)}
+          <div
+            class="h-1.5 flex-1 rounded-full transition-colors duration-300 {i + 1 <= current
+              ? 'bg-indigo-600'
+              : 'bg-gray-200 dark:bg-gray-700'}"
+          ></div>
+        {/each}
+      </div>
+      <p class="mb-4 text-xs text-gray-700 dark:text-gray-300">
+        {m.onboarding_step({ current, total: TOTAL })}
+      </p>
 
-      <!-- Progress indicator (slides 1–4 only) -->
-      {#if current <= TOTAL}
-        <div class="mt-4 mb-6 flex items-center gap-1.5">
-          {#each Array(TOTAL) as _, i (i)}
-            <div
-              class="h-1.5 flex-1 rounded-full transition-colors duration-300 {i + 1 <= current
-                ? 'bg-indigo-600'
-                : 'bg-gray-200 dark:bg-gray-700'}"
-            ></div>
-          {/each}
-        </div>
-        <p class="mb-4 text-xs text-gray-700 dark:text-gray-300">
-          {m.onboarding_step({ current, total: TOTAL })}
-        </p>
-      {/if}
-
-      <!-- ── Slide 1: UI language ── -->
+      <!-- ── Step 1: language ── -->
       {#if current === 1}
         <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
           {m.onboarding_s1_heading()}
@@ -198,7 +221,7 @@
           {m.onboarding_s1_lang_label()}
         </p>
         <div class="flex flex-col gap-2">
-          {#each Object.entries(LANGUAGES) as [, { name, flag, code }] (code)}
+          {#each LANGUAGE_OPTIONS as [, { name, flag, code }] (code)}
             <button
               type="button"
               onclick={() => switchLocale(code)}
@@ -213,13 +236,16 @@
             </button>
           {/each}
         </div>
+        <p class="mt-4 text-xs text-gray-600 dark:text-gray-300">{m.onboarding_s1_lang_note()}</p>
 
-        <!-- ── Slide 2: Display name ── -->
+        <!-- ── Step 2: display name (optional) ── -->
       {:else if current === 2}
         <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
           {m.onboarding_s2_name_heading()}
         </h2>
-        <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">{m.onboarding_s2_name_sub()}</p>
+        <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">
+          {m.onboarding_s2_name_sub_optional()}
+        </p>
 
         <label
           for="onb-name"
@@ -239,34 +265,8 @@
           }}
         />
 
-        <!-- ── Slide 3: Flashcard language ── -->
-      {:else if current === 3}
-        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-          {m.onboarding_s3_flashcard_heading()}
-        </h2>
-        <p class="mb-6 text-sm text-gray-600 dark:text-gray-300">
-          {m.onboarding_s3_flashcard_sub()}
-        </p>
-
-        <div class="flex flex-col gap-2">
-          {#each Object.entries(FLASHCARD_LANGUAGES) as [key, { name, flag }] (key)}
-            <button
-              type="button"
-              onclick={() => (flashcardLanguage = key as FlashcardLanguage)}
-              aria-pressed={flashcardLanguage === key}
-              class="flex items-center gap-3 rounded-xl border-2 px-5 py-3 text-left text-sm font-medium transition-colors {flashcardLanguage ===
-              key
-                ? 'border-indigo-600 bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
-                : 'border-gray-200 text-gray-600 hover:border-indigo-300 dark:border-gray-700 dark:text-gray-400'}"
-            >
-              <span class="text-xl">{flag}</span>
-              <span>{name}</span>
-            </button>
-          {/each}
-        </div>
-
-        <!-- ── Slide 4: Norwegian level ── -->
-      {:else if current === 4}
+        <!-- ── Step 3: Norwegian level ── -->
+      {:else}
         <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
           {m.onboarding_s4_heading()}
         </h2>
@@ -288,94 +288,9 @@
             </button>
           {/each}
         </div>
-
-        <!-- ── Slide 5: Daily reminder ── -->
-      {:else if current === 5}
-        <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-          {m.onboarding_s5_heading()}
-        </h2>
-        <p class="mb-8 text-sm text-gray-600 dark:text-gray-300">
-          {m.onboarding_s5_sub()}
+        <p class="mt-4 text-xs text-gray-600 dark:text-gray-300">
+          {m.onboarding_s3_reminder_note()}
         </p>
-
-        <button
-          type="button"
-          role="switch"
-          aria-checked={dailyReminder}
-          onclick={() => (dailyReminder = !dailyReminder)}
-          class="flex w-full items-center justify-between rounded-xl border-2 px-5 py-4 text-left transition-colors {dailyReminder
-            ? 'border-indigo-600 bg-indigo-50 dark:bg-indigo-900/40'
-            : 'border-gray-200 dark:border-gray-700'}"
-        >
-          <div>
-            <p class="text-sm font-semibold text-gray-800 dark:text-gray-100">
-              {m.onboarding_s4_reminder_label()}
-            </p>
-            <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">
-              {m.onboarding_s4_reminder_hint()}
-            </p>
-          </div>
-          <div
-            class="relative ml-4 inline-flex h-6 w-11 shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 {dailyReminder
-              ? 'bg-indigo-600'
-              : 'bg-gray-300 dark:bg-gray-600'}"
-          >
-            <span
-              class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow transition duration-200 {dailyReminder
-                ? 'translate-x-5'
-                : 'translate-x-0'}"
-            ></span>
-          </div>
-        </button>
-
-        <!-- ── Slide 6: Completion ── -->
-      {:else if current === 6}
-        <div class="flex flex-col items-center py-4 text-center">
-          <div class="mb-4 text-5xl" aria-hidden="true">🎉</div>
-          <h2 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">
-            {m.onboarding_s7_heading()}
-          </h2>
-          <p class="mb-8 text-sm text-gray-600 dark:text-gray-300">
-            {m.onboarding_s7_sub()}
-          </p>
-
-          <button
-            type="button"
-            onclick={() => {
-              dismissCompletion();
-              window.location.href = levelHref(currentLevel);
-            }}
-            class="w-full rounded-xl bg-indigo-600 px-6 py-3 text-center text-sm font-semibold text-white hover:bg-indigo-700"
-          >
-            {m.onboarding_s7_start({ level: currentLevel })}
-          </button>
-
-          <button
-            type="button"
-            onclick={() => (showAllLevels = !showAllLevels)}
-            aria-expanded={showAllLevels}
-            class="mt-4 text-xs font-medium text-gray-700 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-400"
-          >
-            {m.onboarding_s7_browse()}
-          </button>
-
-          {#if showAllLevels}
-            <div class="mt-3 flex flex-wrap justify-center gap-2">
-              {#each LEVELS as level (level)}
-                <button
-                  type="button"
-                  onclick={() => {
-                    dismissCompletion();
-                    window.location.href = levelHref(level);
-                  }}
-                  class="rounded-full border border-gray-200 px-3 py-1 text-xs font-medium text-gray-600 hover:border-indigo-400 hover:text-indigo-600 dark:border-gray-700 dark:text-gray-400"
-                >
-                  {level}
-                </button>
-              {/each}
-            </div>
-          {/if}
-        </div>
       {/if}
 
       <!-- Error message -->
@@ -383,35 +298,33 @@
         <p class="mt-3 text-xs text-red-600 dark:text-red-400">{error}</p>
       {/if}
 
-      <!-- Navigation buttons (slides 1–4 only) -->
-      {#if current <= TOTAL}
-        <div class="mt-8 flex items-center justify-between">
-          {#if current > 1}
-            <button
-              type="button"
-              onclick={back}
-              class="text-sm font-medium text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-            >
-              ← {m.onboarding_back()}
-            </button>
-          {:else}
-            <span></span>
-          {/if}
-
+      <!-- Navigation buttons -->
+      <div class="mt-8 flex items-center justify-between">
+        {#if current > 1}
           <button
             type="button"
-            onclick={next}
-            disabled={!canAdvance() || saving}
-            class="rounded-xl bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
+            onclick={back}
+            class="text-sm font-medium text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
           >
-            {saving
-              ? m.onboarding_saving()
-              : current === TOTAL
-                ? m.onboarding_finish()
-                : m.onboarding_next()}
+            ← {m.onboarding_back()}
           </button>
-        </div>
-      {/if}
+        {:else}
+          <span></span>
+        {/if}
+
+        <button
+          type="button"
+          onclick={next}
+          disabled={!canAdvance() || saving}
+          class="rounded-xl bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          {saving
+            ? m.onboarding_saving()
+            : current === TOTAL
+              ? m.onboarding_finish()
+              : m.onboarding_next()}
+        </button>
+      </div>
     </div>
   </div>
 {/if}
