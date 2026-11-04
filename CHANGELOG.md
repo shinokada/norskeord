@@ -1,5 +1,13 @@
 # norske-flashcard
 
+## 2.119.1
+
+### Patch Changes
+
+- - **Improvements**
+    - Answer fields in fill-in-the-blank, ordering, and transformation questions now expand to fit longer responses, making it easier to enter multiline answers.
+    - Pressing Enter continues to submit answers, and the check and skip buttons remain available.
+
 ## 2.119.0
 
 ### Minor Changes
