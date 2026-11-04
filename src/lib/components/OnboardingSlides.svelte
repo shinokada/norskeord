@@ -4,8 +4,10 @@
   // +layout.svelte. Instance state would reset and "Next" could advance while the save is
   // pending or after it failed. Only written from browser event handlers, so nothing is shared
   // between SSR requests.
+  //   localeSave  - tail of the queue of PATCH /api/profile/language requests (always serialized)
+  //   savedLocale - the last locale that the server confirmed
   let localeSave: Promise<boolean> = Promise.resolve(true);
-  let pendingLocale: string | null = null;
+  let savedLocale: string | null = null;
 </script>
 
 <script lang="ts">
@@ -92,19 +94,13 @@
     if (!canAdvance() || saving) return;
 
     if (current === 1) {
-      // The interface language is saved when it is picked (switchLocale). Wait for that save;
-      // if it failed, try once more here, so "Next" also works as a retry. If nothing was picked
-      // (the browser locale was already an offered language), save the current locale now so
-      // ui_language is never left unset.
+      // The interface language is saved when it is picked (switchLocale). Make sure the language
+      // on screen is the one stored on the profile: wait for every queued save, and if the last
+      // one failed, or nothing was picked (the browser locale was already an offered language),
+      // save it now through the same queue. A failed save stops step 1.
       saving = true;
       error = null;
-      let localeOk = await localeSave;
-      if (!localeOk || !pendingLocale) {
-        const code = pendingLocale ?? localeStore.current;
-        localeOk = await saveLocale(code);
-        localeSave = Promise.resolve(localeOk);
-        if (localeOk) pendingLocale = code;
-      }
+      const localeOk = await ensureLocaleSaved();
       saving = false;
       if (!localeOk) {
         error = m.onboarding_error_save();
@@ -142,9 +138,9 @@
   }
 
   // --- Locale switching (step 1) ---
-  // The save is chained, so quick taps on two languages reach the server in order, and the
-  // result is kept for next(): a failed save must stop step 1, as every other save does.
-  // (localeSave and pendingLocale are declared in the module script above.)
+  // Every save goes through one queue, so quick taps on two languages (or a tap during the
+  // fallback save in next()) reach the server in order and an older save can never overwrite a
+  // newer one. (localeSave and savedLocale are declared in the module script above.)
 
   function saveLocale(code: string): Promise<boolean> {
     return fetch('/api/profile/language', {
@@ -156,12 +152,37 @@
       .catch(() => false);
   }
 
+  function queueLocaleSave(code: string): Promise<boolean> {
+    const save = localeSave.then(async () => {
+      const ok = await saveLocale(code);
+      if (ok) savedLocale = code;
+      return ok;
+    });
+    localeSave = save;
+    return save;
+  }
+
+  // True once the language shown on screen is the one stored on the profile. Waits for the whole
+  // queue (a newer save may be added while waiting); if the stored language still differs, queues
+  // one more save for it. Never trusts state from an older save.
+  async function ensureLocaleSaved(): Promise<boolean> {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      let tail: Promise<boolean>;
+      do {
+        tail = localeSave;
+        await tail;
+      } while (tail !== localeSave);
+      if (savedLocale === localeStore.current) return true;
+      if (attempt === 0) queueLocaleSave(localeStore.current);
+    }
+    return false;
+  }
+
   function switchLocale(code: string) {
     localeStore.set(code as typeof localeStore.current);
     // Keep the flashcard language in sync with the chosen language
     flashcardLanguage = defaultFlashcardLanguage(code);
-    pendingLocale = code;
-    localeSave = localeSave.then(() => saveLocale(code));
+    queueLocaleSave(code);
   }
 </script>
 
