@@ -54,6 +54,7 @@
   let userAnswer = $state('');
   let questionBox = $state<HTMLElement | null>(null);
   let summaryBox = $state<HTMLElement | null>(null);
+  let progressBox = $state<HTMLElement | null>(null);
   // Set once any save fails in this session; cleared on restart. Progress stays in memory.
   let saveFailed = $state(false);
 
@@ -102,6 +103,17 @@
     }
   }
 
+  // After "Neste" the long reveal (explanation) can leave the page scrolled far below
+  // the next question, especially on mobile. Bring the progress bar, which sits just
+  // above the question, back to the top. Skipped when it is already in view.
+  function scrollToQuestion() {
+    if (!browser || !progressBox) return;
+    const rect = progressBox.getBoundingClientRect();
+    if (rect.top >= 0 && rect.top < window.innerHeight / 2) return;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    progressBox.scrollIntoView({ block: 'start', behavior: reduceMotion ? 'auto' : 'smooth' });
+  }
+
   // Restart from the summary (button or R). Unlike the first start on mount, this
   // follows a keyboard action that removed the focused element, so focus is moved
   // to the first question. The mount path must not take focus on page load.
@@ -147,6 +159,7 @@
       sessionState = 'questioning';
       await tick();
       focusOptionQuestion();
+      scrollToQuestion();
     } else {
       sessionState = 'summary';
       await tick();
@@ -215,7 +228,7 @@
   {/if}
 {:else if current}
   <!-- Progress bar -->
-  <div class="mb-6">
+  <div bind:this={progressBox} class="mb-6 scroll-mt-20">
     <div class="mb-1 flex items-center justify-between text-sm text-gray-600 dark:text-gray-300">
       <span>{m.grammar_question_count({ current: currentIndex + 1, total: questions.length })}</span
       >

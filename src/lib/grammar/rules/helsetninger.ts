@@ -134,13 +134,18 @@ export const HELSETNINGER_RULES: Record<string, GrammarRule> = {
     titleEn: 'A subordinate clause as the front field',
     titleNb: 'Leddsetning som setningens fundament',
     explanationEn:
-      "When a whole subordinate clause fills the sentence's front field, the main clause verb " +
-      'still comes second, but the resulting word order — and the placement of sentence ' +
-      'adverbials like jo/faktisk/egentlig inside the main clause — trips up even strong ' +
-      'learners: "Det handler om hva man egentlig mener man skal bygge opp skolen rundt."',
+      'When a whole subordinate clause fills the front field, the main clause that follows ' +
+      'has inverted word order: the finite verb comes before the subject. This does not apply ' +
+      'when the subordinate clause is itself the subject ("At hun kom, skremte meg"). Inside ' +
+      'the subordinate clause, sentence adverbials like egentlig/faktisk/jo stand BEFORE the ' +
+      'finite verb. In the main clause they usually stand AFTER the finite verb and subject: ' +
+      '"Selv om han egentlig er syk, går han faktisk på jobb." With a noun subject the adverbial ' +
+      'can also come before the subject: "Hvis de er opptatt, kan ikke de nye mekanikerne hjelpe deg."',
     explanationNb:
-      'Når en hel leddsetning fyller setningens fundamentplass, kommer hovedsetningens verb likevel på andreplass.\n\n' +
-      'Men den resulterende ordstillingen — og plasseringen av setningsadverbial som jo/faktisk/egentlig inne i hovedsetningen — snubler selv sterke innlærere: «Det handler om hva man egentlig mener man skal bygge opp skolen rundt.»'
+      'Når en leddsetning står først i setningen (i fundamentet), får hovedsetningen omvendt ordstilling: det finitte verbet står før subjektet, på andreplass. Det gjelder ikke når leddsetningen selv er subjekt: «At hun kom, skremte meg.»\n\n' +
+      '• **i leddsetningen** — subjekt, setningsadverbial, finitt verb: «Selv om han **egentlig er** syk, …»\n' +
+      '• **i hovedsetningen** — finitt verb, subjekt, setningsadverbial: «…, **går han faktisk** på jobb.»\n\n' +
+      'Setningsadverbial som «egentlig», «faktisk» og «jo» står altså foran det finitte verbet i leddsetningen, men vanligvis etter det finitte verbet og subjektet i hovedsetningen. Med et substantiv som subjekt kan adverbialet også stå foran subjektet: «Hvis de er opptatt, kan **ikke** de nye mekanikerne hjelpe deg.»'
   },
 
   imperativ: {
