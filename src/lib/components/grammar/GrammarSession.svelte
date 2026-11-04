@@ -228,7 +228,7 @@
   {/if}
 {:else if current}
   <!-- Progress bar -->
-  <div bind:this={progressBox} class="mb-6 scroll-mt-4">
+  <div bind:this={progressBox} class="mb-6 scroll-mt-20">
     <div class="mb-1 flex items-center justify-between text-sm text-gray-600 dark:text-gray-300">
       <span>{m.grammar_question_count({ current: currentIndex + 1, total: questions.length })}</span
       >
