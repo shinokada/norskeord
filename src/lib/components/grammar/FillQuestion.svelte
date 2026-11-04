@@ -5,7 +5,14 @@
     $props();
 
   let value = $state('');
-  let inputRef = $state<HTMLInputElement | null>(null);
+  let inputRef = $state<HTMLTextAreaElement | null>(null);
+
+  // Grow the textarea to fit its content so long sentences stay fully visible.
+  function autosize() {
+    if (!inputRef) return;
+    inputRef.style.height = 'auto';
+    inputRef.style.height = `${inputRef.scrollHeight}px`;
+  }
 
   // Some `fill` questions ask the learner to pick a word out of a complete
   // sentence (e.g. «Skriv objektet i setningen.») and have no blank in it. Only
@@ -16,7 +23,10 @@
   $effect(() => {
     void question.id;
     value = '';
-    setTimeout(() => inputRef?.focus(), 0);
+    setTimeout(() => {
+      autosize();
+      inputRef?.focus();
+    }, 0);
   });
 </script>
 
@@ -52,12 +62,14 @@
   </div>
 {/if}
 
-<div class="flex gap-2">
-  <input
+<div class="flex items-start gap-2">
+  <textarea
     bind:this={inputRef}
-    type="text"
+    rows="1"
+    enterkeyhint="go"
     aria-labelledby="fill-{question.id}-instr fill-{question.id}-prompt fill-{question.id}-sentence"
     bind:value
+    oninput={autosize}
     placeholder="Skriv svaret ditt…"
     onkeydown={(e) => {
       if (e.key === 'Enter') {
@@ -65,8 +77,8 @@
         onsubmit(value);
       }
     }}
-    class="min-w-0 flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-500 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-400 dark:focus:ring-indigo-400"
-  />
+    class="min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-500 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-400 dark:focus:ring-indigo-400"
+  ></textarea>
   <button
     type="button"
     onclick={() => onsubmit(value)}
