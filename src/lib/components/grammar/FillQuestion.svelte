@@ -1,18 +1,12 @@
 <script lang="ts">
   import type { GrammarQuestion } from '$lib/types';
+  import { autosize } from '$lib/actions/autosize';
 
   let { question, onsubmit }: { question: GrammarQuestion; onsubmit: (answer: string) => void } =
     $props();
 
   let value = $state('');
   let inputRef = $state<HTMLTextAreaElement | null>(null);
-
-  // Grow the textarea to fit its content so long sentences stay fully visible.
-  function autosize() {
-    if (!inputRef) return;
-    inputRef.style.height = 'auto';
-    inputRef.style.height = `${inputRef.scrollHeight}px`;
-  }
 
   // Some `fill` questions ask the learner to pick a word out of a complete
   // sentence (e.g. «Skriv objektet i setningen.») and have no blank in it. Only
@@ -23,10 +17,7 @@
   $effect(() => {
     void question.id;
     value = '';
-    setTimeout(() => {
-      autosize();
-      inputRef?.focus();
-    }, 0);
+    setTimeout(() => inputRef?.focus(), 0);
   });
 </script>
 
@@ -69,7 +60,7 @@
     enterkeyhint="go"
     aria-labelledby="fill-{question.id}-instr fill-{question.id}-prompt fill-{question.id}-sentence"
     bind:value
-    oninput={autosize}
+    use:autosize={value}
     placeholder="Skriv svaret ditt…"
     onkeydown={(e) => {
       if (e.key === 'Enter') {

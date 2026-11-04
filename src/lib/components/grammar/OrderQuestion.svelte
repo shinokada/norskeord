@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { GrammarQuestion } from '$lib/types';
+  import { autosize } from '$lib/actions/autosize';
   import { shuffleTokens } from '$lib/grammar/session';
 
   let { question, onsubmit }: { question: GrammarQuestion; onsubmit: (answer: string) => void } =
@@ -8,13 +9,6 @@
   let value = $state('');
   let inputRef = $state<HTMLTextAreaElement | null>(null);
 
-  // Grow the textarea to fit its content so long sentences stay fully visible.
-  function autosize() {
-    if (!inputRef) return;
-    inputRef.style.height = 'auto';
-    inputRef.style.height = `${inputRef.scrollHeight}px`;
-  }
-
   // The chips are reference only (not interactive). Reshuffle per question so
   // the displayed order doesn't accidentally match the answer.
   let chips = $derived(shuffleTokens(question.tokens ?? []));
@@ -22,10 +16,7 @@
   $effect(() => {
     void question.id;
     value = '';
-    setTimeout(() => {
-      autosize();
-      inputRef?.focus();
-    }, 0);
+    setTimeout(() => inputRef?.focus(), 0);
   });
 </script>
 
@@ -65,7 +56,7 @@
     enterkeyhint="go"
     aria-labelledby="order-{question.id}-instr order-{question.id}-prompt order-{question.id}-words-label order-{question.id}-words"
     bind:value
-    oninput={autosize}
+    use:autosize={value}
     placeholder="Skriv svaret ditt…"
     onkeydown={(e) => {
       if (e.key === 'Enter') {
