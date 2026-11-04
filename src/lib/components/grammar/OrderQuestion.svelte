@@ -1,12 +1,13 @@
 <script lang="ts">
   import type { GrammarQuestion } from '$lib/types';
+  import { autosize } from '$lib/actions/autosize';
   import { shuffleTokens } from '$lib/grammar/session';
 
   let { question, onsubmit }: { question: GrammarQuestion; onsubmit: (answer: string) => void } =
     $props();
 
   let value = $state('');
-  let inputRef = $state<HTMLInputElement | null>(null);
+  let inputRef = $state<HTMLTextAreaElement | null>(null);
 
   // The chips are reference only (not interactive). Reshuffle per question so
   // the displayed order doesn't accidentally match the answer.
@@ -48,12 +49,14 @@
   {/each}
 </div>
 
-<div class="flex gap-2">
-  <input
+<div class="flex items-start gap-2">
+  <textarea
     bind:this={inputRef}
-    type="text"
+    rows="1"
+    enterkeyhint="go"
     aria-labelledby="order-{question.id}-instr order-{question.id}-prompt order-{question.id}-words-label order-{question.id}-words"
     bind:value
+    use:autosize={value}
     placeholder="Skriv svaret ditt…"
     onkeydown={(e) => {
       if (e.key === 'Enter') {
@@ -61,12 +64,12 @@
         onsubmit(value);
       }
     }}
-    class="flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-500 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-400 dark:focus:ring-indigo-400"
-  />
+    class="min-w-0 flex-1 resize-none overflow-hidden rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-500 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-400 dark:focus:ring-indigo-400"
+  ></textarea>
   <button
     type="button"
     onclick={() => onsubmit(value)}
-    class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none"
+    class="shrink-0 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300 focus:outline-none"
   >
     Sjekk
   </button>
