@@ -78,6 +78,15 @@ test.describe('mobile shell at 375px', () => {
     await expect(topBar(page).locator('a[href="/"]')).toHaveCount(0);
   });
 
+  test('a guest sees a Log in button in the top bar, and no search icon', async ({ page }) => {
+    await page.goto('/learn/a1');
+    const login = page.getByTestId('mobile-login-button');
+    // Shown once the client auth store has finished loading, so allow for that.
+    await expect(login).toBeVisible();
+    await expect(page.getByTestId('mobile-search-button')).toHaveCount(0);
+    await expect(login).toHaveAttribute('href', '/auth/login');
+  });
+
   test('the top bar stays at the top when the page is scrolled', async ({ page }) => {
     await page.goto('/learn/a1');
     await expect(topBar(page)).toBeVisible();

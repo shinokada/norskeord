@@ -7,7 +7,9 @@
    * - tab roots: the flag and the wordmark, linking to `/`;
    * - sub-pages (`parentHref()` is not null): a back arrow and the page title;
    * - a search icon for Plus users on both. It only opens the modal that `Nav` owns, through
-   *   `searchUi`: a second `<Search>` here would open a second modal on Ctrl/Cmd+K.
+   *   `searchUi`: a second `<Search>` here would open a second modal on Ctrl/Cmd+K;
+   * - a light "Log in" button on the right for guests, so login is one tap instead of Profile > More.
+   *   Signed-in non-Plus users get nothing on the right.
    *
    * No hamburger, language switcher, dark-mode toggle or trial badge: they move to the More menu
    * (Phase 5).
@@ -30,6 +32,10 @@
   // back to the client-side auth store there.
   const isPlus = $derived(page.data.user ? page.data.plan === 'plus' : authStore.isPlus);
 
+  // Guest = no server user and no client user. `page.data.user` is null on prerendered pages even
+  // for signed-in visitors, so wait for `authStore.initialized` to avoid flashing "Log in".
+  const isGuest = $derived(!page.data.user && authStore.initialized && !authStore.user);
+
   /** Title of a sub-page. The grammar content is Norwegian-only, like the pages themselves. */
   const title = $derived.by(() => {
     const [first, second, third] = pathname.split('/').filter(Boolean);
@@ -49,7 +55,7 @@
 
 {#if visible}
   <header
-    class="sticky top-0 z-40 flex h-14 items-center gap-1 border-b border-gray-200 bg-gray-50 px-2 md:hidden dark:border-gray-600 dark:bg-blue-950"
+    class="sticky top-0 z-40 flex h-14 items-center gap-1 border-b border-gray-100 bg-gray-50 px-2 md:hidden dark:border-blue-900 dark:bg-blue-950"
     data-testid="mobile-top-bar"
   >
     {#if parent}
@@ -78,6 +84,14 @@
       >
         <SearchOutline class="h-5 w-5" aria-hidden="true" />
       </button>
+    {:else if isGuest}
+      <a
+        href="/auth/login"
+        class="ml-auto inline-flex h-11 items-center rounded-lg px-3 text-sm font-semibold text-indigo-700 hover:bg-gray-100 dark:text-indigo-300 dark:hover:bg-gray-700"
+        data-testid="mobile-login-button"
+      >
+        {m.nav_log_in()}
+      </a>
     {/if}
   </header>
 {/if}
