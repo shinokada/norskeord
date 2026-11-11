@@ -1,5 +1,9 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "more_menu_title": "More",
+  "more_menu_dark_mode": "Dark mode",
+  "legal_privacy": "Privacy",
+  "legal_terms": "Terms",
   "trial_start_cta": "Try Plus free for 30 days",
   "trial_start_loading": "Starting your trial…",
   "trial_start_note": "No card needed. The trial ends by itself after 30 days.",
@@ -888,6 +892,7 @@
   "profile_sub_timezone_link": "What's that in my time?",
   "profile_danger_zone_summary": "Danger Zone",
   "nav_switch_language_aria": "Switch language",
+  "bottom_nav_label": "Main navigation",
   "footer_tagline": "Norwegian vocabulary from beginner to advanced.",
   "grammar_search_placeholder": "Search topics…",
   "grammar_search_aria": "Search grammar topics",

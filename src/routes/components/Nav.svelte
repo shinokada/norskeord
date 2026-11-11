@@ -31,9 +31,7 @@
     EnvelopeOutline,
     QuestionCircleOutline
   } from 'flowbite-svelte-icons';
-  import { LANGUAGES, FLASHCARD_LANGUAGES, languageEntryForLocale } from '$lib/config';
-  import { languageStore } from '$lib/stores/language.svelte';
-  import type { FlashcardLanguage } from '$lib/types';
+  import { LANGUAGES, languageEntryForLocale } from '$lib/config';
   import type { Locale } from '$lib/localeStore.svelte';
   import No from '$lib/No.svelte';
   import { page } from '$app/state';
@@ -41,10 +39,23 @@
   import { onMount } from 'svelte';
   import * as m from '$lib/paraglide/messages.js';
   import { localeStore } from '$lib/localeStore.svelte';
-  import { parkForLogout } from '$lib/parked-progress';
+  import { logout as logoutAction, switchLocale as switchLocaleAction } from '$lib/nav-actions';
   import Search from '$lib/components/Search.svelte';
   import { trialView } from '$lib/stores/trial.svelte';
   import TrialModal from '$lib/components/TrialModal.svelte';
+  import { searchUi } from '$lib/stores/searchUi.svelte';
+
+  interface Props {
+    /**
+     * Hide the `Navbar` below `md` (the compact `MobileTopBar` replaces it on `tabs` routes,
+     * mobile-web-shell.md Phase 3). Hidden with CSS on the `Navbar` itself, never with `{#if}`
+     * and never by wrapping `<Nav />`: this component must stay mounted (`authStore.init()`,
+     * the Search modal) and a wrapper would break `sticky top-0`.
+     */
+    hideOnSmall?: boolean;
+  }
+
+  let { hideOnSmall = false }: Props = $props();
 
   const sidebarUi = uiHelpers();
   const closeDemoSidebar = sidebarUi.close;
@@ -60,14 +71,8 @@
   const effectiveUser = $derived(user ?? authStore.user);
 
   async function logout() {
-    // Park this account's local progress instead of deleting it: leftovers of a failed free to
-    // Plus migration and a free user's progress come back at the next login of the same
-    // account, and nobody else can read them (ai-docs/implementation/logout-progress-parking.md).
-    parkForLogout(effectiveUser?.id);
-    authStore.reset();
     avatarDropdownOpen = false;
-    await fetch('/auth/logout', { method: 'POST' });
-    window.location.href = '/';
+    await logoutAction(effectiveUser?.id);
   }
 
   let activeUrl = $derived(page.url.pathname);
@@ -90,26 +95,8 @@
 
   async function switchLocale(code: Locale) {
     if (code === localeStore.current) return;
-    localeStore.set(code);
     langDropdownOpen = false;
-    // Keep the flashcard translation language in sync with the chosen locale.
-    // Look up the language key (e.g. 'spanish') whose code matches (e.g. 'es').
-    const matchedLang = Object.entries(LANGUAGES).find(([, v]) => v.code === code)?.[0] as
-      FlashcardLanguage | undefined;
-    if (matchedLang && matchedLang in FLASHCARD_LANGUAGES) {
-      languageStore.set(matchedLang);
-    }
-    if (effectiveUser) {
-      try {
-        await fetch('/api/profile/language', {
-          method: 'PATCH',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ locale: code })
-        });
-      } catch {
-        console.warn('[Nav] Failed to persist locale to profile');
-      }
-    }
+    await switchLocaleAction(code, !!effectiveUser);
   }
 
   onMount(async () => {
@@ -121,8 +108,7 @@
     await authStore.init();
   });
 
-  // ── Search modal ───────────────────────────────────────────────────────────
-  let searchOpen = $state(false);
+  // Search modal: its open state lives in `searchUi`, shared with `MobileTopBar`.
 
   // ── Dropdown open state ────────────────────────────────────────────────────
   let avatarDropdownOpen = $state(false);
@@ -145,17 +131,19 @@
 </script>
 
 <Search
-  bind:open={searchOpen}
+  bind:open={searchUi.open}
   isPlus={effectiveIsPlus}
   onclose={() => {
-    searchOpen = false;
+    searchUi.open = false;
   }}
 />
 
 <Navbar
   breakpoint="md"
   fluid
-  class="sticky top-0 z-40 mx-auto w-full flex-none border-b border-gray-200 bg-gray-50 dark:border-gray-600 dark:bg-blue-950"
+  class="sticky top-0 z-40 mx-auto w-full flex-none border-b border-gray-200 bg-gray-50 dark:border-gray-600 dark:bg-blue-950 {hideOnSmall
+    ? 'max-md:hidden'
+    : ''}"
   navContainerClass="md:justify-between"
 >
   <NavBrand href="/">
@@ -174,7 +162,7 @@
         type="button"
         aria-label={m.search_aria_label()}
         onclick={() => {
-          searchOpen = true;
+          searchUi.open = true;
         }}
         class="relative inline-flex items-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
         data-testid="search-button"

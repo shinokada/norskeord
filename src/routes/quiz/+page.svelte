@@ -47,6 +47,7 @@
     type QuizPayload
   } from '$lib/quiz-gate';
   import { languageStore } from '$lib/stores/language.svelte';
+  import { shellSession } from '$lib/stores/shellSession.svelte';
   import { getTranslation, getExampleTranslation, categoryLabel } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages';
 
@@ -120,6 +121,18 @@
   // FSRS review-intensity preset from the layout data (0.8/0.9/0.95, null = default). Same
   // source as VocabFlashcardPage; saveProgress() ignores it when userId is null.
   let fsrsRetention = $derived((page.data.fsrsRetention as number | null | undefined) ?? null);
+
+  // Small-screen app shell (ai-docs/implementation/mobile-web-shell.md, Phase 4): the bottom tab
+  // bar is hidden while a quiz is on screen (questioning, revealing, summary) and comes back on the
+  // picker. The cleanup runs when the session ends and when the page is left, so the bar is always
+  // restored. Keyed on a boolean, so it does not re-run (hide, show, hide) between questions.
+  const inSession = $derived(quizState !== 'idle');
+  $effect(() => {
+    if (inSession) {
+      shellSession.hide();
+      return () => shellSession.show();
+    }
+  });
 
   // The picker is built from per-level, per-category counts (no entry content). The
   // entries of a session come from POST /api/quiz-entries when the user clicks Start

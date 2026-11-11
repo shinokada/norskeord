@@ -5,6 +5,7 @@
   import * as m from '$lib/paraglide/messages';
   import ExplanationText from './ExplanationText.svelte';
   import GrammarSession from './GrammarSession.svelte';
+  import { shellSession } from '$lib/stores/shellSession.svelte';
 
   /**
    * Regel / Øv layout for one topic (grammar-update.md, Phase 6a).
@@ -39,6 +40,18 @@
   let activeTab = $derived<TopicTab>(
     chosenTab ?? tabParam ?? (progressLoaded ? defaultTab(dueCount) : 'rule')
   );
+
+  // Small-screen app shell (ai-docs/implementation/mobile-web-shell.md, Phase 4): the bottom tab
+  // bar is hidden while the Practise tab is showing, and comes back on the Regel tab. It lives here
+  // and not in GrammarSession: that component is always mounted (hidden by an attribute) and is
+  // also used by other pages. The cleanup restores the bar when the tab changes or the page is left.
+  const practising = $derived(activeTab === 'practice');
+  $effect(() => {
+    if (practising) {
+      shellSession.hide();
+      return () => shellSession.show();
+    }
+  });
 
   function handleProgress(map: Record<string, CardProgress>) {
     dueCount = countDueToday(

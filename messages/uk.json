@@ -1,5 +1,9 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "more_menu_title": "Ще",
+  "more_menu_dark_mode": "Темний режим",
+  "legal_privacy": "Конфіденційність",
+  "legal_terms": "Умови",
   "quiz_plus_only_count_trial": "+{count} з Plus, безкоштовно 30 днів →",
   "grammar_plus_locked_title_trial": "Спробуйте всі теми граматики безкоштовно протягом 30 днів",
   "teaser_heading_trial": "Спробуйте всі картки безкоштовно протягом 30 днів",
@@ -889,6 +893,7 @@
   "profile_sub_timezone_link": "Який це час у моєму часовому поясі?",
   "profile_danger_zone_summary": "Небезпечна зона",
   "nav_switch_language_aria": "Змінити мову",
+  "bottom_nav_label": "Головна навігація",
   "footer_tagline": "Норвезький словниковий запас від початківця до просунутого рівня.",
   "grammar_search_placeholder": "Пошук тем…",
   "grammar_search_aria": "Пошук граматичних тем",

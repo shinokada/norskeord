@@ -1,5 +1,9 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "more_menu_title": "Mer",
+  "more_menu_dark_mode": "Mørk modus",
+  "legal_privacy": "Personvern",
+  "legal_terms": "Vilkår",
   "quiz_plus_only_count_trial": "+{count} med Plus, gratis i 30 dager →",
   "grammar_plus_locked_title_trial": "Prøv alle grammatikkemnene gratis i 30 dager",
   "teaser_heading_trial": "Prøv alle kortene gratis i 30 dager",
@@ -889,6 +893,7 @@
   "profile_sub_timezone_link": "Hva er det i min tidssone?",
   "profile_danger_zone_summary": "Faresone",
   "nav_switch_language_aria": "Bytt språk",
+  "bottom_nav_label": "Hovednavigasjon",
   "footer_tagline": "Norsk ordforråd fra nybegynner til avansert.",
   "grammar_search_placeholder": "Søk i emner…",
   "grammar_search_aria": "Søk i grammatikkemner",

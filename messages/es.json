@@ -1,5 +1,9 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "more_menu_title": "Más",
+  "more_menu_dark_mode": "Modo oscuro",
+  "legal_privacy": "Privacidad",
+  "legal_terms": "Condiciones",
   "quiz_plus_only_count_trial": "+{count} con Plus, gratis durante 30 días →",
   "grammar_plus_locked_title_trial": "Prueba todos los temas de gramática gratis durante 30 días",
   "teaser_heading_trial": "Prueba todas las tarjetas gratis durante 30 días",
@@ -889,6 +893,7 @@
   "profile_sub_timezone_link": "¿Qué hora es esa en mi zona horaria?",
   "profile_danger_zone_summary": "Zona de peligro",
   "nav_switch_language_aria": "Cambiar idioma",
+  "bottom_nav_label": "Navegación principal",
   "footer_tagline": "Vocabulario noruego de principiante a avanzado.",
   "grammar_search_placeholder": "Buscar temas…",
   "grammar_search_aria": "Buscar temas de gramática",

@@ -1,5 +1,9 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "more_menu_title": "Mehr",
+  "more_menu_dark_mode": "Dunkelmodus",
+  "legal_privacy": "Datenschutz",
+  "legal_terms": "Nutzungsbedingungen",
   "quiz_plus_only_count_trial": "+{count} mit Plus, 30 Tage kostenlos →",
   "grammar_plus_locked_title_trial": "Alle Grammatikthemen 30 Tage kostenlos testen",
   "teaser_heading_trial": "Alle Karten 30 Tage kostenlos testen",
@@ -889,6 +893,7 @@
   "profile_sub_timezone_link": "Wie spät ist das in meiner Zeitzone?",
   "profile_danger_zone_summary": "Gefahrenzone",
   "nav_switch_language_aria": "Sprache wechseln",
+  "bottom_nav_label": "Hauptnavigation",
   "footer_tagline": "Norwegischer Wortschatz von Anfänger bis Fortgeschritten.",
   "grammar_search_placeholder": "Themen durchsuchen…",
   "grammar_search_aria": "Grammatikthemen durchsuchen",
