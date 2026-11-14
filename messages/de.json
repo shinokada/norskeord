@@ -1,5 +1,6 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "bottom_nav_progress": "Fortschritt",
   "more_menu_title": "Mehr",
   "more_menu_dark_mode": "Dunkelmodus",
   "legal_privacy": "Datenschutz",

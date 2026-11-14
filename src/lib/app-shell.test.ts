@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { shellMode, activeTab, learnHref, parentHref } from './app-shell';
+import { shellMode, activeTab, learnHref, parentHref, flashcardTitle } from './app-shell';
 
 describe('shellMode', () => {
   it.each([
@@ -107,11 +107,47 @@ describe('parentHref', () => {
     ['/my-progress', null],
     ['/my-profile', null],
     ['/learn/b1', null],
-    ['/norskproven', null],
-    ['/blog/x', null], // not a tabs route
-    ['/a1/food', null], // session route
+    ['/blog/x', null], // not a shell route
     ['/', null]
   ])('%s goes back to %s', (path, parent) => {
     expect(parentHref(path)).toBe(parent);
+  });
+
+  it.each([
+    ['/a1/food', '/learn/a1'],
+    ['/b2/greetings', '/learn/b2'],
+    ['/c/uttrykk', '/learn/c'],
+    ['/norskproven/test-1/reading/b1', '/norskproven'],
+    ['/review/grammar', '/grammar']
+  ])('session route %s goes back to %s', (path, parent) => {
+    expect(parentHref(path)).toBe(parent);
+  });
+
+  it('sends /review to the Learn page of the current level, A1 by default', () => {
+    expect(parentHref('/review')).toBe('/learn/a1');
+    expect(parentHref('/review', null)).toBe('/learn/a1');
+    expect(parentHref('/review', 'B1')).toBe('/learn/b1');
+  });
+
+  it('ignores the current level on every other route', () => {
+    expect(parentHref('/a1/food', 'B2')).toBe('/learn/a1');
+    expect(parentHref('/grammar/x', 'B2')).toBe('/grammar');
+  });
+});
+
+describe('flashcardTitle', () => {
+  it.each([
+    ['/a1/greetings', 'Greetings'],
+    ['/b1/daily-life', 'Daily life'],
+    ['/c/uttrykk', 'Uttrykk'],
+    ['/a1/mat%20og%20drikke', 'Mat og drikke'],
+    ['/a1/%E0%A4%A', '%E0%A4%A'], // malformed escape: the raw segment, no throw
+    ['/a1', null],
+    ['/a1/food/extra', null],
+    ['/learn/a1', null],
+    ['/blog/x', null],
+    ['/', null]
+  ])('%s is titled %s', (path, title) => {
+    expect(flashcardTitle(path)).toBe(title);
   });
 });

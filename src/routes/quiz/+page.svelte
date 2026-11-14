@@ -48,6 +48,7 @@
   } from '$lib/quiz-gate';
   import { languageStore } from '$lib/stores/language.svelte';
   import { shellSession } from '$lib/stores/shellSession.svelte';
+  import { sessionHeader } from '$lib/stores/sessionHeader.svelte';
   import { getTranslation, getExampleTranslation, categoryLabel } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages';
 
@@ -123,14 +124,37 @@
   let fsrsRetention = $derived((page.data.fsrsRetention as number | null | undefined) ?? null);
 
   // Small-screen app shell (ai-docs/implementation/mobile-web-shell.md, Phase 4): the bottom tab
-  // bar is hidden while a quiz is on screen (questioning, revealing, summary) and comes back on the
-  // picker. The cleanup runs when the session ends and when the page is left, so the bar is always
-  // restored. Keyed on a boolean, so it does not re-run (hide, show, hide) between questions.
+  // bar is hidden while questions are on screen (questioning, revealing) and comes back on the
+  // picker and on the summary screen, where the quiz is over and there is no keyboard. The cleanup
+  // runs when that ends and when the page is left, so the bar is always restored. Keyed on a
+  // boolean, so it does not re-run (hide, show, hide) between questions.
   const inSession = $derived(quizState !== 'idle');
+  // A function, not an inline comparison: `quizState` starts as 'idle', and TypeScript would
+  // narrow it to that literal here and reject the comparisons below as having no overlap.
+  function hasQuestionsOnScreen(state: QuizState): boolean {
+    return state === 'questioning' || state === 'revealing';
+  }
+  const questionsOnScreen = $derived(hasQuestionsOnScreen(quizState));
   $effect(() => {
-    if (inSession) {
+    if (questionsOnScreen) {
       shellSession.hide();
       return () => shellSession.show();
+    }
+  });
+
+  // Phase 4b: while a quiz is on screen the small-screen top bar shows `← Quiz | A2 · Body`
+  // (a header registered here, see sessionHeader.svelte.ts) instead of the flag and wordmark, so
+  // below md the page hides its own back link and heading. The arrow does what that link did: it
+  // goes back to the picker. The title is a snapshot taken at Start: the summary screen edits
+  // selectedLevel and selectedCategory for the next quiz, which must not retitle the finished one.
+  let sessionTitle = $state('');
+  $effect(() => {
+    if (inSession) {
+      return sessionHeader.register({
+        backLabel: m.quiz_title(),
+        title: sessionTitle,
+        onback: goToIdle
+      });
     }
   });
 
@@ -345,6 +369,12 @@
       selectedOption = null;
       typedAnswer = '';
       isCorrect = null;
+      sessionTitle = [
+        formatLevel(selectedLevel),
+        selectedCategory ? formatCategory(selectedCategory) : ''
+      ]
+        .filter(Boolean)
+        .join(' · ');
       quizState = 'questioning';
     } catch (err) {
       // Stay on the picker; the button works again.
@@ -698,7 +728,7 @@
 
 <div class="mx-auto max-w-2xl px-4 py-10 text-left">
   {#if quizState !== 'idle'}
-    <div class="mb-4">
+    <div class="mb-4 max-md:hidden">
       <button
         type="button"
         onclick={goToIdle}
@@ -816,9 +846,10 @@
       {/if}
     </div>
   {:else if quizState === 'questioning' && current}
-    <!-- Page heading -->
-    <div class="mb-5">
-      <h1 class="text-xl font-bold text-gray-900 dark:text-white">
+    <!-- Page heading. Below md the top bar shows the same words (sessionHeader), so the heading is
+         visually hidden there but stays in the accessibility tree. -->
+    <div class="mb-5 max-md:mb-0">
+      <h1 class="text-xl font-bold text-gray-900 max-md:sr-only dark:text-white">
         🧠 {m.quiz_title()}{selectedLevel
           ? ` · ${formatLevel(selectedLevel)}`
           : ''}{selectedCategory ? ` · ${formatCategory(selectedCategory)}` : ''}
@@ -1022,9 +1053,9 @@
       {/if}
     </div>
   {:else if quizState === 'revealing' && current}
-    <!-- Page heading -->
-    <div class="mb-5">
-      <h1 class="text-xl font-bold text-gray-900 dark:text-white">
+    <!-- Page heading (visually hidden below md, as in the questioning state) -->
+    <div class="mb-5 max-md:mb-0">
+      <h1 class="text-xl font-bold text-gray-900 max-md:sr-only dark:text-white">
         🧠 {m.quiz_title()}{selectedLevel
           ? ` · ${formatLevel(selectedLevel)}`
           : ''}{selectedCategory ? ` · ${formatCategory(selectedCategory)}` : ''}

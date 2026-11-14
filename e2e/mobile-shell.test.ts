@@ -53,11 +53,33 @@ test.describe('mobile shell at 375px', () => {
     });
   }
 
-  test('a flashcard session route has no bottom bar and no visible footer', async ({ page }) => {
+  test('a flashcard session route has the compact top bar with a back arrow, no bottom bar and no visible footer', async ({
+    page
+  }) => {
     await page.goto('/a1/greetings');
-    await expect(page.getByText(/studying:\s*greetings/i)).toBeVisible();
+    // Below md the compact top bar already shows the category, so the plain "Studying: X" line is
+    // hidden (it stays in the DOM, and stays visible on desktop).
+    await expect(page.getByText(/studying:\s*greetings/i)).toBeHidden();
     await expect(bar(page)).toHaveCount(0);
     await expect(footerPrivacyLink(page)).toBeHidden();
+
+    // The compact bar replaces the full Nav: back to the level's Learn page, labelled with that
+    // level ("A1", so the arrow does not read as "back to Greetings"), titled by category.
+    await expect(topBar(page)).toBeVisible();
+    await expect(topBar(page).locator('a[href="/learn/a1"]')).toBeVisible();
+    await expect(topBar(page).locator('a[href="/learn/a1"]')).toHaveText('A1');
+    await expect(topBar(page).locator('a[href="/"]')).toHaveCount(0);
+    await expect(topBar(page)).toContainText('Greetings');
+  });
+
+  test('grammar review: back arrow labelled Grammar, and a centred title', async ({ page }) => {
+    await page.goto('/review/grammar?level=B1');
+    await expect(bar(page)).toHaveCount(0);
+    const back = topBar(page).locator('a[href="/grammar"]');
+    await expect(back).toBeVisible();
+    await expect(back).toHaveText('Grammar');
+    // The title is the "due today" label, centred between the arrow and the right slot.
+    await expect(topBar(page).locator('p')).toHaveText(/due/i);
   });
 
   test('the active tab follows the route', async ({ page }) => {
@@ -125,6 +147,19 @@ test.describe('mobile shell at 375px', () => {
     await page.getByRole('button', { name: /start quiz/i }).click();
     await expect(page.getByText(/question 1 of|spørsmål 1 av/i)).toBeVisible({ timeout: 10000 });
     await expect(bar(page)).toHaveCount(0);
+
+    // The top bar becomes the session header: `← Quiz | A1 · Greetings`, no flag and wordmark.
+    await expect(page.getByTestId('mobile-back-button')).toContainText('Quiz');
+    await expect(page.getByTestId('mobile-session-title')).toHaveText(/A1.*Greetings/i);
+    await expect(topBar(page).locator('a[href="/"]')).toHaveCount(0);
+    // The page's own back link is hidden below md (the top bar has the arrow now).
+    await expect(page.getByRole('button', { name: /^←\s*Quiz$/ })).toBeHidden();
+
+    // The arrow leaves the quiz at once, like the in-page link did: back to the picker.
+    await page.getByTestId('mobile-back-button').click();
+    await expect(bar(page)).toBeVisible();
+    await expect(page.getByTestId('mobile-back-button')).toHaveCount(0);
+    await expect(topBar(page).locator('a[href="/"]')).toBeVisible();
   });
 
   test('grammar topic: the bar is hidden on the Practise tab and back on the Rule tab', async ({
@@ -243,4 +278,10 @@ test.describe('desktop at 1280px', () => {
       await expect(footerPrivacyLink(page)).toBeVisible();
     });
   }
+
+  test('/a1/greetings: the compact top bar is hidden on desktop', async ({ page }) => {
+    await page.goto('/a1/greetings');
+    await expect(page.getByText(/studying:\s*greetings/i)).toBeVisible();
+    await expect(topBar(page)).toBeHidden();
+  });
 });

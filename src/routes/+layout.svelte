@@ -49,8 +49,9 @@
   const analyticsId = $derived(data.ANALYTICS_ID_LANGUAGE_APP);
 
   // Small-screen app shell (ai-docs/implementation/mobile-web-shell.md). `tabs`: bottom bar,
-  // compact top bar, no footer. `session`: no footer. `site`: unchanged. Everything below `md`
-  // is hidden with CSS only, so the footer links stay in the HTML and Nav stays mounted.
+  // compact top bar, no footer. `session`: compact top bar (back arrow), no bottom bar, no footer.
+  // `site`: unchanged. Everything below `md` is hidden with CSS only, so the footer links stay in
+  // the HTML and Nav stays mounted.
   const mode = $derived(shellMode(page.url.pathname));
   // The spacer mirrors the bar's own visibility rule (BottomNav), so the end of the page is never
   // hidden behind the bar.
@@ -146,8 +147,8 @@
     <OnboardingSlides />
   {/if}
 
-  <Nav hideOnSmall={mode === 'tabs'} />
-  {#if mode === 'tabs'}
+  <Nav hideOnSmall={mode !== 'site'} />
+  {#if mode !== 'site'}
     <MobileTopBar />
   {/if}
   <TrialBanner />

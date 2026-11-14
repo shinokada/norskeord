@@ -4,7 +4,7 @@
    * (ai-docs/implementation/mobile-web-shell.md, Phase 2).
    *
    * Shown only on `tabs` routes (see `shellMode()` in `$lib/app-shell`), below `md`, and not while
-   * a view has hidden it through `shellSession` (quiz and grammar practice).
+   * a view has hidden it through `shellSession` (quiz questions and grammar practice).
    */
   import { BottomNav, BottomNavItem } from 'flowbite-svelte';
   import {
@@ -43,6 +43,19 @@
     signedIn ? '/my-profile' : onGuestProfile ? undefined : '/auth/login'
   );
 
+  /**
+   * Tapping the Quiz tab while already on /quiz is a link to the current URL, so nothing would
+   * happen. The quiz page listens for `quiz:reset` and goes back to its picker, which is how the
+   * tab leaves the summary screen (mobile-web-shell.md, Phase 4b).
+   */
+  function onTabClick(key: ShellTab): (() => void) | undefined {
+    if (key === 'profile' && !signedIn) return onGuestProfile;
+    if (key === 'quiz' && pathname.replace(/\/$/, '') === '/quiz') {
+      return () => window.dispatchEvent(new CustomEvent('quiz:reset'));
+    }
+    return undefined;
+  }
+
   const tabs = $derived<
     { key: ShellTab; href: string | undefined; icon: typeof BookOpenOutline }[]
   >([
@@ -62,7 +75,7 @@
       case 'quiz':
         return m.nav_quiz();
       case 'progress':
-        return m.nav_my_progress();
+        return m.bottom_nav_progress();
       case 'profile':
         return m.nav_my_profile();
     }
@@ -74,7 +87,7 @@
     Overrides of the flowbite defaults (they are merged with tailwind-merge, so the later class wins):
     z-30 -> z-40, h-16 -> h-auto on the outer element (the safe-area padding adds to the 4rem inner
     row; the left and right insets keep the tabs clear of a landscape notch), bg-white /
-    dark:bg-gray-700 -> the Nav colours, px-5 -> px-1 and text-sm -> text-xs on the items (five
+    dark:bg-gray-700 -> the Nav colours, px-5 -> px-0.5 and text-sm -> text-xs on the items (five
     items at 360px leave about 72px each). The insets are classes, not an inline style, so a test
     can see them (jsdom drops env() from an inline style). The tap highlight is switched off: the
     active colour already shows the press. Each tab is at least 64px high and 72px wide, above the
@@ -99,8 +112,8 @@
         href={tab.href}
         {active}
         aria-current={active ? 'page' : undefined}
-        onclick={tab.key === 'profile' && !signedIn ? onGuestProfile : undefined}
-        class="min-w-0 px-1"
+        onclick={onTabClick(tab.key)}
+        class="min-w-0 px-0.5"
         classes={{ span: 'max-w-full truncate text-xs' }}
       >
         <tab.icon

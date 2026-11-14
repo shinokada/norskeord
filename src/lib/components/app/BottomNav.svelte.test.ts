@@ -33,6 +33,7 @@ vi.mock('$lib/paraglide/messages.js', () => ({
   nav_grammar: () => 'Grammar',
   nav_quiz: () => 'Quiz',
   nav_my_progress: () => 'My Progress',
+  bottom_nav_progress: () => 'Progress',
   nav_my_profile: () => 'Profile',
   bottom_nav_label: () => 'Main navigation'
 }));
@@ -114,7 +115,7 @@ describe('BottomNav tabs', () => {
     const labels = Array.from(bar()!.querySelectorAll('a, button')).map((el) =>
       el.textContent?.trim()
     );
-    expect(labels).toEqual(['Learn', 'Grammar', 'Quiz', 'My Progress', 'Profile']);
+    expect(labels).toEqual(['Learn', 'Grammar', 'Quiz', 'Progress', 'Profile']);
   });
 
   it('links the plain tabs', () => {
@@ -122,7 +123,7 @@ describe('BottomNav tabs', () => {
     render(BottomNav);
     expect(tab('Grammar').getAttribute('href')).toBe('/grammar');
     expect(tab('Quiz').getAttribute('href')).toBe('/quiz');
-    expect(tab('My Progress').getAttribute('href')).toBe('/my-progress');
+    expect(tab('Progress').getAttribute('href')).toBe('/my-progress');
   });
 
   it.each([
@@ -131,8 +132,8 @@ describe('BottomNav tabs', () => {
     ['/grammar/chapter/x', 'Grammar'],
     ['/grammar/word-order', 'Grammar'],
     ['/quiz', 'Quiz'],
-    ['/my-progress', 'My Progress'],
-    ['/my-progress/grammar', 'My Progress'],
+    ['/my-progress', 'Progress'],
+    ['/my-progress/grammar', 'Progress'],
     ['/my-profile', 'Profile']
   ])('marks the right tab current on %s', (path, name) => {
     setPage(path, { user: { id: 'u1' } });
@@ -166,6 +167,36 @@ describe('BottomNav Learn target', () => {
     setPage('/quiz', { currentLevel: level });
     render(BottomNav);
     expect(tab('Learn').getAttribute('href')).toBe('/learn/a1');
+  });
+});
+
+describe('BottomNav Quiz tab on /quiz', () => {
+  // The tab is a link to the URL the learner is already on, so it also fires `quiz:reset`, which
+  // the quiz page answers by going back to its picker (the way out of the summary screen).
+  it('dispatches quiz:reset when the learner is already on /quiz', async () => {
+    setPage('/quiz');
+    render(BottomNav);
+    const onReset = vi.fn();
+    window.addEventListener('quiz:reset', onReset);
+    try {
+      await fireEvent.click(tab('Quiz'));
+    } finally {
+      window.removeEventListener('quiz:reset', onReset);
+    }
+    expect(onReset).toHaveBeenCalledTimes(1);
+  });
+
+  it('does not dispatch quiz:reset from another page', async () => {
+    setPage('/grammar');
+    render(BottomNav);
+    const onReset = vi.fn();
+    window.addEventListener('quiz:reset', onReset);
+    try {
+      await fireEvent.click(tab('Quiz'));
+    } finally {
+      window.removeEventListener('quiz:reset', onReset);
+    }
+    expect(onReset).not.toHaveBeenCalled();
   });
 });
 
@@ -238,7 +269,7 @@ describe('BottomNav styling overrides', () => {
     setPage('/quiz');
     render(BottomNav);
     const link = tab('Grammar');
-    expect(link.classList.contains('px-1')).toBe(true);
+    expect(link.classList.contains('px-0.5')).toBe(true);
     expect(link.classList.contains('px-5')).toBe(false);
     const labelSpan = link.querySelector('span')!;
     expect(labelSpan.classList.contains('text-xs')).toBe(true);

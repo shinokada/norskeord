@@ -99,13 +99,45 @@ export function learnHref(currentLevel: string | null | undefined): string {
 }
 
 /**
- * Target of the top bar's back arrow, or `null` on a tab root (the top bar then shows the brand).
- * Only `tabs` paths have a parent.
+ * Target of the top bar's back arrow, or `null` on a tab root (the top bar then shows the brand)
+ * and on `site` routes.
+ *
+ * - `tabs` sub-pages go up to their tab root.
+ * - `session` routes always have a parent: a flashcard set goes back to its level's Learn page, the
+ *   Norskprøven tests to the hub, `/review/grammar` to Grammar and `/review` to the user's Learn
+ *   page (`currentLevel`, the same value `learnHref` takes; A1 for a guest).
  */
-export function parentHref(pathname: string): string | null {
-  if (shellMode(pathname) !== 'tabs') return null;
+export function parentHref(pathname: string, currentLevel?: string | null): string | null {
+  const mode = shellMode(pathname);
   const [first, second] = segmentsOf(pathname);
+
+  if (mode === 'session') {
+    if (first === 'norskproven') return '/norskproven';
+    if (first === 'review') return second === 'grammar' ? '/grammar' : learnHref(currentLevel);
+    // Flashcards: /{level}/{category}, including /c/uttrykk.
+    return isLevel(first) ? `/learn/${first}` : null;
+  }
+
+  if (mode !== 'tabs') return null;
   if (first === 'grammar' && second !== undefined) return '/grammar';
   if (first === 'my-progress' && second === 'grammar') return '/my-progress';
   return null;
+}
+
+/**
+ * Title for the top bar on a flashcard route (`/{level}/{category}`): the category slug with
+ * hyphens as spaces and a capital first letter (`greetings` -> `Greetings`). `null` on any other
+ * path.
+ */
+export function flashcardTitle(pathname: string): string | null {
+  const [first, second, third] = segmentsOf(pathname);
+  if (!isLevel(first) || second === undefined || third !== undefined) return null;
+  let slug = second;
+  try {
+    slug = decodeURIComponent(second);
+  } catch {
+    /* malformed escape: use the raw segment */
+  }
+  const words = slug.replace(/[-_]+/g, ' ').trim();
+  return words ? words.charAt(0).toUpperCase() + words.slice(1) : null;
 }
