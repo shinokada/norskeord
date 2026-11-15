@@ -90,7 +90,10 @@
 
     <div class="flex min-h-12 items-center justify-between px-3 py-2">
       <span class="text-base text-gray-800 dark:text-gray-100">{m.more_menu_dark_mode()}</span>
-      <DarkMode class="inline-block hover:text-gray-900 dark:text-gray-200 dark:hover:text-white" />
+      <DarkMode
+        ariaLabel={m.more_menu_dark_mode()}
+        class="inline-block hover:text-gray-900 dark:text-gray-200 dark:hover:text-white"
+      />
     </div>
 
     {#if user}

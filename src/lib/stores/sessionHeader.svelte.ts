@@ -31,22 +31,24 @@ export interface SessionHeader {
 }
 
 function createSessionHeaderStore() {
-  // $state.raw: the header holds a function, and the release compares by identity.
-  let header = $state.raw<SessionHeader | null>(null);
+  // $state.raw: each registration is its own entry, so a release compares the entry, not the
+  // header object. Registering the same header twice therefore still gives two distinct entries.
+  let registration = $state.raw<{ header: SessionHeader } | null>(null);
 
   return {
     /** The registered header, or `null` when no view has one. */
     get current() {
-      return header;
+      return registration?.header ?? null;
     },
     /** Show `next` in the top bar. Returns the function that removes it again. */
     register(next: SessionHeader): () => void {
+      const entry = { header: next };
       untrack(() => {
-        header = next;
+        registration = entry;
       });
       return () => {
         untrack(() => {
-          if (header === next) header = null;
+          if (registration === entry) registration = null;
         });
       };
     }

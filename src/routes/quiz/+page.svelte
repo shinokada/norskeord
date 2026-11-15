@@ -284,8 +284,12 @@
 
   // The payload shape depends on the mode: { entries, distractors } for Words, { entries, cloze }
   // for Sentences. The cache key includes the mode, so a cached payload always matches it.
-  async function loadPayload(requestMode: QuizMode): Promise<QuizPayload | ClozePayload> {
-    const key = `${requestMode}|${selectedLevel}|${selectedCategory}`;
+  async function loadPayload(
+    requestMode: QuizMode,
+    level: string,
+    category: string
+  ): Promise<QuizPayload | ClozePayload> {
+    const key = `${requestMode}|${level}|${category}`;
     const cached = payloadCache[key];
     if (cached) return cached;
     const res = await fetch('/api/quiz-entries', {
@@ -293,8 +297,8 @@
       headers: { 'Content-Type': 'application/json' },
       // Words requests are sent exactly as before; only Sentences adds a mode.
       body: JSON.stringify({
-        level: selectedLevel,
-        category: selectedCategory || undefined,
+        level,
+        category: category || undefined,
         ...(requestMode === 'sentences' ? { mode: requestMode } : {})
       })
     });
@@ -332,11 +336,13 @@
     if (starting) return;
     starting = true;
     startError = false;
-    // The mode could change while the request is in flight; this start belongs to the one
-    // it began with.
+    // The mode, level and category could change while the request is in flight; this start
+    // belongs to the ones it began with.
     const startMode = mode;
+    const startLevel = selectedLevel;
+    const startCategory = selectedCategory;
     try {
-      const payload = await loadPayload(startMode);
+      const payload = await loadPayload(startMode, startLevel, startCategory);
       const { entries } = payload;
       if (entries.length === 0) return;
       // Read quiz limit from localStorage (set via Preferences). 'default' or
@@ -370,8 +376,8 @@
       typedAnswer = '';
       isCorrect = null;
       sessionTitle = [
-        formatLevel(selectedLevel),
-        selectedCategory ? formatCategory(selectedCategory) : ''
+        formatLevel(startLevel),
+        startCategory ? categoryLabel(startLevel, startCategory) : ''
       ]
         .filter(Boolean)
         .join(' · ');
@@ -850,9 +856,7 @@
          visually hidden there but stays in the accessibility tree. -->
     <div class="mb-5 max-md:mb-0">
       <h1 class="text-xl font-bold text-gray-900 max-md:sr-only dark:text-white">
-        🧠 {m.quiz_title()}{selectedLevel
-          ? ` · ${formatLevel(selectedLevel)}`
-          : ''}{selectedCategory ? ` · ${formatCategory(selectedCategory)}` : ''}
+        🧠 {m.quiz_title()}{sessionTitle ? ` · ${sessionTitle}` : ''}
       </h1>
     </div>
 
@@ -1056,9 +1060,7 @@
     <!-- Page heading (visually hidden below md, as in the questioning state) -->
     <div class="mb-5 max-md:mb-0">
       <h1 class="text-xl font-bold text-gray-900 max-md:sr-only dark:text-white">
-        🧠 {m.quiz_title()}{selectedLevel
-          ? ` · ${formatLevel(selectedLevel)}`
-          : ''}{selectedCategory ? ` · ${formatCategory(selectedCategory)}` : ''}
+        🧠 {m.quiz_title()}{sessionTitle ? ` · ${sessionTitle}` : ''}
       </h1>
     </div>
 
