@@ -4,9 +4,9 @@
   import { replaceState } from '$app/navigation';
   import {
     loadProgressMap,
-    loadProgressMapFromSupabase,
+    loadProgressMapFromSupabaseOrNull,
     loadGrammarProgressMap,
-    loadGrammarProgressFromSupabase,
+    loadGrammarProgressFromSupabaseOrNull,
     getStreakFromStudyDays,
     buildLocalStudyDays,
     loadStudyDays,
@@ -31,8 +31,8 @@
   } from '$lib/stats';
   import { buildGrammarProgress } from '$lib/grammar/progress';
   import {
-    loadClozeStats,
-    loadQuizStats,
+    loadClozeStatsOrNull,
+    loadQuizStatsOrNull,
     summariseClozeStats,
     summariseQuizStats,
     quizAccuracy,
@@ -66,6 +66,11 @@
   let confirmReset = $state(false);
   let resetting = $state(false);
   let mounted = $state(false);
+  // Grammar is the largest read, so it loads on its own and never holds the page back.
+  let grammarStatus = $state<'loading' | 'ok' | 'error'>('loading');
+  // A Plus read (vocab, quiz or sentences) failed: the numbers may be incomplete.
+  let loadFailed = $state(false);
+  let retrying = $state(false);
 
   // Activity chart state
   let activityCells = $state<ActivityCell[]>([]);
@@ -520,23 +525,56 @@
     }
   }
 
+  // Loads the grammar store. For guest/free users this is a synchronous localStorage read, so
+  // grammarMap is already set when the call returns. For Plus users a failed read keeps the
+  // current map and raises grammarStatus = 'error' instead of passing as "no grammar progress".
+  async function loadGrammar(userId: string | undefined) {
+    if (isPlus && userId) {
+      grammarStatus = 'loading';
+      const map = await loadGrammarProgressFromSupabaseOrNull(userId);
+      if (map) {
+        grammarMap = map;
+        grammarStatus = 'ok';
+      } else {
+        grammarStatus = 'error';
+      }
+    } else {
+      grammarMap = loadGrammarProgressMap();
+      grammarStatus = 'ok';
+    }
+  }
+
+  // Loads vocab, quiz and sentences stats in parallel. A Plus read that fails keeps what the
+  // page already has and sets loadFailed, so the banner can offer a retry.
+  async function loadMain(userId: string | undefined) {
+    const plusId = isPlus && userId ? userId : null;
+    const [vocab, quiz, cloze] = await Promise.all([
+      plusId ? loadProgressMapFromSupabaseOrNull(plusId) : loadProgressMap(),
+      loadQuizStatsOrNull(plusId),
+      loadClozeStatsOrNull(plusId)
+    ]);
+    if (vocab) progressMap = vocab;
+    if (quiz) quizStats = quiz;
+    if (cloze) clozeStats = cloze;
+    loadFailed = !vocab || !quiz || !cloze;
+  }
+
+  async function retryLoad() {
+    retrying = true;
+    const userId = page.data.user?.id as string | undefined;
+    try {
+      await Promise.all([loadGrammar(userId), loadMain(userId)]);
+    } finally {
+      retrying = false;
+    }
+  }
+
   onMount(async () => {
     const userId = page.data.user?.id as string | undefined;
 
-    if (isPlus && userId) {
-      // Plus: single source of truth is Supabase
-      progressMap = await loadProgressMapFromSupabase(userId);
-      grammarMap = await loadGrammarProgressFromSupabase(userId);
-    } else {
-      // Guest / free: localStorage
-      progressMap = await loadProgressMap();
-      grammarMap = loadGrammarProgressMap();
-    }
-    // Quiz stats live in their own store; loadQuizStats never throws (a missing table or
-    // bad localStorage entry yields an empty map).
-    quizStats = await loadQuizStats(isPlus && userId ? userId : null);
-    // Same for the Sentences stats: never throws, a missing cloze_progress table gives {}.
-    clozeStats = await loadClozeStats(isPlus && userId ? userId : null);
+    // Start grammar first so its request overlaps the others; the page does not wait for it.
+    void loadGrammar(userId);
+    await loadMain(userId);
     mounted = true;
 
     // Restore the active level tab, or default to where cefrEstimate (just
@@ -568,7 +606,7 @@
       streak = 0; // streak comes from study_days below
       // study_days already counts grammar reviews (saveGrammarProgress calls
       // recordStudyDay), so no separate grammar handling is needed here.
-      const studyDays = await loadStudyDays(userId);
+      const studyDays = await loadStudyDays(userId).catch(() => ({}) as Record<string, number>);
       // 53 weeks (a year) for Plus: the chart shows all of it on a wide screen and 26 weeks
       // on a narrow one (ActivityChart.svelte).
       activityCells = buildActivityGrid(studyDays, 53);
@@ -682,9 +720,26 @@
   <!-- End of a Plus trial: the page looks empty for this user, so say why (free-trial.md). -->
   <TrialEndedNotice variant="note" />
 
+  {#if mounted && (loadFailed || grammarStatus === 'error')}
+    <div
+      role="alert"
+      class="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900 dark:border-amber-700 dark:bg-amber-900/20 dark:text-amber-200"
+    >
+      <p>{m.stats_load_error()}</p>
+      <button
+        type="button"
+        onclick={retryLoad}
+        disabled={retrying}
+        class="rounded-lg border border-amber-400 px-3 py-1.5 font-medium hover:bg-amber-100 disabled:opacity-60 dark:border-amber-600 dark:hover:bg-amber-900/40"
+      >
+        {m.stats_load_retry()}
+      </button>
+    </div>
+  {/if}
+
   {#if !mounted}
     <p class="text-gray-600 dark:text-gray-300">{m.stats_loading()}</p>
-  {:else if totalSeen === 0 && grammarSeen === 0 && quizSummary.total.answered === 0 && clozeSummary.total.answered === 0}
+  {:else if grammarStatus === 'ok' && totalSeen === 0 && grammarSeen === 0 && quizSummary.total.answered === 0 && clozeSummary.total.answered === 0}
     <!-- Empty state -->
     <div
       class="rounded-xl border border-gray-200 bg-white p-10 text-center shadow-sm dark:border-white/10 dark:bg-indigo-950/60"
@@ -928,6 +983,9 @@
             </div>
           {/each}
         </div>
+        {#if grammarStatus === 'loading'}
+          <p class="mb-3 text-sm text-gray-600 dark:text-gray-300">{m.stats_grammar_loading()}</p>
+        {/if}
         <!-- Grammar rows: free topics first, then locked teasers for free users (freeGrammarRows). -->
         {#if grammarRowsForActiveLevel.length > 0}
           <div class="mb-8">
