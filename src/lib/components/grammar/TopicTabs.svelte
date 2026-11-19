@@ -20,7 +20,9 @@
     rule,
     questions,
     userId,
-    tabParam = null
+    tabParam = null,
+    allLevelsHref = null,
+    nextLevel = null
   }: {
     rule: GrammarRule | undefined;
     /** The questions this learner can practise (already gated and level-scoped). */
@@ -28,6 +30,10 @@
     userId: string | null;
     /** Explicit `?tab=` from the URL; wins over the default. */
     tabParam?: TopicTab | null;
+    /** Set when the questions are scoped to one level: where "see all levels" goes. */
+    allLevelsHref?: string | null;
+    /** Set when a higher level has playable questions: the summary links to it. */
+    nextLevel?: { level: string; href: string } | null;
   } = $props();
 
   let dueCount = $state(0);
@@ -157,5 +163,12 @@
   data-testid="topic-practice"
   hidden={activeTab !== 'practice'}
 >
-  <GrammarSession {questions} {rule} {userId} onprogressloaded={handleProgress} />
+  <GrammarSession
+    {questions}
+    {rule}
+    {userId}
+    {allLevelsHref}
+    {nextLevel}
+    onprogressloaded={handleProgress}
+  />
 </div>

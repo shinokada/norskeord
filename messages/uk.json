@@ -118,6 +118,7 @@
   "grammar_summary_you_wrote": "Ви написали:",
   "grammar_summary_restart": "Спробувати знову",
   "grammar_summary_restart_hint": "Натисніть R, щоб спробувати знову",
+  "grammar_summary_next_level": "Продовжити з {level}",
   "flashcard_definition": "Визначення",
   "flashcard_word": "Слово",
   "flashcard_phrase": "Фраза",

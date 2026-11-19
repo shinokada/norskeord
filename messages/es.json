@@ -118,6 +118,7 @@
   "grammar_summary_you_wrote": "Escribiste:",
   "grammar_summary_restart": "Intentar de nuevo",
   "grammar_summary_restart_hint": "Pulsa R para intentarlo de nuevo",
+  "grammar_summary_next_level": "Continuar con {level}",
   "flashcard_definition": "Definición",
   "flashcard_word": "Palabra",
   "flashcard_phrase": "Frase",

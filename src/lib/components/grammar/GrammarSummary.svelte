@@ -13,13 +13,19 @@
     total,
     correctCount,
     dueSoon,
-    onrestart
+    onrestart,
+    allLevelsHref = null,
+    nextLevel = null
   }: {
     results: GrammarResult[];
     total: number;
     correctCount: number;
     dueSoon: number;
     onrestart: () => void;
+    /** Set when the session was scoped to one level: offers a link to every level. */
+    allLevelsHref?: string | null;
+    /** Set when a higher level has playable questions: shown instead of "see all levels". */
+    nextLevel?: { level: string; href: string } | null;
   } = $props();
 
   function scoreEmoji(correct: number, t: number): string {
@@ -101,6 +107,25 @@
     </button>
   </div>
   <p class="mt-4 text-xs text-gray-700 dark:text-gray-300">{m.grammar_summary_restart_hint()}</p>
+  {#if nextLevel}
+    <a
+      href={nextLevel.href}
+      data-testid="summary-next-level"
+      class="mt-3 inline-block text-sm font-medium text-indigo-600 underline hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
+    >
+      {m.grammar_summary_next_level({ level: nextLevel.level })} →
+    </a>
+    <br />
+  {:else if allLevelsHref}
+    <a
+      href={allLevelsHref}
+      data-testid="summary-all-levels"
+      class="mt-3 inline-block text-sm font-medium text-indigo-600 underline first-letter:uppercase hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
+    >
+      {m.grammar_level_scope_see_all()} →
+    </a>
+    <br />
+  {/if}
   <a
     href="/my-progress"
     class="mt-3 inline-block text-sm text-indigo-600 underline hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"

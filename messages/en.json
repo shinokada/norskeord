@@ -117,6 +117,7 @@
   "grammar_summary_you_wrote": "You wrote:",
   "grammar_summary_restart": "Try again",
   "grammar_summary_restart_hint": "Press R to try again",
+  "grammar_summary_next_level": "Continue with {level}",
   "flashcard_definition": "Definition",
   "flashcard_word": "Word",
   "flashcard_phrase": "Phrase",

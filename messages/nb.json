@@ -118,6 +118,7 @@
   "grammar_summary_you_wrote": "Du skrev:",
   "grammar_summary_restart": "Øv igjen",
   "grammar_summary_restart_hint": "Trykk R for å øve igjen",
+  "grammar_summary_next_level": "Fortsett med {level}",
   "flashcard_definition": "Definisjon",
   "flashcard_word": "Ord",
   "flashcard_phrase": "Setning",
