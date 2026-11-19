@@ -71,6 +71,9 @@
   // A Plus read (vocab, quiz or sentences) failed: the numbers may be incomplete.
   let loadFailed = $state(false);
   let retrying = $state(false);
+  // Bumped when a reset starts and again when it clears the maps. A load that began before that
+  // must not put the deleted progress back on screen when its response arrives.
+  let resetEpoch = 0;
 
   // Activity chart state
   let activityCells = $state<ActivityCell[]>([]);
@@ -529,9 +532,11 @@
   // grammarMap is already set when the call returns. For Plus users a failed read keeps the
   // current map and raises grammarStatus = 'error' instead of passing as "no grammar progress".
   async function loadGrammar(userId: string | undefined) {
+    const epoch = resetEpoch;
     if (isPlus && userId) {
       grammarStatus = 'loading';
       const map = await loadGrammarProgressFromSupabaseOrNull(userId);
+      if (epoch !== resetEpoch) return;
       if (map) {
         grammarMap = map;
         grammarStatus = 'ok';
@@ -547,12 +552,14 @@
   // Loads vocab, quiz and sentences stats in parallel. A Plus read that fails keeps what the
   // page already has and sets loadFailed, so the banner can offer a retry.
   async function loadMain(userId: string | undefined) {
+    const epoch = resetEpoch;
     const plusId = isPlus && userId ? userId : null;
     const [vocab, quiz, cloze] = await Promise.all([
       plusId ? loadProgressMapFromSupabaseOrNull(plusId) : loadProgressMap(),
       loadQuizStatsOrNull(plusId),
       loadClozeStatsOrNull(plusId)
     ]);
+    if (epoch !== resetEpoch) return;
     if (vocab) progressMap = vocab;
     if (quiz) quizStats = quiz;
     if (cloze) clozeStats = cloze;
@@ -639,6 +646,7 @@
   async function handleReset() {
     if (!confirmReset) return;
     resetting = true;
+    resetEpoch++;
     try {
       const userId = page.data.user?.id as string | undefined;
       // The page can be stale: another tab may have logged out and logged in as someone else, so
@@ -665,11 +673,16 @@
         clearUserProgress();
         if (userId) purgeParkedProgress(userId);
       }
+      resetEpoch++;
       progressMap = {};
       grammarMap = {};
       quizStats = {};
       clozeStats = {};
       activityCells = buildActivityGrid({}, isPlus ? 53 : 26);
+      // The reset is the new truth: clear a failure banner and a grammar status that an
+      // invalidated load can no longer update.
+      loadFailed = false;
+      grammarStatus = 'ok';
       streak = 0;
     } finally {
       confirmReset = false;
@@ -739,7 +752,7 @@
 
   {#if !mounted}
     <p class="text-gray-600 dark:text-gray-300">{m.stats_loading()}</p>
-  {:else if grammarStatus === 'ok' && totalSeen === 0 && grammarSeen === 0 && quizSummary.total.answered === 0 && clozeSummary.total.answered === 0}
+  {:else if !loadFailed && grammarStatus === 'ok' && totalSeen === 0 && grammarSeen === 0 && quizSummary.total.answered === 0 && clozeSummary.total.answered === 0}
     <!-- Empty state -->
     <div
       class="rounded-xl border border-gray-200 bg-white p-10 text-center shadow-sm dark:border-white/10 dark:bg-indigo-950/60"

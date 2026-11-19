@@ -353,7 +353,7 @@ const PROGRESS_MAX_PAGES = 100;
  * page waiting indefinitely. An aborted request counts as a failed read: the callers return
  * null and the page shows a retry banner.
  */
-const PROGRESS_REQUEST_TIMEOUT_MS = 30_000;
+export const PROGRESS_REQUEST_TIMEOUT_MS = 30_000;
 
 /**
  * Every row of one of a user's progress tables, or `null` when any page failed: never a

@@ -56,6 +56,23 @@ describe('loadQuizStatsOrNull (Plus)', () => {
     expect(await loadQuizStatsOrNull('user-1')).toEqual({});
   });
 
+  it('passes a timeout signal with every page request, so a stalled read cannot hang the page', async () => {
+    const sel = mockQuizSelect([
+      {
+        data: [
+          { vocab_id: 'w-000001', attempts: 1, correct: 1, last_attempt: '2026-10-28T10:00:00Z' }
+        ]
+      }
+    ]);
+    vi.mocked(supabase.from).mockReturnValue({ select: sel.select } as never);
+
+    await loadQuizStatsOrNull('user-1');
+
+    // One call per page: the page with a row, then the empty page that ends the loop.
+    expect(sel.abortSignal).toHaveBeenCalledTimes(2);
+    expect(sel.abortSignal.mock.calls[0][0]).toBeInstanceOf(AbortSignal);
+  });
+
   it('returns null when the select reports an error', async () => {
     mockSelect({ data: null, error: { message: 'boom' } });
     expect(await loadQuizStatsOrNull('user-1')).toBeNull();

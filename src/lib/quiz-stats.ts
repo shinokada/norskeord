@@ -1,5 +1,10 @@
 import { supabase } from '$lib/supabase';
-import { CLOZE_LS_PREFIX, QUIZ_LS_PREFIX, vocabKey } from '$lib/progress';
+import {
+  CLOZE_LS_PREFIX,
+  PROGRESS_REQUEST_TIMEOUT_MS,
+  QUIZ_LS_PREFIX,
+  vocabKey
+} from '$lib/progress';
 import type { CEFRLevel, VocabEntry } from '$lib/types';
 
 // Lightweight per-word quiz statistics (ai-docs/implementation/quiz-progress.md, Phase 2).
@@ -86,7 +91,8 @@ async function fetchStatsRows(
         .select('vocab_id, attempts, correct, last_attempt')
         .eq('user_id', userId)
         .order('vocab_id', { ascending: true })
-        .range(rows.length, rows.length + QUIZ_PAGE_SIZE - 1);
+        .range(rows.length, rows.length + QUIZ_PAGE_SIZE - 1)
+        .abortSignal(AbortSignal.timeout(PROGRESS_REQUEST_TIMEOUT_MS));
       if (error || !data) {
         console.error(`fetchStatsRows: ${store.table} select failed`, error);
         return null;
