@@ -74,6 +74,9 @@
   // Bumped when a reset starts and again when it clears the maps. A load that began before that
   // must not put the deleted progress back on screen when its response arrives.
   let resetEpoch = 0;
+  // Counts grammar requests. Only the newest may apply its result, so an older read that finishes
+  // late (the initial one after a successful retry) cannot overwrite it.
+  let grammarRequestId = 0;
 
   // Activity chart state
   let activityCells = $state<ActivityCell[]>([]);
@@ -533,10 +536,11 @@
   // current map and raises grammarStatus = 'error' instead of passing as "no grammar progress".
   async function loadGrammar(userId: string | undefined) {
     const epoch = resetEpoch;
+    const requestId = ++grammarRequestId;
     if (isPlus && userId) {
       grammarStatus = 'loading';
       const map = await loadGrammarProgressFromSupabaseOrNull(userId);
-      if (epoch !== resetEpoch) return;
+      if (epoch !== resetEpoch || requestId !== grammarRequestId) return;
       if (map) {
         grammarMap = map;
         grammarStatus = 'ok';
