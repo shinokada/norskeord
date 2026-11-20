@@ -47,6 +47,8 @@
     type QuizPayload
   } from '$lib/quiz-gate';
   import { languageStore } from '$lib/stores/language.svelte';
+  import { shellSession } from '$lib/stores/shellSession.svelte';
+  import { sessionHeader } from '$lib/stores/sessionHeader.svelte';
   import { getTranslation, getExampleTranslation, categoryLabel } from '$lib/vocab-helpers';
   import * as m from '$lib/paraglide/messages';
 
@@ -120,6 +122,41 @@
   // FSRS review-intensity preset from the layout data (0.8/0.9/0.95, null = default). Same
   // source as VocabFlashcardPage; saveProgress() ignores it when userId is null.
   let fsrsRetention = $derived((page.data.fsrsRetention as number | null | undefined) ?? null);
+
+  // Small-screen app shell (ai-docs/implementation/mobile-web-shell.md, Phase 4): the bottom tab
+  // bar is hidden while questions are on screen (questioning, revealing) and comes back on the
+  // picker and on the summary screen, where the quiz is over and there is no keyboard. The cleanup
+  // runs when that ends and when the page is left, so the bar is always restored. Keyed on a
+  // boolean, so it does not re-run (hide, show, hide) between questions.
+  const inSession = $derived(quizState !== 'idle');
+  // A function, not an inline comparison: `quizState` starts as 'idle', and TypeScript would
+  // narrow it to that literal here and reject the comparisons below as having no overlap.
+  function hasQuestionsOnScreen(state: QuizState): boolean {
+    return state === 'questioning' || state === 'revealing';
+  }
+  const questionsOnScreen = $derived(hasQuestionsOnScreen(quizState));
+  $effect(() => {
+    if (questionsOnScreen) {
+      shellSession.hide();
+      return () => shellSession.show();
+    }
+  });
+
+  // Phase 4b: while a quiz is on screen the small-screen top bar shows `← Quiz | A2 · Body`
+  // (a header registered here, see sessionHeader.svelte.ts) instead of the flag and wordmark, so
+  // below md the page hides its own back link and heading. The arrow does what that link did: it
+  // goes back to the picker. The title is a snapshot taken at Start: the summary screen edits
+  // selectedLevel and selectedCategory for the next quiz, which must not retitle the finished one.
+  let sessionTitle = $state('');
+  $effect(() => {
+    if (inSession) {
+      return sessionHeader.register({
+        backLabel: m.quiz_title(),
+        title: sessionTitle,
+        onback: goToIdle
+      });
+    }
+  });
 
   // The picker is built from per-level, per-category counts (no entry content). The
   // entries of a session come from POST /api/quiz-entries when the user clicks Start
@@ -247,8 +284,12 @@
 
   // The payload shape depends on the mode: { entries, distractors } for Words, { entries, cloze }
   // for Sentences. The cache key includes the mode, so a cached payload always matches it.
-  async function loadPayload(requestMode: QuizMode): Promise<QuizPayload | ClozePayload> {
-    const key = `${requestMode}|${selectedLevel}|${selectedCategory}`;
+  async function loadPayload(
+    requestMode: QuizMode,
+    level: string,
+    category: string
+  ): Promise<QuizPayload | ClozePayload> {
+    const key = `${requestMode}|${level}|${category}`;
     const cached = payloadCache[key];
     if (cached) return cached;
     const res = await fetch('/api/quiz-entries', {
@@ -256,8 +297,8 @@
       headers: { 'Content-Type': 'application/json' },
       // Words requests are sent exactly as before; only Sentences adds a mode.
       body: JSON.stringify({
-        level: selectedLevel,
-        category: selectedCategory || undefined,
+        level,
+        category: category || undefined,
         ...(requestMode === 'sentences' ? { mode: requestMode } : {})
       })
     });
@@ -295,11 +336,13 @@
     if (starting) return;
     starting = true;
     startError = false;
-    // The mode could change while the request is in flight; this start belongs to the one
-    // it began with.
+    // The mode, level and category could change while the request is in flight; this start
+    // belongs to the ones it began with.
     const startMode = mode;
+    const startLevel = selectedLevel;
+    const startCategory = selectedCategory;
     try {
-      const payload = await loadPayload(startMode);
+      const payload = await loadPayload(startMode, startLevel, startCategory);
       const { entries } = payload;
       if (entries.length === 0) return;
       // Read quiz limit from localStorage (set via Preferences). 'default' or
@@ -332,6 +375,12 @@
       selectedOption = null;
       typedAnswer = '';
       isCorrect = null;
+      sessionTitle = [
+        formatLevel(startLevel),
+        startCategory ? categoryLabel(startLevel, startCategory) : ''
+      ]
+        .filter(Boolean)
+        .join(' · ');
       quizState = 'questioning';
     } catch (err) {
       // Stay on the picker; the button works again.
@@ -685,7 +734,7 @@
 
 <div class="mx-auto max-w-2xl px-4 py-10 text-left">
   {#if quizState !== 'idle'}
-    <div class="mb-4">
+    <div class="mb-4 max-md:hidden">
       <button
         type="button"
         onclick={goToIdle}
@@ -803,12 +852,11 @@
       {/if}
     </div>
   {:else if quizState === 'questioning' && current}
-    <!-- Page heading -->
-    <div class="mb-5">
-      <h1 class="text-xl font-bold text-gray-900 dark:text-white">
-        🧠 {m.quiz_title()}{selectedLevel
-          ? ` · ${formatLevel(selectedLevel)}`
-          : ''}{selectedCategory ? ` · ${formatCategory(selectedCategory)}` : ''}
+    <!-- Page heading. Below md the top bar shows the same words (sessionHeader), so the heading is
+         visually hidden there but stays in the accessibility tree. -->
+    <div class="mb-5 max-md:mb-0">
+      <h1 class="text-xl font-bold text-gray-900 max-md:sr-only dark:text-white">
+        🧠 {m.quiz_title()}{sessionTitle ? ` · ${sessionTitle}` : ''}
       </h1>
     </div>
 
@@ -948,7 +996,7 @@
                 submitAnswer(typedAnswer);
               }
             }}
-            class="flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
+            class="min-w-0 flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
           />
           <button
             type="button"
@@ -987,7 +1035,7 @@
                 submitAnswer(typedAnswer);
               }
             }}
-            class="flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
+            class="min-w-0 flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-500"
           />
           <button
             type="button"
@@ -1009,12 +1057,10 @@
       {/if}
     </div>
   {:else if quizState === 'revealing' && current}
-    <!-- Page heading -->
-    <div class="mb-5">
-      <h1 class="text-xl font-bold text-gray-900 dark:text-white">
-        🧠 {m.quiz_title()}{selectedLevel
-          ? ` · ${formatLevel(selectedLevel)}`
-          : ''}{selectedCategory ? ` · ${formatCategory(selectedCategory)}` : ''}
+    <!-- Page heading (visually hidden below md, as in the questioning state) -->
+    <div class="mb-5 max-md:mb-0">
+      <h1 class="text-xl font-bold text-gray-900 max-md:sr-only dark:text-white">
+        🧠 {m.quiz_title()}{sessionTitle ? ` · ${sessionTitle}` : ''}
       </h1>
     </div>
 

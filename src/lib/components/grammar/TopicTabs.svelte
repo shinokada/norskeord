@@ -5,6 +5,7 @@
   import * as m from '$lib/paraglide/messages';
   import ExplanationText from './ExplanationText.svelte';
   import GrammarSession from './GrammarSession.svelte';
+  import { shellSession } from '$lib/stores/shellSession.svelte';
 
   /**
    * Regel / Øv layout for one topic (grammar-update.md, Phase 6a).
@@ -19,7 +20,9 @@
     rule,
     questions,
     userId,
-    tabParam = null
+    tabParam = null,
+    allLevelsHref = null,
+    nextLevel = null
   }: {
     rule: GrammarRule | undefined;
     /** The questions this learner can practise (already gated and level-scoped). */
@@ -27,6 +30,10 @@
     userId: string | null;
     /** Explicit `?tab=` from the URL; wins over the default. */
     tabParam?: TopicTab | null;
+    /** Set when the questions are scoped to one level: where "see all levels" goes. */
+    allLevelsHref?: string | null;
+    /** Set when a higher level has playable questions: the summary links to it. */
+    nextLevel?: { level: string; href: string } | null;
   } = $props();
 
   let dueCount = $state(0);
@@ -39,6 +46,18 @@
   let activeTab = $derived<TopicTab>(
     chosenTab ?? tabParam ?? (progressLoaded ? defaultTab(dueCount) : 'rule')
   );
+
+  // Small-screen app shell (ai-docs/implementation/mobile-web-shell.md, Phase 4): the bottom tab
+  // bar is hidden while the Practise tab is showing, and comes back on the Regel tab. It lives here
+  // and not in GrammarSession: that component is always mounted (hidden by an attribute) and is
+  // also used by other pages. The cleanup restores the bar when the tab changes or the page is left.
+  const practising = $derived(activeTab === 'practice');
+  $effect(() => {
+    if (practising) {
+      shellSession.hide();
+      return () => shellSession.show();
+    }
+  });
 
   function handleProgress(map: Record<string, CardProgress>) {
     dueCount = countDueToday(
@@ -144,5 +163,12 @@
   data-testid="topic-practice"
   hidden={activeTab !== 'practice'}
 >
-  <GrammarSession {questions} {rule} {userId} onprogressloaded={handleProgress} />
+  <GrammarSession
+    {questions}
+    {rule}
+    {userId}
+    {allLevelsHref}
+    {nextLevel}
+    onprogressloaded={handleProgress}
+  />
 </div>

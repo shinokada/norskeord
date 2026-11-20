@@ -78,8 +78,14 @@
        shows it, not just uttrykk-with-theme. When data.selectedTheme is set
        (A1–B2 uttrykk theme filter) it keeps its count + "Study all" link;
        otherwise it falls back to the plain category name via studyingLabel. -->
+  <!-- On small screens the compact top bar already shows the category title, so the plain
+       "Studying: X" line is hidden below md. It stays whenever it carries more than the title: the
+       ?theme= count and "Study all" link, or the C uttrykk note. Desktop is unchanged. -->
   <div
-    class="mx-auto mt-4 flex w-full max-w-lg flex-col items-center gap-1 px-2 text-sm text-gray-600 dark:text-gray-300"
+    class={[
+      'mx-auto mt-4 flex w-full max-w-lg flex-col items-center gap-1 px-2 text-sm text-gray-600 dark:text-gray-300',
+      !data.selectedTheme && !data.uttrykkContext && 'max-md:hidden'
+    ]}
   >
     <div class="flex items-center justify-center gap-2">
       <span

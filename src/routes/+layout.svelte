@@ -8,6 +8,11 @@
   import { page } from '$app/state';
   import Nav from './components/Nav.svelte';
   import Footer from './components/Footer.svelte';
+  import MobileTopBar from '$lib/components/app/MobileTopBar.svelte';
+  import BottomNav from '$lib/components/app/BottomNav.svelte';
+  import MoreSheet from '$lib/components/app/MoreSheet.svelte';
+  import { shellMode } from '$lib/app-shell';
+  import { shellSession } from '$lib/stores/shellSession.svelte';
   import InAppBrowserBanner from './components/InAppBrowserBanner.svelte';
   import TrialBanner from '$lib/components/TrialBanner.svelte';
   import TrialEndedNotice from '$lib/components/TrialEndedNotice.svelte';
@@ -42,6 +47,17 @@
   );
 
   const analyticsId = $derived(data.ANALYTICS_ID_LANGUAGE_APP);
+
+  // Small-screen app shell (ai-docs/implementation/mobile-web-shell.md). `tabs`: bottom bar,
+  // compact top bar, no footer. `session`: compact top bar (back arrow), no bottom bar, no footer.
+  // `site`: unchanged. Everything below `md` is hidden with CSS only, so the footer links stay in
+  // the HTML and Nav stays mounted.
+  const mode = $derived(shellMode(page.url.pathname));
+  // The spacer mirrors the bar's own visibility rule (BottomNav), so the end of the page is never
+  // hidden behind the bar.
+  const showBottomNav = $derived(mode === 'tabs' && !shellSession.hidden);
+  // The guest Profile tab opens a bottom sheet with the More links (Phase 5).
+  let moreOpen = $state(false);
 
   // Onboarding display logic (derived so they react to invalidation after PATCH)
   const showOnboardingSlides = $derived(
@@ -131,15 +147,33 @@
     <OnboardingSlides />
   {/if}
 
-  <Nav />
+  <Nav hideOnSmall={mode !== 'site'} />
+  {#if mode !== 'site'}
+    <MobileTopBar />
+  {/if}
   <TrialBanner />
   <TrialEndedNotice />
 
-  <section class="border-b border-gray-300 px-4 pb-8 dark:border-gray-600">
+  <!-- The border is the divider above the footer, so it goes where the footer is hidden (shell
+       routes below md); the bottom bar has its own top border. -->
+  <section
+    class={[
+      'border-b border-gray-300 px-4 pb-8 dark:border-gray-600',
+      mode !== 'site' && 'max-md:border-b-0'
+    ]}
+  >
     <div class="mx-auto max-w-7xl text-center">{@render children()}</div>
   </section>
 
-  <Footer />
+  <div class={mode === 'site' ? '' : 'max-md:hidden'}>
+    <Footer />
+  </div>
+
+  {#if showBottomNav}
+    <div class="h-[calc(4rem+env(safe-area-inset-bottom))] md:hidden" aria-hidden="true"></div>
+  {/if}
+  <BottomNav onGuestProfile={() => (moreOpen = true)} />
+  <MoreSheet bind:open={moreOpen} />
 {/key}
 
 <InAppBrowserBanner />

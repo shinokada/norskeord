@@ -27,7 +27,9 @@
     { name: () => m.nav_plus(), link: '/plus' },
     { name: () => m.nav_guide(), link: '/guide' },
     { name: () => m.nav_faq(), link: '/faq' },
-    { name: () => m.nav_resources(), link: '/resources' }
+    { name: () => m.nav_resources(), link: '/resources' },
+    { name: () => m.legal_privacy(), link: '/privacy' },
+    { name: () => m.legal_terms(), link: '/terms' }
   ];
 </script>
 

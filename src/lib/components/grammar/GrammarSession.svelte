@@ -10,6 +10,7 @@
     countDueToday
   } from '$lib/progress';
   import { buildGrammarSession, gradeGrammarAnswer } from '$lib/grammar/session';
+  import { pickProgress } from '$lib/grammar/topic-page';
   import { GRAMMAR_RULES } from '$lib/grammar/rules';
   import * as m from '$lib/paraglide/messages';
   import FillQuestion from './FillQuestion.svelte';
@@ -25,11 +26,17 @@
     questions: pool,
     rule,
     userId,
+    allLevelsHref = null,
+    nextLevel = null,
     onprogressloaded
   }: {
     questions: GrammarQuestion[];
     rule: GrammarRule | undefined;
     userId: string | null;
+    /** Set when the pool is scoped to one level: the summary then offers "see all levels". */
+    allLevelsHref?: string | null;
+    /** Set when a higher level has playable questions: the summary links to it. */
+    nextLevel?: { level: string; href: string } | null;
     /** Called once with the loaded progress map, before the first session is built. */
     onprogressloaded?: (map: Record<string, CardProgress>) => void;
   } = $props();
@@ -69,7 +76,15 @@
   let progress = $derived(
     questions.length > 0 ? Math.round((currentIndex / questions.length) * 100) : 0
   );
-  let dueSoon = $derived(countDueToday(progressMap));
+  // Due count for this session's own questions (the pool), not the learner's whole grammar map.
+  let dueSoon = $derived(
+    countDueToday(
+      pickProgress(
+        pool.map((q) => q.id),
+        progressMap
+      )
+    )
+  );
 
   onMount(() => {
     (async () => {
@@ -223,6 +238,8 @@
         {correctCount}
         {dueSoon}
         onrestart={restart}
+        {allLevelsHref}
+        {nextLevel}
       />
     </div>
   {/if}

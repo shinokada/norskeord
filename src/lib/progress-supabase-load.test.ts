@@ -3,7 +3,11 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 vi.mock('$lib/supabase', () => ({ supabase: { from: vi.fn() } }));
 
 import { supabase } from '$lib/supabase';
-import { loadGrammarProgressFromSupabase, loadProgressMapFromSupabase } from './progress';
+import {
+  loadGrammarProgressFromSupabase,
+  loadGrammarProgressFromSupabaseOrNull,
+  loadProgressMapFromSupabase
+} from './progress';
 import { mockPagedSelect } from './test-utils/paged-select';
 
 // Supabase caps a response at the project's max_rows (1,000 by default) without an error, so
@@ -95,6 +99,33 @@ describe('loadProgressMapFromSupabase', () => {
       throw new Error('network down');
     });
     expect(await loadProgressMapFromSupabase('user-1')).toEqual({});
+  });
+});
+
+describe('loadGrammarProgressFromSupabaseOrNull', () => {
+  it('returns null, not {}, when a read fails, so a failure is not taken for no progress', async () => {
+    const failing = mockPagedSelect([{ data: null, error: { message: 'boom' } }]);
+    vi.mocked(supabase.from).mockReturnValue({ select: failing.select } as never);
+
+    expect(await loadGrammarProgressFromSupabaseOrNull('user-1')).toBeNull();
+  });
+
+  it('returns {} for a user who has no rows yet', async () => {
+    const empty = mockPagedSelect([{ data: [] }]);
+    vi.mocked(supabase.from).mockReturnValue({ select: empty.select } as never);
+
+    expect(await loadGrammarProgressFromSupabaseOrNull('user-1')).toEqual({});
+  });
+
+  it('passes a timeout signal with every page request', async () => {
+    const cloud = mockPagedSelect([{ data: [grammarRow('gq-a')] }]);
+    vi.mocked(supabase.from).mockReturnValue({ select: cloud.select } as never);
+
+    await loadGrammarProgressFromSupabaseOrNull('user-1');
+
+    // One call per page: the page with a row, then the empty page that ends the loop.
+    expect(cloud.abortSignal).toHaveBeenCalledTimes(2);
+    expect(cloud.abortSignal.mock.calls[0][0]).toBeInstanceOf(AbortSignal);
   });
 });
 

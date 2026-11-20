@@ -46,6 +46,16 @@
     width: 100%;
   }
 
+  /*
+   * viewport-fit=cover (app.html) lets the page draw under a landscape notch, so keep the content
+   * clear of it. The insets are 0 in portrait and on screens without a notch, so nothing changes
+   * there. The bottom inset is handled by the bottom tab bar itself.
+   */
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
   h1 {
     @apply mb-6 text-3xl font-bold sm:text-4xl dark:text-white;
   }

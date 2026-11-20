@@ -505,7 +505,7 @@ export function grammarTopicStatsForLevel(
       const row = buildStatRow(
         rule.id,
         title,
-        `/grammar/${rule.id}`,
+        `/grammar/${rule.id}?level=${level}`,
         totalsForLevel[rule.id] ?? 0,
         cardsByTopic.get(rule.id) ?? [],
         now
