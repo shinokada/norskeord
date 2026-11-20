@@ -154,7 +154,14 @@
   <TrialBanner />
   <TrialEndedNotice />
 
-  <section class="border-b border-gray-300 px-4 pb-8 dark:border-gray-600">
+  <!-- The border is the divider above the footer, so it goes where the footer is hidden (shell
+       routes below md); the bottom bar has its own top border. -->
+  <section
+    class={[
+      'border-b border-gray-300 px-4 pb-8 dark:border-gray-600',
+      mode !== 'site' && 'max-md:border-b-0'
+    ]}
+  >
     <div class="mx-auto max-w-7xl text-center">{@render children()}</div>
   </section>
 
