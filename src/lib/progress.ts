@@ -347,6 +347,13 @@ function rowKey(row: ProgressRow): string {
 const PROGRESS_PAGE_SIZE = 1000;
 /** Safety stop against a runaway loop: 100 pages is 100,000 rows at the default limit. */
 const PROGRESS_MAX_PAGES = 100;
+/**
+ * Upper bound for one page request. Without it a request stuck at the gateway or edge (seen as
+ * a 15 s "waiting for server response" with Postgres answering in under 1 ms) can leave the
+ * page waiting indefinitely. An aborted request counts as a failed read: the callers return
+ * null and the page shows a retry banner.
+ */
+export const PROGRESS_REQUEST_TIMEOUT_MS = 30_000;
 
 /**
  * Every row of one of a user's progress tables, or `null` when any page failed: never a
@@ -366,7 +373,8 @@ async function fetchAllProgressRows<T>(
         .select('*')
         .eq('user_id', userId)
         .order(orderColumn, { ascending: true })
-        .range(rows.length, rows.length + PROGRESS_PAGE_SIZE - 1);
+        .range(rows.length, rows.length + PROGRESS_PAGE_SIZE - 1)
+        .abortSignal(AbortSignal.timeout(PROGRESS_REQUEST_TIMEOUT_MS));
       if (error || !data) {
         console.error(`fetchAllProgressRows: ${table} select failed`, error);
         return null;
@@ -665,23 +673,31 @@ export function loadGrammarProgressMap(): Record<string, CardProgress> {
 /**
  * Fetches all grammar_progress rows for a Plus user, keyed by question_id. Reads every page
  * (see fetchAllProgressRows). Called on mount for Plus users instead of
- * loadGrammarProgressMap. A failed read returns {}.
+ * loadGrammarProgressMap. A failed read returns null (loadGrammarProgressFromSupabase turns it
+ * into {}), so a caller can tell a failed read from a user with no grammar progress.
  */
-export async function loadGrammarProgressFromSupabase(
+export async function loadGrammarProgressFromSupabaseOrNull(
   userId: string
-): Promise<Record<string, CardProgress>> {
+): Promise<Record<string, CardProgress> | null> {
   const rows = await fetchAllProgressRows<GrammarProgressRow>(
     'grammar_progress',
     'question_id',
     userId
   );
-  if (!rows) return {};
+  if (!rows) return null;
 
   const map: Record<string, CardProgress> = {};
   for (const row of rows) {
     map[row.question_id] = fromGrammarRow(row);
   }
   return map;
+}
+
+/** Like loadGrammarProgressFromSupabaseOrNull, but a failed read returns {}. */
+export async function loadGrammarProgressFromSupabase(
+  userId: string
+): Promise<Record<string, CardProgress>> {
+  return (await loadGrammarProgressFromSupabaseOrNull(userId)) ?? {};
 }
 
 // ── Due-only grammar review (Fix 3, due-only-review-update.md) ─────────────

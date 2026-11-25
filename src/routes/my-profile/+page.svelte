@@ -4,6 +4,7 @@
   import SubscriptionSection from './SubscriptionSection.svelte';
   import DangerZone from './DangerZone.svelte';
   import OnboardingBanner from './OnboardingBanner.svelte';
+  import MoreMenu from '$lib/components/app/MoreMenu.svelte';
   import * as m from '$lib/paraglide/messages.js';
 
   let { data } = $props();
@@ -61,5 +62,10 @@
         <DangerZone />
       </div>
     </details>
+    <!-- Small screens: the top nav is hidden on this tab route, so the More links live here. The
+         interface language is already in the preferences section above. -->
+    <div class="md:hidden">
+      <MoreMenu showLanguageSwitcher={false} />
+    </div>
   </div>
 </div>

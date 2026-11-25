@@ -180,21 +180,49 @@ $$;
 REVOKE EXECUTE ON FUNCTION public.get_welcome_sequence_candidates() FROM anon;
 REVOKE EXECUTE ON FUNCTION public.get_welcome_sequence_candidates() FROM authenticated;
 
+-- ── get_emails_for_users ──────────────────────────────────────────────────────
+-- Used by send-push-reminders (migration 035). Email address, account age and
+-- last study day (NULL = never studied) for a set of users. Service role only.
+CREATE OR REPLACE FUNCTION public.get_emails_for_users(p_ids uuid[])
+RETURNS TABLE (id uuid, email text, created_at timestamptz, last_study_day date)
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = ''
+AS $$
+  SELECT
+    u.id,
+    u.email::text,
+    u.created_at,
+    (SELECT max(sd.day) FROM public.study_days sd WHERE sd.user_id = u.id)
+  FROM auth.users u
+  WHERE u.id = ANY(p_ids)
+    AND u.email IS NOT NULL;
+$$;
+
+REVOKE EXECUTE ON FUNCTION public.get_emails_for_users(uuid[]) FROM public, anon, authenticated;
+GRANT EXECUTE ON FUNCTION public.get_emails_for_users(uuid[]) TO service_role;
+
 -- ── pg_cron: send-push-reminders ──────────────────────────────────────────────
 -- Calls the send-push-reminders Edge Function daily at 19:00 UTC (21:00 Oslo).
 -- Set up via: Supabase Dashboard → Integrations → Cron → Edit
 -- JWT verification is OFF on the Edge Function (Settings → Verify JWT: off),
--- so no Authorization header is needed.
+-- The function itself requires the CRON_SECRET in an x-cron-secret header and only
+-- sends when the URL has ?send=1 (otherwise it is a dry run).
 --
--- To update: paste this into the cron job's command field in the dashboard.
+-- To update: paste the command from ./current-cron-push-notification.sql into the
+-- cron job's command field in the dashboard, replacing <CRON_SECRET> with the real
+-- value. Never commit the real value; the placeholder below must stay a placeholder.
 
 SELECT cron.schedule(
   'send-push-reminders',
   '0 19 * * *',
   $$
     SELECT net.http_post(
-      url    := 'https://yyohrwgwoubvwjhwnaec.supabase.co/functions/v1/send-push-reminders',
-      headers := '{"Content-Type": "application/json"}'::jsonb,
+      url    := 'https://yyohrwgwoubvwjhwnaec.supabase.co/functions/v1/send-push-reminders?send=1',
+      headers := jsonb_build_object(
+        'Content-Type', 'application/json',
+        'x-cron-secret', '<CRON_SECRET>'
+      ),
       body    := '{}'::jsonb
     );
   $$

@@ -598,7 +598,10 @@ test.describe('/norskproven practice grid (inline)', () => {
   test('Plus user sees all test pills without lock icons on /norskproven', async ({ page }) => {
     await injectPlusPlan(page);
     await page.goto('/norskproven');
-    await expect(page.getByRole('link', { name: /🔒/ })).not.toBeVisible();
+    // The grid is server-rendered locked and unlocks once the plan reaches the client. Use
+    // `toHaveCount(0)`, which retries until that happens; `not.toBeVisible()` throws at once with a
+    // strict-mode violation while several locked pills still match.
+    await expect(page.getByRole('link', { name: /🔒/ })).toHaveCount(0);
     await expect(page.getByRole('link', { name: 'Test 1' }).first()).toBeVisible();
   });
 

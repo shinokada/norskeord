@@ -68,7 +68,8 @@ export function freeGrammarRows(rows: StatRow[], level: CEFRLevel, isPlus: boole
         relearning: 0,
         due: 0,
         locked: true,
-        href: `${row.href}?level=${level}`
+        // grammarTopicStatsForLevel already scopes the href; add ?level= only when it is missing.
+        href: row.href.includes('?') ? row.href : `${row.href}?level=${level}`
       });
     }
   }

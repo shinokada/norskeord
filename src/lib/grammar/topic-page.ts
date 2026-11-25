@@ -238,6 +238,23 @@ export function lockedFromCounts(
   return { total: levels.reduce((sum, c) => sum + c.count, 0), levels };
 }
 
+/**
+ * The next level above `level` that has questions this learner can play (Plus: any; free: the
+ * free ones), or null. Drives the «Continue with A2» link on a level-scoped session summary.
+ */
+export function nextPlayableLevel(
+  counts: readonly LevelCountEntry[],
+  level: CEFRLevel,
+  isPlus: boolean
+): CEFRLevel | null {
+  const from = CEFR_ORDER.indexOf(level);
+  if (from === -1) return null;
+  const next = counts.find(
+    (c) => CEFR_ORDER.indexOf(c.level) > from && (isPlus ? c.total : c.free) > 0
+  );
+  return next ? next.level : null;
+}
+
 /** Plain-text preview of a rule (its opening paragraph), or '' when there is no rule. */
 export function teaserText(rule: GrammarRule | undefined): string {
   return rule ? plainSummary(rule.explanationNb, TEASER_MAX) : '';

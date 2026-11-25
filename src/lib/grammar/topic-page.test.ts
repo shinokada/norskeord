@@ -7,6 +7,7 @@ import {
   countByLevel,
   defaultTab,
   lockedBreakdown,
+  nextPlayableLevel,
   parseTabParam,
   pickProgress,
   relatedTopics,
@@ -185,6 +186,27 @@ describe('lockedBreakdown', () => {
 
   it('locks everything when nothing is free', () => {
     expect(lockedBreakdown(questions, new Set()).total).toBe(questions.length);
+  });
+});
+
+describe('nextPlayableLevel', () => {
+  const counts = [
+    { level: 'A1' as CEFRLevel, total: 2, free: 2 },
+    { level: 'A2' as CEFRLevel, total: 16, free: 0 },
+    { level: 'B1' as CEFRLevel, total: 7, free: 3 }
+  ];
+
+  it('gives Plus the next level with any questions', () => {
+    expect(nextPlayableLevel(counts, 'A1', true)).toBe('A2');
+  });
+
+  it('skips levels a free learner has nothing playable in', () => {
+    expect(nextPlayableLevel(counts, 'A1', false)).toBe('B1');
+  });
+
+  it('is null when no higher level qualifies', () => {
+    expect(nextPlayableLevel(counts, 'B1', true)).toBeNull();
+    expect(nextPlayableLevel(counts, 'B1', false)).toBeNull();
   });
 });
 

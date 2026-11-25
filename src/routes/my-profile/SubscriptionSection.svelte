@@ -22,6 +22,9 @@
   } = $props();
 
   const isPlus = $derived(plan === 'plus');
+  // Push reminders are a Plus feature. Email reminders are on for every user by
+  // default (onboarding), so every user gets the email switch below.
+  const pushAllowed = $derived(isPlus && (subscriptionStatus ?? 'active') !== 'cancelled');
 
   // subscriptionStatus comes from the subscriptions table (written by the LS
   // webhook). It's only null for a brand-new Plus row created by an edge case
@@ -243,13 +246,13 @@
     {/if}
   {/if}
 
-  <!-- Plus-only notification toggles -->
-  {#if isPlus && status !== 'cancelled'}
-    <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
-      <p class="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
-        {m.profile_sub_notifications_heading()}
-      </p>
-      <div class="space-y-4">
+  <!-- Notifications: email reminders for every user, push reminders for Plus -->
+  <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
+    <p class="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
+      {m.profile_sub_notifications_heading()}
+    </p>
+    <div class="space-y-4">
+      {#if pushAllowed}
         <!-- Push reminder -->
         <div>
           <Toggle
@@ -272,41 +275,34 @@
             <p class="mt-1 text-xs text-red-500">{reminderError}</p>
           {/if}
         </div>
+      {:else}
+        <p class="text-xs text-gray-600 dark:text-gray-300">
+          {m.profile_sub_push_plus_only()}
+        </p>
+      {/if}
 
-        <!-- Email reminder -->
-        <div>
-          <Toggle
-            name="email_reminder"
-            label={m.profile_sub_email_reminder()}
-            checked={emailReminder}
-            hint={m.profile_sub_email_reminder_hint()}
-            onchange={handleEmailReminderToggle}
-          />
-          <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
-            <a
-              href="https://www.timeanddate.com/worldclock/fixedtime.html?hour=19&min=0&sec=0"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="underline hover:text-gray-600 dark:hover:text-gray-300"
-              >{m.profile_sub_timezone_link()}</a
-            >
-          </p>
-          {#if emailReminderError}
-            <p class="mt-1 text-xs text-red-500">{emailReminderError}</p>
-          {/if}
-        </div>
+      <!-- Email reminder -->
+      <div>
+        <Toggle
+          name="email_reminder"
+          label={m.profile_sub_email_reminder()}
+          checked={emailReminder}
+          hint={m.profile_sub_email_reminder_hint()}
+          onchange={handleEmailReminderToggle}
+        />
+        <p class="mt-1 text-xs text-gray-600 dark:text-gray-300">
+          <a
+            href="https://www.timeanddate.com/worldclock/fixedtime.html?hour=19&min=0&sec=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="underline hover:text-gray-600 dark:hover:text-gray-300"
+            >{m.profile_sub_timezone_link()}</a
+          >
+        </p>
+        {#if emailReminderError}
+          <p class="mt-1 text-xs text-red-500">{emailReminderError}</p>
+        {/if}
       </div>
     </div>
-  {/if}
-
-  {#if !isPlus}
-    <div class="mt-6 border-t border-gray-200 pt-5 dark:border-white/10">
-      <p class="mb-1 text-sm font-medium text-gray-600 dark:text-gray-300">
-        {m.profile_sub_notifications_heading()}
-      </p>
-      <p class="text-xs text-gray-600 dark:text-gray-300">
-        {m.profile_sub_notifications_plus_only()}
-      </p>
-    </div>
-  {/if}
+  </div>
 </section>

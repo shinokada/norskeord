@@ -74,7 +74,14 @@ export default defineConfig(({ mode }) => {
         },
         devOptions: { enabled: false }
       }),
-      paraglideVitePlugin({ project: './project.inlang', outdir: './src/lib/paraglide' })
+      paraglideVitePlugin({
+        project: './project.inlang',
+        outdir: './src/lib/paraglide',
+        // The dev server does not bundle. With one file per message (the default) a page load
+        // fetches ~1000 message files, which hits tunnel rate limits (ngrok) and slows reloads.
+        // One file per locale in dev; production keeps the tree-shakable default.
+        outputStructure: mode === 'development' ? 'locale-modules' : 'message-modules'
+      })
     ],
     define: {
       __VAPID_PUBLIC_KEY__: JSON.stringify(env.PUBLIC_VAPID_KEY ?? ''),

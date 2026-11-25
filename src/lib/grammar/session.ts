@@ -23,6 +23,13 @@ export function normalizeAnswerKeepPunctuation(s: string): string {
 }
 
 /**
+ * Players type the empty-set symbol (∅, U+2205) as the Norwegian letter ø
+ * (U+00F8), which looks the same but is a different character. A lone ø is never
+ * a real answer, so it is read as ∅.
+ */
+const EMPTY_SET = '∅';
+
+/**
  * Grades a typed answer against a grammar question by exact (normalised)
  * match against `answer`/`alternates` only — no typo tolerance.
  *
@@ -49,7 +56,8 @@ export function gradeGrammarAnswer(
   const normalize =
     question.type === 'punctuation' ? normalizeAnswerKeepPunctuation : normalizeAnswer;
 
-  const norm = normalize(input);
+  const typed = normalize(input);
+  const norm = typed === 'ø' ? EMPTY_SET : typed;
   if (!norm) return { correct: false, rating: 'again' };
 
   const candidates = [question.answer, ...(question.alternates ?? [])].map(normalize);

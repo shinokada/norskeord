@@ -9,6 +9,7 @@
   import { trialOffered } from '$lib/trial';
   import {
     lockedFromCounts,
+    nextPlayableLevel,
     parseTabParam,
     teaserLevelsFrom,
     teaserText,
@@ -60,6 +61,13 @@
   let teaser = $derived(teaserText(rule));
   let teaserLevels = $derived(teaserLevelsFrom(data.levelCounts, levelParam()));
   let lockedInfo = $derived(lockedFromCounts(data.levelCounts, levelParam()));
+
+  // End-of-session link on a level-scoped page: the next level this learner can play, if any.
+  let nextLevel = $derived.by(() => {
+    const lvl = levelParam();
+    const next = lvl ? nextPlayableLevel(data.levelCounts, lvl, isPlus) : null;
+    return next ? { level: next, href: `/grammar/${data.topic}?level=${next}` } : null;
+  });
 
   // Breadcrumb, prev/next and related topics, all from the taxonomy (Phase 6a).
   let nav = $derived(topicNavModel(data.topic));
@@ -186,8 +194,15 @@
         </a>
       </p>
     {/if}
-    {#key data.topic}
-      <TopicTabs {rule} questions={playable} {userId} {tabParam} />
+    {#key `${data.topic}:${levelParam() ?? ''}`}
+      <TopicTabs
+        {rule}
+        questions={playable}
+        {userId}
+        {tabParam}
+        allLevelsHref={levelParam() ? `/grammar/${data.topic}` : null}
+        {nextLevel}
+      />
     {/key}
     {#if !isPlus && lockedInfo.total > 0}
       <p class="mt-6 text-sm" data-testid="topic-locked-levels">
