@@ -260,6 +260,7 @@
   "profile_sub_daily_reminder_hint": "Browser/app notification at 19:00 UTC if you haven't studied that day.",
   "profile_sub_email_reminder": "Daily email reminder",
   "profile_sub_email_reminder_hint": "Email at 19:00 UTC if you haven't studied that day.",
+  "profile_sub_push_plus_only": "Push reminders are available with Plus.",
   "profile_sub_notifications_plus_only": "Available with Plus.",
   "profile_danger_heading": "Danger Zone",
   "profile_danger_subtitle": "Irreversible actions. Please read carefully before proceeding.",

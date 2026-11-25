@@ -261,6 +261,7 @@
   "profile_sub_daily_reminder_hint": "Browser-/App-Benachrichtigung um 19:00 UTC, wenn du an dem Tag noch nicht gelernt hast.",
   "profile_sub_email_reminder": "Tägliche E-Mail-Erinnerung",
   "profile_sub_email_reminder_hint": "E-Mail um 19:00 UTC, wenn du an dem Tag noch nicht gelernt hast.",
+  "profile_sub_push_plus_only": "Push-Erinnerungen sind mit Plus verfügbar.",
   "profile_sub_notifications_plus_only": "Mit Plus verfügbar.",
   "profile_danger_heading": "Gefahrenzone",
   "profile_danger_subtitle": "Unwiderrufliche Aktionen. Bitte lies sorgfältig, bevor du fortfährst.",

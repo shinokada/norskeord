@@ -56,14 +56,15 @@ describe('PATCH /api/profile/email-reminder', () => {
     expect(body.error).toMatch(/unauthorized/i);
   });
 
-  it('returns 403 for free plan users', async () => {
+  it('allows free plan users to change their email reminder', async () => {
+    mockUpdate.mockResolvedValue({ error: null });
     const res = await PATCH({
-      request: makeRequest({ enabled: true }),
+      request: makeRequest({ enabled: false }),
       locals: makeLocals({ plan: 'free' })
     } as never);
-    expect(res.status).toBe(403);
+    expect(res.status).toBe(200);
     const body = await res.json();
-    expect(body.error).toMatch(/plus only/i);
+    expect(body.ok).toBe(true);
   });
 
   // ── Validation ──────────────────────────────────────────────────────────────

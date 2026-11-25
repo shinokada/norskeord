@@ -1,7 +1,9 @@
 /**
  * PATCH /api/profile/email-reminder
  *
- * Enables or disables the daily email reminder for the authenticated Plus user.
+ * Enables or disables the daily email reminder for the authenticated user.
+ * Available to every plan: email reminders are on for all users by default
+ * (set at the end of onboarding), so everyone can switch them off and on.
  * Writes `profiles.email_reminder` in Supabase.
  *
  * Request body: { enabled: boolean }
@@ -12,7 +14,6 @@ import type { RequestHandler } from './$types';
 
 export const PATCH: RequestHandler = async ({ request, locals }) => {
   if (!locals.user) return json({ error: 'Unauthorized' }, { status: 401 });
-  if (locals.plan !== 'plus') return json({ error: 'Plus only' }, { status: 403 });
 
   let body: unknown;
   try {

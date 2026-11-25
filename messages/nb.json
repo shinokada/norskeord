@@ -261,6 +261,7 @@
   "profile_sub_daily_reminder_hint": "Nettleser-/app-varsling kl. 19:00 UTC hvis du ikke har studert den dagen.",
   "profile_sub_email_reminder": "Daglig e-postpåminnelse",
   "profile_sub_email_reminder_hint": "E-post kl. 19:00 UTC hvis du ikke har studert den dagen.",
+  "profile_sub_push_plus_only": "Push-påminnelser er tilgjengelig med Plus.",
   "profile_sub_notifications_plus_only": "Tilgjengelig med Plus.",
   "profile_danger_heading": "Faresone",
   "profile_danger_subtitle": "Ugjenkallelige handlinger. Les nøye før du fortsetter.",

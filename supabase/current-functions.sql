@@ -180,6 +180,28 @@ $$;
 REVOKE EXECUTE ON FUNCTION public.get_welcome_sequence_candidates() FROM anon;
 REVOKE EXECUTE ON FUNCTION public.get_welcome_sequence_candidates() FROM authenticated;
 
+-- ── get_emails_for_users ──────────────────────────────────────────────────────
+-- Used by send-push-reminders (migration 035). Email address, account age and
+-- last study day (NULL = never studied) for a set of users. Service role only.
+CREATE OR REPLACE FUNCTION public.get_emails_for_users(p_ids uuid[])
+RETURNS TABLE (id uuid, email text, created_at timestamptz, last_study_day date)
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path = ''
+AS $$
+  SELECT
+    u.id,
+    u.email::text,
+    u.created_at,
+    (SELECT max(sd.day) FROM public.study_days sd WHERE sd.user_id = u.id)
+  FROM auth.users u
+  WHERE u.id = ANY(p_ids)
+    AND u.email IS NOT NULL;
+$$;
+
+REVOKE EXECUTE ON FUNCTION public.get_emails_for_users(uuid[]) FROM public, anon, authenticated;
+GRANT EXECUTE ON FUNCTION public.get_emails_for_users(uuid[]) TO service_role;
+
 -- ── pg_cron: send-push-reminders ──────────────────────────────────────────────
 -- Calls the send-push-reminders Edge Function daily at 19:00 UTC (21:00 Oslo).
 -- Set up via: Supabase Dashboard → Integrations → Cron → Edit

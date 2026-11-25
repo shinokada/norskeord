@@ -261,6 +261,7 @@
   "profile_sub_daily_reminder_hint": "Notificación del navegador/app a las 19:00 UTC si no has estudiado ese día.",
   "profile_sub_email_reminder": "Recordatorio diario por correo",
   "profile_sub_email_reminder_hint": "Correo a las 19:00 UTC si no has estudiado ese día.",
+  "profile_sub_push_plus_only": "Los recordatorios push están disponibles con Plus.",
   "profile_sub_notifications_plus_only": "Disponible con Plus.",
   "profile_danger_heading": "Zona de peligro",
   "profile_danger_subtitle": "Acciones irreversibles. Lee con atención antes de continuar.",

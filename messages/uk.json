@@ -261,6 +261,7 @@
   "profile_sub_daily_reminder_hint": "Сповіщення у браузері/додатку о 19:00 UTC, якщо ви ще не навчались сьогодні.",
   "profile_sub_email_reminder": "Щоденне нагадування на пошту",
   "profile_sub_email_reminder_hint": "Листа о 19:00 UTC, якщо ви ще не навчались сьогодні.",
+  "profile_sub_push_plus_only": "Push-нагадування доступні з Plus.",
   "profile_sub_notifications_plus_only": "Доступно з Plus.",
   "profile_danger_heading": "Небезпечна зона",
   "profile_danger_subtitle": "Незворотні дії. Уважно прочитайте перед тим, як продовжити.",
