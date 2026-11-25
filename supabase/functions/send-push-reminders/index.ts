@@ -50,7 +50,9 @@
  *      email is skipped for the run; push still goes out.
  *   5. Claim-first sending: a user's email_log row is inserted before the email is sent
  *      (unique per user per UTC day, migration 036) and removed again if the send fails.
- *      This stops repeat or overlapping invocations from emailing anyone twice.
+ *      This stops repeat or overlapping invocations from emailing anyone twice. After each
+ *      claim the day's total is counted again; a claim that takes the total over
+ *      EMAIL_DAILY_BUDGET is released and that email is not sent.
  *   6. Clean up stale push subscriptions (410/404 responses).
  */
 
@@ -486,6 +488,7 @@ Deno.serve(async (req: Request) => {
   let emailSent = 0;
   let emailFailed = 0;
   let emailClaimSkipped = 0;
+  let emailOverBudget = 0;
   const staleSubscriptions: string[] = [];
 
   // ── Web push ──────────────────────────────────────────────────────────────────
@@ -502,6 +505,17 @@ Deno.serve(async (req: Request) => {
   }
 
   // ── Email ─────────────────────────────────────────────────────────────────────
+  /** Delete a claimed email_log row so the slot is free again. */
+  const releaseClaim = async (claimId: string, userId: string) => {
+    const { error: releaseErr } = await supabase.from('email_log').delete().eq('id', claimId);
+    if (releaseErr) {
+      console.warn(
+        `[send-reminders] Failed to release email_log claim for user=${userId}:`,
+        releaseErr.message
+      );
+    }
+  };
+
   for (const plan of emailPlanById.values()) {
     const unsubUrl = buildUnsubscribeUrl(plan.profileId, unsubSecret, appUrl);
     const html = buildReminderEmail(plan.dueCount, plan.hasStudied, appUrl, unsubUrl);
@@ -530,6 +544,29 @@ Deno.serve(async (req: Request) => {
       continue;
     }
 
+    // Recheck the day's total now that our claim is written. If another run claimed
+    // slots after the count taken at planning time and the total is over budget,
+    // release this claim and skip the email. Fail closed if the recount fails.
+    const { count: totalNow, error: recountErr } = await supabase
+      .from('email_log')
+      .select('id', { count: 'exact', head: true })
+      .eq('email_type', 'daily_reminder')
+      .gte('sent_at', todayStart);
+
+    if (recountErr || totalNow === null || totalNow > emailBudget) {
+      if (recountErr || totalNow === null) {
+        console.error(
+          `[send-reminders] could not recount email_log for user=${plan.profileId}, skipping:`,
+          recountErr?.message ?? 'no count returned'
+        );
+        emailFailed++;
+      } else {
+        emailOverBudget++;
+      }
+      await releaseClaim(claim.id, plan.profileId);
+      continue;
+    }
+
     const { error: sendErr } = await resend.emails.send({
       from: emailFrom,
       to: plan.email,
@@ -542,13 +579,7 @@ Deno.serve(async (req: Request) => {
       emailFailed++;
 
       // Release the claim so a later run today can retry this user.
-      const { error: releaseErr } = await supabase.from('email_log').delete().eq('id', claim.id);
-      if (releaseErr) {
-        console.warn(
-          `[send-reminders] Failed to release email_log claim for user=${plan.profileId}:`,
-          releaseErr.message
-        );
-      }
+      await releaseClaim(claim.id, plan.profileId);
     } else {
       emailSent++;
       console.log(`[send-reminders] email sent to user=${plan.profileId} due=${plan.dueCount}`);
@@ -581,6 +612,7 @@ Deno.serve(async (req: Request) => {
       email_sent: emailSent,
       email_failed: emailFailed,
       email_skipped_claimed: emailClaimSkipped,
+      email_skipped_over_budget: emailOverBudget,
       stale_cleaned: staleSubscriptions.length,
       ...summary
     }),
