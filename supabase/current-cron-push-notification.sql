@@ -1,6 +1,9 @@
 SELECT net.http_post(
   url     := 'https://yyohrwgwoubvwjhwnaec.supabase.co/functions/v1/send-push-reminders?send=1',
-  headers := '{"Content-Type": "application/json", "x-cron-secret": "<CRON_SECRET>"}'::jsonb,
+  headers := jsonb_build_object(
+    'Content-Type', 'application/json',
+    'x-cron-secret', '<CRON_SECRET>'
+  ),
   body    := '{}'::jsonb
 );
 

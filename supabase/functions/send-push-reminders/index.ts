@@ -44,10 +44,13 @@
  *        (a) they last studied within EMAIL_MAX_INACTIVE_DAYS days, or
  *        (b) they have never studied and the account is at most EMAIL_NEWCOMER_DAYS old.
  *      A returning user (has studied before) with no cards due is not emailed.
- *   4. Email budget: at most EMAIL_DAILY_BUDGET emails per day (minus the ones already
- *      logged today). Most recently active users come first, then the newest accounts.
- *   5. Skip emailing anyone already logged in email_log for 'daily_reminder' today
- *      (idempotency guard against repeat invocations).
+ *   4. Email budget: at most EMAIL_DAILY_BUDGET emails per day, counting every reminder
+ *      already logged today (even to users who have since opted out). Most recently
+ *      active users come first, then the newest accounts. If email_log cannot be read,
+ *      email is skipped for the run; push still goes out.
+ *   5. Claim-first sending: a user's email_log row is inserted before the email is sent
+ *      (unique per user per UTC day, migration 036) and removed again if the send fails.
+ *      This stops repeat or overlapping invocations from emailing anyone twice.
  *   6. Clean up stale push subscriptions (410/404 responses).
  */
 
@@ -309,22 +312,38 @@ Deno.serve(async (req: Request) => {
   // Relies on email_log allowing one 'daily_reminder' row per user per day
   // (migration 036_email_log_daily_unique.sql).
   const todayStart = `${todayUtc}T00:00:00.000Z`;
-  const { data: alreadyEmailedRows, error: emailLogError } = await supabase
-    .from('email_log')
-    .select('user_id')
-    .eq('email_type', 'daily_reminder')
-    .gte('sent_at', todayStart)
-    .in('user_id', eligibleIds);
+  const [guardRes, countRes] = await Promise.all([
+    // Per-user guard: who among today's eligible users was already emailed.
+    supabase
+      .from('email_log')
+      .select('user_id')
+      .eq('email_type', 'daily_reminder')
+      .gte('sent_at', todayStart)
+      .in('user_id', eligibleIds),
+    // Daily budget: every reminder sent today, including to users who have since
+    // opted out, so an opt-out never frees budget.
+    supabase
+      .from('email_log')
+      .select('id', { count: 'exact', head: true })
+      .eq('email_type', 'daily_reminder')
+      .gte('sent_at', todayStart)
+  ]);
 
-  if (emailLogError) {
-    // Non-fatal — log and proceed without the guard rather than blocking all
-    // reminders for the day.
-    console.warn('[send-reminders] Failed to fetch email_log:', emailLogError.message);
+  // If today's email log cannot be read we cannot tell how much of the budget is
+  // used or who was already emailed, so email is skipped for this run (a missed
+  // reminder costs less than going over the Resend quota). Push is independent.
+  const emailLogReadable = !guardRes.error && !countRes.error && countRes.count !== null;
+  if (!emailLogReadable) {
+    console.error(
+      '[send-reminders] Failed to read email_log, skipping email this run:',
+      guardRes.error?.message ?? countRes.error?.message ?? 'no count returned'
+    );
   }
 
   const alreadyEmailedSet = new Set(
-    (alreadyEmailedRows ?? []).map((r: { user_id: string }) => r.user_id)
+    (guardRes.data ?? []).map((r: { user_id: string }) => r.user_id)
   );
+  const sentToday = countRes.count ?? 0;
 
   // ── 4. Decide who gets an email ──────────────────────────────────────────────
   const dueCache = new Map<string, number>();
@@ -336,7 +355,9 @@ Deno.serve(async (req: Request) => {
     return n;
   };
 
-  const emailCandidates = toNotify.filter((p) => p.email_reminder && !alreadyEmailedSet.has(p.id));
+  const emailCandidates = emailLogReadable
+    ? toNotify.filter((p) => p.email_reminder && !alreadyEmailedSet.has(p.id))
+    : [];
 
   let emailSkippedSunset = 0;
   let emailSkippedNoDue = 0;
@@ -411,7 +432,7 @@ Deno.serve(async (req: Request) => {
     return b.createdAt.localeCompare(a.createdAt);
   });
 
-  const budgetLeft = Math.max(0, emailBudget - alreadyEmailedSet.size);
+  const budgetLeft = Math.max(0, emailBudget - sentToday);
   if (emailPlans.length > budgetLeft) {
     emailDroppedBudget = emailPlans.length - budgetLeft;
     emailPlans.length = budgetLeft;
@@ -423,7 +444,7 @@ Deno.serve(async (req: Request) => {
       `to_notify=${toNotify.length} email_candidates=${emailCandidates.length} ` +
       `email_to_send=${emailPlans.length} skipped_sunset=${emailSkippedSunset} ` +
       `skipped_no_due=${emailSkippedNoDue} skipped_no_address=${emailSkippedNoAddress} ` +
-      `dropped_budget=${emailDroppedBudget} already_emailed_today=${alreadyEmailedSet.size}`
+      `dropped_budget=${emailDroppedBudget} sent_today=${sentToday} email_log_readable=${emailLogReadable}`
   );
 
   const pushCandidates = toNotify.filter((p) => p.daily_reminder && p.push_subscription);
@@ -434,7 +455,8 @@ Deno.serve(async (req: Request) => {
     email_skipped_no_due: emailSkippedNoDue,
     email_skipped_no_address: emailSkippedNoAddress,
     email_dropped_budget: emailDroppedBudget,
-    email_already_sent: alreadyEmailedSet.size,
+    email_already_sent: sentToday,
+    email_log_readable: emailLogReadable,
     skipped: studiedSet.size
   };
 
@@ -463,6 +485,7 @@ Deno.serve(async (req: Request) => {
   let pushFailed = 0;
   let emailSent = 0;
   let emailFailed = 0;
+  let emailClaimSkipped = 0;
   const staleSubscriptions: string[] = [];
 
   // ── Web push ──────────────────────────────────────────────────────────────────
@@ -483,6 +506,30 @@ Deno.serve(async (req: Request) => {
     const unsubUrl = buildUnsubscribeUrl(plan.profileId, unsubSecret, appUrl);
     const html = buildReminderEmail(plan.dueCount, plan.hasStudied, appUrl, unsubUrl);
 
+    // Claim today's slot first. The unique index on email_log (migration 036) lets
+    // only one concurrent run insert a row for this user and day, so two
+    // overlapping runs cannot both email the same person.
+    const { data: claim, error: claimErr } = await supabase
+      .from('email_log')
+      .insert({ user_id: plan.profileId, email_type: 'daily_reminder' })
+      .select('id')
+      .single();
+
+    if (claimErr || !claim) {
+      if (claimErr?.code === '23505') {
+        // Another run already claimed this user today.
+        emailClaimSkipped++;
+      } else {
+        // Cannot record the send, so do not send.
+        console.error(
+          `[send-reminders] could not claim email slot for user=${plan.profileId}:`,
+          claimErr?.message ?? 'no row returned'
+        );
+        emailFailed++;
+      }
+      continue;
+    }
+
     const { error: sendErr } = await resend.emails.send({
       from: emailFrom,
       to: plan.email,
@@ -493,20 +540,18 @@ Deno.serve(async (req: Request) => {
     if (sendErr) {
       console.error(`[send-reminders] email failed for user=${plan.profileId}:`, sendErr.message);
       emailFailed++;
+
+      // Release the claim so a later run today can retry this user.
+      const { error: releaseErr } = await supabase.from('email_log').delete().eq('id', claim.id);
+      if (releaseErr) {
+        console.warn(
+          `[send-reminders] Failed to release email_log claim for user=${plan.profileId}:`,
+          releaseErr.message
+        );
+      }
     } else {
       emailSent++;
       console.log(`[send-reminders] email sent to user=${plan.profileId} due=${plan.dueCount}`);
-
-      // Record the send so a repeat invocation today won't re-send.
-      const { error: logErr } = await supabase
-        .from('email_log')
-        .insert({ user_id: plan.profileId, email_type: 'daily_reminder' });
-      if (logErr) {
-        console.warn(
-          `[send-reminders] Failed to record email_log for user=${plan.profileId}:`,
-          logErr.message
-        );
-      }
     }
 
     // 50 ms pause — stay within Resend's rate limits (same as send-lesson-email).
@@ -535,6 +580,7 @@ Deno.serve(async (req: Request) => {
       push_failed: pushFailed,
       email_sent: emailSent,
       email_failed: emailFailed,
+      email_skipped_claimed: emailClaimSkipped,
       stale_cleaned: staleSubscriptions.length,
       ...summary
     }),
