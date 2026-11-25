@@ -1,5 +1,21 @@
 # norske-flashcard
 
+## 2.121.0
+
+### Minor Changes
+
+- - **New Features**
+    - Added mobile navigation for learning, grammar, quizzes, progress, and profile, with route-aware titles and back navigation.
+    - Added a More menu with language selection, dark mode, account and legal links, and guest sign-in. Plus users can open search from the mobile top bar.
+    - Added mobile navigation translations in English, German, Spanish, Norwegian, and Ukrainian, plus privacy and terms links in the footer.
+    - Improved spacing around device safe areas.
+    - Grammar practice recognizes standalone “ø” as the empty-set symbol and offers links to the next playable level or all levels.
+    - Email reminders are available across plans; push reminders remain Plus-only.
+  - **Bug Fixes**
+    - Mobile navigation hides during practice and quiz sessions, and quiz sessions retain their selected settings.
+    - Progress pages show loading errors and allow retries. Grammar summaries count due items from the current practice set, and grammar links preserve the selected level.
+    - Fixed grammar links that already include a level parameter.
+
 ## 2.120.0
 
 ### Minor Changes
