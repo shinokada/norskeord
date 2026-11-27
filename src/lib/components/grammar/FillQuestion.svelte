@@ -13,6 +13,18 @@
   // call it a blank when the sentence actually has one (a run of underscores).
   const hasBlank = $derived(/_{2,}/.test(question.sentence ?? ''));
 
+  // The data lists the answer first in most questions, so show the word bank in a
+  // random order. Recomputed only when the question changes, so it stays stable
+  // while the learner types.
+  const shuffledWords = $derived.by(() => {
+    const list = [...(question.words ?? [])];
+    for (let i = list.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [list[i], list[j]] = [list[j], list[i]];
+    }
+    return list;
+  });
+
   // Reset + focus whenever the question changes.
   $effect(() => {
     void question.id;
@@ -43,7 +55,7 @@
 
 {#if question.words && question.words.length}
   <div class="mb-4 flex flex-wrap gap-2">
-    {#each question.words as word (word)}
+    {#each shuffledWords as word (word)}
       <span
         class="rounded-lg border border-gray-200 bg-gray-50 px-3 py-1 text-sm text-gray-600 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300"
       >
