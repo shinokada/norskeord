@@ -1,5 +1,12 @@
 # norske-flashcard
 
+## 2.121.1
+
+### Patch Changes
+
+- - **User Experience**
+    - Word-bank options now appear in a shuffled order that stays consistent while you answer.
+
 ## 2.121.0
 
 ### Minor Changes
