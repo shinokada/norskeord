@@ -156,7 +156,7 @@ async function sendPush(
   }
 }
 
-/** Build the unsubscribe URL using HMAC — same approach as send-lesson-email. */
+/** Build the unsubscribe URL (HMAC token checked by /api/email/unsubscribe). */
 function buildUnsubscribeUrl(userId: string, secret: string, appUrl: string): string {
   const token = createHmac('sha256', secret).update(userId).digest('hex');
   return `${appUrl}/api/email/unsubscribe?uid=${userId}&token=${token}&action=reminder`;
@@ -585,7 +585,7 @@ Deno.serve(async (req: Request) => {
       console.log(`[send-reminders] email sent to user=${plan.profileId} due=${plan.dueCount}`);
     }
 
-    // 50 ms pause — stay within Resend's rate limits (same as send-lesson-email).
+    // 50 ms pause — stay within Resend's rate limits.
     await new Promise((r) => setTimeout(r, 50));
   }
 
